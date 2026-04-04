@@ -275,6 +275,7 @@ const HomePage = () => {
                 </svg>
                 WhatsApp Chat
               </a></li>
+              <li><a href="https://sidehk.m.en.alibaba.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">Alibaba: Side Packaging HK Limited</a></li>
               <li>Side Packaging HK Limited</li>
               <li>Hong Kong SAR</li>
             </ul>
