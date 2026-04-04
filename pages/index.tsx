@@ -55,6 +55,61 @@ const HomePage = () => {
         <title>Side Packaging HK Limited | Custom Gift Box Manufacturer China — Luxury Packaging Factory Direct</title>
         <meta name="description" content="Side Packaging HK Limited — China's #1 B2B manufacturer of premium rigid gift boxes, magnetic boxes & custom luxury packaging. MOQ 100pcs, 10-15 day lead time. Factory direct pricing." />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Side Packaging HK Limited",
+              "url": "https://saidepackaging.com",
+              "logo": "https://saidepackaging.com/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+86-13699786538",
+                "contactType": "customer service",
+                "email": "andy@saidepackaging.com",
+                "availableLanguage": ["en", "zh"]
+              },
+              "sameAs": [
+                "https://sidehk.m.en.alibaba.com/",
+                "https://www.instagram.com/sidepackaging"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hong Kong",
+                "addressCountry": "HK"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is your minimum order quantity (MOQ)?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our standard MOQ for custom printed magnetic and rigid gift boxes starts at just 100 units."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How long is the production lead time?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Production typically takes 10-15 business days once the artwork is approved."
+                  }
+                }
+              ]
+            })
+          }}
+        />
       </Head>
 
       {/* Navigation */}
