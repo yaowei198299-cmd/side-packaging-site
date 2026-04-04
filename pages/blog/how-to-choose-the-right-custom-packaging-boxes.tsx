@@ -19,6 +19,7 @@ const BlogPost = () => {
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
             <Link href="/#about" className="hover:text-black transition-colors">Why Us</Link>
+            <Link href="/#reviews" className="hover:text-black transition-colors">Reviews</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
           </div>
 
