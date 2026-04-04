@@ -9,7 +9,7 @@ async function shopifyFetch({ query, variables }: { query: string, variables?: a
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'X-Shopify-Storefront-Access-Token': storefrontAccessToken,
+      'X-Shopify-Storefront-Access-Token': storefrontAccessToken || '',
     },
     body: JSON.stringify({ query, variables }),
   });
