@@ -42,62 +42,64 @@ const HomePage = () => {
       </Head>
 
       {/* Navigation */}
-      <nav className="border-b sticky top-0 bg-white/80 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="font-black text-2xl tracking-tighter italic">SIDE PACKAGING</div>
-          <div className="hidden lg:flex space-x-10 text-sm font-bold uppercase tracking-widest">
-            <Link href="/" className="text-blue-600">Home</Link>
-            <Link href="/products/custom-magnetic-box" className="hover:text-blue-600 transition">Products</Link>
-            <a href="#factory" className="hover:text-blue-600 transition">Factory</a>
-            <a href="#about" className="hover:text-blue-600 transition">About Us</a>
+      <nav className="border-b sticky top-0 bg-white/95 backdrop-blur-md z-50">
+        <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+          <div className="font-black text-2xl tracking-tighter italic shrink-0">SIDE PACKAGING</div>
+          <div className="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <Link href="/" className="text-blue-600 border-b-2 border-blue-600 py-1">Home</Link>
+            <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
+            <a href="#factory" className="hover:text-black transition-colors">Factory</a>
+            <a href="#about" className="hover:text-black transition-colors">About Us</a>
           </div>
-          <div className="flex items-center space-x-4">
-            <button className="hidden sm:block text-sm font-bold px-6 py-2 border border-gray-200 rounded-full hover:bg-gray-50 transition">Login</button>
+          <div className="flex items-center space-x-6 shrink-0">
+            <button className="hidden md:block text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-black transition">Login</button>
             <Link href="/products/custom-magnetic-box">
-              <button className="bg-black text-white px-8 py-3 rounded-full text-sm font-black hover:bg-blue-600 transition shadow-lg">GET A QUOTE</button>
+              <button className="bg-black text-white px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all transform hover:scale-105 active:scale-95 shadow-xl">GET A QUOTE</button>
             </Link>
           </div>
         </div>
       </nav>
 
       <main>
-        {/* Hero Section - Reserved for Vibe Selling Agent's Visuals */}
-        <section className="relative h-[85vh] flex items-center overflow-hidden bg-gray-900">
-          <div className="absolute inset-0 z-0 opacity-40">
-             {/* Placeholder for high-end factory/product video/image */}
-             <div className="w-full h-full bg-gradient-to-br from-blue-900 to-black"></div>
+        {/* Hero Section */}
+        <section className="relative h-[90vh] flex items-center overflow-hidden bg-black">
+          <div className="absolute inset-0 z-0 opacity-50">
+             {/* High-end gradient background */}
+             <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/30 via-black to-black"></div>
           </div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-            <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-8 tracking-tighter">
+          <div className="relative z-10 max-w-screen-2xl mx-auto px-6 lg:px-12 w-full">
+            <div className="max-w-4xl">
+              <div className="inline-block bg-blue-600/10 border border-blue-600/20 text-blue-500 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8">
+                20 Years of Craftsmanship
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black text-white leading-[1.05] mb-10 tracking-tighter">
                 Premium Custom <br/>
-                <span className="text-blue-500 italic">Magnetic Closure Boxes</span> <br/>
-                Wholesale Manufacturer.
+                <span className="text-blue-600 italic">Magnetic Boxes</span> <br/>
+                For Luxury Brands.
               </h1>
-              <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-xl font-medium">
-                Engineering-grade structural design meets luxury aesthetics. Direct from our FSC-certified factory to your global brand.
+              <p className="text-xl text-gray-400 mb-12 leading-relaxed max-w-2xl font-medium">
+                Engineering-grade structural design meets luxury aesthetics. Direct from our FSC-certified factory to your doorstep.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row gap-5">
                 <Link href="/products/custom-magnetic-box">
-                  <button className="bg-blue-600 text-white px-10 py-5 rounded-full font-black text-lg hover:bg-blue-700 transition shadow-2xl flex items-center group">
+                  <button className="bg-blue-600 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-blue-700 transition-all shadow-2xl flex items-center justify-center group">
                     START CUSTOMIZING 
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </button>
                 </Link>
-                <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-full font-black text-lg hover:bg-white/20 transition">
+                <button className="bg-white/5 backdrop-blur-xl border border-white/10 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-white/10 transition-all flex items-center justify-center">
                   REQUEST SAMPLE KIT
                 </button>
               </div>
             </div>
           </div>
           
-          {/* Subtle scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/40">
-            <p className="text-[10px] font-bold uppercase tracking-widest mb-2">Scroll to explore</p>
-            <div className="w-[1px] h-12 bg-gradient-to-b from-white/40 to-transparent"></div>
+          {/* Scroll indicator */}
+          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center">
+            <div className="w-[1px] h-16 bg-gradient-to-b from-blue-600 to-transparent"></div>
           </div>
         </section>
 
