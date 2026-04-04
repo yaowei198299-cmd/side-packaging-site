@@ -49,6 +49,13 @@ const HomePage = () => {
     { title: "FSC-Certified Materials", desc: "Commitment to sustainability using eco-friendly and responsibly sourced paper." }
   ];
 
+  const factoryImages = [
+    { url: "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg", title: "Handmade Rigid Box Assembly" },
+    { url: "https://sc01.alicdn.com/kf/Af1c888b0929d45d08bbc6d245ea133848.jpg", title: "Automated Magnetic Inset Line" },
+    { url: "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg", title: "High-Precision Die Cutting" },
+    { url: "https://sc01.alicdn.com/kf/Af794f5525f534d2f8a1998c045fce0066.jpg", title: "Final Quality Inspection" }
+  ];
+
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
@@ -71,6 +78,11 @@ const HomePage = () => {
                 "email": "andy@saidepackaging.com",
                 "availableLanguage": ["en", "zh"]
               },
+              "image": [
+                "https://sc02.alicdn.com/kf/H57bd458a3907409da3a2ddd18a7e3991z.jpg",
+                "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg",
+                "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg"
+              ],
               "sameAs": [
                 "https://sidehk.m.en.alibaba.com/",
                 "https://www.instagram.com/sidepackaging"
@@ -115,7 +127,7 @@ const HomePage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <div className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</div>
+          <div className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</div>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="text-black border-b-2 border-black py-1">Home</Link>
@@ -150,7 +162,7 @@ const HomePage = () => {
                 <span className="text-gray-400">Factory Direct Pricing.</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-500 mb-12 leading-relaxed max-w-3xl font-medium">
-                China's leading manufacturer of premium rigid gift boxes, magnetic closure boxes, and custom retail packaging. 
+                China's leading manufacturer of premium rigid gift boxes, magnetic boxes, and custom retail packaging. 
                 <span className="block mt-4 text-black font-black uppercase tracking-widest text-sm">MOQ 100pcs | 10-15 Day Lead Time | FSC-Certified</span>
               </p>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
@@ -171,7 +183,6 @@ const HomePage = () => {
             </div>
           </div>
           
-          {/* Abstract geometric decoration */}
           <div className="absolute top-0 right-0 w-1/2 h-full bg-white clip-path-polygon hidden lg:block">
             <img 
               src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
@@ -246,17 +257,16 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative aspect-[4/5] bg-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[4/5] bg-gray-800 rounded-3xl overflow-hidden shadow-2xl group">
                  <img 
-                   src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
-                   className="w-full h-full object-cover opacity-60"
-                   alt="Factory Interior"
+                   src="https://sc02.alicdn.com/kf/H57bd458a3907409da3a2ddd18a7e3991z.jpg" 
+                   className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
+                   alt="Side Packaging HK Limited Team"
                  />
-                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                       <p className="text-8xl font-black tracking-tighter mb-2">800+</p>
-                       <p className="text-sm font-bold uppercase tracking-[0.4em]">Brands Trusted Us</p>
-                    </div>
+                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent"></div>
+                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full text-center">
+                    <p className="text-6xl font-black tracking-tighter mb-2">800+</p>
+                    <p className="text-sm font-bold uppercase tracking-[0.4em]">Brands Trusted Us</p>
                  </div>
               </div>
             </div>
@@ -291,8 +301,43 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* Factory Gallery Section */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="grid lg:grid-cols-2 gap-20 items-end mb-20">
+              <div>
+                <h2 className="text-5xl font-black tracking-tighter uppercase mb-8 leading-[1.1]">Inside Our <br/>Manufacturing Facility</h2>
+                <p className="text-xl text-gray-500 font-medium leading-relaxed max-w-xl">
+                  Step into our 5,000 sqm production floor where cutting-edge technology meets hand-finished craftsmanship.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                 <div className="bg-gray-50 px-10 py-8 rounded-3xl border border-gray-100">
+                    <p className="text-4xl font-black mb-1 tracking-tighter">5K+</p>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Square Meters</p>
+                 </div>
+                 <div className="bg-gray-50 px-10 py-8 rounded-3xl border border-gray-100">
+                    <p className="text-4xl font-black mb-1 tracking-tighter">200+</p>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Skilled Workers</p>
+                 </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {factoryImages.map((img, i) => (
+                <div key={i} className="group relative aspect-[3/4] overflow-hidden rounded-[2.5rem] bg-gray-100 shadow-sm hover:shadow-2xl transition-all duration-700">
+                  <img src={img.url} alt={img.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <p className="text-white font-black text-sm uppercase tracking-widest">{img.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Reviews Section */}
-        <section id="reviews" className="py-32 bg-white">
+        <section id="reviews" className="py-32 bg-gray-50 border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Customer Reviews</h2>
@@ -307,7 +352,7 @@ const HomePage = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-12">
-              <div className="bg-gray-50 p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
+              <div className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
                 <div className="flex text-yellow-400 mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
@@ -322,7 +367,7 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div className="bg-gray-50 p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
+              <div className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
                 <div className="flex text-yellow-400 mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
@@ -337,7 +382,7 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div className="bg-gray-50 p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
+              <div className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
                 <div className="flex text-yellow-400 mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
@@ -356,7 +401,7 @@ const HomePage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="py-32 bg-gray-50 border-t border-gray-100">
+        <section id="faq" className="py-32 bg-white border-t border-gray-100">
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Frequently Asked Questions</h2>
@@ -386,7 +431,7 @@ const HomePage = () => {
                   a: "We are committed to sustainability. We offer FSC-certified paper, recycled gray board, and soy-based inks to ensure your packaging is environmentally responsible."
                 }
               ].map((item, i) => (
-                <div key={i} className="bg-white p-8 md:p-10 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                <div key={i} className="bg-gray-50 p-8 md:p-10 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-md transition-all">
                   <h3 className="text-xl font-black mb-4 uppercase tracking-tight">{item.q}</h3>
                   <p className="text-gray-500 font-medium leading-relaxed">{item.a}</p>
                 </div>
@@ -396,7 +441,7 @@ const HomePage = () => {
         </section>
 
         {/* Contact Form Section */}
-        <section id="contact" className="py-32 bg-gray-50">
+        <section id="contact" className="py-32 bg-gray-50 border-t border-gray-100">
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-5xl font-black mb-6 tracking-tighter uppercase">Request A Free Quote</h2>
