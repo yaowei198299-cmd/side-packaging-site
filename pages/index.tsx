@@ -1,6 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const ThreeBoxViewer = dynamic(() => import('../components/ThreeBoxViewer'), { ssr: false });
 
 const HomePage = () => {
   const categories = [
@@ -44,7 +47,7 @@ const HomePage = () => {
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
           <div className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</div>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
@@ -73,38 +76,48 @@ const HomePage = () => {
              <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(37,99,235,0.15),_transparent_50%),_radial-gradient(circle_at_bottom_left,_rgba(37,99,235,0.05),_transparent_50%)]"></div>
           </div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-20 pb-32">
-            <div className="max-w-4xl">
-              <div className="inline-flex items-center space-x-2 bg-blue-600/10 border border-blue-600/20 text-blue-500 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-10">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                </span>
-                <span>FSC-Certified Factory Direct</span>
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-10 pb-20">
+            <div className="grid lg:grid-cols-2 gap-20 items-center">
+              <div>
+                <div className="inline-flex items-center space-x-2 bg-blue-600/10 border border-blue-600/20 text-blue-500 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-10">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                  </span>
+                  <span>FSC-Certified Factory Direct</span>
+                </div>
+
+                <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.95] mb-12 tracking-tighter">
+                  Premium Custom <br/>
+                  <span className="text-blue-600 italic">Magnetic Boxes</span> <br/>
+                  For Global Brands.
+                </h1>
+
+                <p className="text-xl text-gray-400 mb-14 leading-relaxed max-w-xl font-medium">
+                  Engineering-grade structural design meets luxury aesthetics. 20 years of manufacturing excellence delivered directly to your doorstep.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                  <Link href="/products/custom-magnetic-box">
+                    <button className="bg-blue-600 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-blue-700 transition-all shadow-[0_20px_50px_rgba(37,99,235,0.3)] flex items-center justify-center group">
+                      START CUSTOMIZING 
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </button>
+                  </Link>
+                  <button className="bg-white/5 backdrop-blur-xl border border-white/10 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-white/10 transition-all flex items-center justify-center">
+                    REQUEST SAMPLE KIT
+                  </button>
+                </div>
               </div>
 
-              <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.95] mb-12 tracking-tighter">
-                Premium Custom <br/>
-                <span className="text-blue-600 italic">Magnetic Boxes</span> <br/>
-                For Global Brands.
-              </h1>
-
-              <p className="text-xl text-gray-400 mb-14 leading-relaxed max-w-2xl font-medium">
-                Engineering-grade structural design meets luxury aesthetics. 20 years of manufacturing excellence delivered directly to your doorstep.
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                <Link href="/products/custom-magnetic-box">
-                  <button className="bg-blue-600 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-blue-700 transition-all shadow-[0_20px_50px_rgba(37,99,235,0.3)] flex items-center justify-center group">
-                    START CUSTOMIZING 
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </button>
-                </Link>
-                <button className="bg-white/5 backdrop-blur-xl border border-white/10 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-white/10 transition-all flex items-center justify-center">
-                  REQUEST SAMPLE KIT
-                </button>
+              {/* 3D Visual Area */}
+              <div className="relative hidden lg:block h-[500px] w-full">
+                <ThreeBoxViewer width={20} height={10} depth={20} color="#1e1e1e" />
+                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 text-white/20 text-[10px] font-bold uppercase tracking-[0.2em]">
+                  360° Interactive View
+                </div>
               </div>
             </div>
           </div>
