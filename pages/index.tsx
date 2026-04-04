@@ -29,7 +29,7 @@ const HomePage = () => {
     {
       title: "Custom Mailer Boxes",
       desc: "Eco-friendly corrugated mailers for e-commerce, subscriptions, and shipping.",
-      image: "https://sc02.alicdn.com/kf/Aff82ba8d177b4ad5a6e78e165082b88fF.png",
+      image: "https://sc02.alicdn.com/kf/A670f5bad379f4827ab376384d974e493g.png",
       link: "#",
       tag: "Eco-Friendly"
     },
