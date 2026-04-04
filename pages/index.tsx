@@ -52,8 +52,8 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>LuxoPack | Custom Gift Box Manufacturer China — Luxury Packaging Factory Direct</title>
-        <meta name="description" content="China's #1 B2B manufacturer of premium rigid gift boxes, magnetic boxes & custom luxury packaging. MOQ 100pcs, 10-15 day lead time. Factory direct pricing." />
+        <title>Side Packaging HK Limited | Custom Gift Box Manufacturer China — Luxury Packaging Factory Direct</title>
+        <meta name="description" content="Side Packaging HK Limited — China's #1 B2B manufacturer of premium rigid gift boxes, magnetic boxes & custom luxury packaging. MOQ 100pcs, 10-15 day lead time. Factory direct pricing." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
