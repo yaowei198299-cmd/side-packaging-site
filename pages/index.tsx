@@ -35,26 +35,31 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
         <title>Side Packaging HK | Custom Magnetic Closure Boxes Wholesale Manufacturer</title>
         <meta name="description" content="Leading manufacturer of custom magnetic closure boxes wholesale. Factory-direct premium packaging for luxury brands. 20 years experience." />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Navigation */}
-      <nav className="border-b sticky top-0 bg-white/95 backdrop-blur-md z-50">
-        <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <div className="font-black text-2xl tracking-tighter italic shrink-0">SIDE PACKAGING</div>
-          <div className="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">
+      <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+          <div className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</div>
+          
+          <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="text-blue-600 border-b-2 border-blue-600 py-1">Home</Link>
             <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
             <a href="#factory" className="hover:text-black transition-colors">Factory</a>
             <a href="#about" className="hover:text-black transition-colors">About Us</a>
           </div>
+
           <div className="flex items-center space-x-6 shrink-0">
-            <button className="hidden md:block text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-black transition">Login</button>
+            <button className="hidden md:block text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-black transition">Sign In</button>
             <Link href="/products/custom-magnetic-box">
-              <button className="bg-black text-white px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all transform hover:scale-105 active:scale-95 shadow-xl">GET A QUOTE</button>
+              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-lg hover:shadow-blue-500/20">
+                GET A QUOTE
+              </button>
             </Link>
           </div>
         </div>
@@ -62,28 +67,35 @@ const HomePage = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative h-[90vh] flex items-center overflow-hidden bg-black">
-          <div className="absolute inset-0 z-0 opacity-50">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#0a0a0a]">
+          <div className="absolute inset-0 z-0">
              {/* High-end gradient background */}
-             <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/30 via-black to-black"></div>
+             <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(37,99,235,0.15),_transparent_50%),_radial-gradient(circle_at_bottom_left,_rgba(37,99,235,0.05),_transparent_50%)]"></div>
           </div>
           
-          <div className="relative z-10 max-w-screen-2xl mx-auto px-6 lg:px-12 w-full">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-20 pb-32">
             <div className="max-w-4xl">
-              <div className="inline-block bg-blue-600/10 border border-blue-600/20 text-blue-500 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8">
-                20 Years of Craftsmanship
+              <div className="inline-flex items-center space-x-2 bg-blue-600/10 border border-blue-600/20 text-blue-500 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-10">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                <span>FSC-Certified Factory Direct</span>
               </div>
-              <h1 className="text-6xl md:text-8xl font-black text-white leading-[1.05] mb-10 tracking-tighter">
+
+              <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.95] mb-12 tracking-tighter">
                 Premium Custom <br/>
                 <span className="text-blue-600 italic">Magnetic Boxes</span> <br/>
-                For Luxury Brands.
+                For Global Brands.
               </h1>
-              <p className="text-xl text-gray-400 mb-12 leading-relaxed max-w-2xl font-medium">
-                Engineering-grade structural design meets luxury aesthetics. Direct from our FSC-certified factory to your doorstep.
+
+              <p className="text-xl text-gray-400 mb-14 leading-relaxed max-w-2xl font-medium">
+                Engineering-grade structural design meets luxury aesthetics. 20 years of manufacturing excellence delivered directly to your doorstep.
               </p>
-              <div className="flex flex-col sm:flex-row gap-5">
+
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                 <Link href="/products/custom-magnetic-box">
-                  <button className="bg-blue-600 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-blue-700 transition-all shadow-2xl flex items-center justify-center group">
+                  <button className="bg-blue-600 text-white px-12 py-6 rounded-full font-black text-lg hover:bg-blue-700 transition-all shadow-[0_20px_50px_rgba(37,99,235,0.3)] flex items-center justify-center group">
                     START CUSTOMIZING 
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -99,7 +111,7 @@ const HomePage = () => {
           
           {/* Scroll indicator */}
           <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center">
-            <div className="w-[1px] h-16 bg-gradient-to-b from-blue-600 to-transparent"></div>
+            <div className="w-[1px] h-24 bg-gradient-to-b from-blue-600 via-blue-600/50 to-transparent"></div>
           </div>
         </section>
 
