@@ -66,6 +66,7 @@ const HomePage = () => {
             <Link href="/" className="text-black border-b-2 border-black py-1">Home</Link>
             <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
             <a href="#about" className="hover:text-black transition-colors">Why Us</a>
+            <a href="#process" className="hover:text-black transition-colors">Process</a>
             <a href="#reviews" className="hover:text-black transition-colors">Reviews</a>
             <a href="#faq" className="hover:text-black transition-colors">FAQ</a>
             <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
@@ -203,6 +204,34 @@ const HomePage = () => {
                     </div>
                  </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Manufacturing Process */}
+        <section id="process" className="py-32 bg-gray-50 border-y border-gray-100">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Our Smooth Process</h2>
+              <p className="text-gray-500 font-medium text-lg max-w-2xl mx-auto">From initial concept to final delivery, we ensure every step is handled with professional care.</p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-12">
+              {[
+                { step: "01", title: "Free Quote", desc: "Submit your requirements and get a detailed factory-direct quote within 24 hours." },
+                { step: "02", title: "Sampling", desc: "We provide digital mockups and physical samples to verify design and material quality." },
+                { step: "03", title: "Production", desc: "Bulk manufacturing starts with rigorous quality checks at every production stage." },
+                { step: "04", title: "Global Delivery", desc: "Final inspection, secure packaging, and door-to-door delivery to your warehouse." }
+              ].map((item, i) => (
+                <div key={i} className="relative group">
+                  <div className="text-6xl font-black text-gray-100 mb-6 group-hover:text-blue-600/10 transition-colors">{item.step}</div>
+                  <h4 className="text-xl font-black mb-4 uppercase tracking-tighter">{item.title}</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  {i < 3 && (
+                    <div className="hidden lg:block absolute top-10 -right-6 w-12 h-[1px] bg-gray-200"></div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </section>
