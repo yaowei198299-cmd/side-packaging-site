@@ -67,6 +67,7 @@ const HomePage = () => {
             <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
             <a href="#about" className="hover:text-black transition-colors">About Us</a>
             <a href="#contact" className="hover:text-black transition-colors">Contact</a>
+            <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
@@ -312,6 +313,7 @@ const HomePage = () => {
               <li><Link href="/products/custom-magnetic-box" className="hover:text-black">Products</Link></li>
               <li><a href="#about" className="hover:text-black">About Our Factory</a></li>
               <li><a href="#contact" className="hover:text-black">Request Quote</a></li>
+              <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
             </ul>
           </div>
           <div>
