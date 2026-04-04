@@ -65,8 +65,7 @@ const HomePage = () => {
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="text-black border-b-2 border-black py-1">Home</Link>
             <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
-            <a href="#about" className="hover:text-black transition-colors">About Us</a>
-            <a href="#contact" className="hover:text-black transition-colors">Contact</a>
+            <a href="#about" className="hover:text-black transition-colors">Why Us</a>
             <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
           </div>
 
