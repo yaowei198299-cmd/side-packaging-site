@@ -67,6 +67,7 @@ const HomePage = () => {
             <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
             <a href="#about" className="hover:text-black transition-colors">Why Us</a>
             <a href="#reviews" className="hover:text-black transition-colors">Reviews</a>
+            <a href="#faq" className="hover:text-black transition-colors">FAQ</a>
             <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
           </div>
 
@@ -266,6 +267,46 @@ const HomePage = () => {
                   <p className="text-xs text-gray-400 uppercase font-bold tracking-widest">Product Manager, France</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="py-32 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Frequently Asked Questions</h2>
+              <p className="text-gray-500 font-medium text-lg">Quick answers to common inquiries about our custom packaging services.</p>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "What is your minimum order quantity (MOQ)?",
+                  a: "Our standard MOQ for custom printed magnetic and rigid gift boxes starts at just 100 units, making luxury packaging accessible for brands of all sizes."
+                },
+                {
+                  q: "How long is the production lead time?",
+                  a: "Once the artwork is approved, production typically takes 10-15 business days. Shipping times vary by location and method (Air vs Sea)."
+                },
+                {
+                  q: "Do you offer worldwide shipping?",
+                  a: "Yes, we ship globally. We provide door-to-door delivery including DDP options for the USA, Canada, UK, and European Union."
+                },
+                {
+                  q: "Can I get a custom sample before the bulk order?",
+                  a: "Absolutely. We recommend a pre-production sample to verify the structure, materials, and printing quality before proceeding with the full production run."
+                },
+                {
+                  q: "Are your packaging materials eco-friendly?",
+                  a: "We are committed to sustainability. We offer FSC-certified paper, recycled gray board, and soy-based inks to ensure your packaging is environmentally responsible."
+                }
+              ].map((item, i) => (
+                <div key={i} className="bg-white p-8 md:p-10 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                  <h3 className="text-xl font-black mb-4 uppercase tracking-tight">{item.q}</h3>
+                  <p className="text-gray-500 font-medium leading-relaxed">{item.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
