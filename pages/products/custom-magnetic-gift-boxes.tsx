@@ -106,12 +106,23 @@ const ProductPage = () => {
 
           <section className="mb-20 py-12 border-y border-gray-100">
             <h2 className="text-3xl font-black text-gray-900 uppercase tracking-tight mb-6">Sustainability: FSC Certified Packaging</h2>
-            <p>
-              The luxury of tomorrow is sustainable. Side Packaging is proud to be an <strong>FSC-certified packaging manufacturer</strong>. We source all our paper and board from responsibly managed forests that provide environmental, social, and economic benefits.
-            </p>
-            <p>
-              Beyond FSC certification, we offer soy-based inks and plastic-free finishes, allowing your brand to provide a luxury experience without compromising on environmental values. Our <strong>Low MOQ of 100pcs</strong> also helps reduce waste for small-batch artisanal collections.
-            </p>
+            <div className="flex flex-col md:flex-row gap-12 items-center">
+              <div className="flex-1">
+                <p>
+                  The luxury of tomorrow is sustainable. Side Packaging is proud to be an <strong>FSC-certified packaging manufacturer</strong>. We source all our paper and board from responsibly managed forests that provide environmental, social, and economic benefits.
+                </p>
+                <p>
+                  Beyond FSC certification, we offer soy-based inks and plastic-free finishes, allowing your brand to provide a luxury experience without compromising on environmental values. Our <strong>Low MOQ of 100pcs</strong> also helps reduce waste for small-batch artisanal collections.
+                </p>
+              </div>
+              <div className="shrink-0 bg-gray-50 p-6 rounded-3xl border border-gray-100">
+                <img 
+                  src="https://sc01.alicdn.com/kf/Aa33381bfa06d472cad56bc460860626eF.png" 
+                  alt="Side Packaging FSC BSCI ISO Certifications" 
+                  className="w-full max-w-[280px] h-auto"
+                />
+              </div>
+            </div>
           </section>
 
           <section className="mb-20">

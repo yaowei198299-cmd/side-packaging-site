@@ -242,6 +242,18 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* Certifications Strip (NEW) */}
+        <section className="py-16 bg-white border-b border-gray-100">
+           <div className="max-w-5xl mx-auto px-6 text-center">
+              <img 
+                src="https://sc01.alicdn.com/kf/Aa33381bfa06d472cad56bc460860626eF.png" 
+                alt="Side Packaging Certifications - FSC, BSCI, ISO 9001, SGS, RoHS" 
+                className="mx-auto max-w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 opacity-60 hover:opacity-100"
+                loading="lazy"
+              />
+           </div>
+        </section>
+
         {/* Factory & Heritage */}
         <section id="about" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
