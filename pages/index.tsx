@@ -144,47 +144,75 @@ const HomePage = () => {
       </nav>
 
       <main>
-        {/* Hero Section */}
-        <section className="relative pt-24 pb-40 overflow-hidden bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div className="max-w-4xl">
-              <h1 className="text-6xl md:text-9xl font-black text-gray-900 leading-[0.9] mb-10 tracking-tighter">
-                Premium Custom <br/>
-                <span className="text-blue-600">Packaging Boxes.</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-500 mb-14 leading-relaxed max-w-2xl font-medium">
-                20+ years of factory-direct manufacturing. We help global brands create high-end unboxing experiences with luxury rigid magnetic boxes.
-              </p>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                <a href="#contact">
-                  <button className="bg-black text-white px-12 py-7 rounded-full font-black text-lg hover:bg-gray-800 transition-all shadow-2xl flex items-center justify-center group">
-                    START CUSTOMIZING
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </button>
-                </a>
-                <div className="flex -space-x-3 items-center">
-                  {[1,2,3,4].map(i => (
-                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-gray-200">
-                      <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Customer" className="w-full h-full object-cover grayscale" />
+        {/* Hero Section - 3-Second Memorable Version */}
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#0a0a0a] text-white">
+          {/* Background Abstract Light */}
+          <div className="absolute top-0 right-0 w-full h-full opacity-30">
+            <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[120%] bg-blue-600/20 blur-[150px] rounded-full"></div>
+            <div className="absolute bottom-[-20%] left-[-10%] w-[50%] h-[100%] bg-indigo-600/10 blur-[150px] rounded-full"></div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full">
+            <div className="grid lg:grid-cols-2 gap-20 items-center">
+              <div>
+                <div className="inline-flex items-center space-x-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-md">
+                   <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
+                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-400">20+ Years Factory Heritage</span>
+                </div>
+                
+                <h1 className="text-7xl md:text-[10rem] font-black leading-[0.85] mb-12 tracking-tighter">
+                  Luxury <br/>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">Packaging</span><br/>
+                  Redefined.
+                </h1>
+
+                <p className="text-xl md:text-2xl text-gray-400 mb-16 leading-relaxed max-w-xl font-medium">
+                  Direct from our FSC-Certified manufacturing facility. We engineer the perfect "unboxing" for the world's most ambitious brands.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-center gap-8">
+                  <a href="#contact" className="w-full sm:w-auto">
+                    <button className="w-full sm:w-auto bg-blue-600 text-white px-12 py-7 rounded-full font-black text-xl hover:bg-blue-700 transition-all shadow-[0_0_50px_rgba(37,99,235,0.4)] flex items-center justify-center group">
+                      CUSTOMIZE NOW
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </button>
+                  </a>
+                  <div className="flex items-center space-x-4">
+                    <div className="flex -space-x-3">
+                       {[11,12,13].map(i => (
+                        <div key={i} className="w-10 h-10 rounded-full border-2 border-[#0a0a0a] overflow-hidden">
+                          <img src={`https://i.pravatar.cc/100?img=${i}`} alt="User" className="w-full h-full object-cover grayscale" />
+                        </div>
+                       ))}
                     </div>
-                  ))}
-                  <div className="pl-6 text-[10px] font-black uppercase tracking-widest text-gray-400">
-                    Trusted by 800+ Global Brands
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                      Trusted by <span className="text-white">800+ Clients</span>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div className="relative hidden lg:block">
+                 <div className="relative z-10 transform hover:scale-105 transition-transform duration-700">
+                   <img 
+                    src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
+                    alt="Side Packaging Luxury Box" 
+                    className="w-full h-auto drop-shadow-[0_35px_60px_rgba(255,255,255,0.1)]"
+                  />
+                 </div>
+                 {/* Floating Badge */}
+                 <div className="absolute top-1/2 right-[-5%] bg-white text-black p-8 rounded-3xl shadow-2xl rotate-12 flex flex-col items-center justify-center z-20">
+                    <p className="text-4xl font-black tracking-tighter">100%</p>
+                    <p className="text-[8px] font-black uppercase tracking-widest whitespace-nowrap">Factory Direct</p>
+                 </div>
+              </div>
             </div>
           </div>
-          
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-white clip-path-polygon hidden lg:block overflow-hidden">
-             <img 
-              src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
-              alt="Luxury Packaging" 
-              className="w-full h-full object-cover opacity-10 grayscale scale-110"
-            />
-          </div>
+
+          {/* Bottom Gradient Fade */}
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
         </section>
 
         {/* Core Expertise Grid */}
