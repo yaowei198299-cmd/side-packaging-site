@@ -29,16 +29,37 @@ const HomePage = () => {
     {
       title: "Custom Mailer Boxes",
       desc: "Durable branded shipping boxes for e-commerce and retail subscription brands.",
-      image: "https://sc02.alicdn.com/kf/A670f5bad379f4827ab376384d974e493g.png",
-      link: "#contact",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png",
+      link: "/products/custom-mailer-boxes",
       tag: "Eco-Friendly"
     },
     {
-      title: "Premium Drawer Boxes",
-      desc: "Elegant sliding drawer boxes with ribbon pulls. Ideal for jewellery and cosmetics.",
-      image: "https://sc02.alicdn.com/kf/Aa102fe113883456d96481350b3e32950c.png",
-      link: "#contact",
-      tag: "Low MOQ"
+      title: "Cosmetic Packaging",
+      desc: "High-end paper boxes for skincare, perfume, and makeup brands. Custom finishes.",
+      image: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
+      link: "/products/cosmetic-packaging-boxes",
+      tag: "New Arrival"
+    },
+    {
+      title: "Jewelry & Watch Boxes",
+      desc: "Elegant rigid boxes for luxury watches and jewelry. Custom velvet inserts.",
+      image: "https://sc02.alicdn.com/kf/Aeaf1dca78d3f4469a1ea380f452ac2de5.png",
+      link: "/products/jewelry-packaging-boxes",
+      tag: "High End"
+    },
+    {
+      title: "Apparel Gift Boxes",
+      desc: "Premium large rigid boxes for clothing, shoes, and textiles. Strong & stylish.",
+      image: "https://sc02.alicdn.com/kf/A7b2cac8d4efe401f9df1793bf9071d0bu.png",
+      link: "/products/apparel-packaging-boxes",
+      tag: "Wholesale"
+    },
+    {
+      title: "Luxury Paper Bags",
+      desc: "Custom printed boutique shopping bags with premium handles and finishes.",
+      image: "https://sc02.alicdn.com/kf/Abb05fa0a57e944bf85b8889811c248a4w.png",
+      link: "/products/custom-paper-bags",
+      tag: "Retail Ready"
     }
   ];
 
@@ -391,8 +412,8 @@ const HomePage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100 py-32 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-20">
-          <div className="col-span-2">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+          <div className="col-span-1">
             <Link href="/" className="text-3xl font-black tracking-tighter uppercase italic mb-8 block">Side Packaging</Link>
             <p className="text-gray-400 font-medium max-w-sm leading-relaxed mb-10">
               China's premium B2B manufacturer for high-end custom rigid boxes, magnetic gift boxes and luxury mailers. Factory direct since 2006.
@@ -405,6 +426,16 @@ const HomePage = () => {
                  </a>
                ))}
             </div>
+          </div>
+          <div>
+            <h4 className="font-bold text-[10px] uppercase tracking-widest mb-10 text-gray-400">Products</h4>
+            <ul className="space-y-6 text-[11px] font-bold uppercase tracking-widest">
+               <li><Link href="/products/custom-magnetic-gift-boxes" className="hover:text-blue-600 transition-colors">Magnetic Gift Boxes</Link></li>
+               <li><Link href="/products/custom-mailer-boxes" className="hover:text-blue-600 transition-colors">Mailer Boxes</Link></li>
+               <li><Link href="/products/cosmetic-packaging-boxes" className="hover:text-blue-600 transition-colors">Cosmetic Boxes</Link></li>
+               <li><Link href="/products/jewelry-packaging-boxes" className="hover:text-blue-600 transition-colors">Jewelry Boxes</Link></li>
+               <li><Link href="/products/custom-paper-bags" className="hover:text-blue-600 transition-colors">Luxury Paper Bags</Link></li>
+            </ul>
           </div>
           <div>
             <h4 className="font-bold text-[10px] uppercase tracking-widest mb-10 text-gray-400">Company</h4>
