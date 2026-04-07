@@ -8,61 +8,64 @@ const HomePage = () => {
     email: '',
     phone: '',
     message: '',
-    quantity: ''
+    quantity: '',
+    type: 'Quote' // 'Quote', 'Sample', 'Rush'
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send data to an API
-    alert("Thank you for your inquiry! Andy will contact you shortly.");
-    setFormData({ name: '', email: '', phone: '', message: '', quantity: '' });
+    alert(`Thank you for your ${formData.type} request! Andy will contact you via WhatsApp/Email shortly.`);
+    setFormData({ name: '', email: '', phone: '', message: '', quantity: '', type: 'Quote' });
   };
 
   const categories = [
     {
-      title: "Magnetic Gift Boxes",
-      desc: "Premium rigid boxes with hidden magnetic closures. Perfect for luxury retail.",
+      title: "Custom Magnetic Gift Boxes",
+      desc: "Luxury rigid boxes with hidden magnetic closures. High-end finish for premium retail brands.",
       image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png",
       link: "#contact",
       tag: "Best Seller"
     },
     {
-      title: "Custom Mailer Boxes",
-      desc: "Eco-friendly corrugated mailers for e-commerce, subscriptions, and shipping.",
+      title: "FSC Certified Mailer Boxes",
+      desc: "Sustainable corrugated shipping boxes for e-commerce, subscriptions, and branded mailing.",
       image: "https://sc02.alicdn.com/kf/A670f5bad379f4827ab376384d974e493g.png",
-      link: "#",
+      link: "#contact",
       tag: "Eco-Friendly"
     },
     {
-      title: "Luxury Rigid Boxes",
-      desc: "Classic two-piece lid and base boxes for jewelry, electronics, and gifts.",
+      title: "Rigid Box Manufacturer China",
+      desc: "Premium two-piece lid and base boxes. Low MOQ factory-direct manufacturing.",
       image: "https://sc02.alicdn.com/kf/Aa102fe113883456d96481350b3e32950c.png",
-      link: "#",
-      tag: "Premium"
+      link: "#contact",
+      tag: "Low MOQ"
     }
   ];
 
   const benefits = [
-    { title: "Factory Direct Pricing", desc: "Skip the middlemen and buy directly from our China-based manufacturing facility." },
-    { title: "Low MOQ (100pcs)", desc: "Start small with just 100 units for custom printed magnetic and rigid gift boxes." },
-    { title: "Fast Lead Times", desc: "Production completed in 10-15 business days with global door-to-door shipping." },
-    { title: "FSC-Certified Materials", desc: "Commitment to sustainability using eco-friendly and responsibly sourced paper." }
+    { title: "Direct Factory Pricing", desc: "No middleman. Buy directly from our ISO 9001 certified production facility in China." },
+    { title: "Low MOQ (100pcs)", desc: "Flexible order quantities for startups and high-end limited edition collections." },
+    { title: "Rapid Turnaround", desc: "Sample in 3-5 days. Bulk production in 10-15 days with global door-to-door shipping." },
+    { title: "Sustainability First", desc: "FSC-certified materials, soy-based inks, and plastic-free packaging options available." }
   ];
 
   const factoryImages = [
-    { url: "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg", title: "Handmade Rigid Box Assembly" },
-    { url: "https://sc01.alicdn.com/kf/Af1c888b0929d45d08bbc6d245ea133848.jpg", title: "Automated Magnetic Inset Line" },
-    { url: "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg", title: "High-Precision Die Cutting" },
-    { url: "https://sc01.alicdn.com/kf/Af794f5525f534d2f8a1998c045fce0066.jpg", title: "Final Quality Inspection" }
+    { url: "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg", title: "Skilled Hand-Assembled Rigid Boxes" },
+    { url: "https://sc01.alicdn.com/kf/Af1c888b0929d45d08bbc6d245ea133848.jpg", title: "Automated Magnetic Alignment Line" },
+    { url: "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg", title: "Precision Die-Cutting & Embossing" },
+    { url: "https://sc01.alicdn.com/kf/Af794f5525f534d2f8a1998c045fce0066.jpg", title: "Strict Quality Control & Inspection" }
   ];
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Side Packaging HK Limited | Custom Gift Box Manufacturer China — Luxury Packaging Factory Direct</title>
-        <meta name="description" content="Side Packaging HK Limited — China's #1 B2B manufacturer of premium rigid gift boxes, magnetic boxes & custom luxury packaging. MOQ 100pcs, 10-15 day lead time. Factory direct pricing." />
+        <title>Side Packaging HK Limited | China's Leading Custom Magnetic Gift Box Manufacturer</title>
+        <meta name="description" content="Side Packaging HK — 20+ years of manufacturing custom luxury gift boxes, FSC-certified mailer boxes, and rigid packaging. Low MOQ 100pcs, Global DDP shipping. Factory-direct pricing." />
+        <meta name="keywords" content="custom magnetic gift boxes China, FSC certified rigid boxes, luxury packaging manufacturer, wholesale mailer boxes with logo, low MOQ rigid boxes" />
         <meta name="google-site-verification" content="1M4JeciyH92CxblYUEVd-CyORMJY4u6zAsot5l8ztJs" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -71,7 +74,7 @@ const HomePage = () => {
               "@type": "Organization",
               "name": "Side Packaging HK Limited",
               "alternateName": "Side Packaging",
-              "description": "Premium B2B manufacturer of luxury rigid gift boxes, magnetic closure boxes, and custom retail packaging with 20+ years of factory-direct experience.",
+              "description": "Premium B2B manufacturer of luxury rigid gift boxes and custom retail packaging with 20+ years of factory-direct experience.",
               "foundingDate": "2006",
               "url": "https://saidepackaging.com",
               "logo": "https://saidepackaging.com/logo.png",
@@ -85,81 +88,56 @@ const HomePage = () => {
               "areaServed": ["US", "GB", "CA", "AU", "FR", "DE"],
               "knowsAbout": ["Custom Packaging", "Rigid Box Manufacturing", "Luxury Retail Packaging", "Sustainability", "FSC-Certified Materials"],
               "hasCertification": ["FSC", "BSCI", "ISO 9001"],
-              "image": [
-                "https://sc02.alicdn.com/kf/H57bd458a3907409da3a2ddd18a7e3991z.jpg",
-                "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg",
-                "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg"
-              ],
-              "sameAs": [
-                "https://sidehk.m.en.alibaba.com/",
-                "https://www.instagram.com/sidepackaging"
-              ],
+              "brand": {
+                "@type": "Brand",
+                "name": "Side Packaging",
+                "slogan": "Factory-Direct Luxury Packaging Excellence"
+              },
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Hong Kong",
                 "addressCountry": "HK"
-              },
-              "brand": {
-                "@type": "Brand",
-                "name": "Side Packaging",
-                "slogan": "Factory-Direct Luxury Packaging Excellence",
-                "logo": "https://saidepackaging.com/logo.png"
               }
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What is your minimum order quantity (MOQ)?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our standard MOQ for custom printed magnetic and rigid gift boxes starts at just 100 units."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How long is the production lead time?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Production typically takes 10-15 business days once the artwork is approved."
-                  }
-                }
-              ]
             })
           }}
         />
       </Head>
 
+      {/* Floating WhatsApp Button */}
+      <a 
+        href="https://wa.me/8613699786538" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 flex items-center justify-center group"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 group-hover:ml-3 whitespace-nowrap font-bold text-sm">Chat with Andy</span>
+      </a>
+
       {/* Navigation */}
-      <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
+      <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-[60]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
           <div className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</div>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="text-black border-b-2 border-black py-1">Home</Link>
             <a href="#products" className="hover:text-black transition-colors">Products</a>
-            <a href="#about" className="hover:text-black transition-colors">Why Us</a>
+            <a href="#about" className="hover:text-black transition-colors">Factory</a>
             <a href="#process" className="hover:text-black transition-colors">Process</a>
             <a href="#reviews" className="hover:text-black transition-colors">Reviews</a>
-            <a href="#faq" className="hover:text-black transition-colors">FAQ</a>
-            <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
+            <Link href="/blog" className="hover:text-black transition-colors text-blue-600">Blog</Link>
           </div>
 
-          <div className="flex items-center space-x-6 shrink-0">
-            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
-              WhatsApp: +86 13699786538
-            </a>
-            <a href="#contact">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
-                GET A FREE QUOTE
+          <div className="flex items-center space-x-6">
+            <a href="#contact" className="hidden sm:block">
+              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all shadow-lg">
+                GET A QUOTE
               </button>
+            </a>
+            <a href="#contact" className="bg-blue-600 text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition-all shadow-lg">
+              SAMPLES
             </a>
           </div>
         </div>
@@ -167,423 +145,305 @@ const HomePage = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative pt-20 pb-32 overflow-hidden bg-gray-50">
+        <section className="relative pt-24 pb-40 overflow-hidden bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
             <div className="max-w-4xl">
-              <h1 className="text-6xl md:text-8xl font-black text-gray-900 leading-[1.0] mb-8 tracking-tighter">
-                Luxury Custom Packaging.<br/>
-                <span className="text-gray-400">Factory Direct Pricing.</span>
+              <h1 className="text-6xl md:text-9xl font-black text-gray-900 leading-[0.9] mb-10 tracking-tighter">
+                Premium Custom <br/>
+                <span className="text-blue-600">Packaging Boxes.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-500 mb-12 leading-relaxed max-w-3xl font-medium">
-                China's leading manufacturer of premium rigid gift boxes, magnetic boxes, and custom retail packaging. 
-                <span className="block mt-4 text-black font-black uppercase tracking-widest text-sm">MOQ 100pcs | 10-15 Day Lead Time | FSC-Certified</span>
+              <p className="text-xl md:text-2xl text-gray-500 mb-14 leading-relaxed max-w-2xl font-medium">
+                20+ years of factory-direct manufacturing. We help global brands create high-end unboxing experiences with luxury rigid magnetic boxes.
               </p>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
                 <a href="#contact">
-                  <button className="bg-black text-white px-12 py-6 rounded-full font-black text-lg hover:bg-gray-800 transition-all shadow-xl flex items-center justify-center group">
-                    GET YOUR QUOTE NOW
+                  <button className="bg-black text-white px-12 py-7 rounded-full font-black text-lg hover:bg-gray-800 transition-all shadow-2xl flex items-center justify-center group">
+                    START CUSTOMIZING
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </button>
                 </a>
-                <a href="#products">
-                  <button className="bg-white border-2 border-gray-200 text-gray-900 px-12 py-6 rounded-full font-black text-lg hover:border-black transition-all flex items-center justify-center">
-                    EXPLORE COLLECTIONS
-                  </button>
-                </a>
+                <div className="flex -space-x-3 items-center">
+                  {[1,2,3,4].map(i => (
+                    <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-gray-200">
+                      <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Customer" className="w-full h-full object-cover grayscale" />
+                    </div>
+                  ))}
+                  <div className="pl-6 text-[10px] font-black uppercase tracking-widest text-gray-400">
+                    Trusted by 800+ Global Brands
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-white clip-path-polygon hidden lg:block">
-            <img 
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-white clip-path-polygon hidden lg:block overflow-hidden">
+             <img 
               src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
               alt="Luxury Packaging" 
-              className="w-full h-full object-cover opacity-20 grayscale"
+              className="w-full h-full object-cover opacity-10 grayscale scale-110"
             />
           </div>
         </section>
 
-        {/* Benefits Grid */}
-        <section className="py-24 bg-white border-y border-gray-100">
+        {/* Core Expertise Grid */}
+        <section id="products" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="grid md:grid-cols-4 gap-12">
-              {benefits.map((benefit, i) => (
-                <div key={i}>
-                  <h4 className="text-lg font-black mb-4 uppercase tracking-tighter">{benefit.title}</h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">{benefit.desc}</p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-10">
+              <div className="max-w-2xl">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-8 uppercase leading-[1.0]">Premium B2B <br/>Manufacturing Experts.</h2>
+                <p className="text-gray-500 font-medium text-xl leading-relaxed">
+                  We bridge the gap between complex structural design and mass production, delivering perfection at every MOQ level.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                 <div className="bg-gray-50 px-8 py-6 rounded-2xl border border-gray-100">
+                   <p className="text-4xl font-black mb-1">Low MOQ</p>
+                   <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">100pcs Start</p>
+                 </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-12">
+              {categories.map((cat, i) => (
+                <div key={i} className="group relative">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gray-50 mb-10 border border-gray-100 transition-all hover:shadow-2xl">
+                    <img src={cat.image} alt={cat.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                    <div className="absolute top-8 left-8">
+                      <span className="bg-white/90 backdrop-blur-sm text-black px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm">
+                        {cat.tag}
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-3xl font-black mb-4 uppercase tracking-tighter">{cat.title}</h3>
+                  <p className="text-gray-400 font-medium leading-relaxed mb-8">{cat.desc}</p>
+                  <a href="#contact" className="inline-flex items-center text-black font-black text-sm uppercase tracking-widest group">
+                    <span className="border-b-2 border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600 transition-all">Get Specifications</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Product Collections */}
-        <section id="products" className="py-32 max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-20 text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Our Core Expertise</h2>
-            <p className="text-gray-500 font-medium text-lg">We specialize in high-end rigid construction that elevates your brand's unboxing experience.</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {categories.map((cat, i) => (
-              <div key={i} className="group cursor-pointer">
-                <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-50 mb-8 border border-gray-100 transition-all hover:shadow-xl">
-                  <img src={cat.image} alt={cat.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div className="absolute top-6 left-6">
-                    <span className="bg-black text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">
-                      {cat.tag}
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-2xl font-black mb-3">{cat.title}</h3>
-                <p className="text-gray-400 font-medium leading-relaxed mb-6">{cat.desc}</p>
-                <Link href={cat.link} className="text-black font-black text-sm border-b-2 border-black pb-1 hover:text-gray-400 hover:border-gray-400 transition">
-                  CUSTOMIZE THIS BOX →
-                </Link>
+        {/* Benefits Strip */}
+        <section className="py-24 bg-gray-900 text-white overflow-hidden relative">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-4 gap-16 relative z-10">
+            {benefits.map((benefit, i) => (
+              <div key={i}>
+                <h4 className="text-xs font-black mb-4 uppercase tracking-[0.3em] text-blue-500">{benefit.title}</h4>
+                <p className="text-gray-400 text-sm leading-relaxed">{benefit.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Factory Trust Section */}
-        <section id="about" className="bg-gray-900 py-32 text-white">
+        {/* Factory & Heritage */}
+        <section id="about" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-24 items-center">
+            <div className="grid lg:grid-cols-2 gap-32 items-center">
+              <div className="grid grid-cols-2 gap-6 relative">
+                 {factoryImages.map((img, i) => (
+                    <div key={i} className={`rounded-3xl overflow-hidden aspect-[3/4] ${i % 2 === 1 ? 'mt-12' : ''} group relative`}>
+                       <img src={img.url} alt={img.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                          <p className="text-white text-[10px] font-black uppercase tracking-widest leading-relaxed">{img.title}</p>
+                       </div>
+                    </div>
+                 ))}
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-2xl rotate-12">
+                    <p className="text-3xl font-black tracking-tighter">20Y+</p>
+                    <p className="text-[8px] font-black uppercase tracking-widest">Est. 2006</p>
+                 </div>
+              </div>
               <div>
-                <h2 className="text-5xl font-black mb-10 leading-[1.1] tracking-tighter uppercase italic">
-                  20 Years of <br/>Manufacturing <br/>Excellence.
-                </h2>
-                <div className="space-y-10">
-                  <div className="border-l-4 border-white pl-8 py-2">
-                    <h4 className="text-xl font-black mb-2 uppercase">Custom Engineering</h4>
-                    <p className="text-gray-400">Our structural designers work with your product to create the perfect fitment and unboxing sound.</p>
-                  </div>
-                  <div className="border-l-4 border-gray-700 pl-8 py-2">
-                    <h4 className="text-xl font-black mb-2 uppercase">Global Logistics</h4>
-                    <p className="text-gray-400">We handle the entire process from our China factory to your warehouse in the USA, UK, or EU.</p>
-                  </div>
-                  <div className="border-l-4 border-gray-700 pl-8 py-2">
-                    <h4 className="text-xl font-black mb-2 uppercase">Quality Control</h4>
-                    <p className="text-gray-400">Every single box undergoes rigorous inspection to ensure perfect magnetic alignment and surface finish.</p>
-                  </div>
+                <h2 className="text-5xl md:text-7xl font-black mb-12 tracking-tighter uppercase leading-[1.0]">Factory <br/>Direct <br/>Integrity.</h2>
+                <div className="space-y-12">
+                   {[
+                    { title: "Structural Integrity", desc: "Our engineers focus on the 'clunk' of the magnetic closure—a signature of luxury rigid box quality." },
+                    { title: "Eco-Transparency", desc: "100% Recyclable boards and FSC-Certified paper sourced from sustainable forests." },
+                    { title: "Final-Mile QC", desc: "A rigorous 3-stage inspection process before any box leaves our production floor." }
+                   ].map((item, i) => (
+                    <div key={i} className="flex gap-8 group">
+                       <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                          <span className="font-black text-xs">0{i+1}</span>
+                       </div>
+                       <div>
+                          <h4 className="text-xl font-black mb-2 uppercase tracking-tight">{item.title}</h4>
+                          <p className="text-gray-500 font-medium leading-relaxed">{item.desc}</p>
+                       </div>
+                    </div>
+                   ))}
                 </div>
-              </div>
-              <div className="relative aspect-[4/5] bg-gray-800 rounded-3xl overflow-hidden shadow-2xl group">
-                 <img 
-                   src="https://sc02.alicdn.com/kf/H57bd458a3907409da3a2ddd18a7e3991z.jpg" 
-                   className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
-                   alt="Side Packaging HK Limited Team"
-                 />
-                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent"></div>
-                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full text-center">
-                    <p className="text-6xl font-black tracking-tighter mb-2">800+</p>
-                    <p className="text-sm font-bold uppercase tracking-[0.4em]">Brands Trusted Us</p>
-                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Manufacturing Process */}
-        <section id="process" className="py-32 bg-gray-50 border-y border-gray-100">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Our Smooth Process</h2>
-              <p className="text-gray-500 font-medium text-lg max-w-2xl mx-auto">From initial concept to final delivery, we ensure every step is handled with professional care.</p>
-            </div>
-
-            <div className="grid md:grid-cols-4 gap-12">
-              {[
-                { step: "01", title: "Free Quote", desc: "Submit your requirements and get a detailed factory-direct quote within 24 hours." },
-                { step: "02", title: "Sampling", desc: "We provide digital mockups and physical samples to verify design and material quality." },
-                { step: "03", title: "Production", desc: "Bulk manufacturing starts with rigorous quality checks at every production stage." },
-                { step: "04", title: "Global Delivery", desc: "Final inspection, secure packaging, and door-to-door delivery to your warehouse." }
-              ].map((item, i) => (
-                <div key={i} className="relative group">
-                  <div className="text-6xl font-black text-gray-100 mb-6 group-hover:text-blue-600/10 transition-colors">{item.step}</div>
-                  <h4 className="text-xl font-black mb-4 uppercase tracking-tighter">{item.title}</h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                  {i < 3 && (
-                    <div className="hidden lg:block absolute top-10 -right-6 w-12 h-[1px] bg-gray-200"></div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Global Reach Section */}
+        <section className="py-32 bg-gray-50 border-y border-gray-100">
+           <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+              <h2 className="text-3xl md:text-5xl font-black mb-16 tracking-tighter uppercase">Serving 50+ Countries Worldwide</h2>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-10 opacity-30 grayscale items-center">
+                 {/* Placeholders for partner logos */}
+                 <div className="font-black text-2xl tracking-tighter italic">USA MARKET</div>
+                 <div className="font-black text-2xl tracking-tighter italic">EUROPE MARKET</div>
+                 <div className="font-black text-2xl tracking-tighter italic">UK BRANDS</div>
+                 <div className="font-black text-2xl tracking-tighter italic">AUSTRALIA</div>
+                 <div className="font-black text-2xl tracking-tighter italic">CANADA</div>
+              </div>
+           </div>
         </section>
 
-        {/* Factory Gallery Section */}
-        <section className="py-32 bg-white">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-20 items-end mb-20">
-              <div>
-                <h2 className="text-5xl font-black tracking-tighter uppercase mb-8 leading-[1.1]">Inside Our <br/>Manufacturing Facility</h2>
-                <p className="text-xl text-gray-500 font-medium leading-relaxed max-w-xl">
-                  Step into our 5,000 sqm production floor where cutting-edge technology meets hand-finished craftsmanship.
+        {/* Conversion / Contact Form */}
+        <section id="contact" className="py-40 bg-white">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid lg:grid-cols-5 gap-20">
+              <div className="lg:col-span-2">
+                <h2 className="text-5xl font-black mb-10 tracking-tighter uppercase leading-[1.0]">Start Your <br/>Project.</h2>
+                <p className="text-gray-500 font-medium text-lg leading-relaxed mb-12">
+                  Ready to elevate your unboxing experience? Select your request type and Andy will provide a factory-direct solution within 24 hours.
                 </p>
+                <div className="space-y-8">
+                   <div className="flex items-center gap-6 group">
+                      <div className="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-all">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                      </div>
+                      <a href="https://wa.me/8613699786538" className="text-sm font-black uppercase tracking-widest border-b-2 border-transparent hover:border-green-500 transition-all">WhatsApp Response <br/> <span className="text-[10px] text-gray-400 font-bold">Fastest Response</span></a>
+                   </div>
+                   <div className="flex items-center gap-6 group">
+                      <div className="w-14 h-14 bg-gray-50 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                      </div>
+                      <a href="mailto:andy@saidepackaging.com" className="text-sm font-black uppercase tracking-widest border-b-2 border-transparent hover:border-black transition-all">andy@saidepackaging.com <br/> <span className="text-[10px] text-gray-400 font-bold">24h Email Support</span></a>
+                   </div>
+                </div>
               </div>
-              <div className="flex gap-4">
-                 <div className="bg-gray-50 px-10 py-8 rounded-3xl border border-gray-100">
-                    <p className="text-4xl font-black mb-1 tracking-tighter">5K+</p>
-                    <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Square Meters</p>
-                 </div>
-                 <div className="bg-gray-50 px-10 py-8 rounded-3xl border border-gray-100">
-                    <p className="text-4xl font-black mb-1 tracking-tighter">200+</p>
-                    <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Skilled Workers</p>
-                 </div>
-              </div>
-            </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {factoryImages.map((img, i) => (
-                <div key={i} className="group relative aspect-[3/4] overflow-hidden rounded-[2.5rem] bg-gray-100 shadow-sm hover:shadow-2xl transition-all duration-700">
-                  <img src={img.url} alt={img.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-                    <p className="text-white font-black text-sm uppercase tracking-widest">{img.title}</p>
+              <div className="lg:col-span-3">
+                <form onSubmit={handleSubmit} className="bg-gray-50 p-10 md:p-16 rounded-[3rem] border border-gray-100 shadow-xl">
+                  <div className="flex gap-4 mb-10">
+                     {['Quote', 'Sample', 'Rush'].map(type => (
+                        <button 
+                          key={type}
+                          type="button"
+                          onClick={() => setFormData({...formData, type})}
+                          className={`flex-1 py-3 rounded-full text-[10px] font-black uppercase tracking-widest transition-all ${formData.type === type ? 'bg-black text-white shadow-lg scale-105' : 'bg-white text-gray-400 border border-gray-100 hover:border-black hover:text-black'}`}
+                        >
+                          {type === 'Rush' ? '⚡ Rush Order' : type === 'Sample' ? '📦 Sample Request' : '💰 Free Quote'}
+                        </button>
+                     ))}
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        {/* Reviews Section */}
-        <section id="reviews" className="py-32 bg-gray-50 border-t border-gray-100">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Customer Reviews</h2>
-              <div className="flex justify-center items-center space-x-2 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+                  <div className="grid md:grid-cols-2 gap-8 mb-8">
+                    <input 
+                      type="text" 
+                      required
+                      className="w-full px-8 py-5 rounded-2xl bg-white border-transparent focus:ring-2 focus:ring-blue-600 transition shadow-sm"
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    />
+                    <input 
+                      type="email" 
+                      required
+                      className="w-full px-8 py-5 rounded-2xl bg-white border-transparent focus:ring-2 focus:ring-blue-600 transition shadow-sm"
+                      placeholder="Work Email"
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    />
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-8 mb-8">
+                    <input 
+                      type="text" 
+                      className="w-full px-8 py-5 rounded-2xl bg-white border-transparent focus:ring-2 focus:ring-blue-600 transition shadow-sm"
+                      placeholder="WhatsApp / Phone"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
+                    <input 
+                      type="text" 
+                      className="w-full px-8 py-5 rounded-2xl bg-white border-transparent focus:ring-2 focus:ring-blue-600 transition shadow-sm"
+                      placeholder="Estimated Quantity (e.g. 500pcs)"
+                      value={formData.quantity}
+                      onChange={(e) => setFormData({...formData, quantity: e.target.value})}
+                    />
+                  </div>
+
+                  <div className="mb-10">
+                    <textarea 
+                      rows={5}
+                      className="w-full px-8 py-6 rounded-3xl bg-white border-transparent focus:ring-2 focus:ring-blue-600 transition shadow-sm resize-none"
+                      placeholder="Tell us about your box project (Size, Style, Printing needs)..."
+                      value={formData.message}
+                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" className="w-full bg-blue-600 text-white py-6 rounded-full font-black text-xl hover:bg-blue-700 transition-all shadow-xl uppercase tracking-widest transform hover:-translate-y-1">
+                    SUBMIT {formData.type.toUpperCase()} REQUEST
+                  </button>
+                  <p className="mt-8 text-center text-[10px] font-black uppercase tracking-widest text-gray-300">Fast Response Guaranteed within 24 Hours</p>
+                </form>
               </div>
-              <p className="text-gray-500 font-medium text-lg">Trusted by hundreds of premium brands worldwide.</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
-                <div className="flex text-yellow-400 mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  ))}
-                </div>
-                <p className="text-gray-600 font-medium italic mb-8 leading-relaxed">
-                  "The magnetic closure boxes we ordered are absolutely stunning. The quality of the rigid board and the strength of the magnets exceeded our expectations. Our customers love the premium feel!"
-                </p>
-                <div>
-                  <p className="font-black text-sm uppercase">Sarah J.</p>
-                  <p className="text-xs text-gray-400 uppercase font-bold tracking-widest">Luxury Beauty Brand, USA</p>
-                </div>
-              </div>
-
-              <div className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
-                <div className="flex text-yellow-400 mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  ))}
-                </div>
-                <p className="text-gray-600 font-medium italic mb-8 leading-relaxed">
-                  "Working with Side Packaging was a breeze. Andy was very responsive and helped us with the structural design. The lead times were fast, and the factory-direct pricing saved us a lot of money."
-                </p>
-                <div>
-                  <p className="font-black text-sm uppercase">Michael R.</p>
-                  <p className="text-xs text-gray-400 uppercase font-bold tracking-widest">E-commerce Founder, UK</p>
-                </div>
-              </div>
-
-              <div className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all">
-                <div className="flex text-yellow-400 mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  ))}
-                </div>
-                <p className="text-gray-600 font-medium italic mb-8 leading-relaxed">
-                  "The FSC certification was a huge selling point for us. It's great to find a manufacturer that cares about sustainability as much as we do. High quality and eco-friendly!"
-                </p>
-                <div>
-                  <p className="font-black text-sm uppercase">Emma L.</p>
-                  <p className="text-xs text-gray-400 uppercase font-bold tracking-widest">Product Manager, France</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section id="faq" className="py-32 bg-white border-t border-gray-100">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase">Frequently Asked Questions</h2>
-              <p className="text-gray-500 font-medium text-lg">Quick answers to common inquiries about our custom packaging services.</p>
-            </div>
-
-            <div className="space-y-6">
-              {[
-                {
-                  q: "What is your minimum order quantity (MOQ)?",
-                  a: "Our standard MOQ for custom printed magnetic and rigid gift boxes starts at just 100 units, making luxury packaging accessible for brands of all sizes."
-                },
-                {
-                  q: "How long is the production lead time?",
-                  a: "Once the artwork is approved, production typically takes 10-15 business days. Shipping times vary by location and method (Air vs Sea)."
-                },
-                {
-                  q: "Do you offer worldwide shipping?",
-                  a: "Yes, we ship globally. We provide door-to-door delivery including DDP options for the USA, Canada, UK, and European Union."
-                },
-                {
-                  q: "Can I get a custom sample before the bulk order?",
-                  a: "Absolutely. We recommend a pre-production sample to verify the structure, materials, and printing quality before proceeding with the full production run."
-                },
-                {
-                  q: "Are your packaging materials eco-friendly?",
-                  a: "We are committed to sustainability. We offer FSC-certified paper, recycled gray board, and soy-based inks to ensure your packaging is environmentally responsible."
-                }
-              ].map((item, i) => (
-                <div key={i} className="bg-gray-50 p-8 md:p-10 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                  <h3 className="text-xl font-black mb-4 uppercase tracking-tight">{item.q}</h3>
-                  <p className="text-gray-500 font-medium leading-relaxed">{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Form Section */}
-        <section id="contact" className="py-32 bg-gray-50 border-t border-gray-100">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-5xl font-black mb-6 tracking-tighter uppercase">Request A Free Quote</h2>
-              <p className="text-gray-500 font-medium text-lg">Send us your project details and Andy will provide a factory-direct quote within 24 hours.</p>
-            </div>
-            
-            <form onSubmit={handleSubmit} className="bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl border border-gray-100">
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Full Name</label>
-                  <input 
-                    type="text" 
-                    required
-                    className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black transition"
-                    placeholder="John Doe"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Work Email</label>
-                  <input 
-                    type="email" 
-                    required
-                    className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black transition"
-                    placeholder="john@company.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  />
-                </div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">WhatsApp / Phone</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black transition"
-                    placeholder="+1 234 567 890"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                  />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Estimated Quantity</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black transition"
-                    placeholder="e.g. 500 pcs"
-                    value={formData.quantity}
-                    onChange={(e) => setFormData({...formData, quantity: e.target.value})}
-                  />
-                </div>
-              </div>
-
-              <div className="mb-10">
-                <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Project Details (Size, Style, Printing)</label>
-                <textarea 
-                  rows={4}
-                  className="w-full px-6 py-4 rounded-3xl bg-gray-50 border-none focus:ring-2 focus:ring-black transition resize-none"
-                  placeholder="Tell us about your box requirements..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({...formData, message: e.target.value})}
-                ></textarea>
-              </div>
-
-              <button type="submit" className="w-full bg-black text-white py-6 rounded-full font-black text-xl hover:bg-gray-800 transition shadow-xl uppercase tracking-widest">
-                SEND QUOTE REQUEST
-              </button>
-            </form>
-
-            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-10 opacity-50">
-               <div className="flex items-center gap-2">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                  <span className="text-xs font-bold uppercase tracking-widest">Free Consultation</span>
-               </div>
-               <div className="flex items-center gap-2">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                  <span className="text-xs font-bold uppercase tracking-widest">Factory Direct Price</span>
-               </div>
-               <div className="flex items-center gap-2">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                  <span className="text-xs font-bold uppercase tracking-widest">Worldwide Shipping</span>
-               </div>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <footer className="bg-gray-900 text-white py-32 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-20">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase">SIDE PACKAGING</div>
-            <p className="text-gray-400 max-w-sm font-medium leading-relaxed">
-              Premium manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. China-based factory direct excellence.
-            </p>
+            <div className="font-black text-4xl tracking-tighter mb-10 uppercase italic">SIDE PACKAGING</div>
+            <div className="space-y-6 text-gray-400 font-medium">
+               <p className="max-w-md leading-relaxed">
+                20+ years of excellence in manufacturing luxury magnetic closure boxes, mailers, and custom retail packaging solutions.
+               </p>
+               <div className="pt-6 space-y-4">
+                  <p className="text-white font-black text-[10px] uppercase tracking-widest">Office</p>
+                  <p className="text-xs">Room 1501, 15/F, SPA Centre, 53-55 Lockhart Road, Wanchai, Hong Kong</p>
+                  <p className="text-white font-black text-[10px] uppercase tracking-widest pt-4">Manufacturing Facility</p>
+                  <p className="text-xs">No. 28, Industrial Second Road, Dongguan, Guangdong, China</p>
+               </div>
+            </div>
           </div>
           <div>
-            <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Navigation</h4>
-            <ul className="space-y-4 text-sm font-bold text-gray-500">
-              <li><Link href="/" className="hover:text-black">Home</Link></li>
-              <li><a href="#products" className="hover:text-black">Products</a></li>
-              <li><a href="#about" className="hover:text-black">About Our Factory</a></li>
-              <li><a href="#contact" className="hover:text-black">Request Quote</a></li>
-              <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
+            <h4 className="font-black mb-10 uppercase tracking-widest text-[10px] text-gray-500">Quick Links</h4>
+            <ul className="space-y-6 text-xs font-black uppercase tracking-widest">
+              <li><Link href="/" className="hover:text-blue-500 transition-colors">Home</Link></li>
+              <li><a href="#products" className="hover:text-blue-500 transition-colors">Products</a></li>
+              <li><a href="#about" className="hover:text-blue-500 transition-colors">Factory</a></li>
+              <li><Link href="/blog" className="hover:text-blue-500 transition-colors">Industry Blog</Link></li>
+              <li><a href="https://sidehk.m.en.alibaba.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500">Alibaba Official Store</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Contact Andy</h4>
-            <ul className="space-y-4 text-sm font-bold text-gray-500">
-              <li><a href="mailto:andy@saidepackaging.com" className="hover:text-black transition-colors">andy@saidepackaging.com</a></li>
-              <li><a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-green-500 transition-colors group">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                WhatsApp Chat
-              </a></li>
-              <li><a href="https://sidehk.m.en.alibaba.com/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors underline underline-offset-4">Alibaba Official Store</a></li>
-              <li>Side Packaging HK Limited</li>
-            </ul>
+            <h4 className="font-black mb-10 uppercase tracking-widest text-[10px] text-gray-500">Follow Our Craft</h4>
+            <div className="flex gap-6">
+               <a href="https://www.instagram.com/sidepackaging" className="w-12 h-12 rounded-2xl bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-all">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.31.259-3.14.582-.87.338-1.603.789-2.333 1.519-.73.73-1.18 1.463-1.519 2.333-.323.83-.525 1.863-.582 3.14-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.057 1.277.259 2.31.582 3.14.338.87.789 1.603 1.519 2.333.73.73 1.463 1.18 2.333 1.519.83.323 1.863.525 3.14.582 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.277-.057 2.31-.259 3.14-.582.87-.338 1.603-.789 2.333-1.519.73-.73 1.18-1.463 1.519-2.333.323-.83.525-1.863.582-3.14.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.057-1.277-.259-2.31-.582-3.14-.338-.87-.789-1.603-1.519-2.333-.73-.73-1.463-1.18-2.333-1.519-.83-.323-1.863-.525-3.14-.582-1.28-.058-1.688-.072-4.947-.072zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+               </a>
+               <a href="#" className="w-12 h-12 rounded-2xl bg-gray-800 flex items-center justify-center hover:bg-blue-700 transition-all">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+               </a>
+               <a href="#" className="w-12 h-12 rounded-2xl bg-gray-800 flex items-center justify-center hover:bg-black transition-all border border-gray-700">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.25h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+               </a>
+            </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-20 pt-8 border-t flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-widest text-gray-300 gap-4">
+        <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-widest text-gray-500 gap-4">
           <p>&copy; 2026 Side Packaging HK Limited. All rights Reserved.</p>
           <div className="flex space-x-8">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-            <a href="#">Shipping Info</a>
+            <a href="#">FSC Compliance</a>
           </div>
         </div>
       </footer>
