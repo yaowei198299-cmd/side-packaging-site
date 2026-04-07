@@ -34,7 +34,7 @@ const BlogIndex = () => {
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
-            <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
+            <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
             <Link href="/#about" className="hover:text-black transition-colors">Why Us</Link>
             <Link href="/#process" className="hover:text-black transition-colors">Process</Link>
             <Link href="/#reviews" className="hover:text-black transition-colors">Reviews</Link>
@@ -105,7 +105,7 @@ const BlogIndex = () => {
             <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Navigation</h4>
             <ul className="space-y-4 text-sm font-bold text-gray-500">
               <li><Link href="/" className="hover:text-black">Home</Link></li>
-              <li><Link href="/products/custom-magnetic-box" className="hover:text-black">Products</Link></li>
+              <li><Link href="/#products" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
               <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
             </ul>

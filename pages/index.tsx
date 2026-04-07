@@ -23,7 +23,7 @@ const HomePage = () => {
       title: "Magnetic Gift Boxes",
       desc: "Premium rigid boxes with hidden magnetic closures. Perfect for luxury retail.",
       image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png",
-      link: "/products/custom-magnetic-box",
+      link: "#contact",
       tag: "Best Seller"
     },
     {
@@ -61,6 +61,7 @@ const HomePage = () => {
       <Head>
         <title>Side Packaging HK Limited | Custom Gift Box Manufacturer China — Luxury Packaging Factory Direct</title>
         <meta name="description" content="Side Packaging HK Limited — China's #1 B2B manufacturer of premium rigid gift boxes, magnetic boxes & custom luxury packaging. MOQ 100pcs, 10-15 day lead time. Factory direct pricing." />
+        <meta name="google-site-verification" content="1M4JeciyH92CxblYUEVd-CyORMJY4u6zAsot5l8ztJs" />
         <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
@@ -69,6 +70,9 @@ const HomePage = () => {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Side Packaging HK Limited",
+              "alternateName": "Side Packaging",
+              "description": "Premium B2B manufacturer of luxury rigid gift boxes, magnetic closure boxes, and custom retail packaging with 20+ years of factory-direct experience.",
+              "foundingDate": "2006",
               "url": "https://saidepackaging.com",
               "logo": "https://saidepackaging.com/logo.png",
               "contactPoint": {
@@ -78,6 +82,9 @@ const HomePage = () => {
                 "email": "andy@saidepackaging.com",
                 "availableLanguage": ["en", "zh"]
               },
+              "areaServed": ["US", "GB", "CA", "AU", "FR", "DE"],
+              "knowsAbout": ["Custom Packaging", "Rigid Box Manufacturing", "Luxury Retail Packaging", "Sustainability", "FSC-Certified Materials"],
+              "hasCertification": ["FSC", "BSCI", "ISO 9001"],
               "image": [
                 "https://sc02.alicdn.com/kf/H57bd458a3907409da3a2ddd18a7e3991z.jpg",
                 "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg",
@@ -91,6 +98,12 @@ const HomePage = () => {
                 "@type": "PostalAddress",
                 "addressLocality": "Hong Kong",
                 "addressCountry": "HK"
+              },
+              "brand": {
+                "@type": "Brand",
+                "name": "Side Packaging",
+                "slogan": "Factory-Direct Luxury Packaging Excellence",
+                "logo": "https://saidepackaging.com/logo.png"
               }
             })
           }}
@@ -131,7 +144,7 @@ const HomePage = () => {
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="text-black border-b-2 border-black py-1">Home</Link>
-            <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
+            <a href="#products" className="hover:text-black transition-colors">Products</a>
             <a href="#about" className="hover:text-black transition-colors">Why Us</a>
             <a href="#process" className="hover:text-black transition-colors">Process</a>
             <a href="#reviews" className="hover:text-black transition-colors">Reviews</a>
@@ -544,7 +557,7 @@ const HomePage = () => {
             <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Navigation</h4>
             <ul className="space-y-4 text-sm font-bold text-gray-500">
               <li><Link href="/" className="hover:text-black">Home</Link></li>
-              <li><Link href="/products/custom-magnetic-box" className="hover:text-black">Products</Link></li>
+              <li><a href="#products" className="hover:text-black">Products</a></li>
               <li><a href="#about" className="hover:text-black">About Our Factory</a></li>
               <li><a href="#contact" className="hover:text-black">Request Quote</a></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>

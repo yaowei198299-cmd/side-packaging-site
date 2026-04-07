@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ThreeBoxViewer from './ThreeBoxViewer';
 import { createCartWithCustomAttributes } from '../lib/shopify_client';
 
 const PriceCalculator = ({ variantId }: { variantId: string }) => {
@@ -75,45 +74,31 @@ const PriceCalculator = ({ variantId }: { variantId: string }) => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto p-6">
-      {/* Left: 3D Preview */}
-      <div className="flex-1">
-        <h2 className="text-2xl font-bold mb-4">3D Design Preview</h2>
-        <ThreeBoxViewer 
-          width={length} 
-          height={height} 
-          depth={width} 
-          color={materials[material].color} 
-        />
-        <div className="mt-4 p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
-          <p>Rotate the box to see all angles. Dimensions update the 3D model in real-time.</p>
-        </div>
-      </div>
-
-      {/* Right: Configurator */}
-      <div className="w-full lg:w-[450px] space-y-6">
-        <div className="p-6 bg-white shadow-xl rounded-xl border border-gray-100">
-          <h3 className="text-xl font-bold mb-6 text-gray-800 border-b pb-4">Configure Your Box</h3>
+    <div className="max-w-4xl mx-auto p-6">
+      {/* Configurator */}
+      <div className="w-full space-y-6">
+        <div className="p-10 md:p-16 bg-white shadow-2xl rounded-[3rem] border border-gray-100">
+          <h3 className="text-3xl font-black mb-10 text-gray-900 border-b pb-6 uppercase tracking-tighter">Instant Price Calculator</h3>
           
-          <div className="grid grid-cols-3 gap-3 mb-6">
+          <div className="grid grid-cols-3 gap-6 mb-8">
             <div>
-              <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Length (cm)</label>
-              <input type="number" value={length} onChange={(e) => setLength(Number(e.target.value))} className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+              <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Length (cm)</label>
+              <input type="number" value={length} onChange={(e) => setLength(Number(e.target.value))} className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black outline-none transition" />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Width (cm)</label>
-              <input type="number" value={width} onChange={(e) => setWidth(Number(e.target.value))} className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+              <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Width (cm)</label>
+              <input type="number" value={width} onChange={(e) => setWidth(Number(e.target.value))} className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black outline-none transition" />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Height (cm)</label>
-              <input type="number" value={height} onChange={(e) => setHeight(Number(e.target.value))} className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+              <label className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Height (cm)</label>
+              <input type="number" value={height} onChange={(e) => setHeight(Number(e.target.value))} className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black outline-none transition" />
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <label className="block text-sm font-medium mb-1">Material</label>
-              <select value={material} onChange={(e) => setMaterial(e.target.value)} className="w-full p-2.5 border rounded-lg appearance-none bg-white">
+              <label className="block text-sm font-bold mb-3 uppercase tracking-widest text-xs text-gray-400">Material Selection</label>
+              <select value={material} onChange={(e) => setMaterial(e.target.value)} className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black appearance-none font-bold">
                 {Object.entries(materials).map(([key, value]) => (
                   <option key={key} value={key}>{value.label}</option>
                 ))}
@@ -121,52 +106,56 @@ const PriceCalculator = ({ variantId }: { variantId: string }) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Finish</label>
+              <label className="block text-sm font-bold mb-3 uppercase tracking-widest text-xs text-gray-400">Surface Finish</label>
               <div className="grid grid-cols-3 gap-2">
                 {['matte', 'glossy', 'foil'].map(f => (
                   <button 
                     key={f}
                     onClick={() => setFinish(f)}
-                    className={`py-2 text-sm rounded-lg border transition-all ${finish === f ? 'bg-blue-600 border-blue-600 text-white font-bold' : 'bg-gray-50 border-gray-200 text-gray-600 hover:border-blue-400'}`}
+                    className={`py-3 text-[10px] font-black uppercase tracking-widest rounded-xl border transition-all ${finish === f ? 'bg-black border-black text-white' : 'bg-gray-50 border-gray-100 text-gray-400 hover:border-black'}`}
                   >
-                    {f.charAt(0).toUpperCase() + f.slice(1)}
+                    {f}
                   </button>
                 ))}
               </div>
             </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-1">Order Quantity</label>
-              <div className="relative">
-                <input 
-                  type="number" 
-                  value={quantity} 
-                  onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
-                  className="w-full p-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-                />
-                <span className="absolute right-3 top-2.5 text-gray-400 text-sm">units</span>
-              </div>
-              <p className="text-[10px] text-gray-400 mt-1">MOQ: 100 units. Better pricing at 500, 1000+.</p>
-            </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t">
-            <div className="flex justify-between items-baseline mb-4">
-              <div className="text-gray-500">
-                <p className="text-xs uppercase font-bold tracking-widest">Estimated Total</p>
-                <p className="text-sm">(${ (totalPrice/quantity).toFixed(2) } per unit)</p>
+          <div className="mb-10">
+            <label className="block text-sm font-bold mb-3 uppercase tracking-widest text-xs text-gray-400">Order Quantity</label>
+            <div className="relative">
+              <input 
+                type="number" 
+                value={quantity} 
+                onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+                className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-black outline-none font-bold text-xl"
+              />
+              <span className="absolute right-6 top-4 text-gray-400 font-black uppercase tracking-widest text-[10px]">units</span>
+            </div>
+            <p className="text-[10px] text-gray-400 mt-3 font-bold uppercase tracking-widest">MOQ: 100 units. Bulk discounts applied automatically at 500, 1000, 5000 units.</p>
+          </div>
+
+          <div className="mt-12 pt-10 border-t border-dashed">
+            <div className="flex justify-between items-end mb-8">
+              <div>
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-2">Estimated Investment</p>
+                <p className="text-sm font-bold text-gray-400">(${ (totalPrice/quantity).toFixed(2) } per unit factory direct)</p>
               </div>
-              <p className="text-3xl font-black text-blue-600">${totalPrice.toLocaleString()}</p>
+              <p className="text-5xl font-black text-black tracking-tighter">${totalPrice.toLocaleString()}</p>
             </div>
             
             <button 
               onClick={handleAddToCart}
               disabled={isAdding}
-              className={`w-full py-4 rounded-xl font-bold text-lg shadow-lg transform active:scale-95 transition-all ${isAdding ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}
+              className={`w-full py-6 rounded-full font-black text-xl shadow-2xl transform active:scale-[0.98] transition-all uppercase tracking-widest ${isAdding ? 'bg-gray-200 cursor-not-allowed text-gray-400' : 'bg-black hover:bg-gray-800 text-white'}`}
             >
-              {isAdding ? 'Connecting to Store...' : 'Confirm Design & Order'}
+              {isAdding ? 'Connecting...' : 'Secure Order via Shopify'}
             </button>
-            <p className="text-center text-[10px] text-gray-400 mt-3 uppercase tracking-tighter">Secure checkout via Shopify API</p>
+            <div className="mt-6 flex items-center justify-center space-x-4 opacity-30">
+               <span className="text-[8px] font-black uppercase tracking-[0.3em]">SSL SECURE</span>
+               <span className="text-[8px] font-black uppercase tracking-[0.3em]">SHOPIFY API</span>
+               <span className="text-[8px] font-black uppercase tracking-[0.3em]">GLOBAL SHIPPING</span>
+            </div>
           </div>
         </div>
       </div>

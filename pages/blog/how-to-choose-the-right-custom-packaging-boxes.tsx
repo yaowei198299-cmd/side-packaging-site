@@ -17,7 +17,7 @@ const BlogPost = () => {
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
-            <Link href="/products/custom-magnetic-box" className="hover:text-black transition-colors">Products</Link>
+            <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
             <Link href="/#about" className="hover:text-black transition-colors">Why Us</Link>
             <Link href="/#process" className="hover:text-black transition-colors">Process</Link>
             <Link href="/#reviews" className="hover:text-black transition-colors">Reviews</Link>
