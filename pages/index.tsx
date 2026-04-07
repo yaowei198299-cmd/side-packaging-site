@@ -23,7 +23,7 @@ const HomePage = () => {
       title: "Custom Magnetic Gift Boxes",
       desc: "Luxury rigid boxes with hidden magnetic closures. High-end finish for premium retail brands.",
       image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png",
-      link: "#contact",
+      link: "/products/custom-magnetic-gift-boxes",
       tag: "Best Seller"
     },
     {
