@@ -14,6 +14,14 @@ const HomePage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // track event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'form_submission', {
+        'event_category': 'Engagement',
+        'event_label': formData.type,
+        'value': formData.quantity
+      });
+    }
     alert(`Thank you for your ${formData.type} request! Andy will contact you via WhatsApp/Email shortly.`);
     setFormData({ name: '', email: '', phone: '', message: '', quantity: '', type: 'Quote' });
   };
@@ -103,6 +111,17 @@ const HomePage = () => {
               "knowsAbout": ["Custom Packaging", "Rigid Box Manufacturing", "Luxury Retail Packaging", "Sustainability", "FSC-Certified Materials"],
               "hasCertification": ["FSC", "BSCI", "ISO 9001"]
             })
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX'); // Placeholder GA4 ID
+            `,
           }}
         />
       </Head>
@@ -277,6 +296,23 @@ const HomePage = () => {
         {/* Factory Heritage */}
         <section id="factory" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6">
+            <div className="mb-24 text-center max-w-4xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Factory Integrity & <br/>Global Standards.</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mt-16 border-y border-gray-100 py-16">
+                 {[
+                   { label: "Production Space", value: "20,000m²+" },
+                   { label: "Daily Capacity", value: "15,000+ Boxes" },
+                   { label: "Skilled Artisans", value: "200+" },
+                   { label: "Export Markets", value: "45+ Countries" }
+                 ].map((stat, i) => (
+                   <div key={i}>
+                      <p className="text-4xl font-black tracking-tighter mb-2">{stat.value}</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">{stat.label}</p>
+                   </div>
+                 ))}
+              </div>
+            </div>
+
             <div className="grid lg:grid-cols-2 gap-24 items-center">
               <div>
                 <div className="grid grid-cols-2 gap-4">
@@ -409,6 +445,27 @@ const HomePage = () => {
           </div>
         </section>
       </main>
+
+      {/* Sticky Quick Inquiry Button */}
+      <div className="fixed bottom-10 right-10 z-[100] flex flex-col items-end gap-4">
+        <a 
+          href="https://wa.me/8613699786538" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center gap-3 font-bold text-sm"
+        >
+          <span className="hidden md:inline pl-2 uppercase tracking-widest text-[10px]">Chat on WhatsApp</span>
+          <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+            <div className="w-3 h-3 bg-[#25D366] rounded-full"></div>
+          </div>
+        </a>
+        <a 
+          href="#contact"
+          className="bg-black text-white px-8 py-5 rounded-full shadow-2xl hover:scale-110 transition-transform font-black text-[10px] uppercase tracking-widest"
+        >
+          Quick Inquiry
+        </a>
+      </div>
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100 py-32 px-6">

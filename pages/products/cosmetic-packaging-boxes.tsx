@@ -273,6 +273,18 @@ const CosmeticPackagingBoxesPage = () => {
           </div>
         </section>
 
+        {/* Pricing Calculator Section */}
+        <section id="quote" className="py-24 bg-gray-50 rounded-[4rem] border border-gray-100 overflow-hidden text-center">
+           <div className="max-w-4xl mx-auto px-6 mb-16">
+              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Configure Your <br/>Cosmetic Box.</h2>
+              <p className="text-gray-500 font-medium text-lg leading-relaxed">
+                Get an instant estimate for your premium cosmetic packaging. For custom inserts or special high-volume requirements, contact our design team.
+              </p>
+           </div>
+           <PriceCalculator variantId={productData.variantId} />
+           <p className="text-center text-xs text-gray-300 font-bold uppercase tracking-[0.2em] mt-10">Prices based on CIF/DDP shipping estimates. Final quote may vary.</p>
+        </section>
+
         {/* Final CTA */}
         <section className="bg-gray-50 rounded-[40px] p-12 md:p-20 text-center border border-gray-100">
           <div className="max-w-3xl mx-auto">

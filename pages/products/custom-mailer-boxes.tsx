@@ -273,6 +273,18 @@ const CustomMailerBoxesPage = () => {
           </div>
         </section>
 
+        {/* Pricing Calculator Section */}
+        <section id="quote" className="py-24 bg-gray-50 rounded-[4rem] border border-gray-100 overflow-hidden">
+           <div className="max-w-4xl mx-auto px-6 text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Configure Your <br/>Mailer Box.</h2>
+              <p className="text-gray-500 font-medium text-lg leading-relaxed">
+                Get an instant estimate for your custom mailer boxes based on factory-direct pricing. For quantities over 5,000, contact us for a special high-volume rate.
+              </p>
+           </div>
+           <PriceCalculator variantId={productData.variantId} />
+           <p className="text-center text-xs text-gray-300 font-bold uppercase tracking-[0.2em] mt-10">Prices based on CIF/DDP shipping estimates. Final quote may vary.</p>
+        </section>
+
         {/* Final CTA */}
         <section className="bg-gray-50 rounded-[40px] p-12 md:p-20 text-center border border-gray-100">
           <div className="max-w-3xl mx-auto">

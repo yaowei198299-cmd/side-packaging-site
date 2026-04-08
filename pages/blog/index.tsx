@@ -5,6 +5,13 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Global Shipping Guide: How to Import Custom Packaging from China to USA & Europe",
+      date: "April 7, 2026",
+      excerpt: "Master the complexities of importing packaging from China. Learn about DDP shipping, ocean freight vs air express, and how to reduce your custom box shipping costs.",
+      slug: "global-shipping-guide-importing-packaging-from-china",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000"
+    },
+    {
       title: "How to Choose the Right Custom Packaging Boxes for Your Business",
       date: "April 4, 2026",
       excerpt: "Selecting the perfect packaging box is crucial for brand identity and product safety. Learn the key factors to consider when choosing between magnetic boxes, mailers, and rigid boxes.",

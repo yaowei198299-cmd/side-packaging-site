@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import PriceCalculator from '../../components/PriceCalculator';
 
 const ProductPage = () => {
   return (
@@ -9,6 +10,35 @@ const ProductPage = () => {
         <title>Custom Magnetic Gift Boxes | Luxury Rigid Box Manufacturer China | Side Packaging</title>
         <meta name="description" content="Premium custom magnetic gift boxes from Side Packaging HK. 20+ years of manufacturing luxury rigid packaging. FSC certified, Low MOQ 100pcs. Factory direct pricing." />
         <meta name="keywords" content="custom magnetic gift boxes China, luxury rigid box manufacturer, FSC certified packaging, Low MOQ 100pcs, wholesale magnetic boxes" />
+        
+        {/* Product Schema (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              "name": "Custom Magnetic Gift Boxes",
+              "image": [
+                "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+              ],
+              "description": "Premium luxury rigid boxes with hidden magnetic closures. Custom sizes, materials, and finishes available factory-direct from China.",
+              "sku": "SIDE-MAG-001",
+              "brand": {
+                "@type": "Brand",
+                "name": "Side Packaging"
+              },
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "USD",
+                "lowPrice": "0.85",
+                "highPrice": "4.50",
+                "offerCount": "100",
+                "availability": "https://schema.org/InStock"
+              }
+            })
+          }}
+        />
       </Head>
 
       {/* Navigation */}
@@ -163,6 +193,18 @@ const ProductPage = () => {
                 <p className="text-base">Absolutely. We are an FSC-certified factory and offer 100% recyclable greyboard and soy-based printing inks.</p>
               </div>
             </div>
+          </section>
+
+          {/* Pricing Calculator Section */}
+          <section id="quote" className="mb-24 py-24 bg-gray-50 rounded-[4rem] border border-gray-100 overflow-hidden text-center">
+             <div className="max-w-4xl mx-auto px-6 mb-16">
+                <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Configure Your <br/>Magnetic Box.</h2>
+                <p className="text-gray-500 font-medium text-lg leading-relaxed">
+                  Get an instant estimate for your luxury magnetic boxes. For bespoke high-volume orders (>5000), please request a custom technical quote via WhatsApp.
+                </p>
+             </div>
+             <PriceCalculator variantId="gid://shopify/ProductVariant/magnetic-boxes-placeholder" />
+             <p className="text-center text-xs text-gray-300 font-bold uppercase tracking-[0.2em] mt-10">Prices based on CIF/DDP shipping estimates. Final quote may vary.</p>
           </section>
         </div>
 
