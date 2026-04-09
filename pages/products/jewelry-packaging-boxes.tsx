@@ -8,7 +8,7 @@ const JewelryPackagingBoxesPage = () => {
     title: "Jewelry & Watch Packaging Boxes",
     subtitle: "Sophisticated Rigid Box Solutions for Timeless Luxuries",
     variantId: "gid://shopify/ProductVariant/jewelry-boxes-placeholder",
-    imageUrl: "https://sc02.alicdn.com/kf/Aeaf1dca78d3f4469a1ea380f452ac2de5.png",
+    imageUrl: "/images/products/jewelry-hero.png",
     features: [
       { title: "Artisan Quality", desc: "Hand-finished rigid boxes crafted from high-density greyboard and premium textures." },
       { title: "Precision Engineering", desc: "Specialising in magnetic closures and velvet-lined inserts for maximum product protection." },

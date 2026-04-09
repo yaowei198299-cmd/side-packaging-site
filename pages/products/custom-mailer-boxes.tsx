@@ -8,7 +8,7 @@ const CustomMailerBoxesPage = () => {
     title: "Custom Mailer Boxes (Shipping & Mailer)",
     subtitle: "Premium Corrugated Solutions for E-commerce & Retail Shipping",
     variantId: "gid://shopify/ProductVariant/mailer-boxes-placeholder",
-    imageUrl: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png",
+    imageUrl: "/images/products/mailer-hero.png",
     features: [
       { title: "FSC Certified", desc: "Responsibly sourced materials ensuring environmental sustainability for your brand." },
       { title: "Factory Direct", desc: "Straight from our China-based manufacturing facility, eliminating middleman costs." },

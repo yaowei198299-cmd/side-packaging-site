@@ -8,7 +8,7 @@ const CosmeticPackagingBoxesPage = () => {
     title: "Cosmetic Packaging Boxes",
     subtitle: "High-End Luxury Solutions for Skincare, Makeup, and Fragrance",
     variantId: "gid://shopify/ProductVariant/cosmetic-boxes-placeholder",
-    imageUrl: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
+    imageUrl: "/images/products/cosmetic-hero.png",
     features: [
       { title: "Bespoke Finishes", desc: "Specialising in soft-touch lamination, hot foil stamping, and multi-level embossing." },
       { title: "Factory Direct", desc: "Our China-based facility offers unparalleled manufacturing precision at factory-direct pricing." },
