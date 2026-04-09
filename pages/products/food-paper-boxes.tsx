@@ -8,7 +8,7 @@ const FoodPaperBoxesPage = () => {
     title: "Custom Food Paper Packaging",
     subtitle: "Sustainable, Food-Grade & Oil-Resistant Solutions for Modern Food Brands",
     variantId: "gid://shopify/ProductVariant/food-paper-boxes-placeholder",
-    imageUrl: "https://sc04.alicdn.com/kf/H7b4b1a4a4b4a4b4a4b4a4b4a4b4a4b4aZ.jpg", // Placeholder for food paper box
+    imageUrl: "/images/products/food-hero.png", // Sustainable food-grade paper packaging
     features: [
       { title: "Food-Grade Certified", desc: "FDA and EU compliant materials ensuring 100% safety for direct food contact." },
       { title: "Oil-Resistance", desc: "Advanced greaseproof coatings to prevent oil leakage and maintain package integrity." },

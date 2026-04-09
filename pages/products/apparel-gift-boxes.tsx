@@ -8,7 +8,7 @@ const ApparelGiftBoxesPage = () => {
     title: "Custom Apparel Gift Boxes",
     subtitle: "Luxury Magnetic Closure & Premium Retail Packaging for Global Fashion Brands",
     variantId: "gid://shopify/ProductVariant/apparel-gift-boxes-placeholder",
-    imageUrl: "https://sc04.alicdn.com/kf/H7b4b1a4a4b4a4b4a4b4a4b4a4b4a4b4aY.jpg", // Placeholder for luxury gift box
+    imageUrl: "/images/products/apparel-hero.png", // High-end luxury apparel box
     features: [
       { title: "Luxury Magnetic Closure", desc: "Featuring high-strength hidden magnets for a premium and satisfying unboxing experience." },
       { title: "Retail Branding", desc: "Custom foil stamping, debossing, and spot UV to elevate your brand's presence in the market." },
