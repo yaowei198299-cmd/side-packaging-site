@@ -20,9 +20,9 @@ const JewelryPackagingBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>{productData.title} | Custom Jewelry Box China Manufacturer | Side Packaging HK</title>
-        <meta name="description" content="Premium jewelry and watch packaging boxes manufacturer in China. Factory direct pricing, FSC certified, and low MOQ for luxury accessory brands." />
-        <meta name="keywords" content="custom jewelry packaging boxes China, jewelry box manufacturer, watch packaging factory, FSC certified jewelry boxes, low MOQ watch boxes" />
+        <title>Luxury Jewelry & Watch Boxes | Factory-Direct Bespoke Packaging | Side Packaging HK</title>
+        <meta name="description" content="Premium custom jewelry and watch boxes manufacturer. Factory-direct rigid boxes with velvet inserts, gold foil stamping, and luxury unboxing experience. Low MOQ." />
+        <meta name="keywords" content="Luxury Jewelry Boxes, Custom Watch Boxes, Wholesale Jewelry Boxes, Rigid Jewelry Packaging, Velvet Jewelry Inserts, Gold Foil Stamping, B2B Packaging Manufacturer, Bespoke Jewelry Boxes, Factory-Direct Jewelry Packaging, Luxury Unboxing Experience, Premium Watch Packaging, Eco-Luxury Packaging" />
       </Head>
 
       {/* Navigation */}

@@ -20,9 +20,9 @@ const CosmeticPackagingBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>{productData.title} | Custom Cosmetic Packaging China Manufacturer | Side Packaging HK</title>
-        <meta name="description" content="Premium custom cosmetic packaging boxes manufacturer in China. Factory direct pricing, FSC certified, and low MOQ for luxury skincare and makeup brands." />
-        <meta name="keywords" content="custom cosmetic packaging boxes China, cosmetic box manufacturer, luxury makeup boxes, FSC certified cosmetic packaging, low MOQ cosmetic boxes" />
+        <title>Custom Cosmetic Packaging Boxes | Factory-Direct Luxury | Side Packaging HK</title>
+        <meta name="description" content="High-end custom cosmetic packaging boxes for skincare, makeup, and perfume. Factory-direct luxury with low MOQ and premium finishes like soft-touch and foil stamping." />
+        <meta name="keywords" content="Custom Cosmetic Packaging Boxes, Wholesale Cosmetic Boxes, Luxury Skincare Packaging, Perfume Box Manufacturers, Makeup Packaging Wholesale, High-End Cosmetic Box Finishing, Soft-Touch Lamination Boxes, Spot UV Printing for Cosmetics, Foil Stamped Beauty Packaging, Low MOQ Cosmetic Boxes, Factory-Direct Luxury Packaging, Customized Beauty Gift Boxes, Sustainable Cosmetic Packaging, Eco-friendly Beauty Boxes, Rigid Gift Box Manufacturer" />
       </Head>
 
       {/* Navigation */}
