@@ -167,7 +167,7 @@ const HomePage = () => {
         <section className="relative pt-32 pb-48 overflow-hidden bg-[#f9f9f9]">
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="grid lg:grid-cols-12 gap-16 items-center">
-              <div className="lg:col-span-7">
+              <div className="lg:col-span-6">
                 <div className="inline-block bg-white border border-gray-200 px-4 py-1.5 rounded-full mb-8 shadow-sm">
                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
                     <span className="text-blue-600">China's #1</span> B2B Manufacturing Facility
@@ -199,19 +199,19 @@ const HomePage = () => {
                 </div>
               </div>
               
-              <div className="lg:col-span-5 relative">
-                <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl bg-white p-8">
+              <div className="lg:col-span-6 relative">
+                <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl bg-white p-4">
                   <img 
                     src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
                     alt="Luxury Magnetic Box" 
-                    className="w-full h-auto"
+                    className="w-full h-auto transform hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-8 right-8 bg-blue-600 text-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg">
                     Best Seller
                   </div>
                 </div>
                 {/* Visual Accent */}
-                <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-600/10 rounded-full blur-[80px]"></div>
+                <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px]"></div>
               </div>
             </div>
           </div>
