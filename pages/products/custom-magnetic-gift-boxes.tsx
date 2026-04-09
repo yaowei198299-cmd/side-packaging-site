@@ -200,7 +200,7 @@ const ProductPage = () => {
              <div className="max-w-4xl mx-auto px-6 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Configure Your <br/>Magnetic Box.</h2>
                 <p className="text-gray-500 font-medium text-lg leading-relaxed">
-                  Get an instant estimate for your luxury magnetic boxes. For bespoke high-volume orders (>5000), please request a custom technical quote via WhatsApp.
+                  Get an instant estimate for your luxury magnetic boxes. For bespoke high-volume orders (&gt;5000), please request a custom technical quote via WhatsApp.
                 </p>
              </div>
              <PriceCalculator variantId="gid://shopify/ProductVariant/magnetic-boxes-placeholder" />
