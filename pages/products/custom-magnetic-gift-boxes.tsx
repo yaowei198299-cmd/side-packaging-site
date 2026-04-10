@@ -7,9 +7,9 @@ const ProductPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Custom Magnetic Gift Boxes | Luxury Rigid Box Manufacturer China | Side Packaging</title>
-        <meta name="description" content="Premium custom magnetic gift boxes from Side Packaging HK. 20+ years of manufacturing luxury rigid packaging. FSC certified, Low MOQ 100pcs. Factory direct pricing." />
-        <meta name="keywords" content="custom magnetic gift boxes China, luxury rigid box manufacturer, FSC certified packaging, Low MOQ 100pcs, wholesale magnetic boxes" />
+        <title>Custom Magnetic Gift Boxes | Luxury Rigid Box Manufacturer | Side Packaging HK Limited</title>
+        <meta name="description" content="Premium custom magnetic gift boxes from Side Packaging HK Limited. 20+ years of manufacturing luxury rigid packaging. FSC & BSCI certified factory direct." />
+        <meta name="keywords" content="Side Packaging HK Limited, custom magnetic gift boxes China, luxury rigid box manufacturer, FSC certified packaging, Low MOQ 100pcs, wholesale magnetic boxes" />
         
         {/* Product Schema (JSON-LD) */}
         <script
@@ -26,7 +26,7 @@ const ProductPage = () => {
               "sku": "SIDE-MAG-001",
               "brand": {
                 "@type": "Brand",
-                "name": "Side Packaging"
+                "name": "Side Packaging HK Limited"
               },
               "offers": {
                 "@type": "AggregateOffer",
@@ -44,7 +44,7 @@ const ProductPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-[60]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic uppercase">Side Packaging HK</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="text-black border-b-2 border-black py-1">Products</Link>

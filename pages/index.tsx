@@ -81,9 +81,9 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
       <Head>
-        <title>Side Packaging | Custom Gift Box Manufacturer China — Luxury Packaging Factory Direct</title>
-        <meta name="description" content="Side Packaging HK — China's leading B2B manufacturer of premium rigid gift boxes, magnetic boxes & mailer boxes. MOQ 100pcs, 10-15 day lead time. FSC certified." />
-        <meta name="keywords" content="custom magnetic gift boxes China, luxury rigid box manufacturer, FSC certified packaging, Low MOQ 100pcs, factory direct luxury packaging" />
+        <title>Side Packaging HK Limited - Official Factory Portal | Custom Luxury Gift Boxes & Mailers Manufacturer</title>
+        <meta name="description" content="Official factory portal of Side Packaging HK Limited. We specialize in high-end magnetic gift boxes, custom mailers, and luxury rigid packaging. FSC & BSCI certified factory direct since 2006." />
+        <meta name="keywords" content="Side Packaging HK Limited, custom magnetic box, luxury gift packaging, rigid box manufacturer, custom mailers, factory direct China" />
         <meta name="google-site-verification" content="1M4JeciyH92CxblYUEVd-CyORMJY4u6zAsot5l8ztJs" />
         <link rel="icon" href="/favicon.ico" />
         
