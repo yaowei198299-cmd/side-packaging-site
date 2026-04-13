@@ -1,3 +1,4 @@
+// Last updated: 2026-04-13 for B2B optimization
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
