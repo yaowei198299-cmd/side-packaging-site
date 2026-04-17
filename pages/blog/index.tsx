@@ -5,6 +5,27 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Subscription Box Success: How Custom Printed Shipping Boxes Drive Unboxing Experience",
+      date: "April 17, 2026",
+      excerpt: "Discover how branded subscription box packaging and custom printed shipping boxes can transform your unboxing experience. A deep dive into apparel and jewelry packaging strategies.",
+      slug: "subscription-box-packaging-success-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The Comprehensive Guide to Custom Mailer Boxes: Boosting E-commerce Branding in 2026",
+      date: "April 17, 2026",
+      excerpt: "Discover how custom mailer boxes are revolutionizing e-commerce in 2026. From corrugated materials to tuck-top designs and small MOQ options, learn how to elevate your brand's unboxing experience.",
+      slug: "comprehensive-guide-custom-mailer-boxes",
+      image: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg"
+    },
+    {
+      title: "Sustainable E-commerce Packaging: Why Eco-friendly Corrugated Boxes are the Future",
+      date: "April 17, 2026",
+      excerpt: "Discover how eco-friendly mailer boxes and FSC certified paper packaging are revolutionizing e-commerce. Learn why sustainability is the key to brand loyalty in the US and EU.",
+      slug: "sustainable-ecommerce-packaging-guide",
+      image: "https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=2000"
+    },
+    {
       title: "How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability",
       date: "April 17, 2026",
       excerpt: "Master the art of sourcing luxury packaging. Learn how to work with direct factories in China, navigate small MOQ requirements, and implement FSC-certified sustainable solutions for your brand.",

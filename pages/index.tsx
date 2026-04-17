@@ -354,6 +354,40 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* Featured Insights */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9] mb-6">Industry <br/>Insights.</h2>
+                <p className="text-gray-500 font-medium max-w-md">Expert guides on luxury packaging, global shipping, and brand strategy.</p>
+              </div>
+              <Link href="/blog" className="text-[11px] font-black uppercase tracking-widest border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition-all">View All Articles</Link>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-12">
+              <Link href="/blog/comprehensive-guide-custom-mailer-boxes" className="group">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-[2.5rem] bg-gray-100 mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                  <img src="https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg" alt="Custom Mailer Boxes" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm">Featured</div>
+                </div>
+                <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">Comprehensive Guide to Custom Mailer Boxes</h3>
+                <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">Master e-commerce packaging in 2026. Learn about corrugated materials, tuck-top designs, and how to boost your branding.</p>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-black border-b border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600">Read More →</span>
+              </Link>
+              
+              <Link href="/blog/subscription-box-packaging-success-guide" className="group">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-[2.5rem] bg-gray-100 mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                  <img src="https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png" alt="Subscription Box Success" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                </div>
+                <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">Subscription Box Success: Driving the Unboxing Experience</h3>
+                <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">How branded packaging transforms customer loyalty in the apparel and jewelry subscription markets.</p>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-black border-b border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600">Read More →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Inquiry Form Section */}
         <section id="contact" className="py-40 bg-gray-50 border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6">
