@@ -366,13 +366,13 @@ const HomePage = () => {
             </div>
             
             <div className="grid md:grid-cols-2 gap-12">
-              <Link href="/blog/comprehensive-guide-custom-mailer-boxes" className="group">
+              <Link href="/blog/sustainable-ecommerce-packaging-guide" className="group">
                 <div className="relative aspect-[16/9] overflow-hidden rounded-[2.5rem] bg-gray-100 mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
-                  <img src="https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg" alt="Custom Mailer Boxes" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=2000" alt="Sustainable E-commerce Packaging" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm">Featured</div>
                 </div>
-                <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">Comprehensive Guide to Custom Mailer Boxes</h3>
-                <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">Master e-commerce packaging in 2026. Learn about corrugated materials, tuck-top designs, and how to boost your branding.</p>
+                <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">Sustainable E-commerce Packaging Guide</h3>
+                <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">Discover how eco-friendly mailer boxes and FSC certified paper packaging are revolutionizing the global shipping industry in 2026.</p>
                 <span className="text-[10px] font-bold uppercase tracking-widest text-black border-b border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600">Read More →</span>
               </Link>
               
