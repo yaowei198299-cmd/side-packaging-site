@@ -5,6 +5,13 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability",
+      date: "April 17, 2026",
+      excerpt: "Master the art of sourcing luxury packaging. Learn how to work with direct factories in China, navigate small MOQ requirements, and implement FSC-certified sustainable solutions for your brand.",
+      slug: "sourcing-custom-gift-boxes-china-guide",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
       title: "Industry-Specific Custom Packaging Solutions: Tailoring Luxury Boxes for Jewelry, Watches, and Electronics",
       date: "April 17, 2026",
       excerpt: "Explore specialized packaging needs for luxury sectors. From velvet-cushioned watch boxes to anti-static electronics packaging, learn how to tailor your boxes for maximum impact.",
