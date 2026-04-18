@@ -83,7 +83,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
       <Head>
         <title>Side Packaging HK Limited - Official Factory Portal | Custom Luxury Gift Boxes & Mailers Manufacturer</title>
-        <meta name="description" content="Official factory portal of Side Packaging HK Limited. We specialize in high-end magnetic gift boxes, custom mailers, and luxury rigid packaging. FSC & BSCI certified factory direct since 2006." />
+        <meta name="description" content="Side Packaging: Factory Direct Custom Packaging & Luxury Gift Boxes. FSC Certified manufacturer offering Wholesale Price and Free Samples. Custom magnetic boxes, mailers & rigid packaging since 2006." />
         <meta name="keywords" content="Side Packaging HK Limited, custom magnetic box, luxury gift packaging, rigid box manufacturer, custom mailers, factory direct China" />
         <meta name="google-site-verification" content="1M4JeciyH92CxblYUEVd-CyORMJY4u6zAsot5l8ztJs" />
         <link rel="icon" href="/favicon.ico" />
@@ -354,36 +354,59 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* Featured Insights */}
+        {/* Expert Insights */}
         <section className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
               <div>
-                <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9] mb-6">Industry <br/>Insights.</h2>
-                <p className="text-gray-500 font-medium max-w-md">Expert guides on luxury packaging, global shipping, and brand strategy.</p>
+                <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9] mb-6">Expert <br/>Insights.</h2>
+                <p className="text-gray-500 font-medium max-w-md">The latest trends and guides on luxury packaging, global sourcing, and brand strategy.</p>
               </div>
               <Link href="/blog" className="text-[11px] font-black uppercase tracking-widest border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition-all">View All Articles</Link>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12">
-              <Link href="/blog/sustainable-ecommerce-packaging-guide" className="group">
-                <div className="relative aspect-[16/9] overflow-hidden rounded-[2.5rem] bg-gray-100 mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
-                  <img src="https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=2000" alt="Sustainable E-commerce Packaging" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm">Featured</div>
-                </div>
-                <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">Sustainable E-commerce Packaging Guide</h3>
-                <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">Discover how eco-friendly mailer boxes and FSC certified paper packaging are revolutionizing the global shipping industry in 2026.</p>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-black border-b border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600">Read More →</span>
-              </Link>
-              
-              <Link href="/blog/subscription-box-packaging-success-guide" className="group">
-                <div className="relative aspect-[16/9] overflow-hidden rounded-[2.5rem] bg-gray-100 mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
-                  <img src="https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png" alt="Subscription Box Success" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                </div>
-                <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">Subscription Box Success: Driving the Unboxing Experience</h3>
-                <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">How branded packaging transforms customer loyalty in the apparel and jewelry subscription markets.</p>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-black border-b border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600">Read More →</span>
-              </Link>
+            <div className="grid md:grid-cols-3 gap-12">
+              {[
+                {
+                  title: "2026 Packaging Trends Whitepaper",
+                  link: "/blog/2026-packaging-trends-whitepaper",
+                  desc: "Future-proof your brand with the latest luxury unboxing trends and material innovations.",
+                  img: "https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=800"
+                },
+                {
+                  title: "Sourcing Custom Packaging from China",
+                  link: "/blog/sourcing-custom-packaging-from-china-guide",
+                  desc: "A complete B2B guide to finding reliable manufacturers and ensuring quality control.",
+                  img: "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+                },
+                {
+                  title: "FSC Certified Luxury Packaging Guide",
+                  link: "/blog/fsc-certified-luxury-packaging-guide",
+                  desc: "Why FSC certification is the gold standard for premium sustainable brands in 2026.",
+                  img: "https://sc01.alicdn.com/kf/Aa33381bfa06d472cad56bc460860626eF.png"
+                },
+                {
+                  title: "Recyclable Magnetic Gift Boxes Design",
+                  link: "/blog/recyclable-magnetic-gift-boxes-design-guide",
+                  desc: "Innovative designs that combine the luxury of magnets with 100% recyclability.",
+                  img: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+                },
+                {
+                  title: "USA Customs Duties & Import Guide",
+                  link: "/blog/usa-customs-duties-importing-packaging-china-guide",
+                  desc: "Essential tax and duty information for US brands importing custom packaging.",
+                  img: "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg"
+                }
+              ].map((blog, i) => (
+                <Link key={i} href={blog.link} className="group">
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-[2.5rem] bg-gray-100 mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                    <img src={blog.img} alt={blog.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  </div>
+                  <h3 className="text-xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">{blog.title}</h3>
+                  <p className="text-gray-400 font-medium leading-relaxed mb-6 line-clamp-2">{blog.desc}</p>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-black border-b border-black pb-1 group-hover:text-blue-600 group-hover:border-blue-600">Read More →</span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
