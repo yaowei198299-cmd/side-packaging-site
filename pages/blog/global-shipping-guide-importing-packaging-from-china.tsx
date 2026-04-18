@@ -159,6 +159,13 @@ const GlobalShippingGuide = () => {
                 <p className="text-gray-500 mb-8">Side Packaging HK Limited provides end-to-end solutions for custom luxury packaging. We handle the production and the logistics, so you can focus on growing your brand.</p>
                 <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Shipping & Design Quote</Link>
               </div>
+
+              <div className="mt-12 p-8 bg-green-50 rounded-2xl border border-green-100">
+                <h4 className="font-black uppercase text-sm mb-4">Pro Tip (April 2026)</h4>
+                <p className="text-sm text-green-800 leading-relaxed">
+                  Always request a "DDP" (Delivered Duty Paid) quote if you want to avoid the complexities of customs clearance and local delivery logistics in your home country. It simplifies budgeting significantly.
+                </p>
+              </div>
             </div>
           </article>
         </div>

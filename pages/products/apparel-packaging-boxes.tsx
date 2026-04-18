@@ -237,6 +237,10 @@ const ApparelPackagingBoxesPage = () => {
                 <h4 className="font-bold mb-2">10. Can you include interior elements like tissue paper or stickers?</h4>
                 <p className="text-sm text-gray-500">Yes, we can provide a complete packaging suite, including custom-printed tissue paper, stickers, and thank-you cards.</p>
               </div>
+              <div>
+                <h4 className="font-bold mb-2">11. Do you offer luxury inserts for apparel boxes?</h4>
+                <p className="text-sm text-gray-500">Yes, we provide custom-cut foam, silk linings, and molded pulp inserts to enhance the presentation of high-end garments and accessories.</p>
+              </div>
             </div>
           </section>
         </div>

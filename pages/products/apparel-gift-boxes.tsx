@@ -231,6 +231,10 @@ const ApparelGiftBoxesPage = () => {
                 <h4 className="font-bold mb-2">Do you support international shipping?</h4>
                 <p className="text-sm text-gray-500">Absolutely. We regularly ship to major fashion hubs in New York, London, Paris, and Milan via air and sea freight.</p>
               </div>
+              <div>
+                <h4 className="font-bold mb-2">Can you provide flat-pack rigid boxes?</h4>
+                <p className="text-sm text-gray-500">Yes, we specialize in collapsible rigid boxes that save up to 75% on shipping and storage space while maintaining the luxury feel of a traditional setup box.</p>
+              </div>
             </div>
           </section>
         </div>

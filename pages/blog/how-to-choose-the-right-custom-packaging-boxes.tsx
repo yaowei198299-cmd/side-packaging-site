@@ -85,6 +85,13 @@ const BlogPost = () => {
                 <p className="text-gray-500 mb-8">Our team at Side Packaging HK Limited has over 20 years of experience in manufacturing premium custom boxes. We can help you find the perfect balance between luxury and logistics.</p>
                 <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Quote</Link>
               </div>
+
+              <div className="mt-12 p-8 bg-blue-50 rounded-2xl border border-blue-100">
+                <h4 className="font-black uppercase text-sm mb-4">Expert Tip (April 2026 Update)</h4>
+                <p className="text-sm text-blue-800 leading-relaxed">
+                  When choosing between rigid and corrugated boxes, consider the "unboxing weight". Heavier rigid boxes often correlate with higher perceived value in the consumer's mind, making them ideal for premium gift sets.
+                </p>
+              </div>
             </div>
           </article>
         </div>

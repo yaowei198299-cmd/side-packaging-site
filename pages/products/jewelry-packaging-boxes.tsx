@@ -237,6 +237,10 @@ const JewelryPackagingBoxesPage = () => {
                 <h4 className="font-bold mb-2">10. Can you include custom ribbons or tags?</h4>
                 <p className="text-sm text-gray-500">Yes, we can provide matching luxury ribbons, authenticity cards, and branded paper bags to create a complete packaging suite.</p>
               </div>
+              <div>
+                <h4 className="font-bold mb-2">11. Do your jewelry boxes include padding?</h4>
+                <p className="text-sm text-gray-500">Yes, we provide a variety of padding options, including velvet-lined foam, linen-wrapped inserts, and recycled cotton fills to protect delicate jewelry.</p>
+              </div>
             </div>
           </section>
         </div>

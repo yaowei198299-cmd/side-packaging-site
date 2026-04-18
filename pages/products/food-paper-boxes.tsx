@@ -235,6 +235,10 @@ const FoodPaperBoxesPage = () => {
                 <h4 className="font-bold mb-2">Do you offer low MOQ for food brands?</h4>
                 <p className="text-sm text-gray-500">Yes, we support growing food brands with flexible MOQs starting at 1,000 units for custom-printed solutions.</p>
               </div>
+              <div>
+                <h4 className="font-bold mb-2">Are your food boxes grease-resistant?</h4>
+                <p className="text-sm text-gray-500">Yes, we can apply food-grade aqueous coatings to ensure our paper boxes are resistant to grease and moisture, making them ideal for takeout and bakery items.</p>
+              </div>
             </div>
           </section>
         </div>

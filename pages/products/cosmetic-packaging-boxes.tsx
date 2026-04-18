@@ -237,6 +237,10 @@ const CosmeticPackagingBoxesPage = () => {
                 <h4 className="font-bold mb-2">10. Can you handle fragrance packaging requirements?</h4>
                 <p className="text-sm text-gray-500">Yes, we specialise in fragrance packaging that accommodates heavy glass bottles and provides the necessary internal support to prevent breakage.</p>
               </div>
+              <div>
+                <h4 className="font-bold mb-2">11. Can you handle holographic or special effect finishes?</h4>
+                <p className="text-sm text-gray-500">Absolutely. We offer holographic foils, iridescent coatings, and textured embossing to make your cosmetic packaging truly stand out on the shelf.</p>
+              </div>
             </div>
           </section>
         </div>

@@ -204,6 +204,20 @@ const CustomMailerBoxesPage = () => {
               Your packaging is the silent ambassador of your brand. By choosing our <strong>premium custom mailer boxes</strong>, you are investing in quality, sustainability, and a superior customer experience. Our factory-direct model ensures that you receive the best possible value without sacrificing the luxury feel your products deserve.
             </p>
           </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-black mb-8 uppercase tracking-tight">Frequently Asked Questions (FAQ)</h2>
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+              <div>
+                <h4 className="font-bold mb-2">Are these mailers suitable for international shipping?</h4>
+                <p className="text-sm text-gray-500">Yes, our E-flute and B-flute corrugated mailers are engineered for high crush resistance, ensuring your products remain safe during long-distance global transit.</p>
+              </div>
+              <div>
+                <h4 className="font-bold mb-2">What is the MOQ for custom mailers?</h4>
+                <p className="text-sm text-gray-500">We support businesses of all sizes with flexible MOQs starting at just 100 units for custom-printed corrugated mailers.</p>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Marketing / Factory Backing Section */}

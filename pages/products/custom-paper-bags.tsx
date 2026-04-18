@@ -232,6 +232,20 @@ const CustomPaperBagsPage = () => {
               </table>
             </div>
           </section>
+
+          <section className="mb-20">
+            <h2 className="text-3xl font-black mb-8 uppercase tracking-tight">Frequently Asked Questions (FAQ)</h2>
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+              <div>
+                <h4 className="font-bold mb-2">What handle types do you offer for paper bags?</h4>
+                <p className="text-sm text-gray-500">We offer twisted paper handles, flat paper handles, cotton rope, and ribbon handles to match your brand's aesthetic and durability requirements.</p>
+              </div>
+              <div>
+                <h4 className="font-bold mb-2">Can you handle multi-colour printing on luxury bags?</h4>
+                <p className="text-sm text-gray-500">Yes, we provide high-definition offset printing and Pantone spot colour matching for precise brand reproduction on every bag.</p>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Final CTA */}

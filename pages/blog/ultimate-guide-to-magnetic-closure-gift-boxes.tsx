@@ -81,6 +81,13 @@ const BlogPost = () => {
                 <p className="text-gray-500 mb-8">Side Packaging HK Limited specializes in luxury magnetic closure boxes. Our factory-direct pricing ensures you get premium quality without the premium markup.</p>
                 <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
               </div>
+
+              <div className="mt-12 p-8 bg-purple-50 rounded-2xl border border-purple-100">
+                <h4 className="font-black uppercase text-sm mb-4">Sustainability Update (April 2026)</h4>
+                <p className="text-sm text-purple-800 leading-relaxed">
+                  Many brands are now opting for "hidden" magnets that are easily removable, allowing the rigid box to be fully recycled at the end of its life cycle. Ask our team about eco-friendly magnetic closures.
+                </p>
+              </div>
             </div>
           </article>
         </div>
