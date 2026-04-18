@@ -79,6 +79,12 @@ const SustainablePackagingPost = () => {
                 <p>
                   One of the most frequent questions we receive at <strong>Side Packaging HK Limited</strong> is: "What makes a box truly sustainable?" The answer begins with sourcing. This is where <strong>FSC certified paper packaging</strong> becomes non-negotiable.
                 </p>
+                <div className="bg-green-50 p-8 rounded-[2rem] border border-green-100 my-8">
+                  <h4 className="text-lg font-black mb-4 uppercase tracking-tight text-green-900">Expert Sourcing Advice</h4>
+                  <p className="text-sm font-medium text-green-800 leading-relaxed">
+                    Learn more about ethical manufacturing and cost-effective bulk orders in our <Link href="/blog/sourcing-custom-gift-boxes-china-guide" className="underline font-black hover:text-green-600 transition-colors">Guide to Sourcing Custom Gift Boxes from China</Link>.
+                  </p>
+                </div>
                 <p>
                   The Forest Stewardship Council (FSC) is the world's most trusted forest management certification. When a brand chooses <strong>FSC certified paper packaging</strong>, it is making a commitment to:
                 </p>

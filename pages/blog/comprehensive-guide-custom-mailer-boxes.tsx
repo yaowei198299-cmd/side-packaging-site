@@ -131,6 +131,12 @@ const CustomMailerBoxesGuide = () => {
                 <p>
                   One of the biggest challenges for growing brands is balancing inventory with cost. That's why we specialize in both **Packaging box wholesale** and **Small MOQ mailer box** services.
                 </p>
+                <div className="bg-blue-50 p-10 rounded-[2rem] border border-blue-100 my-8">
+                  <h4 className="text-xl font-black mb-4 uppercase tracking-tight text-blue-900">Looking for Luxury Gift Options?</h4>
+                  <p className="text-sm font-medium leading-relaxed text-blue-800">
+                    If your brand requires high-end rigid presentation, check out our <Link href="/blog/ultimate-guide-custom-magnetic-gift-boxes" className="underline font-black hover:text-black transition-colors">Ultimate Guide to Custom Magnetic Gift Boxes</Link> for premium unboxing solutions.
+                  </p>
+                </div>
                 <p>
                   For established brands, ordering in bulk significantly reduces the unit cost, making it feasible to invest in complex designs like double-sided printing or custom inserts. However, for startups and limited edition drops, our small MOQ options allow for professional branding without the burden of massive storage requirements.
                 </p>

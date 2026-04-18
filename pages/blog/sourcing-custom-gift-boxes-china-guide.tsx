@@ -208,6 +208,12 @@ const BlogPost = () => {
               </p>
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">Conclusion: The Future of Your Brand's Packaging</h2>
+              <div className="bg-blue-50 p-10 rounded-[2rem] border border-blue-100 my-10">
+                <h4 className="text-xl font-black mb-4 uppercase tracking-tight text-blue-900">Industry-Specific Needs?</h4>
+                <p className="text-sm font-medium leading-relaxed text-blue-800">
+                  Are you in the Jewelry, Watch, or Electronics sector? See our <Link href="/blog/industry-specific-custom-packaging-solutions" className="underline font-black hover:text-black transition-colors">Industry-Specific Packaging Solutions</Link> for tailored advice on luxury inserts and material grades.
+                </p>
+              </div>
               <p>
                 Sourcing custom gift boxes from China is a journey from concept to reality that requires the right partner. By focusing on a **direct factory** that values **FSC sustainability** and offers the flexibility of **small MOQs**, you can create packaging that doesn't just hold your product—it defines your brand.
               </p>
