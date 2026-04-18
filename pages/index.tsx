@@ -368,34 +368,40 @@ const HomePage = () => {
             <div className="grid md:grid-cols-3 gap-12">
               {[
                 {
-                  title: "2026 Packaging Trends Whitepaper",
-                  link: "/blog/2026-packaging-trends-whitepaper",
-                  desc: "Future-proof your brand with the latest luxury unboxing trends and material innovations.",
-                  img: "https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=800"
-                },
-                {
-                  title: "Sourcing Custom Packaging from China",
-                  link: "/blog/sourcing-custom-packaging-from-china-guide",
-                  desc: "A complete B2B guide to finding reliable manufacturers and ensuring quality control.",
-                  img: "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
-                },
-                {
-                  title: "FSC Certified Luxury Packaging Guide",
-                  link: "/blog/fsc-certified-luxury-packaging-guide",
-                  desc: "Why FSC certification is the gold standard for premium sustainable brands in 2026.",
-                  img: "https://sc01.alicdn.com/kf/Aa33381bfa06d472cad56bc460860626eF.png"
-                },
-                {
-                  title: "Recyclable Magnetic Gift Boxes Design",
-                  link: "/blog/recyclable-magnetic-gift-boxes-design-guide",
-                  desc: "Innovative designs that combine the luxury of magnets with 100% recyclability.",
+                  title: "Custom Magnetic Gift Boxes Guide",
+                  link: "/blog/ultimate-guide-custom-magnetic-gift-boxes",
+                  desc: "The ultimate 2026 guide to luxury rigid magnetic closures and branding.",
                   img: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
                 },
                 {
-                  title: "USA Customs Duties & Import Guide",
-                  link: "/blog/usa-customs-duties-importing-packaging-china-guide",
-                  desc: "Essential tax and duty information for US brands importing custom packaging.",
-                  img: "https://sc01.alicdn.com/kf/A893e5006c09948eb8d8e65b46231e98fi.jpg"
+                  title: "Industry-Specific Packaging",
+                  link: "/blog/industry-specific-custom-packaging-solutions",
+                  desc: "Tailoring luxury boxes for Jewelry, Watches, and high-end Electronics.",
+                  img: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg"
+                },
+                {
+                  title: "Sourcing Gift Boxes from China",
+                  link: "/blog/sourcing-custom-gift-boxes-china-guide",
+                  desc: "Expert guide on pricing, small MOQs, and FSC sustainability in China.",
+                  img: "https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+                },
+                {
+                  title: "Custom Mailer Boxes Guide",
+                  link: "/blog/comprehensive-guide-custom-mailer-boxes",
+                  desc: "Boosting e-commerce branding with corrugated mailers and tuck-top designs.",
+                  img: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+                },
+                {
+                  title: "Sustainable Ecommerce Packaging",
+                  link: "/blog/sustainable-ecommerce-packaging-guide",
+                  desc: "Why eco-friendly corrugated boxes are the future of online retail.",
+                  img: "https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=800"
+                },
+                {
+                  title: "Subscription Box Success",
+                  link: "/blog/subscription-box-packaging-success-guide",
+                  desc: "How custom printed shipping boxes drive the ultimate unboxing experience.",
+                  img: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
                 }
               ].map((blog, i) => (
                 <Link key={i} href={blog.link} className="group">

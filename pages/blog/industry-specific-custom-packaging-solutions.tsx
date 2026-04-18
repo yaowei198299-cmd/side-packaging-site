@@ -130,6 +130,13 @@ const IndustrySpecificPackagingPost = () => {
                 </p>
               </section>
 
+              <div className="bg-blue-50 p-10 rounded-[2rem] border border-blue-100 my-16">
+                <h4 className="text-xl font-black mb-4 uppercase tracking-tight text-blue-900">Shipping Luxury Goods?</h4>
+                <p className="text-sm font-medium leading-relaxed text-blue-800">
+                  For brands shipping these high-value items, we recommend pairing your luxury gift boxes with our <Link href="/blog/comprehensive-guide-custom-mailer-boxes" className="text-blue-600 underline font-black">Custom Mailer Boxes</Link> for maximum protection during international transit.
+                </p>
+              </div>
+
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Ready to Elevate Your Industry Packaging?</h3>
                 <p className="text-gray-500 mb-8">
