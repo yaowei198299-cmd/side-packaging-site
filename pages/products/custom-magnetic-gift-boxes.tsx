@@ -148,7 +148,7 @@ const ProductPage = () => {
               <div className="shrink-0 bg-gray-50 p-6 rounded-3xl border border-gray-100">
                 <img 
                   src="https://sc01.alicdn.com/kf/Aa33381bfa06d472cad56bc460860626eF.png" 
-                  alt="Side Packaging FSC BSCI ISO Certifications" 
+                  alt="Custom Magnetic Gift Boxes - Side Packaging FSC BSCI ISO Certifications" 
                   className="w-full max-w-[280px] h-auto"
                 />
               </div>

@@ -74,7 +74,7 @@ const CustomPaperBagsPage = () => {
           <div className="relative aspect-video bg-gray-50 rounded-[40px] overflow-hidden shadow-2xl">
             <img 
               src={productData.imageUrl} 
-              alt="Custom Luxury Paper Bags with Premium Branding" 
+              alt="Custom Luxury Paper Bags - Boutique Shopping Bags with Premium Branding" 
               className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
             />
           </div>

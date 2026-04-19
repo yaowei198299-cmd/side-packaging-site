@@ -48,7 +48,7 @@ const SustainablePackagingPost = () => {
             <div className="aspect-video bg-gray-100 rounded-[3rem] overflow-hidden mb-16 shadow-2xl border border-gray-100">
               <img 
                 src="https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=2000" 
-                alt="Sustainable E-commerce Packaging" 
+                alt="Sustainable E-commerce Packaging - Eco-friendly Corrugated Boxes" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -148,6 +148,43 @@ const SustainablePackagingPost = () => {
 
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">Conclusion: The Path Forward</h2>
+                <p>
+                  The future of e-commerce is green. As we move further into 2026, the brands that thrive will be those that view <strong>sustainability packaging</strong> not as a cost center, but as a competitive advantage. From <strong>FSC certified paper packaging</strong> to the humble <strong>recyclable packaging box</strong>, every choice you make sends a message to your customers.
+                </p>
+                <p>
+                  Make sure your message is one of responsibility, quality, and care. Partner with <strong>Side Packaging HK Limited</strong> to transform your shipping process into a sustainable brand experience.
+                </p>
+              </section>
+
+              <div className="bg-gray-950 p-12 rounded-[3rem] border border-gray-800 mt-20 text-white relative overflow-hidden group">
+                <div className="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-green-500/10 rounded-full blur-3xl group-hover:bg-green-500/20 transition-all duration-700"></div>
+                <h3 className="text-3xl font-black mb-8 uppercase tracking-tight">Ready to Switch to Eco-Friendly Packaging?</h3>
+                <p className="text-gray-400 mb-10 text-lg">
+                  Join hundreds of premium brands making the switch to FSC-certified, 100% recyclable mailer boxes. Get a quote today and see the difference quality makes.
+                </p>
+                <Link href="/#contact">
+                  <button className="bg-white text-black px-12 py-5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-green-500 hover:text-white transition-all transform hover:scale-105 shadow-2xl">
+                    Get My Free Quote
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 border-t border-gray-100 py-20">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-gray-400 font-bold uppercase tracking-widest text-[10px]">© 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default SustainablePackagingPost;
+: The Path Forward</h2>
                 <p>
                   The future of e-commerce is green. As we move further into 2026, the brands that thrive will be those that view <strong>sustainability packaging</strong> not as a cost center, but as a competitive advantage. From <strong>FSC certified paper packaging</strong> to the humble <strong>recyclable packaging box</strong>, every choice you make sends a message to your customers.
                 </p>

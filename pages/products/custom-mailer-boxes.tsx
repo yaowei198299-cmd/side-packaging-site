@@ -74,7 +74,7 @@ const CustomMailerBoxesPage = () => {
           <div className="relative aspect-square bg-gray-50 rounded-[40px] overflow-hidden shadow-2xl">
             <img 
               src={productData.imageUrl} 
-              alt="Custom Mailer Boxes" 
+              alt="Custom Mailer Boxes - Side Packaging HK Factory Direct" 
               className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
             />
           </div>

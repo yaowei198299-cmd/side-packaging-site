@@ -74,7 +74,7 @@ const CosmeticPackagingBoxesPage = () => {
           <div className="relative aspect-square bg-gray-50 rounded-[40px] overflow-hidden shadow-2xl">
             <img 
               src={productData.imageUrl} 
-              alt="Custom Cosmetic Packaging Boxes" 
+              alt="Custom Cosmetic Packaging Boxes - Luxury Skincare and Makeup" 
               className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
             />
           </div>

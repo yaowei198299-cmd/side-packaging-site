@@ -49,7 +49,7 @@ const BlogPost = () => {
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
                 src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
-                alt="High-End Custom Gift Boxes" 
+                alt="High-End Custom Gift Boxes Manufacturer China" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -224,6 +224,50 @@ const BlogPost = () => {
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Elevate Your Unboxing Experience Today</h3>
                 <p className="text-gray-500 mb-8">Ready to move beyond generic packaging? Side Packaging specializes in **sustainable luxury packaging boxes** with factory-direct pricing and low MOQs. Contact Andy for a consultation and a free FSC-certified design mockup.</p>
+                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t py-20 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
+          <div className="col-span-2">
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <p className="max-w-sm font-medium leading-relaxed">
+              Premium manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. China-based factory direct excellence.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-black mb-6 uppercase tracking-widest text-xs">Navigation</h4>
+            <ul className="space-y-4 text-sm font-bold">
+              <li><Link href="/" className="hover:text-black transition-colors">Home</Link></li>
+              <li><Link href="/#products" className="hover:text-black transition-colors">Products</Link></li>
+              <li><Link href="/blog" className="text-black">Blog</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-black mb-6 uppercase tracking-widest text-xs">Contact</h4>
+            <p className="text-sm font-bold text-black mb-2">WhatsApp: +86 13699786538</p>
+            <p className="text-sm font-bold text-black">Email: andy@side-packaging.com</p>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-gray-100 text-[10px] font-bold uppercase tracking-widest flex justify-between">
+          <span>© 2026 Side Packaging HK Limited. All rights reserved.</span>
+          <div className="flex space-x-6">
+            <a href="#" className="hover:text-black transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-black transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default BlogPost;
+w MOQs. Contact Andy for a consultation and a free FSC-certified design mockup.</p>
                 <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
               </div>
             </div>

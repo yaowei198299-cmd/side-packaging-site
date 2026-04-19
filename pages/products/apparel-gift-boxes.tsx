@@ -74,7 +74,7 @@ const ApparelGiftBoxesPage = () => {
           <div className="relative aspect-square bg-gray-50 rounded-[40px] overflow-hidden shadow-2xl">
             <img 
               src={productData.imageUrl} 
-              alt="Custom Apparel Gift Boxes" 
+              alt="Custom Apparel Gift Boxes - Premium Fashion Packaging" 
               className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
             />
           </div>

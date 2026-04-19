@@ -74,7 +74,7 @@ const JewelryPackagingBoxesPage = () => {
           <div className="relative aspect-square bg-gray-50 rounded-[40px] overflow-hidden shadow-2xl">
             <img 
               src={productData.imageUrl} 
-              alt="Custom Jewelry & Watch Packaging Boxes" 
+              alt="Luxury Jewelry and Watch Boxes - Custom Rigid Packaging" 
               className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
             />
           </div>

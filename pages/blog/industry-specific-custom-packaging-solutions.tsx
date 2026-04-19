@@ -50,7 +50,7 @@ const IndustrySpecificPackagingPost = () => {
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
                 src="https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg" 
-                alt="Luxury Custom Packaging Solutions" 
+                alt="Luxury Custom Packaging Solutions for Jewelry and Watches" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -141,6 +141,50 @@ const IndustrySpecificPackagingPost = () => {
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Ready to Elevate Your Industry Packaging?</h3>
                 <p className="text-gray-500 mb-8">
                   Consult with our structural design experts today. We provide free dieline services and prototype samples to ensure your industry-specific packaging is perfect before mass production.
+                </p>
+                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get a Custom Quote Now</Link>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t py-20 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
+          <div className="col-span-2">
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <p className="max-w-sm font-medium leading-relaxed">
+              Leading manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. FSC and BSCI certified excellence.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-black mb-6 uppercase tracking-widest text-xs">Navigation</h4>
+            <ul className="space-y-4 text-sm font-bold">
+              <li><Link href="/" className="hover:text-black">Home</Link></li>
+              <li><Link href="/#products" className="hover:text-black">Products</Link></li>
+              <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
+              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-black mb-6 uppercase tracking-widest text-xs">Contact Andy</h4>
+            <ul className="space-y-4 text-sm font-bold">
+              <li><a href="mailto:andy@saidepackaging.com" className="hover:text-black transition-colors">andy@saidepackaging.com</a></li>
+              <li><a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-green-500 transition-colors group">
+                WhatsApp Chat
+              </a></li>
+              <li>Side Packaging HK Limited</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default IndustrySpecificPackagingPost;
+ensure your industry-specific packaging is perfect before mass production.
                 </p>
                 <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get a Custom Quote Now</Link>
               </div>
