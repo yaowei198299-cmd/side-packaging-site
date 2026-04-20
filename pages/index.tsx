@@ -369,7 +369,7 @@ const HomePage = () => {
               {[
                 {
                   title: "Custom Magnetic Gift Boxes Guide",
-                  link: "/blog/ultimate-guide-custom-magnetic-gift-boxes",
+                  link: "/blog/luxury-magnetic-gift-boxes-guide",
                   desc: "The ultimate 2026 guide to luxury rigid magnetic closures and branding.",
                   img: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
                 },

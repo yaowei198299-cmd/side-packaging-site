@@ -183,7 +183,7 @@ const CustomMailerBoxesGuide = () => {
                 <div className="bg-blue-50 p-10 rounded-[2rem] border border-blue-100 my-8">
                   <h4 className="text-xl font-black mb-4 uppercase tracking-tight text-blue-900">Looking for Luxury Gift Options?</h4>
                   <p className="text-sm font-medium leading-relaxed text-blue-800">
-                    If your brand requires high-end rigid presentation, check out our <Link href="/blog/ultimate-guide-custom-magnetic-gift-boxes" className="underline font-black hover:text-black transition-colors">Ultimate Guide to Custom Magnetic Gift Boxes</Link> for premium unboxing solutions.
+                    If your brand requires high-end rigid presentation, check out our <Link href="/blog/luxury-magnetic-gift-boxes-guide" className="underline font-black hover:text-black transition-colors">Ultimate Guide to Custom Magnetic Gift Boxes</Link> for premium unboxing solutions.
                   </p>
                 </div>
                 <p>

@@ -43,7 +43,7 @@ const BlogIndex = () => {
       title: "The Ultimate Guide to Custom Magnetic Gift Boxes: Why Luxury Brands Choose Rigid Magnetic Closures in 2026",
       date: "April 17, 2026",
       excerpt: "Explore the 2026 trends in luxury packaging. From foldable magnetic designs to FSC-certified materials, learn why custom magnetic gift boxes are the top choice for global brands.",
-      slug: "ultimate-guide-custom-magnetic-gift-boxes",
+      slug: "luxury-magnetic-gift-boxes-guide",
       image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
     },
     {
