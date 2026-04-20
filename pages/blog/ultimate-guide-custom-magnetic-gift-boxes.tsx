@@ -1,3 +1,4 @@
+// SEO Optimization: Updated 2026-04-19
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
