@@ -2,12 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const BlogPost = () => {
+const RigidBoxManufacturingGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>The Ultimate Guide to Magnetic Closure Gift Boxes | Side Packaging HK Limited</title>
-        <meta name="description" content="Discover why magnetic closure boxes are the leading choice for luxury brands and how they can transform your unboxing experience." />
+        <title>The Ultimate Guide to Rigid Box Manufacturing | Side Packaging HK Limited</title>
+        <meta name="description" content="A deep dive into the engineering and manufacturing process of luxury rigid boxes. From greyboard selection to precision wrapping." />
       </Head>
 
       {/* Navigation */}
@@ -43,50 +43,48 @@ const BlogPost = () => {
           <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
           
           <article>
-            <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">The Ultimate Guide to Magnetic Closure Gift Boxes</h1>
-            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published March 28, 2026 | By Side Packaging Expert Team</p>
+            <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">The Ultimate Guide to Rigid Box Manufacturing</h1>
+            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published March 28, 2026 | By Side Packaging Engineering Team</p>
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
-                src="https://sc02.alicdn.com/kf/Aa102fe113883456d96481350b3e32950c.png" 
-                alt="Magnetic Closure Boxes" 
+                src="https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg" 
+                alt="Rigid Box Manufacturing Process" 
                 className="w-full h-full object-cover"
               />
             </div>
 
             <div className="prose prose-xl prose-gray max-w-none font-medium leading-relaxed text-gray-600 space-y-12">
               <p>
-                Magnetic closure boxes have become the gold standard for luxury brand packaging. Their unique blend of high-end aesthetics, functional durability, and superior unboxing experience makes them a favorite for industries ranging from jewelry and watches to high-end electronics and gourmet food.
+                Rigid boxes, also known as set-up boxes, are the hallmark of high-end product presentation. Unlike folding cartons, which are shipped flat and assembled by the user, rigid boxes are manufactured in their final 3D form (or collapsible variants) using thick greyboard and premium wrapping paper.
               </p>
 
-              <h2 className="text-3xl font-black text-black tracking-tight uppercase">What are Magnetic Closure Boxes?</h2>
+              <h2 className="text-3xl font-black text-black tracking-tight uppercase">The core Components</h2>
               <p>
-                A magnetic closure box, often referred to as a "flip-top" or "clamshell" box, is a type of rigid box that uses small, powerful magnets embedded in its structure to secure the lid. This creates a secure, seamless closure that can be opened and closed repeatedly with a satisfying "click."
+                A luxury rigid box consists of two primary elements:
+                1. **The Structural Chipboard**: Usually made from 1.5mm to 3.0mm greyboard, this provides the box's "heft" and strength.
+                2. **The Wrap**: A thinner paper (usually 150gsm) that is glued to the greyboard. This is where your branding, textures, and finishes (like foil stamping) live.
               </p>
 
-              <h2 className="text-3xl font-black text-black tracking-tight uppercase">Why Your Brand Needs Them</h2>
+              <h2 className="text-3xl font-black text-black tracking-tight uppercase">Step 1: Board Scoring and Cutting</h2>
               <p>
-                1. **Elevated Perception**: The rigid structure and magnetic closure signal quality and value.
-                2. **Durability**: Unlike folding cartons, magnetic boxes are built to last, providing long-term storage and reuse for your customers.
-                3. **Ease of Assembly**: Many magnetic boxes come as "collapsible" or "flat-pack," saving space during shipping while remaining incredibly easy to assemble.
+                The process begins with precision scoring of the greyboard. At Side Packaging, we use automatic V-grooving machines to create sharp, 90-degree corners, ensuring the box looks crisp and symmetrical.
               </p>
 
-              <h2 className="text-3xl font-black text-black tracking-tight uppercase">Customization Options</h2>
+              <h2 className="text-3xl font-black text-black tracking-tight uppercase">Step 2: Corner Taping</h2>
               <p>
-                From velvet linings and custom foam inserts to sophisticated printing techniques like debossing or foil stamping, the customization possibilities are endless. At Side Packaging, we can help you design a box that not only protects your product but also tells your brand's unique story.
+                Once the board is scored and folded, the corners are reinforced with heat-sealed stay tape. This creates the basic "tray" or "lid" structure that forms the foundation of the box.
+              </p>
+
+              <h2 className="text-3xl font-black text-black tracking-tight uppercase">Step 3: Precision Wrapping</h2>
+              <p>
+                The printed and finished wrap is coated with a thin layer of adhesive and meticulously applied to the board structure. For high-volume orders, we use automatic wrapping lines; for complex, bespoke designs, our master artisans finish the boxes by hand.
               </p>
 
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
-                <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Ready to elevate your brand?</h3>
-                <p className="text-gray-500 mb-8">Side Packaging HK Limited specializes in luxury magnetic closure boxes. Our factory-direct pricing ensures you get premium quality without the premium markup.</p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
-              </div>
-
-              <div className="mt-12 p-8 bg-purple-50 rounded-2xl border border-purple-100">
-                <h4 className="font-black uppercase text-sm mb-4">Sustainability Update (April 2026)</h4>
-                <p className="text-sm text-purple-800 leading-relaxed">
-                  Many brands are now opting for "hidden" magnets that are easily removable, allowing the rigid box to be fully recycled at the end of its life cycle. Ask our team about eco-friendly magnetic closures.
-                </p>
+                <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Technical Consultation</h3>
+                <p className="text-gray-500 mb-8">Need to understand the technical constraints of your design? Our engineering team provides free structural advice and dieline templates.</p>
+                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Request Technical Spec Sheet</Link>
               </div>
             </div>
           </article>
@@ -106,7 +104,7 @@ const BlogPost = () => {
             <h4 className="font-black mb-6 uppercase tracking-widest text-xs">Navigation</h4>
             <ul className="space-y-4 text-sm font-bold">
               <li><Link href="/" className="hover:text-black">Home</Link></li>
-              <li><Link href="/products/custom-magnetic-box" className="hover:text-black">Products</Link></li>
+              <li><Link href="/#products" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
               <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
             </ul>
@@ -127,4 +125,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default RigidBoxManufacturingGuide;

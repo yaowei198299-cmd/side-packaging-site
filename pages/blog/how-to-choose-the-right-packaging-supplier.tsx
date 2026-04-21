@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const BlogPost = () => {
+const ChoosingSupplierGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
@@ -131,4 +131,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default ChoosingSupplierGuide;

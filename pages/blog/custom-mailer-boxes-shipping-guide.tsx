@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const CustomMailerBoxesGuide = () => {
+const CustomMailerGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
@@ -273,4 +273,4 @@ const CustomMailerBoxesGuide = () => {
   );
 };
 
-export default CustomMailerBoxesGuide;
+export default CustomMailerGuide;
