@@ -5,6 +5,27 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Sourcing Custom Rigid Boxes for Canadian Brands: Logistics & Duty Guide",
+      excerpt: "A strategic guide for Canadian businesses sourcing custom rigid gift boxes from China. Expert insights on DDP shipping, GST/HST compliance, and factory selection.",
+      date: "April 21, 2026",
+      slug: "sourcing-custom-rigid-boxes-canadian-brands-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Sustainable Takeaway Packaging: Why Windowed Bakery Boxes are Winning in 2026",
+      excerpt: "Explore the shift toward eco-friendly food packaging in 2026. Discover how FSC-certified paper and biodegradable window films are transforming bakery and takeaway boxes.",
+      date: "April 21, 2026",
+      slug: "sustainable-takeaway-packaging-windowed-bakery-boxes-2026",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Why FSC Certification is Critical for US & UK Luxury Packaging Markets",
+      excerpt: "Understanding the regulatory and consumer shift toward FSC-certified packaging in the US, UK, and EU. Why luxury brands are prioritizing sustainable paper sourcing in 2026.",
+      date: "April 21, 2026",
+      slug: "fsc-certification-luxury-packaging-us-uk-markets-importance",
+      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+    },
+    {
       title: "Subscription Box Success: How Custom Printed Shipping Boxes Drive Unboxing Experience",
       date: "April 17, 2026",
       excerpt: "Discover how branded subscription box packaging and custom printed shipping boxes can transform your unboxing experience. A deep dive into apparel and jewelry packaging strategies.",
