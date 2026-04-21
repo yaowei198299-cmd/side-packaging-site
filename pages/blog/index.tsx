@@ -15,7 +15,7 @@ const BlogIndex = () => {
       title: "The Comprehensive Guide to Custom Mailer Boxes: Boosting E-commerce Branding in 2026",
       date: "April 17, 2026",
       excerpt: "Discover how custom mailer boxes are revolutionizing e-commerce in 2026. From corrugated materials to tuck-top designs and small MOQ options, learn how to elevate your brand's unboxing experience.",
-      slug: "comprehensive-guide-custom-mailer-boxes",
+      slug: "custom-mailer-boxes-shipping-guide",
       image: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg"
     },
     {
