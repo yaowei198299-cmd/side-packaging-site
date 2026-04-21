@@ -387,7 +387,7 @@ const HomePage = () => {
                 },
                 {
                   title: "Custom Mailer Boxes Guide",
-                  link: "/blog/comprehensive-guide-custom-mailer-boxes",
+                  link: "/blog/custom-mailer-boxes-shipping-guide",
                   desc: "Boosting e-commerce branding with corrugated mailers and tuck-top designs.",
                   img: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
                 },

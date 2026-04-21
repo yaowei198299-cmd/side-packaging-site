@@ -57,15 +57,22 @@ const BlogIndex = () => {
       title: "How to Choose the Right Custom Packaging Boxes for Your Business",
       date: "April 4, 2026",
       excerpt: "Selecting the perfect packaging box is crucial for brand identity and product safety. Learn the key factors to consider when choosing between magnetic boxes, mailers, and rigid boxes.",
-      slug: "how-to-choose-the-right-custom-packaging-boxes",
+      slug: "how-to-choose-the-right-packaging-supplier",
       image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
     },
     {
       title: "The Ultimate Guide to Magnetic Closure Gift Boxes",
       date: "March 28, 2026",
       excerpt: "Discover why magnetic closure boxes are the top choice for luxury brands and how they can enhance your customers' unboxing experience.",
-      slug: "ultimate-guide-to-magnetic-closure-gift-boxes",
+      slug: "ultimate-guide-rigid-box-manufacturing",
       image: "https://sc02.alicdn.com/kf/Aa102fe113883456d96481350b3e32950c.png"
+    },
+    {
+      title: "2026 Eco-friendly Food Packaging Trends",
+      date: "April 10, 2026",
+      excerpt: "Discover the latest sustainable food packaging trends for 2026. From biodegradable boxes to FSC-certified solutions.",
+      slug: "eco-friendly-food-packaging-trends-2026",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
     }
   ];
 
