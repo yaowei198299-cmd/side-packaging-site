@@ -5,6 +5,13 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Small MOQ Luxury Rigid Boxes for Startups: A 2026 Growth Guide",
+      excerpt: "Why small MOQ luxury rigid boxes are the secret weapon for growing startups. Learn how to get premium packaging starting from 100 units without high inventory costs.",
+      date: "April 22, 2026",
+      slug: "small-moq-luxury-rigid-boxes-for-startups-guide",
+      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+    },
+    {
       title: "Sourcing Custom Rigid Boxes for Canadian Brands: Logistics & Duty Guide",
       excerpt: "A strategic guide for Canadian businesses sourcing custom rigid gift boxes from China. Expert insights on DDP shipping, GST/HST compliance, and factory selection.",
       date: "April 21, 2026",
