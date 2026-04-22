@@ -5,6 +5,13 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Custom Magnetic Boxes vs. Collapsible Designs: Cost-Saving Analysis",
+      excerpt: "A comprehensive cost-saving analysis between standard rigid magnetic boxes and collapsible (flat-pack) designs. Learn how to save up to 70% on international shipping costs.",
+      date: "April 22, 2026",
+      slug: "custom-magnetic-boxes-vs-collapsible-designs-cost-analysis",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
       title: "Small MOQ Luxury Rigid Boxes for Startups: A 2026 Growth Guide",
       excerpt: "Why small MOQ luxury rigid boxes are the secret weapon for growing startups. Learn how to get premium packaging starting from 100 units without high inventory costs.",
       date: "April 22, 2026",
