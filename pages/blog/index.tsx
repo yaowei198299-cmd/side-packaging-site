@@ -5,6 +5,13 @@ import Link from 'next/link';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Luxury Apparel Packaging: How to Design for a Zero-Carbon Future",
+      excerpt: "A guide to sustainable fashion packaging. Learn how luxury apparel brands can reduce their carbon footprint through material innovation and structural design.",
+      date: "April 22, 2026",
+      slug: "luxury-apparel-packaging-carbon-footprint-reduction",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
       title: "Custom Magnetic Boxes vs. Collapsible Designs: Cost-Saving Analysis",
       excerpt: "A comprehensive cost-saving analysis between standard rigid magnetic boxes and collapsible (flat-pack) designs. Learn how to save up to 70% on international shipping costs.",
       date: "April 22, 2026",
