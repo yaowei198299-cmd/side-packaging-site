@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import LeadMagnet from '../../components/LeadMagnet';
 
 const LuxuryMagneticGuide = () => {
   return (
@@ -92,6 +93,10 @@ const LuxuryMagneticGuide = () => {
           </article>
         </div>
       </main>
+
+      <div className="mb-24">
+        <LeadMagnet />
+      </div>
 
       {/* Footer */}
       <footer className="bg-white border-t py-20 px-6">

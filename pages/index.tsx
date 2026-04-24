@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import LeadMagnet from '../components/LeadMagnet';
 
 const HomePage = () => {
   const [formData, setFormData] = useState({
@@ -27,64 +28,64 @@ const HomePage = () => {
     setFormData({ name: '', email: '', phone: '', message: '', quantity: '', type: 'Quote' });
   };
 
-  const categories = [
+  const industrySolutions = [
     {
-      title: "Luxury Magnetic Boxes",
-      desc: "Premium rigid gift boxes with hidden magnetic closures. Built for luxury unboxing.",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png",
-      link: "/products/custom-magnetic-gift-boxes",
-      tag: "Best Seller"
+      title: "Cosmetic Packaging Solutions",
+      desc: "Elevate your brand with premium rigid boxes and eco-friendly inserts. We specialize in luxury skincare and makeup packaging.",
+      image: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
+      link: "/solutions/cosmetic-packaging",
+      tag: "Luxury"
     },
     {
-      title: "Custom Mailer Boxes",
-      desc: "Durable branded shipping boxes for e-commerce and retail subscription brands.",
+      title: "Food & Bakery Packaging",
+      desc: "FDA-compliant paper boxes with oil-resistant coatings. Designed for freshness, safety, and brand appeal.",
+      image: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg",
+      link: "/solutions/food-bakery-packaging",
+      tag: "FDA-Compliant"
+    },
+    {
+      title: "E-commerce & Mailer Boxes",
+      desc: "High-strength corrugated mailer boxes engineered for shipping protection and global logistics.",
       image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png",
-      link: "/products/custom-mailer-boxes",
+      link: "/solutions/ecommerce-mailer-boxes",
+      tag: "Durable"
+    },
+    {
+      title: "Luxury Gift Box Packaging",
+      desc: "Premium magnetic and collapsible rigid boxes. Sophisticated structures with elegant finishes.",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png",
+      link: "/solutions/luxury-gift-box",
+      tag: "Premium"
+    },
+    {
+      title: "Sustainable Packaging",
+      desc: "100% recyclable Kraft and FSC-certified paper solutions. Meet your brand's sustainability goals.",
+      image: "https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=800",
+      link: "/solutions/sustainable-packaging",
       tag: "Eco-Friendly"
     },
     {
-      title: "Cosmetic Packaging",
-      desc: "High-end paper boxes for skincare, perfume, and makeup brands. Custom finishes.",
-      image: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
-      link: "/products/cosmetic-packaging-boxes",
-      tag: "New Arrival"
-    },
-    {
-      title: "Jewelry & Watch Boxes",
-      desc: "Elegant rigid boxes for luxury watches and jewelry. Custom velvet inserts.",
+      title: "Health & CBD Packaging",
+      desc: "Secure, compliant, and discreet packaging. Child-resistant structures and high-quality printing.",
       image: "https://sc02.alicdn.com/kf/Aeaf1dca78d3f4469a1ea380f452ac2de5.png",
-      link: "/products/jewelry-packaging-boxes",
-      tag: "High End"
-    },
-    {
-      title: "Apparel Gift Boxes",
-      desc: "Premium large rigid boxes for clothing, shoes, and textiles. Strong & stylish.",
-      image: "https://sc02.alicdn.com/kf/A7b2cac8d4efe401f9df1793bf9071d0bu.png",
-      link: "/products/apparel-packaging-boxes",
-      tag: "Wholesale"
-    },
-    {
-      title: "Luxury Paper Bags",
-      desc: "Custom printed boutique shopping bags with premium handles and finishes.",
-      image: "https://sc02.alicdn.com/kf/Abb05fa0a57e944bf85b8889811c248a4w.png",
-      link: "/products/custom-paper-bags",
-      tag: "Retail Ready"
+      link: "/solutions/health-cbd-packaging",
+      tag: "Compliant"
     }
   ];
 
   const steps = [
-    { num: "01", title: "Free Quote", desc: "Send your requirements and get a factory-direct price within 24 hours." },
-    { num: "02", title: "3D Mockup", desc: "We provide a professional 3D design to visualise your packaging before sampling." },
-    { num: "03", title: "Rapid Sample", desc: "Get a physical prototype in 3-5 days to confirm material and magnet strength." },
-    { num: "04", title: "Bulk Production", desc: "10-15 day manufacturing lead time with strict quality control on every box." }
+    { num: "01", title: "Consultation", desc: "We analyze your product size, weight, and budget to find the perfect fit." },
+    { num: "02", title: "Structural Design", desc: "Creating a custom tech-pack for optimal protection and branding impact." },
+    { num: "03", title: "Rapid Sampling", desc: "48-hour prototype turnaround to verify materials and print quality." },
+    { num: "04", title: "Mass Production", desc: "10-15 day turnaround with strict 3-stage manual quality inspection." }
   ];
 
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
       <Head>
-        <title>Side Packaging HK Limited - Official Factory Portal | Custom Luxury Gift Boxes & Mailers Manufacturer</title>
-        <meta name="description" content="Side Packaging: Factory Direct Custom Packaging & Luxury Gift Boxes. FSC Certified manufacturer offering Wholesale Price and Free Samples. Custom magnetic boxes, mailers & rigid packaging since 2006." />
-        <meta name="keywords" content="Side Packaging HK Limited, custom magnetic box, luxury gift packaging, rigid box manufacturer, custom mailers, factory direct China" />
+        <title>Custom Packaging That Balances Cost, Quality & Branding | Side Packaging HK Limited</title>
+        <meta name="description" content="Helping B2B brands solve packaging challenges with data-driven material selection and cost-optimized structures. From luxury gift boxes to durable e-commerce mailers. Factory direct since 2006." />
+        <meta name="keywords" content="custom packaging, luxury gift boxes, cosmetic packaging, food packaging, ecommerce mailers, rigid box manufacturer, folding carton, sustainable packaging" />
         <meta name="google-site-verification" content="1M4JeciyH92CxblYUEVd-CyORMJY4u6zAsot5l8ztJs" />
         <link rel="icon" href="/favicon.ico" />
         
@@ -92,26 +93,116 @@ const HomePage = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Side Packaging HK Limited",
-              "alternateName": "Side Packaging",
-              "description": "China's leading B2B manufacturer of premium rigid gift boxes and luxury retail packaging. Factory direct since 2006.",
-              "foundingDate": "2006",
-              "url": "https://saidepackaging.com",
-              "logo": "https://saidepackaging.com/logo.png",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+86-13699786538",
-                "contactType": "customer service",
-                "email": "andy@saidepackaging.com",
-                "availableLanguage": ["en", "zh"]
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Side Packaging HK Limited",
+                "alternateName": "Side Packaging",
+                "description": "China's leading B2B manufacturer of premium rigid gift boxes and luxury retail packaging. Factory direct since 2006.",
+                "foundingDate": "2006",
+                "url": "https://saidepackaging.com",
+                "logo": "https://saidepackaging.com/logo.png",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+86-13699786538",
+                  "contactType": "customer service",
+                  "email": "andy@saidepackaging.com",
+                  "availableLanguage": ["en", "zh"]
+                },
+                "areaServed": ["US", "GB", "CA", "AU", "FR", "DE"],
+                "knowsAbout": ["Custom Packaging", "Rigid Box Manufacturing", "Luxury Retail Packaging", "Sustainability", "FSC-Certified Materials"],
+                "hasCertification": ["FSC", "BSCI", "ISO 9001"]
               },
-              "areaServed": ["US", "GB", "CA", "AU", "FR", "DE"],
-              "knowsAbout": ["Custom Packaging", "Rigid Box Manufacturing", "Luxury Retail Packaging", "Sustainability", "FSC-Certified Materials"],
-              "hasCertification": ["FSC", "BSCI", "ISO 9001"]
-            })
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is the minimum order quantity (MOQ) for custom gift boxes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our MOQ for luxury magnetic rigid boxes starts at 500 units, while standard folding cartons typically start at 1,000 units to ensure cost-efficiency."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can you help reduce my current packaging costs?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. We specialize in 'Value Engineering'—analyzing your current box structure and switching materials or optimizing dimensions can often reduce costs by 15-30% without sacrificing quality."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Are your food boxes FDA-certified?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, we use food-grade paperboard and soy-based inks that meet FDA and international safety standards for direct and indirect food contact."
+                    }
+                  }
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Custom Packaging Solutions",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Side Packaging HK Limited"
+                },
+                "areaServed": ["US", "GB", "CA", "AU", "FR", "DE"],
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Packaging Solutions",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Cosmetic Packaging Solutions"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Food & Bakery Packaging"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce & Mailer Boxes"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Luxury Gift Box Packaging"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sustainable Packaging"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Health & CBD Packaging"
+                      }
+                    }
+                  ]
+                }
+              }
+            ])
           }}
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -175,28 +266,23 @@ const HomePage = () => {
                    </p>
                 </div>
                 <h1 className="text-6xl md:text-[5.5rem] font-black leading-[0.95] mb-10 tracking-tighter uppercase">
-                  Luxury Packaging <br/>
-                  <span className="text-blue-600">Factory Direct.</span>
+                  Custom Packaging <br/>
+                  <span className="text-blue-600">Balances Cost.</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-500 mb-14 leading-relaxed font-medium max-w-xl">
-                  Custom rigid gift boxes, magnetic boxes and mailers. From <strong>MOQ 100pcs</strong> with 10-15 day global turnaround.
+                  Helping B2B brands solve packaging challenges with <strong>data-driven material selection</strong> and cost-optimized structures. From luxury gift boxes to durable e-commerce mailers.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
                   <a href="#contact">
                     <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl">
-                      Get Free Quote
+                      Get Instant Quote
                     </button>
                   </a>
-                  <div className="flex items-center space-x-4">
-                     <div className="flex -space-x-2">
-                        {[1,2,3].map(i => (
-                          <div key={i} className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-100">
-                            <img src={`https://i.pravatar.cc/100?img=${i+20}`} alt="Side Packaging B2B Client" />
-                          </div>
-                        ))}
-                     </div>
-                     <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Trusted by 800+ Global Brands</p>
-                  </div>
+                  <a href="/blog/industry-specific-custom-packaging-solutions">
+                    <button className="bg-white text-black border-2 border-black px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-50 transition-all">
+                      2026 Selection Guide
+                    </button>
+                  </a>
                 </div>
               </div>
               
@@ -250,23 +336,25 @@ const HomePage = () => {
         <section id="products" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-24 text-center max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Premium Custom <br/>Packaging Solutions.</h2>
+              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter leading-[0.9]">Industry-Specific <br/>Packaging Solutions.</h2>
               <p className="text-gray-500 font-medium text-lg leading-relaxed">
-                From high-end magnetic rigid boxes to sustainable e-commerce mailers, we deliver factory-direct quality with meticulous attention to detail.
+                Targeted search intents with solution-oriented packaging. From luxury cosmetic boxes to FDA-compliant food grade paper solutions.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-16">
-              {categories.map((cat, i) => (
+              {industrySolutions.map((cat, i) => (
                 <div key={i} className="group">
                   <div className="relative aspect-square overflow-hidden rounded-[2.5rem] bg-gray-50 mb-10 border border-gray-100 shadow-sm transition-all hover:shadow-2xl">
                     <img src={cat.image} alt={cat.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                    <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="absolute top-6 right-6 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm">
+                      {cat.tag}
+                    </div>
                   </div>
                   <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter">{cat.title}</h3>
                   <p className="text-gray-400 font-medium leading-relaxed mb-8">{cat.desc}</p>
                   <Link href={cat.link} className="inline-flex items-center text-[11px] font-black uppercase tracking-widest text-black group border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition-all">
-                    View Specifications
+                    Explore Solution
                   </Link>
                 </div>
               ))}
@@ -278,7 +366,7 @@ const HomePage = () => {
         <section id="process" className="py-32 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-10">
-               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9]">Your Vision to <br/>Production in 4 Steps.</h2>
+               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.9]">5-Step Collaborative <br/>Production Process.</h2>
                <div className="hidden md:block w-32 h-1 bg-black rounded-full"></div>
             </div>
             
@@ -293,6 +381,71 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
+        {/* GEO Goldmine: Selection Guide */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-24 items-start">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-black mb-10 uppercase tracking-tighter leading-[0.9]">Packaging <br/>Selection Guide.</h2>
+                <p className="text-xl text-gray-500 font-medium mb-12 leading-relaxed">
+                  Make informed decisions with our technical comparison. AI-optimized data for your procurement strategy.
+                </p>
+                
+                <div className="space-y-12">
+                  <div>
+                    <h4 className="text-xl font-black mb-4 uppercase tracking-tight">How to Choose the Right Material?</h4>
+                    <p className="text-gray-500 font-medium leading-relaxed mb-6">
+                      For premium retail boxes, <strong>SBS (Solid Bleached Sulfate)</strong> offers the cleanest white surface for vibrant printing. For heavy-duty shipping, <strong>Corrugated E-flute</strong> provides the best strength-to-weight ratio. For a natural, organic look, <strong>Unbleached Kraft</strong> is the industry standard for sustainability.
+                    </p>
+                    <Link href="/blog/how-to-choose-the-right-packaging-supplier" className="text-[11px] font-black uppercase tracking-widest text-blue-600 border-b-2 border-blue-600 pb-1">
+                      Read Technical Whitepaper
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-[3rem] p-12 border border-gray-100">
+                <h3 className="text-2xl font-black mb-8 uppercase tracking-tighter text-center">Folding Carton vs. Rigid Box</h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="border-b border-gray-200">
+                        <th className="py-4 text-[10px] font-black uppercase tracking-widest text-gray-400">Feature</th>
+                        <th className="py-4 text-[10px] font-black uppercase tracking-widest text-gray-400">Folding Carton</th>
+                        <th className="py-4 text-[10px] font-black uppercase tracking-widest text-gray-400">Rigid Box</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[12px] font-bold uppercase tracking-tight">
+                      <tr className="border-b border-gray-100">
+                        <td className="py-5 text-gray-400">Average Cost</td>
+                        <td className="py-5">Low to Medium</td>
+                        <td className="py-5 text-blue-600">High (2-3x)</td>
+                      </tr>
+                      <tr className="border-b border-gray-100">
+                        <td className="py-5 text-gray-400">Typical MOQ</td>
+                        <td className="py-5">1000+ units</td>
+                        <td className="py-5">500+ units</td>
+                      </tr>
+                      <tr className="border-b border-gray-100">
+                        <td className="py-5 text-gray-400">Ideal For</td>
+                        <td className="py-5">Retail, Food</td>
+                        <td className="py-5">Luxury, Gifts</td>
+                      </tr>
+                      <tr>
+                        <td className="py-5 text-gray-400">Shipping</td>
+                        <td className="py-5">Flat-packed</td>
+                        <td className="py-5">Pre-assembled</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <LeadMagnet />
 
         {/* Factory Heritage */}
         <section id="factory" className="py-32 bg-white">
@@ -336,12 +489,12 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="lg:pl-12">
-                <h2 className="text-5xl font-black mb-10 tracking-tighter uppercase leading-[0.9]">20+ Years of <br/>Manufacturing <br/>Integrity.</h2>
+                <h2 className="text-5xl font-black mb-10 tracking-tighter uppercase leading-[0.9]">Value <br/>Engineering <br/>& Factory Power.</h2>
                 <div className="space-y-12">
                   {[
-                    { title: "Direct Ownership", desc: "We are not a middleman. We own the production lines, ensuring consistent quality and better pricing for your brand." },
-                    { title: "FSC Certification", desc: "Our commitment to sustainability is verified. We source materials from responsibly managed forests." },
-                    { title: "Quality Guarantee", desc: "Every box undergoes a 3-stage manual inspection before shipment to ensure zero defects." }
+                    { title: "20+ Years Expertise", desc: "Deep technical knowledge in paperboard engineering and structural optimization to reduce shipping damage." },
+                    { title: "Factory-Direct Pricing", desc: "We own the production lines. Eliminate middleman fees and optimize your packaging budget by 15-30%." },
+                    { title: "Global Compliance", desc: "ISO, FSC, and FDA-standard production. Every box undergoes a strict 3-stage manual inspection." }
                   ].map((item, i) => (
                     <div key={i}>
                       <h4 className="text-xl font-black mb-2 uppercase tracking-tight">{item.title}</h4>
@@ -417,14 +570,42 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* GEO FAQ Section */}
+        <section className="py-32 bg-[#fcfcfc] border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-4xl font-black mb-16 uppercase tracking-tighter text-center">Frequently Asked Questions.</h2>
+            <div className="space-y-12">
+              {[
+                { 
+                  q: "What is the minimum order quantity (MOQ) for custom gift boxes?", 
+                  a: "Our MOQ for luxury magnetic rigid boxes starts at 500 units, while standard folding cartons typically start at 1,000 units to ensure cost-efficiency." 
+                },
+                { 
+                  q: "Can you help reduce my current packaging costs?", 
+                  a: "Yes. We specialize in 'Value Engineering'—analyzing your current box structure and switching materials or optimizing dimensions can often reduce costs by 15-30% without sacrificing quality." 
+                },
+                { 
+                  q: "Are your food boxes FDA-certified?", 
+                  a: "Yes, we use food-grade paperboard and soy-based inks that meet FDA and international safety standards for direct and indirect food contact." 
+                }
+              ].map((faq, i) => (
+                <div key={i} className="border-b border-gray-100 pb-12">
+                  <h4 className="text-lg font-black mb-4 uppercase tracking-tight">Q: {faq.q}</h4>
+                  <p className="text-gray-500 font-medium leading-relaxed italic">A: {faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Inquiry Form Section */}
         <section id="contact" className="py-40 bg-gray-50 border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6">
              <div className="grid lg:grid-cols-2 gap-32">
                 <div>
-                   <h2 className="text-5xl md:text-6xl font-black mb-10 uppercase tracking-tighter leading-[0.9]">Ready to Build <br/>Your Brand?</h2>
+                   <h2 className="text-5xl md:text-6xl font-black mb-10 uppercase tracking-tighter leading-[0.9]">Ready to Optimize <br/>Your Brand?</h2>
                    <p className="text-xl text-gray-500 font-medium mb-16 leading-relaxed">
-                     Let's start your project today. Get a factory-direct quote or request a custom sample pack for your next launch.
+                     Get a free structural audit or request a sample pack of our latest luxury materials. Let's start your project today.
                    </p>
                    
                    <div className="space-y-10">

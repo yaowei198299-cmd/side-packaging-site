@@ -1,9 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import LeadMagnet from '../../components/LeadMagnet';
 
 const BlogIndex = () => {
   const posts = [
+    {
+      title: "How to Reduce Packaging Costs Without Sacrificing Quality: A Guide to Value Engineering",
+      excerpt: "Learn how brands can save 30-50% on packaging and freight through structural optimization, material engineering, and flat-pack designs. A 2026 cost-saving roadmap.",
+      date: "April 24, 2026",
+      slug: "value-engineering-packaging-cost-reduction-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Folding Carton vs. Rigid Box: Cost, MOQ & Best Use Cases for B2B Brands",
+      excerpt: "When choosing between a Folding Carton and a Rigid Box, the primary decision drivers are cost and brand positioning. Learn which one fits your 2026 packaging strategy.",
+      date: "April 24, 2026",
+      slug: "folding-carton-vs-rigid-box-guide",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
     {
       title: "Luxury Apparel Packaging: How to Design for a Zero-Carbon Future",
       excerpt: "A guide to sustainable fashion packaging. Learn how luxury apparel brands can reduce their carbon footprint through material innovation and structural design.",
@@ -189,6 +204,10 @@ const BlogIndex = () => {
           </div>
         </div>
       </main>
+
+      <div className="mb-24">
+        <LeadMagnet />
+      </div>
 
       {/* Footer */}
       <footer className="bg-white border-t py-20 px-6">
