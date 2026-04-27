@@ -9,9 +9,10 @@ const HomePage = () => {
     name: '',
     email: '',
     phone: '',
-    message: '',
-    quantity: '',
-    type: 'Quote' 
+    country: '',
+    company: '',
+    industry: '',
+    message: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -20,12 +21,12 @@ const HomePage = () => {
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'form_submission', {
         'event_category': 'Engagement',
-        'event_label': formData.type,
-        'value': formData.quantity
+        'event_label': 'Quote',
+        'value': formData.company
       });
     }
-    alert(`Thank you for your ${formData.type} request! Andy will contact you via WhatsApp/Email shortly.`);
-    setFormData({ name: '', email: '', phone: '', message: '', quantity: '', type: 'Quote' });
+    alert(`Thank you for your request! Andy will contact you via WhatsApp/Email shortly.`);
+    setFormData({ name: '', email: '', phone: '', country: '', company: '', industry: '', message: '' });
   };
 
   const industrySolutions = [
@@ -599,94 +600,98 @@ const HomePage = () => {
         </section>
 
         {/* Inquiry Form Section */}
-        <section id="contact" className="py-40 bg-gray-50 border-t border-gray-100">
+        <section id="contact" className="py-40 bg-[#f0f7ff] border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6">
-             <div className="grid lg:grid-cols-2 gap-32">
-                <div>
-                   <h2 className="text-5xl md:text-6xl font-black mb-10 uppercase tracking-tighter leading-[0.9]">Ready to Optimize <br/>Your Brand?</h2>
-                   <p className="text-xl text-gray-500 font-medium mb-16 leading-relaxed">
-                     Get a free structural audit or request a sample pack of our latest luxury materials. Let's start your project today.
-                   </p>
-                   
-                   <div className="space-y-10">
-                      <div className="flex items-center space-x-6 group">
-                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md group-hover:bg-green-500 group-hover:text-white transition-all">
-                           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        </div>
-                        <div>
-                           <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">WhatsApp Support</p>
-                           <p className="font-bold">+86 136 9978 6538</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center space-x-6 group">
-                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md group-hover:bg-black group-hover:text-white transition-all">
-                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                        </div>
-                        <div>
-                           <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Direct Email</p>
-                           <p className="font-bold">andy@saidepackaging.com</p>
-                        </div>
-                      </div>
-                   </div>
+            <div className="bg-white p-12 md:p-16 rounded-[3rem] shadow-2xl max-w-5xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Request a Quote</h2>
+              <p className="text-gray-600 mb-12">
+                Tell us about your project and our specialists will provide a tailored quotation and solution within 24 hours.
+              </p>
+
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                  <div className="space-y-2">
+                    <label className="block text-sm font-bold text-gray-700">Name *</label>
+                    <input 
+                      type="text" 
+                      required
+                      placeholder="Your Name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-bold text-gray-700">Email *</label>
+                    <input 
+                      type="email" 
+                      required
+                      placeholder="Your Email"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-bold text-gray-700">Phone *</label>
+                    <input 
+                      type="text" 
+                      required
+                      placeholder="Phone / WhatsApp"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-bold text-gray-700">Country</label>
+                    <input 
+                      type="text" 
+                      placeholder="Your Country"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
+                      value={formData.country}
+                      onChange={(e) => setFormData({...formData, country: e.target.value})}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-bold text-gray-700">Company</label>
+                    <input 
+                      type="text" 
+                      placeholder="Company Name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
+                      value={formData.company}
+                      onChange={(e) => setFormData({...formData, company: e.target.value})}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-bold text-gray-700">Industry</label>
+                    <input 
+                      type="text" 
+                      placeholder="Business Type"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
+                      value={formData.industry}
+                      onChange={(e) => setFormData({...formData, industry: e.target.value})}
+                    />
+                  </div>
                 </div>
 
-                <div>
-                   <form onSubmit={handleSubmit} className="space-y-8 bg-white p-12 md:p-16 rounded-[3rem] shadow-2xl">
-                      <div className="flex gap-4">
-                        {['Quote', 'Sample'].map(type => (
-                          <button 
-                            key={type}
-                            type="button"
-                            onClick={() => setFormData({...formData, type})}
-                            className={`flex-1 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${formData.type === type ? 'bg-black text-white shadow-xl scale-105' : 'bg-gray-50 text-gray-400 border border-transparent hover:border-black hover:text-black'}`}
-                          >
-                            {type === 'Quote' ? '💰 Free Quote' : '📦 Sample Request'}
-                          </button>
-                        ))}
-                      </div>
-
-                      <div className="grid md:grid-cols-2 gap-8">
-                        <input 
-                          type="text" 
-                          required
-                          placeholder="Full Name"
-                          className="w-full px-8 py-5 rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:ring-2 focus:ring-black transition"
-                          value={formData.name}
-                          onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        />
-                        <input 
-                          type="email" 
-                          required
-                          placeholder="Work Email"
-                          className="w-full px-8 py-5 rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:ring-2 focus:ring-black transition"
-                          value={formData.email}
-                          onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        />
-                      </div>
-
-                      <input 
-                        type="text" 
-                        placeholder="Estimated Quantity"
-                        className="w-full px-8 py-5 rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:ring-2 focus:ring-black transition"
-                        value={formData.quantity}
-                        onChange={(e) => setFormData({...formData, quantity: e.target.value})}
-                      />
-
-                      <textarea 
-                        rows={4}
-                        placeholder="Tell us about your project..."
-                        className="w-full px-8 py-6 rounded-3xl bg-gray-50 border-transparent focus:bg-white focus:ring-2 focus:ring-black transition resize-none"
-                        value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
-                      ></textarea>
-
-                      <button type="submit" className="w-full bg-black text-white py-6 rounded-full font-bold text-xl hover:bg-gray-800 transition-all shadow-xl uppercase tracking-widest">
-                        Submit Request
-                      </button>
-                      <p className="text-center text-[10px] font-bold uppercase tracking-widest text-gray-300">Fast 24h Factory Reply</p>
-                   </form>
+                <div className="space-y-2">
+                  <label className="block text-sm font-bold text-gray-700">Requirements *</label>
+                  <textarea 
+                    rows={4}
+                    required
+                    placeholder="Please describe your requirements, including size, thickness, material, quantity, and application, so we can provide an accurate quotation."
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition resize-none text-gray-600"
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  ></textarea>
                 </div>
-             </div>
+
+                <button type="submit" className="bg-[#2b6cb0] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-blue-800 transition-all shadow-md">
+                  Get a Quote
+                </button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
