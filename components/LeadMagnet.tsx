@@ -68,16 +68,23 @@ const LeadMagnet = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <h3 className="text-3xl font-black mb-4 uppercase tracking-tighter text-white">Guide Sent!</h3>
+                <h3 className="text-3xl font-black mb-4 uppercase tracking-tighter text-white">Guide Ready!</h3>
                 <p className="text-gray-400 font-medium leading-relaxed mb-8">
-                  The Ultimate 2026 Packaging Guide is on its way to <strong>{email}</strong>. Check your inbox (and spam folder) in a few minutes.
+                  The Ultimate 2026 Packaging Guide is now available for you. We've also sent a backup copy to <strong>{email}</strong>.
                 </p>
-                <button 
-                  onClick={() => setSubmitted(false)}
-                  className="text-[11px] font-black uppercase tracking-widest text-blue-500 border-b border-blue-500 pb-1"
-                >
-                  Download Another Copy
-                </button>
+                <div className="space-y-4">
+                  <a href="/resources/ultimate-packaging-guide" target="_blank" rel="noopener noreferrer">
+                    <button className="w-full bg-blue-600 text-white py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-blue-700 transition-all shadow-xl mb-4">
+                      View Full Guide Now
+                    </button>
+                  </a>
+                  <button 
+                    onClick={() => setSubmitted(false)}
+                    className="text-[11px] font-black uppercase tracking-widest text-blue-500 border-b border-blue-500 pb-1"
+                  >
+                    Download Another Copy
+                  </button>
+                </div>
               </div>
             )}
           </div>
