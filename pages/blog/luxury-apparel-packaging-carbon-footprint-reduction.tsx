@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const LuxuryApparelPackagingGuide = () => {
@@ -9,7 +10,9 @@ const LuxuryApparelPackagingGuide = () => {
         <title>How to Design Luxury Apparel Packaging that Reduces Carbon Footprint | Side Packaging</title>
         <meta name="description" content="A guide to sustainable fashion packaging. Learn how luxury apparel brands can reduce their carbon footprint through material innovation and structural design." />
         <meta name="keywords" content="Luxury apparel packaging, sustainable fashion packaging, carbon footprint reduction packaging, eco-friendly clothing boxes, high-end garment packaging 2026" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/luxury-apparel-packaging-carbon-footprint-reduction" />
+        </Head>
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
@@ -69,10 +72,15 @@ const LuxuryApparelPackagingGuide = () => {
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl">
                 <h3 className="text-3xl font-black mb-8 uppercase italic">Future-Proof Your Fashion Brand</h3>
                 <p className="text-gray-400 mb-12">Let's collaborate on a packaging strategy that protects your garments and the planet. Our engineering team is ready to audit your current designs.</p>
-                <Link href="/#contact" className="inline-block bg-blue-500 text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-blue-600 transition">Request a Carbon-Neutral Audit</Link>
+                <Link href="#inquiry-form" className="inline-block bg-blue-500 text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-blue-600 transition">Request a Carbon-Neutral Audit</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
+import InquiryForm from '../../components/InquiryForm';
 
 const ProductPage = () => {
   return (
@@ -39,7 +40,9 @@ const ProductPage = () => {
             })
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/products/custom-magnetic-gift-boxes" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-[60]">
@@ -51,11 +54,11 @@ const ProductPage = () => {
             <Link href="/#about" className="hover:text-black transition-colors">Factory</Link>
             <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
           </div>
-          <Link href="/#contact">
+          <a href="#inquiry-form">
             <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all shadow-lg">
               GET A QUOTE
             </button>
-          </Link>
+          </a>
         </div>
       </nav>
 
@@ -208,15 +211,22 @@ const ProductPage = () => {
           </section>
         </div>
 
+        {/* Inquiry Section */}
+        <section id="inquiry-form" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <InquiryForm productTitle="Custom Magnetic Gift Boxes" />
+          </div>
+        </section>
+
         <div className="text-center py-20 bg-blue-600 rounded-[4rem] text-white">
           <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter">Ready to Start?</h2>
           <p className="text-xl mb-12 font-medium opacity-90 px-6">Get a factory-direct quote or request a sample pack today.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center px-6">
-            <Link href="/#contact">
+            <a href="#inquiry-form">
               <button className="bg-white text-blue-600 px-12 py-6 rounded-full font-black text-lg shadow-2xl hover:bg-gray-100 transition-all">
                 GET A QUOTE
               </button>
-            </Link>
+            </a>
             <a href="https://wa.me/8613699786538">
               <button className="bg-black text-white px-12 py-6 rounded-full font-black text-lg shadow-2xl hover:bg-gray-900 transition-all">
                 CHAT ON WHATSAPP

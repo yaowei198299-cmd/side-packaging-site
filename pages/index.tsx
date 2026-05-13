@@ -1,34 +1,11 @@
-// Last updated: 2026-04-13 for B2B optimization
+// Last updated: 2026-05-13 for B2B optimization
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import LeadMagnet from '../components/LeadMagnet';
+import InquiryForm from '../components/InquiryForm';
 
 const HomePage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    country: '',
-    company: '',
-    industry: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // track event
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'form_submission', {
-        'event_category': 'Engagement',
-        'event_label': 'Quote',
-        'value': formData.company
-      });
-    }
-    alert(`Thank you for your request! Andy will contact you via WhatsApp/Email shortly.`);
-    setFormData({ name: '', email: '', phone: '', country: '', company: '', industry: '', message: '' });
-  };
-
   const industrySolutions = [
     {
       title: "Cosmetic Packaging Solutions",
@@ -217,7 +194,9 @@ const HomePage = () => {
             `,
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com" />
+        </Head>
 
       {/* Floating WhatsApp Button */}
       <a 
@@ -602,96 +581,7 @@ const HomePage = () => {
         {/* Inquiry Form Section */}
         <section id="contact" className="py-40 bg-[#f0f7ff] border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="bg-white p-12 md:p-16 rounded-[3rem] shadow-2xl max-w-5xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Request a Quote</h2>
-              <p className="text-gray-600 mb-12">
-                Tell us about your project and our specialists will provide a tailored quotation and solution within 24 hours.
-              </p>
-
-              <form onSubmit={handleSubmit} className="space-y-8">
-                <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
-                  <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Name *</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Your Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Email *</label>
-                    <input 
-                      type="email" 
-                      required
-                      placeholder="Your Email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Phone *</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Phone / WhatsApp"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Country</label>
-                    <input 
-                      type="text" 
-                      placeholder="Your Country"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
-                      value={formData.country}
-                      onChange={(e) => setFormData({...formData, country: e.target.value})}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Company</label>
-                    <input 
-                      type="text" 
-                      placeholder="Company Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
-                      value={formData.company}
-                      onChange={(e) => setFormData({...formData, company: e.target.value})}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-bold text-gray-700">Industry</label>
-                    <input 
-                      type="text" 
-                      placeholder="Business Type"
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600"
-                      value={formData.industry}
-                      onChange={(e) => setFormData({...formData, industry: e.target.value})}
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="block text-sm font-bold text-gray-700">Requirements *</label>
-                  <textarea 
-                    rows={4}
-                    required
-                    placeholder="Please describe your requirements, including size, thickness, material, quantity, and application, so we can provide an accurate quotation."
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition resize-none text-gray-600"
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                  ></textarea>
-                </div>
-
-                <button type="submit" className="bg-[#2b6cb0] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-blue-800 transition-all shadow-md">
-                  Get a Quote
-                </button>
-              </form>
-            </div>
+            <InquiryForm />
           </div>
         </section>
       </main>

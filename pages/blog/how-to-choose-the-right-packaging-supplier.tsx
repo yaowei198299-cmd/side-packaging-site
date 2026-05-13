@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const ChoosingSupplierGuide = () => {
@@ -8,7 +9,9 @@ const ChoosingSupplierGuide = () => {
       <Head>
         <title>How to Choose the Right Custom Packaging Boxes for Your Business | Side Packaging</title>
         <meta name="description" content="Choosing the right custom packaging box is essential for brand identity and product safety. Learn about magnetic boxes, mailers, and rigid boxes in our guide." />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/how-to-choose-the-right-packaging-supplier" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -29,7 +32,7 @@ const ChoosingSupplierGuide = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -83,7 +86,7 @@ const ChoosingSupplierGuide = () => {
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Need expert advice?</h3>
                 <p className="text-gray-500 mb-8">Our team at Side Packaging HK Limited has over 20 years of experience in manufacturing premium custom boxes. We can help you find the perfect balance between luxury and logistics.</p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Quote</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Quote</Link>
               </div>
 
               <div className="mt-12 p-8 bg-blue-50 rounded-2xl border border-blue-100">
@@ -93,7 +96,12 @@ const ChoosingSupplierGuide = () => {
                 </p>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 
@@ -112,7 +120,7 @@ const ChoosingSupplierGuide = () => {
               <li><Link href="/" className="hover:text-black">Home</Link></li>
               <li><Link href="/products/custom-magnetic-box" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
-              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+              <li><Link href="#inquiry-form" className="hover:text-black">Request Quote</Link></li>
             </ul>
           </div>
           <div>

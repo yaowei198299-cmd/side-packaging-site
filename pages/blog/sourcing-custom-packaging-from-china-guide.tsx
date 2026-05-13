@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const SourcingGuidePost = () => {
@@ -9,7 +10,9 @@ const SourcingGuidePost = () => {
         <title>Sourcing Custom Packaging from China: A 2026 Strategic Guide | Side Packaging</title>
         <meta name="description" content="A comprehensive guide for brands looking to source custom packaging directly from manufacturers in China. Learn about certifications (FSC, BSCI), quality control, and factory-direct advantages." />
         <meta name="keywords" content="sourcing packaging China, factory direct gift boxes, custom box manufacturer, FSC certified packaging, BSCI factory audit, China luxury packaging supply chain" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/sourcing-custom-packaging-from-china-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -30,7 +33,7 @@ const SourcingGuidePost = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -101,10 +104,15 @@ const SourcingGuidePost = () => {
                 <p className="text-gray-500 mb-8">
                   At Side Packaging HK Limited, we operate our own state-of-the-art production facility specialized in high-end magnetic rigid boxes and mailers. We are fully FSC and BSCI certified, providing factory-direct solutions to leading brands in the USA, UK, and EU.
                 </p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Request a Factory-Direct Quote</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Request a Factory-Direct Quote</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

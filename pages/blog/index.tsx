@@ -2,9 +2,80 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
+import InquiryForm from '../../components/InquiryForm';
 
 const BlogIndex = () => {
   const posts = [
+    {
+      title: "Jewelry Box Trends 2026: Luxury Customization & Small MOQ for Boutique Brands",
+      excerpt: "Discover the top jewelry box trends for 2026. Learn how custom magnetic boxes and sustainable materials can elevate your jewelry brand identity and unboxing experience.",
+      date: "May 6, 2026",
+      slug: "jewelry-box-trends-2026-customization",
+      image: "https://sc02.alicdn.com/kf/H292333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Medical & CBD Packaging: Balancing Child-Resistant Compliance with Premium Design",
+      excerpt: "Learn about the critical balance between safety compliance and high-end design in Medical and CBD packaging for 2026. From CR rigid boxes to tamper-evident seals.",
+      date: "May 6, 2026",
+      slug: "medical-cbd-packaging-compliance-design",
+      image: "https://sc02.alicdn.com/kf/H192333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Sustainable Shoe Box Design: Optimizing E-commerce Footwear Packaging for 2026",
+      excerpt: "Discover how sustainable shoe box designs can reduce shipping costs, carbon footprint, and boost brand loyalty for your footwear brand. Explore collapsible rigid options.",
+      date: "May 6, 2026",
+      slug: "sustainable-shoe-box-design-ecommerce",
+      image: "https://sc02.alicdn.com/kf/H092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Luxury Candle Packaging Trends 2026: The Power of Small MOQ & Custom Designs",
+      excerpt: "Explore the latest trends in luxury candle packaging for 2026. Learn how small MOQ and bespoke rigid boxes can transform your candle brand's market position.",
+      date: "May 6, 2026",
+      slug: "luxury-candle-packaging-trends-small-moq",
+      image: "https://sc02.alicdn.com/kf/H7b82333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Luxury Sustainable Cosmetic Packaging Trends 2026: Beauty Without Compromise",
+      excerpt: "Explore the intersection of luxury and sustainability in 2026 cosmetic packaging. Learn about recyclable rigid boxes, refillable glass, and plastic-free solutions.",
+      date: "May 4, 2026",
+      slug: "luxury-sustainable-cosmetic-packaging-trends-2026",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "How to Calculate Total Landed Cost for Packaging Imported from China: A 2026 Guide",
+      excerpt: "Don't be surprised by hidden costs. Learn the step-by-step formula for calculating the total cost of your packaging from factory to warehouse, including tariffs and freight.",
+      date: "May 4, 2026",
+      slug: "how-to-calculate-packaging-landed-cost-china-import",
+      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+    },
+    {
+      title: "Custom Food-Grade Bakery & Bread Boxes: The 2026 Branding & Compliance Guide",
+      excerpt: "How high-end bakeries are using custom packaging to build brand loyalty and ensure food safety in 2026. From windowed boxes to grease-proof barriers.",
+      date: "May 4, 2026",
+      slug: "food-grade-custom-bakery-boxes-branding-guide",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Low MOQ Custom Packaging for Startups in 2026: The Ultimate Guide to Scaling Your Brand",
+      excerpt: "Discover how low MOQ custom packaging is empowering startups in 2026. Learn strategies for sourcing luxury rigid boxes and mailers without massive inventory commitments.",
+      date: "April 27, 2026",
+      slug: "low-moq-custom-packaging-startups-2026-guide",
+      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+    },
+    {
+      title: "US & EU Food Packaging Regulatory Compliance: A 2026 Guide for Global Manufacturers",
+      excerpt: "Understanding the complex landscape of food packaging safety and environmental regulations in the US and Europe for the year 2026. Stay ahead of PFAS bans and PPWR mandates.",
+      date: "April 27, 2026",
+      slug: "us-eu-food-packaging-compliance-2026-guide",
+      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "FSC-Certified Luxury Paper Boxes: Elevating Brand Value Through Sustainable Excellence",
+      excerpt: "Why FSC certification is the new gold standard for luxury brands in 2026. Learn how sustainable sourcing translates into brand authority and consumer trust.",
+      date: "April 27, 2026",
+      slug: "fsc-certified-luxury-paper-boxes-brand-value-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
     {
       title: "How to Reduce Packaging Costs Without Sacrificing Quality: A Guide to Value Engineering",
       excerpt: "Learn how brands can save 30-50% on packaging and freight through structural optimization, material engineering, and flat-pack designs. A 2026 cost-saving roadmap.",
@@ -138,7 +209,9 @@ const BlogIndex = () => {
       <Head>
         <title>Blog | Side Packaging HK Limited - Packaging Insights & Guides</title>
         <meta name="description" content="Stay updated with the latest trends in luxury packaging. Read our guides on how to choose the best custom gift boxes, magnetic boxes, and mailers for your brand." />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -209,6 +282,12 @@ const BlogIndex = () => {
         <LeadMagnet />
       </div>
 
+      <section id="inquiry-form" className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <InquiryForm productTitle="Side Packaging Solutions" />
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
@@ -224,7 +303,7 @@ const BlogIndex = () => {
               <li><Link href="/" className="hover:text-black">Home</Link></li>
               <li><Link href="/#products" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
-              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+              <li><a href="#inquiry-form" className="hover:text-black">Request Quote</a></li>
             </ul>
           </div>
           <div>

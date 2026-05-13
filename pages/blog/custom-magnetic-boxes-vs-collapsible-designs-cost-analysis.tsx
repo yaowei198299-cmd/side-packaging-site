@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const MagneticVsCollapsibleGuide = () => {
@@ -9,7 +10,9 @@ const MagneticVsCollapsibleGuide = () => {
         <title>Custom Magnetic Boxes vs. Collapsible Designs: Cost-Saving Analysis | Side Packaging</title>
         <meta name="description" content="A comprehensive cost-saving analysis between standard rigid magnetic boxes and collapsible (flat-pack) designs. Learn how to save up to 70% on international shipping costs." />
         <meta name="keywords" content="Custom magnetic boxes vs collapsible, flat-pack rigid boxes, shipping cost saving packaging, luxury collapsible gift boxes, foldable rigid box manufacturer" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/custom-magnetic-boxes-vs-collapsible-designs-cost-analysis" />
+        </Head>
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
@@ -95,10 +98,15 @@ const MagneticVsCollapsibleGuide = () => {
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl text-center">
                 <h3 className="text-3xl font-black mb-8 uppercase italic">Optimize Your Logistics</h3>
                 <p className="text-gray-400 mb-12">Stop paying for air. Switch to our premium collapsible designs and reinvest those savings into your marketing.</p>
-                <Link href="/#contact" className="inline-block bg-white text-black px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-200 transition">Get a Collapsible Box Quote</Link>
+                <Link href="#inquiry-form" className="inline-block bg-white text-black px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-200 transition">Get a Collapsible Box Quote</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

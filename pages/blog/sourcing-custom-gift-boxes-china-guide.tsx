@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const BlogPost = () => {
@@ -8,7 +9,9 @@ const BlogPost = () => {
       <Head>
         <title>How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability | Side Packaging HK Limited</title>
         <meta name="description" content="A comprehensive guide for brands on sourcing custom luxury gift boxes from China. Learn about direct factory pricing, small MOQ strategies, and FSC certified sustainable packaging." />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/sourcing-custom-gift-boxes-china-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -29,7 +32,7 @@ const BlogPost = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -224,10 +227,15 @@ const BlogPost = () => {
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Elevate Your Unboxing Experience Today</h3>
                 <p className="text-gray-500 mb-8">Ready to move beyond generic packaging? Side Packaging specializes in **sustainable luxury packaging boxes** with factory-direct pricing and low MOQs. Contact Andy for a consultation and a free FSC-certified design mockup.</p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

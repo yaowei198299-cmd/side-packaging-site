@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const USACostGuidePost = () => {
@@ -9,7 +10,9 @@ const USACostGuidePost = () => {
         <title>USA Customs & Duties for Importing Packaging from China: 2026 Cost Guide | Side Packaging HK</title>
         <meta name="description" content="A comprehensive guide for US brands importing custom packaging from China in 2026. Understand HTS codes, Section 301 tariffs, and how to optimize DDP shipping costs." />
         <meta name="keywords" content="importing packaging from China, US customs duties paper boxes, Section 301 tariffs China, HTS code custom boxes, DDP shipping packaging, China manufacturer B2B" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/usa-customs-duties-importing-packaging-china-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -17,7 +20,7 @@ const USACostGuidePost = () => {
           <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING HK</Link>
           <div className="flex items-center space-x-6">
             <Link href="/blog" className="text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-black transition">Blog</Link>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition shadow-lg">
                 GET QUOTE
               </button>
@@ -90,10 +93,15 @@ const USACostGuidePost = () => {
                 <p className="text-gray-500 mb-8">
                   Stop guessing your import costs. Our team can provide a full DDP breakdown for your specific location in the USA, including all duties and taxes.
                 </p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get My All-Inclusive Price</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get My All-Inclusive Price</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

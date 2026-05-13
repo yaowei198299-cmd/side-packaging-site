@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const FSCCertificationImportanceGuide = () => {
@@ -9,7 +10,9 @@ const FSCCertificationImportanceGuide = () => {
         <title>Why FSC Certification is Critical for US & UK Luxury Packaging Markets | Side Packaging</title>
         <meta name="description" content="Understanding the regulatory and consumer shift toward FSC-certified packaging in the US, UK, and EU. Why luxury brands are prioritizing sustainable paper sourcing in 2026." />
         <meta name="keywords" content="FSC certified packaging, Sustainable luxury packaging US, UK packaging regulations 2026, Eco-friendly rigid boxes, FSC wood pulp paper boxes" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/fsc-certification-luxury-packaging-us-uk-markets-importance" />
+        </Head>
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
@@ -68,10 +71,15 @@ const FSCCertificationImportanceGuide = () => {
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl">
                 <h3 className="text-3xl font-black mb-8 uppercase italic">Is Your Brand Market-Ready?</h3>
                 <p className="text-gray-400 mb-12">Don't let certification be a barrier to your global growth. Work with an FSC-certified factory today.</p>
-                <Link href="/#contact" className="inline-block bg-blue-600 text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-blue-700 transition">Request FSC Compliance Audit</Link>
+                <Link href="#inquiry-form" className="inline-block bg-blue-600 text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-blue-700 transition">Request FSC Compliance Audit</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

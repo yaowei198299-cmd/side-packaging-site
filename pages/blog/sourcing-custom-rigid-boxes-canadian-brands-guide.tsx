@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const CanadianSourcingGuide = () => {
@@ -9,7 +10,9 @@ const CanadianSourcingGuide = () => {
         <title>Sourcing Custom Rigid Boxes for Canadian Brands: Logistics & Duty Guide | Side Packaging</title>
         <meta name="description" content="A strategic guide for Canadian businesses sourcing custom rigid gift boxes from China. Expert insights on DDP shipping, GST/HST compliance, and factory selection." />
         <meta name="keywords" content="Custom rigid boxes Canada, Sourcing packaging from China, DDP shipping to Toronto, Canada customs duties packaging, Luxury gift boxes Vancouver" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/sourcing-custom-rigid-boxes-canadian-brands-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -18,7 +21,7 @@ const CanadianSourcingGuide = () => {
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
-            <Link href="/#contact" className="hover:text-black transition-colors">Quote</Link>
+            <Link href="#inquiry-form" className="hover:text-black transition-colors">Quote</Link>
           </div>
         </div>
       </nav>
@@ -71,10 +74,15 @@ const CanadianSourcingGuide = () => {
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl">
                 <h3 className="text-3xl font-black mb-8 uppercase italic">Ready to ship to Canada?</h3>
                 <p className="text-gray-400 mb-12">Contact our North American strategy team for a landed-cost quote including all Canadian duties and taxes.</p>
-                <Link href="/#contact" className="inline-block bg-white text-black px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-200 transition">Get a Canadian DDP Quote</Link>
+                <Link href="#inquiry-form" className="inline-block bg-white text-black px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-200 transition">Get a Canadian DDP Quote</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import InquiryForm from '../../components/InquiryForm';
 
 const UltimateGuide = () => {
   return (
@@ -30,7 +31,9 @@ const UltimateGuide = () => {
             })
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/resources/ultimate-packaging-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -146,15 +149,22 @@ const UltimateGuide = () => {
           </div>
         </article>
 
+        {/* Inquiry Form Section */}
+        <section id="inquiry-form" className="py-24 bg-gray-50 rounded-[3rem] mt-24">
+          <div className="max-w-7xl mx-auto px-6">
+            <InquiryForm productTitle="Structural Audit (Technical Guide)" />
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="mt-32 text-center border-t border-gray-100 pt-24">
            <h2 className="text-4xl font-black uppercase italic tracking-tighter mb-8 text-black">Need a Structural Audit?</h2>
            <p className="text-gray-500 font-medium mb-12 max-w-lg mx-auto leading-relaxed">Let our engineers analyze your product size, weight, and budget to find the perfect technical solution.</p>
-           <Link href="/#contact">
+           <a href="#inquiry-form">
               <button className="bg-black text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition shadow-2xl">
                 Get Your Professional Audit
               </button>
-           </Link>
+           </a>
         </section>
       </main>
 

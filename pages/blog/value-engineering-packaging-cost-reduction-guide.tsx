@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
 
@@ -64,7 +65,9 @@ const CostReductionGuide = () => {
             ])
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/value-engineering-packaging-cost-reduction-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -80,7 +83,7 @@ const CostReductionGuide = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -189,7 +192,7 @@ const CostReductionGuide = () => {
                 <div className="relative z-10">
                   <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Get Your Free Cost Optimization Plan</h3>
                   <p className="text-blue-100 mb-10 text-lg">Submit your current packaging details, and our team will provide 3 ways to reduce your costs without losing your brand's luxury feel.</p>
-                  <Link href="/#contact" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition">Request Free Audit & Quote</Link>
+                  <Link href="#inquiry-form" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition">Request Free Audit & Quote</Link>
                 </div>
               </div>
 
@@ -207,7 +210,12 @@ const CostReductionGuide = () => {
                 </div>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="How to Reduce Packaging Costs Without Sacrificing Quality: A Guide to Value Engineering" />
+        </div>
+      </article>
         </div>
       </main>
 
@@ -228,7 +236,7 @@ const CostReductionGuide = () => {
             <ul className="space-y-4 text-sm font-bold">
               <li><Link href="/" className="hover:text-black">Home</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
-              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+              <li><Link href="#inquiry-form" className="hover:text-black">Request Quote</Link></li>
             </ul>
           </div>
           <div>

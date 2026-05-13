@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import InquiryForm from '../../components/InquiryForm';
 
 const FoodSolution = () => {
   return (
@@ -39,7 +40,9 @@ const FoodSolution = () => {
             ])
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/solutions/food-bakery-packaging" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -56,11 +59,11 @@ const FoodSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <Link href="/#contact">
+            <a href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
@@ -81,11 +84,11 @@ const FoodSolution = () => {
                   FDA-compliant materials meet <strong>greaseproof technology</strong>. Designed for high-end bakeries and premium food exporters.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <Link href="/#contact">
+                  <a href="#inquiry-form">
                     <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl">
                       Get Food-Safe Quote
                     </button>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -250,15 +253,21 @@ const FoodSolution = () => {
         </section>
 
         {/* Final CTA */}
+        <section id="inquiry-form" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <InquiryForm productTitle="Food & Bakery Packaging Solutions" />
+          </div>
+        </section>
+
         <section className="py-32 bg-green-600 text-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Elevate Your Food Brand.</h2>
              <p className="text-xl text-green-100 font-medium mb-12">Design a box that keeps your food fresh and your brand looking professional on every shelf.</p>
-             <Link href="/#contact">
+             <a href="#inquiry-form">
                 <button className="bg-white text-green-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1">
                   Request Food-Safe Consultation
                 </button>
-             </Link>
+             </a>
           </div>
         </section>
       </main>

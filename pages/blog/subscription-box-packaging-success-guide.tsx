@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const BlogPost = () => {
@@ -9,7 +10,9 @@ const BlogPost = () => {
         <title>Subscription Box Success: How Custom Printed Shipping Boxes Drive Unboxing Experience | Side Packaging</title>
         <meta name="description" content="Discover how branded subscription box packaging and custom printed shipping boxes can transform your unboxing experience. A deep dive into apparel and jewelry packaging strategies." />
         <meta name="keywords" content="Subscription box, Apparel shipping box, Custom printed mailers for clothing, Branded subscription box packaging, Custom jewelry shipping box" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/subscription-box-packaging-success-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -28,7 +31,7 @@ const BlogPost = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -156,7 +159,7 @@ const BlogPost = () => {
                     Get factory-direct pricing on custom printed shipping boxes, mailers, and luxury rigid boxes. Our experts will help you design the ultimate unboxing experience.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <Link href="/#contact" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-lg text-center">Get a Free Quote</Link>
+                    <Link href="#inquiry-form" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-lg text-center">Get a Free Quote</Link>
                     <a href="https://wa.me/8613699786538" className="inline-block border-2 border-white/30 text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white/10 transition text-center">WhatsApp Andy</a>
                   </div>
                 </div>
@@ -164,7 +167,12 @@ const BlogPost = () => {
                 <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-white/10 rounded-full blur-[80px] group-hover:scale-110 transition-transform duration-700"></div>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
 
           {/* More Posts Section */}
           <section className="mt-32 pt-24 border-t border-gray-100">
@@ -210,7 +218,7 @@ const BlogPost = () => {
             <ul className="space-y-4 text-xs font-bold">
               <li><a href="mailto:andy@saidepackaging.com" className="hover:text-black">andy@saidepackaging.com</a></li>
               <li><a href="https://wa.me/8613699786538" className="hover:text-green-500">WhatsApp: +86 13699786538</a></li>
-              <li><Link href="/#contact" className="hover:text-black">Request a Quote</Link></li>
+              <li><Link href="#inquiry-form" className="hover:text-black">Request a Quote</Link></li>
             </ul>
           </div>
         </div>

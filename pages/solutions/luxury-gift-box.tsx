@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import InquiryForm from '../../components/InquiryForm';
 
 const LuxuryGiftBoxSolution = () => {
   return (
@@ -39,7 +40,9 @@ const LuxuryGiftBoxSolution = () => {
             ])
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/solutions/luxury-gift-box" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -55,11 +58,11 @@ const LuxuryGiftBoxSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <Link href="/#contact">
+            <a href="#inquiry-form">
               <button className="bg-purple-900 text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-purple-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
@@ -80,11 +83,11 @@ const LuxuryGiftBoxSolution = () => {
                   Elevate your brand perception with high-density chipboard, precision engineering, and tactile finishes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <Link href="/#contact">
+                  <a href="#inquiry-form">
                     <button className="bg-white text-black px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-200 transition-all shadow-xl">
                       Consult Our Engineers
                     </button>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -235,15 +238,21 @@ const LuxuryGiftBoxSolution = () => {
         </section>
 
         {/* Final CTA */}
+        <section id="inquiry-form" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <InquiryForm productTitle="Luxury Gift Box Solutions" />
+          </div>
+        </section>
+
         <section className="py-32 bg-purple-950 text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Create Your Brand's Masterpiece.</h2>
              <p className="text-xl text-purple-300 font-medium mb-12">Our engineers will design a box that doesn't just hold your product—it celebrates it.</p>
-             <Link href="/#contact">
+             <a href="#inquiry-form">
                 <button className="bg-purple-600 text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition shadow-2xl transform hover:-translate-y-1">
                   Request Luxury Structural Consultation
                 </button>
-             </Link>
+             </a>
           </div>
         </section>
       </main>

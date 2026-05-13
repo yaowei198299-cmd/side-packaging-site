@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const EcoFoodPackagingTrends = () => {
@@ -8,7 +9,9 @@ const EcoFoodPackagingTrends = () => {
       <Head>
         <title>2026 Eco-friendly Food Packaging Trends | Side Packaging HK Limited</title>
         <meta name="description" content="Discover the top sustainable food packaging trends for 2026. From biodegradable takeaway boxes to greaseproof FSC-certified paper solutions." />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/eco-friendly-food-packaging-trends-2026" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -29,7 +32,7 @@ const EcoFoodPackagingTrends = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -77,10 +80,15 @@ const EcoFoodPackagingTrends = () => {
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Food-Safe Solutions</h3>
                 <p className="text-gray-500 mb-8">Side Packaging provides a wide range of food-safe, FSC-certified paper boxes for restaurants, bakeries, and food startups. All our materials meet international safety standards.</p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get Food Packaging Quote</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get Food Packaging Quote</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 
@@ -99,7 +107,7 @@ const EcoFoodPackagingTrends = () => {
               <li><Link href="/" className="hover:text-black">Home</Link></li>
               <li><Link href="/#products" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
-              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+              <li><Link href="#inquiry-form" className="hover:text-black">Request Quote</Link></li>
             </ul>
           </div>
           <div>

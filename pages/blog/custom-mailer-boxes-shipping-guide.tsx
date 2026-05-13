@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const CustomMailerGuide = () => {
@@ -58,7 +59,9 @@ const CustomMailerGuide = () => {
             ])
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/custom-mailer-boxes-shipping-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -79,7 +82,7 @@ const CustomMailerGuide = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -228,14 +231,19 @@ const CustomMailerGuide = () => {
                     Get in touch with Andy and our expert design team today. We provide free dieline templates and physical samples to ensure your e-commerce packaging is perfect before you hit print.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition shadow-lg">Request a Quote</Link>
+                    <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition shadow-lg">Request a Quote</Link>
                     <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-600 text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-green-700 transition shadow-lg">WhatsApp Us</a>
                   </div>
                 </div>
                 <div className="absolute top-[-20%] right-[-10%] w-64 h-64 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="The Comprehensive Guide to Custom Mailer Boxes: Boosting E-commerce Branding in 2026" />
+        </div>
+      </article>
         </div>
       </main>
 
@@ -254,7 +262,7 @@ const CustomMailerGuide = () => {
               <li><Link href="/" className="hover:text-black">Home</Link></li>
               <li><Link href="/#products" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black text-black">Blog</Link></li>
-              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+              <li><Link href="#inquiry-form" className="hover:text-black">Request Quote</Link></li>
             </ul>
           </div>
           <div>

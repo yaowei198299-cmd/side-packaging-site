@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const RecyclablePost = () => {
@@ -9,7 +10,9 @@ const RecyclablePost = () => {
         <title>How to Design 100% Recyclable Magnetic Gift Boxes: 2026 Guide | Side Packaging HK</title>
         <meta name="description" content="A comprehensive B2B guide on designing sustainable, 100% recyclable magnetic gift boxes without compromising on luxury. Essential for 2026 cosmetics and luxury brands." />
         <meta name="keywords" content="recyclable magnetic gift box, sustainable luxury packaging, eco-friendly rigid boxes, packaging design 2026, FSC paper boxes, cosmetic branding" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/recyclable-magnetic-gift-boxes-design-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -19,7 +22,7 @@ const RecyclablePost = () => {
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -89,10 +92,15 @@ const RecyclablePost = () => {
                 <p className="text-gray-500 mb-8">
                   Not sure how to make your luxury packaging sustainable? Our engineering team provides free consultation on material selection and structural design to ensure your brand meets the highest ESG standards.
                 </p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get a 3D Sustainability Mockup</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get a 3D Sustainability Mockup</Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const SustainablePackagingPost = () => {
@@ -9,7 +10,9 @@ const SustainablePackagingPost = () => {
         <title>Sustainable E-commerce Packaging: Why Eco-friendly Corrugated Boxes are the Future | Side Packaging</title>
         <meta name="description" content="Discover how eco-friendly mailer boxes and FSC certified paper packaging are revolutionizing e-commerce. Learn why sustainability is the key to brand loyalty in the US and EU." />
         <meta name="keywords" content="Eco-friendly mailer box, FSC certified paper packaging, Recyclable packaging box, Biodegradable ecommerce mailer, Sustainability packaging" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/sustainable-ecommerce-packaging-guide" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -28,7 +31,7 @@ const SustainablePackagingPost = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -162,14 +165,19 @@ const SustainablePackagingPost = () => {
                 <p className="text-gray-400 mb-10 text-lg">
                   Join hundreds of premium brands making the switch to FSC-certified, 100% recyclable mailer boxes. Get a quote today and see the difference quality makes.
                 </p>
-                <Link href="/#contact">
+                <Link href="#inquiry-form">
                   <button className="bg-white text-black px-12 py-5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-green-500 hover:text-white transition-all transform hover:scale-105 shadow-2xl">
                     Get My Free Quote
                   </button>
                 </Link>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 

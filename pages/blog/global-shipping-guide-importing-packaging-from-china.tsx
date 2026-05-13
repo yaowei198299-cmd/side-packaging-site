@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import InquiryForm from '../../components/InquiryForm';
 import Link from 'next/link';
 
 const GlobalShippingGuide = () => {
@@ -8,7 +9,9 @@ const GlobalShippingGuide = () => {
       <Head>
         <title>Global Shipping Guide: How to Import Custom Packaging from China to USA & Europe | Side Packaging</title>
         <meta name="description" content="Learn how to master importing packaging from China. Our guide covers DDP shipping, ocean freight vs air express, and tips to reduce custom box shipping costs." />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/blog/global-shipping-guide-importing-packaging-from-china" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -29,7 +32,7 @@ const GlobalShippingGuide = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <Link href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
@@ -157,7 +160,7 @@ const GlobalShippingGuide = () => {
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Ready to optimise your supply chain?</h3>
                 <p className="text-gray-500 mb-8">Side Packaging HK Limited provides end-to-end solutions for custom luxury packaging. We handle the production and the logistics, so you can focus on growing your brand.</p>
-                <Link href="/#contact" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Shipping & Design Quote</Link>
+                <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Shipping & Design Quote</Link>
               </div>
 
               <div className="mt-12 p-8 bg-green-50 rounded-2xl border border-green-100">
@@ -167,7 +170,12 @@ const GlobalShippingGuide = () => {
                 </p>
               </div>
             </div>
-          </article>
+          
+        <div id="inquiry-form" className="mt-16 pt-16 border-t border-gray-100">
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Get a Quote for Your Project</h2>
+          <InquiryForm productTitle="Packaging Inquiry" />
+        </div>
+      </article>
         </div>
       </main>
 
@@ -186,7 +194,7 @@ const GlobalShippingGuide = () => {
               <li><Link href="/" className="hover:text-black">Home</Link></li>
               <li><Link href="/#products" className="hover:text-black">Products</Link></li>
               <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
-              <li><Link href="/#contact" className="hover:text-black">Request Quote</Link></li>
+              <li><Link href="#inquiry-form" className="hover:text-black">Request Quote</Link></li>
             </ul>
           </div>
           <div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import InquiryForm from '../../components/InquiryForm';
 
 const EcommerceSolution = () => {
   return (
@@ -39,7 +40,9 @@ const EcommerceSolution = () => {
             ])
           }}
         />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/solutions/ecommerce-mailer-boxes" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -55,11 +58,11 @@ const EcommerceSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <Link href="/#contact">
+            <a href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
@@ -80,11 +83,11 @@ const EcommerceSolution = () => {
                   Optimize your shipping with <strong>E-flute corrugated strength</strong>, custom internal printing, and logistics-first engineering.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <Link href="/#contact">
+                  <a href="#inquiry-form">
                     <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl">
                       Optimize Your Shipping
                     </button>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -235,15 +238,21 @@ const EcommerceSolution = () => {
         </section>
 
         {/* Final CTA */}
+        <section id="inquiry-form" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <InquiryForm productTitle="E-commerce Mailer Box Solutions" />
+          </div>
+        </section>
+
         <section className="py-32 bg-orange-600 text-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Scale Your Brand's Logistics.</h2>
              <p className="text-xl text-orange-100 font-medium mb-12">Our experts will help you design a box that survives the journey and delights your customers.</p>
-             <Link href="/#contact">
+             <a href="#inquiry-form">
                 <button className="bg-white text-orange-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1">
                   Get My Logistics-Optimized Quote
                 </button>
-             </Link>
+             </a>
           </div>
         </section>
       </main>

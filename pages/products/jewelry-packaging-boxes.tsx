@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
+import InquiryForm from '../../components/InquiryForm';
 
 const JewelryPackagingBoxesPage = () => {
   const productData = {
@@ -23,7 +24,9 @@ const JewelryPackagingBoxesPage = () => {
         <title>Luxury Jewelry & Watch Boxes | Factory-Direct Bespoke Packaging | Side Packaging HK</title>
         <meta name="description" content="Premium custom jewelry and watch boxes manufacturer. Factory-direct rigid boxes with velvet inserts, gold foil stamping, and luxury unboxing experience. Low MOQ." />
         <meta name="keywords" content="Luxury Jewelry Boxes, Custom Watch Boxes, Wholesale Jewelry Boxes, Rigid Jewelry Packaging, Velvet Jewelry Inserts, Gold Foil Stamping, B2B Packaging Manufacturer, Bespoke Jewelry Boxes, Factory-Direct Jewelry Packaging, Luxury Unboxing Experience, Premium Watch Packaging, Eco-Luxury Packaging" />
-      </Head>
+      
+        <link rel="canonical" href="https://saidepackaging.com/products/jewelry-packaging-boxes" />
+        </Head>
 
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
@@ -41,11 +44,11 @@ const JewelryPackagingBoxesPage = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <Link href="/#contact">
+            <a href="#inquiry-form">
               <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
                 GET A FREE QUOTE
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
@@ -277,6 +280,13 @@ const JewelryPackagingBoxesPage = () => {
           </div>
         </section>
 
+        {/* Inquiry Section */}
+        <section id="inquiry-form" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <InquiryForm productTitle={productData.title} />
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="bg-gray-50 rounded-[40px] p-12 md:p-20 text-center border border-gray-100">
           <div className="max-w-3xl mx-auto">
@@ -285,11 +295,11 @@ const JewelryPackagingBoxesPage = () => {
               Experience the difference of factory-direct luxury. Get your custom jewelry packaging quote within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/#contact">
+              <a href="#inquiry-form">
                 <button className="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition shadow-xl">
                   Get a Luxury Quote
                 </button>
-              </Link>
+              </a>
               <button className="bg-white text-black border border-gray-200 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition">
                 Book a Video Consultation
               </button>
