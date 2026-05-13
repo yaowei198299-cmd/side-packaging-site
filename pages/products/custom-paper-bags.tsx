@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const CustomPaperBagsPage = () => {
   const productData = {
@@ -44,11 +44,9 @@ const CustomPaperBagsPage = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <a href="#inquiry-form">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
+            <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
                 GET A FREE QUOTE
               </button>
-            </a>
           </div>
         </div>
       </nav>
@@ -186,11 +184,9 @@ const CustomPaperBagsPage = () => {
               <div>
                 <h3 className="text-xl font-bold mb-4">Starting at 300-500 Units</h3>
                 <p className="text-gray-400 text-sm mb-6">Test new designs or launch seasonal collections without heavy inventory risk. Ideal for both emerging boutiques and established global brands.</p>
-                <a href="#inquiry-form">
-                  <button className="bg-white text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-gray-200 transition">
+                <button className="bg-white text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-gray-200 transition" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
                     Get Agile Quote
                   </button>
-                </a>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Door-to-Door (DDP) Shipping</h3>
@@ -266,11 +262,9 @@ const CustomPaperBagsPage = () => {
               Experience the difference of factory-direct luxury paper bags. Get your custom carrier quote within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="#inquiry-form">
-                <button className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+              <button className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
                   Request Bag Quote
                 </button>
-              </a>
               <button className="bg-white/10 text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition">
                 Order a Sample Pack
               </button>

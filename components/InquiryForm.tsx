@@ -139,6 +139,12 @@ const InquiryForm = ({ productTitle }: { productTitle?: string }) => {
             Get a Factory Quote
           </button>
           <div className="flex items-center gap-4 text-gray-400">
+            <label className="flex items-center gap-2 cursor-pointer group">
+              <input type="checkbox" className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" defaultChecked />
+              <span className="text-[10px] font-black uppercase tracking-widest group-hover:text-black transition-colors">Include Free Sample Pack</span>
+            </label>
+          </div>
+          <div className="flex items-center gap-4 text-gray-400">
             <div className="flex -space-x-2">
               {[1,2,3].map(i => (
                 <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200"></div>

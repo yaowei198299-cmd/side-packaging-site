@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const SustainableSolution = () => {
   return (
@@ -80,11 +80,9 @@ const SustainableSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="#inquiry-form">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-emerald-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
+            <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-emerald-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Sustainable Packaging Solutions'); }}>
                 GET A FREE QUOTE
               </button>
-            </a>
           </div>
         </div>
       </nav>
@@ -105,11 +103,9 @@ const SustainableSolution = () => {
                   Transition to <strong>100% recyclable, plastic-free</strong> packaging. Premium aesthetics meet FSC-certified excellence.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <a href="#inquiry-form">
-                    <button className="bg-emerald-700 text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-emerald-800 transition-all shadow-xl">
+                  <button className="bg-emerald-700 text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-emerald-800 transition-all shadow-xl" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Sustainable Packaging Solutions'); }}>
                       Get Sustainability Audit
                     </button>
-                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -260,11 +256,9 @@ const SustainableSolution = () => {
           <div className="max-w-4xl mx-auto px-6">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Future-Proof Your Brand Today.</h2>
              <p className="text-xl text-emerald-100 font-medium mb-12">Let our experts help you transition to 100% recyclable, plastic-free packaging that your customers will love.</p>
-             <a href="#inquiry-form">
-                <button className="bg-white text-emerald-700 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1">
+             <button className="bg-white text-emerald-700 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Sustainable Packaging Solutions'); }}>
                   Request Sustainability Audit
                 </button>
-             </a>
           </div>
         </section>
       </main>

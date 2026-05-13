@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const LuxuryGiftBoxSolution = () => {
   return (
@@ -58,11 +58,9 @@ const LuxuryGiftBoxSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="#inquiry-form">
-              <button className="bg-purple-900 text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-purple-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
+            <button className="bg-purple-900 text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-purple-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Luxury Gift Box Solutions'); }}>
                 GET A FREE QUOTE
               </button>
-            </a>
           </div>
         </div>
       </nav>
@@ -83,11 +81,9 @@ const LuxuryGiftBoxSolution = () => {
                   Elevate your brand perception with high-density chipboard, precision engineering, and tactile finishes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <a href="#inquiry-form">
-                    <button className="bg-white text-black px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-200 transition-all shadow-xl">
+                  <button className="bg-white text-black px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-200 transition-all shadow-xl" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Luxury Gift Box Solutions'); }}>
                       Consult Our Engineers
                     </button>
-                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -248,11 +244,9 @@ const LuxuryGiftBoxSolution = () => {
           <div className="max-w-4xl mx-auto px-6">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Create Your Brand's Masterpiece.</h2>
              <p className="text-xl text-purple-300 font-medium mb-12">Our engineers will design a box that doesn't just hold your product—it celebrates it.</p>
-             <a href="#inquiry-form">
-                <button className="bg-purple-600 text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition shadow-2xl transform hover:-translate-y-1">
+             <button className="bg-purple-600 text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition shadow-2xl transform hover:-translate-y-1" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Luxury Gift Box Solutions'); }}>
                   Request Luxury Structural Consultation
                 </button>
-             </a>
           </div>
         </section>
       </main>

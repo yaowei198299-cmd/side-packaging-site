@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
 
 const TotalLandedCostGuide = () => {

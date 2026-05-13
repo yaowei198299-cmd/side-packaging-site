@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const CosmeticSolution = () => {
   return (
@@ -58,11 +58,9 @@ const CosmeticSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="#inquiry-form">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
+            <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Cosmetic Packaging Solutions'); }}>
                 GET A FREE QUOTE
               </button>
-            </a>
           </div>
         </div>
       </nav>
@@ -83,11 +81,9 @@ const CosmeticSolution = () => {
                   Elevate your beauty brand with a balance of <strong>luxury aesthetics</strong>, functional protection, and FSC-certified sustainability.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <a href="#inquiry-form">
-                    <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl">
+                  <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Cosmetic Packaging Solutions'); }}>
                       Start Your Design
                     </button>
-                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -232,11 +228,9 @@ const CosmeticSolution = () => {
           <div className="max-w-4xl mx-auto px-6 text-center">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Ready for a structural audit?</h2>
              <p className="text-xl text-pink-100 font-medium mb-12">Our designers will help you choose the right materials and structures to make your brand the next industry leader.</p>
-             <a href="#inquiry-form">
-                <button className="bg-white text-pink-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1">
+             <button className="bg-white text-pink-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Cosmetic Packaging Solutions'); }}>
                   Request Free Audit for Your Line
                 </button>
-             </a>
           </div>
         </section>
       </main>

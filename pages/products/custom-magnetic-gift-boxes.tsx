@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const ProductPage = () => {
   return (
@@ -54,11 +54,9 @@ const ProductPage = () => {
             <Link href="/#about" className="hover:text-black transition-colors">Factory</Link>
             <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
           </div>
-          <a href="#inquiry-form">
-            <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all shadow-lg">
+          <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Custom Magnetic Gift Boxes'); }}>
               GET A QUOTE
             </button>
-          </a>
         </div>
       </nav>
 
@@ -222,11 +220,9 @@ const ProductPage = () => {
           <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter">Ready to Start?</h2>
           <p className="text-xl mb-12 font-medium opacity-90 px-6">Get a factory-direct quote or request a sample pack today.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center px-6">
-            <a href="#inquiry-form">
-              <button className="bg-white text-blue-600 px-12 py-6 rounded-full font-black text-lg shadow-2xl hover:bg-gray-100 transition-all">
+            <button className="bg-white text-blue-600 px-12 py-6 rounded-full font-black text-lg shadow-2xl hover:bg-gray-100 transition-all" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Custom Magnetic Gift Boxes'); }}>
                 GET A QUOTE
               </button>
-            </a>
             <a href="https://wa.me/8613699786538">
               <button className="bg-black text-white px-12 py-6 rounded-full font-black text-lg shadow-2xl hover:bg-gray-900 transition-all">
                 CHAT ON WHATSAPP

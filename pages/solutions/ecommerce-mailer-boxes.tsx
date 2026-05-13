@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const EcommerceSolution = () => {
   return (
@@ -58,11 +58,9 @@ const EcommerceSolution = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="#inquiry-form">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
+            <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('E-commerce Mailer Box Solutions'); }}>
                 GET A FREE QUOTE
               </button>
-            </a>
           </div>
         </div>
       </nav>
@@ -83,11 +81,9 @@ const EcommerceSolution = () => {
                   Optimize your shipping with <strong>E-flute corrugated strength</strong>, custom internal printing, and logistics-first engineering.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <a href="#inquiry-form">
-                    <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl">
+                  <button className="bg-black text-white px-12 py-6 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-xl" onClick={(e) => { e.preventDefault(); triggerInquiryModal('E-commerce Mailer Box Solutions'); }}>
                       Optimize Your Shipping
                     </button>
-                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -248,11 +244,9 @@ const EcommerceSolution = () => {
           <div className="max-w-4xl mx-auto px-6 text-center">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Scale Your Brand's Logistics.</h2>
              <p className="text-xl text-orange-100 font-medium mb-12">Our experts will help you design a box that survives the journey and delights your customers.</p>
-             <a href="#inquiry-form">
-                <button className="bg-white text-orange-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1">
+             <button className="bg-white text-orange-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1" onClick={(e) => { e.preventDefault(); triggerInquiryModal('E-commerce Mailer Box Solutions'); }}>
                   Get My Logistics-Optimized Quote
                 </button>
-             </a>
           </div>
         </section>
       </main>

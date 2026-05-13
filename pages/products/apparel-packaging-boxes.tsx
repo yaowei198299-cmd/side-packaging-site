@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
-import InquiryForm from '../../components/InquiryForm';
+import { triggerInquiryModal } from '../../components/InquiryModal';
 
 const ApparelPackagingBoxesPage = () => {
   const productData = {
@@ -44,11 +44,9 @@ const ApparelPackagingBoxesPage = () => {
             <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
               WhatsApp: +86 13699786538
             </a>
-            <a href="#inquiry-form">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
+            <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
                 GET A FREE QUOTE
               </button>
-            </a>
           </div>
         </div>
       </nav>
@@ -295,11 +293,9 @@ const ApparelPackagingBoxesPage = () => {
               Experience the difference of factory-direct fashion packaging. Get your custom apparel box quote within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="#inquiry-form">
-                <button className="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition shadow-xl">
+              <button className="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition shadow-xl" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
                   Request Apparel Quote
                 </button>
-              </a>
               <button className="bg-white text-black border border-gray-200 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition">
                 Order Swatch Samples
               </button>
