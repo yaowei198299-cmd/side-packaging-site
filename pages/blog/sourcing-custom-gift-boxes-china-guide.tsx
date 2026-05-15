@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
+import InquiryForm from '../../components/InquiryForm';
 
 const BlogPost = () => {
   return (

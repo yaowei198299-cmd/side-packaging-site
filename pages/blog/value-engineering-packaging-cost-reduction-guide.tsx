@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
+import InquiryForm from '../../components/InquiryForm';
 
 const CostReductionGuide = () => {
   return (
