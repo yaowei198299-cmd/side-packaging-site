@@ -26,8 +26,8 @@ const ProductDetail = () => {
 
       <main className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
-          <div className="aspect-square bg-gray-50 rounded-[40px] flex items-center justify-center p-24">
-            <img src="/assets/drawer-box.svg" alt="Drawer Box" className="w-full h-full object-contain" />
+          <div className="aspect-square bg-gray-50 rounded-[40px] flex items-center justify-center p-24 overflow-hidden shadow-inner">
+            <img src="https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg" alt="Drawer Box" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
           </div>
           <div>
             <span className="text-blue-600 font-black uppercase tracking-widest text-xs mb-4 inline-block">Rigid Series</span>

@@ -6,17 +6,17 @@ const ProductsPage = () => {
   const products = [
     {
       title: "Luxury Magnetic Gift Box",
-      image: "/assets/magnetic-box.svg",
+      image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg",
       link: "/products/luxury-magnetic-box"
     },
     {
       title: "Custom Drawer Box",
-      image: "/assets/drawer-box.svg",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg",
       link: "/products/custom-drawer-box"
     },
     {
       title: "Premium Mailer Box",
-      image: "/assets/mailer-box.svg",
+      image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg",
       link: "/products/premium-mailer-box"
     }
   ];
