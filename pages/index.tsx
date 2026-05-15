@@ -9,19 +9,19 @@ const HomePage = () => {
     {
       title: "Magnetic Closure Box",
       desc: "Luxury rigid packaging with magnetic closure.",
-      image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg",
+      image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1",
       link: "/products/luxury-magnetic-box"
     },
     {
       title: "Drawer Box",
       desc: "Elegant sliding drawer packaging solutions.",
-      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1",
       link: "/products/custom-drawer-box"
     },
     {
       title: "Mailer Box",
       desc: "Premium ecommerce packaging experience.",
-      image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg",
+      image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1",
       link: "/products/premium-mailer-box"
     }
   ];
@@ -53,8 +53,8 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
       <Head>
-        <title>Luxury Packaging Catalog | Side Packaging HK Limited</title>
-        <meta name="description" content="Premium luxury packaging solutions. Custom magnetic boxes, drawer boxes, and mailers for global brands. Factory-direct since 2006." />
+        <title>Luxury Packaging Catalog v1.1 | Side Packaging HK Limited</title>
+        <meta name="description" content="Premium luxury packaging solutions. Custom magnetic boxes, drawer boxes, and mailers for global brands. Factory direct since 2006." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
