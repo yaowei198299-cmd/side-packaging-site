@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
 import { triggerInquiryModal } from '../../components/InquiryModal';
+import InquiryForm from '../../components/InquiryForm';
 
 const ApparelPackagingBoxesPage = () => {
   const productData = {

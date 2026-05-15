@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
+import InquiryForm from '../../components/InquiryForm';
 
 const CosmeticSolution = () => {
   return (
