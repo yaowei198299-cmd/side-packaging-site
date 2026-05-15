@@ -37,7 +37,7 @@ const HomePage = () => {
     {
       title: "Food & Bakery Packaging",
       desc: "FDA-compliant paper boxes with oil-resistant coatings.",
-      image: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg",
+      image: "https://s.alicdn.com/@sc04/kf/H59aa2a5ada2f4b24bd4a9746673a6fc0n/Customizable-Biodegradable-Food-Grade-Rigid-Cake-Box.jpg_480x480.jpg",
       link: "/solutions/food-bakery-packaging",
       tag: "FDA-Compliant"
     },
