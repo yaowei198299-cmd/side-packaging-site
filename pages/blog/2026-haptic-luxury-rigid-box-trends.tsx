@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { triggerInquiryModal } from '../../components/InquiryModal';
+import InquiryForm from '../../components/InquiryForm';
 
 const BlogPage = () => {
   return (
