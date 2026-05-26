@@ -48,10 +48,10 @@ const DashboardPage = () => {
               <div>
                 <div className="flex justify-between text-sm font-bold mb-2 uppercase tracking-tighter">
                   <span>SEO Articles (Tier 2/3)</span>
-                  <span>36 / 100</span>
+                  <span>37 / 100</span>
                 </div>
                 <div className="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
-                  <div className="bg-blue-600 h-full w-[36%]"></div>
+                  <div className="bg-blue-600 h-full w-[37%]"></div>
                 </div>
               </div>
               <div>
@@ -79,11 +79,10 @@ const DashboardPage = () => {
           <div className="bg-gray-900 text-white p-8 rounded-3xl shadow-xl">
             <h3 className="text-xl font-black uppercase mb-6 tracking-tight text-blue-400">Agent Activity Log</h3>
             <div className="space-y-4 font-mono text-[11px] leading-relaxed opacity-80">
+              <p><span className="text-blue-400">[2026-05-20]</span> Deployed GEO-Optimized JSON-LD.</p>
+              <p><span className="text-blue-400">[2026-05-20]</span> Published Technical Whitepaper.</p>
               <p><span className="text-blue-400">[2026-05-20]</span> Scraped 50 US/CA Lead leads.</p>
-              <p><span className="text-blue-400">[2026-05-20]</span> GSC Audit: 994 Imps, 14 Indexed.</p>
-              <p><span className="text-blue-400">[2026-05-18]</span> Detected 1 new 404 alert.</p>
-              <p><span className="text-blue-400">[2026-05-11]</span> Replaced placeholders with real store photos.</p>
-              <p className="animate-pulse text-green-400">>> ANALYZING MARKET TRENDS...</p>
+              <p className="animate-pulse text-green-400">{" >> ANALYZING MARKET TRENDS..."}</p>
             </div>
           </div>
         </div>
