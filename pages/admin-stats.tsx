@@ -79,11 +79,9 @@ const DashboardPage = () => {
           <div className="bg-gray-900 text-white p-8 rounded-3xl shadow-xl">
             <h3 className="text-xl font-black uppercase mb-6 tracking-tight text-blue-400">Agent Activity Log</h3>
             <div className="space-y-4 font-mono text-[11px] leading-relaxed opacity-80">
-              <p><span className="text-blue-400">[2026-05-20]</span> Deployed ES & AR Language Channels.</p>
-              <p><span className="text-blue-400">[2026-05-20]</span> Deployed GEO-Optimized JSON-LD.</p>
-              <p><span className="text-blue-400">[2026-05-20]</span> Published Technical Whitepaper.</p>
-              <p><span className="text-blue-400">[2026-05-20]</span> Scraped 50 US/CA Lead leads.</p>
-              <p className="animate-pulse text-green-400">{" >> ANALYZING MARKET TRENDS..."}</p>
+              <p><span className="text-blue-400">[2026-05-20]</span> Deployed ES, AR, DE, FR Channels.</p>
+              <p><span className="text-blue-400">[2026-05-20]</span> Build v1.1.2 - Success.</p>
+              <p className="animate-pulse text-green-400">ANALYZING MARKET TRENDS...</p>
             </div>
           </div>
         </div>
