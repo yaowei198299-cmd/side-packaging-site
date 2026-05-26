@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import LeadMagnet from '../components/LeadMagnet';
-import InquiryForm from '../components/InquiryForm';
+import LeadMagnet from '../../components/LeadMagnet';
+import InquiryForm from '../../components/InquiryForm';
 
 const HomePage = () => {
   const featuredProducts = [
