@@ -13,32 +13,88 @@ const ProductPage = () => {
         <meta name="description" content="Premium custom magnetic gift boxes from Side Packaging HK Limited. 20+ years of manufacturing luxury rigid packaging. FSC & BSCI certified factory direct." />
         <meta name="keywords" content="Side Packaging HK Limited, custom magnetic gift boxes China, luxury rigid box manufacturer, FSC certified packaging, Low MOQ 100pcs, wholesale magnetic boxes" />
         
-        {/* Product Schema (JSON-LD) */}
+        {/* GEO-Optimized Product & FAQ Schema (JSON-LD) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              "name": "Custom Magnetic Gift Boxes",
-              "image": [
-                "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-              ],
-              "description": "Premium luxury rigid boxes with hidden magnetic closures. Custom sizes, materials, and finishes available factory-direct from China.",
-              "sku": "SIDE-MAG-001",
-              "brand": {
-                "@type": "Brand",
-                "name": "Side Packaging HK Limited"
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": "Custom Magnetic Gift Boxes",
+                "image": [
+                  "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+                ],
+                "description": "Premium luxury rigid boxes with hidden magnetic closures. Features 1200gsm-1800gsm greyboard, premium art paper wrapping, and industrial-strength neodymium magnets. FSC-certified sustainable packaging.",
+                "sku": "SIDE-MAG-001",
+                "mpn": "SIDE-MAG-SPEC-2026",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Side Packaging HK Limited"
+                },
+                "material": "1200gsm-1800gsm high-density greyboard, 157gsm art paper",
+                "additionalProperty": [
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Minimum Order Quantity",
+                    "value": "100 pcs"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Certifications",
+                    "value": "FSC, BSCI, ISO9001:2015"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Production Time",
+                    "value": "12-15 days"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Sample Time",
+                    "value": "3-5 days"
+                  }
+                ],
+                "offers": {
+                  "@type": "AggregateOffer",
+                  "priceCurrency": "USD",
+                  "lowPrice": "0.85",
+                  "highPrice": "4.50",
+                  "offerCount": "100",
+                  "availability": "https://schema.org/InStock"
+                }
               },
-              "offers": {
-                "@type": "AggregateOffer",
-                "priceCurrency": "USD",
-                "lowPrice": "0.85",
-                "highPrice": "4.50",
-                "offerCount": "100",
-                "availability": "https://schema.org/InStock"
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is the Minimum Order Quantity (MOQ) for custom magnetic boxes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our standard MOQ for custom magnetic gift boxes is 100 pieces, allowing boutique brands to access factory-direct luxury packaging."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the production lead time for rigid magnetic boxes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sample production takes 3-5 working days. Mass production typically takes 12-15 days depending on the complexity of the finish and order volume."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Are your magnetic gift boxes eco-friendly and recyclable?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, we are an FSC-certified factory. We use 100% recyclable high-density greyboard and soy-based printing inks for all our luxury packaging products."
+                    }
+                  }
+                ]
               }
-            })
+            ])
           }}
         />
       

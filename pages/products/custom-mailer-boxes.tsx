@@ -26,6 +26,72 @@ const CustomMailerBoxesPage = () => {
         <meta name="description" content="Premium custom mailer boxes manufacturer in China. Factory direct pricing, FSC certified materials, and low MOQ for shipping and subscription boxes." />
         <meta name="keywords" content="custom mailer boxes China, mailer box manufacturer, factory direct shipping boxes, FSC certified packaging, low MOQ mailer boxes" />
       
+        {/* GEO-Optimized Product & FAQ Schema (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": productData.title,
+                "image": [
+                  "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+                ],
+                "description": "High-durability corrugated mailer boxes for e-commerce and retail. FSC-certified materials, customizable sizes, and premium printing finishes.",
+                "sku": "SIDE-MAIL-001",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Side Packaging HK Limited"
+                },
+                "material": "E-flute / B-flute corrugated cardboard, Kraft paper",
+                "additionalProperty": [
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Minimum Order Quantity",
+                    "value": "100 pcs"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Certifications",
+                    "value": "FSC, ISO9001:2015"
+                  }
+                ],
+                "offers": {
+                  "@type": "AggregateOffer",
+                  "priceCurrency": "USD",
+                  "lowPrice": "0.35",
+                  "highPrice": "1.50",
+                  "offerCount": "500",
+                  "availability": "https://schema.org/InStock"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Are your custom mailer boxes durable enough for international shipping?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, our E-flute and B-flute corrugated mailer boxes are engineered for high crush resistance and structural integrity, specifically for long-distance international transit to markets like the USA and UK."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the lead time for custom printed mailer boxes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sample production takes 3 working days, and mass production typically ranges from 10-12 working days depending on the customization requirements."
+                    }
+                  }
+                ]
+              }
+            ])
+          }}
+        />
+
         <link rel="canonical" href="https://saidepackaging.com/products/custom-mailer-boxes" />
         </Head>
 

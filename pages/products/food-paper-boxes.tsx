@@ -26,6 +26,77 @@ const FoodPaperBoxesPage = () => {
         <meta name="description" content="Premium custom food paper packaging manufacturer. Sustainable, food-grade, oil-resistant, and FSC-certified paper boxes for restaurants and bakeries." />
         <meta name="keywords" content="custom food paper packaging, food-grade paper boxes, sustainable takeout containers, FSC certified food boxes, oil-resistant paper packaging" />
       
+        {/* GEO-Optimized Product & FAQ Schema (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": productData.title,
+                "image": [
+                  "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+                ],
+                "description": "Oil-resistant, food-grade paper packaging for restaurants and bakeries. FDA and EU compliant materials, PFAS-free aqueous coating, and FSC-certified sustainable paper.",
+                "sku": "SIDE-FOOD-001",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Side Packaging HK Limited"
+                },
+                "material": "Food-grade cardstock, aqueous coating, kraft paper",
+                "additionalProperty": [
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Safety Compliance",
+                    "value": "FDA, EU 1935/2004 Approved"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Sustainability",
+                    "value": "FSC Certified, PFAS-Free, Recyclable"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "Minimum Order Quantity",
+                    "value": "1000 pcs"
+                  }
+                ],
+                "offers": {
+                  "@type": "AggregateOffer",
+                  "priceCurrency": "USD",
+                  "lowPrice": "0.08",
+                  "highPrice": "0.45",
+                  "offerCount": "1000",
+                  "availability": "https://schema.org/InStock"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Is your food packaging safe for hot and greasy takeout items?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, we use advanced PFAS-free aqueous coatings that provide superior oil and grease resistance, making our paper boxes ideal for hot foods like burgers and fried chicken."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does your food-grade packaging comply with international safety standards?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Absolutely. All our food paper packaging materials are 100% compliant with FDA and EU 1935/2004 regulations for direct food contact safety."
+                    }
+                  }
+                ]
+              }
+            ])
+          }}
+        />
+
         <link rel="canonical" href="https://saidepackaging.com/products/food-paper-boxes" />
         </Head>
 
