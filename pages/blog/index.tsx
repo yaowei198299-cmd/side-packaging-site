@@ -309,7 +309,7 @@ const BlogIndex = () => {
           <div>
             <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Contact Andy</h4>
             <ul className="space-y-4 text-sm font-bold text-gray-500">
-              <li><a href="mailto:andy@saidepackaging.com" className="hover:text-black transition-colors">andy@saidepackaging.com</a></li>
+              <li><a href="mailto:jocelyn@saidepackaging.com" className="hover:text-black transition-colors">jocelyn@saidepackaging.com</a></li>
               <li><a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-green-500 transition-colors group">
                 WhatsApp Chat
               </a></li>

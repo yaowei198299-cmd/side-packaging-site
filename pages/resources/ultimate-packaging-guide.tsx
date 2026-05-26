@@ -175,7 +175,7 @@ const UltimateGuide = () => {
            <div className="flex space-x-12 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">
               <Link href="/" className="hover:text-black transition-colors">Home</Link>
               <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
-              <a href="mailto:andy@saidepackaging.com" className="hover:text-black transition-colors">Contact Andy</a>
+              <a href="mailto:jocelyn@saidepackaging.com" className="hover:text-black transition-colors">Contact Andy</a>
            </div>
         </div>
       </footer>

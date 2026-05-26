@@ -161,7 +161,7 @@ const HomePage = () => {
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">A</div>
                   <div>
                     <h4 className="font-bold uppercase tracking-tight">Envíanos un email</h4>
-                    <p className="text-gray-500">andy@saidepackaging.com</p>
+                    <p className="text-gray-500">jocelyn@saidepackaging.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">

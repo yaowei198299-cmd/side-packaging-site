@@ -217,7 +217,7 @@ const BlogPost = () => {
           <div>
             <h4 className="font-black mb-8 uppercase tracking-widest text-[10px] text-black">Contact</h4>
             <ul className="space-y-4 text-xs font-bold">
-              <li><a href="mailto:andy@saidepackaging.com" className="hover:text-black">andy@saidepackaging.com</a></li>
+              <li><a href="mailto:jocelyn@saidepackaging.com" className="hover:text-black">jocelyn@saidepackaging.com</a></li>
               <li><a href="https://wa.me/8613699786538" className="hover:text-green-500">WhatsApp: +86 13699786538</a></li>
               <li><Link href="#inquiry-form" className="hover:text-black">Request a Quote</Link></li>
             </ul>

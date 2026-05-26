@@ -98,7 +98,7 @@ const CandlePackagingBlog = () => {
           <div>
             <h4 className="font-black mb-6 uppercase tracking-widest text-xs">Contact</h4>
             <ul className="space-y-4 text-sm font-bold">
-              <li><a href="mailto:andy@saidepackaging.com" className="hover:text-black">andy@saidepackaging.com</a></li>
+              <li><a href="mailto:jocelyn@saidepackaging.com" className="hover:text-black">jocelyn@saidepackaging.com</a></li>
               <li><a href="https://wa.me/8613699786538" className="hover:text-green-500">WhatsApp Chat</a></li>
             </ul>
           </div>
