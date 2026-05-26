@@ -7,20 +7,20 @@ import InquiryForm from '../../components/InquiryForm';
 const HomePage = () => {
   const featuredProducts = [
     {
-      title: "Magnetic Closure Box",
-      desc: "Luxury rigid packaging with magnetic closure.",
+      title: "Magnetverschluss-Box",
+      desc: "Luxuriöse starre Verpackung mit Magnetverschluss.",
       image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1",
       link: "/products/luxury-magnetic-box"
     },
     {
-      title: "Drawer Box",
-      desc: "Elegant sliding drawer packaging solutions.",
+      title: "Schubladenbox",
+      desc: "Elegante Schiebeschubladen-Verpackungslösungen.",
       image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1",
       link: "/products/custom-drawer-box"
     },
     {
-      title: "Mailer Box",
-      desc: "Premium ecommerce packaging experience.",
+      title: "Versandkarton (Mailer)",
+      desc: "Premium-E-Commerce-Verpackungserlebnis.",
       image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1",
       link: "/products/premium-mailer-box"
     }
@@ -28,33 +28,33 @@ const HomePage = () => {
 
   const industrySolutions = [
     {
-      title: "Cosmetic Packaging Solutions",
-      desc: "Elevate your brand with premium rigid boxes and eco-friendly inserts.",
+      title: "Kosmetikverpackungslösungen",
+      desc: "Werten Sie Ihre Marke mit hochwertigen starren Boxen und umweltfreundlichen Inlays auf.",
       image: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
       link: "/solutions/cosmetic-packaging",
-      tag: "Luxury"
+      tag: "Luxus"
     },
     {
-      title: "Food & Bakery Packaging",
-      desc: "FDA-compliant paper boxes with oil-resistant coatings.",
+      title: "Lebensmittel- und Backwarenverpackungen",
+      desc: "FDA-konforme Papierboxen mit ölbeständiger Beschichtung.",
       image: "https://s.alicdn.com/@sc04/kf/H59aa2a5ada2f4b24bd4a9746673a6fc0n/Customizable-Biodegradable-Food-Grade-Rigid-Cake-Box.jpg_480x480.jpg",
       link: "/solutions/food-bakery-packaging",
-      tag: "FDA-Compliant"
+      tag: "FDA-Konform"
     },
     {
-      title: "E-commerce & Mailer Boxes",
-      desc: "High-strength corrugated mailer boxes for global logistics.",
+      title: "E-Commerce- und Versandkartons",
+      desc: "Hochfeste Wellpappen-Versandkartons für die globale Logistik.",
       image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png",
       link: "/solutions/ecommerce-mailer-boxes",
-      tag: "Durable"
+      tag: "Langlebig"
     }
   ];
 
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
       <Head>
-        <title>Luxury Packaging Catalog v1.1 | Side Packaging HK Limited</title>
-        <meta name="description" content="Premium luxury packaging solutions. Custom magnetic boxes, drawer boxes, and mailers for global brands. Factory direct since 2006." />
+        <title>Luxusverpackungslösungen | Side Packaging HK Limited</title>
+        <meta name="description" content="Erstklassige Luxusverpackungslösungen. Maßgeschneiderte Magnetboxen, Schubladenboxen und Versandtaschen für globale Marken. Direkt ab Werk seit 2006." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -66,32 +66,32 @@ const HomePage = () => {
       {/* Navbar */}
       <nav className="border-b border-gray-100 bg-white/95 backdrop-blur-md sticky top-0 z-[80]">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
+          <Link href="/de" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
           <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-500">
-            <Link href="/" className="text-black border-b-2 border-black pb-1">Home</Link>
-            <Link href="/products" className="hover:text-black transition-colors">Products</Link>
+            <Link href="/de" className="text-black border-b-2 border-black pb-1">Startseite</Link>
+            <Link href="/products" className="hover:text-black transition-colors">Produkte</Link>
             <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
-            <a href="#contact" className="hover:text-black transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-black transition-colors">Kontakt</a>
           </div>
-          <a href="#contact" className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all">Get Quote</a>
+          <a href="#contact" className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all">Angebot</a>
         </div>
       </nav>
 
       {/* Hero */}
       <section className="bg-gray-50 py-32 text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">Custom Packaging <br/><span className="text-blue-600">That Elevates Your Brand</span></h1>
-          <p className="text-xl text-gray-500 mb-12">Luxury packaging solutions for premium brands worldwide. Factory direct since 2006.</p>
+          <h1 className="text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">Maßgeschneiderte Verpackungen <br/><span className="text-blue-600">die Ihre Marke aufwerten</span></h1>
+          <p className="text-xl text-gray-500 mb-12">Luxusverpackungslösungen für Premiummarken weltweit. Direkt ab Werk seit 2006.</p>
           <div className="flex justify-center gap-4">
-            <Link href="/products" className="bg-black text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 shadow-xl transition-all">Explore Packaging</Link>
-            <a href="#contact" className="bg-white text-black border-2 border-black px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-50 transition-all">Get Free Quote</a>
+            <Link href="/products" className="bg-black text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 shadow-xl transition-all">Verpackungen entdecken</Link>
+            <a href="#contact" className="bg-white text-black border-2 border-black px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-50 transition-all">Gratis Angebot</a>
           </div>
         </div>
       </section>
 
       {/* Featured Products - New from Catalog */}
       <section className="py-24 max-w-7xl mx-auto px-6" id="products">
-        <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Featured Packaging Types</h2>
+        <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Beliebte Verpackungsarten</h2>
         <div className="grid md:grid-cols-3 gap-12">
           {featuredProducts.map((p, i) => (
             <div key={i} className="group border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all hover:-translate-y-2 bg-white">
@@ -100,7 +100,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-black uppercase mb-4 tracking-tight">{p.title}</h3>
               <p className="text-gray-500 mb-8 font-medium">{p.desc}</p>
-              <Link href={p.link} className="inline-block bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">View Details</Link>
+              <Link href={p.link} className="inline-block bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">Details anzeigen</Link>
             </div>
           ))}
         </div>
@@ -109,9 +109,9 @@ const HomePage = () => {
       {/* Premium Finishes - From Catalog */}
       <section className="py-24 bg-black text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Premium Finishes</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Premium-Veredelungen</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {['Foil Stamping', 'Embossing', 'Soft Touch', 'Spot UV'].map((f, i) => (
+            {['Folienprägung', 'Prägung', 'Soft-Touch', 'Spot-UV'].map((f, i) => (
               <div key={i} className="border border-white/20 rounded-2xl py-12 text-center text-xl font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all cursor-default">
                 {f}
               </div>
@@ -123,9 +123,9 @@ const HomePage = () => {
       {/* Sustainable Section - From Catalog */}
       <section className="py-24 bg-gray-50 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-8">Sustainable Packaging</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter mb-8">Nachhaltige Verpackung</h2>
           <p className="text-xl text-gray-500 font-bold uppercase tracking-widest">
-            FSC certified paper · recyclable materials · eco-friendly production
+            FSC-zertifiziertes Papier · recyclebare Materialien · umweltfreundliche Produktion
           </p>
         </div>
       </section>
@@ -133,7 +133,7 @@ const HomePage = () => {
       {/* Industry Solutions - Existing */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16">Industry Solutions</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16">Branchenlösungen</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {industrySolutions.map((s, i) => (
               <div key={i} className="relative group rounded-3xl overflow-hidden h-96 shadow-lg">
@@ -141,7 +141,7 @@ const HomePage = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-8 flex flex-col justify-end">
                   <span className="text-[10px] font-bold text-white uppercase tracking-widest mb-2 bg-blue-600 self-start px-3 py-1 rounded-full">{s.tag}</span>
                   <h3 className="text-2xl font-black text-white uppercase mb-2">{s.title}</h3>
-                  <Link href={s.link} className="text-white text-[11px] font-bold uppercase tracking-widest border-b border-white self-start pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">Learn More</Link>
+                  <Link href={s.link} className="text-white text-[11px] font-bold uppercase tracking-widest border-b border-white self-start pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">Mehr erfahren</Link>
                 </div>
               </div>
             ))}
@@ -154,13 +154,13 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-24">
             <div>
-              <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">Get Free Quote.</h2>
-              <p className="text-xl text-gray-500 mb-12 font-medium">Ready to elevate your brand packaging? Tell us about your project and our experts will provide a customized cost analysis within 24 hours.</p>
+              <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">Gratis Angebot anfordern.</h2>
+              <p className="text-xl text-gray-500 mb-12 font-medium">Bereit, Ihre Markenverpackung aufzuwerten? Erzählen Sie uns von Ihrem Projekt und unsere Experten erstellen innerhalb von 24 Stunden eine maßgeschneiderte Kostenanalyse.</p>
               <div className="space-y-8">
                 <div className="flex items-center gap-6">
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">A</div>
                   <div>
-                    <h4 className="font-bold uppercase tracking-tight">Email Us</h4>
+                    <h4 className="font-bold uppercase tracking-tight">E-Mail</h4>
                     <p className="text-gray-500">jocelyn@saidepackaging.com</p>
                   </div>
                 </div>
@@ -180,10 +180,10 @@ const HomePage = () => {
 
       <footer className="bg-black text-white py-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. Alle Rechte vorbehalten.</p>
           <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest opacity-50">
-            <a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a>
-            <a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a>
+            <a href="#" className="hover:opacity-100 transition-opacity">Datenschutzrichtlinie</a>
+            <a href="#" className="hover:opacity-100 transition-opacity">Nutzungsbedingungen</a>
           </div>
         </div>
       </footer>
