@@ -173,7 +173,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <InquiryForm />
+            <InquiryForm lang="de" />
           </div>
         </div>
       </section>
@@ -188,7 +188,7 @@ const HomePage = () => {
         </div>
       </footer>
 
-      <LeadMagnet />
+      <LeadMagnet lang="de" />
     </div>
   );
 };

@@ -66,14 +66,14 @@ const HomePage = () => {
       {/* Navbar */}
       <nav className="border-b border-gray-100 bg-white/95 backdrop-blur-md sticky top-0 z-[80]">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
+          <Link href="/ar" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
           <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-500">
-            <Link href="/" className="text-black border-b-2 border-black pb-1">Home</Link>
-            <Link href="/products" className="hover:text-black transition-colors">Products</Link>
-            <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
-            <a href="#contact" className="hover:text-black transition-colors">Contact</a>
+            <Link href="/ar" className="text-black border-b-2 border-black pb-1">الرئيسية</Link>
+            <Link href="/products" className="hover:text-black transition-colors">المنتجات</Link>
+            <Link href="/blog" className="hover:text-black transition-colors">المدونة</Link>
+            <a href="#contact" className="hover:text-black transition-colors">اتصل بنا</a>
           </div>
-          <a href="#contact" className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all">Get Quote</a>
+          <a href="#contact" className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all">طلب سعر</a>
         </div>
       </nav>
 
@@ -91,7 +91,7 @@ const HomePage = () => {
 
       {/* Featured Products - New from Catalog */}
       <section className="py-24 max-w-7xl mx-auto px-6" id="products">
-        <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Featured Packaging Types</h2>
+        <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">أنواع التغليف المميزة</h2>
         <div className="grid md:grid-cols-3 gap-12">
           {featuredProducts.map((p, i) => (
             <div key={i} className="group border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all hover:-translate-y-2 bg-white">
@@ -100,7 +100,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-black uppercase mb-4 tracking-tight">{p.title}</h3>
               <p className="text-gray-500 mb-8 font-medium">{p.desc}</p>
-              <Link href={p.link} className="inline-block bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">View Details</Link>
+              <Link href={p.link} className="inline-block bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">عرض التفاصيل</Link>
             </div>
           ))}
         </div>
@@ -109,9 +109,9 @@ const HomePage = () => {
       {/* Premium Finishes - From Catalog */}
       <section className="py-24 bg-black text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Premium Finishes</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">تشطيبات فاخرة</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {['Foil Stamping', 'Embossing', 'Soft Touch', 'Spot UV'].map((f, i) => (
+            {['ختم رقائق معدنية', 'نقش بارز', 'ملمس ناعم', 'طلاء UV موضعي'].map((f, i) => (
               <div key={i} className="border border-white/20 rounded-2xl py-12 text-center text-xl font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all cursor-default">
                 {f}
               </div>
@@ -123,9 +123,9 @@ const HomePage = () => {
       {/* Sustainable Section - From Catalog */}
       <section className="py-24 bg-gray-50 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-8">Sustainable Packaging</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter mb-8">تغليف مستدام</h2>
           <p className="text-xl text-gray-500 font-bold uppercase tracking-widest">
-            FSC certified paper · recyclable materials · eco-friendly production
+            ورق معتمد من FSC · مواد قابلة لإعادة التدوير · إنتاج صديق للبيئة
           </p>
         </div>
       </section>
@@ -133,7 +133,7 @@ const HomePage = () => {
       {/* Industry Solutions - Existing */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16">Industry Solutions</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16">حلول الصناعة</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {industrySolutions.map((s, i) => (
               <div key={i} className="relative group rounded-3xl overflow-hidden h-96 shadow-lg">
@@ -141,7 +141,7 @@ const HomePage = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-8 flex flex-col justify-end">
                   <span className="text-[10px] font-bold text-white uppercase tracking-widest mb-2 bg-blue-600 self-start px-3 py-1 rounded-full">{s.tag}</span>
                   <h3 className="text-2xl font-black text-white uppercase mb-2">{s.title}</h3>
-                  <Link href={s.link} className="text-white text-[11px] font-bold uppercase tracking-widest border-b border-white self-start pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">Learn More</Link>
+                  <Link href={s.link} className="text-white text-[11px] font-bold uppercase tracking-widest border-b border-white self-start pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">اعرف المزيد</Link>
                 </div>
               </div>
             ))}
@@ -154,41 +154,41 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-24">
             <div>
-              <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">Get Free Quote.</h2>
-              <p className="text-xl text-gray-500 mb-12 font-medium">Ready to elevate your brand packaging? Tell us about your project and our experts will provide a customized cost analysis within 24 hours.</p>
+              <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">احصل على عرض سعر مجاني.</h2>
+              <p className="text-xl text-gray-500 mb-12 font-medium">هل أنت مستعد لرفع مستوى تغليف علامتك التجارية؟ أخبرنا عن مشروعك وسيقدم خبراؤنا تحليلاً مخصصاً للتكلفة في غضون 24 ساعة.</p>
               <div className="space-y-8">
                 <div className="flex items-center gap-6">
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">A</div>
                   <div>
-                    <h4 className="font-bold uppercase tracking-tight">Email Us</h4>
+                    <h4 className="font-bold uppercase tracking-tight">راسلنا عبر البريد الإلكتروني</h4>
                     <p className="text-gray-500">jocelyn@saidepackaging.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
                   <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">W</div>
                   <div>
-                    <h4 className="font-bold uppercase tracking-tight">WhatsApp</h4>
+                    <h4 className="font-bold uppercase tracking-tight">واتساب</h4>
                     <p className="text-gray-500">+86-13699786538</p>
                   </div>
                 </div>
               </div>
             </div>
-            <InquiryForm />
+            <InquiryForm lang="ar" />
           </div>
         </div>
       </section>
 
       <footer className="bg-black text-white py-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. جميع الحقوق محفوظة.</p>
           <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest opacity-50">
-            <a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a>
-            <a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a>
+            <a href="#" className="hover:opacity-100 transition-opacity">سياسة الخصوصية</a>
+            <a href="#" className="hover:opacity-100 transition-opacity">شروط الخدمة</a>
           </div>
         </div>
       </footer>
 
-      <LeadMagnet />
+      <LeadMagnet lang="ar" />
     </div>
   );
 };
