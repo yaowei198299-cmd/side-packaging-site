@@ -14,27 +14,6 @@ const BlogIndex = () => {
       image: "https://sc02.alicdn.com/kf/H292333b800b841ab8b8229cd7ee66f5ec.png"
     },
     {
-      title: "Medical & CBD Packaging: Balancing Child-Resistant Compliance with Premium Design",
-      excerpt: "Learn about the critical balance between safety compliance and high-end design in Medical and CBD packaging for 2026. From CR rigid boxes to tamper-evident seals.",
-      date: "May 6, 2026",
-      slug: "medical-cbd-packaging-compliance-design",
-      image: "https://sc02.alicdn.com/kf/H192333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Sustainable Shoe Box Design: Optimizing E-commerce Footwear Packaging for 2026",
-      excerpt: "Discover how sustainable shoe box designs can reduce shipping costs, carbon footprint, and boost brand loyalty for your footwear brand. Explore collapsible rigid options.",
-      date: "May 6, 2026",
-      slug: "sustainable-shoe-box-design-ecommerce",
-      image: "https://sc02.alicdn.com/kf/H092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Luxury Candle Packaging Trends 2026: The Power of Small MOQ & Custom Designs",
-      excerpt: "Explore the latest trends in luxury candle packaging for 2026. Learn how small MOQ and bespoke rigid boxes can transform your candle brand's market position.",
-      date: "May 6, 2026",
-      slug: "luxury-candle-packaging-trends-small-moq",
-      image: "https://sc02.alicdn.com/kf/H7b82333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
       title: "Luxury Sustainable Cosmetic Packaging Trends 2026: Beauty Without Compromise",
       excerpt: "Explore the intersection of luxury and sustainability in 2026 cosmetic packaging. Learn about recyclable rigid boxes, refillable glass, and plastic-free solutions.",
       date: "May 4, 2026",
@@ -47,228 +26,59 @@ const BlogIndex = () => {
       date: "May 4, 2026",
       slug: "how-to-calculate-packaging-landed-cost-china-import",
       image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
-    },
-    {
-      title: "Custom Food-Grade Bakery & Bread Boxes: The 2026 Branding & Compliance Guide",
-      excerpt: "How high-end bakeries are using custom packaging to build brand loyalty and ensure food safety in 2026. From windowed boxes to grease-proof barriers.",
-      date: "May 4, 2026",
-      slug: "food-grade-custom-bakery-boxes-branding-guide",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Low MOQ Custom Packaging for Startups in 2026: The Ultimate Guide to Scaling Your Brand",
-      excerpt: "Discover how low MOQ custom packaging is empowering startups in 2026. Learn strategies for sourcing luxury rigid boxes and mailers without massive inventory commitments.",
-      date: "April 27, 2026",
-      slug: "low-moq-custom-packaging-startups-2026-guide",
-      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
-    },
-    {
-      title: "US & EU Food Packaging Regulatory Compliance: A 2026 Guide for Global Manufacturers",
-      excerpt: "Understanding the complex landscape of food packaging safety and environmental regulations in the US and Europe for the year 2026. Stay ahead of PFAS bans and PPWR mandates.",
-      date: "April 27, 2026",
-      slug: "us-eu-food-packaging-compliance-2026-guide",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "FSC-Certified Luxury Paper Boxes: Elevating Brand Value Through Sustainable Excellence",
-      excerpt: "Why FSC certification is the new gold standard for luxury brands in 2026. Learn how sustainable sourcing translates into brand authority and consumer trust.",
-      date: "April 27, 2026",
-      slug: "fsc-certified-luxury-paper-boxes-brand-value-guide",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
-    },
-    {
-      title: "How to Reduce Packaging Costs Without Sacrificing Quality: A Guide to Value Engineering",
-      excerpt: "Learn how brands can save 30-50% on packaging and freight through structural optimization, material engineering, and flat-pack designs. A 2026 cost-saving roadmap.",
-      date: "April 24, 2026",
-      slug: "value-engineering-packaging-cost-reduction-guide",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
-    },
-    {
-      title: "Folding Carton vs. Rigid Box: Cost, MOQ & Best Use Cases for B2B Brands",
-      excerpt: "When choosing between a Folding Carton and a Rigid Box, the primary decision drivers are cost and brand positioning. Learn which one fits your 2026 packaging strategy.",
-      date: "April 24, 2026",
-      slug: "folding-carton-vs-rigid-box-guide",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Luxury Apparel Packaging: How to Design for a Zero-Carbon Future",
-      excerpt: "A guide to sustainable fashion packaging. Learn how luxury apparel brands can reduce their carbon footprint through material innovation and structural design.",
-      date: "April 22, 2026",
-      slug: "luxury-apparel-packaging-carbon-footprint-reduction",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
-    },
-    {
-      title: "Custom Magnetic Boxes vs. Collapsible Designs: Cost-Saving Analysis",
-      excerpt: "A comprehensive cost-saving analysis between standard rigid magnetic boxes and collapsible (flat-pack) designs. Learn how to save up to 70% on international shipping costs.",
-      date: "April 22, 2026",
-      slug: "custom-magnetic-boxes-vs-collapsible-designs-cost-analysis",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Small MOQ Luxury Rigid Boxes for Startups: A 2026 Growth Guide",
-      excerpt: "Why small MOQ luxury rigid boxes are the secret weapon for growing startups. Learn how to get premium packaging starting from 100 units without high inventory costs.",
-      date: "April 22, 2026",
-      slug: "small-moq-luxury-rigid-boxes-for-startups-guide",
-      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
-    },
-    {
-      title: "Sourcing Custom Rigid Boxes for Canadian Brands: Logistics & Duty Guide",
-      excerpt: "A strategic guide for Canadian businesses sourcing custom rigid gift boxes from China. Expert insights on DDP shipping, GST/HST compliance, and factory selection.",
-      date: "April 21, 2026",
-      slug: "sourcing-custom-rigid-boxes-canadian-brands-guide",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
-    },
-    {
-      title: "Sustainable Takeaway Packaging: Why Windowed Bakery Boxes are Winning in 2026",
-      excerpt: "Explore the shift toward eco-friendly food packaging in 2026. Discover how FSC-certified paper and biodegradable window films are transforming bakery and takeaway boxes.",
-      date: "April 21, 2026",
-      slug: "sustainable-takeaway-packaging-windowed-bakery-boxes-2026",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Why FSC Certification is Critical for US & UK Luxury Packaging Markets",
-      excerpt: "Understanding the regulatory and consumer shift toward FSC-certified packaging in the US, UK, and EU. Why luxury brands are prioritizing sustainable paper sourcing in 2026.",
-      date: "April 21, 2026",
-      slug: "fsc-certification-luxury-packaging-us-uk-markets-importance",
-      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
-    },
-    {
-      title: "Subscription Box Success: How Custom Printed Shipping Boxes Drive Unboxing Experience",
-      date: "April 17, 2026",
-      excerpt: "Discover how branded subscription box packaging and custom printed shipping boxes can transform your unboxing experience. A deep dive into apparel and jewelry packaging strategies.",
-      slug: "subscription-box-packaging-success-guide",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
-    },
-    {
-      title: "The Comprehensive Guide to Custom Mailer Boxes: Boosting E-commerce Branding in 2026",
-      date: "April 17, 2026",
-      excerpt: "Discover how custom mailer boxes are revolutionizing e-commerce in 2026. From corrugated materials to tuck-top designs and small MOQ options, learn how to elevate your brand's unboxing experience.",
-      slug: "custom-mailer-boxes-shipping-guide",
-      image: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg"
-    },
-    {
-      title: "Sustainable E-commerce Packaging: Why Eco-friendly Corrugated Boxes are the Future",
-      date: "April 17, 2026",
-      excerpt: "Discover how eco-friendly mailer boxes and FSC certified paper packaging are revolutionizing e-commerce. Learn why sustainability is the key to brand loyalty in the US and EU.",
-      slug: "sustainable-ecommerce-packaging-guide",
-      image: "https://images.unsplash.com/photo-1607167663901-49658b97e93f?auto=format&fit=crop&q=80&w=2000"
-    },
-    {
-      title: "How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability",
-      date: "April 17, 2026",
-      excerpt: "Master the art of sourcing luxury packaging. Learn how to work with direct factories in China, navigate small MOQ requirements, and implement FSC-certified sustainable solutions for your brand.",
-      slug: "sourcing-custom-gift-boxes-china-guide",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Industry-Specific Custom Packaging Solutions: Tailoring Luxury Boxes for Jewelry, Watches, and Electronics",
-      date: "April 17, 2026",
-      excerpt: "Explore specialized packaging needs for luxury sectors. From velvet-cushioned watch boxes to anti-static electronics packaging, learn how to tailor your boxes for maximum impact.",
-      slug: "industry-specific-custom-packaging-solutions",
-      image: "https://sc02.alicdn.com/kf/A8981600858e745678855648585675409W.jpg"
-    },
-    {
-      title: "The Ultimate Guide to Custom Magnetic Gift Boxes: Why Luxury Brands Choose Rigid Magnetic Closures in 2026",
-      date: "April 17, 2026",
-      excerpt: "Explore the 2026 trends in luxury packaging. From foldable magnetic designs to FSC-certified materials, learn why custom magnetic gift boxes are the top choice for global brands.",
-      slug: "luxury-magnetic-gift-boxes-guide",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "Global Shipping Guide: How to Import Custom Packaging from China to USA & Europe",
-      date: "April 7, 2026",
-      excerpt: "Master the complexities of importing packaging from China. Learn about DDP shipping, ocean freight vs air express, and how to reduce your custom box shipping costs.",
-      slug: "global-shipping-guide-importing-packaging-from-china",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000"
-    },
-    {
-      title: "How to Choose the Right Custom Packaging Boxes for Your Business",
-      date: "April 4, 2026",
-      excerpt: "Selecting the perfect packaging box is crucial for brand identity and product safety. Learn the key factors to consider when choosing between magnetic boxes, mailers, and rigid boxes.",
-      slug: "how-to-choose-the-right-packaging-supplier",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
-    },
-    {
-      title: "The Ultimate Guide to Magnetic Closure Gift Boxes",
-      date: "March 28, 2026",
-      excerpt: "Discover why magnetic closure boxes are the top choice for luxury brands and how they can enhance your customers' unboxing experience.",
-      slug: "ultimate-guide-rigid-box-manufacturing",
-      image: "https://sc02.alicdn.com/kf/Aa102fe113883456d96481350b3e32950c.png"
-    },
-    {
-      title: "2026 Eco-friendly Food Packaging Trends",
-      date: "April 10, 2026",
-      excerpt: "Discover the latest sustainable food packaging trends for 2026. From biodegradable boxes to FSC-certified solutions.",
-      slug: "eco-friendly-food-packaging-trends-2026",
-      image: "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Blog | Side Packaging HK Limited - Packaging Insights & Guides</title>
-        <meta name="description" content="Stay updated with the latest trends in luxury packaging. Read our guides on how to choose the best custom gift boxes, magnetic boxes, and mailers for your brand." />
-      
-        <link rel="canonical" href="https://saidepackaging.com/blog" />
-        </Head>
+        <title>Packaging Insights & Trends 2026 | Side Packaging HK Limited</title>
+        <meta name="description" content="Expert analysis on luxury packaging trends, sustainable materials, and global supply chain optimization for 2026." />
+      </Head>
 
-      {/* Navigation */}
-      <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
-          
-          <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
-            <Link href="/" className="hover:text-black transition-colors">Home</Link>
-            <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
-            <Link href="/#about" className="hover:text-black transition-colors">Why Us</Link>
-            <Link href="/#process" className="hover:text-black transition-colors">Process</Link>
-            <Link href="/#reviews" className="hover:text-black transition-colors">Reviews</Link>
-            <Link href="/#faq" className="hover:text-black transition-colors">FAQ</Link>
-            <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
+      {/* Navbar */}
+      <nav className="border-b border-white/10 bg-black/95 backdrop-blur-md sticky top-0 z-[80]">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white hover:text-gray-300 transition-colors">Side Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-400">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <Link href="/products" className="hover:text-white transition-colors">Bespoke Products</Link>
+            <Link href="/blog" className="text-white border-b-2 border-white pb-1">Insights</Link>
+            <a href="#contact" className="hover:text-white transition-colors">Consultation</a>
           </div>
-
-          <div className="flex items-center space-x-6 shrink-0">
-            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
-              WhatsApp: +86 13699786538
-            </a>
-            <Link href="/#contact">
-              <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg">
-                GET A FREE QUOTE
-              </button>
-            </Link>
-          </div>
+          <a href="#contact" className="bg-white text-black px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gold-400 transition-all shadow-lg">Quick Quote</a>
         </div>
       </nav>
 
-      <main className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6">
-          <header className="mb-16">
-            <h1 className="text-5xl md:text-6xl font-black tracking-tighter uppercase mb-6">Packaging Insights</h1>
-            <p className="text-xl text-gray-500 font-medium max-w-2xl leading-relaxed">Expert guides and industry trends to help you choose the best custom luxury packaging for your brand.</p>
-          </header>
+      <main className="py-32 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-24">
+            <span className="text-blue-500 font-black text-xs uppercase tracking-[0.5em] mb-6 block">The Knowledge Hub</span>
+            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-8">Packaging <br/><span className="text-white/40 italic">Insights.</span></h1>
+            <p className="text-xl text-gray-400 max-w-2xl font-medium">Technical analysis, market trends, and manufacturing guides for the global luxury packaging industry.</p>
+          </div>
 
-          <div className="grid gap-12">
+          <div className="grid gap-16">
             {posts.map((post, i) => (
-              <article key={i} className="bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+              <article key={i} className="group relative bg-white/5 border border-white/5 rounded-[3.5rem] overflow-hidden hover:border-white/20 transition-all shadow-2xl">
                 <Link href={`/blog/${post.slug}`} className="grid md:grid-cols-2">
-                  <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden bg-gray-100">
+                  <div className="aspect-video md:aspect-auto overflow-hidden bg-gray-900">
                     <img 
                       src={post.image} 
                       alt={post.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 opacity-60 group-hover:opacity-100"
                     />
                   </div>
-                  <div className="p-10 md:p-12 flex flex-col justify-center">
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-4">{post.date}</p>
-                    <h2 className="text-3xl font-black tracking-tight mb-6 group-hover:text-blue-600 transition-colors leading-tight">
+                  <div className="p-12 md:p-16 flex flex-col justify-center">
+                    <p className="text-blue-500 font-black text-[10px] uppercase tracking-[0.3em] mb-6">{post.date}</p>
+                    <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-8 group-hover:text-blue-500 transition-colors leading-[0.9] uppercase italic">
                       {post.title}
                     </h2>
-                    <p className="text-gray-500 font-medium leading-relaxed mb-8">
+                    <p className="text-gray-400 font-medium leading-relaxed mb-10 line-clamp-3">
                       {post.excerpt}
                     </p>
-                    <span className="text-black font-black text-xs uppercase tracking-widest border-b-2 border-black pb-1 self-start group-hover:border-blue-600 group-hover:text-blue-600 transition-all">
-                      Read Full Guide →
+                    <span className="text-white font-black text-[10px] uppercase tracking-widest border-b-2 border-white pb-2 self-start group-hover:border-blue-500 group-hover:text-blue-500 transition-all">
+                      Read Technical Analysis →
                     </span>
                   </div>
                 </Link>
@@ -278,45 +88,21 @@ const BlogIndex = () => {
         </div>
       </main>
 
-      <div className="mb-24">
-        <LeadMagnet />
-      </div>
+      <LeadMagnet lang="en" />
 
-      <section id="inquiry-form" className="py-24 bg-gray-50">
+      <section id="contact" className="py-32 bg-black">
         <div className="max-w-7xl mx-auto px-6">
-          <InquiryForm productTitle="Side Packaging Solutions" />
+          <InquiryForm lang="en" />
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-white border-t py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
-          <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase">SIDE PACKAGING</div>
-            <p className="text-gray-400 max-w-sm font-medium leading-relaxed">
-              Premium manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. China-based factory direct excellence.
-            </p>
+      <footer className="bg-black text-white py-16 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+          <div className="flex flex-col items-center md:items-start gap-4">
+             <p className="text-xl font-black tracking-tighter uppercase italic">Side Packaging</p>
+             <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600 max-w-xs text-center md:text-left">Premium B2B Jewelry Packaging & Gift Box Solutions for Global Brands.</p>
           </div>
-          <div>
-            <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Navigation</h4>
-            <ul className="space-y-4 text-sm font-bold text-gray-500">
-              <li><Link href="/" className="hover:text-black">Home</Link></li>
-              <li><Link href="/#products" className="hover:text-black">Products</Link></li>
-              <li><Link href="/blog" className="hover:text-black">Blog</Link></li>
-              <li><a href="#inquiry-form" className="hover:text-black">Request Quote</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-black mb-6 uppercase tracking-widest text-xs text-gray-400">Contact Andy</h4>
-            <ul className="space-y-4 text-sm font-bold text-gray-500">
-              <li><a href="mailto:jocelyn@saidepackaging.com" className="hover:text-black transition-colors">jocelyn@saidepackaging.com</a></li>
-              <li><a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-green-500 transition-colors group">
-                WhatsApp Chat
-              </a></li>
-              <li><a href="https://sidehk.m.en.alibaba.com/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors underline underline-offset-4">Alibaba Official Store</a></li>
-              <li>Side Packaging HK Limited</li>
-            </ul>
-          </div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
