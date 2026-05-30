@@ -3,21 +3,21 @@ import React, { useState } from 'react';
 const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lang?: string }) => {
   const translations: any = {
     en: {
-      title: "Request a Tailored Quote",
-      desc: "Direct from factory. Our specialists will provide a tailored quotation and packaging solution within 24 hours.",
+      title: "Get Packaging Quote in 24 Hours",
+      desc: "Direct from factory. Free dieline support & packaging consultation. We help reduce 10-30% packaging cost.",
       name: "Name",
       email: "Email",
       phone: "Phone / WhatsApp",
       country: "Country",
       company: "Company",
       industry: "Industry",
-      requirements: "Requirements",
-      placeholderReq: "Please describe your requirements (size, quantity, material, application)...",
-      submit: "Get a Factory Quote",
+      requirements: "Project Brief",
+      placeholderReq: "Size, Quantity, Material, Printing (e.g. 20x15x10cm, 500pcs, Rigid Box, Gold Foil)...",
+      submit: "Get My Free Technical Quote",
       sample: "Include Free Sample Pack",
       joined: "Joined 500+ global brands",
       thanks: "Thank you, {name}!",
-      successDesc: "Your inquiry has been received. Jocelyn will contact you via WhatsApp/Email within 24 hours with a custom quotation.",
+      successDesc: "Your inquiry has been received. Jocelyn will contact you via WhatsApp/Email within 24 hours with a custom quotation and structural analysis.",
       another: "Send Another Inquiry"
     },
     fr: {
@@ -233,6 +233,10 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           <button type="submit" className="bg-black text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition-all shadow-xl">
             {t.submit}
           </button>
+          <div className="hidden md:flex flex-col">
+             <span className="text-blue-600 font-black text-[10px] uppercase tracking-widest italic">✓ Free Dieline Support</span>
+             <span className="text-blue-600 font-black text-[10px] uppercase tracking-widest italic">✓ Cost Optimization Lab</span>
+          </div>
           <div className="flex items-center gap-4 text-gray-400">
             <label className="flex items-center gap-2 cursor-pointer group">
               <input type="checkbox" className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" defaultChecked />
