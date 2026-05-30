@@ -28,6 +28,7 @@ const HomePage = () => {
           <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
           <div className="hidden lg:flex items-center space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
             <Link href="/" className="text-white">Home</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">Founder</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
             <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
             <Link href="/blog" className="hover:text-white transition-colors">Insights</Link>
@@ -243,19 +244,10 @@ const HomePage = () => {
              </div>
           </div>
         </div>
-      </footer >
+      </footer>
 
       <LeadMagnet />
-    </div >
-  );
-};
-
-export default HomePage;
-v>
-      </footer >
-
-      <LeadMagnet />
-    </div >
+    </div>
   );
 };
 
