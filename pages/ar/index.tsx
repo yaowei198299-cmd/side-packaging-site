@@ -1,196 +1,184 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import LeadMagnet from '../../components/LeadMagnet';
 import InquiryForm from '../../components/InquiryForm';
 
-const HomePage = () => {
-  const featuredProducts = [
-    {
-      title: "Magnetic Closure Box",
-      desc: "Luxury rigid packaging with magnetic closure.",
-      image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1",
-      link: "/products/luxury-magnetic-box"
-    },
-    {
-      title: "Drawer Box",
-      desc: "Elegant sliding drawer packaging solutions.",
-      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1",
-      link: "/products/custom-drawer-box"
-    },
-    {
-      title: "Mailer Box",
-      desc: "Premium ecommerce packaging experience.",
-      image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1",
-      link: "/products/premium-mailer-box"
-    }
+const HomePageAr = () => {
+  const boxStyles = [
+    { title: "علبة مغناطيسية صلبة", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1", link: "/products" },
+    { title: "علبة درج منزلقة", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1", link: "/products" },
+    { title: "علبة شحن مخصصة", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1", link: "/products" },
+    { title: "علبة تجميل قابلة للطي", image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=800", link: "/products" },
+    { title: "حقيبة ورقية فاخرة", image: "https://sc04.alicdn.com/kf/H689a746594d24194910903328f4d9526n.jpg?v=1", link: "/products" },
+    { title: "مجموعة هدايا مخصصة", image: "https://sc04.alicdn.com/kf/Hc9d42403e05342a58b8875eb53436ec4E.jpg?v=1", link: "/products" },
   ];
 
-  const industrySolutions = [
-    {
-      title: "Cosmetic Packaging Solutions",
-      desc: "Elevate your brand with premium rigid boxes and eco-friendly inserts.",
-      image: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
-      link: "/solutions/cosmetic-packaging",
-      tag: "Luxury"
-    },
-    {
-      title: "Food & Bakery Packaging",
-      desc: "FDA-compliant paper boxes with oil-resistant coatings.",
-      image: "https://s.alicdn.com/@sc04/kf/H59aa2a5ada2f4b24bd4a9746673a6fc0n/Customizable-Biodegradable-Food-Grade-Rigid-Cake-Box.jpg_480x480.jpg",
-      link: "/solutions/food-bakery-packaging",
-      tag: "FDA-Compliant"
-    },
-    {
-      title: "E-commerce & Mailer Boxes",
-      desc: "High-strength corrugated mailer boxes for global logistics.",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png",
-      link: "/solutions/ecommerce-mailer-boxes",
-      tag: "Durable"
-    }
+  const factoryTrust = [
+    { label: "تاريخ المصنع", value: "20+ عاماً" },
+    { label: "الشهادات", value: "FSC / BSCI / ISO" },
+    { label: "القدرة الإنتاجية", value: "50 ألف وحدة/يوم" },
+    { label: "التواجد العالمي", value: "50+ دولة" },
   ];
 
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100" dir="rtl">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden" dir="rtl">
       <Head>
-        <title>حلول التغليف الفاخرة | Side Packaging HK Limited</title>
-        <meta name="description" content="حلول تغليف فاخرة متميزة. علب مغناطيسية مخصصة، علب درج، وعلب بريدية للعلامات التجارية العالمية. من المصنع مباشرة منذ عام 2006." />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Side Packaging | مصنع تغليف فاخر مباشر | حلول مخصصة</title>
+        <meta name="description" content="Side Packaging HK Limited: تصنيع B2B متميز للعلب الصلبة الفاخرة، علب الشحن، وتغليف التجزئة المخصص. مباشر من المصنع منذ عام 2006." />
       </Head>
 
-      {/* Floating WhatsApp */}
-      <a href="https://wa.me/8613699786538" className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      </a>
-
-      {/* Navbar */}
-      <nav className="border-b border-gray-100 bg-white/95 backdrop-blur-md sticky top-0 z-[80]">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/ar" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
-          <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-500">
-            <Link href="/ar" className="text-black border-b-2 border-black pb-1">الرئيسية</Link>
-            <Link href="/products" className="hover:text-black transition-colors">المنتجات</Link>
-            <Link href="/blog" className="hover:text-black transition-colors">المدونة</Link>
-            <a href="#contact" className="hover:text-black transition-colors">اتصل بنا</a>
+      {/* Navbar: Ultra-Minimalist High-End */}
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+          <Link href="/ar" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-reverse space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
+            <Link href="/products" className="hover:text-white transition-colors">الكتالوج</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">دراسات الحالة</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">المؤسسون</Link>
+            <Link href="/blog" className="hover:text-white transition-colors">المدونة</Link>
           </div>
-          <a href="#contact" className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all">طلب سعر</a>
+          <a href="#contact" className="bg-white text-black px-10 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-200 shadow-xl transition-all">احصل على سعر</a>
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="bg-gray-50 py-32 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">تغليف مخصص <br/><span className="text-blue-600">يرفع من قيمة علامتك التجارية</span></h1>
-          <p className="text-xl text-gray-500 mb-12">حلول تغليف فاخرة للعلامات التجارية المتميزة في جميع أنحاء العالم. من المصنع مباشرة منذ عام 2006.</p>
-          <div className="flex justify-center gap-4">
-            <Link href="/products" className="bg-black text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 shadow-xl transition-all">استكشف التغليف</Link>
-            <a href="#contact" className="bg-white text-black border-2 border-black px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-50 transition-all">احصل على عرض سعر مجاني</a>
+      {/* Hero: Industrial Luxury Poster Style */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black z-10" />
+        <img 
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000" 
+          alt="Luxury Factory Background" 
+          className="absolute inset-0 w-full h-full object-cover grayscale brightness-50 scale-105"
+        />
+        
+        <div className="relative z-20 text-center max-w-5xl px-6">
+          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-2 rounded-full mb-10 backdrop-blur-lg">
+            <span className="w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/60">مباشر من المصنع · دليل المشتريات 2026</span>
+          </div>
+          <h1 className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] mb-12 italic text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20">
+            فخامة <br/>صناعية.
+          </h1>
+          <p className="text-xl md:text-2xl text-white/50 mb-16 max-w-2xl mx-auto font-medium leading-relaxed uppercase tracking-widest">
+            هندسة تغليف مخصصة للعلامات التجارية العالمية المتميزة.
+          </p>
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            <Link href="/products" className="bg-white text-black px-14 py-6 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-all shadow-2xl">
+              استكشف الكتالوج
+            </Link>
+            <a href="#contact" className="bg-transparent border border-white/20 text-white px-14 py-6 rounded-full font-black uppercase tracking-widest hover:bg-white/5 transition-all backdrop-blur-md">
+              عرض سعر مخصص
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Featured Products - New from Catalog */}
-      <section className="py-24 max-w-7xl mx-auto px-6" id="products">
-        <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">أنواع التغليف المميزة</h2>
-        <div className="grid md:grid-cols-3 gap-12">
-          {featuredProducts.map((p, i) => (
-            <div key={i} className="group border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all hover:-translate-y-2 bg-white">
-              <div className="aspect-square bg-gray-50 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
-                <img src={p.image} alt={p.title} className="w-1/2 h-1/2 object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-2xl font-black uppercase mb-4 tracking-tight">{p.title}</h3>
-              <p className="text-gray-500 mb-8 font-medium">{p.desc}</p>
-              <Link href={p.link} className="inline-block bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">عرض التفاصيل</Link>
+      {/* Trust Strip: Precision Data */}
+      <section className="bg-black py-20 border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          {factoryTrust.map((stat, i) => (
+            <div key={i} className="group">
+              <p className="text-[10px] font-black text-gray-600 uppercase tracking-[0.3em] mb-3 group-hover:text-gold-500 transition-colors">{stat.label}</p>
+              <p className="text-3xl font-black text-white italic group-hover:scale-110 transition-transform">{stat.value}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Premium Finishes - From Catalog */}
-      <section className="py-24 bg-black text-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">تشطيبات فاخرة</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {['ختم رقائق معدنية', 'نقش بارز', 'ملمس ناعم', 'طلاء UV موضعي'].map((f, i) => (
-              <div key={i} className="border border-white/20 rounded-2xl py-12 text-center text-xl font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all cursor-default">
-                {f}
-              </div>
+      {/* Featured Grid */}
+      <section className="py-40 bg-black" id="catalog">
+        <div className="max-w-[1600px] mx-auto px-6">
+          <header className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-32 border-b border-white/5 pb-20">
+            <div className="max-w-2xl text-right">
+              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8 italic">الهيكل <br/>والتشطيب.</h2>
+              <p className="text-gray-500 font-medium leading-relaxed uppercase tracking-widest text-sm">كل علبة هي تحفة هندسية. اختر قاعدتك الهيكلية لتبدأ التخصيص.</p>
+            </div>
+            <Link href="/products" className="text-[11px] font-black uppercase tracking-[0.4em] text-white border-b border-gold-500 pb-2 hover:text-gold-500 transition-colors">عرض المواصفات الفنية ←</Link>
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {boxStyles.map((box, i) => (
+              <Link key={i} href={box.link} className="group relative block aspect-[4/5] overflow-hidden bg-[#0f0f0f] rounded-sm border border-white/5 hover:border-white/10 transition-all">
+                <img 
+                  src={box.image} 
+                  alt={box.title} 
+                  className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
+                <div className="absolute bottom-10 right-10 left-10 text-right">
+                  <div className="w-10 h-[2px] bg-gold-500 mb-6 group-hover:w-full transition-all duration-700 ml-auto" />
+                  <h3 className="text-3xl font-black text-white uppercase tracking-tighter italic mb-2">{box.title}</h3>
+                  <p className="text-[9px] font-black text-white/40 uppercase tracking-[0.4em]">معتمد من FSC · يتضمن الرسم الفني</p>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Sustainable Section - From Catalog */}
-      <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-8">تغليف مستدام</h2>
-          <p className="text-xl text-gray-500 font-bold uppercase tracking-widest">
-            ورق معتمد من FSC · مواد قابلة لإعادة التدوير · إنتاج صديق للبيئة
-          </p>
-        </div>
-      </section>
-
-      {/* Industry Solutions - Existing */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16">حلول الصناعة</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {industrySolutions.map((s, i) => (
-              <div key={i} className="relative group rounded-3xl overflow-hidden h-96 shadow-lg">
-                <img src={s.image} alt={s.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-8 flex flex-col justify-end">
-                  <span className="text-[10px] font-bold text-white uppercase tracking-widest mb-2 bg-blue-600 self-start px-3 py-1 rounded-full">{s.tag}</span>
-                  <h3 className="text-2xl font-black text-white uppercase mb-2">{s.title}</h3>
-                  <Link href={s.link} className="text-white text-[11px] font-bold uppercase tracking-widest border-b border-white self-start pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">اعرف المزيد</Link>
+      {/* Video Content */}
+      <section className="py-40 bg-[#050505]">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-32 items-center">
+          <div className="relative aspect-video rounded-sm overflow-hidden border border-white/5 group shadow-2xl order-2 lg:order-1">
+             <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all z-10 flex items-center justify-center">
+                <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center group-hover:scale-125 transition-all">
+                   <div className="w-0 h-0 border-t-[10px] border-t-transparent border-r-[18px] border-r-white border-b-[10px] border-b-transparent mr-2" />
                 </div>
-              </div>
-            ))}
+             </div>
+             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover grayscale" />
+          </div>
+          <div className="order-1 lg:order-2 text-right">
+            <span className="text-gold-500 text-[10px] font-black uppercase tracking-[0.5em] mb-10 block text-right">جولة في المصنع 2026</span>
+            <h2 className="text-6xl font-black uppercase tracking-tighter italic leading-none mb-10">أصول حقيقية. <br/>قدرة حقيقية.</h2>
+            <p className="text-gray-500 text-lg font-medium leading-relaxed mb-12">
+              على عكس وكلاء التجارة، نحن نمتلك دورة الإنتاج كاملة. من طباعة هايدلبرغ الأوفست إلى خطوط تجميع العلب الصلبة المؤتمتة بالكامل، تستفيد علامتك التجارية من الأسعار المباشرة ومراقبة الجودة التي لا مثيل لها.
+            </p>
+            <ul className="space-y-6 text-sm font-bold uppercase tracking-widest text-white/60">
+              <li className="flex items-center justify-end gap-4 border-r border-gold-500 pr-6 text-right">طباعة هايدلبرغ UV بـ 6 ألوان</li>
+              <li className="flex items-center justify-end gap-4 border-r border-gold-500 pr-6 text-right">تقطيع وقولبة ونقش مؤتمت</li>
+              <li className="flex items-center justify-end gap-4 border-r border-gold-500 pr-6 text-right">منشأة معتمدة من BSCI & FSC</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Contact / Inquiry */}
-      <section id="contact" className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-24">
-            <div>
-              <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">احصل على عرض سعر مجاني.</h2>
-              <p className="text-xl text-gray-500 mb-12 font-medium">هل أنت مستعد لرفع مستوى تغليف علامتك التجارية؟ أخبرنا عن مشروعك وسيقدم خبراؤنا تحليلاً مخصصاً للتكلفة في غضون 24 ساعة.</p>
-              <div className="space-y-8">
-                <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">A</div>
-                  <div>
-                    <h4 className="font-bold uppercase tracking-tight">راسلنا عبر البريد الإلكتروني</h4>
-                    <p className="text-gray-500">jocelyn@saidepackaging.com</p>
-                  </div>
+      {/* Inquiry */}
+      <section id="contact" className="py-60 bg-black relative">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-40">
+            <div className="text-right">
+              <h2 className="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-12 italic">لنبدأ <br/>البناء.</h2>
+              <p className="text-xl text-white/40 mb-20 font-medium leading-relaxed uppercase tracking-[0.2em]">يقدم فريقنا الهندسي تحليلاً هيكلياً وتحسيناً للتكلفة في غضون 24 ساعة.</p>
+              
+              <div className="space-y-16">
+                <div>
+                  <p className="text-[10px] font-black text-gold-500 uppercase tracking-widest mb-4">البريد الإلكتروني المباشر</p>
+                  <p className="text-3xl font-black italic">jocelyn@saidepackaging.com</p>
                 </div>
-                <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">W</div>
-                  <div>
-                    <h4 className="font-bold uppercase tracking-tight">واتساب</h4>
-                    <p className="text-gray-500">+86-13699786538</p>
-                  </div>
+                <div>
+                  <p className="text-[10px] font-black text-gold-500 uppercase tracking-widest mb-4">الدعم العالمي</p>
+                  <p className="text-3xl font-black italic">+86-13699786538</p>
                 </div>
               </div>
             </div>
-            <InquiryForm lang="ar" />
+            <div className="bg-[#0f0f0f] p-12 rounded-sm border border-white/5 shadow-2xl">
+              <InquiryForm lang="ar" />
+            </div>
           </div>
         </div>
       </section>
 
-      <footer className="bg-black text-white py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. جميع الحقوق محفوظة.</p>
-          <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest opacity-50">
-            <a href="#" className="hover:opacity-100 transition-opacity">سياسة الخصوصية</a>
-            <a href="#" className="hover:opacity-100 transition-opacity">شروط الخدمة</a>
+      <footer className="bg-black text-white py-20 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic text-right">Side Packaging HK Limited. © 2026. معايير الفخامة الصناعية.</p>
+          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
+            <a href="#" className="hover:opacity-100 transition-opacity">الخصوصية</a>
+            <a href="#" className="hover:opacity-100 transition-opacity">الشروط</a>
+            <Link href="/" className="text-gold-500 hover:opacity-100">English / الإنجليزية</Link>
           </div>
         </div>
       </footer>
-
-      <LeadMagnet lang="ar" />
     </div>
   );
 };
 
-export default HomePage;
+export default HomePageAr;

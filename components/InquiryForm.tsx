@@ -106,36 +106,51 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
     message: productTitle ? `${lang === 'zh' ? '我对' : 'I\'m interested in'} ${productTitle}. ` : ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // track event
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'form_submission', {
-        'event_category': 'Engagement',
-        'event_label': 'Quote',
-        'value': formData.company
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await response.json();
+        setError(data.message || 'Failed to send inquiry. Please try again.');
+      }
+    } catch (err) {
+      setError('An error occurred. Please contact us directly via WhatsApp.');
+    } finally {
+      setLoading(false);
     }
-    setSubmitted(true);
-    // In a real app, this would send to a backend
   };
 
   if (submitted) {
     return (
-      <div className={`bg-white p-12 md:p-16 rounded-[3rem] shadow-2xl max-w-5xl mx-auto text-center ${lang === 'ar' ? 'rtl' : 'ltr'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-        <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
-          <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className={`bg-[#0f0f0f] p-12 md:p-16 rounded-sm border border-white/5 shadow-2xl max-w-5xl mx-auto text-center ${lang === 'ar' ? 'rtl' : 'ltr'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+        <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+          <svg className="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
           </svg>
         </div>
-        <h2 className="text-3xl font-black mb-4 uppercase tracking-tighter">{t.thanks.replace('{name}', formData.name)}</h2>
-        <p className="text-gray-500 font-medium leading-relaxed mb-8">
+        <h2 className="text-3xl font-black mb-4 uppercase tracking-tighter italic text-white">{t.thanks.replace('{name}', formData.name)}</h2>
+        <p className="text-white/40 font-medium leading-relaxed mb-8 uppercase tracking-widest text-xs">
           {t.successDesc}
         </p>
         <button 
           onClick={() => setSubmitted(false)}
-          className="bg-black text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-gray-800 transition-all"
+          className="bg-white text-black px-8 py-3 rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-gray-200 transition-all"
         >
           {t.another}
         </button>
@@ -144,112 +159,71 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
   }
 
   return (
-    <div className={`bg-white p-12 md:p-16 rounded-[3rem] shadow-2xl max-w-5xl mx-auto ${lang === 'ar' ? 'rtl text-right' : 'ltr'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.title}</h2>
-      <p className="text-gray-600 mb-12">
+    <div className={`bg-[#0f0f0f] p-12 md:p-16 rounded-sm border border-white/5 shadow-2xl max-w-5xl mx-auto ${lang === 'ar' ? 'rtl text-right' : 'ltr'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+      <h2 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter italic">{t.title}</h2>
+      <p className="text-white/40 mb-12 uppercase tracking-[0.2em] text-[10px] font-bold leading-relaxed">
         {t.desc}
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-8">
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
-          <div className="space-y-2">
-            <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.name} *</label>
-            <input 
-              type="text" 
-              required
-              placeholder={t.name}
-              className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600 font-medium"
-              value={formData.name}
-              onChange={(e) => setFormData({...formData, name: e.target.value})}
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.email} *</label>
-            <input 
-              type="email" 
-              required
-              placeholder={t.email}
-              className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600 font-medium"
-              value={formData.email}
-              onChange={(e) => setFormData({...formData, email: e.target.value})}
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.phone} *</label>
-            <input 
-              type="text" 
-              required
-              placeholder={t.phone}
-              className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600 font-medium"
-              value={formData.phone}
-              onChange={(e) => setFormData({...formData, phone: e.target.value})}
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.country}</label>
-            <input 
-              type="text" 
-              placeholder={t.country}
-              className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600 font-medium"
-              value={formData.country}
-              onChange={(e) => setFormData({...formData, country: e.target.value})}
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.company}</label>
-            <input 
-              type="text" 
-              placeholder={t.company}
-              className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600 font-medium"
-              value={formData.company}
-              onChange={(e) => setFormData({...formData, company: e.target.value})}
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.industry}</label>
-            <input 
-              type="text" 
-              placeholder={t.industry}
-              className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition text-gray-600 font-medium"
-              value={formData.industry}
-              onChange={(e) => setFormData({...formData, industry: e.target.value})}
-            />
-          </div>
+          {[
+            { id: 'name', label: t.name, placeholder: t.name, required: true },
+            { id: 'email', label: t.email, placeholder: t.email, required: true, type: 'email' },
+            { id: 'phone', label: t.phone, placeholder: t.phone, required: true },
+            { id: 'country', label: t.country, placeholder: t.country },
+            { id: 'company', label: t.company, placeholder: t.company },
+            { id: 'industry', label: t.industry, placeholder: t.industry },
+          ].map((field) => (
+            <div key={field.id} className="space-y-2">
+              <label className="block text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">{field.label} {field.required ? '*' : ''}</label>
+              <input 
+                type={field.type || "text"} 
+                required={field.required}
+                placeholder={field.placeholder}
+                className="w-full px-6 py-4 bg-black border border-white/5 text-white rounded-sm focus:border-gold-500 outline-none transition font-medium text-sm placeholder:text-white/10"
+                value={(formData as any)[field.id]}
+                onChange={(e) => setFormData({...formData, [field.id]: e.target.value})}
+              />
+            </div>
+          ))}
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-bold text-gray-700 uppercase tracking-widest">{t.requirements} *</label>
+          <label className="block text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">{t.requirements} *</label>
           <textarea 
             rows={4}
             required
             placeholder={t.placeholderReq}
-            className="w-full px-6 py-4 border border-gray-100 bg-gray-50 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition resize-none text-gray-600 font-medium"
+            className="w-full px-6 py-4 bg-black border border-white/5 text-white rounded-sm focus:border-gold-500 outline-none transition resize-none font-medium text-sm placeholder:text-white/10"
             value={formData.message}
             onChange={(e) => setFormData({...formData, message: e.target.value})}
           ></textarea>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <button type="submit" className="bg-black text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition-all shadow-xl">
-            {t.submit}
+        <div className="flex flex-col md:flex-row items-center gap-12 pt-6">
+          <button 
+            type="submit" 
+            disabled={loading}
+            className="bg-white text-black px-12 py-5 rounded-full font-black text-[11px] uppercase tracking-widest hover:bg-gray-200 transition-all shadow-xl disabled:bg-gray-400"
+          >
+            {loading ? 'Sending...' : t.submit}
           </button>
-          <div className="hidden md:flex flex-col">
-             <span className="text-blue-600 font-black text-[10px] uppercase tracking-widest italic">✓ Free Dieline Support</span>
-             <span className="text-blue-600 font-black text-[10px] uppercase tracking-widest italic">✓ Cost Optimization Lab</span>
+          
+          {error && (
+            <p className="text-red-500 font-bold text-xs uppercase tracking-widest">{error}</p>
+          )}
+          
+          <div className="flex flex-col gap-2">
+             <span className="text-gold-500 font-black text-[9px] uppercase tracking-[0.3em] italic">✓ Free Dieline Support</span>
+             <span className="text-gold-500 font-black text-[9px] uppercase tracking-[0.3em] italic">✓ Cost Optimization</span>
           </div>
-          <div className="flex items-center gap-4 text-gray-400">
-            <label className="flex items-center gap-2 cursor-pointer group">
-              <input type="checkbox" className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" defaultChecked />
-              <span className="text-[10px] font-black uppercase tracking-widest group-hover:text-black transition-colors">{t.sample}</span>
+
+          <div className="flex items-center gap-4">
+            <label className="flex items-center gap-3 cursor-pointer group">
+              <input type="checkbox" className="w-5 h-5 bg-black border-white/10 rounded text-gold-500 focus:ring-gold-500" defaultChecked />
+              <span className="text-[9px] font-black uppercase tracking-widest text-white/40 group-hover:text-white transition-colors">{t.sample}</span>
             </label>
-          </div>
-          <div className="flex items-center gap-4 text-gray-400">
-            <div className="flex -space-x-2">
-              {[1,2,3].map(i => (
-                <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200"></div>
-              ))}
-            </div>
-            <p className="text-[10px] font-bold uppercase tracking-widest">{t.joined}</p>
           </div>
         </div>
       </form>

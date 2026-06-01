@@ -1,196 +1,152 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import LeadMagnet from '../../components/LeadMagnet';
 import InquiryForm from '../../components/InquiryForm';
 
-const HomePage = () => {
-  const featuredProducts = [
-    {
-      title: "Boîte à fermeture magnétique",
-      desc: "Emballage rigide de luxe avec fermeture magnétique.",
-      image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1",
-      link: "/products/luxury-magnetic-box"
-    },
-    {
-      title: "Boîte à tiroir",
-      desc: "Solutions d'emballage élégantes à tiroir coulissant.",
-      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1",
-      link: "/products/custom-drawer-box"
-    },
-    {
-      title: "Boîte d'expédition",
-      desc: "Expérience d'emballage e-commerce de qualité supérieure.",
-      image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1",
-      link: "/products/premium-mailer-box"
-    }
+const HomePageFr = () => {
+  const boxStyles = [
+    { title: "Boîte Magnétique Rigide", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1", link: "/products" },
+    { title: "Boîte à Tiroir", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1", link: "/products" },
+    { title: "Boîte d'Expédition", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1", link: "/products" },
+    { title: "Boîte Cosmétique Pliante", image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=800", link: "/products" },
+    { title: "Sac en Papier de Luxe", image: "https://sc04.alicdn.com/kf/H689a746594d24194910903328f4d9526n.jpg?v=1", link: "/products" },
+    { title: "Coffret Cadeau Sur Mesure", image: "https://sc04.alicdn.com/kf/Hc9d42403e05342a58b8875eb53436ec4E.jpg?v=1", link: "/products" },
   ];
 
-  const industrySolutions = [
-    {
-      title: "Solutions d'emballage cosmétique",
-      desc: "Valorisez votre marque avec des boîtes rigides haut de gamme et des calages éco-responsables.",
-      image: "https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png",
-      link: "/solutions/cosmetic-packaging",
-      tag: "Luxe"
-    },
-    {
-      title: "Emballage alimentaire et boulangerie",
-      desc: "Boîtes en papier conformes à la FDA avec revêtements résistants aux graisses.",
-      image: "https://s.alicdn.com/@sc04/kf/H59aa2a5ada2f4b24bd4a9746673a6fc0n/Customizable-Biodegradable-Food-Grade-Rigid-Cake-Box.jpg_480x480.jpg",
-      link: "/solutions/food-bakery-packaging",
-      tag: "Conforme FDA"
-    },
-    {
-      title: "E-commerce et boîtes d'expédition",
-      desc: "Boîtes d'expédition en carton ondulé haute résistance pour la logistique mondiale.",
-      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png",
-      link: "/solutions/ecommerce-mailer-boxes",
-      tag: "Durable"
-    }
+  const factoryTrust = [
+    { label: "Histoire de l'usine", value: "20+ Ans" },
+    { label: "Certifications", value: "FSC / BSCI / ISO" },
+    { label: "Capacité de Production", value: "50k Unités/Jour" },
+    { label: "Présence Globale", value: "50+ Pays" },
   ];
 
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
-        <title>Solutions d'emballage de luxe | Side Packaging HK Limited</title>
-        <meta name="description" content="Solutions d'emballage de luxe de qualité supérieure. Boîtes magnétiques personnalisées, boîtes à tiroirs et pochettes d'expédition pour les marques mondiales. Direct usine depuis 2006." />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Side Packaging | Usine de Luxe en Direct | Solutions Sur Mesure</title>
+        <meta name="description" content="Side Packaging HK Limited : Fabrication B2B premium pour boîtes rigides, mailers et emballages sur mesure. Direct usine depuis 2006." />
       </Head>
 
-      {/* Floating WhatsApp */}
-      <a href="https://wa.me/8613699786538" className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      </a>
-
       {/* Navbar */}
-      <nav className="border-b border-gray-100 bg-white/95 backdrop-blur-md sticky top-0 z-[80]">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/fr" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
-          <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-500">
-            <Link href="/fr" className="text-black border-b-2 border-black pb-1">Accueil</Link>
-            <Link href="/products" className="hover:text-black transition-colors">Produits</Link>
-            <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
-            <a href="#contact" className="hover:text-black transition-colors">Contact</a>
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+          <Link href="/fr" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
+            <Link href="/products" className="hover:text-white transition-colors">Catalogue</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Études de Cas</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">Fondateurs</Link>
+            <Link href="/blog" className="hover:text-white transition-colors">Insights</Link>
           </div>
-          <a href="#contact" className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gray-800 transition-all">Devis</a>
+          <a href="#contact" className="bg-white text-black px-10 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-200 shadow-xl transition-all">Devis</a>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="bg-gray-50 py-32 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">Emballage personnalisé <br/><span className="text-blue-600">qui valorise votre marque</span></h1>
-          <p className="text-xl text-gray-500 mb-12">Solutions d'emballage de luxe pour les marques haut de gamme du monde entier. Direct usine depuis 2006.</p>
-          <div className="flex justify-center gap-4">
-            <Link href="/products" className="bg-black text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 shadow-xl transition-all">Explorer les emballages</Link>
-            <a href="#contact" className="bg-white text-black border-2 border-black px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-50 transition-all">Devis gratuit</a>
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black z-10" />
+        <img 
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000" 
+          alt="Luxury Factory" 
+          className="absolute inset-0 w-full h-full object-cover grayscale brightness-50 scale-105"
+        />
+        
+        <div className="relative z-20 text-center max-w-5xl px-6">
+          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-2 rounded-full mb-10 backdrop-blur-lg">
+            <span className="w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/60">Direct Usine · Guide 2026</span>
+          </div>
+          <h1 className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] mb-12 italic text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20">
+            Luxe <br/>Industriel.
+          </h1>
+          <p className="text-xl md:text-2xl text-white/50 mb-16 max-w-2xl mx-auto font-medium leading-relaxed uppercase tracking-widest">
+            Ingénierie de l'emballage sur mesure pour les marques premium mondiales.
+          </p>
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            <Link href="/products" className="bg-white text-black px-14 py-6 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-all shadow-2xl">
+              Explorer le Catalogue
+            </Link>
+            <a href="#contact" className="bg-transparent border border-white/20 text-white px-14 py-6 rounded-full font-black uppercase tracking-widest hover:bg-white/5 transition-all backdrop-blur-md">
+              Devis Personnalisé
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Featured Products - New from Catalog */}
-      <section className="py-24 max-w-7xl mx-auto px-6" id="products">
-        <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Types d'emballages vedettes</h2>
-        <div className="grid md:grid-cols-3 gap-12">
-          {featuredProducts.map((p, i) => (
-            <div key={i} className="group border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all hover:-translate-y-2 bg-white">
-              <div className="aspect-square bg-gray-50 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
-                <img src={p.image} alt={p.title} className="w-1/2 h-1/2 object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-2xl font-black uppercase mb-4 tracking-tight">{p.title}</h3>
-              <p className="text-gray-500 mb-8 font-medium">{p.desc}</p>
-              <Link href={p.link} className="inline-block bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">Voir les détails</Link>
+      {/* Trust Strip */}
+      <section className="bg-black py-20 border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          {factoryTrust.map((stat, i) => (
+            <div key={i} className="group">
+              <p className="text-[10px] font-black text-gray-600 uppercase tracking-[0.3em] mb-3 group-hover:text-gold-500 transition-colors">{stat.label}</p>
+              <p className="text-3xl font-black text-white italic group-hover:scale-110 transition-transform">{stat.value}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Premium Finishes - From Catalog */}
-      <section className="py-24 bg-black text-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16 text-center">Finitions haut de gamme</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {['Marquage à chaud', 'Gaufrage', 'Toucher doux', 'Vernis sélectif UV'].map((f, i) => (
-              <div key={i} className="border border-white/20 rounded-2xl py-12 text-center text-xl font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all cursor-default">
-                {f}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Featured Grid */}
+      <section className="py-40 bg-black" id="catalog">
+        <div className="max-w-[1600px] mx-auto px-6">
+          <header className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-32 border-b border-white/5 pb-20">
+            <div className="max-w-2xl">
+              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8 italic">Structure & <br/>Finition.</h2>
+              <p className="text-gray-500 font-medium leading-relaxed uppercase tracking-widest text-sm">Chaque boîte est un chef-d'œuvre d'ingénierie.</p>
+            </div>
+            <Link href="/products" className="text-[11px] font-black uppercase tracking-[0.4em] text-white border-b border-gold-500 pb-2 hover:text-gold-500 transition-colors">Spécifications Techniques →</Link>
+          </header>
 
-      {/* Sustainable Section - From Catalog */}
-      <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-8">Emballage durable</h2>
-          <p className="text-xl text-gray-500 font-bold uppercase tracking-widest">
-            Papier certifié FSC · matériaux recyclables · production éco-responsable
-          </p>
-        </div>
-      </section>
-
-      {/* Industry Solutions - Existing */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-black uppercase tracking-tighter mb-16">Solutions sectorielles</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {industrySolutions.map((s, i) => (
-              <div key={i} className="relative group rounded-3xl overflow-hidden h-96 shadow-lg">
-                <img src={s.image} alt={s.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-8 flex flex-col justify-end">
-                  <span className="text-[10px] font-bold text-white uppercase tracking-widest mb-2 bg-blue-600 self-start px-3 py-1 rounded-full">{s.tag}</span>
-                  <h3 className="text-2xl font-black text-white uppercase mb-2">{s.title}</h3>
-                  <Link href={s.link} className="text-white text-[11px] font-bold uppercase tracking-widest border-b border-white self-start pb-1 hover:text-blue-400 hover:border-blue-400 transition-colors">En savoir plus</Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {boxStyles.map((box, i) => (
+              <Link key={i} href={box.link} className="group relative block aspect-[4/5] overflow-hidden bg-[#0f0f0f] rounded-sm border border-white/5 hover:border-white/10 transition-all">
+                <img src={box.image} alt={box.title} className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
+                <div className="absolute bottom-10 left-10 right-10">
+                  <div className="w-10 h-[2px] bg-gold-500 mb-6 group-hover:w-full transition-all duration-700" />
+                  <h3 className="text-3xl font-black text-white uppercase tracking-tighter italic mb-2">{box.title}</h3>
+                  <p className="text-[9px] font-black text-white/40 uppercase tracking-[0.4em]">Certifié FSC · Dessin Technique Inclus</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Contact / Inquiry */}
-      <section id="contact" className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-24">
+      {/* Inquiry */}
+      <section id="contact" className="py-60 bg-black relative">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-40">
             <div>
-              <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">Obtenez un devis gratuit.</h2>
-              <p className="text-xl text-gray-500 mb-12 font-medium">Prêt à valoriser l'emballage de votre marque ? Parlez-nous de votre projet et nos experts vous fourniront une analyse personnalisée des coûts sous 24 heures.</p>
-              <div className="space-y-8">
-                <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">A</div>
-                  <div>
-                    <h4 className="font-bold uppercase tracking-tight">Envoyez-nous un e-mail</h4>
-                    <p className="text-gray-500">jocelyn@saidepackaging.com</p>
-                  </div>
+              <h2 className="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-12 italic">Let's <br/>Build.</h2>
+              <p className="text-xl text-white/40 mb-20 font-medium leading-relaxed uppercase tracking-[0.2em]">Optimisation des coûts en 24 heures.</p>
+              
+              <div className="space-y-16">
+                <div>
+                  <p className="text-[10px] font-black text-gold-500 uppercase tracking-widest mb-4">Email Direct</p>
+                  <p className="text-3xl font-black italic">jocelyn@saidepackaging.com</p>
                 </div>
-                <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">W</div>
-                  <div>
-                    <h4 className="font-bold uppercase tracking-tight">WhatsApp</h4>
-                    <p className="text-gray-500">+86-13699786538</p>
-                  </div>
+                <div>
+                  <p className="text-[10px] font-black text-gold-500 uppercase tracking-widest mb-4">Support Global</p>
+                  <p className="text-3xl font-black italic">+86-13699786538</p>
                 </div>
               </div>
             </div>
-            <InquiryForm lang="fr" />
+            <div className="bg-[#0f0f0f] p-12 rounded-sm border border-white/5 shadow-2xl">
+              <InquiryForm lang="fr" />
+            </div>
           </div>
         </div>
       </section>
 
-      <footer className="bg-black text-white py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. Tous droits réservés.</p>
-          <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest opacity-50">
-            <a href="#" className="hover:opacity-100 transition-opacity">Politique de confidentialité</a>
-            <a href="#" className="hover:opacity-100 transition-opacity">Conditions d'utilisation</a>
+      <footer className="bg-black text-white py-20 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026.</p>
+          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
+            <Link href="/" className="text-gold-500 hover:opacity-100">English</Link>
           </div>
         </div>
       </footer>
-
-      <LeadMagnet lang="fr" />
     </div>
   );
 };
 
-export default HomePage;
+export default HomePageFr;

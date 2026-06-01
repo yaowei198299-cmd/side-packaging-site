@@ -11,18 +11,18 @@ const GalleryPage = () => {
   ];
 
   const projects = [
-    { title: "Luxury Magnetic Perfume Box", category: "Magnetic", image: "https://s.alicdn.com/@sc04/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY/Custom-Eco-Friendly-Biodegradable-Magnetic-Folding-Mailer.jpg", tags: ["FSC", "Gold Foil"] },
-    { title: "Bespoke Jewelry Set Box", category: "Jewelry", image: "https://s.alicdn.com/@sc04/kf/H6a331bc412a64a00b7c4af3df365dac1i/Custom-Jewelry-Pink-Sponge-Pouch-Bags-Earring.jpg", tags: ["Velvet", "Small MOQ"] },
-    { title: "Premium Kraft Mailer", category: "Mailer", image: "https://s.alicdn.com/@sc04/kf/H4cebdb0cd26b429f897a7b927f587eb64/Kraft-Paper-Mailer-Boxes-Rectangle-Gift-Craft.jpg", tags: ["Sustainable", "Durable"] },
-    { title: "Lid & Base Gift Box", category: "Lid & Base", image: "https://s.alicdn.com/@sc04/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g/Custom-Logo-Gold-Foil-Birthday-Valentine-s.jpg", tags: ["Rigid", "Art Paper"] },
+    { title: "Luxury Magnetic Perfume Box", category: "Magnetic", image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg", tags: ["FSC", "Gold Foil"] },
+    { title: "Bespoke Jewelry Set Box", category: "Jewelry", image: "https://sc04.alicdn.com/kf/H6a331bc412a64a00b7c4af3df365dac1i.jpg", tags: ["Velvet", "Small MOQ"] },
+    { title: "Premium Kraft Mailer", category: "Mailer", image: "https://sc04.alicdn.com/kf/H4cebdb0cd26b429f897a7b927f587eb64.jpg", tags: ["Sustainable", "Durable"] },
+    { title: "Lid & Base Gift Box", category: "Lid & Base", image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg", tags: ["Rigid", "Art Paper"] },
     { title: "Cosmetic Sliding Drawer", category: "Drawer", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg", tags: ["Soft Touch", "Spot UV"] },
-    { title: "Eco-Friendly Food Packaging", category: "Food", image: "https://s.alicdn.com/@sc04/kf/Had73de458596340d2b7f9d73d279f32b94/Eco-Friendly-Recycled-Materials-Recyclable-Self-Erecting.jpg", tags: ["Food Grade", "Oil Proof"] },
-    { title: "Custom Watch Rigid Box", category: "Rigid Setup", image: "https://s.alicdn.com/@sc04/kf/Hfc6f9a416d73448b8d7a8a62c7f6b9edF/Stock-Foldable-3D-Butterfly-Candy-Box-Mint.jpg", tags: ["Luxury", "Industrial"] },
-    { title: "Electronics Accessory Box", category: "Cosmetic", image: "https://s.alicdn.com/@sc04/kf/H897da67689e44678976fd2a650c13954R/Wholesale-Recyclable-Custom-Printed-Paperboard-Mobile-Phone.jpg", tags: ["Embossed", "Seal"] },
-    { title: "Triangle Snack Box", category: "Food", image: "https://s.alicdn.com/@sc04/kf/H177398f7aa15456ca80b4af84f84382a6/Customer-Favorite-Disposable-Biodegradable-Triangle-Food-Grade.jpg", tags: ["Unique Shape", "Magnetic"] },
-    { title: "Flower Bouquet Rigid Box", category: "Rigid Setup", image: "https://s.alicdn.com/@sc04/kf/H610079537f9f40988ccbb03e6eebec3cE/Mother-s-Day-Handheld-Flower-Bouquet-Rigid.jpg", tags: ["Illustration", "Handmade"] },
-    { title: "Laser Cut Macaron Box", category: "Rigid Setup", image: "https://s.alicdn.com/@sc04/kf/H69eba95d165a4b129b8abe2baf561c0f9/Wedding-Mini-Fancy-Laser-Cut-Recycled-Materials.jpg", tags: ["Laser Cut", "Mini"] },
-    { title: "Folding Kraft Gift Folder", category: "Folding", image: "https://s.alicdn.com/@sc04/kf/Hd2a4d4ee7b674771a4921b9d43bff2b73/Custom-Logo-Eco-Friendly-Recyclable-Cardboard-Corrugated.jpg", tags: ["Folder", "Reusable"] }
+    { title: "Eco-Friendly Food Packaging", category: "Food", image: "https://sc04.alicdn.com/kf/Had73de458596340d2b7f9d73d279f32b94.jpg", tags: ["Food Grade", "Oil Proof"] },
+    { title: "Custom Watch Rigid Box", category: "Rigid Setup", image: "https://sc04.alicdn.com/kf/Hfc6f9a416d73448b8d7a8a62c7f6b9edF.jpg", tags: ["Luxury", "Industrial"] },
+    { title: "Electronics Accessory Box", category: "Cosmetic", image: "https://sc04.alicdn.com/kf/H897da67689e44678976fd2a650c13954R.jpg", tags: ["Embossed", "Seal"] },
+    { title: "Triangle Snack Box", category: "Food", image: "https://sc04.alicdn.com/kf/H177398f7aa15456ca80b4af84f84382a6.jpg", tags: ["Unique Shape", "Magnetic"] },
+    { title: "Flower Bouquet Rigid Box", category: "Rigid Setup", image: "https://sc04.alicdn.com/kf/H610079537f9f40988ccbb03e6eebec3cE.jpg", tags: ["Illustration", "Handmade"] },
+    { title: "Laser Cut Macaron Box", category: "Rigid Setup", image: "https://sc04.alicdn.com/kf/H69eba95d165a4b129b8abe2baf561c0f9.jpg", tags: ["Laser Cut", "Mini"] },
+    { title: "Folding Kraft Gift Folder", category: "Folding", image: "https://sc04.alicdn.com/kf/Hd2a4d4ee7b674771a4921b9d43bff2b73.jpg", tags: ["Folder", "Reusable"] }
   ];
 
   const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
@@ -112,8 +112,8 @@ const GalleryPage = () => {
                       </div>
                    </div>
                 </div>
-                <div className="aspect-[4/5] bg-white/5 rounded-[4rem] border border-white/10 overflow-hidden relative shadow-2xl">
-                   <img src="https://s.alicdn.com/@sc04/kf/Had1198f76e8244f7b6e067519bad703co/Custom-Luxury-Eco-Friendly-Biodegradable-Magnetic-Closure.jpg" alt="Optimization Result" className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all" />
+                 <div className="aspect-[4/5] bg-white/5 rounded-[4rem] border border-white/10 overflow-hidden relative shadow-2xl">
+                    <img src="https://sc04.alicdn.com/kf/Had1198f76e8244f7b6e067519bad703co.jpg" alt="Optimization Result" className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all" />
                    <div className="absolute inset-0 flex items-center justify-center">
                       <div className="bg-white text-black px-8 py-4 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl">Bespoke Upgrade</div>
                    </div>
