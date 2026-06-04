@@ -2,181 +2,183 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
+import WhatsAppButton from '../../components/WhatsAppButton';
 
 const HomePageAr = () => {
-  const boxStyles = [
-    { title: "علبة مغناطيسية صلبة", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1", link: "/products" },
-    { title: "علبة درج منزلقة", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1", link: "/products" },
-    { title: "علبة شحن مخصصة", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1", link: "/products" },
-    { title: "علبة تجميل قابلة للطي", image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=800", link: "/products" },
-    { title: "حقيبة ورقية فاخرة", image: "https://sc04.alicdn.com/kf/H689a746594d24194910903328f4d9526n.jpg?v=1", link: "/products" },
-    { title: "مجموعة هدايا مخصصة", image: "https://sc04.alicdn.com/kf/Hc9d42403e05342a58b8875eb53436ec4E.jpg?v=1", link: "/products" },
+  const group1 = "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png";
+  const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
+
+  const categories = [
+    { title: "حقائب اليد", image: group1, x: "0%" },
+    { title: "صناديق ورقية", image: group1, x: "33.33%" },
+    { title: "ملصقات العلامات", image: group1, x: "66.66%" },
+    { title: "مناديل ورقية", image: group1, x: "100%" },
+    { title: "صناديق فاخرة", image: group2, x: "0%" },
+    { title: "صناديق عرض", image: group2, x: "33.33%" },
+    { title: "صناديق شحن", image: group2, x: "66.66%" },
+    { title: "بطاقات شكر", image: group2, x: "100%" },
   ];
 
-  const factoryTrust = [
-    { label: "تاريخ المصنع", value: "20+ عاماً" },
-    { label: "الشهادات", value: "FSC / BSCI / ISO" },
-    { label: "القدرة الإنتاجية", value: "50 ألف وحدة/يوم" },
-    { label: "التواجد العالمي", value: "50+ دولة" },
+  const faqs = [
+    {
+      q: "ما هو الحد الأدنى لكمية الطلب (MOQ)؟",
+      a: "يبدأ الحد الأدنى لكمية الطلب لدينا من 500 وحدة للصناديق الصلبة الفاخرة وصناديق الهدايا المغناطيسية. بالنسبة لصناديق الشحن عبر البريد الإلكتروني، يمكننا تلبية الطلبات بدءًا من 100 وحدة لدعم العلامات التجارية المتنامية."
+    },
+    {
+      q: "كيف يمكنني تقليل تكاليف التغليف الخاصة بي؟",
+      a: "نحن نقدم تحليلاً تقنياً مجانياً لخفض التكاليف. من خلال تحسين هياكل الصناديق، وسماكة المواد، وتصاميم التعبئة المسطحة، نساعد العملاء عادةً على توفير 10-30% في الإنتاج والشحن."
+    },
+    {
+      q: "هل تقدمون تصميماً مجانياً ودعماً هيكلياً؟",
+      a: "نعم، يتضمن كل استفسار دعماً احترافياً مجانياً للتصاميم الهيكلية. سيقدم مهندسونا رسومات تقنية لضمان ملاءمة عملك الفني تماماً قبل الإنتاج الضخم."
+    },
+    {
+      q: "هل التغليف الخاص بكم معتمد من FSC؟",
+      a: "بالتأكيد. نحن مصنع معتمد من FSC، مما يضمن أن جميع المواد يتم الحصول عليها من غابات تدار بمسؤولية. هذا أمر بالغ الأهمية للعلامات التجارية التي تدخل أسواق الولايات المتحدة والاتحاد الأوروبي."
+    }
   ];
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden" dir="rtl">
       <Head>
-        <title>Side Packaging | مصنع تغليف فاخر مباشر | حلول مخصصة</title>
-        <meta name="description" content="Side Packaging HK Limited: تصنيع B2B متميز للعلب الصلبة الفاخرة، علب الشحن، وتغليف التجزئة المخصص. مباشر من المصنع منذ عام 2006." />
+        <title>Side Packaging | مصنع تغليف فاخر متميز في الصين</title>
+        <meta name="description" content="مصنع مباشر لصناديق الهدايا المغناطيسية والصلبة والشحن مع شعار مخصص. الحد الأدنى للطلب من 100 قطعة. نموذج 3D مجاني. شحن عالمي." />
       </Head>
 
-      {/* Navbar: Ultra-Minimalist High-End */}
+      {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <Link href="/ar" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
-          <div className="hidden lg:flex items-center space-x-reverse space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link href="/ar" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-reverse space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">الكتالوج</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">دراسات الحالة</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">المؤسسون</Link>
-            <Link href="/blog" className="hover:text-white transition-colors">المدونة</Link>
           </div>
-          <a href="#contact" className="bg-white text-black px-10 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-200 shadow-xl transition-all">احصل على سعر</a>
+          <a href="#contact" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">احصل على سعر مجاني</a>
         </div>
       </nav>
 
-      {/* Hero: Industrial Luxury Poster Style */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black z-10" />
-        <img 
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000" 
-          alt="Luxury Factory Background" 
-          className="absolute inset-0 w-full h-full object-cover  brightness-50 scale-105"
-        />
-        
-        <div className="relative z-20 text-center max-w-5xl px-6">
-          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-2 rounded-full mb-10 backdrop-blur-lg">
-            <span className="w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/60">مباشر من المصنع · دليل المشتريات 2026</span>
-          </div>
-          <h1 className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] mb-12 italic text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20">
-            فخامة <br/>صناعية.
-          </h1>
-          <p className="text-xl md:text-2xl text-white/50 mb-16 max-w-2xl mx-auto font-medium leading-relaxed uppercase tracking-widest">
-            هندسة تغليف مخصصة للعلامات التجارية العالمية المتميزة.
-          </p>
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-            <Link href="/products" className="bg-white text-black px-14 py-6 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-all shadow-2xl">
-              استكشف الكتالوج
-            </Link>
-            <a href="#contact" className="bg-transparent border border-white/20 text-white px-14 py-6 rounded-full font-black uppercase tracking-widest hover:bg-white/5 transition-all backdrop-blur-md">
-              عرض سعر مخصص
-            </a>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://sc01.alicdn.com/kf/A421aa657fbeb4c8690351f33c3bbf7cdA.png" 
+            alt="Luxury Packaging Collage" 
+            className="absolute left-0 top-0 h-full w-full lg:w-3/4 object-cover object-left grayscale brightness-50"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-black via-black/80 to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-right">
+          <div className="animate-in fade-in slide-in-from-right-10 duration-1000">
+            <div className="inline-block border border-[#d4af37]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
+              <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#d4af37] rounded-full animate-pulse" />
+                مصنع متميز لصناديق الهدايا في الصين · تأسس عام 2006
+              </span>
+            </div>
+
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
+              تغليف هدايا <br/>
+              <span className="text-white">فاخر مخصص</span> <br/>
+              مباشر من المصنع <br/>
+              في الصين
+            </h1>
+
+            <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight">
+              مصنع مباشر لصناديق الهدايا المغناطيسية والصلبة والشحن مع شعار مخصص
+            </p>
+
+            <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10">
+              الحد الأدنى للطلب من 100 قطعة • نموذج 3D مجاني • شحن عالمي
+            </p>
+
+            <div className="flex flex-wrap gap-3 mb-12 justify-end">
+              {[
+                "MOQ: 100 قطعة",
+                "مدة التسليم: 15 يوماً",
+                "الشحن لـ 50+ دولة",
+                "خدمة تصميم مجانية"
+              ].map((pill, i) => (
+                <span key={i} className="px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-white/80">
+                  {pill}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-end">
+               <a href="/inquiry" className="inline-block bg-[#d4af37] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+                 احصل على أسعار المصنع (وفر 30-50%)
+               </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Trust Strip: Precision Data */}
-      <section className="bg-black py-20 border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-          {factoryTrust.map((stat, i) => (
-            <div key={i} className="group">
-              <p className="text-[10px] font-black text-gray-600 uppercase tracking-[0.3em] mb-3 group-hover:text-gold-500 transition-colors">{stat.label}</p>
-              <p className="text-3xl font-black text-white italic group-hover:scale-110 transition-transform">{stat.value}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Featured Grid */}
-      <section className="py-40 bg-black" id="catalog">
-        <div className="max-w-[1600px] mx-auto px-6">
-          <header className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-32 border-b border-white/5 pb-20">
-            <div className="max-w-2xl text-right">
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8 italic">الهيكل <br/>والتشطيب.</h2>
-              <p className="text-gray-500 font-medium leading-relaxed uppercase tracking-widest text-sm">كل علبة هي تحفة هندسية. اختر قاعدتك الهيكلية لتبدأ التخصيص.</p>
-            </div>
-            <Link href="/products" className="text-[11px] font-black uppercase tracking-[0.4em] text-white border-b border-gold-500 pb-2 hover:text-gold-500 transition-colors">عرض المواصفات الفنية ←</Link>
+      {/* Category Grid */}
+      <section className="py-32 bg-black border-t border-white/5">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <header className="mb-20 text-center">
+             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">فئات المنتجات</span>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">مصممة للفخامة.</h2>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {boxStyles.map((box, i) => (
-              <Link key={i} href={box.link} className="group relative block aspect-[4/5] overflow-hidden bg-[#0f0f0f] rounded-sm border border-white/5 hover:border-white/10 transition-all">
-                <img 
-                  src={box.image} 
-                  alt={box.title} 
-                  className="absolute inset-0 w-full h-full object-cover    group-hover:-0 group-hover:scale-110 transition-all duration-1000" 
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+            {categories.map((cat, i) => (
+              <Link key={i} href="/products" className="group block text-center">
+                <div 
+                  className="aspect-square bg-[#f3f3f3] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-2xl"
+                  style={{
+                    backgroundImage: `url(${cat.image})`,
+                    backgroundSize: '400% 100%',
+                    backgroundPosition: `${cat.x} center`,
+                    backgroundRepeat: 'no-repeat'
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
-                <div className="absolute bottom-10 right-10 left-10 text-right">
-                  <div className="w-10 h-[2px] bg-gold-500 mb-6 group-hover:w-full transition-all duration-700 ml-auto" />
-                  <h3 className="text-3xl font-black text-white uppercase tracking-tighter italic mb-2">{box.title}</h3>
-                  <p className="text-[9px] font-black text-white/40 uppercase tracking-[0.4em]">معتمد من FSC · يتضمن الرسم الفني</p>
-                </div>
+                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#d4af37] transition-colors">
+                  {cat.title}
+                </h3>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Video Content */}
-      <section className="py-40 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-32 items-center">
-          <div className="relative aspect-video rounded-sm overflow-hidden border border-white/5 group shadow-2xl order-2 lg:order-1">
-             <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all z-10 flex items-center justify-center">
-                <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center group-hover:scale-125 transition-all">
-                   <div className="w-0 h-0 border-t-[10px] border-t-transparent border-r-[18px] border-r-white border-b-[10px] border-b-transparent mr-2" />
-                </div>
-             </div>
-             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover " />
-          </div>
-          <div className="order-1 lg:order-2 text-right">
-            <span className="text-gold-500 text-[10px] font-black uppercase tracking-[0.5em] mb-10 block text-right">جولة في المصنع 2026</span>
-            <h2 className="text-6xl font-black uppercase tracking-tighter italic leading-none mb-10">أصول حقيقية. <br/>قدرة حقيقية.</h2>
-            <p className="text-gray-500 text-lg font-medium leading-relaxed mb-12">
-              على عكس وكلاء التجارة، نحن نمتلك دورة الإنتاج كاملة. من طباعة هايدلبرغ الأوفست إلى خطوط تجميع العلب الصلبة المؤتمتة بالكامل، تستفيد علامتك التجارية من الأسعار المباشرة ومراقبة الجودة التي لا مثيل لها.
-            </p>
-            <ul className="space-y-6 text-sm font-bold uppercase tracking-widest text-white/60">
-              <li className="flex items-center justify-end gap-4 border-r border-gold-500 pr-6 text-right">طباعة هايدلبرغ UV بـ 6 ألوان</li>
-              <li className="flex items-center justify-end gap-4 border-r border-gold-500 pr-6 text-right">تقطيع وقولبة ونقش مؤتمت</li>
-              <li className="flex items-center justify-end gap-4 border-r border-gold-500 pr-6 text-right">منشأة معتمدة من BSCI & FSC</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      {/* Expert Q&A Section */}
+      <section className="py-40 bg-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto px-6">
+          <header className="mb-20 text-center">
+            <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">الأسئلة الشائعة للخبراء</span>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">ذكاء التغليف.</h2>
+          </header>
 
-      {/* Inquiry */}
-      <section id="contact" className="py-60 bg-black relative">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-40">
-            <div className="text-right">
-              <h2 className="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-12 italic">لنبدأ <br/>البناء.</h2>
-              <p className="text-xl text-white/40 mb-20 font-medium leading-relaxed uppercase tracking-[0.2em]">يقدم فريقنا الهندسي تحليلاً هيكلياً وتحسيناً للتكلفة في غضون 24 ساعة.</p>
-              
-              <div className="space-y-16">
-                <div>
-                  <p className="text-[10px] font-black text-gold-500 uppercase tracking-widest mb-4">البريد الإلكتروني المباشر</p>
-                  <p className="text-3xl font-black italic">jocelyn@saidepackaging.com</p>
-                </div>
-                <div>
-                  <p className="text-[10px] font-black text-gold-500 uppercase tracking-widest mb-4">الدعم العالمي</p>
-                  <p className="text-3xl font-black italic">+86-13699786538</p>
-                </div>
+          <div className="space-y-12">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border-b border-white/5 pb-12 group text-right">
+                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#d4af37] transition-colors">س: {faq.q}</h3>
+                <p className="text-gray-400 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
               </div>
-            </div>
-            <div className="bg-[#0f0f0f] p-12 rounded-sm border border-white/5 shadow-2xl">
-              <InquiryForm lang="ar" />
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <footer className="bg-black text-white py-20 border-t border-white/5">
+      {/* Inquiry Form Section */}
+      <section id="contact" className="py-40 bg-black border-t border-white/5">
+        <InquiryForm lang="ar" />
+      </section>
+
+      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic text-right">Side Packaging HK Limited. © 2026. معايير الفخامة الصناعية.</p>
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. معايير الفخامة الصناعية.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <a href="#" className=" transition-opacity">الخصوصية</a>
-            <a href="#" className=" transition-opacity">الشروط</a>
-            <Link href="/" className="text-gold-500 ">English / الإنجليزية</Link>
+            <Link href="/" className="text-[#d4af37] ">English / الإنجليزية</Link>
+            <Link href="/de" className="text-[#d4af37] ">German / Deutsch</Link>
           </div>
         </div>
       </footer>
+
+      <WhatsAppButton />
     </div>
   );
 };
