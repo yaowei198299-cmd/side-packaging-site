@@ -2,19 +2,22 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../components/InquiryForm';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const HomePage = () => {
-  const boxStyles = [
-    { title: "The Perpetual Eco-Luxury Set", badge: "2026 FLAGSHIP", image: "https://sc02.alicdn.com/kf/Ae50efd75cc6d448a8e45325d12c0ddcab.png", link: "/products/eco-luxury-set" },
-    { title: "Double-Sided Printed Mailer", badge: "E-COMMERCE", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1", link: "/products" },
-    { title: "Luxury Magnetic Rigid Box", badge: "PREMIUM", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1", link: "/products" },
-    { title: "Elegant Lid & Base Box", badge: "CLASSIC", image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg?v=1", link: "/products" },
-    { title: "Sliding Drawer Box", badge: "BOUTIQUE", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg?v=1", link: "/products" },
-    { title: "Luxury Finished Paper Bag", badge: "RETAIL", image: "https://sc04.alicdn.com/kf/H689a746594d24194910903328f4d9526n.jpg?v=1", link: "/products" },
+  const categories = [
+    { title: "Hand Bags", image: "https://sc04.alicdn.com/kf/H689a746594d24194910903328f4d9526n.jpg", link: "/products" },
+    { title: "Paper Boxes", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg", link: "/products" },
+    { title: "Label Sticker", image: "https://sc04.alicdn.com/kf/H897da67689e44678976fd2a650c13954R.jpg", link: "/products" },
+    { title: "Tissue Paper", image: "https://sc04.alicdn.com/kf/Had73de458596340d2b7f9d73d279f32b94.jpg", link: "/products" },
+    { title: "Luxury Boxes", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg", link: "/products" },
+    { title: "Display Boxes", image: "https://sc04.alicdn.com/kf/Hfc6f9a416d73448b8d7a8a62c7f6b9edF.jpg", link: "/products" },
+    { title: "Shipping Boxes", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg", link: "/products" },
+    { title: "Thank You Cards", image: "https://sc04.alicdn.com/kf/Hd2a4d4ee7b674771a4921b9d43bff2b73.jpg", link: "/products" },
   ];
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-gold-500 overflow-x-hidden">
+    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-gold-500 overflow-x-hidden text-center">
       <Head>
         <title>Side Packaging | China's Premium Luxury Gift Box Manufacturer</title>
         <meta name="description" content="Factory-Direct Luxury Magnetic, Rigid, Drawer & Mailer Boxes with Logo. MOQ from 100 pcs. Free 3D Mockup. Global Shipping." />
@@ -35,7 +38,6 @@ const HomePage = () => {
 
       {/* Hero: Reference-Inspired Layout */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-        {/* Background Image (Right-weighted) */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://sc01.alicdn.com/kf/A421aa657fbeb4c8690351f33c3bbf7cdA.png" 
@@ -47,7 +49,6 @@ const HomePage = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
           <div className="animate-in fade-in slide-in-from-left-10 duration-1000">
-            {/* Top Badge */}
             <div className="inline-block border border-[#d4af37]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
               <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#d4af37] rounded-full animate-pulse" />
@@ -55,7 +56,6 @@ const HomePage = () => {
               </span>
             </div>
 
-            {/* Main Title */}
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
               Custom Luxury <br/>
               <span className="text-white">Gift Box</span> <br/>
@@ -63,17 +63,14 @@ const HomePage = () => {
               In China
             </h1>
 
-            {/* Subtext */}
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight">
               Factory-Direct Magnetic, Rigid, Drawer & Mailer Boxes with Custom Logo
             </p>
 
-            {/* USP Line */}
             <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10">
               MOQ from 100 pcs • Free 3D Mockup • Global Shipping
             </p>
 
-            {/* Pill Badges */}
             <div className="flex flex-wrap gap-3 mb-12">
               {[
                 "MOQ: 100 pcs",
@@ -87,7 +84,6 @@ const HomePage = () => {
               ))}
             </div>
 
-            {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-6">
                <a href="#contact" className="inline-block bg-[#d4af37] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)]">
                  Get Factory Pricing (Save 30-50%)
@@ -97,27 +93,27 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Product Highlight: The 5 Pillars */}
+      {/* Alibaba-Style Category Grid */}
       <section className="py-32 bg-black border-t border-white/5">
-        <div className="max-w-[1600px] mx-auto px-6">
+        <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20">
-             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Core Product Line</span>
-             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Engineered For Luxury.</h2>
+             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Product Categories</span>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">One-Stop Packaging Solution.</h2>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {boxStyles.map((box, i) => (
-              <Link key={i} href={box.link} className="group relative block aspect-[4/5] overflow-hidden bg-[#0f0f0f] rounded-sm border border-white/5 hover:border-[#d4af37]/30 transition-all">
-                <img 
-                  src={box.image} 
-                  alt={box.title} 
-                  className="absolute inset-0 w-full h-full object-cover grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
-                <div className="absolute bottom-8 left-8 right-8">
-                  <span className="text-[8px] font-black text-[#d4af37] uppercase tracking-[0.3em] mb-2 block">{box.badge}</span>
-                  <h3 className="text-xl font-black text-white uppercase tracking-tighter italic">{box.title}</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+            {categories.map((cat, i) => (
+              <Link key={i} href={cat.link} className="group block">
+                <div className="aspect-square bg-[#111] rounded-[2rem] overflow-hidden mb-6 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-xl">
+                  <img 
+                    src={cat.image} 
+                    alt={cat.title} 
+                    className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
+                  />
                 </div>
+                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter italic text-white/80 group-hover:text-[#d4af37] transition-colors">
+                  {cat.title}
+                </h3>
               </Link>
             ))}
           </div>
@@ -135,7 +131,7 @@ const HomePage = () => {
                 </div>
              </div>
           </div>
-          <div>
+          <div className="text-left">
             <h2 className="text-5xl font-black uppercase tracking-tighter italic leading-none mb-10">Direct Factory. <br/>Unmatched Value.</h2>
             <p className="text-gray-500 text-lg font-medium leading-relaxed mb-12 uppercase tracking-wide">
               We eliminate the middleman. By owning our manufacturing facility in China, we provide 100% transparent pricing and direct quality control for your luxury packaging needs.
@@ -204,6 +200,8 @@ const HomePage = () => {
           </div>
         </div>
       </footer>
+
+      <WhatsAppButton />
     </div>
   );
 };
