@@ -102,7 +102,7 @@ const ProductPage = () => {
                   <img 
                     src="https://s.alicdn.com/@sc04/kf/Had1198f76e8244f7b6e067519bad703co/Custom-Luxury-Eco-Friendly-Biodegradable-Magnetic-Closure.jpg" 
                     alt="Magnetic Gift Box" 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 opacity-60 hover:opacity-100" 
+                    className="w-full h-full object-cover  hover:-0 transition-all duration-1000  " 
                   />
                </div>
                <div className="absolute -bottom-8 -left-8 bg-blue-600 text-white p-10 rounded-[2.5rem] shadow-2xl border-4 border-black">

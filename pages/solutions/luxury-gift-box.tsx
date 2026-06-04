@@ -92,7 +92,7 @@ const LuxuryGiftBoxSolution = () => {
                   <img 
                     src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
                     alt="Luxury Rigid Gift Box" 
-                    className="w-full h-full object-cover opacity-80 mix-blend-lighten"
+                    className="w-full h-full object-cover  mix-blend-lighten"
                   />
                 </div>
                 {/* Floating Badge */}

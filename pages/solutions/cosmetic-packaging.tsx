@@ -184,10 +184,10 @@ const CosmeticSolution = () => {
                </div>
                <div className="grid grid-cols-2 gap-6">
                   <div className="aspect-[3/4] rounded-3xl bg-white/5 border border-white/10 overflow-hidden transform translate-y-12">
-                     <img src="https://images.unsplash.com/photo-1596462502278-27bfad450516?auto=format&fit=crop&q=80&w=800" alt="Cosmetic Finishing" className="w-full h-full object-cover opacity-80" />
+                     <img src="https://images.unsplash.com/photo-1596462502278-27bfad450516?auto=format&fit=crop&q=80&w=800" alt="Cosmetic Finishing" className="w-full h-full object-cover " />
                   </div>
                   <div className="aspect-[3/4] rounded-3xl bg-white/5 border border-white/10 overflow-hidden">
-                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800" alt="Cosmetic Box Detail" className="w-full h-full object-cover opacity-80" />
+                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800" alt="Cosmetic Box Detail" className="w-full h-full object-cover " />
                   </div>
                </div>
             </div>

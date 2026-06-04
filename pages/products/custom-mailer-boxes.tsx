@@ -108,7 +108,7 @@ const CustomMailerBoxesPage = () => {
             <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
           </div>
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
+            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover: transition">
               WhatsApp: +86 13699786538
             </a>
             <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>

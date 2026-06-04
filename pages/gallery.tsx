@@ -113,7 +113,7 @@ const GalleryPage = () => {
                    </div>
                 </div>
                  <div className="aspect-[4/5] bg-white/5 rounded-[4rem] border border-white/10 overflow-hidden relative shadow-2xl">
-                    <img src="https://sc04.alicdn.com/kf/Had1198f76e8244f7b6e067519bad703co.jpg" alt="Optimization Result" className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all" />
+                    <img src="https://sc04.alicdn.com/kf/Had1198f76e8244f7b6e067519bad703co.jpg" alt="Optimization Result" className="w-full h-full object-cover   group-hover:-0 transition-all" />
                    <div className="absolute inset-0 flex items-center justify-center">
                       <div className="bg-white text-black px-8 py-4 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl">Bespoke Upgrade</div>
                    </div>

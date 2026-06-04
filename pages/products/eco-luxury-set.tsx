@@ -30,7 +30,7 @@ const EcoLuxurySetPage = () => {
           <img 
             src="https://sc02.alicdn.com/kf/Ae50efd75cc6d448a8e45325d12c0ddcab.png" 
             alt="The Perpetual Eco-Luxury Set" 
-            className="w-full h-full object-cover grayscale brightness-75 scale-105"
+            className="w-full h-full object-cover  brightness-75 scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
         </div>

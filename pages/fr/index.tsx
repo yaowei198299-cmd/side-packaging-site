@@ -47,7 +47,7 @@ const HomePageFr = () => {
         <img 
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000" 
           alt="Luxury Factory" 
-          className="absolute inset-0 w-full h-full object-cover grayscale brightness-50 scale-105"
+          className="absolute inset-0 w-full h-full object-cover  brightness-50 scale-105"
         />
         
         <div className="relative z-20 text-center max-w-5xl px-6">
@@ -98,7 +98,7 @@ const HomePageFr = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {boxStyles.map((box, i) => (
               <Link key={i} href={box.link} className="group relative block aspect-[4/5] overflow-hidden bg-[#0f0f0f] rounded-sm border border-white/5 hover:border-white/10 transition-all">
-                <img src={box.image} alt={box.title} className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" />
+                <img src={box.image} alt={box.title} className="absolute inset-0 w-full h-full object-cover    group-hover:-0 group-hover:scale-110 transition-all duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
                 <div className="absolute bottom-10 left-10 right-10">
                   <div className="w-10 h-[2px] bg-gold-500 mb-6 group-hover:w-full transition-all duration-700" />
@@ -141,7 +141,7 @@ const HomePageFr = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <Link href="/" className="text-gold-500 hover:opacity-100">English</Link>
+            <Link href="/" className="text-gold-500 ">English</Link>
           </div>
         </div>
       </footer>

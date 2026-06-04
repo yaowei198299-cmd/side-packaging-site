@@ -42,7 +42,7 @@ const ApparelGiftBoxesPage = () => {
             <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
           </div>
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
+            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover: transition">
               WhatsApp: +86 13699786538
             </a>
             <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
@@ -186,21 +186,21 @@ const ApparelGiftBoxesPage = () => {
 
           <section className="mb-16 bg-gray-900 text-white p-12 rounded-[40px]">
             <h2 className="text-3xl font-black mb-8 uppercase tracking-tight">Sustainability: The FSC Advantage</h2>
-            <p className="leading-relaxed mb-6 opacity-80">
+            <p className="leading-relaxed mb-6 ">
               For brands operating in the EU and UK, the <strong>FSC (Forest Stewardship Council)</strong> certification is a critical trust signal. Using <strong>FSC-certified apparel boxes</strong> ensures that your packaging comes from responsibly managed forests.
             </p>
             <div className="grid sm:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold mb-2">100%</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Recyclable</div>
+                <div className="text-xs uppercase tracking-widest ">Recyclable</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">Plastic-Free</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Lamination</div>
+                <div className="text-xs uppercase tracking-widest ">Lamination</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">Soy-Inks</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Eco-Printing</div>
+                <div className="text-xs uppercase tracking-widest ">Eco-Printing</div>
               </div>
             </div>
           </section>

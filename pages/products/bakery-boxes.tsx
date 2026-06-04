@@ -113,7 +113,7 @@ const FoodPaperBoxesPage = () => {
             <Link href="/blog" className="hover:text-black transition-colors text-blue-600 font-bold">Blog</Link>
           </div>
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
+            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover: transition">
               WhatsApp: +86 13699786538
             </a>
             <button className="bg-black text-white px-8 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-lg" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Packaging Inquiry'); }}>
@@ -257,25 +257,25 @@ const FoodPaperBoxesPage = () => {
 
           <section className="mb-16 bg-green-600 text-white p-12 rounded-[40px] text-center">
             <h2 className="text-3xl font-black mb-8 uppercase tracking-tight">The Future is Plastic-Free</h2>
-            <p className="leading-relaxed mb-10 opacity-80 max-w-2xl mx-auto">
+            <p className="leading-relaxed mb-10  max-w-2xl mx-auto">
               European and UK markets are leading the charge in banning single-use plastics. Our <strong>biodegradable food containers</strong> and <strong>FSC-certified food boxes</strong> help brands transition smoothly to a more sustainable future.
             </p>
             <div className="grid sm:grid-cols-4 gap-8">
               <div>
                 <div className="text-3xl font-bold mb-2">100%</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Compostable</div>
+                <div className="text-xs uppercase tracking-widest ">Compostable</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">PFAS</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Free Materials</div>
+                <div className="text-xs uppercase tracking-widest ">Free Materials</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">FDA</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Approved</div>
+                <div className="text-xs uppercase tracking-widest ">Approved</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">FSC</div>
-                <div className="text-xs uppercase tracking-widest opacity-60">Certified</div>
+                <div className="text-xs uppercase tracking-widest ">Certified</div>
               </div>
             </div>
           </section>

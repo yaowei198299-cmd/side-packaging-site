@@ -43,7 +43,7 @@ const AboutFounder = () => {
             <img 
               src="https://sc02.alicdn.com/kf/Aad63ce49acc2417dbeb76f0074aba393i.png" 
               alt="Side Packaging Founder" 
-              className="relative rounded-[3rem] shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-1000"
+              className="relative rounded-[3rem] shadow-2xl border border-white/10  hover:-0 transition-all duration-1000"
             />
           </div>
         </div>

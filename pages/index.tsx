@@ -65,7 +65,7 @@ const HomePage = () => {
           <img 
             src="https://sc01.alicdn.com/kf/A421aa657fbeb4c8690351f33c3bbf7cdA.png" 
             alt="Luxury Packaging Collage" 
-            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right grayscale opacity-60"
+            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right  "
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
         </div>
@@ -173,8 +173,8 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <Link href="/ar" className="text-[#d4af37] hover:opacity-100">Arabic / العربية</Link>
-            <Link href="/de" className="text-[#d4af37] hover:opacity-100">German / Deutsch</Link>
+            <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
+            <Link href="/de" className="text-[#d4af37] ">German / Deutsch</Link>
           </div>
         </div>
       </footer>

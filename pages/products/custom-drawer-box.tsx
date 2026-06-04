@@ -70,7 +70,7 @@ const ProductDetail = () => {
 
         <section className="bg-black rounded-[50px] p-24 text-center text-white">
           <h2 className="text-5xl font-black uppercase tracking-tighter mb-8">Elevate Your Unboxing</h2>
-          <p className="text-xl opacity-80 mb-12 max-w-2xl mx-auto font-medium">Drawer boxes provide a unique opening experience that builds anticipation and brand loyalty.</p>
+          <p className="text-xl  mb-12 max-w-2xl mx-auto font-medium">Drawer boxes provide a unique opening experience that builds anticipation and brand loyalty.</p>
           <a href="/#contact" className="inline-block bg-white text-black px-12 py-6 rounded-full font-bold uppercase tracking-widest hover:bg-gray-50 transition-all shadow-2xl">Start Your Project</a>
         </section>
       </main>

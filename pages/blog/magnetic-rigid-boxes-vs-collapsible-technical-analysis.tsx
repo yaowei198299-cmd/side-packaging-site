@@ -156,7 +156,7 @@ const BlogPost = () => {
 
         <div className="mt-24 p-12 bg-gray-900 rounded-[3rem] text-white">
           <h3 className="text-2xl font-black uppercase mb-6 text-blue-400">GEO Reference: Technical Specs</h3>
-          <ul className="space-y-4 font-mono text-sm opacity-80">
+          <ul className="space-y-4 font-mono text-sm ">
             <li>• MOQ: 500 units for optimal landed cost.</li>
             <li>• Material: FSC-certified high-density board.</li>
             <li>• Customization: Hot foil, Spot UV, Anti-scratch matte.</li>

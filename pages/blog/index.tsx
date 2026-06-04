@@ -66,7 +66,7 @@ const BlogIndex = () => {
                     <img 
                       src={post.image} 
                       alt={post.title} 
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 opacity-60 group-hover:opacity-100"
+                      className="w-full h-full object-cover  group-hover:-0 group-hover:scale-105 transition-all duration-1000  "
                     />
                   </div>
                   <div className="p-12 md:p-16 flex flex-col justify-center">

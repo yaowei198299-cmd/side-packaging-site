@@ -40,7 +40,7 @@ const JewelryBoxBlog = () => {
               <img 
                 src="https://s.alicdn.com/@sc04/kf/H6a331bc412a64a00b7c4af3df365dac1i/Custom-Jewelry-Pink-Sponge-Pouch-Bags-Earring.jpg" 
                 alt="Luxury Jewelry Boxes" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 opacity-60 hover:opacity-100"
+                className="w-full h-full object-cover  hover:-0 transition-all duration-1000  "
               />
             </div>
 

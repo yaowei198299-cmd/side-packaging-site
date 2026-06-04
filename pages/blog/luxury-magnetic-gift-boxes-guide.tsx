@@ -31,7 +31,7 @@ const LuxuryMagneticGuide = () => {
           </div>
 
           <div className="flex items-center space-x-6 shrink-0">
-            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover:opacity-80 transition">
+            <a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center text-[10px] font-bold uppercase tracking-widest text-green-600 hover: transition">
               WhatsApp: +86 13699786538
             </a>
             <Link href="#inquiry-form">

@@ -47,7 +47,7 @@ const HomePageAr = () => {
         <img 
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000" 
           alt="Luxury Factory Background" 
-          className="absolute inset-0 w-full h-full object-cover grayscale brightness-50 scale-105"
+          className="absolute inset-0 w-full h-full object-cover  brightness-50 scale-105"
         />
         
         <div className="relative z-20 text-center max-w-5xl px-6">
@@ -101,7 +101,7 @@ const HomePageAr = () => {
                 <img 
                   src={box.image} 
                   alt={box.title} 
-                  className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" 
+                  className="absolute inset-0 w-full h-full object-cover    group-hover:-0 group-hover:scale-110 transition-all duration-1000" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90" />
                 <div className="absolute bottom-10 right-10 left-10 text-right">
@@ -124,7 +124,7 @@ const HomePageAr = () => {
                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-r-[18px] border-r-white border-b-[10px] border-b-transparent mr-2" />
                 </div>
              </div>
-             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover grayscale" />
+             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover " />
           </div>
           <div className="order-1 lg:order-2 text-right">
             <span className="text-gold-500 text-[10px] font-black uppercase tracking-[0.5em] mb-10 block text-right">جولة في المصنع 2026</span>
@@ -171,9 +171,9 @@ const HomePageAr = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic text-right">Side Packaging HK Limited. © 2026. معايير الفخامة الصناعية.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <a href="#" className="hover:opacity-100 transition-opacity">الخصوصية</a>
-            <a href="#" className="hover:opacity-100 transition-opacity">الشروط</a>
-            <Link href="/" className="text-gold-500 hover:opacity-100">English / الإنجليزية</Link>
+            <a href="#" className=" transition-opacity">الخصوصية</a>
+            <a href="#" className=" transition-opacity">الشروط</a>
+            <Link href="/" className="text-gold-500 ">English / الإنجليزية</Link>
           </div>
         </div>
       </footer>
