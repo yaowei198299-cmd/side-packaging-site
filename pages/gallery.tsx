@@ -76,7 +76,7 @@ const GalleryPage = () => {
             {filteredProjects.map((p, i) => (
               <div key={i} className="group relative border border-white/5 rounded-[3rem] p-10 hover:border-white/20 transition-all bg-black shadow-2xl flex flex-col">
                 <div className="aspect-square bg-gray-900 rounded-[2.5rem] flex items-center justify-center mb-8 overflow-hidden relative border border-white/5">
-                   <img src={p.image} alt={p.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-60 group-hover:opacity-100" />
+                   <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" />
                    <div className="absolute top-6 left-6 bg-black/60 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest">
                      {p.category}
                    </div>
@@ -147,3 +147,4 @@ const GalleryPage = () => {
 };
 
 export default GalleryPage;
+port default GalleryPage;

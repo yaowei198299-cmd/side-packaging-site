@@ -147,7 +147,7 @@ const ProductsPage = () => {
                   <div key={i} className="group flex flex-col bg-[#0f0f0f] border border-white/5 hover:border-white/10 transition-all rounded-sm">
                     {/* Image Area */}
                     <div className="aspect-[4/3] overflow-hidden relative">
-                      <img src={item.image} alt={item.title} className="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" />
+                      <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-all duration-700" />
                     </div>
 
                     {/* Content Area */}
