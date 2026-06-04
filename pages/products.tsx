@@ -49,6 +49,16 @@ const ProductsPage = () => {
           extra: "FSC Kraft"
         },
         {
+          badge: "ECO-FRIENDLY",
+          title: "Premium White Card Mailer Box",
+          desc: "High-quality white card paper mailer box with custom logo printing. Durable, stylish, and 100% recyclable for premium e-commerce shipping.",
+          image: "https://sc02.alicdn.com/kf/A6944a60384cf46a89e823d17403dc1e4Z.png",
+          link: "/products/custom-white-card-mailer-box",
+          moq: "500 pcs",
+          leadTime: "10-12 days",
+          extra: "White Cardboard"
+        },
+        {
           badge: "COSMETIC",
           title: "Self-Erecting Cosmetic Box",
           desc: "Collapsible high-end folding carton with premium finishes. Designed for beauty brands needing flat-pack efficiency without compromising luxury.",
