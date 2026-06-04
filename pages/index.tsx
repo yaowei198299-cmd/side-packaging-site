@@ -10,18 +10,37 @@ const HomePage = () => {
   const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
 
   const categories = [
-    { title: "Hand Bags", image: group1, position: "0%" },
-    { title: "Paper Boxes", image: group1, position: "33.33%" },
-    { title: "Label Sticker", image: group1, position: "66.66%" },
-    { title: "Tissue Paper", image: group1, position: "100%" },
-    { title: "Luxury Boxes", image: group2, position: "0%" },
-    { title: "Display Boxes", image: group2, position: "33.33%" },
-    { title: "Shipping Boxes", image: group2, position: "66.66%" },
-    { title: "Thank You Cards", image: group2, position: "100%" },
+    { title: "HAND BAGS", image: group1, x: "0%" },
+    { title: "PAPER BOXES", image: group1, x: "33.33%" },
+    { title: "LABEL STICKER", image: group1, x: "66.66%" },
+    { title: "TISSUE PAPER", image: group1, x: "100%" },
+    { title: "LUXURY BOXES", image: group2, x: "0%" },
+    { title: "DISPLAY BOXES", image: group2, x: "33.33%" },
+    { title: "SHIPPING BOXES", image: group2, x: "66.66%" },
+    { title: "THANK YOU CARDS", image: group2, x: "100%" },
+  ];
+
+  const faqs = [
+    {
+      q: "What is your minimum order quantity (MOQ)?",
+      a: "Our standard MOQ starts at 500 units for luxury rigid boxes and magnetic gift boxes. For e-commerce mailer boxes, we can accommodate orders starting from 100 units to support growing brands."
+    },
+    {
+      q: "How can I reduce my packaging costs?",
+      a: "We offer free technical cost-reduction analysis. By optimizing box structures, material thickness, and flat-packing designs, we typically help clients save 10-30% on production and shipping."
+    },
+    {
+      q: "Do you offer free dieline and structural support?",
+      a: "Yes, every inquiry includes free professional dieline support. Our engineers will provide technical drawings to ensure your artwork fits perfectly before mass production."
+    },
+    {
+      q: "Is your packaging FSC certified?",
+      a: "Absolutely. We are an FSC-certified factory, ensuring all materials are sourced from responsibly managed forests. This is crucial for brands entering the US and EU markets."
+    }
   ];
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-gold-500 overflow-x-hidden text-center">
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
         <title>Side Packaging | China's Premium Luxury Gift Box Manufacturer</title>
         <meta name="description" content="Factory-Direct Luxury Magnetic, Rigid, Drawer & Mailer Boxes with Logo. MOQ from 100 pcs. Free 3D Mockup. Global Shipping." />
@@ -46,12 +65,12 @@ const HomePage = () => {
           <img 
             src="https://sc01.alicdn.com/kf/A421aa657fbeb4c8690351f33c3bbf7cdA.png" 
             alt="Luxury Packaging Collage" 
-            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right grayscale opacity-40 lg:opacity-60"
+            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right grayscale opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-left">
           <div className="animate-in fade-in slide-in-from-left-10 duration-1000">
             <div className="inline-block border border-[#d4af37]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
               <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] flex items-center gap-2">
@@ -60,18 +79,18 @@ const HomePage = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic text-left">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
               Custom Luxury <br/>
               <span className="text-white">Gift Box</span> <br/>
               Manufacturer <br/>
               In China
             </h1>
 
-            <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight text-left">
+            <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight">
               Factory-Direct Magnetic, Rigid, Drawer & Mailer Boxes with Custom Logo
             </p>
 
-            <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10 text-left">
+            <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10">
               MOQ from 100 pcs • Free 3D Mockup • Global Shipping
             </p>
 
@@ -97,26 +116,27 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Alibaba-Style Category Grid (100% Visual Match) */}
+      {/* Category Grid (100% Visual Match with LuxoPack Style) */}
       <section className="py-32 bg-black border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6">
-          <header className="mb-20">
+          <header className="mb-20 text-center">
              <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Product Categories</span>
-             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">One-Stop Packaging Solution.</h2>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Engineered For Luxury.</h2>
           </header>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
             {categories.map((cat, i) => (
-              <Link key={i} href={cat.link} className="group block">
-                <div className="aspect-square bg-[#111] rounded-[2rem] overflow-hidden mb-6 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-xl relative">
-                  <img 
-                    src={cat.image} 
-                    alt={cat.title} 
-                    className="absolute h-full w-[400%] max-w-none grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 object-cover"
-                    style={{ left: `-${parseFloat(cat.position) * 3}%` }} 
-                  />
-                </div>
-                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter italic text-white/80 group-hover:text-[#d4af37] transition-colors">
+              <Link key={i} href="/products" className="group block text-center">
+                <div 
+                  className="aspect-square bg-[#f3f3f3] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-2xl"
+                  style={{
+                    backgroundImage: `url(${cat.image})`,
+                    backgroundSize: '400% 100%',
+                    backgroundPosition: `${cat.x} center`,
+                    backgroundRepeat: 'no-repeat'
+                  }}
+                />
+                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#d4af37] transition-colors">
                   {cat.title}
                 </h3>
               </Link>
@@ -126,35 +146,18 @@ const HomePage = () => {
       </section>
 
       {/* Expert Q&A (AEO) Section */}
-      <section className="py-40 bg-[#050505]">
-        <div className="max-w-4xl mx-auto px-6 text-left">
+      <section className="py-40 bg-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto px-6">
           <header className="mb-20 text-center">
             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Expert Q&A</span>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Packaging Intelligence.</h2>
           </header>
 
           <div className="space-y-12">
-            {[
-              {
-                q: "What is your minimum order quantity (MOQ)?",
-                a: "Our standard MOQ starts at 500 units for luxury rigid boxes and magnetic gift boxes. For e-commerce mailer boxes, we can accommodate orders starting from 100 units to support growing brands."
-              },
-              {
-                q: "How can I reduce my packaging costs?",
-                a: "We offer free technical cost-reduction analysis. By optimizing box structures, material thickness, and flat-packing designs, we typically help clients save 10-30% on production and shipping."
-              },
-              {
-                q: "Do you offer free dieline and structural support?",
-                a: "Yes, every inquiry includes free professional dieline support. Our engineers will provide technical drawings to ensure your artwork fits perfectly before mass production."
-              },
-              {
-                q: "Is your packaging FSC certified?",
-                a: "Absolutely. We are an FSC-certified factory, ensuring all materials are sourced from responsibly managed forests. This is crucial for brands entering the US and EU markets."
-              }
-            ].map((faq, i) => (
-              <div key={i} className="border-b border-white/5 pb-12 group">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border-b border-white/5 pb-12 group text-left">
                 <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#d4af37] transition-colors">Q: {faq.q}</h3>
-                <p className="text-gray-500 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
+                <p className="text-gray-400 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -166,7 +169,7 @@ const HomePage = () => {
         <InquiryForm />
       </section>
 
-      <footer className="bg-black text-white py-20 border-t border-white/5">
+      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
