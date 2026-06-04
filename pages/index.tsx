@@ -5,6 +5,7 @@ import InquiryForm from '../components/InquiryForm';
 
 const HomePage = () => {
   const boxStyles = [
+    { title: "The Perpetual Eco-Luxury Set", badge: "2026 FLAGSHIP", image: "https://sc02.alicdn.com/kf/Ae50efd75cc6d448a8e45325d12c0ddcab.png", link: "/products/eco-luxury-set" },
     { title: "Double-Sided Printed Mailer", badge: "E-COMMERCE", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg?v=1", link: "/products" },
     { title: "Luxury Magnetic Rigid Box", badge: "PREMIUM", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg?v=1", link: "/products" },
     { title: "Elegant Lid & Base Box", badge: "CLASSIC", image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg?v=1", link: "/products" },
@@ -104,7 +105,7 @@ const HomePage = () => {
              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Engineered For Luxury.</h2>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {boxStyles.map((box, i) => (
               <Link key={i} href={box.link} className="group relative block aspect-[4/5] overflow-hidden bg-[#0f0f0f] rounded-sm border border-white/5 hover:border-[#d4af37]/30 transition-all">
                 <img 

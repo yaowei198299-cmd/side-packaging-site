@@ -9,6 +9,16 @@ const ProductsPage = () => {
       desc: "High-density 1200gsm greyboard with premium bespoke finishes.",
       items: [
         {
+          badge: "ECO-LUXURY",
+          title: "The Perpetual Eco-Luxury Set",
+          desc: "FSC Certified Eco-Luxury Beauty Gift Box featuring Stone Paper Soft-Touch finish and 100% Plastic-Free custom mycelium molded inserts.",
+          image: "https://sc02.alicdn.com/kf/Ae50efd75cc6d448a8e45325d12c0ddcab.png",
+          link: "/products/eco-luxury-set",
+          moq: "500 pcs",
+          leadTime: "15-20 days",
+          extra: "FSC / Stone Paper"
+        },
+        {
           badge: "CUSTOM INSERT",
           title: "Magnetic Box with Insert Tray",
           desc: "Premium matte-black magnetic lid box with precisely molded foam insert tray. Ideal for grooming sets and skincare.",
