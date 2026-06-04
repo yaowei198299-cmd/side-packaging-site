@@ -5,15 +5,19 @@ import InquiryForm from '../components/InquiryForm';
 import WhatsAppButton from '../components/WhatsAppButton';
 
 const HomePage = () => {
+  // 分组定义图片素材
+  const group1 = "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png";
+  const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
+
   const categories = [
-    { title: "Hand Bags", image: "https://sc04.alicdn.com/kf/H689a746594d24194910903328f4d9526n.jpg", link: "/products" },
-    { title: "Paper Boxes", image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg", link: "/products" },
-    { title: "Label Sticker", image: "https://sc04.alicdn.com/kf/H897da67689e44678976fd2a650c13954R.jpg", link: "/products" },
-    { title: "Tissue Paper", image: "https://sc04.alicdn.com/kf/Had73de458596340d2b7f9d73d279f32b94.jpg", link: "/products" },
-    { title: "Luxury Boxes", image: "https://sc04.alicdn.com/kf/H28aff4222df5454fbde2704bbee757e90.jpg", link: "/products" },
-    { title: "Display Boxes", image: "https://sc04.alicdn.com/kf/Hfc6f9a416d73448b8d7a8a62c7f6b9edF.jpg", link: "/products" },
-    { title: "Shipping Boxes", image: "https://sc04.alicdn.com/kf/H4d0f3440368f42ec86490f55e64be502P.jpg", link: "/products" },
-    { title: "Thank You Cards", image: "https://sc04.alicdn.com/kf/Hd2a4d4ee7b674771a4921b9d43bff2b73.jpg", link: "/products" },
+    { title: "Hand Bags", image: group1, position: "0%" },
+    { title: "Paper Boxes", image: group1, position: "33.33%" },
+    { title: "Label Sticker", image: group1, position: "66.66%" },
+    { title: "Tissue Paper", image: group1, position: "100%" },
+    { title: "Luxury Boxes", image: group2, position: "0%" },
+    { title: "Display Boxes", image: group2, position: "33.33%" },
+    { title: "Shipping Boxes", image: group2, position: "66.66%" },
+    { title: "Thank You Cards", image: group2, position: "100%" },
   ];
 
   return (
@@ -36,7 +40,7 @@ const HomePage = () => {
         </div>
       </nav>
 
-      {/* Hero: Reference-Inspired Layout */}
+      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img 
@@ -56,18 +60,18 @@ const HomePage = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic text-left">
               Custom Luxury <br/>
               <span className="text-white">Gift Box</span> <br/>
               Manufacturer <br/>
               In China
             </h1>
 
-            <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight">
+            <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight text-left">
               Factory-Direct Magnetic, Rigid, Drawer & Mailer Boxes with Custom Logo
             </p>
 
-            <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10">
+            <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10 text-left">
               MOQ from 100 pcs • Free 3D Mockup • Global Shipping
             </p>
 
@@ -93,7 +97,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Alibaba-Style Category Grid */}
+      {/* Alibaba-Style Category Grid (100% Visual Match) */}
       <section className="py-32 bg-black border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20">
@@ -104,11 +108,12 @@ const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
             {categories.map((cat, i) => (
               <Link key={i} href={cat.link} className="group block">
-                <div className="aspect-square bg-[#111] rounded-[2rem] overflow-hidden mb-6 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-xl">
+                <div className="aspect-square bg-[#111] rounded-[2rem] overflow-hidden mb-6 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-xl relative">
                   <img 
                     src={cat.image} 
                     alt={cat.title} 
-                    className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
+                    className="absolute h-full w-[400%] max-w-none grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 object-cover"
+                    style={{ left: `-${parseFloat(cat.position) * 3}%` }} 
                   />
                 </div>
                 <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter italic text-white/80 group-hover:text-[#d4af37] transition-colors">
@@ -120,39 +125,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Factory Authority Section */}
+      {/* Expert Q&A (AEO) Section */}
       <section className="py-40 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-32 items-center">
-          <div className="relative aspect-video rounded-sm overflow-hidden border border-white/5 group shadow-2xl">
-             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover grayscale opacity-60" />
-             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 border border-white/20 rounded-full flex items-center justify-center bg-black/40 backdrop-blur-md">
-                   <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1" />
-                </div>
-             </div>
-          </div>
-          <div className="text-left">
-            <h2 className="text-5xl font-black uppercase tracking-tighter italic leading-none mb-10">Direct Factory. <br/>Unmatched Value.</h2>
-            <p className="text-gray-500 text-lg font-medium leading-relaxed mb-12 uppercase tracking-wide">
-              We eliminate the middleman. By owning our manufacturing facility in China, we provide 100% transparent pricing and direct quality control for your luxury packaging needs.
-            </p>
-            <div className="grid grid-cols-2 gap-8">
-              <div>
-                <p className="text-[#d4af37] text-3xl font-black mb-1 italic">20+</p>
-                <p className="text-[9px] font-black text-white/40 uppercase tracking-widest">Years Experience</p>
-              </div>
-              <div>
-                <p className="text-[#d4af37] text-3xl font-black mb-1 italic">FSC</p>
-                <p className="text-[9px] font-black text-white/40 uppercase tracking-widest">Certified Material</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ / AEO Section */}
-      <section className="py-40 bg-[#050505]">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6 text-left">
           <header className="mb-20 text-center">
             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Expert Q&A</span>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Packaging Intelligence.</h2>
@@ -166,7 +141,7 @@ const HomePage = () => {
               },
               {
                 q: "How can I reduce my packaging costs?",
-                a: "We offer free technical cost-reduction analysis. By optimizing box structures, material thickness (e.g., using 1200gsm vs 1500gsm), and flat-packing designs, we typically help clients save 10-30% on production and shipping."
+                a: "We offer free technical cost-reduction analysis. By optimizing box structures, material thickness, and flat-packing designs, we typically help clients save 10-30% on production and shipping."
               },
               {
                 q: "Do you offer free dieline and structural support?",
