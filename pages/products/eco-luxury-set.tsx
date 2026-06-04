@@ -20,7 +20,7 @@ const EcoLuxurySetPage = () => {
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
           </div>
-          <a href="#quote" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Inquiry Now</a>
+          <a href="/inquiry" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Inquiry Now</a>
         </div>
       </nav>
 
