@@ -154,6 +154,42 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* FAQ / AEO Section */}
+      <section className="py-40 bg-[#050505]">
+        <div className="max-w-4xl mx-auto px-6">
+          <header className="mb-20 text-center">
+            <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Expert Q&A</span>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Packaging Intelligence.</h2>
+          </header>
+
+          <div className="space-y-12">
+            {[
+              {
+                q: "What is your minimum order quantity (MOQ)?",
+                a: "Our standard MOQ starts at 500 units for luxury rigid boxes and magnetic gift boxes. For e-commerce mailer boxes, we can accommodate orders starting from 100 units to support growing brands."
+              },
+              {
+                q: "How can I reduce my packaging costs?",
+                a: "We offer free technical cost-reduction analysis. By optimizing box structures, material thickness (e.g., using 1200gsm vs 1500gsm), and flat-packing designs, we typically help clients save 10-30% on production and shipping."
+              },
+              {
+                q: "Do you offer free dieline and structural support?",
+                a: "Yes, every inquiry includes free professional dieline support. Our engineers will provide technical drawings to ensure your artwork fits perfectly before mass production."
+              },
+              {
+                q: "Is your packaging FSC certified?",
+                a: "Absolutely. We are an FSC-certified factory, ensuring all materials are sourced from responsibly managed forests. This is crucial for brands entering the US and EU markets."
+              }
+            ].map((faq, i) => (
+              <div key={i} className="border-b border-white/5 pb-12 group">
+                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#d4af37] transition-colors">Q: {faq.q}</h3>
+                <p className="text-gray-500 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Inquiry Form Section */}
       <section id="contact" className="py-40 bg-black border-t border-white/5">
         <InquiryForm />

@@ -12,7 +12,8 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
       company: "Company",
       industry: "Industry",
       requirements: "Project Brief",
-      placeholderReq: "Size, Quantity, Material, Printing (e.g. 20x15x10cm, 500pcs, Rigid Box, Gold Foil)...",
+      placeholderReq: "Size, Material, Printing details...",
+      quantity: "Estimated Quantity",
       submit: "Get My Free Technical Quote",
       sample: "Include Free Sample Pack",
       joined: "Joined 500+ global brands",
@@ -30,7 +31,8 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
       company: "Entreprise",
       industry: "Secteur",
       requirements: "Besoins",
-      placeholderReq: "Veuillez décrire vos besoins (taille, quantité, matériau, application)...",
+      placeholderReq: "Veuillez décrire vos besoins (taille, matériau, application)...",
+      quantity: "Quantité estimée",
       submit: "Obtenir un Devis Usine",
       sample: "Inclure un pack d'échantillons gratuit",
       joined: "Rejoint par plus de 500 marques mondiales",
@@ -48,7 +50,8 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
       company: "Unternehmen",
       industry: "Branche",
       requirements: "Anforderungen",
-      placeholderReq: "Bitte beschreiben Sie Ihre Anforderungen (Größe, Menge, Material, Anwendung)...",
+      placeholderReq: "Bitte beschreiben Sie Ihre Anforderungen (Größe, Material, Anwendung)...",
+      quantity: "Geschätzte Menge",
       submit: "Werksangebot anfordern",
       sample: "Kostenloses Musterpaket anfordern",
       joined: "Über 500 globale Marken sind bereits dabei",
@@ -66,7 +69,8 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
       company: "Empresa",
       industry: "Industria",
       requirements: "Requisitos",
-      placeholderReq: "Describa sus requisitos (tamaño, cantidad, material, aplicación)...",
+      placeholderReq: "Describa sus requisitos (tamaño, material, aplicación)...",
+      quantity: "Cantidad estimada",
       submit: "Obtener Presupuesto de Fábrica",
       sample: "Incluir paquete de muestras gratis",
       joined: "Más de 500 marcas globales ya confían en nosotros",
@@ -84,7 +88,8 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
       company: "الشركة",
       industry: "الصناعة",
       requirements: "المتطلبات",
-      placeholderReq: "يرجى وصف متطلباتك (الحجم، الكمية، المادة، التطبيق)...",
+      placeholderReq: "يرجى وصف متطلباتك (الحجم، المادة، التطبيق)...",
+      quantity: "الكمية التقديرية",
       submit: "احصل على عرض سعر من المصنع",
       sample: "تضمين حزمة عينات مجانية",
       joined: "انضمت إلينا أكثر من 500 علامة تجارية عالمية",
@@ -103,6 +108,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
     country: '',
     company: '',
     industry: '',
+    quantity: '',
     message: productTitle ? `${lang === 'zh' ? '我对' : 'I\'m interested in'} ${productTitle}. ` : ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -174,6 +180,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             { id: 'country', label: t.country, placeholder: t.country },
             { id: 'company', label: t.company, placeholder: t.company },
             { id: 'industry', label: t.industry, placeholder: t.industry },
+            { id: 'quantity', label: t.quantity, placeholder: "e.g. 500, 1000, 5000...", required: true },
           ].map((field) => (
             <div key={field.id} className="space-y-2">
               <label className="block text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">{field.label} {field.required ? '*' : ''}</label>

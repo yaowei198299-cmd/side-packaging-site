@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const { name, email, phone, country, company, industry, message } = req.body;
+  const { name, email, phone, country, company, industry, quantity, message } = req.body;
 
   // Validate basic fields
   if (!name || !email || !message) {
@@ -25,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'andy@saidepackaging.com, yaowei198299@gmail.com',
+    to: 'jocelyn@saidepackaging.com, yaowei198299@gmail.com',
     subject: `New Inquiry from ${name} - ${company || 'No Company'}`,
     text: `
       Name: ${name}
@@ -34,6 +34,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       Country: ${country}
       Company: ${company}
       Industry: ${industry}
+      Quantity: ${quantity}
       
       Message:
       ${message}
@@ -46,6 +47,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       <p><strong>Country:</strong> ${country}</p>
       <p><strong>Company:</strong> ${company}</p>
       <p><strong>Industry:</strong> ${industry}</p>
+      <p><strong>Estimated Quantity:</strong> ${quantity}</p>
       <br/>
       <p><strong>Message:</strong></p>
       <p>${message.replace(/\n/g, '<br/>')}</p>

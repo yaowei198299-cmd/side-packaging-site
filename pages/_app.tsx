@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import InquiryModal from '../components/InquiryModal'
+import WhatsAppButton from '../components/WhatsAppButton'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
       <Component {...pageProps} />
       <InquiryModal />
+      <WhatsAppButton />
     </>
   )
 }
