@@ -147,4 +147,3 @@ const GalleryPage = () => {
 };
 
 export default GalleryPage;
-port default GalleryPage;
