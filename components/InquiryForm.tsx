@@ -42,7 +42,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
     <div className="w-full bg-[#050505] p-12 md:p-20 rounded-[3rem] border border-white/5 shadow-2xl">
       <div className="mb-16 text-center">
         <h2 className="text-4xl font-black uppercase tracking-tighter italic mb-4">Request a Custom Quote</h2>
-        <p className="text-[#d4af37] font-black uppercase text-[10px] tracking-[0.4em] italic">Get a Detailed Pricing in 24 Hours</p>
+        <p className="text-[#C9A84C] font-black uppercase text-[10px] tracking-[0.4em] italic">Get a Detailed Pricing in 24 Hours</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-12">
@@ -59,7 +59,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
                 type={field.type || "text"} 
                 required={field.required}
                 placeholder={field.placeholder}
-                className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm placeholder:text-white/10"
+                className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/10"
                 value={(formData as any)[field.id]}
                 onChange={(e) => setFormData({...formData, [field.id]: e.target.value})}
               />
@@ -71,7 +71,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Product Type *</label>
             <select 
               required
-              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.productType}
               onChange={(e) => setFormData({...formData, productType: e.target.value})}
             >
@@ -88,7 +88,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Estimated Quantity *</label>
             <select 
               required
-              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.quantity}
               onChange={(e) => setFormData({...formData, quantity: e.target.value})}
             >
@@ -104,7 +104,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           <div className="space-y-3">
             <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Material & Finish</label>
             <select 
-              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.materialFinish}
               onChange={(e) => setFormData({...formData, materialFinish: e.target.value})}
             >
@@ -119,7 +119,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           <div className="space-y-3">
             <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Logo Placement</label>
             <select 
-              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.logoPlacement}
               onChange={(e) => setFormData({...formData, logoPlacement: e.target.value})}
             >
@@ -136,7 +136,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             <input 
               type="text"
               placeholder="e.g. 20x15x8 cm"
-              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm placeholder:text-white/10"
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/10"
               value={formData.dimensions}
               onChange={(e) => setFormData({...formData, dimensions: e.target.value})}
             />
@@ -148,7 +148,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           <textarea 
             rows={5}
             placeholder="Box size, color, special finish, intended use... any details help us quote faster."
-            className="w-full px-8 py-6 bg-white/5 border border-white/10 text-white rounded-[2rem] focus:border-[#d4af37] outline-none transition-all font-medium text-sm placeholder:text-white/10 resize-none"
+            className="w-full px-8 py-6 bg-white/5 border border-white/10 text-white rounded-[2rem] focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/10 resize-none"
             value={formData.message}
             onChange={(e) => setFormData({...formData, message: e.target.value})}
           />
@@ -156,7 +156,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
 
         <div className="space-y-3">
           <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Upload Logo / Reference Image</label>
-          <div className="w-full px-8 py-10 bg-white/5 border-2 border-dashed border-white/10 text-center rounded-[2rem] group hover:border-[#d4af37]/50 transition-all cursor-pointer">
+          <div className="w-full px-8 py-10 bg-white/5 border-2 border-dashed border-white/10 text-center rounded-[2rem] group hover:border-[#C9A84C]/50 transition-all cursor-pointer">
               <p className="text-gray-500 font-bold uppercase text-[10px] tracking-widest group-hover:text-white transition-colors">
                 📎 Click to upload PNG, AI, PDF · Max 10MB
               </p>
@@ -167,7 +167,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             <button 
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full bg-[#d4af37] text-black font-black uppercase italic tracking-widest py-8 rounded-full hover:bg-white hover:scale-[1.02] active:scale-95 transition-all shadow-2xl flex items-center justify-center space-x-3 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`w-full bg-[#C9A84C] text-black font-black uppercase italic tracking-widest py-8 rounded-full hover:bg-white hover:scale-[1.02] active:scale-95 transition-all shadow-2xl flex items-center justify-center space-x-3 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
                 {isSubmitting ? (
                     <span className="animate-pulse">Processing Request...</span>

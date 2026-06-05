@@ -54,7 +54,7 @@ const HomePageDe = () => {
             <Link href="/gallery" className="hover:text-white transition-colors">Fallstudien</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Gründer</Link>
           </div>
-          <a href="#contact" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Kostenloses Angebot</a>
+          <a href="#contact" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Kostenloses Angebot</a>
         </div>
       </nav>
 
@@ -71,9 +71,9 @@ const HomePageDe = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-left">
           <div className="animate-in fade-in slide-in-from-left-10 duration-1000">
-            <div className="inline-block border border-[#d4af37]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
-              <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-[#d4af37] rounded-full animate-pulse" />
+            <div className="inline-block border border-[#C9A84C]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
+              <span className="text-[10px] font-bold text-[#C9A84C] uppercase tracking-[0.2em] flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full animate-pulse" />
                 Chinas Premium-Hersteller für Geschenkboxen · Seit 2006
               </span>
             </div>
@@ -89,7 +89,7 @@ const HomePageDe = () => {
               Direkt ab Werk: Magnet-, starre, Schubladen- & Versandkartons mit eigenem Logo
             </p>
 
-            <p className="text-sm font-black text-[#d4af37] uppercase tracking-[0.2em] mb-10">
+            <p className="text-sm font-black text-[#C9A84C] uppercase tracking-[0.2em] mb-10">
               MOQ ab 100 Stück • Kostenloses 3D-Mockup • Weltweiter Versand
             </p>
 
@@ -107,7 +107,7 @@ const HomePageDe = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
-               <a href="/inquiry" className="inline-block bg-[#d4af37] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)] font-montserrat">
+               <a href="/inquiry" className="inline-block bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(201,168,76,0.3)]">
                  Fabrikpreise sichern (30-50% sparen)
                </a>
             </div>
@@ -119,7 +119,7 @@ const HomePageDe = () => {
       <section className="py-32 bg-black border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20 text-center">
-             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Produktkategorien</span>
+             <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Produktkategorien</span>
              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Entwickelt für Luxus.</h2>
           </header>
 
@@ -127,7 +127,7 @@ const HomePageDe = () => {
             {categories.map((cat, i) => (
               <Link key={i} href="/products" className="group block text-center">
                 <div 
-                  className="aspect-square bg-[#f3f3f3] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#d4af37]/50 transition-all shadow-2xl"
+                  className="aspect-square bg-[#f3f3f3] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#C9A84C]/50 transition-all shadow-2xl"
                   style={{
                     backgroundImage: `url(${cat.image})`,
                     backgroundSize: '400% 100%',
@@ -135,7 +135,7 @@ const HomePageDe = () => {
                     backgroundRepeat: 'no-repeat'
                   }}
                 />
-                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#d4af37] transition-colors font-montserrat">
+                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors font-montserrat">
                   {cat.title}
                 </h3>
               </Link>
@@ -148,14 +148,14 @@ const HomePageDe = () => {
       <section className="py-40 bg-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6">
           <header className="mb-20 text-center">
-            <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Experten-Q&A</span>
+            <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Experten-Q&A</span>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Verpackungsintelligenz.</h2>
           </header>
 
           <div className="space-y-12">
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-white/5 pb-12 group text-left">
-                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#d4af37] transition-colors font-montserrat">F: {faq.q}</h3>
+                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#C9A84C] transition-colors font-montserrat">F: {faq.q}</h3>
                 <p className="text-gray-400 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
               </div>
             ))}
@@ -172,8 +172,8 @@ const HomePageDe = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
            <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrielle Luxusstandards.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <Link href="/" className="text-[#d4af37] ">English</Link>
-            <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
+            <Link href="/" className="text-[#C9A84C] ">English</Link>
+            <Link href="/ar" className="text-[#C9A84C] ">Arabic / العربية</Link>
           </div>
         </div>
       </footer>
@@ -184,3 +184,4 @@ const HomePageDe = () => {
 };
 
 export default HomePageDe;
+ult HomePageDe;

@@ -135,7 +135,7 @@ const ProductsPage = () => {
             <Link href="/products" className="text-white">Catalog</Link>
             <Link href="/blog" className="hover:text-white transition-colors">Insights</Link>
           </div>
-          <a href="/#contact" className="bg-white text-black px-10 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-gray-200 shadow-xl">Get Quote</a>
+          <a href="/#contact" className="bg-[#C9A84C] text-black px-10 py-3.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-white shadow-xl">Get Quote</a>
         </div>
       </nav>
 
@@ -163,8 +163,8 @@ const ProductsPage = () => {
                     {/* Content Area */}
                     <div className="p-8 flex-grow flex flex-col">
                       <div className="flex items-center gap-2 mb-4">
-                        <span className="text-gold-500 text-[10px]">★</span>
-                        <span className="text-gold-500 font-black text-[9px] uppercase tracking-widest">{item.badge}</span>
+                        <span className="text-[#C9A84C] text-[10px]">★</span>
+                        <span className="text-[#C9A84C] font-black text-[9px] uppercase tracking-widest">{item.badge}</span>
                       </div>
                       <h3 className="text-xl font-black text-white uppercase mb-4 tracking-tight leading-tight">{item.title}</h3>
                       <p className="text-gray-500 text-xs font-medium leading-relaxed mb-8 line-clamp-3">
@@ -188,7 +188,7 @@ const ProductsPage = () => {
                       </div>
 
                       {/* Action */}
-                      <Link href={item.link} className="mt-8 border border-white/10 hover:border-gold-500/50 py-3 text-center rounded-sm transition-all group/btn">
+                      <Link href={item.link} className="mt-8 border border-white/10 hover:border-[#C9A84C]/50 py-4 text-center rounded-full transition-all group/btn">
                         <span className="text-[9px] font-black uppercase tracking-widest text-gray-400 group-hover/btn:text-white transition-colors">
                           → Quote This Product
                         </span>
@@ -216,4 +216,6 @@ const ProductsPage = () => {
 };
 
 export default ProductsPage;
+
+e;
 

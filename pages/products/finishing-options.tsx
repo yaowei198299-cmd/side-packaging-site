@@ -43,13 +43,13 @@ const FinishingOptionsPage = () => {
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
           </div>
-          <Link href="/inquiry" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Get a Quote</Link>
+          <Link href="/inquiry" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Get a Quote</Link>
         </div>
       </nav>
 
       <header className="relative pt-48 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <span className="text-[#d4af37] text-xs font-black uppercase tracking-[0.5em] mb-6 block">Art of the Finish</span>
+          <span className="text-[#C9A84C] text-xs font-black uppercase tracking-[0.5em] mb-6 block">Art of the Finish</span>
           <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-12">
             Luxury <br/>
             <span className="text-white/40 italic">Finishing.</span>

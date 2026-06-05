@@ -33,13 +33,13 @@ const CustomMailerBoxesPage = () => {
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
           </div>
-          <Link href="/inquiry" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Get a Quote</Link>
+          <Link href="/inquiry" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Get a Quote</Link>
         </div>
       </nav>
 
       <header className="relative pt-48 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <span className="text-[#d4af37] text-xs font-black uppercase tracking-[0.5em] mb-6 block">E-commerce Solutions</span>
+          <span className="text-[#C9A84C] text-xs font-black uppercase tracking-[0.5em] mb-6 block">E-commerce Solutions</span>
           <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-12">
             Custom <br/>
             <span className="text-white/40 italic">Mailer Boxes.</span>
@@ -50,11 +50,11 @@ const CustomMailerBoxesPage = () => {
         </div>
       </header>
 
-      <section className="py-32 border-y border-white/5 bg-[#050505]">
+      <section className="py-32 border-y border-white/5 bg-[#0A0A0F]">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {features.map((f, i) => (
             <div key={i} className="space-y-6">
-              <div className="w-12 h-1 border-t-2 border-[#d4af37]" />
+              <div className="w-12 h-1 border-t-2 border-[#C9A84C]" />
               <h3 className="text-xl font-black uppercase tracking-tighter italic">{f.title}</h3>
               <p className="text-sm text-gray-500 font-medium leading-relaxed uppercase tracking-wider">{f.desc}</p>
             </div>
