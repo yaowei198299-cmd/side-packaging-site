@@ -62,8 +62,8 @@ const HomePageAr = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://sc01.alicdn.com/kf/A421aa657fbeb4c8690351f33c3bbf7cdA.png" 
-            alt="Luxury Packaging Collage" 
+            src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
+            alt="Luxury Packaging Poster" 
             className="absolute left-0 top-0 h-full w-full lg:w-3/4 object-cover object-left grayscale brightness-50"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-black via-black/80 to-transparent" />

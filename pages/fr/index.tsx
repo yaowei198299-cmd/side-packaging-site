@@ -62,8 +62,8 @@ const HomePageFr = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://sc01.alicdn.com/kf/A421aa657fbeb4c8690351f33c3bbf7cdA.png" 
-            alt="Collage d'Emballage de Luxe" 
+            src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
+            alt="Emballage de Luxe Poster" 
             className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right grayscale brightness-50"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
