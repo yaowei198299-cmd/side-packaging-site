@@ -65,9 +65,9 @@ const HomePage = () => {
           <img 
             src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
             alt="Luxury Packaging Poster" 
-            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right  "
+            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-left">
