@@ -61,13 +61,14 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 flex justify-end">
           <img 
             src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
             alt="Luxury Packaging Poster" 
-            className="absolute right-0 top-0 h-full w-full lg:w-3/4 object-cover object-right"
+            className="h-full w-full lg:w-[85%] object-cover object-right"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
+          {/* 渐变遮罩：仅在左侧文字区域保留深度暗色，确保图片主体 100% 清晰 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent lg:w-[45%]" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-left">
