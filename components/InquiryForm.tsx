@@ -1,283 +1,196 @@
 import React, { useState } from 'react';
 
 const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lang?: string }) => {
-  const translations: any = {
-    en: {
-      title: "Get Packaging Quote in 24 Hours",
-      desc: "Direct from factory. Free dieline support & packaging consultation. We help reduce 10-30% packaging cost.",
-      name: "Name",
-      email: "Email",
-      phone: "Phone / WhatsApp",
-      country: "Country",
-      company: "Company",
-      industry: "Industry",
-      requirements: "Project Brief",
-      placeholderReq: "Size, Material, Printing details...",
-      quantity: "Estimated Quantity",
-      submit: "Get My Free Technical Quote",
-      sample: "Include Free Sample Pack",
-      joined: "Joined 500+ global brands",
-      thanks: "Thank you, {name}!",
-      successDesc: "Your inquiry has been received. Jocelyn will contact you via WhatsApp/Email within 24 hours with a custom quotation and structural analysis.",
-      another: "Send Another Inquiry"
-    },
-    fr: {
-      title: "Demander un Devis Personnalisé",
-      desc: "Direct usine. Nos spécialistes vous fourniront un devis et une solution d'emballage sur mesure sous 24 heures.",
-      name: "Nom",
-      email: "E-mail",
-      phone: "Téléphone / WhatsApp",
-      country: "Pays",
-      company: "Entreprise",
-      industry: "Secteur",
-      requirements: "Besoins",
-      placeholderReq: "Veuillez décrire vos besoins (taille, matériau, application)...",
-      quantity: "Quantité estimée",
-      submit: "Obtenir un Devis Usine",
-      sample: "Inclure un pack d'échantillons gratuit",
-      joined: "Rejoint par plus de 500 marques mondiales",
-      thanks: "Merci, {name} !",
-      successDesc: "Votre demande a été reçue. Jocelyn vous contactera par WhatsApp/E-mail sous 24 heures avec un devis personnalisé.",
-      another: "Envoyer une autre demande"
-    },
-    de: {
-      title: "Maßgeschneidertes Angebot anfordern",
-      desc: "Direkt ab Werk. Unsere Spezialisten erstellen innerhalb von 24 Stunden ein individuelles Angebot und eine Verpackungslösung.",
-      name: "Name",
-      email: "E-Mail",
-      phone: "Telefon / WhatsApp",
-      country: "Land",
-      company: "Unternehmen",
-      industry: "Branche",
-      requirements: "Anforderungen",
-      placeholderReq: "Bitte beschreiben Sie Ihre Anforderungen (Größe, Material, Anwendung)...",
-      quantity: "Geschätzte Menge",
-      submit: "Werksangebot anfordern",
-      sample: "Kostenloses Musterpaket anfordern",
-      joined: "Über 500 globale Marken sind bereits dabei",
-      thanks: "Vielen Dank, {name}!",
-      successDesc: "Ihre Anfrage ist eingegangen. Jocelyn wird Sie innerhalb von 24 Stunden per WhatsApp/E-Mail kontaktieren.",
-      another: "Weitere Anfrage senden"
-    },
-    es: {
-      title: "Solicitar un Presupuesto Personalizado",
-      desc: "Directo de fábrica. Nuestros especialistas le proporcionarán un presupuesto y una solución de embalaje a medida en 24 horas.",
-      name: "Nombre",
-      email: "Correo electrónico",
-      phone: "Teléfono / WhatsApp",
-      country: "País",
-      company: "Empresa",
-      industry: "Industria",
-      requirements: "Requisitos",
-      placeholderReq: "Describa sus requisitos (tamaño, material, aplicación)...",
-      quantity: "Cantidad estimada",
-      submit: "Obtener Presupuesto de Fábrica",
-      sample: "Incluir paquete de muestras gratis",
-      joined: "Más de 500 marcas globales ya confían en nosotros",
-      thanks: "¡Gracias, {name}!",
-      successDesc: "Hemos recibido su consulta. Jocelyn se pondrá en contacto con usted por WhatsApp/Email en un plazo de 24 horas.",
-      another: "Enviar otra consulta"
-    },
-    ar: {
-      title: "طلب عرض سعر مخصص",
-      desc: "مباشرة من المصنع. سيقدم خبراؤنا عرض سعر مخصصًا وحل تغليف في غضون 24 ساعة.",
-      name: "الاسم",
-      email: "البريد الإلكتروني",
-      phone: "الهاتف / واتساب",
-      country: "الدولة",
-      company: "الشركة",
-      industry: "الصناعة",
-      requirements: "المتطلبات",
-      placeholderReq: "يرجى وصف متطلباتك (الحجم، المادة، التطبيق)...",
-      quantity: "الكمية التقديرية",
-      submit: "احصل على عرض سعر من المصنع",
-      sample: "تضمين حزمة عينات مجانية",
-      joined: "انضمت إلينا أكثر من 500 علامة تجارية عالمية",
-      thanks: "شكراً لك، {name}!",
-      successDesc: "تم استلام استفسارك. ستتواصل معك جوسلين عبر واتساب/البريد الإلكتروني في غضون 24 ساعة مع عرض سعر مخصص.",
-      another: "إرسال استفسار آخر"
-    }
-  };
-
-  const t = translations[lang] || translations['en'];
-
   const [formData, setFormData] = useState({
     name: '',
+    company: '',
     email: '',
     phone: '',
-    country: '',
-    company: '',
-    industry: '',
+    productType: '',
     quantity: '',
-    message: productTitle ? `${lang === 'zh' ? '我对' : 'I\'m interested in'} ${productTitle}. ` : ''
+    materialFinish: '',
+    logoPlacement: '',
+    dimensions: '',
+    message: productTitle ? `Inquiry for ${productTitle}. ` : ''
   });
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError('');
-
+    setIsSubmitting(true);
     try {
       const response = await fetch('/api/inquiry', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
       if (response.ok) {
-        setSubmitted(true);
+        setStatus('success');
+        setFormData({ name: '', company: '', email: '', phone: '', productType: '', quantity: '', materialFinish: '', logoPlacement: '', dimensions: '', message: '' });
       } else {
-        const data = await response.json();
-        setError(data.message || 'Failed to send inquiry. Please try again.');
+        setStatus('error');
       }
-    } catch (err) {
-      setError('An error occurred. Please contact us directly via WhatsApp.');
-    } finally {
-      setLoading(false);
+    } catch (error) {
+      setStatus('error');
     }
+    setIsSubmitting(false);
   };
 
-  if (submitted) {
-    return (
-      <div className={`bg-[#0f0f0f] p-12 md:p-16 rounded-sm border border-white/5 shadow-2xl max-w-5xl mx-auto text-center ${lang === 'ar' ? 'rtl' : 'ltr'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-        <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
-          <svg className="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
-          </svg>
-        </div>
-        <h2 className="text-3xl font-black mb-4 uppercase tracking-tighter italic text-white">{t.thanks.replace('{name}', formData.name)}</h2>
-        <p className="text-white/40 font-medium leading-relaxed mb-8 uppercase tracking-widest text-xs">
-          {t.successDesc}
-        </p>
-        <button 
-          onClick={() => setSubmitted(false)}
-          className="bg-white text-black px-8 py-3 rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-gray-200 transition-all"
-        >
-          {t.another}
-        </button>
-      </div>
-    );
-  }
-
   return (
-    <div className={`bg-[#0f0f0f] p-12 md:p-16 rounded-sm border border-white/5 shadow-2xl max-w-5xl mx-auto ${lang === 'ar' ? 'rtl text-right' : 'ltr'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-      <h2 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter italic">{t.title}</h2>
-      <p className="text-white/40 mb-12 uppercase tracking-[0.2em] text-[10px] font-bold leading-relaxed">
-        {t.desc}
-      </p>
+    <div className="w-full bg-[#050505] p-12 md:p-20 rounded-[3rem] border border-white/5 shadow-2xl">
+      <div className="mb-16 text-center">
+        <h2 className="text-4xl font-black uppercase tracking-tighter italic mb-4">Request a Custom Quote</h2>
+        <p className="text-[#d4af37] font-black uppercase text-[10px] tracking-[0.4em] italic">Get a Detailed Pricing in 24 Hours</p>
+      </div>
 
-      <form onSubmit={handleSubmit} className="space-y-8">
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+      <form onSubmit={handleSubmit} className="space-y-12">
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
           {[
-            { id: 'name', label: t.name, placeholder: t.name, required: true },
-            { id: 'email', label: t.email, placeholder: t.email, required: true, type: 'email' },
-            { id: 'phone', label: t.phone, placeholder: t.phone, required: true },
-            { id: 'country', label: t.country, placeholder: t.country },
-            { id: 'company', label: t.company, placeholder: t.company },
-            { id: 'industry', label: t.industry, placeholder: t.industry },
-            { id: 'quantity', label: t.quantity, placeholder: "e.g. 500, 1000, 5000...", required: true },
+            { id: 'name', label: 'Your Name *', placeholder: 'John Smith', required: true },
+            { id: 'company', label: 'Company Name', placeholder: 'Your Brand / Company' },
+            { id: 'email', label: 'Email Address *', placeholder: 'john@company.com', type: 'email', required: true },
+            { id: 'phone', label: 'WhatsApp / Phone', placeholder: '+1 234 567 8900' },
           ].map((field) => (
-            <div key={field.id} className="space-y-2">
-              <label className="block text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">{field.label} {field.required ? '*' : ''}</label>
+            <div key={field.id} className="space-y-3">
+              <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">{field.label}</label>
               <input 
                 type={field.type || "text"} 
                 required={field.required}
                 placeholder={field.placeholder}
-                className="w-full px-6 py-4 bg-black border border-white/5 text-white rounded-sm focus:border-gold-500 outline-none transition font-medium text-sm placeholder:text-white/10"
+                className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm placeholder:text-white/10"
                 value={(formData as any)[field.id]}
                 onChange={(e) => setFormData({...formData, [field.id]: e.target.value})}
               />
             </div>
           ))}
+
+          {/* Dropdowns */}
+          <div className="space-y-3">
+            <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Product Type *</label>
+            <select 
+              required
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              value={formData.productType}
+              onChange={(e) => setFormData({...formData, productType: e.target.value})}
+            >
+              <option value="" className="bg-black">Select box type...</option>
+              <option value="Magnetic Rigid Box" className="bg-black">Magnetic Rigid Box</option>
+              <option value="Rigid Lid & Base" className="bg-black">Rigid Lid & Base</option>
+              <option value="Drawer Box" className="bg-black">Drawer / Sliding Box</option>
+              <option value="Corrugated Mailer" className="bg-black">Corrugated Mailer</option>
+              <option value="Folding Carton" className="bg-black">Folding Carton / Paper Bag</option>
+            </select>
+          </div>
+
+          <div className="space-y-3">
+            <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Estimated Quantity *</label>
+            <select 
+              required
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              value={formData.quantity}
+              onChange={(e) => setFormData({...formData, quantity: e.target.value})}
+            >
+              <option value="" className="bg-black">Select quantity...</option>
+              <option value="100-300" className="bg-black">100 - 300 PCS (Low MOQ)</option>
+              <option value="300-500" className="bg-black">300 - 500 PCS</option>
+              <option value="500-1000" className="bg-black">500 - 1000 PCS</option>
+              <option value="1000-5000" className="bg-black">1000 - 5000 PCS</option>
+              <option value="5000+" className="bg-black">5000+ PCS (Bulk Discount)</option>
+            </select>
+          </div>
+
+          <div className="space-y-3">
+            <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Material & Finish</label>
+            <select 
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              value={formData.materialFinish}
+              onChange={(e) => setFormData({...formData, materialFinish: e.target.value})}
+            >
+              <option value="" className="bg-black">Select material...</option>
+              <option value="Rigid Paper Board" className="bg-black">Rigid Paper Board (Luxury)</option>
+              <option value="Kraft Corrugated" className="bg-black">Kraft Corrugated (Eco-friendly)</option>
+              <option value="White Cardboard" className="bg-black">White Cardboard (Retail)</option>
+              <option value="Specialty Paper" className="bg-black">Specialty / Textured Paper</option>
+            </select>
+          </div>
+
+          <div className="space-y-3">
+            <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Logo Placement</label>
+            <select 
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm appearance-none"
+              value={formData.logoPlacement}
+              onChange={(e) => setFormData({...formData, logoPlacement: e.target.value})}
+            >
+              <option value="" className="bg-black">Select placement...</option>
+              <option value="Lid Center" className="bg-black">Lid Center (Top)</option>
+              <option value="Front Panel" className="bg-black">Front Panel</option>
+              <option value="Inside Lid" className="bg-black">Inside Lid (Unboxing Detail)</option>
+              <option value="Full Print" className="bg-black">Full Exterior Print</option>
+            </select>
+          </div>
+
+          <div className="space-y-3 md:col-span-2">
+            <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Internal Dimensions (L x W x H)</label>
+            <input 
+              type="text"
+              placeholder="e.g. 20x15x8 cm"
+              className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#d4af37] outline-none transition-all font-medium text-sm placeholder:text-white/10"
+              value={formData.dimensions}
+              onChange={(e) => setFormData({...formData, dimensions: e.target.value})}
+            />
+          </div>
         </div>
 
-        {/* Custom Packaging Details */}
-        <div className="grid md:grid-cols-3 gap-8 p-8 bg-white/5 border border-white/5 rounded-sm">
-            <div className="space-y-2">
-                <label className="block text-[9px] font-black text-[#d4af37] uppercase tracking-widest">Box Style</label>
-                <select 
-                    className="w-full bg-black border border-white/10 text-white p-3 text-xs outline-none focus:border-[#d4af37]"
-                    value={formData.boxStyle}
-                    onChange={(e) => setFormData({...formData, boxStyle: e.target.value})}
-                >
-                    <option value="">Select Style</option>
-                    <option value="Magnetic">Magnetic Rigid Box</option>
-                    <option value="Rigid">Rigid Lid & Base</option>
-                    <option value="Mailer">Corrugated Mailer</option>
-                    <option value="Drawer">Drawer / Sliding Box</option>
-                    <option value="Folding">Folding Carton</option>
-                    <option value="Other">Other / Custom</option>
-                </select>
-            </div>
-            <div className="space-y-2">
-                <label className="block text-[9px] font-black text-[#d4af37] uppercase tracking-widest">Dimensions (L x W x H)</label>
-                <input 
-                    type="text"
-                    placeholder="e.g. 20 x 15 x 5 cm"
-                    className="w-full bg-black border border-white/10 text-white p-3 text-xs outline-none focus:border-[#d4af37]"
-                    value={formData.dimensions}
-                    onChange={(e) => setFormData({...formData, dimensions: e.target.value})}
-                />
-            </div>
-            <div className="space-y-2">
-                <label className="block text-[9px] font-black text-[#d4af37] uppercase tracking-widest">Preferred Material</label>
-                <select 
-                    className="w-full bg-black border border-white/10 text-white p-3 text-xs outline-none focus:border-[#d4af37]"
-                    value={formData.material}
-                    onChange={(e) => setFormData({...formData, material: e.target.value})}
-                >
-                    <option value="">Select Material</option>
-                    <option value="Art Paper">Premium Art Paper</option>
-                    <option value="Kraft">Natural Kraft Paper</option>
-                    <option value="Black Card">Black Specialty Card</option>
-                    <option value="Textured">Textured / Linen Paper</option>
-                    <option value="Other">I'm not sure (Expert Choice)</option>
-                </select>
-            </div>
-        </div>
-
-        <div className="space-y-2">
-          <label className="block text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">{t.requirements} *</label>
+        <div className="space-y-3">
+          <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Tell Us More (Optional)</label>
           <textarea 
-            rows={4}
-            required
-            placeholder={t.placeholderReq}
-            className="w-full px-6 py-4 bg-black border border-white/5 text-white rounded-sm focus:border-gold-500 outline-none transition resize-none font-medium text-sm placeholder:text-white/10"
+            rows={5}
+            placeholder="Box size, color, special finish, intended use... any details help us quote faster."
+            className="w-full px-8 py-6 bg-white/5 border border-white/10 text-white rounded-[2rem] focus:border-[#d4af37] outline-none transition-all font-medium text-sm placeholder:text-white/10 resize-none"
             value={formData.message}
             onChange={(e) => setFormData({...formData, message: e.target.value})}
-          ></textarea>
+          />
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-12 pt-6">
-          <button 
-            type="submit" 
-            disabled={loading}
-            className="bg-white text-black px-12 py-5 rounded-full font-black text-[11px] uppercase tracking-widest hover:bg-gray-200 transition-all shadow-xl disabled:bg-gray-400"
-          >
-            {loading ? 'Sending...' : t.submit}
-          </button>
-          
-          {error && (
-            <p className="text-red-500 font-bold text-xs uppercase tracking-widest">{error}</p>
-          )}
-          
-          <div className="flex flex-col gap-2">
-             <span className="text-gold-500 font-black text-[9px] uppercase tracking-[0.3em] italic">✓ Free Dieline Support</span>
-             <span className="text-gold-500 font-black text-[9px] uppercase tracking-[0.3em] italic">✓ Cost Optimization</span>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <label className="flex items-center gap-3 cursor-pointer group">
-              <input type="checkbox" className="w-5 h-5 bg-black border-white/10 rounded text-gold-500 focus:ring-gold-500" defaultChecked />
-              <span className="text-[9px] font-black uppercase tracking-widest text-white/40 group-hover:text-white transition-colors">{t.sample}</span>
-            </label>
+        <div className="space-y-3">
+          <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Upload Logo / Reference Image</label>
+          <div className="w-full px-8 py-10 bg-white/5 border-2 border-dashed border-white/10 text-center rounded-[2rem] group hover:border-[#d4af37]/50 transition-all cursor-pointer">
+              <p className="text-gray-500 font-bold uppercase text-[10px] tracking-widest group-hover:text-white transition-colors">
+                📎 Click to upload PNG, AI, PDF · Max 10MB
+              </p>
           </div>
         </div>
+
+        <div className="pt-6">
+            <button 
+                type="submit"
+                disabled={isSubmitting}
+                className={`w-full bg-[#d4af37] text-black font-black uppercase italic tracking-widest py-8 rounded-full hover:bg-white hover:scale-[1.02] active:scale-95 transition-all shadow-2xl flex items-center justify-center space-x-3 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+            >
+                {isSubmitting ? (
+                    <span className="animate-pulse">Processing Request...</span>
+                ) : (
+                    <span>🚀 Send My Request — Free & No Commitment</span>
+                )}
+            </button>
+        </div>
+
+        {status === 'success' && (
+          <div className="p-8 bg-green-500/10 border border-green-500/20 rounded-3xl text-center">
+            <p className="text-green-500 font-black uppercase text-[10px] tracking-[0.3em] animate-bounce">
+              ✓ Successfully Sent! Our team will contact you in 24 hours.
+            </p>
+          </div>
+        )}
+        {status === 'error' && (
+          <div className="p-8 bg-red-500/10 border border-red-500/20 rounded-3xl text-center">
+            <p className="text-red-500 font-black uppercase text-[10px] tracking-[0.3em]">
+              ✕ Something went wrong. Please check your connection and try again.
+            </p>
+          </div>
+        )}
       </form>
     </div>
   );
