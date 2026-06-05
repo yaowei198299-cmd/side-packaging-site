@@ -10,14 +10,14 @@ const HomePage = () => {
   const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
 
   const categories = [
-    { title: "HAND BAGS", image: group1, x: "0%" },
-    { title: "PAPER BOXES", image: group1, x: "33.33%" },
-    { title: "LABEL STICKER", image: group1, x: "66.66%" },
-    { title: "TISSUE PAPER", image: group1, x: "100%" },
-    { title: "LUXURY BOXES", image: group2, x: "0%" },
-    { title: "DISPLAY BOXES", image: group2, x: "33.33%" },
-    { title: "SHIPPING BOXES", image: group2, x: "66.66%" },
-    { title: "THANK YOU CARDS", image: group2, x: "100%" },
+    { title: "HAND BAGS", image: group1, x: "0%", link: "/products" },
+    { title: "PAPER BOXES", image: group1, x: "33.33%", link: "/products" },
+    { title: "LABEL STICKER", image: group1, x: "66.66%", link: "/products" },
+    { title: "TISSUE PAPER", image: group1, x: "100%", link: "/products" },
+    { title: "LUXURY BOXES", image: group2, x: "0%", link: "/products/magnetic-gift-boxes" },
+    { title: "DISPLAY BOXES", image: group2, x: "33.33%", link: "/products" },
+    { title: "SHIPPING BOXES", image: group2, x: "66.66%", link: "/products/custom-mailer-boxes" },
+    { title: "THANK YOU CARDS", image: group2, x: "100%", link: "/products" },
   ];
 
   const faqs = [
@@ -43,7 +43,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
         <title>Side Packaging | China's Premium Luxury Gift Box Manufacturer</title>
-        <meta name="description" content="Factory-Direct Luxury Magnetic, Rigid, Drawer & Mailer Boxes with Logo. MOQ from 100 pcs. Free 3D Mockup. Global Shipping." />
+        <meta name="description" content="Saide Packaging: Top China manufacturer of custom Rigid Boxes, Magnetic Gift Boxes, Mailer Boxes & Paper Bags. 20+ years experience. Factory prices. Global shipping." />
       </Head>
 
       {/* Navbar */}
@@ -52,6 +52,8 @@ const HomePage = () => {
           <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
+            <Link href="/products/magnetic-gift-boxes" className="hover:text-white transition-colors">Rigid Boxes</Link>
+            <Link href="/products/custom-mailer-boxes" className="hover:text-white transition-colors">Mailer Boxes</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
           </div>
@@ -81,9 +83,8 @@ const HomePage = () => {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
-              Custom Luxury <br/>
-              <span className="text-white">Gift Box</span> <br/>
-              Manufacturer <br/>
+              Custom Packaging <br/>
+              <span className="text-white">Box Manufacturer</span> <br/>
               In China
             </h1>
 
@@ -116,6 +117,23 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Trust Bar (Authority Signals) */}
+      <div className="bg-white/5 border-y border-white/5 py-12 relative z-20 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          {[
+            { label: "20+ Years", sub: "Production Expert" },
+            { label: "20,000 sqm", sub: "Factory Facility" },
+            { label: "FSC & BSCI", sub: "Global Standards" },
+            { label: "50+ Countries", sub: "Global Logistics" }
+          ].map((item, i) => (
+            <div key={i} className="space-y-2">
+              <p className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-[#d4af37]">{item.label}</p>
+              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-white/40">{item.sub}</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Category Grid (100% Visual Match with LuxoPack Style) */}
       <section className="py-32 bg-black border-t border-white/5">
@@ -172,7 +190,7 @@ const HomePage = () => {
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
             <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
             <Link href="/de" className="text-[#d4af37] ">German / Deutsch</Link>
@@ -186,3 +204,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+age;

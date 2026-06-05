@@ -28,26 +28,26 @@ const ProductsPage = () => {
           leadTime: "12-15 days",
           extra: "EVA Foam / Tray"
         },
-        {
-          badge: "RIBBON FINISH",
-          title: "Rigid Lid & Base with Ribbon",
-          desc: "Classic two-piece rigid setup box with a pre-tied satin ribbon bow. Perfect for luxury jewelry and gift sets.",
-          image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg",
-          link: "/products",
-          moq: "100 pcs",
-          leadTime: "12-15 days",
-          extra: "Satin Ribbon"
-        },
-        {
-          badge: "E-COMMERCE",
-          title: "Easy-Tear Kraft Mailer Box",
-          desc: "Kraft corrugated mailer with built-in tear-strip for instant opening. Sustainable and durable unboxing experience.",
-          image: "https://sc04.alicdn.com/kf/H4cebdb0cd26b429f897a7b927f587eb64.jpg",
-          link: "/products",
-          moq: "300 pcs",
-          leadTime: "10-12 days",
-          extra: "FSC Kraft"
-        },
+          {
+            badge: "RIBBON FINISH",
+            title: "Rigid Lid & Base with Ribbon",
+            desc: "Classic two-piece rigid setup box with a pre-tied satin ribbon bow. Perfect for luxury jewelry and gift sets.",
+            image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg",
+            link: "/products/magnetic-gift-boxes",
+            moq: "100 pcs",
+            leadTime: "12-15 days",
+            extra: "Satin Ribbon"
+          },
+          {
+            badge: "E-COMMERCE",
+            title: "Easy-Tear Kraft Mailer Box",
+            desc: "Kraft corrugated mailer with built-in tear-strip for instant opening. Sustainable and durable unboxing experience.",
+            image: "https://sc04.alicdn.com/kf/H4cebdb0cd26b429f897a7b927f587eb64.jpg",
+            link: "/products/custom-mailer-boxes",
+            moq: "300 pcs",
+            leadTime: "10-12 days",
+            extra: "FSC Kraft"
+          },
         {
           badge: "ECO-FRIENDLY",
           title: "Premium White Card Mailer Box",
@@ -128,7 +128,7 @@ const ProductsPage = () => {
       {/* Navbar: Sophisticated & Minimalist */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
@@ -205,7 +205,7 @@ const ProductsPage = () => {
       <footer className="bg-black text-white py-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col gap-4">
-             <p className="text-xl font-black tracking-tighter uppercase italic text-white/40">Side Packaging</p>
+             <p className="text-xl font-black tracking-tighter uppercase italic text-white/40">Saide Packaging</p>
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">Premium B2B Manufacturing Solutions.</p>
           </div>
           <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. FSC & BSCI Certified.</p>
@@ -216,3 +216,4 @@ const ProductsPage = () => {
 };
 
 export default ProductsPage;
+

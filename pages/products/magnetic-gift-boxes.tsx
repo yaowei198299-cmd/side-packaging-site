@@ -4,25 +4,25 @@ import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
 import WhatsAppButton from '../../components/WhatsAppButton';
 
-const CustomMailerBoxesPage = () => {
+const MagneticGiftBoxesPage = () => {
   const features = [
-    { title: "Durable Materials", desc: "Available in single-wall (E-flute) or double-wall corrugated cardboard for maximum protection." },
-    { title: "Eco-Friendly", desc: "100% recyclable and biodegradable materials, FSC-certified sourcing available." },
-    { title: "Full Customization", desc: "Custom sizes, logo printing (offset or digital), and specialized finishes like spot UV." },
-    { title: "Low MOQ", desc: "Support small business growth with orders starting from 100-500 units." }
+    { title: "Premium Closure", desc: "Hidden strong magnets ensure a satisfying snap closure and high-end unboxing feel." },
+    { title: "Rigid Construction", desc: "Built with 1200gsm-1800gsm grayboard for structural integrity and luxury weight." },
+    { title: "Collapsible Options", desc: "Save 70% on shipping costs and storage space with our high-quality foldable designs." },
+    { title: "Luxury Finishes", desc: "Choose from soft-touch, foil stamping, embossing, and custom-fit inserts (foam, EVA, velvet)." }
   ];
 
   const types = [
-    { title: "Standard Mailer", image: "https://sc04.alicdn.com/kf/H4cebdb0cd26b429f897a7b927f587eb64.jpg", desc: "Classic ear-lock design for secure shipping." },
-    { title: "Premium White Card", image: "https://sc02.alicdn.com/kf/A6944a60384cf46a89e823d17403dc1e4Z.png", desc: "High-end aesthetic for subscription boxes." },
-    { title: "Kraft Corrugated", image: "https://sc04.alicdn.com/kf/Hd2a4d4ee7b674771a4921b9d43bff2b73.jpg", desc: "Natural look, extra strength for heavy items." }
+    { title: "Luxury Magnetic Box", image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg", desc: "Our signature high-end magnetic gift box." },
+    { title: "Foldable Magnetic", image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg", desc: "Smart design that ships flat and pops up in seconds." },
+    { title: "Ribbon Tie Magnetic", image: "https://sc04.alicdn.com/kf/H610079537f9f40988ccbb03e6eebec3cE.jpg", desc: "Additional ribbon closure for an extra touch of elegance." }
   ];
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
-        <title>Custom Mailer Boxes with Logo | Wholesale E-commerce Packaging | Saide Packaging</title>
-        <meta name="description" content="Design and order custom mailer boxes with logo. Factory-direct wholesale corrugated shipping boxes for e-commerce, subscription, and retail. MOQ 100+." />
+        <title>Custom Magnetic Gift Boxes | Wholesale Rigid Packaging with Logo | Saide Packaging</title>
+        <meta name="description" content="Premium custom magnetic gift boxes with logo. Factory-direct wholesale rigid magnetic boxes for luxury jewelry, cosmetics, and electronics. Global shipping." />
       </Head>
 
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
@@ -39,13 +39,13 @@ const CustomMailerBoxesPage = () => {
 
       <header className="relative pt-48 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <span className="text-[#d4af37] text-xs font-black uppercase tracking-[0.5em] mb-6 block">E-commerce Solutions</span>
+          <span className="text-[#d4af37] text-xs font-black uppercase tracking-[0.5em] mb-6 block">Luxury Packaging</span>
           <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-12">
-            Custom <br/>
-            <span className="text-white/40 italic">Mailer Boxes.</span>
+            Magnetic <br/>
+            <span className="text-white/40 italic">Gift Boxes.</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl font-medium leading-relaxed uppercase tracking-tight">
-            The perfect blend of durability and brand identity. Our custom corrugated mailers are engineered for the modern e-commerce journey.
+            The ultimate statement in luxury. Our magnetic closure boxes combine structural durability with a sophisticated unboxing experience.
           </p>
         </div>
       </header>
@@ -64,7 +64,7 @@ const CustomMailerBoxesPage = () => {
 
       <section className="py-40 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-black uppercase tracking-tighter italic mb-24 text-center">Popular Styles</h2>
+          <h2 className="text-4xl font-black uppercase tracking-tighter italic mb-24 text-center">Style Options</h2>
           <div className="grid md:grid-cols-3 gap-16">
             {types.map((type, i) => (
               <div key={i} className="group">
@@ -81,8 +81,8 @@ const CustomMailerBoxesPage = () => {
 
       <section className="py-40 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl font-black uppercase tracking-tighter italic mb-20 text-center">Customize Your Mailer</h2>
-          <InquiryForm productTitle="Custom Mailer Boxes" />
+          <h2 className="text-5xl font-black uppercase tracking-tighter italic mb-20 text-center">Inquire About Luxury Boxes</h2>
+          <InquiryForm productTitle="Custom Magnetic Gift Boxes" />
         </div>
       </section>
 
@@ -95,4 +95,4 @@ const CustomMailerBoxesPage = () => {
   );
 };
 
-export default CustomMailerBoxesPage;
+export default MagneticGiftBoxesPage;

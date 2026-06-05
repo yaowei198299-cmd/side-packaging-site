@@ -136,7 +136,7 @@ const GalleryPage = () => {
       <footer className="bg-black text-white py-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col items-center md:items-start gap-4">
-             <p className="text-xl font-black tracking-tighter uppercase italic">Side Packaging</p>
+              <p className="text-xl font-black tracking-tighter uppercase italic">Saide Packaging</p>
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600 max-w-xs text-center md:text-left">Premium Case Studies & Packaging Solutions for Global Brands.</p>
           </div>
           <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>

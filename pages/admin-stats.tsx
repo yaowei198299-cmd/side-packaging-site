@@ -178,7 +178,7 @@ const DashboardPage = () => {
         </div>
 
         <footer className="mt-24 text-center text-gray-400 text-[10px] font-bold uppercase tracking-widest">
-          Private Monitoring Interface · Side Packaging HK Limited · Internal Use Only
+          Private Monitoring Interface · Saide Packaging HK Limited · Internal Use Only
         </footer>
       </div>
     </div>

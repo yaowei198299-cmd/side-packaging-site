@@ -196,6 +196,51 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           ))}
         </div>
 
+        {/* Custom Packaging Details */}
+        <div className="grid md:grid-cols-3 gap-8 p-8 bg-white/5 border border-white/5 rounded-sm">
+            <div className="space-y-2">
+                <label className="block text-[9px] font-black text-[#d4af37] uppercase tracking-widest">Box Style</label>
+                <select 
+                    className="w-full bg-black border border-white/10 text-white p-3 text-xs outline-none focus:border-[#d4af37]"
+                    value={formData.boxStyle}
+                    onChange={(e) => setFormData({...formData, boxStyle: e.target.value})}
+                >
+                    <option value="">Select Style</option>
+                    <option value="Magnetic">Magnetic Rigid Box</option>
+                    <option value="Rigid">Rigid Lid & Base</option>
+                    <option value="Mailer">Corrugated Mailer</option>
+                    <option value="Drawer">Drawer / Sliding Box</option>
+                    <option value="Folding">Folding Carton</option>
+                    <option value="Other">Other / Custom</option>
+                </select>
+            </div>
+            <div className="space-y-2">
+                <label className="block text-[9px] font-black text-[#d4af37] uppercase tracking-widest">Dimensions (L x W x H)</label>
+                <input 
+                    type="text"
+                    placeholder="e.g. 20 x 15 x 5 cm"
+                    className="w-full bg-black border border-white/10 text-white p-3 text-xs outline-none focus:border-[#d4af37]"
+                    value={formData.dimensions}
+                    onChange={(e) => setFormData({...formData, dimensions: e.target.value})}
+                />
+            </div>
+            <div className="space-y-2">
+                <label className="block text-[9px] font-black text-[#d4af37] uppercase tracking-widest">Preferred Material</label>
+                <select 
+                    className="w-full bg-black border border-white/10 text-white p-3 text-xs outline-none focus:border-[#d4af37]"
+                    value={formData.material}
+                    onChange={(e) => setFormData({...formData, material: e.target.value})}
+                >
+                    <option value="">Select Material</option>
+                    <option value="Art Paper">Premium Art Paper</option>
+                    <option value="Kraft">Natural Kraft Paper</option>
+                    <option value="Black Card">Black Specialty Card</option>
+                    <option value="Textured">Textured / Linen Paper</option>
+                    <option value="Other">I'm not sure (Expert Choice)</option>
+                </select>
+            </div>
+        </div>
+
         <div className="space-y-2">
           <label className="block text-[10px] font-black text-white/20 uppercase tracking-[0.3em]">{t.requirements} *</label>
           <textarea 

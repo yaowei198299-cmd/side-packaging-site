@@ -48,7 +48,7 @@ const HomePageFr = () => {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/fr" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+           <Link href="/fr" className="text-xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">Catalogue</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Études de Cas</Link>
@@ -79,8 +79,8 @@ const HomePageFr = () => {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
-              Boîtes Cadeaux de <br/>
-              <span className="text-white">Luxe Sur Mesure</span> <br/>
+              Boîtes d'Emballage <br/>
+              <span className="text-white">sur Mesure</span> <br/>
               Fabricant Direct <br/>
               en Chine
             </h1>
@@ -165,6 +165,27 @@ const HomePageFr = () => {
 
       {/* Inquiry Form Section */}
       <section id="contact" className="py-40 bg-black border-t border-white/5">
+        <InquiryForm lang="fr" />
+      </section>
+
+      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. Normes de Luxe Industriel.</p>
+          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
+            <Link href="/" className="text-[#d4af37] ">English</Link>
+            <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
+            <Link href="/de" className="text-[#d4af37] ">German / Deutsch</Link>
+          </div>
+        </div>
+      </footer>
+
+      <WhatsAppButton />
+    </div>
+  );
+};
+
+export default HomePageFr;
+r-white/5">
         <InquiryForm lang="fr" />
       </section>
 

@@ -53,6 +53,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       Company: ${company}
       Industry: ${industry}
       Quantity: ${quantity}
+      Box Style: ${boxStyle}
+      Dimensions: ${dimensions}
+      Material: ${material}
       
       Message:
       ${message}
@@ -86,5 +89,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   } catch (error) {
     console.error('Error sending email:', error);
     return res.status(500).json({ message: 'Error sending inquiry' });
+  }
+}
+eturn res.status(500).json({ message: 'Error sending inquiry' });
   }
 }

@@ -7,7 +7,7 @@ const AboutFounder = () => {
     <div className="min-h-screen bg-black text-white font-sans">
       <Head>
         <title>Meet the Founder | 20 Years in Packaging | Side Packaging</title>
-        <meta name="description" content="Learn the story behind Side Packaging. Why we prioritize cost optimization, reliability, and helping brands avoid expensive packaging mistakes." />
+        <meta name="description" content="Learn the story behind Saide Packaging. Why we prioritize cost optimization, reliability, and helping brands avoid expensive packaging mistakes." />
       </Head>
 
       {/* Navbar */}
@@ -101,7 +101,7 @@ const AboutFounder = () => {
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">Factory Direct Custom Packaging Solutions.</p>
           </div>
           <div className="flex flex-col items-center md:items-end gap-4">
-             <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Saide Packaging HK Limited. All Rights Reserved.</p>
           </div>
         </div>
       </footer>

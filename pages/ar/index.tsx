@@ -116,6 +116,23 @@ const HomePageAr = () => {
         </div>
       </section>
 
+      {/* Trust Bar (Authority Signals) */}
+      <div className="bg-white/5 border-y border-white/5 py-12 relative z-20 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          {[
+            { label: "20+ عاماً", sub: "خبير إنتاج" },
+            { label: "20,000 م²", sub: "مرفق المصنع" },
+            { label: "FSC & BSCI", sub: "معايير عالمية" },
+            { label: "50+ دولة", sub: "خدمات لوجستية عالمية" }
+          ].map((item, i) => (
+            <div key={i} className="space-y-2">
+              <p className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-[#d4af37]">{item.label}</p>
+              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-white/40">{item.sub}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Category Grid */}
       <section className="py-32 bg-black border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6">
@@ -171,7 +188,7 @@ const HomePageAr = () => {
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. معايير الفخامة الصناعية.</p>
+           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. معايير الفخامة الصناعية.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
             <Link href="/" className="text-[#d4af37] ">English / الإنجليزية</Link>
             <Link href="/de" className="text-[#d4af37] ">German / Deutsch</Link>

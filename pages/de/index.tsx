@@ -80,8 +80,8 @@ const HomePageDe = () => {
 
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
               Maßgeschneiderte <br/>
-              <span className="text-white">Luxus-Geschenkboxen</span> <br/>
-              Direkt ab Werk <br/>
+              <span className="text-white">Verpackungsboxen</span> <br/>
+              Hersteller <br/>
               in China
             </h1>
 
@@ -170,7 +170,28 @@ const HomePageDe = () => {
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. Industrielle Luxusstandards.</p>
+           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrielle Luxusstandards.</p>
+          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
+            <Link href="/" className="text-[#d4af37] ">English</Link>
+            <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
+          </div>
+        </div>
+      </footer>
+
+      <WhatsAppButton />
+    </div>
+  );
+};
+
+export default HomePageDe;
+ */}
+      <section id="contact" className="py-40 bg-black border-t border-white/5">
+        <InquiryForm lang="de" />
+      </section>
+
+      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrielle Luxusstandards.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
             <Link href="/" className="text-[#d4af37] ">English</Link>
             <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
