@@ -6,14 +6,14 @@ const AboutFounder = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <Head>
-        <title>Meet the Founder | 20 Years in Packaging | Side Packaging</title>
+        <title>Meet the Founder | 20 Years in Packaging | Saide Packaging</title>
         <meta name="description" content="Learn the story behind Saide Packaging. Why we prioritize cost optimization, reliability, and helping brands avoid expensive packaging mistakes." />
       </Head>
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/about-founder" className="text-white">Founder</Link>
@@ -42,7 +42,7 @@ const AboutFounder = () => {
             <div className="absolute -inset-4 bg-blue-600/20 blur-3xl group-hover:bg-blue-600/30 transition-all"></div>
             <img 
               src="https://sc02.alicdn.com/kf/Aad63ce49acc2417dbeb76f0074aba393i.png" 
-              alt="Side Packaging Founder" 
+              alt="Saide Packaging Founder" 
               className="relative rounded-[3rem] shadow-2xl border border-white/10  hover:-0 transition-all duration-1000"
             />
           </div>
@@ -63,7 +63,7 @@ const AboutFounder = () => {
             
             <h3 className="text-3xl font-black uppercase tracking-tight mt-20 mb-12 text-blue-500 italic">Packaging Should Help Your Brand — Not Become a Problem</h3>
             <p className="text-gray-400 mb-10 leading-relaxed">
-              Many brands struggle with unclear pricing, poor printing quality, and suppliers that disappear after the deposit is paid. I built Side Packaging on a simple principle: **Packaging should be reliable and cost-effective.**
+              Many brands struggle with unclear pricing, poor printing quality, and suppliers that disappear after the deposit is paid. I built Saide Packaging on a simple principle: **Packaging should be reliable and cost-effective.**
             </p>
 
             <div className="grid md:grid-cols-2 gap-12 my-20">
@@ -97,7 +97,7 @@ const AboutFounder = () => {
       <footer className="bg-black text-white py-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
           <div className="flex flex-col gap-4">
-             <p className="text-xl font-black tracking-tighter uppercase italic">Side Packaging</p>
+             <p className="text-xl font-black tracking-tighter uppercase italic">Saide Packaging</p>
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">Factory Direct Custom Packaging Solutions.</p>
           </div>
           <div className="flex flex-col items-center md:items-end gap-4">

@@ -41,14 +41,14 @@ const HomePageAr = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden" dir="rtl">
       <Head>
-        <title>Side Packaging | مصنع تغليف فاخر متميز في الصين</title>
+        <title>Saide Packaging | مصنع تغليف فاخر متميز في الصين</title>
         <meta name="description" content="مصنع مباشر لصناديق الهدايا المغناطيسية والصلبة والشحن مع شعار مخصص. الحد الأدنى للطلب من 100 قطعة. نموذج 3D مجاني. شحن عالمي." />
       </Head>
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/ar" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/ar" className="text-xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-reverse space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">الكتالوج</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">دراسات الحالة</Link>

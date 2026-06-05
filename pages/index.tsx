@@ -42,14 +42,14 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
-        <title>Side Packaging | China's Premium Luxury Gift Box Manufacturer</title>
+        <title>Saide Packaging | China's Premium Luxury Gift Box Manufacturer</title>
         <meta name="description" content="Saide Packaging: Top China manufacturer of custom Rigid Boxes, Magnetic Gift Boxes, Mailer Boxes & Paper Bags. 20+ years experience. Factory prices. Global shipping." />
       </Head>
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
             <Link href="/products/magnetic-gift-boxes" className="hover:text-white transition-colors">Rigid Boxes</Link>
@@ -82,7 +82,7 @@ const HomePage = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic font-montserrat">
               Custom Packaging <br/>
               <span className="text-white">Box Manufacturer</span> <br/>
               In China

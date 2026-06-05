@@ -121,14 +121,14 @@ const ProductsPage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Packaging Catalog | Luxo-Bespoke Solutions | Side Packaging HK Limited</title>
+        <title>Packaging Catalog | Luxo-Bespoke Solutions | Saide Packaging HK Limited</title>
         <meta name="description" content="Explore our technical packaging catalog. Industrial specs, MOQ, and lead times for luxury rigid boxes and retail solutions." />
       </Head>
 
       {/* Navbar: Sophisticated & Minimalist */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
@@ -208,7 +208,7 @@ const ProductsPage = () => {
              <p className="text-xl font-black tracking-tighter uppercase italic text-white/40">Saide Packaging</p>
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">Premium B2B Manufacturing Solutions.</p>
           </div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. FSC & BSCI Certified.</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Saide Packaging HK Limited. FSC & BSCI Certified.</p>
         </div>
       </footer>
     </div>

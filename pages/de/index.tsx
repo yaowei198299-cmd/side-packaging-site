@@ -41,20 +41,20 @@ const HomePageDe = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
-        <title>Side Packaging | Chinas Premium-Hersteller für Luxus-Geschenkboxen</title>
+        <title>Saide Packaging | Chinas Premium-Hersteller für Luxus-Geschenkboxen</title>
         <meta name="description" content="Direkt ab Werk: Luxus-Magnetboxen, starre Boxen, Schubladen- & Versandkartons mit Logo. MOQ ab 100 Stück. Kostenloses 3D-Mockup. Weltweiter Versand." />
       </Head>
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/de" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/de" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">Katalog</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Fallstudien</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Gründer</Link>
           </div>
-          <a href="#contact" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">Kostenloses Angebot</a>
+          <a href="#contact" className="bg-[#d4af37] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Kostenloses Angebot</a>
         </div>
       </nav>
 
@@ -78,7 +78,7 @@ const HomePageDe = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic font-montserrat">
               Maßgeschneiderte <br/>
               <span className="text-white">Verpackungsboxen</span> <br/>
               Hersteller <br/>
@@ -107,7 +107,7 @@ const HomePageDe = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
-               <a href="/inquiry" className="inline-block bg-[#d4af37] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+               <a href="/inquiry" className="inline-block bg-[#d4af37] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)] font-montserrat">
                  Fabrikpreise sichern (30-50% sparen)
                </a>
             </div>
@@ -120,7 +120,7 @@ const HomePageDe = () => {
         <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20 text-center">
              <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Produktkategorien</span>
-             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Entwickelt für Luxus.</h2>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Entwickelt für Luxus.</h2>
           </header>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
@@ -135,7 +135,7 @@ const HomePageDe = () => {
                     backgroundRepeat: 'no-repeat'
                   }}
                 />
-                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#d4af37] transition-colors">
+                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#d4af37] transition-colors font-montserrat">
                   {cat.title}
                 </h3>
               </Link>
@@ -149,13 +149,13 @@ const HomePageDe = () => {
         <div className="max-w-4xl mx-auto px-6">
           <header className="mb-20 text-center">
             <span className="text-[#d4af37] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Experten-Q&A</span>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Verpackungsintelligenz.</h2>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Verpackungsintelligenz.</h2>
           </header>
 
           <div className="space-y-12">
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-white/5 pb-12 group text-left">
-                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#d4af37] transition-colors">F: {faq.q}</h3>
+                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#d4af37] transition-colors font-montserrat">F: {faq.q}</h3>
                 <p className="text-gray-400 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
               </div>
             ))}
@@ -164,27 +164,6 @@ const HomePageDe = () => {
       </section>
 
       {/* Inquiry Form Section */}
-      <section id="contact" className="py-40 bg-black border-t border-white/5">
-        <InquiryForm lang="de" />
-      </section>
-
-      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrielle Luxusstandards.</p>
-          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <Link href="/" className="text-[#d4af37] ">English</Link>
-            <Link href="/ar" className="text-[#d4af37] ">Arabic / العربية</Link>
-          </div>
-        </div>
-      </footer>
-
-      <WhatsAppButton />
-    </div>
-  );
-};
-
-export default HomePageDe;
- */}
       <section id="contact" className="py-40 bg-black border-t border-white/5">
         <InquiryForm lang="de" />
       </section>

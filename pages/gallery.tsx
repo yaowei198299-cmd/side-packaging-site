@@ -30,14 +30,14 @@ const GalleryPage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Project Gallery | Custom Box Styles & Case Studies | Side Packaging HK Limited</title>
+        <title>Project Gallery | Custom Box Styles & Case Studies | Saide Packaging HK Limited</title>
         <meta name="description" content="Browse our extensive gallery of custom packaging projects. Shop by box style: magnetic, rigid, mailer, folding, and more. B2B packaging inspiration." />
       </Head>
 
       {/* Navbar: Sophisticated & Minimalist */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/20 backdrop-blur-lg border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-12 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/gallery" className="text-white">Case Studies</Link>
@@ -53,7 +53,7 @@ const GalleryPage = () => {
           <header className="mb-24 text-center">
             <span className="text-blue-500 font-black text-xs uppercase tracking-[0.5em] mb-6 block">Inspiration & Excellence</span>
             <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-8">Case <br/><span className="text-white/40 italic">Studies.</span></h1>
-            <p className="text-xl text-gray-500 max-w-2xl mx-auto font-medium italic">Discover why 500+ global brands trust Side Packaging for their most critical product launches.</p>
+            <p className="text-xl text-gray-500 max-w-2xl mx-auto font-medium italic">Discover why 500+ global brands trust Saide Packaging for their most critical product launches.</p>
           </header>
 
           {/* Filtering System */}
@@ -107,7 +107,7 @@ const GalleryPage = () => {
                          <p className="text-gray-500 text-sm italic">Standard thin folding box. High damage rate. Forgettable brand experience.</p>
                       </div>
                       <div className="bg-blue-600/20 p-8 rounded-3xl border border-blue-600/30">
-                         <p className="text-white font-black uppercase text-[10px] tracking-widest mb-4 text-blue-400">After (Side Packaging)</p>
+                         <p className="text-white font-black uppercase text-[10px] tracking-widest mb-4 text-blue-400">After (Saide Packaging)</p>
                          <p className="text-white text-sm font-medium">1200gsm Magnetic Rigid Box. Velvet insert. Premium foil finish. Zero damage.</p>
                       </div>
                    </div>
@@ -139,7 +139,7 @@ const GalleryPage = () => {
               <p className="text-xl font-black tracking-tighter uppercase italic">Saide Packaging</p>
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600 max-w-xs text-center md:text-left">Premium Case Studies & Packaging Solutions for Global Brands.</p>
           </div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Saide Packaging HK Limited. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
