@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
+import { supabase } from '../../lib/supabase';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
@@ -13,7 +14,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ message: 'Missing required fields' });
   }
 
-  // Create email transporter
+  // 1. Save to Supabase Database
+  try {
+    if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      const { error } = await supabase
+        .from('inquiries')
+        .insert([
+          { name, email, phone, country, company, industry, quantity, message }
+        ]);
+      
+      if (error) throw error;
+      console.log('Inquiry saved to database successfully');
+    }
+  } catch (dbError) {
+    console.error('Error saving inquiry to database:', dbError);
+    // Continue with email even if DB fails
+  }
+
+  // 2. Create email transporter
   // Note: These env variables should be set in Vercel
   const transporter = nodemailer.createTransport({
     service: 'gmail',
