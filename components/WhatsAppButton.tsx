@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "+85292901111"; // Example number, adjust as needed
+  const whatsappNumber = "8613699786538"; // Real phone number, formatting matches wa.me specification (no leading + or spaces)
   const message = "Hi Jocelyn, I'm interested in your luxury packaging solutions. Could you provide more information?";
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
