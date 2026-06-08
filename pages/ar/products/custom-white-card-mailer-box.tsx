@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import InquiryForm from '../../components/InquiryForm';
-import WhatsAppButton from '../../components/WhatsAppButton';
+import InquiryForm from '../../../components/InquiryForm';
+import WhatsAppButton from '../../../components/WhatsAppButton';
 
 const WhiteCardMailerPage = () => {
   return (

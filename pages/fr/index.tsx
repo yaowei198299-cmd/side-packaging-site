@@ -185,4 +185,3 @@ const HomePageFr = () => {
 };
 
 export default HomePageFr;
-ult HomePageFr;

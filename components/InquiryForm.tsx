@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 
 const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lang?: string }) => {
+  const localizedCopy: any = {
+    en: "Already have a box? Send us the dimensions, we will engineer a collapsible version that saves you 15-30% in shipping volume for free. Free Dieline blueprint delivered to your email in 12 hours.",
+    fr: "Vous avez déjà une boîte ? Envoyez-nous les dimensions, nous concevrons gratuitement une version pliable qui vous fera économiser 15-30% de volume de transport. Plan de découpe (Dieline) gratuit envoyé par e-mail en 12h.",
+    de: "Haben Sie bereits eine Box? Senden Sie uns die Maße, wir entwickeln kostenlos eine faltbare Version, mit der Sie 15-30% Versandvolumen sparen. Kostenlose Stanzkontur (Dieline) innerhalb von 12h per E-Mail.",
+    es: "¿Ya tiene una caja? Envíenos las dimensiones, diseñaremos gratis una versión plegable que le ahorrará un 15-30% de volumen de transporte. Plano de troquelado (Dieline) gratuito enviado por email en 12h.",
+    ar: "هل لديك صندوق بالفعل؟ أرسل لنا الأبعاد، وسنصمم لك مجانًا نسخة قابلة للطي توفر لك 15-30% من حجم الشحن. مخطط خط السكين (Dieline) مجاني يصلك خلال 12 ساعة."
+  };
+  const currentCopy = localizedCopy[lang] || localizedCopy['en'];
+
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -42,7 +51,8 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
     <div className="w-full bg-[#050505] p-12 md:p-20 rounded-[3rem] border border-white/5 shadow-2xl">
       <div className="mb-16 text-center">
         <h2 className="text-4xl font-black uppercase tracking-tighter italic mb-4">Request a Custom Quote</h2>
-        <p className="text-[#C9A84C] font-black uppercase text-[10px] tracking-[0.4em] italic">Get a Detailed Pricing in 24 Hours</p>
+        <p className="text-[#C9A84C] font-black uppercase text-[10px] tracking-[0.4em] italic mb-6">Get a Detailed Pricing in 24 Hours</p>
+        <p className="text-white/60 text-xs max-w-xl mx-auto leading-relaxed tracking-wide font-medium">{currentCopy}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-12">

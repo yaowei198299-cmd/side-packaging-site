@@ -79,9 +79,17 @@ const InquiryPage = () => {
                 <span className="text-[#C9A84C]">Free Quote</span> <br/>
                 & 3D Mockup.
               </h1>
-              <p className="text-xl text-white/50 mb-16 font-medium leading-relaxed uppercase tracking-widest">
+              <p className="text-xl text-white/50 mb-10 font-medium leading-relaxed uppercase tracking-widest">
                 Our engineering team provides structural analysis and cost optimization within <span className="text-white italic underline decoration-[#C9A84C]">24 hours</span>.
               </p>
+              <div className="bg-[#C9A84C]/5 border border-[#C9A84C]/20 p-6 rounded-2xl mb-16 space-y-4">
+                <p className="text-xs text-white/80 font-medium leading-relaxed">
+                  💡 <strong className="text-[#C9A84C]">Cost-Saving Engineering:</strong> Already have a box? Send us the dimensions, we will engineer a collapsible version that saves you 15-30% in shipping volume for free.
+                </p>
+                <p className="text-xs text-white/80 font-medium leading-relaxed">
+                  ⚡ <strong className="text-[#C9A84C]">Fast Structural Support:</strong> Free Dieline blueprint delivered to your email in 12 hours.
+                </p>
+              </div>
 
               {/* Consultant Card (Amy/Jocelyn Style) */}
               <div className="bg-[#0f0f15] p-8 rounded-2xl border border-white/5 mb-16 flex items-center gap-8 group">

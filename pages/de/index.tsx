@@ -184,4 +184,3 @@ const HomePageDe = () => {
 };
 
 export default HomePageDe;
-ult HomePageDe;
