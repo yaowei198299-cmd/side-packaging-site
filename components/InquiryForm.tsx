@@ -145,7 +145,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             <label className="block text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">Internal Dimensions (L x W x H)</label>
             <input 
               type="text"
-              placeholder="e.g. 20x15x8 cm"
+              placeholder="e.g. 4x3x1.25 in (10.2x7.6x3.2 cm)"
               className="w-full px-8 py-5 bg-white/5 border border-white/10 text-white rounded-2xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/10"
               value={formData.dimensions}
               onChange={(e) => setFormData({...formData, dimensions: e.target.value})}

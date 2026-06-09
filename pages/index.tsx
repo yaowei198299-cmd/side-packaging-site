@@ -42,8 +42,25 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
-        <title>Saide Packaging | China's Premium Luxury Gift Box Manufacturer</title>
-        <meta name="description" content="Saide Packaging: Top China manufacturer of custom Rigid Boxes, Magnetic Gift Boxes, Mailer Boxes & Paper Bags. 20+ years experience. Factory prices. Global shipping." />
+        <title>Custom Packaging Box Manufacturer in China | MOQ 100 - Free 3D Mockup & 12H Dieline | Saide Packaging</title>
+        <meta name="description" content="Direct China packaging factory. Save 15-30% in shipping volume with our collapsible designs. Get your free custom dieline in 12 hours. Order from 100 pcs!" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.a
+                }
+              }))
+            })
+          }}
+        />
       </Head>
 
       {/* Navbar */}

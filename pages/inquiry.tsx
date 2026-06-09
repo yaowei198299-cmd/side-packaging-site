@@ -230,9 +230,9 @@ const InquiryPage = () => {
 
                 {/* Dimensions */}
                 <div className="space-y-3">
-                  <label className="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">Internal Dimensions (L x W x H in cm)</label>
+                  <label className="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">Internal Dimensions (L x W x H in inches or cm)</label>
                   <input 
-                    type="text" placeholder="e.g. 20 x 15 x 8 cm"
+                    type="text" placeholder="e.g. 4x3x1.25 in (10.2x7.6x3.2 cm)"
                     className="w-full bg-black/50 border border-white/5 rounded-xl px-6 py-4 focus:border-[#C9A84C] outline-none transition text-sm font-medium"
                     onChange={(e) => setFormData({...formData, dimensions: e.target.value})}
                   />
