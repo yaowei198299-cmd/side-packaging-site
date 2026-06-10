@@ -3,9 +3,31 @@ import Head from 'next/head';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
 import InquiryForm from '../../components/InquiryForm';
+import WhatsAppButton from '../../components/WhatsAppButton';
 
 const BlogIndex = () => {
   const posts = [
+    {
+      title: "Rigidity vs. Weight: 1200gsm vs 1500gsm Board Optimization for 4x3x1.25\" Luxury Boxes",
+      excerpt: "Discover how to optimize custom rigid box thickness. Compare 1200gsm and 1500gsm board weight & strength formulas to save 18% on B2B air shipping for 4x3x1.25 jewelry boxes.",
+      date: "June 10, 2026",
+      slug: "board-thickness-cost-optimization-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Save 87% Shipping Volume: The Complete Collapsible Magnetic Box Sourcing Guide",
+      excerpt: "Learn how collapsible rigid magnetic boxes save up to 87.5% in ocean and air freight shipping volume. Get a standard 4x3x1.25 foldable rigid box dieline blueprint in PDF/AI.",
+      date: "June 10, 2026",
+      slug: "collapsible-box-shipping-cost-reduction-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "UK PPT & EU Eco-Compliance: Sourcing Sustainable Cosmetics Packaging in 2026",
+      excerpt: "Master UK Plastic Packaging Tax (PPT) & EU eco-compliance. Learn about soy-based inks, bio-degradable stone paper, and plastic-free cosmetic boxes from FSC certified factories.",
+      date: "June 10, 2026",
+      slug: "plastic-free-cosmetic-packaging-compliance-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
     {
       title: "Jewelry Box Trends 2026: Luxury Customization & Small MOQ for Boutique Brands",
       excerpt: "Discover the top jewelry box trends for 2026. Learn how custom magnetic boxes and sustainable materials can elevate your jewelry brand identity and unboxing experience.",
@@ -30,54 +52,58 @@ const BlogIndex = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
+    <div className="min-h-screen bg-[#0A0A0F] text-white font-sans selection:bg-[#C9A84C]/30 overflow-x-hidden">
       <Head>
-        <title>Packaging Insights & Trends 2026 | Side Packaging HK Limited</title>
-        <meta name="description" content="Expert analysis on luxury packaging trends, sustainable materials, and global supply chain optimization for 2026." />
+        <title>Packaging Insights & Tech Whitepapers 2026 | Saide Packaging</title>
+        <meta name="description" content="Expert technical analysis on luxury packaging trends, sustainable eco-compliance (FSC, PPT), and global structural cost engineering." />
       </Head>
 
       {/* Navbar */}
-      <nav className="border-b border-white/10 bg-black/95 backdrop-blur-md sticky top-0 z-[80]">
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#0A0A0F]/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white hover:text-gray-300 transition-colors">Side Packaging</Link>
-          <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-400">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <Link href="/products" className="hover:text-white transition-colors">Bespoke Products</Link>
-            <Link href="/blog" className="text-white border-b-2 border-white pb-1">Insights</Link>
-            <a href="#contact" className="hover:text-white transition-colors">Consultation</a>
+          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
+            <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
           </div>
-          <a href="#contact" className="bg-white text-black px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-gold-400 transition-all shadow-lg">Quick Quote</a>
+          <Link href="/inquiry" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Get a Quote</Link>
         </div>
       </nav>
 
-      <main className="py-32 bg-gradient-to-b from-black to-gray-900">
+      <main className="pt-48 pb-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-24">
-            <span className="text-blue-500 font-black text-xs uppercase tracking-[0.5em] mb-6 block">The Knowledge Hub</span>
-            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-8">Packaging <br/><span className="text-white/40 italic">Insights.</span></h1>
-            <p className="text-xl text-gray-400 max-w-2xl font-medium">Technical analysis, market trends, and manufacturing guides for the global luxury packaging industry.</p>
+            <span className="text-[#C9A84C] text-xs font-black uppercase tracking-[0.5em] mb-6 block">The Knowledge Hub</span>
+            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-8 font-montserrat">
+              Packaging <br/>
+              <span className="text-white/40 italic">Insights.</span>
+            </h1>
+            <p className="text-xl text-gray-400 max-w-2xl font-medium leading-relaxed uppercase tracking-tight">
+              Technical analysis, cost formulas, eco-compliance guides, and CAD blueprints for global luxury brands.
+            </p>
           </div>
 
           <div className="grid gap-16">
             {posts.map((post, i) => (
-              <article key={i} className="group relative bg-white/5 border border-white/5 rounded-[3.5rem] overflow-hidden hover:border-white/20 transition-all shadow-2xl">
+              <article key={i} className="group relative bg-white/5 border border-white/5 rounded-[3rem] overflow-hidden hover:border-[#C9A84C]/30 transition-all shadow-2xl">
                 <Link href={`/blog/${post.slug}`} className="grid md:grid-cols-2">
-                  <div className="aspect-video md:aspect-auto overflow-hidden bg-gray-900">
+                  <div className="aspect-video md:aspect-auto overflow-hidden bg-[#1C1C28]">
                     <img 
                       src={post.image} 
                       alt={post.title} 
-                      className="w-full h-full object-cover  group-hover:-0 group-hover:scale-105 transition-all duration-1000  "
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
                     />
                   </div>
                   <div className="p-12 md:p-16 flex flex-col justify-center">
-                    <p className="text-blue-500 font-black text-[10px] uppercase tracking-[0.3em] mb-6">{post.date}</p>
-                    <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-8 group-hover:text-blue-500 transition-colors leading-[0.9] uppercase italic">
+                    <p className="text-[#C9A84C] font-black text-[10px] uppercase tracking-[0.3em] mb-6">{post.date}</p>
+                    <h2 className="text-2xl md:text-3xl font-black tracking-tighter mb-8 group-hover:text-[#C9A84C] transition-colors leading-[1.0] uppercase italic font-montserrat">
                       {post.title}
                     </h2>
-                    <p className="text-gray-400 font-medium leading-relaxed mb-10 line-clamp-3">
+                    <p className="text-gray-400 font-medium leading-relaxed mb-10 line-clamp-3 text-sm uppercase tracking-wider">
                       {post.excerpt}
                     </p>
-                    <span className="text-white font-black text-[10px] uppercase tracking-widest border-b-2 border-white pb-2 self-start group-hover:border-blue-500 group-hover:text-blue-500 transition-all">
+                    <span className="text-white font-black text-[10px] uppercase tracking-widest border-b-2 border-white pb-2 self-start group-hover:border-[#C9A84C] group-hover:text-[#C9A84C] transition-all font-montserrat">
                       Read Technical Analysis →
                     </span>
                   </div>
@@ -90,21 +116,19 @@ const BlogIndex = () => {
 
       <LeadMagnet lang="en" />
 
-      <section id="contact" className="py-32 bg-black">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="contact" className="py-32 bg-black border-t border-white/5">
+        <div className="max-w-5xl mx-auto px-6">
           <InquiryForm lang="en" />
         </div>
       </section>
 
       <footer className="bg-black text-white py-16 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-          <div className="flex flex-col items-center md:items-start gap-4">
-             <p className="text-xl font-black tracking-tighter uppercase italic">Side Packaging</p>
-             <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600 max-w-xs text-center md:text-left">Premium B2B Jewelry Packaging & Gift Box Solutions for Global Brands.</p>
-          </div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
         </div>
       </footer>
+
+      <WhatsAppButton />
     </div>
   );
 };
