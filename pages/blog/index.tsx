@@ -8,6 +8,13 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "White Cardboard vs. Kraft Corrugated Mailer Boxes: Premium E-commerce Subscriptions",
+      excerpt: "Compare premium white cardboard mailer boxes and natural kraft corrugated shipping boxes. Learn about ink coverage, custom double-sided printing, and shipping durability for 4x3x1.25 sizes.",
+      date: "June 11, 2026",
+      slug: "white-cardboard-vs-kraft-corrugated-mailer-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
       title: "Double-Sided Printed Mailer Boxes: Engineering the Ultimate Unboxing Experience",
       excerpt: "Discover how double-sided printed mailer boxes drive customer retention. Learn about E-flute corrugated strength, flexographic vs digital printing, and low MOQ custom mailer solutions.",
       date: "June 10, 2026",
