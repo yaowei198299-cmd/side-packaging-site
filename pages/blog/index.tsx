@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Double-Sided Printed Mailer Boxes: Engineering the Ultimate Unboxing Experience",
+      excerpt: "Discover how double-sided printed mailer boxes drive customer retention. Learn about E-flute corrugated strength, flexographic vs digital printing, and low MOQ custom mailer solutions.",
+      date: "June 10, 2026",
+      slug: "double-sided-printed-mailer-boxes-unboxing-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "The Science of Custom Jewelry Box Inserts: Foam, Velvet, EVA, & Cardboard Compared",
+      excerpt: "A technical guide to custom jewelry box inserts. Compare velvet, high-density EVA foam, PU leather, and eco-friendly cardboard to protect and present high-end jewelry.",
+      date: "June 10, 2026",
+      slug: "custom-jewelry-box-inserts-materials-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Sourcing Luxury Kraft Paper Shopping Bags: Premium Ribbon Handles & Zero Plastic Compliance",
+      excerpt: "Discover how to source luxury FSC-certified kraft paper shopping bags with premium ribbon handles. Learn about paper weight (gsm) resistance, eco-compliance, and low MOQ wholesale solutions.",
+      date: "June 10, 2026",
+      slug: "luxury-kraft-paper-bags-ribbon-handles-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "Rigidity vs. Weight: 1200gsm vs 1500gsm Board Optimization for 4x3x1.25\" Luxury Boxes",
       excerpt: "Discover how to optimize custom rigid box thickness. Compare 1200gsm and 1500gsm board weight & strength formulas to save 18% on B2B air shipping for 4x3x1.25 jewelry boxes.",
       date: "June 10, 2026",
