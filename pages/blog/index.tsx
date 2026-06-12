@@ -8,6 +8,20 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Maximum Unboxing Impact for Small-Size Luxury Boxes: 4x3x1.25\" Cost-Performance Guide",
+      excerpt: "Master the unboxing experience for 4x3x1.25 jewelry boxes. Learn how to balance luxury aesthetics with cost-effective materials like reinforced 1200gsm board and custom inserts.",
+      date: "June 11, 2026",
+      slug: "maximum-unboxing-impact-4x3x1-25-luxury-boxes",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Dieline & Blueprint Library: Free 4x3x1.25\" CAD Templates & Factory Optimization Analysis",
+      excerpt: "Access our factory dieline library. Download free custom packaging blueprints for 4x3x1.25 mailer boxes and rigid gift boxes in .AI and .PDF formats with direct factory cost analysis.",
+      date: "June 11, 2026",
+      slug: "free-dieline-blueprint-library-4x3x1-25-cad-templates",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
       title: "White Cardboard vs. Kraft Corrugated Mailer Boxes: Premium E-commerce Subscriptions",
       excerpt: "Compare premium white cardboard mailer boxes and natural kraft corrugated shipping boxes. Learn about ink coverage, custom double-sided printing, and shipping durability for 4x3x1.25 sizes.",
       date: "June 11, 2026",
