@@ -8,17 +8,24 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
-      title: "Maximum Unboxing Impact for Small-Size Luxury Boxes: 4x3x1.25\" Cost-Performance Guide",
-      excerpt: "Master the unboxing experience for 4x3x1.25 jewelry boxes. Learn how to balance luxury aesthetics with cost-effective materials like reinforced 1200gsm board and custom inserts.",
-      date: "June 11, 2026",
-      slug: "maximum-unboxing-impact-4x3x1-25-luxury-boxes",
+      title: "Plastic-Free Inserts: The Engineering of Custom Cardboard Trays for 4x3x1.25\" Luxury Boxes",
+      excerpt: "Discover how to replace plastic and foam with sustainable custom cardboard trays. Technical analysis of structural folding, shock protection, and 100% recyclability for 4x3x1.25 jewelry boxes.",
+      date: "June 12, 2026",
+      slug: "plastic-free-cardboard-tray-inserts-guide",
       image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
     },
     {
-      title: "Dieline & Blueprint Library: Free 4x3x1.25\" CAD Templates & Factory Optimization Analysis",
-      excerpt: "Access our factory dieline library. Download free custom packaging blueprints for 4x3x1.25 mailer boxes and rigid gift boxes in .AI and .PDF formats with direct factory cost analysis.",
-      date: "June 11, 2026",
-      slug: "free-dieline-blueprint-library-4x3x1-25-cad-templates",
+      title: "Aqueous Coating vs. PET Lamination: Sourcing Plastic-Free Luxury Finishes for 2026 Compliance",
+      excerpt: "Technical comparison of Aqueous (Water-based) coating and traditional PET plastic lamination. Learn how to achieve high-end matte/gloss finishes while ensuring 100% recyclability.",
+      date: "June 12, 2026",
+      slug: "aqueous-coating-vs-pet-lamination-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Reducing Labor Costs: Assembly Speed Analysis of Saide Collapsible Magnetic Boxes",
+      excerpt: "Discover how collapsible magnetic boxes reduce 3PL labor costs. A technical analysis of assembly time, adhesive performance, and warehouse efficiency for custom rigid boxes.",
+      date: "June 12, 2026",
+      slug: "collapsible-box-assembly-speed-labor-savings-analysis",
       image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
     },
     {
