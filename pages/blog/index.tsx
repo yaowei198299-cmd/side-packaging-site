@@ -8,6 +8,20 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Luxury Perfume Packaging: The Art of Engineering a High-End Fragrance Reveal",
+      excerpt: "Combining chemical safety, structural rigidity, and haptic luxury for the world's most demanding scents. Learn why 1500gsm is the standard for niche perfume boxes.",
+      date: "June 13, 2026",
+      slug: "luxury-perfume-packaging-design-material-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "ROI Analysis: Custom Cosmetic Packaging for Retail Visibility vs. E-commerce Durability",
+      excerpt: "Technical ROI analysis for cosmetic brands. Compare retail display efficiency vs. e-commerce shipping durability. Learn how to reduce transit damage to near 0%.",
+      date: "June 13, 2026",
+      slug: "cosmetic-packaging-retail-ecommerce-roi-analysis",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "Dieline & Blueprint Library: Free 4x3x1.25\" CAD Templates & Cost-Optimized Engineering",
       excerpt: "Access our factory dieline library. Download free custom packaging blueprints for 4x3x1.25 mailer boxes and rigid gift boxes in .AI and .PDF formats with direct factory cost analysis.",
       date: "June 13, 2026",
