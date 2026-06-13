@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Dieline & Blueprint Library: Free 4x3x1.25\" CAD Templates & Cost-Optimized Engineering",
+      excerpt: "Access our factory dieline library. Download free custom packaging blueprints for 4x3x1.25 mailer boxes and rigid gift boxes in .AI and .PDF formats with direct factory cost analysis.",
+      date: "June 13, 2026",
+      slug: "free-4x3x1-25-dieline-blueprint-templates",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Spot UV vs. Scodix: Engineering High-End Sensory Contrast on Luxury Boxes",
+      excerpt: "Technical analysis of luxury box finishing. Compare traditional Spot UV and digital Scodix tactile effects. Learn how sensory contrast drives premium brand perception for 4x3x1.25 boxes.",
+      date: "June 13, 2026",
+      slug: "spot-uv-vs-scodix-sensory-contrast-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "The B2B Packaging Lead Time Audit: Why 12H Dieline Support Reduces GTM by 15 Days",
+      excerpt: "Discover how to optimize your supply chain lead times. Learn why immediate 12-hour technical dieline turnaround eliminates the communication bottlenecks that delay global product launches.",
+      date: "June 13, 2026",
+      slug: "b2b-packaging-lead-time-audit-gtm-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
       title: "Plastic-Free Inserts: The Engineering of Custom Cardboard Trays for 4x3x1.25\" Luxury Boxes",
       excerpt: "Discover how to replace plastic and foam with sustainable custom cardboard trays. Technical analysis of structural folding, shock protection, and 100% recyclability for 4x3x1.25 jewelry boxes.",
       date: "June 12, 2026",
