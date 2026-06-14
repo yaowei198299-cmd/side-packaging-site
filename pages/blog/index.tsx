@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Molded Pulp vs. Cardboard Inserts: Sourcing Sustainable 4x3x1.25\" Jewelry Box Interiors",
+      excerpt: "Technical comparison of molded pulp and custom cardboard inserts for 4x3x1.25 jewelry boxes. Learn about impact damping, plastic-free compliance, and B2B volume pricing.",
+      date: "June 14, 2026",
+      slug: "molded-pulp-vs-cardboard-jewelry-inserts-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Luxury Finish Durability: Velvet Soft-Touch vs. Anti-Scratch Matte Film",
+      excerpt: "Technical analysis of luxury box finish durability. Compare velvet soft-touch lamination with premium anti-scratch matte films for 4x3x1.25 jewelry and cosmetics boxes.",
+      date: "June 14, 2026",
+      slug: "soft-touch-vs-anti-scratch-finish-durability-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Logistics Audit: How Flat-Packing Magnetic Boxes Saves 80% on Warehousing Fees",
+      excerpt: "Technical ROI analysis of flat-pack vs. assembled rigid boxes. Learn how collapsible magnetic structures reduce 3PL warehousing fees by 80% for high-volume 4x3x1.25 jewelry box runs.",
+      date: "June 14, 2026",
+      slug: "flat-pack-vs-assembled-warehousing-roi-audit",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
       title: "Luxury Perfume Packaging: The Art of Engineering a High-End Fragrance Reveal",
       excerpt: "Combining chemical safety, structural rigidity, and haptic luxury for the world's most demanding scents. Learn why 1500gsm is the standard for niche perfume boxes.",
       date: "June 13, 2026",
