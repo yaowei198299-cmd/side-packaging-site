@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "FSC Certification & B2B Compliance: Sourcing Ethical Rigid Boxes for Global Retail Markets",
+      excerpt: "A B2B guide to FSC-certified packaging. Learn about chain-of-custody, UK/EU environmental compliance, and how sustainable sourcing for 4x3x1.25 boxes reduces import risk.",
+      date: "June 15, 2026",
+      slug: "fsc-certification-b2b-packaging-compliance-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "Precision Foam Engineering: Laser Cut vs. Die-Cut Inserts for Premium 4x3x1.25\" Boxes",
+      excerpt: "Master custom foam insert engineering. Compare high-density EVA foam, laser-cut precision, and traditional die-cutting for jewelry and watch boxes. Learn how to eliminate loose product movement.",
+      date: "June 15, 2026",
+      slug: "precision-foam-engineering-laser-vs-die-cut-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Engineering Zero-Defect Rigid Boxes: How to Prevent Corner Cracking and Box Bowing",
+      excerpt: "Technical analysis of rigid box corner integrity. Learn the structural formulas to prevent paper cracking and box bowing for 4x3x1.25 sizes. Master V-grooving vs. half-cutting for custom boxes.",
+      date: "June 15, 2026",
+      slug: "rigid-box-corner-durability-engineering-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
       title: "Molded Pulp vs. Cardboard Inserts: Sourcing Sustainable 4x3x1.25\" Jewelry Box Interiors",
       excerpt: "Technical comparison of molded pulp and custom cardboard inserts for 4x3x1.25 jewelry boxes. Learn about impact damping, plastic-free compliance, and B2B volume pricing.",
       date: "June 14, 2026",
