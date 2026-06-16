@@ -64,7 +64,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'jocelyn@saidepackaging.com, yaowei198299@gmail.com',
+    to: 'Jocylyn@saidepackaging.com, yaowei198299@gmail.com',
     subject: `🚀 New Inquiry from ${name} - ${company || 'No Company'}`,
     text: `
       Name: ${name}
