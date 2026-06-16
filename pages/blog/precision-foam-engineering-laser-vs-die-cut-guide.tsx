@@ -104,9 +104,16 @@ const FoamEngineeringGuide = () => {
               </p>
             </section>
 
-            <section className="py-16 border-t border-white/5 text-center">
-              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Request a Foam Engineering Audit</h2>
-              <p className="text-gray-500 text-sm font-medium mb-12 uppercase tracking-widest">Are your current inserts failing to hold your products securely? Send us your physical product dimensions. We will engineer a custom laser-cut EVA foam blueprint for your 4x3x1.25" boxes in 12 hours for free. Prototyping support starts from 100 units.</p>
+            <section className="py-24 border-t border-white/5 text-center bg-white/5 rounded-[3rem] px-12 my-20">
+              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-8 font-montserrat text-[#C9A84C]">Stop Your Product from Rattling</h2>
+              <p className="text-gray-300 text-lg font-medium mb-12 uppercase tracking-tight leading-relaxed max-w-2xl mx-auto">
+                "I've helped thousands of jewelry brands achieve the 'perfect snap' fit. If your inserts feel cheap or loose, let's re-engineer them together. No pressure, just professional advice."
+              </p>
+              <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="https://wa.me/8613699786538" className="bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl text-[10px]">Chat with Jocelyn</a>
+                <Link href="/about-founder" className="bg-transparent text-white border-2 border-white/30 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-[10px]">The 20-Year Story</Link>
+              </div>
+              <p className="text-gray-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-12">Or Request a Free CNC Laser-Cut Blueprint Below</p>
               <InquiryForm productTitle="Foam Engineering Technical Audit" />
             </section>
           </article>

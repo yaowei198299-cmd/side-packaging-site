@@ -107,9 +107,16 @@ const CornerDurabilityGuide = () => {
               </p>
             </section>
 
-            <section className="py-16 border-t border-white/5 text-center">
-              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Request a Structural Quality Audit</h2>
-              <p className="text-gray-500 text-sm font-medium mb-12 uppercase tracking-widest">Are your current boxes arriving with cracked corners or warped lids? Send us your defective samples. Our laboratory will conduct a grain-analysis and V-groove audit to provide a zero-defect blueprint in 12 hours for free. 100% Quality guarantee.</p>
+            <section className="py-24 border-t border-white/5 text-center bg-white/5 rounded-[3rem] px-12 my-20">
+              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-8 font-montserrat text-[#C9A84C]">Need an Expert Second Opinion?</h2>
+              <p className="text-gray-300 text-lg font-medium mb-12 uppercase tracking-tight leading-relaxed max-w-2xl mx-auto">
+                "Hi, I'm Jocelyn. After 20 years in the Shenzhen packaging industry, I've seen every mistake in the book. Don't let a $0.05 structural error ruin your $50,000 launch."
+              </p>
+              <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="https://wa.me/8613699786538" className="bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl text-[10px]">Direct WhatsApp Chat</a>
+                <Link href="/about-founder" className="bg-transparent text-white border-2 border-white/30 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-[10px]">Read My Story</Link>
+              </div>
+              <p className="text-gray-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-12">Or Submit Your Specs for a Free Structural Audit Below</p>
               <InquiryForm productTitle="Corner Integrity Technical Audit" />
             </section>
           </article>
