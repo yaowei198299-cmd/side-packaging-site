@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Soy-Based Ink & VOC Compliance: Sourcing Carbon-Neutral Luxury Printing",
+      excerpt: "Technical guide to soy-based ink printing for luxury packaging. Learn about VOC-free compliance, color fidelity on kraft, and how bio-degradable inks improve brand ethics.",
+      date: "June 16, 2026",
+      slug: "soy-based-ink-voc-compliance-luxury-printing-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Magnetic Closure Engineering: N35 vs. N52 Grade Neodymium for Luxury Boxes",
+      excerpt: "A technical analysis of magnetic closure strength for rigid gift boxes. Compare N35 and N52 grade neodymium magnets. Learn how to engineer the perfect 'Satisfying Click'.",
+      date: "June 16, 2026",
+      slug: "magnetic-closure-strength-engineering-n35-vs-n52",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "The Ganging Formula: How a 3mm Change in Box Size Saves 15% on Material Costs",
+      excerpt: "An objective analysis of press-sheet utilization, 'The 3mm Rule,' and the math behind industrial waste reduction for custom 4x3x1.25 jewelry boxes.",
+      date: "June 16, 2026",
+      slug: "paper-sheet-ganging-yield-optimization-formula",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "FSC Certification & B2B Compliance: Sourcing Ethical Rigid Boxes for Global Retail Markets",
       excerpt: "A B2B guide to FSC-certified packaging. Learn about chain-of-custody, UK/EU environmental compliance, and how sustainable sourcing for 4x3x1.25 boxes reduces import risk.",
       date: "June 15, 2026",
