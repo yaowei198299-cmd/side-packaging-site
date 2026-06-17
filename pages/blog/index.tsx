@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "E-Flute vs. F-Flute: Structural Engineering for Slim 4x3x1.25\" Mailer Boxes",
+      excerpt: "Optimizing for the 'Letterbox' threshold: How flute selection impacts shipping categories and crush resistance for small 4x3x1.25 e-commerce parcel boxes.",
+      date: "June 17, 2026",
+      slug: "e-flute-vs-f-flute-structural-engineering-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "LCL vs. FCL Shipping: The Mathematical Threshold for Custom Rigid Box ROI",
+      excerpt: "A B2B logistics guide for custom box importers. Calculate the ROI of Less-than-Container Load (LCL) vs. Full Container Load (FCL) for high-volume 4x3x1.25 box orders.",
+      date: "June 17, 2026",
+      slug: "lcl-vs-fcl-ocean-freight-packaging-roi-audit",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "The \"Golden Ratio\" of Unboxing: Why 4x3x1.25\" is the Global Standard for Luxury Accessories",
+      excerpt: "Explore the branding psychology behind the 4x3x1.25 inch jewelry box. Learn why this size profile maximizes tactile luxury and palm-feel unboxing impact.",
+      date: "June 17, 2026",
+      slug: "golden-ratio-4x3x1-25-luxury-unboxing-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
       title: "Soy-Based Ink & VOC Compliance: Sourcing Carbon-Neutral Luxury Printing",
       excerpt: "Technical guide to soy-based ink printing for luxury packaging. Learn about VOC-free compliance, color fidelity on kraft, and how bio-degradable inks improve brand ethics.",
       date: "June 16, 2026",
