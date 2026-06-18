@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Engineering Sensory Anchors: Calibrating Spot UV Micron-Depth for 4x3x1.25\" Luxury Boxes",
+      excerpt: "A technical analysis of Spot UV finishing. Learn how to calibrate micron-level gloss depth and registration for small 4x3x1.25 jewelry boxes to maximize tactile brand impact.",
+      date: "June 18, 2026",
+      slug: "engineering-spot-uv-sensory-anchors-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "E-commerce Fulfillment ROI: Why 4x3x1.25\" Mailers Outperform Envelopes for B2C Jewelry",
+      excerpt: "Technical ROI analysis for B2C fulfillment. Learn why custom 4x3x1.25 mailer boxes reduce product damage by 98% compared to bubble mailers.",
+      date: "June 18, 2026",
+      slug: "ecommerce-fulfillment-roi-mailer-vs-envelope",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The European Retail Shift: Sourcing 100% Plastic-Free Luxury Paper Bags with High-Tensile Handles",
+      excerpt: "Technical guide to plastic-free paper shopping bags for EU retail. Learn about high-tensile twisted paper handles and FSC-certified materials to avoid environmental taxes.",
+      date: "June 18, 2026",
+      slug: "european-retail-plastic-free-paper-bags-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "E-Flute vs. F-Flute: Structural Engineering for Slim 4x3x1.25\" Mailer Boxes",
       excerpt: "Optimizing for the 'Letterbox' threshold: How flute selection impacts shipping categories and crush resistance for small 4x3x1.25 e-commerce parcel boxes.",
       date: "June 17, 2026",

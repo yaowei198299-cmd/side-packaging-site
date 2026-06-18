@@ -1,0 +1,136 @@
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import InquiryForm from '../../components/InquiryForm';
+import WhatsAppButton from '../../components/WhatsAppButton';
+
+const SpotUVDepthGuide = () => {
+  return (
+    <div className="min-h-screen bg-[#0A0A0F] text-white font-sans selection:bg-[#C9A84C]/30 overflow-x-hidden">
+      <Head>
+        <title>Engineering Sensory Anchors: Calibrating Spot UV Micron-Depth for 4x3x1.25" Luxury Boxes | Saide Packaging</title>
+        <meta name="description" content="A technical analysis of Spot UV finishing. Learn how to calibrate micron-level gloss depth and registration for small 4x3x1.25 jewelry boxes to maximize tactile brand impact." />
+        <meta name="keywords" content="spot uv thickness micron, high gloss packaging finish, custom luxury jewelry box, 4x3x1.25 box design, packaging registration precision, spot uv manufacturer china" />
+        <link rel="canonical" href="https://saidepackaging.com/blog/engineering-spot-uv-sensory-anchors-guide" />
+      </Head>
+
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#0A0A0F]/40 backdrop-blur-2xl border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
+            <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
+          </div>
+          <Link href="/inquiry" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Get a Quote</Link>
+        </div>
+      </nav>
+
+      <main className="pt-48 pb-32">
+        <div className="max-w-4xl mx-auto px-6">
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+
+          <article className="space-y-16">
+            <header className="space-y-8">
+              <span className="text-[#C9A84C] text-xs font-black uppercase tracking-[0.5em] block">Surface Engineering</span>
+              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[1.0] italic font-montserrat">
+                Sensory Anchors: <br/>
+                <span className="text-white/40">Calibrating Spot UV Micron-Depth for 4x3x1.25" Luxury Boxes</span>
+              </h1>
+              <p className="text-xl text-gray-400 font-medium leading-relaxed uppercase tracking-tight">
+                An analysis of light refraction, surface tension, and registration accuracy for high-contrast B2B brand logos.
+              </p>
+              <div className="border-t border-white/10 pt-6 flex gap-12 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                <span>By: Andy (Founder)</span>
+                <span>Date: June 18, 2026</span>
+                <span>Read Time: 6 min</span>
+              </div>
+            </header>
+
+            <section className="space-y-8">
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Physics of the "Tactile Pop"</h2>
+              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
+                In compact luxury packaging like the **4x3x1.25" (10.2x7.6x3.2 cm)** jewelry box, the customer's visual distance is typically less than 30cm. At this range, "Registration Error"—the slight misalignment between the printed logo and the UV gloss—becomes glaringly obvious.
+              </p>
+              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
+                Achieving a zero-defect tactile anchor requires a technical understanding of UV resin viscosity and screen-mesh density.
+              </p>
+            </section>
+
+            <section className="space-y-8">
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Technical Matrix: Standard vs. Premium Spot UV</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse border border-white/5 text-xs md:text-sm uppercase tracking-wider">
+                  <thead>
+                    <tr className="bg-white/5 border-b border-white/10 text-[#C9A84C] font-black">
+                      <th className="p-4 border-r border-white/5">Feature</th>
+                      <th className="p-4 border-r border-white/5">Standard Factory Grade</th>
+                      <th className="p-4">Saide Precision Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-gray-400 font-medium">
+                    <tr className="border-b border-white/5">
+                      <td className="p-4 border-r border-white/5 font-black text-white">Resin Thickness</td>
+                      <td className="p-4 border-r border-white/5">10 - 15 Microns</td>
+                      <td className="p-4">🟢 25 - 40 Microns (3D Pop)</td>
+                    </tr>
+                    <tr className="border-b border-white/5">
+                      <td className="p-4 border-r border-white/5 font-black text-white">Registration Tolerance</td>
+                      <td className="p-4 border-r border-white/5">± 0.5 mm</td>
+                      <td className="p-4">🟢 ± 0.1 mm (CCD Alignment)</td>
+                    </tr>
+                    <tr className="border-b border-white/5">
+                      <td className="p-4 border-r border-white/5 font-black text-white">Surface Gloss Unit (GU)</td>
+                      <td className="p-4 border-r border-white/5">~ 80 GU</td>
+                      <td className="p-4">🟢 &gt; 95 GU (Mirror Finish)</td>
+                    </tr>
+                    <tr>
+                      <td className="p-4 border-r border-white/5 font-black text-white">Adhesion Test</td>
+                      <td className="p-4 border-r border-white/5">Standard Tape Test</td>
+                      <td className="p-4">🟢 Cross-Hatch (No Flaking)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section className="space-y-8">
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The "Gloss Contrast" Formula</h2>
+              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
+                Luxury perception is a function of the **Gloss Delta** between the base material and the finish. 
+              </p>
+              <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed">
+                Visual Impact Score (S) = (Gloss_UV - Gloss_Base) / Box_Size
+                <br/><br/>
+                For a 4x3x1.25" box on Soft-Touch Matte:
+                <br/>
+                - Base Gloss: 5 GU
+                <br/>
+                - UV Gloss: 95 GU
+                <br/>
+                - 🟢 Delta: 90 GU (Maximum Human Eye Contrast)
+              </div>
+              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
+                At **Saide Packaging**, we utilize 120-mesh silk screens to lay a heavier resin bed, ensuring that on small 4x3x1.25" surfaces, the logo doesn't just look shiny—it creates a physical edge that users can feel, acting as a tactile "Sensory Anchor" for your brand.
+              </p>
+            </section>
+
+            <section className="py-16 border-t border-white/5 text-center">
+              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Request a High-Contrast Finish Audit</h2>
+              <p className="text-gray-400 text-sm font-medium mb-12 uppercase tracking-widest">Is your logo getting lost on your packaging? Send us your current design. We will conduct a surface tension audit and provide a digital 3D mockup showing the optimal Spot UV micron-depth for your 4x3x1.25" boxes. 12H Technical turnaround.</p>
+              <InquiryForm productTitle="Spot UV Technical Audit" />
+            </section>
+          </article>
+        </div>
+      </main>
+
+      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+      </footer>
+
+      <WhatsAppButton />
+    </div>
+  );
+};
+
+export default SpotUVDepthGuide;
