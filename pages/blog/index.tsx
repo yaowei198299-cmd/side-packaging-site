@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Fragrance Engineering: Designing Anti-Vibration Rigid Boxes for Glass Bottles",
+      excerpt: "An objective analysis of harmonic resonance, shock-absorption coefficients, and structural g-force limits for B2B fragrance logistics. Prevent leakage with custom EVA-locks.",
+      date: "June 19, 2026",
+      slug: "anti-vibration-fragrance-packaging-engineering-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "Eco-Adhesives: Sourcing Water-Based & Biodegradable Glues for 2026 Compliance",
+      excerpt: "Beyond the paper: How the choice of bonding chemistry dictates the 'Recyclability Rating' of your B2B packaging. Eliminate oxidative yellow-staining with water-based polymers.",
+      date: "June 19, 2026",
+      slug: "eco-friendly-adhesives-packaging-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Digital Foil vs. Hot Stamping: Optimizing Low MOQ Customization for Luxury Boutique Brands",
+      excerpt: "An analysis of plate-less economics, haptic depth, and the speed of rapid prototyping for B2B procurement. Achieve premium foil finishes from just 100 units.",
+      date: "June 19, 2026",
+      slug: "digital-foil-vs-hot-stamping-low-moq-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
       title: "Engineering Sensory Anchors: Calibrating Spot UV Micron-Depth for 4x3x1.25\" Luxury Boxes",
       excerpt: "A technical analysis of Spot UV finishing. Learn how to calibrate micron-level gloss depth and registration for small 4x3x1.25 jewelry boxes to maximize tactile brand impact.",
       date: "June 18, 2026",
