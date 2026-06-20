@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "The Physics of the \"Snug Fit\": Calibrating 0.1mm Tolerances for 4x3x1.25\" Premium Inserts",
+      excerpt: "An analysis of expansion coefficients, friction-lock geometry, and CAD-driven prototyping for high-end B2B jewelry brands. Achieve a perfect 0.1mm fit.",
+      date: "June 20, 2026",
+      slug: "physics-of-snug-fit-packaging-tolerances-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Ink-Trapping on Textured Paper: Achieving World-Class 0.1mm Detail for Embossed Boxes",
+      excerpt: "An engineering analysis of fiber-depth ink absorption, dot-gain compensation, and UV curing on uneven surfaces. Master the art of printing on linen paper.",
+      date: "June 20, 2026",
+      slug: "ink-trapping-textured-paper-luxury-printing-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Lead Time vs. Inventory Cost: How a 15-Day Production Cycle Recovers 12% in Annual Cash Flow",
+      excerpt: "An objective analysis of the 'Lead Time Multiplier' on safety stock, warehousing capital, and DTC brand scalability. Reduce warehouse fees by 40%.",
+      date: "June 20, 2026",
+      slug: "lead-time-inventory-cost-cash-flow-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
       title: "Fragrance Engineering: Designing Anti-Vibration Rigid Boxes for Glass Bottles",
       excerpt: "An objective analysis of harmonic resonance, shock-absorption coefficients, and structural g-force limits for B2B fragrance logistics. Prevent leakage with custom EVA-locks.",
       date: "June 19, 2026",
