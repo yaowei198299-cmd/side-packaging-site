@@ -157,45 +157,45 @@ const ProductsPage = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {cat.items.map((item, i) => (
-                  <div key={i} className="group flex flex-col bg-[#111111] border border-white/[0.05] hover:border-[#C9A84C]/30 transition-all rounded-[1rem] overflow-hidden shadow-2xl">
+                  <div key={i} className="group flex flex-col bg-[#111111] border border-white/[0.08] hover:border-[#C9A84C]/40 transition-all rounded-[1rem] overflow-hidden shadow-2xl h-full">
                     {/* Image Area */}
-                    <div className="aspect-[4/3] overflow-hidden relative bg-black">
+                    <div className="aspect-[4/3] overflow-hidden relative bg-[#0A0A0F]">
                       <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
 
                     {/* Content Area */}
                     <div className="p-8 flex-grow flex flex-col">
                       <div className="flex items-center gap-2 mb-6">
-                        <span className="text-[#C9A84C] text-[10px]">★</span>
-                        <span className="text-[#C9A84C] font-black text-[9px] uppercase tracking-widest font-montserrat">{item.badge}</span>
+                        <span className="text-[#C9A84C] text-[12px]">★</span>
+                        <span className="text-[#C9A84C] font-black text-[10px] uppercase tracking-[0.2em] font-montserrat">{item.badge}</span>
                       </div>
                       
-                      <h3 className="text-2xl font-black text-white uppercase mb-5 tracking-tight leading-[1.1] font-montserrat min-h-[3.3rem]">{item.title}</h3>
+                      <h3 className="text-xl md:text-2xl font-black text-white mb-4 tracking-tight leading-tight font-montserrat min-h-[3.5rem]">{item.title}</h3>
                       
-                      <p className="text-gray-500 text-[13px] font-medium leading-relaxed mb-10 line-clamp-4 uppercase tracking-tight">
+                      <p className="text-gray-400 text-[13px] font-medium leading-relaxed mb-10 line-clamp-4">
                         {item.desc}
                       </p>
 
                       {/* Technical Specs - Grid Layout from Screenshot */}
-                      <div className="grid grid-cols-3 gap-2 border-t border-white/5 pt-8 mt-auto mb-10">
-                        <div className="space-y-2">
-                          <p className="text-[9px] font-black text-gray-600 uppercase tracking-widest">MOQ</p>
-                          <p className="text-[12px] font-black text-white uppercase font-montserrat">{item.moq}</p>
+                      <div className="grid grid-cols-3 gap-0 border-t border-white/10 pt-8 mt-auto mb-10">
+                        <div className="space-y-2 pr-2">
+                          <p className="text-[9px] font-black text-gray-500 uppercase tracking-widest">MOQ</p>
+                          <p className="text-[12px] font-bold text-white font-montserrat">{item.moq}</p>
                         </div>
-                        <div className="space-y-2 border-x border-white/5 px-2">
-                          <p className="text-[9px] font-black text-gray-600 uppercase tracking-widest">Lead Time</p>
-                          <p className="text-[12px] font-black text-white uppercase font-montserrat">{item.leadTime}</p>
+                        <div className="space-y-2 border-x border-white/10 px-4">
+                          <p className="text-[9px] font-black text-gray-500 uppercase tracking-widest">LEAD TIME</p>
+                          <p className="text-[12px] font-bold text-white font-montserrat">{item.leadTime}</p>
                         </div>
-                        <div className="space-y-2 pl-2">
-                          <p className="text-[9px] font-black text-gray-600 uppercase tracking-widest">Finish</p>
-                          <p className="text-[12px] font-black text-white uppercase truncate font-montserrat" title={item.extra}>{item.extra}</p>
+                        <div className="space-y-2 pl-4">
+                          <p className="text-[9px] font-black text-gray-500 uppercase tracking-widest">FINISH</p>
+                          <p className="text-[12px] font-bold text-white truncate font-montserrat" title={item.extra}>{item.extra}</p>
                         </div>
                       </div>
 
                       {/* Action Button - Luxo Style Outlined */}
-                      <Link href={item.link} className="w-full border border-[#C9A84C]/30 hover:border-[#C9A84C] hover:bg-[#C9A84C] py-4 text-center rounded-xl transition-all group/btn flex items-center justify-center gap-3">
-                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#C9A84C] group-hover/btn:text-black transition-colors font-montserrat">
+                      <Link href={item.link} className="w-full border border-[#C9A84C]/40 hover:border-[#C9A84C] hover:bg-[#C9A84C] py-4 text-center rounded-xl transition-all group/btn flex items-center justify-center gap-3">
+                        <span className="text-[11px] font-black uppercase tracking-[0.25em] text-[#C9A84C] group-hover/btn:text-black transition-colors font-montserrat">
                           → Quote This Product
                         </span>
                       </Link>
