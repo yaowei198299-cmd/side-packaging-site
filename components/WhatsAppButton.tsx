@@ -4,13 +4,13 @@ const WhatsAppButton = () => {
   const url = `https://wa.me/message/WRDEFMR2ETUJH1`;
 
   return (
-    <div className="fixed bottom-12 right-12 z-[1000] flex items-center gap-6">
-      {/* WhatsApp Green Icon Button */}
+    <>
+      {/* WhatsApp Green Icon Button - FIXED BOTTOM LEFT */}
       <a 
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform group animate-bounce-slow"
+        className="fixed bottom-12 left-12 z-[1000] bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform group animate-bounce-slow"
         aria-label="Chat on WhatsApp"
       >
         <svg 
@@ -22,19 +22,19 @@ const WhatsAppButton = () => {
         </svg>
       </a>
 
-      {/* Gold "Get a Free Quote" Button */}
+      {/* Gold "Get a Free Quote" Button - FIXED BOTTOM RIGHT */}
       <a 
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#C9A84C] text-black px-10 py-5 rounded-full shadow-2xl hover:scale-105 hover:bg-white transition-all flex items-center gap-3 group whitespace-nowrap"
+        className="fixed bottom-12 right-12 z-[1000] bg-[#C9A84C] text-black px-10 py-5 rounded-full shadow-2xl hover:scale-105 hover:bg-white transition-all flex items-center gap-3 group whitespace-nowrap"
       >
         <span className="text-[11px] font-black uppercase tracking-[0.2em] italic font-montserrat">Get a Free Quote</span>
         <svg className="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
           <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 8.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" />
         </svg>
       </a>
-    </div>
+    </>
   );
 };
 
