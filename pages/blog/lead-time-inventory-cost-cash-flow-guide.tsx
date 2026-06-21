@@ -108,9 +108,16 @@ const InventoryCycleGuide = () => {
               </div>
             </section>
 
-            <section className="py-16 border-t border-white/5 text-center">
-              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Audit Your Supply Chain Cash Flow</h2>
-              <p className="text-gray-500 text-sm font-medium mb-12 uppercase tracking-widest">Is your current packaging supplier tying up too much of your working capital? Send us your annual inventory turn data. We will provide a free cash-flow recovery audit showing how our 15-day production cycle will improve your DTC margins. 12H Technical response.</p>
+            <section className="py-24 border-t border-white/5 text-center bg-white/5 rounded-[3rem] px-12 my-20">
+              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-8 font-montserrat text-[#C9A84C]">Stop Freezing Your Capital</h2>
+              <p className="text-gray-300 text-lg font-medium mb-12 uppercase tracking-tight leading-relaxed max-w-2xl mx-auto">
+                "I've helped brands recover over $50,000 in annual liquidity just by optimizing their safety stock through our 15-day production cycle. Let's audit your supply chain together."
+              </p>
+              <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="https://wa.me/8613699786538" className="bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl text-[10px]">WhatsApp Jocelyn</a>
+                <Link href="/about-founder" className="bg-transparent text-white border-2 border-white/30 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-[10px]">The Insider Story</Link>
+              </div>
+              <p className="text-gray-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-12">Or Get a Free Cash-Flow Recovery Audit Below</p>
               <InquiryForm productTitle="Supply Chain ROI Audit" />
             </section>
           </article>

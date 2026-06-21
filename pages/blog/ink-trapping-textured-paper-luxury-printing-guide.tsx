@@ -105,9 +105,16 @@ const TexturedInkGuide = () => {
               </div>
             </section>
 
-            <section className="py-16 border-t border-white/5 text-center">
-              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Request a Texture Print Audit</h2>
-              <p className="text-gray-500 text-sm font-medium mb-12 uppercase tracking-widest">Are your textured boxes looking "pixelated" or blurry? Send us your logo files. We will conduct a substrate fiber audit and provide a free digital test-run showing how our dot-gain compensation will improve your 4x3x1.25" box clarity by 30%. 12H Technical turnaround.</p>
+            <section className="py-24 border-t border-white/5 text-center bg-white/5 rounded-[3rem] px-12 my-20">
+              <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-8 font-montserrat text-[#C9A84C]">Logo Looking Blurry on Texture?</h2>
+              <p className="text-gray-300 text-lg font-medium mb-12 uppercase tracking-tight leading-relaxed max-w-2xl mx-auto">
+                "Specialty paper requires specialized prepress formulas. I personally calibrate our UV-LED dot-gain compensation to ensure your branding remains razor-sharp on every linen or embossed box."
+              </p>
+              <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="https://wa.me/8613699786538" className="bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl text-[10px]">Consult with Jocelyn</a>
+                <Link href="/about-founder" className="bg-transparent text-white border-2 border-white/30 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-[10px]">Read My Story</Link>
+              </div>
+              <p className="text-gray-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-12">Or Get a Free Substrate Fiber Audit Below</p>
               <InquiryForm productTitle="Textured Print Technical Audit" />
             </section>
           </article>
