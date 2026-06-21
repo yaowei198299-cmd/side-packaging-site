@@ -58,7 +58,7 @@ const SheetYieldGuide = () => {
             </section>
 
             <section className="space-y-8">
-              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Ganging Formula: $Y = \lfloor \frac{S_W}{D_W} \rfloor \times \lfloor \frac{S_H}{D_H} \rfloor$</h2>
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">{'The Ganging Formula: $Y = \\lfloor \\frac{S_W}{D_W} \\rfloor \\times \\lfloor \\frac{S_H}{D_H} \\rfloor$'}</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 At **Saide Packaging**, our engineers use a nesting algorithm to calculate the maximum yield ($Y$) of dielines ($D$) per master sheet ($S$). 
               </p>
