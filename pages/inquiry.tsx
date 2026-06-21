@@ -271,7 +271,7 @@ const InquiryPage = () => {
       </main>
 
       <footer className="bg-black py-20 border-t border-white/5 text-center">
-         <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white/20 italic">Side Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+         <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white/20 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />
@@ -280,4 +280,3 @@ const InquiryPage = () => {
 };
 
 export default InquiryPage;
-lt InquiryPage;
