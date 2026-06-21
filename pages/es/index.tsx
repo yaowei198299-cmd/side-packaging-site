@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
 import InquiryForm from '../../components/InquiryForm';
+import WhatsAppButton from '../../components/WhatsAppButton';
+import Footer from '../../components/Footer';
 
 const HomePage = () => {
   const featuredProducts = [
@@ -178,17 +180,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest opacity-50">
-            <a href="#" className=" transition-opacity">Política de Privacidad</a>
-            <a href="#" className=" transition-opacity">Términos de Servicio</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
-      <LeadMagnet lang="es" />
+      <WhatsAppButton />
     </div>
   );
 };

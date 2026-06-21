@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import WhatsAppButton from '../components/WhatsAppButton';
 import InquiryForm from '../components/InquiryForm';
+import Footer from '../components/Footer';
 
 const InquiryPage = () => {
   return (
@@ -83,10 +84,7 @@ const InquiryPage = () => {
         </div>
       </main>
 
-      <footer className="bg-black py-20 border-t border-white/5 text-center">
-         <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white/20 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
-      </footer>
-
+      <Footer />
       <WhatsAppButton />
     </div>
   );

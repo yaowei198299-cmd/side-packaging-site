@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../components/InquiryForm';
 import WhatsAppButton from '../components/WhatsAppButton';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   // 分组定义图片素材
@@ -205,15 +206,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <footer className="bg-[#0A0A0F] text-white py-16 border-t border-white/5 text-center">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
-          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
-            <Link href="/ar" className="text-[#C9A84C] ">Arabic / العربية</Link>
-            <Link href="/de" className="text-[#C9A84C] ">German / Deutsch</Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <WhatsAppButton />
     </div>

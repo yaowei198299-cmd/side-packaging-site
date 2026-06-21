@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const AboutFounder = () => {
   return (
@@ -94,17 +96,8 @@ const AboutFounder = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white py-16 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
-          <div className="flex flex-col gap-4">
-             <p className="text-xl font-black tracking-tighter uppercase italic">Saide Packaging</p>
-             <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">Factory Direct Custom Packaging Solutions.</p>
-          </div>
-          <div className="flex flex-col items-center md:items-end gap-4">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Saide Packaging HK Limited. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
