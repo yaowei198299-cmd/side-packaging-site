@@ -79,15 +79,13 @@ const HomePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-        <div className="absolute inset-0 z-0 flex justify-end">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-[#0A0A0F]">
+        <div className="absolute top-0 bottom-0 right-0 z-0 flex justify-end items-center w-full lg:w-[55%] h-full">
           <img 
             src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
-            alt="Luxury Packaging Poster" 
-            className="h-full w-full lg:w-[85%] object-cover object-right"
+            alt="Luxury Packaging Collage" 
+            className="h-auto w-full max-h-[85%] object-contain object-right pr-6 lg:pr-20 animate-in fade-in zoom-in-95 duration-1000"
           />
-          {/* 渐变遮罩：仅在左侧文字区域保留深度暗色，确保图片主体 100% 清晰 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0F] via-[#0A0A0F]/90 to-transparent lg:w-[45%]" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-left">

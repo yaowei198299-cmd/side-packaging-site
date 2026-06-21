@@ -59,15 +59,13 @@ const HomePageAr = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-        <div className="absolute inset-0 z-0 flex justify-start">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-[#0A0A0F]">
+        <div className="absolute top-0 bottom-0 left-0 z-0 flex justify-start items-center w-full lg:w-[55%] h-full">
           <img 
             src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
-            alt="Luxury Packaging Poster" 
-            className="h-full w-full lg:w-[85%] object-cover object-left"
+            alt="Luxury Packaging Collage" 
+            className="h-auto w-full max-h-[85%] object-contain object-left pl-6 lg:pl-20 animate-in fade-in zoom-in-95 duration-1000"
           />
-          {/* 渐变遮罩：RTL 模式从右向左 */}
-          <div className="absolute inset-0 bg-gradient-to-l from-black via-black/90 to-transparent lg:w-[45%]" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center text-right">
