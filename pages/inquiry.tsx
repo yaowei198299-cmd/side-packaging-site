@@ -48,7 +48,7 @@ const InquiryPage = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white font-sans selection:bg-[#C9A84C] overflow-x-hidden">
       <Head>
-        <title>Get a Quote | Luxury B2B Packaging Solutions | Side Packaging</title>
+        <title>Get a Quote | Luxury B2B Packaging Solutions | Saide Packaging</title>
         <meta name="description" content="Request a free technical quote and 3D mockup for your luxury jewelry and gift packaging. 24-hour response guaranteed." />
       </Head>
 
@@ -280,3 +280,4 @@ const InquiryPage = () => {
 };
 
 export default InquiryPage;
+lt InquiryPage;
