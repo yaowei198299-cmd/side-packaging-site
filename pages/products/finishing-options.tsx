@@ -74,10 +74,8 @@ const FinishingOptionsPage = () => {
         </div>
       </section>
 
-      <section className="py-40 bg-black border-t border-white/5 text-center">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl font-black uppercase tracking-tighter italic mb-12">Elevate Your Brand</h2>
-          <p className="text-xl text-gray-500 mb-20">Not sure which finish is best for your design? Our experts provide free technical consultations to ensure your vision is realized perfectly.</p>
+      <section className="py-24 bg-black border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6">
           <InquiryForm productTitle="Luxury Finishing Consultation" />
         </div>
       </section>

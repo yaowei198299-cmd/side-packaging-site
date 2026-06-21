@@ -79,9 +79,8 @@ const MagneticGiftBoxesPage = () => {
         </div>
       </section>
 
-      <section className="py-40 bg-black border-t border-white/5">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl font-black uppercase tracking-tighter italic mb-20 text-center">Inquire About Luxury Boxes</h2>
+      <section className="py-24 bg-black border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6">
           <InquiryForm productTitle="Custom Magnetic Gift Boxes" />
         </div>
       </section>

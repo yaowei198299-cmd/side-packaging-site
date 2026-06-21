@@ -104,14 +104,16 @@ const WhiteCardMailerPage = () => {
         </div>
       </section>
 
-      {/* Inquiry Form */}
-      <section id="quote" className="py-40 bg-black border-t border-white/5">
-        <InquiryForm productTitle="Custom White Card Mailer Box" />
+       {/* Inquiry Form */}
+      <section id="quote" className="py-24 bg-black border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6">
+          <InquiryForm productTitle="Custom White Card Mailer Box" />
+        </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Side Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+      <footer className="bg-black text-white py-16 border-t border-white/5 text-center">
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

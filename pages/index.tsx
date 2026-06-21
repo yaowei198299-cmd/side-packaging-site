@@ -199,11 +199,13 @@ const HomePage = () => {
       </section>
 
       {/* Inquiry Form Section */}
-      <section id="contact" className="py-40 bg-black border-t border-white/5">
-        <InquiryForm />
+      <section id="contact" className="py-24 bg-[#0A0A0F] border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6">
+          <InquiryForm />
+        </div>
       </section>
 
-      <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
+      <footer className="bg-[#0A0A0F] text-white py-16 border-t border-white/5 text-center">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
           <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] opacity-30">
