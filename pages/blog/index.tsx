@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Eliminating \"Magnet Bulge\": Engineering Invisible Closures for 4x3x1.25\" Luxury Boxes",
+      excerpt: "Technical guide to magnetic box manufacturing. Learn how to hide neodymium magnets without surface bulging. Master CNC counter-sinking for a 100% flat unboxing reveal.",
+      date: "June 21, 2026",
+      slug: "preventing-magnet-bulge-rigid-box-engineering",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Black-Core vs. Printed Black: Achieving 100% Pantone Precision for Luxury B2B Boxes",
+      excerpt: "Eliminating the 'White-Edge' defect in high-end cosmetics packaging through through-dyed fiber technology. Learn why black-core is the choice for 2026 luxury brands.",
+      date: "June 21, 2026",
+      slug: "black-core-card-vs-printed-black-comparison-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The \"Magic 8\" Master Carton: Palletizing 4x3x1.25\" Boxes for Zero CBM Waste",
+      excerpt: "An analysis of interlocking column-stacking, 'CBM-Void' elimination, and the math of global container density. Reduce your ocean freight fees by 15.2%.",
+      date: "June 21, 2026",
+      slug: "palletization-engineering-magic-8-configuration-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
       title: "The Physics of the \"Snug Fit\": Calibrating 0.1mm Tolerances for 4x3x1.25\" Premium Inserts",
       excerpt: "An analysis of expansion coefficients, friction-lock geometry, and CAD-driven prototyping for high-end B2B jewelry brands. Achieve a perfect 0.1mm fit.",
       date: "June 20, 2026",
