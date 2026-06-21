@@ -48,15 +48,37 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto bg-black p-8 md:p-16 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
-      {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[#C9A84C]/5 blur-[120px] -z-10" />
-      
-      <div className="mb-10">
-        <span className="text-[#C9A84C] font-black uppercase text-[8px] tracking-[0.5em] mb-4 block">B2B Manufacturing Intelligence</span>
-        <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter italic mb-4 leading-none">Request a Quote.</h2>
-        <p className="text-white/40 text-[10px] max-w-lg leading-relaxed tracking-wider font-medium uppercase">{currentCopy}</p>
+    <div className="w-full max-w-6xl mx-auto">
+      {/* LuxoPack Style Header Section */}
+      <div className="mb-12 text-center">
+        <span className="text-[#C9A84C] font-black uppercase text-[10px] tracking-[0.4em] mb-6 block">GET A FREE QUOTE</span>
+        
+        <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-tight mb-8">
+          🎁 Free Quote + 3D Mockup <br/>
+          <span className="text-[#C9A84C] italic">in 24 Hours</span>
+        </h2>
+        
+        <p className="text-white/40 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed font-medium mb-12">
+          No commitment. No spam. Our packaging consultant will contact you directly with a free design mockup and factory-direct price.
+        </p>
+
+        {/* Packaging Consultant Bar */}
+        <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-4 md:p-6 flex items-center justify-between max-w-3xl mx-auto mb-16">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-[#C9A84C] rounded-full flex items-center justify-center text-black font-black text-xl">J</div>
+            <div className="text-left">
+              <p className="text-white font-bold text-sm md:text-base">Hi, I'm Jocelyn — your packaging consultant 👋</p>
+              <p className="text-white/40 text-[10px] md:text-xs uppercase tracking-widest">Fill the form below and I'll personally respond with your free quote.</p>
+            </div>
+          </div>
+          <div className="hidden md:flex items-center gap-2">
+            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">Online • Avg. 2h reply</span>
+          </div>
+        </div>
       </div>
+
+      <div className="bg-black p-8 md:p-16 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-x-6 gap-y-4">
@@ -205,6 +227,7 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           </div>
         )}
       </form>
+    </div>
     </div>
   );
 };
