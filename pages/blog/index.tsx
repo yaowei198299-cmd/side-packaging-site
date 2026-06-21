@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "V-Groove vs. Half-Cut: Engineering the Sharpest 90-Degree Corners for Minimalist Luxury",
+      excerpt: "An analysis of board tension, corner geometry, and CNC precision for premium B2B jewelry packaging. Achieve razor-sharp edges with V-grooving.",
+      date: "June 21, 2026",
+      slug: "v-groove-vs-half-cut-rigid-box-engineering",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Achieving \"Rich Black\": Calibrating Soy-Based Inks for 100% Depth on Textured Cardstock",
+      excerpt: "An engineering analysis of CMYK saturation, 'Ink-Sink' prevention, and UV curing on high-fiber specialty papers for 4x3x1.25 boxes.",
+      date: "June 21, 2026",
+      slug: "achieving-rich-black-textured-card-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "The Supply Chain \"Sprint\": How 12H Dieline Support Reduces Prototyping Cycles by 70%",
+      excerpt: "Eliminating the 'Silent Week' of traditional sourcing through direct engineer-to-client technical feedback loops. Speed up your product launch.",
+      date: "June 21, 2026",
+      slug: "supply-chain-sprint-reduce-sampling-time-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
       title: "Eliminating \"Magnet Bulge\": Engineering Invisible Closures for 4x3x1.25\" Luxury Boxes",
       excerpt: "Technical guide to magnetic box manufacturing. Learn how to hide neodymium magnets without surface bulging. Master CNC counter-sinking for a 100% flat unboxing reveal.",
       date: "June 21, 2026",

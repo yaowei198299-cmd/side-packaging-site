@@ -11,14 +11,14 @@ const HomePage = () => {
   const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
 
   const categories = [
-    { title: "HAND BAGS", image: group1, x: "0%", link: "/products" },
-    { title: "PAPER BOXES", image: group1, x: "33.33%", link: "/products" },
-    { title: "LABEL STICKER", image: group1, x: "66.66%", link: "/products" },
-    { title: "TISSUE PAPER", image: group1, x: "100%", link: "/products" },
-    { title: "LUXURY BOXES", image: group2, x: "0%", link: "/products/magnetic-gift-boxes" },
-    { title: "DISPLAY BOXES", image: group2, x: "33.33%", link: "/products" },
-    { title: "SHIPPING BOXES", image: group2, x: "66.66%", link: "/products/custom-mailer-boxes" },
-    { title: "THANK YOU CARDS", image: group2, x: "100%", link: "/products" },
+    { title: "HAND BAGS", label: "Hand Bags", image: group1, x: "0%", link: "/products" },
+    { title: "PAPER BOXES", label: "Paper Boxes", image: group1, x: "33.33%", link: "/products" },
+    { title: "LABEL STICKER", label: "Label Sticker", image: group1, x: "66.66%", link: "/products" },
+    { title: "TISSUE PAPER", label: "Tissue Paper", image: group1, x: "100%", link: "/products" },
+    { title: "LUXURY BOXES", label: "Luxury Boxes", image: group2, x: "0%", link: "/products/magnetic-gift-boxes" },
+    { title: "DISPLAY BOXES", label: "Display Boxes", image: group2, x: "33.33%", link: "/products" },
+    { title: "SHIPPING BOXES", label: "Shipping Boxes", image: group2, x: "66.66%", link: "/products/custom-mailer-boxes" },
+    { title: "THANK YOU CARDS", label: "Thank You Cards", image: group2, x: "100%", link: "/products" },
   ];
 
   const faqs = [
@@ -159,21 +159,26 @@ const HomePage = () => {
              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">Engineered For Luxury.</h2>
           </header>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-20">
             {categories.map((cat, i) => (
-              <Link key={i} href="/products" className="group block text-center">
-                <div 
-                  className="aspect-square bg-[#1C1C28] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#C9A84C]/50 transition-all shadow-2xl"
-                  style={{
-                    backgroundImage: `url(${cat.image})`,
-                    backgroundSize: '400% 100%',
-                    backgroundPosition: `${cat.x} center`,
-                    backgroundRepeat: 'no-repeat'
-                  }}
-                />
-                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors">
-                  {cat.title}
-                </h3>
+              <Link key={i} href={cat.link} className="group block text-center">
+                <div className="aspect-square bg-white rounded-[2rem] overflow-hidden mb-6 flex items-center justify-center p-12 group-hover:scale-105 transition-all duration-500 shadow-2xl">
+                  <div 
+                    className="w-full h-full"
+                    style={{
+                      backgroundImage: `url(${cat.image})`,
+                      backgroundSize: '400% 100%',
+                      backgroundPosition: `${cat.x} center`,
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                </div>
+                <div className="space-y-1">
+                  <p className="text-white text-base font-medium">{cat.label}</p>
+                  <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors font-montserrat">
+                    {cat.title}
+                  </h3>
+                </div>
               </Link>
             ))}
           </div>

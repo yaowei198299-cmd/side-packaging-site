@@ -10,14 +10,14 @@ const HomePageFr = () => {
   const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
 
   const categories = [
-    { title: "SACS À MAIN", image: group1, x: "0%" },
-    { title: "BOÎTES EN PAPIER", image: group1, x: "33.33%" },
-    { title: "ÉTIQUETTES ADHÉSIVES", image: group1, x: "66.66%" },
-    { title: "PAPIER DE SOIE", image: group1, x: "100%" },
-    { title: "BOÎTES DE LUXE", image: group2, x: "0%" },
-    { title: "BOÎTES PRÉSENTOIRS", image: group2, x: "33.33%" },
-    { title: "BOÎTES D'EXPÉDITION", image: group2, x: "66.66%" },
-    { title: "CARTES DE REMERCIEMENT", image: group2, x: "100%" },
+    { title: "SACS À MAIN", label: "Sacs à main", image: group1, x: "0%" },
+    { title: "BOÎTES EN PAPIER", label: "Boîtes en papier", image: group1, x: "33.33%" },
+    { title: "ÉTIQUETTES ADHÉSIVES", label: "Étiquettes adhésives", image: group1, x: "66.66%" },
+    { title: "PAPIER DE SOIE", label: "Papier de soie", image: group1, x: "100%" },
+    { title: "BOÎTES DE LUXE", label: "Boîtes de luxe", image: group2, x: "0%" },
+    { title: "BOÎTES PRÉSENTOIRS", label: "Boîtes présentoirs", image: group2, x: "33.33%" },
+    { title: "BOÎTES D'EXPÉDITION", label: "Boîtes d'expédition", image: group2, x: "66.66%" },
+    { title: "CARTES DE REMERCIEMENT", label: "Cartes de remerciement", image: group2, x: "100%" },
   ];
 
   const faqs = [
@@ -123,21 +123,26 @@ const HomePageFr = () => {
              <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Conçu pour le Luxe.</h2>
           </header>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-20">
             {categories.map((cat, i) => (
               <Link key={i} href="/products" className="group block text-center">
-                <div 
-                  className="aspect-square bg-[#f3f3f3] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#C9A84C]/50 transition-all shadow-2xl"
-                  style={{
-                    backgroundImage: `url(${cat.image})`,
-                    backgroundSize: '400% 100%',
-                    backgroundPosition: `${cat.x} center`,
-                    backgroundRepeat: 'no-repeat'
-                  }}
-                />
-                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors font-montserrat">
-                  {cat.title}
-                </h3>
+                <div className="aspect-square bg-white rounded-[2.5rem] overflow-hidden mb-6 flex items-center justify-center p-8 group-hover:scale-105 transition-all duration-500 shadow-2xl">
+                  <div 
+                    className="w-full h-full"
+                    style={{
+                      backgroundImage: `url(${cat.image})`,
+                      backgroundSize: '400% 100%',
+                      backgroundPosition: `${cat.x} center`,
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-gray-400 text-sm font-medium">{cat.label}</p>
+                  <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors font-montserrat">
+                    {cat.title}
+                  </h3>
+                </div>
               </Link>
             ))}
           </div>

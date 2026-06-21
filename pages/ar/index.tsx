@@ -10,14 +10,14 @@ const HomePageAr = () => {
   const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
 
   const categories = [
-    { title: "حقائب اليد", image: group1, x: "0%" },
-    { title: "صناديق ورقية", image: group1, x: "33.33%" },
-    { title: "ملصقات العلامات", image: group1, x: "66.66%" },
-    { title: "مناديل ورقية", image: group1, x: "100%" },
-    { title: "صناديق فاخرة", image: group2, x: "0%" },
-    { title: "صناديق عرض", image: group2, x: "33.33%" },
-    { title: "صناديق شحن", image: group2, x: "66.66%" },
-    { title: "بطاقات شكر", image: group2, x: "100%" },
+    { title: "حقائب اليد", label: "حقائب اليد", image: group1, x: "0%", link: "/products" },
+    { title: "صناديق ورقية", label: "صناديق ورقية", image: group1, x: "33.33%", link: "/products" },
+    { title: "ملصقات العلامات", label: "ملصقات العلامات", image: group1, x: "66.66%", link: "/products" },
+    { title: "مناديل ورقية", label: "مناديل ورقية", image: group1, x: "100%", link: "/products" },
+    { title: "صناديق فاخرة", label: "صناديق فاخرة", image: group2, x: "0%", link: "/products/magnetic-gift-boxes" },
+    { title: "صناديق عرض", label: "صناديق عرض", image: group2, x: "33.33%", link: "/products" },
+    { title: "صناديق شحن", label: "صناديق شحن", image: group2, x: "66.66%", link: "/products/custom-mailer-boxes" },
+    { title: "بطاقات شكر", label: "بطاقات شكر", image: group2, x: "100%", link: "/products" },
   ];
 
   const faqs = [
@@ -49,13 +49,13 @@ const HomePageAr = () => {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/ar" className="text-xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
+          <Link href="/ar" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-reverse space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">الكتالوج</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">دراسات الحالة</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">المؤسسون</Link>
           </div>
-          <a href="#contact" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">احصل على سعر مجاني</a>
+          <a href="#contact" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">احصل على سعر مجاني</a>
         </div>
       </nav>
 
@@ -78,7 +78,7 @@ const HomePageAr = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic font-montserrat">
               تغليف هدايا <br/>
               <span className="text-white">فاخر مخصص</span> <br/>
               مباشر من المصنع <br/>
@@ -107,7 +107,7 @@ const HomePageAr = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-end">
-               <a href="/inquiry" className="inline-block bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+               <a href="/inquiry" className="inline-block bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)] font-montserrat">
                  احصل على أسعار المصنع (وفر 30-50%)
                </a>
             </div>
@@ -137,24 +137,29 @@ const HomePageAr = () => {
         <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20 text-center">
              <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">فئات المنتجات</span>
-             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">مصممة للفخامة.</h2>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">مصممة للفخامة.</h2>
           </header>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-20">
             {categories.map((cat, i) => (
-              <Link key={i} href="/products" className="group block text-center">
-                <div 
-                  className="aspect-square bg-[#1C1C28] rounded-[2rem] overflow-hidden mb-8 border border-white/5 group-hover:border-[#C9A84C]/50 transition-all shadow-2xl"
-                  style={{
-                    backgroundImage: `url(${cat.image})`,
-                    backgroundSize: '400% 100%',
-                    backgroundPosition: `${cat.x} center`,
-                    backgroundRepeat: 'no-repeat'
-                  }}
-                />
-                <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors">
-                  {cat.title}
-                </h3>
+              <Link key={i} href={cat.link} className="group block text-center">
+                <div className="aspect-square bg-white rounded-[2rem] overflow-hidden mb-6 flex items-center justify-center p-12 group-hover:scale-105 transition-all duration-500 shadow-2xl">
+                  <div 
+                    className="w-full h-full"
+                    style={{
+                      backgroundImage: `url(${cat.image})`,
+                      backgroundSize: '400% 100%',
+                      backgroundPosition: `${cat.x} center`,
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                </div>
+                <div className="space-y-1">
+                  <p className="text-white text-base font-medium">{cat.label}</p>
+                  <h3 className="text-xl md:text-2xl font-black italic uppercase tracking-tighter text-white group-hover:text-[#C9A84C] transition-colors font-montserrat">
+                    {cat.title}
+                  </h3>
+                </div>
               </Link>
             ))}
           </div>
@@ -166,13 +171,13 @@ const HomePageAr = () => {
         <div className="max-w-4xl mx-auto px-6">
           <header className="mb-20 text-center">
             <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">الأسئلة الشائعة للخبراء</span>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">ذكاء التغليف.</h2>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">ذكاء التغليف.</h2>
           </header>
 
           <div className="space-y-12">
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-white/5 pb-12 group text-right">
-                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#C9A84C] transition-colors">س: {faq.q}</h3>
+                <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#C9A84C] transition-colors font-montserrat">س: {faq.q}</h3>
                 <p className="text-gray-400 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
               </div>
             ))}
@@ -195,4 +200,3 @@ const HomePageAr = () => {
 };
 
 export default HomePageAr;
-
