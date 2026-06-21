@@ -141,57 +141,61 @@ const ProductsPage = () => {
         </div>
       </nav>
 
-      <main className="pt-40 pb-24 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-[1600px] mx-auto px-6">
+      <main className="pt-40 pb-24 bg-[#0A0A0F]">
+        <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-24">
-            <h1 className="text-5xl font-black uppercase tracking-tighter mb-4 italic">Bespoke Catalog</h1>
-            <p className="text-gray-500 font-medium">Technical specifications for professional B2B procurement.</p>
+            <span className="text-[#C9A84C] font-black uppercase text-[10px] tracking-[0.5em] mb-4 block">PREMIUM SOLUTIONS</span>
+            <h1 className="text-6xl font-black uppercase tracking-tighter mb-4 italic font-montserrat">Bespoke Catalog</h1>
+            <p className="text-gray-500 font-medium uppercase text-xs tracking-widest">Technical specifications for professional B2B procurement.</p>
           </header>
 
           {categories.map((cat, idx) => (
             <section key={idx} className="mb-32">
-              <div className="border-b border-white/10 pb-6 mb-12">
-                <h2 className="text-3xl font-black uppercase tracking-tighter text-white/40">{cat.name}</h2>
+              <div className="border-b border-white/5 pb-6 mb-12">
+                <h2 className="text-3xl font-black uppercase tracking-tighter text-white/20 italic font-montserrat">{cat.name}</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {cat.items.map((item, i) => (
-                  <div key={i} className="group flex flex-col bg-[#0f0f0f] border border-white/5 hover:border-white/10 transition-all rounded-sm">
+                  <div key={i} className="group flex flex-col bg-[#111111] border border-white/[0.05] hover:border-[#C9A84C]/30 transition-all rounded-[1rem] overflow-hidden shadow-2xl">
                     {/* Image Area */}
-                    <div className="aspect-[4/3] overflow-hidden relative">
-                      <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-all duration-700" />
+                    <div className="aspect-[4/3] overflow-hidden relative bg-black">
+                      <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
 
                     {/* Content Area */}
                     <div className="p-8 flex-grow flex flex-col">
-                      <div className="flex items-center gap-2 mb-4">
+                      <div className="flex items-center gap-2 mb-6">
                         <span className="text-[#C9A84C] text-[10px]">★</span>
-                        <span className="text-[#C9A84C] font-black text-[9px] uppercase tracking-widest">{item.badge}</span>
+                        <span className="text-[#C9A84C] font-black text-[9px] uppercase tracking-widest font-montserrat">{item.badge}</span>
                       </div>
-                      <h3 className="text-xl font-black text-white uppercase mb-4 tracking-tight leading-tight">{item.title}</h3>
-                      <p className="text-gray-500 text-xs font-medium leading-relaxed mb-8 line-clamp-3">
+                      
+                      <h3 className="text-2xl font-black text-white uppercase mb-5 tracking-tight leading-[1.1] font-montserrat min-h-[3.3rem]">{item.title}</h3>
+                      
+                      <p className="text-gray-500 text-[13px] font-medium leading-relaxed mb-10 line-clamp-4 uppercase tracking-tight">
                         {item.desc}
                       </p>
 
-                      {/* Technical Specs */}
-                      <div className="grid grid-cols-3 gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <div>
-                          <p className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">MOQ</p>
-                          <p className="text-[10px] font-bold text-gray-300">{item.moq}</p>
+                      {/* Technical Specs - Grid Layout from Screenshot */}
+                      <div className="grid grid-cols-3 gap-2 border-t border-white/5 pt-8 mt-auto mb-10">
+                        <div className="space-y-2">
+                          <p className="text-[9px] font-black text-gray-600 uppercase tracking-widest">MOQ</p>
+                          <p className="text-[12px] font-black text-white uppercase font-montserrat">{item.moq}</p>
                         </div>
-                        <div>
-                          <p className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Lead Time</p>
-                          <p className="text-[10px] font-bold text-gray-300">{item.leadTime}</p>
+                        <div className="space-y-2 border-x border-white/5 px-2">
+                          <p className="text-[9px] font-black text-gray-600 uppercase tracking-widest">Lead Time</p>
+                          <p className="text-[12px] font-black text-white uppercase font-montserrat">{item.leadTime}</p>
                         </div>
-                        <div>
-                          <p className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Interior/Material</p>
-                          <p className="text-[10px] font-bold text-gray-300">{item.extra}</p>
+                        <div className="space-y-2 pl-2">
+                          <p className="text-[9px] font-black text-gray-600 uppercase tracking-widest">Finish</p>
+                          <p className="text-[12px] font-black text-white uppercase truncate font-montserrat" title={item.extra}>{item.extra}</p>
                         </div>
                       </div>
 
-                      {/* Action */}
-                      <Link href={item.link} className="mt-8 border border-white/10 hover:border-[#C9A84C]/50 py-4 text-center rounded-full transition-all group/btn">
-                        <span className="text-[9px] font-black uppercase tracking-widest text-gray-400 group-hover/btn:text-white transition-colors">
+                      {/* Action Button - Luxo Style Outlined */}
+                      <Link href={item.link} className="w-full border border-[#C9A84C]/30 hover:border-[#C9A84C] hover:bg-[#C9A84C] py-4 text-center rounded-xl transition-all group/btn flex items-center justify-center gap-3">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#C9A84C] group-hover/btn:text-black transition-colors font-montserrat">
                           → Quote This Product
                         </span>
                       </Link>
