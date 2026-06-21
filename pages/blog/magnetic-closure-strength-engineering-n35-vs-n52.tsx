@@ -58,9 +58,9 @@ const MagneticStrengthGuide = () => {
             </section>
 
             <section className="space-y-8">
-              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">N-Grade Analysis: $BH_{max}$ vs. Functional Pull</h2>
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">{'N-Grade Analysis: $BH_{max}$ vs. Functional Pull'}</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                Magnet "Grades" (N35, N52) represent the **Maximum Energy Product ($BH_{max}$)** of the neodymium material. The higher the number, the more magnetic flux the magnet emits per cubic millimeter.
+                {'Magnet "Grades" (N35, N52) represent the **Maximum Energy Product ($BH_{max}$)** of the neodymium material. The higher the number, the more magnetic flux the magnet emits per cubic millimeter.'}
               </p>
               
               <div className="overflow-x-auto">

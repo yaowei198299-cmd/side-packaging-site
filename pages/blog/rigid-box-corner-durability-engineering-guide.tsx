@@ -58,7 +58,7 @@ const CornerDurabilityGuide = () => {
             </section>
 
             <section className="space-y-8">
-              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Grain Direction Rule: $D_S = \sqrt{'{L^2 + W^2}'}$</h2>
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">{'The Grain Direction Rule: $D_S = \\sqrt{L^2 + W^2}$'}</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 Greyboard fibers have a distinct "Grain Direction." If the box sides are cut against the grain, the material will naturally resist the 90-degree fold, leading to microscopic tears in the paper wrap (Corner Cracking). 
               </p>

@@ -58,9 +58,9 @@ const InventoryCycleGuide = () => {
             </section>
 
             <section className="space-y-8">
-              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Safety Stock Formula: $SS = Z \times \sigma_d \times \sqrt{'{L}'}$</h2>
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">{'Safety Stock Formula: $SS = Z \\times \\sigma_d \\times \\sqrt{L}$'}</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                In supply chain mathematics, the amount of Safety Stock ($SS$) required is directly proportional to the **Square Root of the Lead Time ($L$)**. 
+                {'In supply chain mathematics, the amount of Safety Stock ($SS$) required is directly proportional to the **Square Root of the Lead Time ($L$)**.'}
               </p>
 
               <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed">
