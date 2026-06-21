@@ -89,12 +89,12 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
             { id: 'phone', label: 'WhatsApp / Phone', placeholder: '+1 234 567 8900' },
           ].map((field) => (
             <div key={field.id} className="space-y-1.5">
-              <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">{field.label}</label>
+              <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">{field.label}</label>
               <input 
                 type={field.type || "text"} 
                 required={field.required}
                 placeholder={field.placeholder}
-                className="w-full px-5 py-3.5 bg-white/[0.02] border border-white/5 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/5"
+                className="w-full px-5 py-3.5 bg-[#111111] border border-white/20 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/20"
                 value={(formData as any)[field.id]}
                 onChange={(e) => setFormData({...formData, [field.id]: e.target.value})}
               />
@@ -103,10 +103,10 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
 
           {/* Dropdowns */}
           <div className="space-y-1.5">
-            <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Product Type *</label>
+            <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">Product Type *</label>
             <select 
               required
-              className="w-full px-5 py-3.5 bg-white/[0.02] border border-white/5 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-5 py-3.5 bg-[#111111] border border-white/20 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.productType}
               onChange={(e) => setFormData({...formData, productType: e.target.value})}
             >
@@ -120,10 +120,10 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           </div>
 
           <div className="space-y-1.5">
-            <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Estimated Quantity *</label>
+            <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">Estimated Quantity *</label>
             <select 
               required
-              className="w-full px-5 py-3.5 bg-white/[0.02] border border-white/5 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-5 py-3.5 bg-[#111111] border border-white/20 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.quantity}
               onChange={(e) => setFormData({...formData, quantity: e.target.value})}
             >
@@ -137,9 +137,9 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           </div>
 
           <div className="space-y-1.5">
-            <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Material & Finish</label>
+            <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">Material & Finish</label>
             <select 
-              className="w-full px-5 py-3.5 bg-white/[0.02] border border-white/5 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-5 py-3.5 bg-[#111111] border border-white/20 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.materialFinish}
               onChange={(e) => setFormData({...formData, materialFinish: e.target.value})}
             >
@@ -152,9 +152,9 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           </div>
 
           <div className="space-y-1.5">
-            <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Logo Placement</label>
+            <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">Logo Placement</label>
             <select 
-              className="w-full px-5 py-3.5 bg-white/[0.02] border border-white/5 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
+              className="w-full px-5 py-3.5 bg-[#111111] border border-white/20 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm appearance-none"
               value={formData.logoPlacement}
               onChange={(e) => setFormData({...formData, logoPlacement: e.target.value})}
             >
@@ -167,11 +167,11 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
           </div>
 
           <div className="space-y-1.5 md:col-span-2">
-            <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Internal Dimensions (L x W x H)</label>
+            <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">Internal Dimensions (L x W x H)</label>
             <input 
               type="text"
               placeholder="e.g. 4x3x1.25 in (10.2x7.6x3.2 cm)"
-              className="w-full px-5 py-3.5 bg-white/[0.02] border border-white/5 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/5"
+              className="w-full px-5 py-3.5 bg-[#111111] border border-white/20 text-white rounded-lg focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/20"
               value={formData.dimensions}
               onChange={(e) => setFormData({...formData, dimensions: e.target.value})}
             />
@@ -179,20 +179,20 @@ const InquiryForm = ({ productTitle, lang = 'en' }: { productTitle?: string; lan
         </div>
 
         <div className="space-y-1.5">
-          <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Tell Us More (Optional)</label>
+          <label className="block text-[9px] font-black text-white/50 uppercase tracking-[0.4em]">Tell Us More (Optional)</label>
           <textarea 
             rows={3}
             placeholder="Box size, color, special finish, intended use..."
-            className="w-full px-5 py-4 bg-white/[0.02] border border-white/5 text-white rounded-xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/5 resize-none"
+            className="w-full px-5 py-4 bg-[#111111] border border-white/20 text-white rounded-xl focus:border-[#C9A84C] outline-none transition-all font-medium text-sm placeholder:text-white/20 resize-none"
             value={formData.message}
             onChange={(e) => setFormData({...formData, message: e.target.value})}
           />
         </div>
 
         <div className="space-y-1.5">
-          <label className="block text-[8px] font-black text-white/20 uppercase tracking-[0.4em]">Upload Logo / Reference</label>
-          <div className="w-full px-5 py-6 bg-white/[0.01] border border-dashed border-white/10 text-center rounded-xl group hover:border-[#C9A84C]/50 transition-all cursor-pointer">
-              <p className="text-gray-600 font-bold uppercase text-[8px] tracking-widest group-hover:text-white transition-colors">
+          <label className="block text-[9px] font-black text-gray-500 uppercase tracking-[0.4em]">Upload Logo / Reference</label>
+          <div className="w-full px-5 py-6 bg-[#111111] border border-dashed border-white/20 text-center rounded-xl group hover:border-[#C9A84C]/50 transition-all cursor-pointer">
+              <p className="text-gray-500 font-bold uppercase text-[8px] tracking-widest group-hover:text-white transition-colors">
                 📎 Click to upload PNG, AI, PDF · Max 10MB
               </p>
           </div>
