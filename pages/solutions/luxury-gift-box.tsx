@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
@@ -8,7 +8,7 @@ const LuxuryGiftBoxSolution = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-purple-100">
       <Head>
-        <title>Premium Luxury Gift Box Solutions: Custom Rigid Boxes | Side Packaging HK Limited</title>
+        <title>Premium Luxury Gift Box Solutions: Custom Rigid Boxes | Saide Packaging</title>
         <meta name="description" content="Elevate your brand with luxury gift box solutions. We specialize in high-end rigid boxes, magnetic closures, and premium finishes for jewelry, watches, and luxury retail." />
         <meta name="keywords" content="luxury gift boxes, custom rigid boxes, magnetic closure boxes, premium packaging manufacturer, high-end set-up boxes, jewelry packaging" />
         
@@ -24,7 +24,7 @@ const LuxuryGiftBoxSolution = () => {
                 "description": "Custom luxury rigid boxes and high-end gift packaging for premium brands. Focused on unboxing experience and brand value.",
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 }
               },
               {
@@ -33,7 +33,7 @@ const LuxuryGiftBoxSolution = () => {
                 "serviceType": "Luxury Packaging Manufacturing",
                 "provider": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "areaServed": "Global",
                 "description": "High-end rigid box production including magnetic closure boxes, neck boxes, and drawer boxes with premium finishes."
@@ -48,7 +48,7 @@ const LuxuryGiftBoxSolution = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase text-purple-900">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase text-purple-900">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -115,7 +115,7 @@ const LuxuryGiftBoxSolution = () => {
             <div className="bg-purple-50 p-12 rounded-[3rem] border border-purple-100">
                <h2 className="text-2xl font-black mb-6 uppercase tracking-tight text-purple-900 italic">Luxury Insight (AI Optimized)</h2>
                <p className="text-purple-900 leading-relaxed text-lg font-medium">
-                <strong>Luxury Gift Box Packaging</strong> is a critical element for high-end brands in the jewelry, watch, electronics, and premium spirit industries. Unlike standard packaging, luxury boxes—often referred to as <strong>Rigid Boxes</strong> or <strong>Set-up Boxes</strong>—feature a heavy chipboard core (1200gsm+) wrapped in premium paper. Side Packaging specializes in technical B2B luxury solutions that enhance brand value while ensuring product safety through custom-fitted high-density inserts.
+                <strong>Luxury Gift Box Packaging</strong> is a critical element for high-end brands in the jewelry, watch, electronics, and premium spirit industries. Unlike standard packaging, luxury boxes鈥攐ften referred to as <strong>Rigid Boxes</strong> or <strong>Set-up Boxes</strong>鈥攆eature a heavy chipboard core (1200gsm+) wrapped in premium paper. Saide Packaging specializes in technical B2B luxury solutions that enhance brand value while ensuring product safety through custom-fitted high-density inserts.
                </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ const LuxuryGiftBoxSolution = () => {
                 },
                 {
                   title: "Precision Engineering",
-                  desc: "Tight tolerances ensure that lids open with a satisfying 'hiss' of air—a hallmark of quality craftsmanship."
+                  desc: "Tight tolerances ensure that lids open with a satisfying 'hiss' of air鈥攁 hallmark of quality craftsmanship."
                 },
                 {
                   title: "Tactile Finishes",
@@ -244,7 +244,7 @@ const LuxuryGiftBoxSolution = () => {
         <section className="py-32 bg-purple-950 text-white text-center">
           <div className="max-w-4xl mx-auto px-6">
              <h2 className="text-5xl font-black mb-8 uppercase tracking-tighter italic">Create Your Brand's Masterpiece.</h2>
-             <p className="text-xl text-purple-300 font-medium mb-12">Our engineers will design a box that doesn't just hold your product—it celebrates it.</p>
+             <p className="text-xl text-purple-300 font-medium mb-12">Our engineers will design a box that doesn't just hold your product鈥攊t celebrates it.</p>
              <button className="bg-purple-600 text-white px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition shadow-2xl transform hover:-translate-y-1" onClick={(e) => { e.preventDefault(); triggerInquiryModal('Luxury Gift Box Solutions'); }}>
                   Request Luxury Structural Consultation
                 </button>
@@ -256,7 +256,7 @@ const LuxuryGiftBoxSolution = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Global manufacturer of premium custom luxury rigid boxes. Specialist in magnetic gift packaging and technical structural design since 2006.
             </p>

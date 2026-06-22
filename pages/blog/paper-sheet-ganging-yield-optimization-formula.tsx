@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const SheetYieldGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -71,7 +71,7 @@ const SheetYieldGuide = () => {
                 <br/>
                 - Optimized Dieline (Trimmed 3mm): 182 x 152 mm
                 <br/>
-                - 🟢 New Sheet Yield: 28 units per sheet
+                - 馃煝 New Sheet Yield: 28 units per sheet
                 <br/><br/>
                 This 3mm structural adjustment increases yield by **16.6%**, which translates directly into a lower B2B wholesale unit price.
               </div>
@@ -98,9 +98,9 @@ const SheetYieldGuide = () => {
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide Optimized</td>
-                      <td className="p-4 border-r border-white/5">🟢 &gt; 92%</td>
-                      <td className="p-4 border-r border-white/5">🟢 &lt; 8%</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 Savings: $0.12 - $0.15/unit</td>
+                      <td className="p-4 border-r border-white/5">馃煝 &gt; 92%</td>
+                      <td className="p-4 border-r border-white/5">馃煝 &lt; 8%</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 Savings: $0.12 - $0.15/unit</td>
                     </tr>
                   </tbody>
                 </table>
@@ -127,7 +127,7 @@ const SheetYieldGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

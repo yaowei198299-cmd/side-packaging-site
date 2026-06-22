@@ -24,7 +24,7 @@ const HomePage = () => {
   const faqs = [
     {
       q: "What is your minimum order quantity (MOQ)?",
-      a: "Our standard MOQ starts at 500 units for luxury rigid boxes and magnetic gift boxes. For e-commerce mailer boxes, we can accommodate orders starting from 100 units to support growing brands."
+      a: "Our MOQ depends on the box type: - Rigid Boxes & Magnetic Gift Boxes: minimum 500 pcs - Corrugated Mailer Boxes: minimum 100 pcs Both options include free dieline support and a 3D mockup before production starts."
     },
     {
       q: "How can I reduce my packaging costs?",
@@ -109,7 +109,7 @@ const HomePage = () => {
             </p>
 
             <p className="text-sm font-black text-[#C9A84C] uppercase tracking-[0.2em] mb-10">
-              MOQ from 100 pcs • Free 3D Mockup • Global Shipping
+              Mailer Boxes from 100 pcs · Rigid & Magnetic Boxes from 500 pcs · Free 3D Mockup · Global Shipping
             </p>
 
             <div className="flex flex-wrap gap-3 mb-12">

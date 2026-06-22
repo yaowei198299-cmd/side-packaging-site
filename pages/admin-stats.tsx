@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { supabase } from '../lib/supabase';
 
@@ -58,7 +58,7 @@ const DashboardPage = () => {
             <p className="text-gray-500 font-medium">Real-time Digital Asset Growth Monitoring</p>
           </div>
           <div className="bg-white px-6 py-2 rounded-full shadow-sm border border-gray-100 text-sm font-bold text-blue-600">
-            ● SYSTEM ACTIVE: GEO AGENT RUNNING
+            鈼?SYSTEM ACTIVE: GEO AGENT RUNNING
           </div>
         </div>
 
@@ -130,7 +130,7 @@ const DashboardPage = () => {
 
            {!process.env.NEXT_PUBLIC_SUPABASE_URL ? (
              <div className="bg-orange-50 border border-orange-100 p-6 rounded-2xl text-orange-700 text-sm font-medium">
-                ⚠️ Database not connected. Please set <strong>NEXT_PUBLIC_SUPABASE_URL</strong> in Vercel.
+                鈿狅笍 Database not connected. Please set <strong>NEXT_PUBLIC_SUPABASE_URL</strong> in Vercel.
              </div>
            ) : inquiries.length === 0 ? (
              <div className="text-center py-20 text-gray-400 font-bold uppercase tracking-widest text-sm">
@@ -178,7 +178,7 @@ const DashboardPage = () => {
         </div>
 
         <footer className="mt-24 text-center text-gray-400 text-[10px] font-bold uppercase tracking-widest">
-          Private Monitoring Interface · Saide Packaging HK Limited · Internal Use Only
+          Private Monitoring Interface 路 Saide Packaging 路 Internal Use Only
         </footer>
       </div>
     </div>

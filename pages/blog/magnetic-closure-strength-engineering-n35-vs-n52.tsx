@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const MagneticStrengthGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -77,14 +77,14 @@ const MagneticStrengthGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">N35 Neodymium</td>
                       <td className="p-4 border-r border-white/5">33 - 36 MGOe</td>
-                      <td className="p-4 border-r border-white/5">🟢 Smooth / Controlled</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Smooth / Controlled</td>
                       <td className="p-4">Jewelry boxes, 1200gsm board</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">N52 Neodymium</td>
                       <td className="p-4 border-r border-white/5">48 - 51 MGOe</td>
                       <td className="p-4 border-r border-white/5">High / Snappy</td>
-                      <td className="p-4">🟢 Heavy perfume boxes, large electronics</td>
+                      <td className="p-4">馃煝 Heavy perfume boxes, large electronics</td>
                     </tr>
                   </tbody>
                 </table>
@@ -100,7 +100,7 @@ const MagneticStrengthGuide = () => {
                 {"F \u2248 (B\u00B2 \u00D7 A) / (2 \u00D7 \u03BC\u2080)"}
               </div>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                For a **4x3x1.25"** rigid box, we use 10mm x 1.5mm **N35** magnets. We embed them 0.2mm below the surface paper. This specific calibration ensures a pull force of **~400g**, which provides enough resistance to stay closed during transit, but allows for an effortless, one-handed opening—the hallmark of high-end boutique sourcing.
+                For a **4x3x1.25"** rigid box, we use 10mm x 1.5mm **N35** magnets. We embed them 0.2mm below the surface paper. This specific calibration ensures a pull force of **~400g**, which provides enough resistance to stay closed during transit, but allows for an effortless, one-handed opening鈥攖he hallmark of high-end boutique sourcing.
               </p>
             </section>
 
@@ -110,7 +110,7 @@ const MagneticStrengthGuide = () => {
                 Many low-cost factories use two magnets (lid + base). While this provides a strong snap, it often leads to "Magnet Misalignment" where the magnets repel or sit off-center, making the lid look crooked.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                At **Saide Packaging**, we utilize a single high-grade magnet in the lid and a larger **ferrous steel disk** in the base. This engineering choice allows for a ± 1.5mm margin of error in alignment while maintaining 100% of the suction force, ensuring your box always closes perfectly straight.
+                At **Saide Packaging**, we utilize a single high-grade magnet in the lid and a larger **ferrous steel disk** in the base. This engineering choice allows for a 卤 1.5mm margin of error in alignment while maintaining 100% of the suction force, ensuring your box always closes perfectly straight.
               </p>
             </section>
 
@@ -124,7 +124,7 @@ const MagneticStrengthGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

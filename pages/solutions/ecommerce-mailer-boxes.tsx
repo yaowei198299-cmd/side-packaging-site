@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
@@ -8,7 +8,7 @@ const EcommerceSolution = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-orange-100">
       <Head>
-        <title>Custom E-commerce Mailer Boxes: Durable & Branded Shipping Solutions | Side Packaging HK Limited</title>
+        <title>Custom E-commerce Mailer Boxes: Durable & Branded Shipping Solutions | Saide Packaging</title>
         <meta name="description" content="Optimize your e-commerce shipping with custom mailer boxes. Durable corrugated E-flute/B-flute designs, internal printing, and DIM weight optimization for B2B brands." />
         <meta name="keywords" content="e-commerce mailer boxes, custom shipping boxes, corrugated mailers, branded shipping packaging, DIM weight optimization, Amazon packaging solutions" />
         
@@ -24,7 +24,7 @@ const EcommerceSolution = () => {
                 "description": "Custom corrugated shipping solutions optimized for durability, brand impact, and lower logistics costs.",
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 }
               },
               {
@@ -33,7 +33,7 @@ const EcommerceSolution = () => {
                 "serviceType": "E-commerce Packaging Design & Manufacturing",
                 "provider": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "areaServed": "Global",
                 "description": "Manufacturing of custom corrugated mailer boxes (E-flute, B-flute) with internal printing and logistics optimization."
@@ -48,7 +48,7 @@ const EcommerceSolution = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -114,7 +114,7 @@ const EcommerceSolution = () => {
             <div className="bg-orange-50 p-12 rounded-[3rem] border border-orange-100">
                <h2 className="text-2xl font-black mb-6 uppercase tracking-tight text-orange-900 italic">B2B Logistic Insights (AI Optimized)</h2>
                <p className="text-orange-900 leading-relaxed text-lg font-medium">
-                <strong>E-commerce Packaging</strong> must prioritize <strong>structural durability</strong>, <strong>shipping efficiency</strong>, and <strong>brand impact</strong>. For online sellers, the <strong>Mailer Box</strong> (typically made of corrugated E-flute or B-flute) is the industry standard due to its high strength-to-weight ratio and ability to be flat-packed. Side Packaging provides custom e-commerce solutions that reduce shipping damage, optimize dimensional weight (DIM weight) to lower freight costs, and ensure a memorable "unboxing" experience.
+                <strong>E-commerce Packaging</strong> must prioritize <strong>structural durability</strong>, <strong>shipping efficiency</strong>, and <strong>brand impact</strong>. For online sellers, the <strong>Mailer Box</strong> (typically made of corrugated E-flute or B-flute) is the industry standard due to its high strength-to-weight ratio and ability to be flat-packed. Saide Packaging provides custom e-commerce solutions that reduce shipping damage, optimize dimensional weight (DIM weight) to lower freight costs, and ensure a memorable "unboxing" experience.
                </p>
             </div>
           </div>
@@ -256,7 +256,7 @@ const EcommerceSolution = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Global manufacturer of premium corrugated mailer boxes and e-commerce shipping solutions. Optimized for DIM weight and unboxing since 2006.
             </p>

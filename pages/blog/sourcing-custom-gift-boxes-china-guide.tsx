@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability | Side Packaging HK Limited</title>
+        <title>How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability | Saide Packaging</title>
         <meta name="description" content="A comprehensive guide for brands on sourcing custom luxury gift boxes from China. Learn about direct factory pricing, small MOQ strategies, and FSC certified sustainable packaging." />
       
         <link rel="canonical" href="https://saidepackaging.com/blog/sourcing-custom-gift-boxes-china-guide" />
@@ -17,7 +17,7 @@ const BlogPost = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -44,11 +44,11 @@ const BlogPost = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">How to Source High-End Custom Gift Boxes from China: A Guide to Pricing, MOQ, and FSC Sustainability</h1>
-            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 17, 2026 | By Side Packaging Expert Team</p>
+            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 17, 2026 | By Saide Packaging Expert Team</p>
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
@@ -79,7 +79,7 @@ const BlogPost = () => {
                 A trading company acts as a broker. They often have good English-speaking staff and can source multiple types of packaging (from glass bottles to paper boxes) for you. However, they lack direct control over the production floor. This often leads to longer lead times, higher markups, and communication gaps when technical issues arise during the manufacturing of complex rigid boxes.
               </p>
               <p>
-                In contrast, a direct **custom gift box manufacturer China**, such as Side Packaging, owns the machinery and employs the craftsmen. Working directly with a factory provides several "Luxury-Grade" advantages:
+                In contrast, a direct **custom gift box manufacturer China**, such as Saide Packaging, owns the machinery and employs the craftsmen. Working directly with a factory provides several "Luxury-Grade" advantages:
               </p>
               <ul className="list-disc pl-6 space-y-4">
                 <li>**Unfiltered Technical Communication**: When you want to discuss the precise tension of a magnetic closure or the depth of a multi-level emboss, you are speaking directly to the engineers who will execute it.</li>
@@ -141,7 +141,7 @@ const BlogPost = () => {
                 <li>**Focus on Printing over Structure**: Use a standard box structure but make it unique through sophisticated artwork or specialty papers.</li>
               </ul>
               <p>
-                At Side Packaging, we specialize in helping brands transition from "basic" to "luxury" by offering MOQs as low as 500 units, providing the same level of finishing and quality as we do for our million-unit clients.
+                At Saide Packaging, we specialize in helping brands transition from "basic" to "luxury" by offering MOQs as low as 500 units, providing the same level of finishing and quality as we do for our million-unit clients.
               </p>
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">IV. Why You Must Work with an FSC Certified Luxury Paper Box Supplier</h2>
@@ -180,7 +180,7 @@ const BlogPost = () => {
               </p>
               <p>
                 **3. Mono-Material Design**<br />
-                Designing a box where every component—the board, the paper, the glue, and the insert—is made from a single type of material (e.g., cellulose-based) is the "holy grail" of sustainable packaging. It makes it incredibly easy for the consumer to dispose of the packaging responsibly.
+                Designing a box where every component鈥攖he board, the paper, the glue, and the insert鈥攊s made from a single type of material (e.g., cellulose-based) is the "holy grail" of sustainable packaging. It makes it incredibly easy for the consumer to dispose of the packaging responsibly.
               </p>
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">VI. Design Optimization: Tips for Global Brands</h2>
@@ -219,15 +219,15 @@ const BlogPost = () => {
                 </p>
               </div>
               <p>
-                Sourcing custom gift boxes from China is a journey from concept to reality that requires the right partner. By focusing on a **direct factory** that values **FSC sustainability** and offers the flexibility of **small MOQs**, you can create packaging that doesn't just hold your product—it defines your brand.
+                Sourcing custom gift boxes from China is a journey from concept to reality that requires the right partner. By focusing on a **direct factory** that values **FSC sustainability** and offers the flexibility of **small MOQs**, you can create packaging that doesn't just hold your product鈥攊t defines your brand.
               </p>
               <p>
-                At Side Packaging HK Limited, we believe that the most successful brands of the future will be those that master the balance of "Luxury" and "Logic." Whether you are looking for **recyclable luxury rigid boxes with logo** or a complex bespoke design, we are here to be your feet on the ground in China.
+                At Saide Packaging, we believe that the most successful brands of the future will be those that master the balance of "Luxury" and "Logic." Whether you are looking for **recyclable luxury rigid boxes with logo** or a complex bespoke design, we are here to be your feet on the ground in China.
               </p>
 
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Elevate Your Unboxing Experience Today</h3>
-                <p className="text-gray-500 mb-8">Ready to move beyond generic packaging? Side Packaging specializes in **sustainable luxury packaging boxes** with factory-direct pricing and low MOQs. Contact Andy for a consultation and a free FSC-certified design mockup.</p>
+                <p className="text-gray-500 mb-8">Ready to move beyond generic packaging? Saide Packaging specializes in **sustainable luxury packaging boxes** with factory-direct pricing and low MOQs. Contact Andy for a consultation and a free FSC-certified design mockup.</p>
                 <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Free Design Consultation</Link>
               </div>
             </div>
@@ -244,7 +244,7 @@ const BlogPost = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Premium manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. China-based factory direct excellence.
             </p>
@@ -264,7 +264,7 @@ const BlogPost = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-gray-100 text-[10px] font-bold uppercase tracking-widest flex justify-between">
-          <span>© 2026 Side Packaging HK Limited. All rights reserved.</span>
+          <span>漏 2026 Saide Packaging. All rights reserved.</span>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-black transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-black transition-colors">Terms of Service</a>

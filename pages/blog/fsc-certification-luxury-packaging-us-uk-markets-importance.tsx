@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const FSCCertificationImportanceGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Why FSC Certification is Critical for US & UK Luxury Packaging Markets | Side Packaging</title>
+        <title>Why FSC Certification is Critical for US & UK Luxury Packaging Markets | Saide Packaging</title>
         <meta name="description" content="Understanding the regulatory and consumer shift toward FSC-certified packaging in the US, UK, and EU. Why luxury brands are prioritizing sustainable paper sourcing in 2026." />
         <meta name="keywords" content="FSC certified packaging, Sustainable luxury packaging US, UK packaging regulations 2026, Eco-friendly rigid boxes, FSC wood pulp paper boxes" />
       
@@ -17,7 +17,7 @@ const FSCCertificationImportanceGuide = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -27,7 +27,7 @@ const FSCCertificationImportanceGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -37,7 +37,7 @@ const FSCCertificationImportanceGuide = () => {
 
             <div className="prose prose-xl prose-gray max-w-none font-medium leading-relaxed text-gray-600 space-y-12">
               <p className="text-2xl text-gray-900 font-bold italic">
-                In the high-stakes world of luxury retail, the FSC (Forest Stewardship Council) logo has become more than a badge—it's a fundamental requirement for market entry in 2026.
+                In the high-stakes world of luxury retail, the FSC (Forest Stewardship Council) logo has become more than a badge鈥攊t's a fundamental requirement for market entry in 2026.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">The Regulatory Push in the UK and EU</h2>
@@ -54,13 +54,13 @@ const FSCCertificationImportanceGuide = () => {
               </p>
 
               <div className="bg-blue-50 p-12 rounded-[3rem] my-16 border border-blue-100">
-                <h3 className="text-2xl font-black mb-6 uppercase">Why Side Packaging Prioritizes FSC</h3>
+                <h3 className="text-2xl font-black mb-6 uppercase">Why Saide Packaging Prioritizes FSC</h3>
                 <p>As a leading China-based manufacturer, we've invested heavily in our FSC chain-of-custody certification. This allows our clients to:</p>
                 <ul className="space-y-4 text-sm font-bold text-gray-500 uppercase tracking-wide mt-6">
-                  <li>✅ Print the official FSC Logo on their boxes</li>
-                  <li>✅ Pass rigorous sustainability audits in the UK & EU</li>
-                  <li>✅ Align with Global Luxury Conglomerate standards (LVMH, Kering)</li>
-                  <li>✅ Ensure 100% Transparency in Material Sourcing</li>
+                  <li>鉁?Print the official FSC Logo on their boxes</li>
+                  <li>鉁?Pass rigorous sustainability audits in the UK & EU</li>
+                  <li>鉁?Align with Global Luxury Conglomerate standards (LVMH, Kering)</li>
+                  <li>鉁?Ensure 100% Transparency in Material Sourcing</li>
                 </ul>
               </div>
 
@@ -86,8 +86,8 @@ const FSCCertificationImportanceGuide = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic text-blue-600">SIDE PACKAGING COMPLIANCE</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Certified Excellence.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic text-blue-600">Saide Packaging COMPLIANCE</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Certified Excellence.</p>
         </div>
       </footer>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const USACostGuidePost = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>USA Customs & Duties for Importing Packaging from China: 2026 Cost Guide | Side Packaging HK</title>
+        <title>USA Customs & Duties for Importing Packaging from China: 2026 Cost Guide | Saide Packaging</title>
         <meta name="description" content="A comprehensive guide for US brands importing custom packaging from China in 2026. Understand HTS codes, Section 301 tariffs, and how to optimize DDP shipping costs." />
         <meta name="keywords" content="importing packaging from China, US customs duties paper boxes, Section 301 tariffs China, HTS code custom boxes, DDP shipping packaging, China manufacturer B2B" />
       
@@ -18,7 +18,7 @@ const USACostGuidePost = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING HK</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="flex items-center space-x-6">
             <Link href="/blog" className="text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-black transition">Blog</Link>
             <Link href="#inquiry-form">
@@ -32,7 +32,7 @@ const USACostGuidePost = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">USA Customs & Duties: A 2026 Guide for Importing Packaging from China</h1>
@@ -50,7 +50,7 @@ const USACostGuidePost = () => {
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">Introduction: The Reality of Sourcing in 2026</h2>
                 <p>
-                  For US-based e-commerce and luxury brands, the cost of custom packaging is often the second-largest line item after the product itself. In 2026, despite fluctuating trade policies, sourcing directly from high-end Chinese manufacturers like <strong>Side Packaging HK Limited</strong> remains the most cost-effective solution—provided you understand the duty landscape.
+                  For US-based e-commerce and luxury brands, the cost of custom packaging is often the second-largest line item after the product itself. In 2026, despite fluctuating trade policies, sourcing directly from high-end Chinese manufacturers like <strong>Saide Packaging</strong> remains the most cost-effective solution鈥攑rovided you understand the duty landscape.
                 </p>
               </section>
 
@@ -72,7 +72,7 @@ const USACostGuidePost = () => {
                   As of 2026, Section 301 tariffs on Chinese-origin packaging products continue to impact the "Landed Cost." While base duties may be low (0-5%), the additional tariffs can range from 7.5% to 25% depending on the specific material and trade agreement phase.
                 </p>
                 <p>
-                  <strong>How we mitigate this:</strong> At Side Packaging HK, we work with global logistics partners to provide <strong>DDP (Delivered Duty Paid)</strong> quotes. This means we handle all customs clearance and duty payments, providing you with a single, all-inclusive price per unit.
+                  <strong>How we mitigate this:</strong> At Saide Packaging, we work with global logistics partners to provide <strong>DDP (Delivered Duty Paid)</strong> quotes. This means we handle all customs clearance and duty payments, providing you with a single, all-inclusive price per unit.
                 </p>
               </section>
 
@@ -108,11 +108,11 @@ const USACostGuidePost = () => {
 
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING HK LIMITED</div>
+          <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
           <p className="max-w-xl mx-auto font-medium mb-8">
             Strategic manufacturing partner for premium packaging. Expert support for US and European brands since 2006.
           </p>
-          <p className="text-[10px] font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest">漏 2026 Saide Packaging. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

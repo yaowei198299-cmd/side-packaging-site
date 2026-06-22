@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../components/InquiryForm';
@@ -32,7 +32,7 @@ const GalleryPage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Project Gallery | Custom Box Styles & Case Studies | Saide Packaging HK Limited</title>
+        <title>Project Gallery | Custom Box Styles & Case Studies | Saide Packaging</title>
         <meta name="description" content="Browse our extensive gallery of custom packaging projects. Shop by box style: magnetic, rigid, mailer, folding, and more. B2B packaging inspiration." />
       </Head>
 
@@ -90,7 +90,7 @@ const GalleryPage = () => {
                    ))}
                 </div>
                 <a href={`https://wa.me/8613699786538?text=I'm interested in a project like: ${p.title}`} className="text-[10px] font-black uppercase tracking-widest text-white border-b border-white self-start pb-2 hover:text-gray-400 hover:border-gray-400 transition-all">
-                  Consult This Style <span>→</span>
+                  Consult This Style <span>鈫?/span>
                 </a>
               </div>
             ))}

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
@@ -8,7 +8,7 @@ const JewelryBoxBlog = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Jewelry Box Trends 2026: Luxury Customization & Small MOQ | Side Packaging HK Limited</title>
+        <title>Jewelry Box Trends 2026: Luxury Customization & Small MOQ | Saide Packaging</title>
         <meta name="description" content="Discover the top jewelry box trends for 2026. Learn how custom magnetic boxes and sustainable materials can elevate your jewelry brand." />
         <link rel="canonical" href="https://saidepackaging.com/blog/jewelry-box-trends-2026-customization" />
       </Head>
@@ -16,7 +16,7 @@ const JewelryBoxBlog = () => {
       {/* Navbar */}
       <nav className="border-b border-white/10 bg-black/95 backdrop-blur-md sticky top-0 z-[80]">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white hover:text-gray-300 transition-colors">Side Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white hover:text-gray-300 transition-colors">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/products" className="hover:text-white transition-colors">Bespoke Products</Link>
@@ -29,7 +29,7 @@ const JewelryBoxBlog = () => {
 
       <main className="py-24 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-500 font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Return to Insights</Link>
+          <Link href="/blog" className="text-blue-500 font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Return to Insights</Link>
           
           <article>
             <span className="text-blue-500 font-black text-[10px] uppercase tracking-[0.4em] mb-6 block">Industry Analysis 2026</span>
@@ -72,7 +72,7 @@ const JewelryBoxBlog = () => {
 
               <div className="bg-white/5 p-16 rounded-[3.5rem] border border-white/10 mt-24 backdrop-blur-sm">
                 <h3 className="text-2xl font-black mb-6 uppercase tracking-tight text-white italic">Elevate Your Jewelry Brand Today</h3>
-                <p className="text-gray-400 mb-10 text-lg">Side Packaging HK Limited provides factory-direct custom jewelry packaging. From velvet inserts to foil stamping, we help your brand shine.</p>
+                <p className="text-gray-400 mb-10 text-lg">Saide Packaging provides factory-direct custom jewelry packaging. From velvet inserts to foil stamping, we help your brand shine.</p>
                 <Link href="#contact" className="inline-block bg-white text-black px-12 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl">Request a Jewelry Box Quote</Link>
               </div>
             </div>
@@ -90,10 +90,10 @@ const JewelryBoxBlog = () => {
       <footer className="bg-black text-white py-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col items-center md:items-start gap-4">
-             <p className="text-xl font-black tracking-tighter uppercase italic">Side Packaging</p>
+             <p className="text-xl font-black tracking-tighter uppercase italic">Saide Packaging</p>
              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600 max-w-xs text-center md:text-left">Premium B2B Jewelry Packaging & Gift Box Solutions for Global Brands.</p>
           </div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

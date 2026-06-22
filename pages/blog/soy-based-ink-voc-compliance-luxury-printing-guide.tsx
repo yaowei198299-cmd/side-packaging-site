@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const SoyInkGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -71,22 +71,22 @@ const SoyInkGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Color Vibrancy</td>
-                      <td className="p-4 border-r border-white/5">🟢 High (Superior pigment suspension)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 High (Superior pigment suspension)</td>
                       <td className="p-4">Moderate</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">VOC Emissions</td>
-                      <td className="p-4 border-r border-white/5">🟢 &lt; 2% (Bio-neutral)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 &lt; 2% (Bio-neutral)</td>
                       <td className="p-4">25% - 40% (High pollutants)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Rub Resistance</td>
-                      <td className="p-4 border-r border-white/5">🟢 Excellent (Hard-curing)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Excellent (Hard-curing)</td>
                       <td className="p-4">Moderate (Subject to scuffing)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">De-inking Recyclability</td>
-                      <td className="p-4 border-r border-white/5">🟢 Very Easy (Plant-fibers)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Very Easy (Plant-fibers)</td>
                       <td className="p-4">Difficult (Chemical bonding)</td>
                     </tr>
                   </tbody>
@@ -114,7 +114,7 @@ const SoyInkGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

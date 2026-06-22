@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -22,7 +22,7 @@ const PizzaBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>{productData.title} | Premium Custom Pizza Box Manufacturer | Side Packaging HK</title>
+        <title>{productData.title} | Premium Custom Pizza Box Manufacturer | Saide Packaging</title>
         <meta name="description" content="Custom pizza boxes manufacturer in China. High-strength corrugated cardboard, oil-resistant coating, and FSC-certified materials for gourmet pizza delivery." />
         <meta name="keywords" content="custom pizza boxes China, pizza box manufacturer, corrugated pizza packaging, greaseproof pizza boxes, eco-friendly pizza boxes" />
       
@@ -42,7 +42,7 @@ const PizzaBoxesPage = () => {
                 "sku": "SIDE-PIZZA-001",
                 "brand": {
                   "@type": "Brand",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "material": "E-flute corrugated cardboard, Kraft paper, Greaseproof liner",
                 "additionalProperty": [
@@ -103,7 +103,7 @@ const PizzaBoxesPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -136,7 +136,7 @@ const PizzaBoxesPage = () => {
               Custom Food Paper Packaging & Sustainable Takeout Solutions
             </h1>
             <p className="text-xl text-gray-500 mb-8 leading-relaxed">
-              Step up your food brand's presentation with bespoke, food-grade packaging. Side Packaging HK provides safe, sustainable, and high-performance paper boxes for restaurants, bakeries, and gourmet producers worldwide.
+              Step up your food brand's presentation with bespoke, food-grade packaging. Saide Packaging provides safe, sustainable, and high-performance paper boxes for restaurants, bakeries, and gourmet producers worldwide.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-gray-600">Food Grade</span>
@@ -172,7 +172,7 @@ const PizzaBoxesPage = () => {
             
             <h3 className="text-2xl font-bold mb-6">Why Sustainable Food Packaging is Essential in 2026</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Today, food packaging isn't just about containment; it’s about safety, sustainability, and functionality. We explore the world of <strong>food-grade paper boxes</strong>, highlighting the importance of <strong>FSC certification</strong>, <strong>oil-resistance</strong>, and <strong>FDA-approved materials</strong> for the modern food industry.
+              Today, food packaging isn't just about containment; it鈥檚 about safety, sustainability, and functionality. We explore the world of <strong>food-grade paper boxes</strong>, highlighting the importance of <strong>FSC certification</strong>, <strong>oil-resistance</strong>, and <strong>FDA-approved materials</strong> for the modern food industry.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 my-12">
@@ -344,7 +344,7 @@ const PizzaBoxesPage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t py-12 px-6 mt-20 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <p>&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         <div className="mt-4 flex justify-center space-x-8">
           <span>BSCI Audited</span>
           <span>FSC Sustainability</span>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const SmallMOQRigidBoxesGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Small MOQ Luxury Rigid Boxes for Startups: A 2026 Growth Guide | Side Packaging</title>
+        <title>Small MOQ Luxury Rigid Boxes for Startups: A 2026 Growth Guide | Saide Packaging</title>
         <meta name="description" content="Why small MOQ luxury rigid boxes are the secret weapon for growing startups. Learn how to get premium packaging starting from 100 units without high inventory costs." />
         <meta name="keywords" content="Small MOQ luxury rigid boxes, packaging for startups, low minimum order quantity rigid boxes, custom gift boxes 100 units, startup packaging solutions 2026" />
       
@@ -18,7 +18,7 @@ const SmallMOQRigidBoxesGuide = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -29,7 +29,7 @@ const SmallMOQRigidBoxesGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -39,7 +39,7 @@ const SmallMOQRigidBoxesGuide = () => {
 
             <div className="prose prose-xl prose-gray max-w-none font-medium leading-relaxed text-gray-600 space-y-12">
               <p className="text-2xl text-gray-900 font-bold italic">
-                For emerging brands, the biggest barrier to premium presentation isn't design—it's the Minimum Order Quantity (MOQ). In 2026, agility is the ultimate competitive advantage.
+                For emerging brands, the biggest barrier to premium presentation isn't design鈥攊t's the Minimum Order Quantity (MOQ). In 2026, agility is the ultimate competitive advantage.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">The "MOQ Trap" for New Brands</h2>
@@ -47,7 +47,7 @@ const SmallMOQRigidBoxesGuide = () => {
                 Traditionally, luxury rigid boxes required orders of 1,000 or 2,000 units to justify machine setup costs. For a startup, this means tying up thousands of dollars in inventory that might sit in a warehouse for months.
               </p>
               <p>
-                At Side Packaging, we've revolutionized our production lines to support **Small MOQ Luxury Rigid Boxes**, starting as low as **100 units**. This allows startups to test product-market fit without the heavy financial burden.
+                At Saide Packaging, we've revolutionized our production lines to support **Small MOQ Luxury Rigid Boxes**, starting as low as **100 units**. This allows startups to test product-market fit without the heavy financial burden.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Why Startups Choose Small MOQ Solutions</h2>
@@ -80,7 +80,7 @@ const SmallMOQRigidBoxesGuide = () => {
                     <tr>
                       <th className="py-4">Feature</th>
                       <th className="py-4">Standard Factory</th>
-                      <th className="py-4 text-blue-600">Side Packaging Startup Plan</th>
+                      <th className="py-4 text-blue-600">Saide Packaging Startup Plan</th>
                     </tr>
                   </thead>
                   <tbody className="text-gray-500">
@@ -110,7 +110,7 @@ const SmallMOQRigidBoxesGuide = () => {
 
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl">
                 <h3 className="text-3xl font-black mb-8 uppercase italic">Scale Your Brand Today</h3>
-                <p className="text-gray-400 mb-12">Don't let high MOQs hold your vision back. Side Packaging specializes in bringing luxury to startups of all sizes.</p>
+                <p className="text-gray-400 mb-12">Don't let high MOQs hold your vision back. Saide Packaging specializes in bringing luxury to startups of all sizes.</p>
                 <Link href="#inquiry-form" className="inline-block bg-white text-black px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-200 transition">Request a 100-Unit Quote</Link>
               </div>
             </div>
@@ -125,8 +125,8 @@ const SmallMOQRigidBoxesGuide = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Empowering New Brands.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Empowering New Brands.</p>
         </div>
       </footer>
     </div>

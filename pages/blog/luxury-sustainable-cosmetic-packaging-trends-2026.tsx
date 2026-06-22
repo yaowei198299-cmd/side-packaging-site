@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const CosmeticPackagingTrends2026 = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Luxury Sustainable Cosmetic Packaging Trends 2026 | Side Packaging</title>
+        <title>Luxury Sustainable Cosmetic Packaging Trends 2026 | Saide Packaging</title>
         <meta name="description" content="Explore the intersection of luxury and sustainability in 2026 cosmetic packaging. Learn about recyclable rigid boxes, refillable glass, and plastic-free solutions." />
         <meta name="keywords" content="luxury cosmetic packaging 2026, sustainable beauty packaging, recyclable makeup boxes, plastic-free cosmetic jars, premium skincare packaging" />
         <script type="application/ld+json">
@@ -24,7 +24,7 @@ const CosmeticPackagingTrends2026 = () => {
             "datePublished": "2026-05-04",
             "publisher": {
               "@type": "Organization",
-              "name": "Side Packaging HK Limited",
+              "name": "Saide Packaging",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.saidepackaging.com/logo.png"
@@ -38,7 +38,7 @@ const CosmeticPackagingTrends2026 = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -49,7 +49,7 @@ const CosmeticPackagingTrends2026 = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -64,10 +64,10 @@ const CosmeticPackagingTrends2026 = () => {
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">The "Circular Beauty" Mandate</h2>
               <p>
-                Consumers in the US, EU, and UK markets are demanding more than just "eco-friendly" labels. They want proof of circularity. For secondary packaging—the rigid boxes that house serums and fragrances—this means a move away from multi-material constructions that are impossible to recycle.
+                Consumers in the US, EU, and UK markets are demanding more than just "eco-friendly" labels. They want proof of circularity. For secondary packaging鈥攖he rigid boxes that house serums and fragrances鈥攖his means a move away from multi-material constructions that are impossible to recycle.
               </p>
               <p>
-                At **Side Packaging**, we've developed a mono-material rigid board that offers the structural integrity of traditional boxes but is 100% recyclable in standard paper streams.
+                At **Saide Packaging**, we've developed a mono-material rigid board that offers the structural integrity of traditional boxes but is 100% recyclable in standard paper streams.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Top 3 Trends for 2026</h2>
@@ -114,8 +114,8 @@ const CosmeticPackagingTrends2026 = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Redefining Luxury for the Modern Era.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Redefining Luxury for the Modern Era.</p>
         </div>
       </footer>
     </div>

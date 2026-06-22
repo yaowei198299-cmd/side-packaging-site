@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -15,7 +15,7 @@ const WhiteCardMailerPage = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white">Side Packaging</Link>
+          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
@@ -39,7 +39,7 @@ const WhiteCardMailerPage = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="max-w-3xl">
             <div className="inline-block border border-[#d4af37]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
-              <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em]">Eco-Friendly · Premium White Card</span>
+              <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em]">Eco-Friendly 路 Premium White Card</span>
             </div>
             <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
               Premium White <br/>Card Mailer Box.
@@ -113,7 +113,7 @@ const WhiteCardMailerPage = () => {
 
       {/* Footer */}
       <footer className="bg-black text-white py-16 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

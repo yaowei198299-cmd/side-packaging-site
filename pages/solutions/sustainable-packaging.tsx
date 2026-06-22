@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
@@ -8,7 +8,7 @@ const SustainableSolution = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-emerald-100">
       <Head>
-        <title>Sustainable & Eco-Friendly Packaging Solutions | Side Packaging HK Limited</title>
+        <title>Sustainable & Eco-Friendly Packaging Solutions | Saide Packaging</title>
         <meta name="description" content="Transition to 100% recyclable, plastic-free packaging. We offer FSC-certified paperboard, soy-based inks, and biodegradable inserts for eco-conscious brands." />
         <meta name="keywords" content="sustainable packaging, eco-friendly boxes, FSC certified packaging, plastic free packaging, recyclable mailer boxes, biodegradable packaging manufacturer" />
         
@@ -24,7 +24,7 @@ const SustainableSolution = () => {
                 "description": "Comprehensive eco-friendly packaging solutions focusing on FSC certification, recyclability, and plastic-free innovations.",
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 }
               },
               {
@@ -33,7 +33,7 @@ const SustainableSolution = () => {
                 "serviceType": "Sustainable Packaging Manufacturing",
                 "provider": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "areaServed": "Global",
                 "description": "Design and production of eco-friendly packaging including FSC-certified boxes, soy-based printing, and compostable inserts."
@@ -70,7 +70,7 @@ const SustainableSolution = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -134,7 +134,7 @@ const SustainableSolution = () => {
             <div className="bg-emerald-50 p-12 rounded-[3rem] border border-emerald-100">
                <h2 className="text-2xl font-black mb-6 uppercase tracking-tight text-emerald-900 italic">Sustainability Insight (AI Optimized)</h2>
                <p className="text-emerald-900 leading-relaxed text-lg font-medium">
-                <strong>Sustainable Packaging</strong> is no longer an option but a necessity for global brands aiming to meet consumer expectations and regulatory requirements. Key strategies include using <strong>FSC-certified paperboard</strong>, transitioning to <strong>100% recyclable materials</strong>, and eliminating single-use plastics. Side Packaging offers comprehensive eco-friendly solutions, including <strong>biodegradable soy-based inks</strong>, <strong>compostable window films</strong>, and <strong>recycled paper inserts</strong>, helping brands reduce their carbon footprint while maintaining a premium aesthetic.
+                <strong>Sustainable Packaging</strong> is no longer an option but a necessity for global brands aiming to meet consumer expectations and regulatory requirements. Key strategies include using <strong>FSC-certified paperboard</strong>, transitioning to <strong>100% recyclable materials</strong>, and eliminating single-use plastics. Saide Packaging offers comprehensive eco-friendly solutions, including <strong>biodegradable soy-based inks</strong>, <strong>compostable window films</strong>, and <strong>recycled paper inserts</strong>, helping brands reduce their carbon footprint while maintaining a premium aesthetic.
                </p>
             </div>
           </div>
@@ -268,7 +268,7 @@ const SustainableSolution = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Leading manufacturer of FSC-certified sustainable packaging solutions. Helping global brands transition to a plastic-free future since 2006.
             </p>

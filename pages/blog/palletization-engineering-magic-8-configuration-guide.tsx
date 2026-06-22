@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const PalletOptimizationGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -53,7 +53,7 @@ const PalletOptimizationGuide = () => {
                 In B2B ocean and air freight, you are charged by volume (Cubic Meters). If your master cartons are not engineered to perfectly fit the internal **4x3x1.25" (10.2x7.6x3.2 cm)** boxes, the cumulative air gaps between the boxes and the carton walls can increase your total shipping volume by up to **15%**.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                Across a production run of 20,000 units, this inefficiency can waste **3.5 CBM** of container space—costing you thousands of dollars in "Empty Air" freight.
+                Across a production run of 20,000 units, this inefficiency can waste **3.5 CBM** of container space鈥攃osting you thousands of dollars in "Empty Air" freight.
               </p>
             </section>
 
@@ -71,7 +71,7 @@ const PalletOptimizationGuide = () => {
                 <br/>
                 - Saide "Magic 8" Configuration: 56 boxes per layer
                 <br/><br/>
-                🟢 Result: By rotating every 8th box in the master carton layout, we increase the pallet density by **16.6%**, allowing you to ship more product in fewer pallets.
+                馃煝 Result: By rotating every 8th box in the master carton layout, we increase the pallet density by **16.6%**, allowing you to ship more product in fewer pallets.
               </div>
             </section>
 
@@ -96,9 +96,9 @@ const PalletOptimizationGuide = () => {
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide Interlocking</td>
-                      <td className="p-4 border-r border-white/5">🟢 High (Shared vertical ribs)</td>
-                      <td className="p-4 border-r border-white/5">🟢 0% (Flush with pallet)</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 15.2% Reduction in CBM</td>
+                      <td className="p-4 border-r border-white/5">馃煝 High (Shared vertical ribs)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 0% (Flush with pallet)</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 15.2% Reduction in CBM</td>
                     </tr>
                   </tbody>
                 </table>
@@ -122,7 +122,7 @@ const PalletOptimizationGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const TexturedInkGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -72,15 +72,15 @@ const TexturedInkGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Standard Offset (Oil-based)</td>
-                      <td className="p-4 border-r border-white/5">🔴 Low (Fiber bleed)</td>
+                      <td className="p-4 border-r border-white/5">馃敶 Low (Fiber bleed)</td>
                       <td className="p-4 border-r border-white/5">24+ Hours (Offline)</td>
                       <td className="p-4">Average</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide UV-LED Digital Print</td>
-                      <td className="p-4 border-r border-white/5">🟢 Extreme (Zero bleed)</td>
-                      <td className="p-4 border-r border-white/5">🟢 Instant (Inline cure)</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 High (Vivid on valleys)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Extreme (Zero bleed)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Instant (Inline cure)</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 High (Vivid on valleys)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -99,7 +99,7 @@ const TexturedInkGuide = () => {
                 <br/>
                 - Measured Fiber Bleed: +0.04 mm
                 <br/>
-                - 🟢 Saide Screen Output: 0.06 mm
+                - 馃煝 Saide Screen Output: 0.06 mm
                 <br/><br/>
                 By outputting the printing screens at a thinner width than the final design, we let the natural fiber-wicking "fill in" the gaps, resulting in a **perfect 0.10mm line** that looks like it was laser-etched onto the texture.
               </div>
@@ -122,7 +122,7 @@ const TexturedInkGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

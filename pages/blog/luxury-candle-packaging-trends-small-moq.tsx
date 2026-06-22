@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ const CandlePackagingBlog = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Luxury Candle Packaging Trends 2026: Small MOQ & Customization | Side Packaging HK Limited</title>
+        <title>Luxury Candle Packaging Trends 2026: Small MOQ & Customization | Saide Packaging</title>
         <meta name="description" content="Explore the latest trends in luxury candle packaging for 2026. Learn how small MOQ and custom designs can elevate your candle brand." />
       
         <link rel="canonical" href="https://saidepackaging.com/blog/luxury-candle-packaging-trends-small-moq" />
@@ -17,7 +17,7 @@ const CandlePackagingBlog = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -34,11 +34,11 @@ const CandlePackagingBlog = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">Luxury Candle Packaging Trends 2026: Small MOQ & Customization</h1>
-            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published May 6, 2026 | By Side Packaging Expert Team</p>
+            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published May 6, 2026 | By Saide Packaging Expert Team</p>
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
@@ -60,7 +60,7 @@ const CandlePackagingBlog = () => {
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">2. Small MOQ for Niche Collections</h2>
               <p>
-                Startups and niche candle brands often struggle with high minimum order quantities. At Side Packaging, we focus on **Small MOQ** (starting from 500 units) to allow brands to test seasonal scents without heavy inventory risk.
+                Startups and niche candle brands often struggle with high minimum order quantities. At Saide Packaging, we focus on **Small MOQ** (starting from 500 units) to allow brands to test seasonal scents without heavy inventory risk.
               </p>
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">3. Sustainable Luxury</h2>
@@ -70,7 +70,7 @@ const CandlePackagingBlog = () => {
 
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Launch Your Candle Line with Premium Packaging</h3>
-                <p className="text-gray-500 mb-8">Side Packaging HK Limited provides expert design and manufacturing for luxury candle boxes. Contact us today for a free quote on small MOQ orders.</p>
+                <p className="text-gray-500 mb-8">Saide Packaging provides expert design and manufacturing for luxury candle boxes. Contact us today for a free quote on small MOQ orders.</p>
                 <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Get a Custom Candle Box Quote</Link>
               </div>
             </div>
@@ -90,7 +90,7 @@ const CandlePackagingBlog = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Leading manufacturer of custom luxury rigid boxes and sustainable packaging solutions.
             </p>

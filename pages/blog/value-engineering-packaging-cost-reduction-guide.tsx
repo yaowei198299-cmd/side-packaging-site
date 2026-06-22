@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ const CostReductionGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>How to Reduce Packaging Costs: A Value Engineering Guide | Side Packaging HK Limited</title>
+        <title>How to Reduce Packaging Costs: A Value Engineering Guide | Saide Packaging</title>
         <meta name="description" content="Learn how to reduce packaging costs without sacrificing quality. Our guide covers structural optimization, material engineering, and logistics strategies for B2B brands." />
         <meta name="keywords" content="reduce packaging costs, value engineering packaging, cost-effective packaging, collapsible magnetic boxes, packaging logistics optimization, China packaging manufacturer" />
         
@@ -25,11 +25,11 @@ const CostReductionGuide = () => {
                 "description": "Discover how brands can save up to 30-50% on packaging and freight expenses through structural optimization, material selection, and logistics planning.",
                 "author": {
                   "@type": "Organization",
-                  "name": "Side Packaging Expert Team"
+                  "name": "Saide Packaging Expert Team"
                 },
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited",
+                  "name": "Saide Packaging",
                   "logo": {
                     "@type": "ImageObject",
                     "url": "https://saidepackaging.com/logo.png"
@@ -73,7 +73,7 @@ const CostReductionGuide = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -95,11 +95,11 @@ const CostReductionGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">How to Reduce Packaging Costs Without Sacrificing Quality: A Guide to Value Engineering</h1>
-            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 24, 2026 | By Side Packaging Expert Team</p>
+            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 24, 2026 | By Saide Packaging Expert Team</p>
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
@@ -227,7 +227,7 @@ const CostReductionGuide = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Premium manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. Factory direct since 2006.
             </p>

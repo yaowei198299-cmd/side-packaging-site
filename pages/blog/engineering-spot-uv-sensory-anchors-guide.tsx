@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const SpotUVDepthGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -50,7 +50,7 @@ const SpotUVDepthGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Physics of the "Tactile Pop"</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                In compact luxury packaging like the **4x3x1.25" (10.2x7.6x3.2 cm)** jewelry box, the customer's visual distance is typically less than 30cm. At this range, "Registration Error"—the slight misalignment between the printed logo and the UV gloss—becomes glaringly obvious.
+                In compact luxury packaging like the **4x3x1.25" (10.2x7.6x3.2 cm)** jewelry box, the customer's visual distance is typically less than 30cm. At this range, "Registration Error"鈥攖he slight misalignment between the printed logo and the UV gloss鈥攂ecomes glaringly obvious.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 Achieving a zero-defect tactile anchor requires a technical understanding of UV resin viscosity and screen-mesh density.
@@ -72,22 +72,22 @@ const SpotUVDepthGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Resin Thickness</td>
                       <td className="p-4 border-r border-white/5">10 - 15 Microns</td>
-                      <td className="p-4">🟢 25 - 40 Microns (3D Pop)</td>
+                      <td className="p-4">馃煝 25 - 40 Microns (3D Pop)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Registration Tolerance</td>
-                      <td className="p-4 border-r border-white/5">± 0.5 mm</td>
-                      <td className="p-4">🟢 ± 0.1 mm (CCD Alignment)</td>
+                      <td className="p-4 border-r border-white/5">卤 0.5 mm</td>
+                      <td className="p-4">馃煝 卤 0.1 mm (CCD Alignment)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Surface Gloss Unit (GU)</td>
                       <td className="p-4 border-r border-white/5">~ 80 GU</td>
-                      <td className="p-4">🟢 &gt; 95 GU (Mirror Finish)</td>
+                      <td className="p-4">馃煝 &gt; 95 GU (Mirror Finish)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Adhesion Test</td>
                       <td className="p-4 border-r border-white/5">Standard Tape Test</td>
-                      <td className="p-4">🟢 Cross-Hatch (No Flaking)</td>
+                      <td className="p-4">馃煝 Cross-Hatch (No Flaking)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -108,10 +108,10 @@ const SpotUVDepthGuide = () => {
                 <br/>
                 - UV Gloss: 95 GU
                 <br/>
-                - 🟢 Delta: 90 GU (Maximum Human Eye Contrast)
+                - 馃煝 Delta: 90 GU (Maximum Human Eye Contrast)
               </div>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                At **Saide Packaging**, we utilize 120-mesh silk screens to lay a heavier resin bed, ensuring that on small 4x3x1.25" surfaces, the logo doesn't just look shiny—it creates a physical edge that users can feel, acting as a tactile "Sensory Anchor" for your brand.
+                At **Saide Packaging**, we utilize 120-mesh silk screens to lay a heavier resin bed, ensuring that on small 4x3x1.25" surfaces, the logo doesn't just look shiny鈥攊t creates a physical edge that users can feel, acting as a tactile "Sensory Anchor" for your brand.
               </p>
             </section>
 
@@ -125,7 +125,7 @@ const SpotUVDepthGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const CardboardTrayGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -71,22 +71,22 @@ const CardboardTrayGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Recyclability</td>
-                      <td className="p-4 border-r border-white/5">🟢 100% (Curbside Recyclable)</td>
-                      <td className="p-4">🔴 0% (Landfill only)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 100% (Curbside Recyclable)</td>
+                      <td className="p-4">馃敶 0% (Landfill only)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Carbon Footprint</td>
-                      <td className="p-4 border-r border-white/5">🟢 Low (Paper-based)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Low (Paper-based)</td>
                       <td className="p-4">High (Petroleum-based)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Protection Level</td>
                       <td className="p-4 border-r border-white/5">High (Geometric friction fit)</td>
-                      <td className="p-4">🟢 Very High (Shock absorption)</td>
+                      <td className="p-4">馃煝 Very High (Shock absorption)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Brand Perception</td>
-                      <td className="p-4 border-r border-white/5">🟢 Sustainable / High-Tech</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Sustainable / High-Tech</td>
                       <td className="p-4">Traditional / Outdated</td>
                     </tr>
                   </tbody>
@@ -122,7 +122,7 @@ const CardboardTrayGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

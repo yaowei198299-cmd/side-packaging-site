@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const TotalLandedCostGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>How to Calculate Total Landed Cost for Packaging Imported from China | Side Packaging</title>
+        <title>How to Calculate Total Landed Cost for Packaging Imported from China | Saide Packaging</title>
         <meta name="description" content="A detailed guide for US, UK, and EU businesses on calculating the true cost of importing custom packaging from China, including tariffs, freight, and duties." />
         <meta name="keywords" content="calculate landed cost China packaging, import duties packaging boxes, shipping costs from China 2026, packaging tariffs US EU UK" />
         <script type="application/ld+json">
@@ -24,7 +24,7 @@ const TotalLandedCostGuide = () => {
             "datePublished": "2026-05-04",
             "publisher": {
               "@type": "Organization",
-              "name": "Side Packaging HK Limited",
+              "name": "Saide Packaging",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.saidepackaging.com/logo.png"
@@ -38,7 +38,7 @@ const TotalLandedCostGuide = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -49,7 +49,7 @@ const TotalLandedCostGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -103,7 +103,7 @@ const TotalLandedCostGuide = () => {
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">3. Handling "Hidden" Fees</h2>
               <p>
-                Don't forget the small stuff: Bank transfer fees (1-2%), customs brokerage fees (\$50-\$150 per shipment), and potential port congestion surcharges. At **Side Packaging**, we offer **DDP (Delivered Duty Paid)** quotes to many regions, which bundles all these costs into one transparent price.
+                Don't forget the small stuff: Bank transfer fees (1-2%), customs brokerage fees (\$50-\$150 per shipment), and potential port congestion surcharges. At **Saide Packaging**, we offer **DDP (Delivered Duty Paid)** quotes to many regions, which bundles all these costs into one transparent price.
               </p>
 
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl">
@@ -123,8 +123,8 @@ const TotalLandedCostGuide = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Global Logistics, Simplified.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Global Logistics, Simplified.</p>
         </div>
       </footer>
     </div>

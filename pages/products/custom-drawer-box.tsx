@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -6,14 +6,14 @@ const ProductDetail = () => {
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-blue-100">
       <Head>
-        <title>Custom Drawer Box | Sliding Rigid Packaging | Side Packaging</title>
+        <title>Custom Drawer Box | Sliding Rigid Packaging | Saide Packaging</title>
         <meta name="description" content="Elegant sliding drawer boxes with custom pull-out tabs. Durable rigid packaging for jewelry, cosmetics, and boutique items." />
       </Head>
 
       {/* Navbar */}
       <nav className="border-b border-gray-100 bg-white/95 backdrop-blur-md sticky top-0 z-[80]">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic">Side Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-500">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/products" className="text-black border-b-2 border-black pb-1">Products</Link>
@@ -77,7 +77,7 @@ const ProductDetail = () => {
 
       <footer className="bg-black text-white py-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Side Packaging HK Limited.</p>
+          <p className="text-[11px] font-bold uppercase tracking-widest opacity-50">&copy; 2026 Saide Packaging.</p>
         </div>
       </footer>
     </div>

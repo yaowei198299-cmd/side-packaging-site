@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const FinishingSensoryGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -74,13 +74,13 @@ const FinishingSensoryGuide = () => {
                       <td className="p-4 border-r border-white/5 font-black text-white">Traditional Spot UV</td>
                       <td className="p-4 border-r border-white/5">~ 15-20 Microns (Flat Gloss)</td>
                       <td className="p-4 border-r border-white/5">Moderate</td>
-                      <td className="p-4">🟢 High Volume (&gt; 2,000 units)</td>
+                      <td className="p-4">馃煝 High Volume (&gt; 2,000 units)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Scodix / Digital 3D</td>
-                      <td className="p-4 border-r border-white/5">🟢 up to 250 Microns (Embossed Feel)</td>
-                      <td className="p-4 border-r border-white/5">🟢 Extreme (Digital vector)</td>
-                      <td className="p-4">🟢 Low MOQ (100 - 1,000 units)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 up to 250 Microns (Embossed Feel)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Extreme (Digital vector)</td>
+                      <td className="p-4">馃煝 Low MOQ (100 - 1,000 units)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -90,7 +90,7 @@ const FinishingSensoryGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Why Scodix is the "Secret Weapon" for DTC Brands</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                Unlike Spot UV which requires physical screens and setup time, Scodix is a digital finishing process. For a **4x3x1.25"** cosmetics or watch box, Scodix allows for variable data finishing—meaning you can have different tactile patterns for different SKUs without paying for new screens.
+                Unlike Spot UV which requires physical screens and setup time, Scodix is a digital finishing process. For a **4x3x1.25"** cosmetics or watch box, Scodix allows for variable data finishing鈥攎eaning you can have different tactile patterns for different SKUs without paying for new screens.
               </p>
               <ul className="space-y-4 text-gray-400 font-medium text-sm md:text-base uppercase tracking-wider list-disc list-inside">
                 <li><strong className="text-white">Foil Over UV</strong>: We can apply metallic gold or silver foil directly on top of the 3D raised UV, creating a "Braille-like" jewelry logo that stands out.</li>
@@ -108,7 +108,7 @@ const FinishingSensoryGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

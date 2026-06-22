@@ -54,7 +54,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
         <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          © 2026 Saide Packaging HK Limited. All rights reserved.
+          © 2026 Saide Packaging. All rights reserved.
         </p>
         
         {/* Multi-language links */}

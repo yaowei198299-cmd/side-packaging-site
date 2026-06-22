@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const FoodPackagingCompliance2026 = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>US & EU Food Packaging Regulatory Compliance: 2026 Guide | Side Packaging</title>
+        <title>US & EU Food Packaging Regulatory Compliance: 2026 Guide | Saide Packaging</title>
         <meta name="description" content="A comprehensive update on food packaging safety regulations for 2026. Learn about FDA, EU 10/2011, and the global shift toward PFAS-free and plastic-free materials." />
         <meta name="keywords" content="food packaging compliance 2026, FDA food grade boxes, EU 10/2011 packaging standards, PFAS-free food containers, sustainable food packaging laws" />
         <script type="application/ld+json">
@@ -24,7 +24,7 @@ const FoodPackagingCompliance2026 = () => {
             "datePublished": "2026-04-27",
             "publisher": {
               "@type": "Organization",
-              "name": "Side Packaging HK Limited",
+              "name": "Saide Packaging",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.saidepackaging.com/logo.png"
@@ -38,7 +38,7 @@ const FoodPackagingCompliance2026 = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -49,7 +49,7 @@ const FoodPackagingCompliance2026 = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -67,7 +67,7 @@ const FoodPackagingCompliance2026 = () => {
                 One of the most significant shifts in 2026 is the near-universal ban on PFAS (per- and polyfluoroalkyl substances) in food contact materials. Used historically for grease resistance in paper boxes and wraps, PFAS are now strictly regulated under state laws in the US (like California's AB 1200) and the EU's REACH framework.
               </p>
               <p>
-                At **Side Packaging**, we utilize natural aqueous coatings and mechanical barriers to achieve superior grease and moisture resistance without compromising chemical safety.
+                At **Saide Packaging**, we utilize natural aqueous coatings and mechanical barriers to achieve superior grease and moisture resistance without compromising chemical safety.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">FDA vs. EU 10/2011: The Global Dual-Track</h2>
@@ -76,7 +76,7 @@ const FoodPackagingCompliance2026 = () => {
               </p>
               <ul className="space-y-6">
                 <li>
-                  <strong className="text-black uppercase">US FDA (Title 21 CFR):</strong> Focuses on the extraction limits of substances from packaging into food. Compliance requires meticulous material documentation (GRAS—Generally Recognized as Safe).
+                  <strong className="text-black uppercase">US FDA (Title 21 CFR):</strong> Focuses on the extraction limits of substances from packaging into food. Compliance requires meticulous material documentation (GRAS鈥擥enerally Recognized as Safe).
                 </li>
                 <li>
                   <strong className="text-black uppercase">EU Framework (EC No 1935/2004 & 10/2011):</strong> Often more stringent, requiring Declaration of Compliance (DoC) and migration testing for any material expected to come into contact with food.
@@ -123,7 +123,7 @@ const FoodPackagingCompliance2026 = () => {
                 </table>
               </div>
 
-              <h2 className="text-4xl font-black text-black tracking-tight uppercase">How Side Packaging Protects Your Brand</h2>
+              <h2 className="text-4xl font-black text-black tracking-tight uppercase">How Saide Packaging Protects Your Brand</h2>
               <p>
                 We don't just manufacture boxes; we provide a shield of compliance. Every food-grade paper box we produce comes with:
               </p>
@@ -150,8 +150,8 @@ const FoodPackagingCompliance2026 = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Safety First. Sustainability Always.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Safety First. Sustainability Always.</p>
         </div>
       </footer>
     </div>

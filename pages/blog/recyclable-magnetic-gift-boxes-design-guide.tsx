@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const RecyclablePost = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>How to Design 100% Recyclable Magnetic Gift Boxes: 2026 Guide | Side Packaging HK</title>
+        <title>How to Design 100% Recyclable Magnetic Gift Boxes: 2026 Guide | Saide Packaging</title>
         <meta name="description" content="A comprehensive B2B guide on designing sustainable, 100% recyclable magnetic gift boxes without compromising on luxury. Essential for 2026 cosmetics and luxury brands." />
         <meta name="keywords" content="recyclable magnetic gift box, sustainable luxury packaging, eco-friendly rigid boxes, packaging design 2026, FSC paper boxes, cosmetic branding" />
       
@@ -18,7 +18,7 @@ const RecyclablePost = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING HK</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -34,7 +34,7 @@ const RecyclablePost = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">How to Design 100% Recyclable Magnetic Gift Boxes: A 2026 Strategic Guide</h1>
@@ -52,10 +52,10 @@ const RecyclablePost = () => {
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">The Sustainability Paradox: Luxury vs. Recyclability</h2>
                 <p>
-                  For years, the luxury packaging industry faced a paradox: the more "premium" a box felt (weighted, laminated, glossed), the less recyclable it became. In 2026, the market demand has shifted. Consumers—especially in the Gen Z and Millennial demographics in the **USA and EU**—now equate "ethical responsibility" with "luxury." 
+                  For years, the luxury packaging industry faced a paradox: the more "premium" a box felt (weighted, laminated, glossed), the less recyclable it became. In 2026, the market demand has shifted. Consumers鈥攅specially in the Gen Z and Millennial demographics in the **USA and EU**鈥攏ow equate "ethical responsibility" with "luxury." 
                 </p>
                 <p>
-                  At <strong>Side Packaging HK Limited</strong>, we've spent the last 20 years perfecting the transition to "Eco-Luxury." This guide outlines how your brand can achieve a 100% recyclable magnetic rigid box without losing the premium "wow" factor.
+                  At <strong>Saide Packaging</strong>, we've spent the last 20 years perfecting the transition to "Eco-Luxury." This guide outlines how your brand can achieve a 100% recyclable magnetic rigid box without losing the premium "wow" factor.
                 </p>
               </section>
 
@@ -73,7 +73,7 @@ const RecyclablePost = () => {
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">2. The Magnet Dilemma: Hidden Engineering</h2>
                 <p>
-                  Traditional magnets are difficult to extract during the recycling process. To solve this, Side Packaging recommends two innovative approaches:
+                  Traditional magnets are difficult to extract during the recycling process. To solve this, Saide Packaging recommends two innovative approaches:
                 </p>
                 <ol className="list-decimal pl-6 space-y-4">
                   <li><strong>Mono-material Paper Latches:</strong> Using structural paper engineering to create a physical "click" closure, eliminating magnets entirely.</li>
@@ -89,7 +89,7 @@ const RecyclablePost = () => {
               </section>
 
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
-                <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Technical Design Support from Side Packaging HK</h3>
+                <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Technical Design Support from Saide Packaging</h3>
                 <p className="text-gray-500 mb-8">
                   Not sure how to make your luxury packaging sustainable? Our engineering team provides free consultation on material selection and structural design to ensure your brand meets the highest ESG standards.
                 </p>
@@ -108,11 +108,11 @@ const RecyclablePost = () => {
       {/* Footer */}
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING HK LIMITED</div>
+          <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
           <p className="max-w-xl mx-auto font-medium mb-8">
             Global leader in FSC-certified luxury packaging manufacturing. Precision engineering, ethical sourcing, factory direct.
           </p>
-          <p className="text-[10px] font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest">漏 2026 Saide Packaging. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

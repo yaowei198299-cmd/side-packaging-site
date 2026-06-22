@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -22,7 +22,7 @@ const CosmeticPackagingBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>Custom Cosmetic Packaging Boxes | Factory-Direct Luxury | Side Packaging HK</title>
+        <title>Custom Cosmetic Packaging Boxes | Factory-Direct Luxury | Saide Packaging</title>
         <meta name="description" content="High-end custom cosmetic packaging boxes for skincare, makeup, and perfume. Factory-direct luxury with low MOQ and premium finishes like soft-touch and foil stamping." />
         <meta name="keywords" content="Custom Cosmetic Packaging Boxes, Wholesale Cosmetic Boxes, Luxury Skincare Packaging, Perfume Box Manufacturers, Makeup Packaging Wholesale, High-End Cosmetic Box Finishing, Soft-Touch Lamination Boxes, Spot UV Printing for Cosmetics, Foil Stamped Beauty Packaging, Low MOQ Cosmetic Boxes, Factory-Direct Luxury Packaging, Customized Beauty Gift Boxes, Sustainable Cosmetic Packaging, Eco-friendly Beauty Boxes, Rigid Gift Box Manufacturer" />
       
@@ -32,7 +32,7 @@ const CosmeticPackagingBoxesPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -65,7 +65,7 @@ const CosmeticPackagingBoxesPage = () => {
               Custom Cosmetic Packaging China Manufacturer
             </h1>
             <p className="text-xl text-gray-500 mb-8 leading-relaxed">
-              Define your brand's luxury identity with bespoke cosmetic packaging. Side Packaging HK combines factory-direct efficiency with high-end craftsmanship to create the perfect box for your skincare and makeup collections.
+              Define your brand's luxury identity with bespoke cosmetic packaging. Saide Packaging combines factory-direct efficiency with high-end craftsmanship to create the perfect box for your skincare and makeup collections.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-gray-600">Luxury Grade</span>
@@ -96,7 +96,7 @@ const CosmeticPackagingBoxesPage = () => {
           <section className="mb-16">
             <h2 className="text-3xl font-black mb-6 uppercase tracking-tight">Executive Summary: Elevating the Beauty Experience</h2>
             <p className="text-gray-600 leading-relaxed">
-              In the beauty and personal care industry, packaging is far more than a protective shell; it is a primary communicator of brand value and product quality. As a premier <strong>custom cosmetic packaging boxes China manufacturer</strong>, Side Packaging HK understands the intricate balance between aesthetic appeal and structural functionality. Our factory specialises in creating high-end, bespoke packaging solutions for skincare, makeup, and fragrances that capture the essence of your brand's story.
+              In the beauty and personal care industry, packaging is far more than a protective shell; it is a primary communicator of brand value and product quality. As a premier <strong>custom cosmetic packaging boxes China manufacturer</strong>, Saide Packaging understands the intricate balance between aesthetic appeal and structural functionality. Our factory specialises in creating high-end, bespoke packaging solutions for skincare, makeup, and fragrances that capture the essence of your brand's story.
             </p>
             <p className="text-gray-600 leading-relaxed">
               By working <strong>factory direct</strong> with our team in China, brands gain access to advanced manufacturing techniques and luxury finishes that are often cost-prohibitive elsewhere. We are committed to environmental responsibility, offering <strong>FSC certified</strong> materials and sustainable coating options to align with the growing demand for eco-conscious beauty products. With our <strong>low MOQ</strong> capability, we empower both independent boutique brands and established luxury houses to innovate and launch new product lines with minimal risk and maximum impact.
@@ -173,7 +173,7 @@ const CosmeticPackagingBoxesPage = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="text-xl font-bold mb-4">Clean Beauty Rebrand</h3>
-                <p className="text-gray-600 mb-6 italic">"Side Packaging helped us achieve a premium feel using only sustainable materials. The FSC-certified paper and soy-based inks exceeded our sustainability criteria without compromising on luxury."</p>
+                <p className="text-gray-600 mb-6 italic">"Saide Packaging helped us achieve a premium feel using only sustainable materials. The FSC-certified paper and soy-based inks exceeded our sustainability criteria without compromising on luxury."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center font-bold text-pink-600">C</div>
                   <div>
@@ -266,7 +266,7 @@ const CosmeticPackagingBoxesPage = () => {
           
           <div className="bg-pink-50 text-gray-900 p-12 rounded-[40px] flex flex-col justify-center relative overflow-hidden">
             <blockquote className="text-2xl font-medium italic mb-6 relative z-10">
-              "The finish quality Side Packaging provides is on par with European manufacturers, but at a price point that allowed us to scale our boutique brand globally."
+              "The finish quality Saide Packaging provides is on par with European manufacturers, but at a price point that allowed us to scale our boutique brand globally."
             </blockquote>
             <div className="flex items-center space-x-4 relative z-10">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold">V</div>
@@ -319,7 +319,7 @@ const CosmeticPackagingBoxesPage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t py-12 px-6 mt-20 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <p>&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         <div className="mt-4 flex justify-center space-x-8">
           <span>BSCI Certified</span>
           <span>FSC Sustainability</span>

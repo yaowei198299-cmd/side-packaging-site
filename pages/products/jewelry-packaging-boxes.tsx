@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -22,7 +22,7 @@ const JewelryPackagingBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>Luxury Jewelry & Watch Boxes | Factory-Direct Bespoke Packaging | Side Packaging HK</title>
+        <title>Luxury Jewelry & Watch Boxes | Factory-Direct Bespoke Packaging | Saide Packaging</title>
         <meta name="description" content="Premium custom jewelry and watch boxes manufacturer. Factory-direct rigid boxes with velvet inserts, gold foil stamping, and luxury unboxing experience. Low MOQ." />
         <meta name="keywords" content="Luxury Jewelry Boxes, Custom Watch Boxes, Wholesale Jewelry Boxes, Rigid Jewelry Packaging, Velvet Jewelry Inserts, Gold Foil Stamping, B2B Packaging Manufacturer, Bespoke Jewelry Boxes, Factory-Direct Jewelry Packaging, Luxury Unboxing Experience, Premium Watch Packaging, Eco-Luxury Packaging" />
       
@@ -32,7 +32,7 @@ const JewelryPackagingBoxesPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -65,7 +65,7 @@ const JewelryPackagingBoxesPage = () => {
               Custom Jewelry & Watch Packaging China Manufacturer
             </h1>
             <p className="text-xl text-gray-500 mb-8 leading-relaxed">
-              Exude luxury and elegance with bespoke packaging designed for the world's finest jewelry and watches. Side Packaging HK provides factory-direct, high-end rigid box solutions that protect and present your masterpieces.
+              Exude luxury and elegance with bespoke packaging designed for the world's finest jewelry and watches. Saide Packaging provides factory-direct, high-end rigid box solutions that protect and present your masterpieces.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-gray-600">Hand-Finished</span>
@@ -96,7 +96,7 @@ const JewelryPackagingBoxesPage = () => {
           <section className="mb-16">
             <h2 className="text-3xl font-black mb-6 uppercase tracking-tight">Executive Summary: The Essence of Luxury Presentation</h2>
             <p className="text-gray-600 leading-relaxed">
-              In the world of high jewelry and horology, the box is not merely a container; it is an integral part of the unboxing ritual that builds anticipation and signifies heritage. As a leading <strong>custom jewelry & watch packaging boxes China manufacturer</strong>, Side Packaging HK specialises in the design and production of ultra-premium rigid boxes. Our <strong>factory direct</strong> model ensures that your brand receives the highest levels of craftsmanship and material quality, typically reserved for heritage houses, but at competitive manufacturing costs.
+              In the world of high jewelry and horology, the box is not merely a container; it is an integral part of the unboxing ritual that builds anticipation and signifies heritage. As a leading <strong>custom jewelry & watch packaging boxes China manufacturer</strong>, Saide Packaging specialises in the design and production of ultra-premium rigid boxes. Our <strong>factory direct</strong> model ensures that your brand receives the highest levels of craftsmanship and material quality, typically reserved for heritage houses, but at competitive manufacturing costs.
             </p>
             <p className="text-gray-600 leading-relaxed">
               We understand that jewelry requires sensitive handling and precise protection. Our facility utilizes <strong>FSC certified</strong> papers and eco-friendly structural components to meet modern sustainability standards without compromising on the tactile luxury your customers expect. Whether you are launching a startup jewelry line or seeking a reliable partner for large-scale watch packaging, our <strong>low MOQ</strong> options provide the flexibility needed to maintain exclusivity while scaling your operations efficiently.
@@ -173,7 +173,7 @@ const JewelryPackagingBoxesPage = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="text-xl font-bold mb-4">Luxury Watch House Launch</h3>
-                <p className="text-gray-600 mb-6 italic">"The structural integrity of the watch boxes from Side Packaging is astounding. They managed to integrate a hidden magnetic mechanism that feels incredibly premium."</p>
+                <p className="text-gray-600 mb-6 italic">"The structural integrity of the watch boxes from Saide Packaging is astounding. They managed to integrate a hidden magnetic mechanism that feels incredibly premium."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center font-bold text-yellow-600">W</div>
                   <div>
@@ -184,7 +184,7 @@ const JewelryPackagingBoxesPage = () => {
               </div>
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="text-xl font-bold mb-4">Sustainable Jewelry Brand Expansion</h3>
-                <p className="text-gray-600 mb-6 italic">"Switching to Side Packaging allowed us to use 100% recycled greyboard and FSC papers while improving our unboxing aesthetic. Our customer satisfaction ratings have never been higher."</p>
+                <p className="text-gray-600 mb-6 italic">"Switching to Saide Packaging allowed us to use 100% recycled greyboard and FSC papers while improving our unboxing aesthetic. Our customer satisfaction ratings have never been higher."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">J</div>
                   <div>
@@ -266,7 +266,7 @@ const JewelryPackagingBoxesPage = () => {
           
           <div className="bg-gray-900 text-white p-12 rounded-[40px] flex flex-col justify-center relative overflow-hidden shadow-2xl">
             <blockquote className="text-2xl font-medium italic mb-6 relative z-10">
-              "Working with Side Packaging HK transformed our presentation. Their attention to the 'snap' of the magnetic closure was exactly the detail we needed for our high-end watch collection."
+              "Working with Saide Packaging transformed our presentation. Their attention to the 'snap' of the magnetic closure was exactly the detail we needed for our high-end watch collection."
             </blockquote>
             <div className="flex items-center space-x-4 relative z-10">
               <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center font-bold">A</div>
@@ -307,7 +307,7 @@ const JewelryPackagingBoxesPage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t py-12 px-6 mt-20 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <p>&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         <div className="mt-4 flex justify-center space-x-8">
           <span>BSCI Certified</span>
           <span>ISO 9001 Expert</span>

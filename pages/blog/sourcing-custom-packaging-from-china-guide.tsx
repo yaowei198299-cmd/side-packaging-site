@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const SourcingGuidePost = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Sourcing Custom Packaging from China: A 2026 Strategic Guide | Side Packaging</title>
+        <title>Sourcing Custom Packaging from China: A 2026 Strategic Guide | Saide Packaging</title>
         <meta name="description" content="A comprehensive guide for brands looking to source custom packaging directly from manufacturers in China. Learn about certifications (FSC, BSCI), quality control, and factory-direct advantages." />
         <meta name="keywords" content="sourcing packaging China, factory direct gift boxes, custom box manufacturer, FSC certified packaging, BSCI factory audit, China luxury packaging supply chain" />
       
@@ -18,7 +18,7 @@ const SourcingGuidePost = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -45,7 +45,7 @@ const SourcingGuidePost = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">Sourcing Custom Packaging from China: A 2026 Strategic Guide</h1>
@@ -63,7 +63,7 @@ const SourcingGuidePost = () => {
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">Introduction: The Factory-Direct Advantage</h2>
                 <p>
-                  In 2026, the global unboxing experience remains a critical brand differentiator. For luxury and e-commerce brands in the **United States, UK, and Europe**, the decision of where to source packaging is a balance of cost, quality, and sustainability. This guide explores why direct factory partnerships in China—when done right—offer the most resilient and high-ROI supply chain solution.
+                  In 2026, the global unboxing experience remains a critical brand differentiator. For luxury and e-commerce brands in the **United States, UK, and Europe**, the decision of where to source packaging is a balance of cost, quality, and sustainability. This guide explores why direct factory partnerships in China鈥攚hen done right鈥攐ffer the most resilient and high-ROI supply chain solution.
                 </p>
               </section>
 
@@ -96,14 +96,14 @@ const SourcingGuidePost = () => {
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">3. The Future of Sustainable Luxury: Mono-materials and Soy-based Inks</h2>
                 <p>
-                  Chinese manufacturers are leading the charge in "Mono-material" designs—where the entire box, including the magnetic closure and inserts, is made from recyclable paper components. This simplifies the end-consumer's recycling process while maintaining a "high-end" feel through advanced coating technologies like water-based varnishes.
+                  Chinese manufacturers are leading the charge in "Mono-material" designs鈥攚here the entire box, including the magnetic closure and inserts, is made from recyclable paper components. This simplifies the end-consumer's recycling process while maintaining a "high-end" feel through advanced coating technologies like water-based varnishes.
                 </p>
               </section>
 
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Direct Access to 20+ Years of Expertise</h3>
                 <p className="text-gray-500 mb-8">
-                  At Side Packaging HK Limited, we operate our own state-of-the-art production facility specialized in high-end magnetic rigid boxes and mailers. We are fully FSC and BSCI certified, providing factory-direct solutions to leading brands in the USA, UK, and EU.
+                  At Saide Packaging, we operate our own state-of-the-art production facility specialized in high-end magnetic rigid boxes and mailers. We are fully FSC and BSCI certified, providing factory-direct solutions to leading brands in the USA, UK, and EU.
                 </p>
                 <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Request a Factory-Direct Quote</Link>
               </div>
@@ -120,11 +120,11 @@ const SourcingGuidePost = () => {
       {/* Footer (Simplified) */}
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+          <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
           <p className="max-w-xl mx-auto font-medium mb-8">
             Your strategic manufacturing partner for premium, sustainable custom packaging solutions.
           </p>
-          <p className="text-[10px] font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest">漏 2026 Saide Packaging. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const CollapsibleBoxGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -90,7 +90,7 @@ const CollapsibleBoxGuide = () => {
                       <td className="p-4 border-r border-white/5 font-black text-white">Collapsible Flat-Pack Box</td>
                       <td className="p-4 border-r border-white/5">0.4 cm (Collapsed flat)</td>
                       <td className="p-4 border-r border-white/5">~ 240,000 units</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 87.5% Freight Volume Savings</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 87.5% Freight Volume Savings</td>
                     </tr>
                   </tbody>
                 </table>
@@ -107,10 +107,10 @@ const CollapsibleBoxGuide = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center py-6">
                 <a href="#contact" className="inline-block bg-white/5 border border-white/10 hover:border-[#C9A84C] text-[#C9A84C] text-center px-10 py-5 rounded-full text-xs font-black uppercase tracking-widest transition-all">
-                  ⬇️ Download Dieline (.AI format)
+                  猬囷笍 Download Dieline (.AI format)
                 </a>
                 <a href="#contact" className="inline-block bg-white/5 border border-white/10 hover:border-[#C9A84C] text-white text-center px-10 py-5 rounded-full text-xs font-black uppercase tracking-widest transition-all">
-                  ⬇️ Download Dieline (.PDF format)
+                  猬囷笍 Download Dieline (.PDF format)
                 </a>
               </div>
             </section>
@@ -125,7 +125,7 @@ const CollapsibleBoxGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

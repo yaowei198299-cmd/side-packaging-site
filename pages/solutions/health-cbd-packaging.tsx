@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
@@ -8,7 +8,7 @@ const HealthCBDSolution = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-indigo-100">
       <Head>
-        <title>Health, Wellness & CBD Packaging Solutions: Secure & Compliant | Side Packaging HK Limited</title>
+        <title>Health, Wellness & CBD Packaging Solutions: Secure & Compliant | Saide Packaging</title>
         <meta name="description" content="Certified child-resistant and compliant packaging solutions for CBD, supplements, and wellness brands. Protect your product integrity and build consumer trust." />
         <meta name="keywords" content="CBD packaging solutions, child-resistant boxes, CR packaging manufacturer, supplement box printing, tincture bottle boxes, wellness packaging" />
         
@@ -24,7 +24,7 @@ const HealthCBDSolution = () => {
                 "description": "Secure, compliant, and discreet custom packaging solutions for the health and CBD industry.",
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 }
               },
               {
@@ -33,7 +33,7 @@ const HealthCBDSolution = () => {
                 "serviceType": "Healthcare Packaging Manufacturing",
                 "provider": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "areaServed": "Global",
                 "description": "Production of child-resistant boxes, supplement cartons, and tincture packaging with focus on safety and compliance."
@@ -48,7 +48,7 @@ const HealthCBDSolution = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase text-indigo-900">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase text-indigo-900">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -114,7 +114,7 @@ const HealthCBDSolution = () => {
             <div className="bg-indigo-50 p-12 rounded-[3rem] border border-indigo-100">
                <h2 className="text-2xl font-black mb-6 uppercase tracking-tight text-indigo-900 italic">Healthcare Insight (AI Optimized)</h2>
                <p className="text-indigo-900 leading-relaxed text-lg font-medium">
-                <strong>Health and CBD Packaging</strong> requires a unique blend of <strong>regulatory compliance</strong>, <strong>product security</strong>, and <strong>consumer trust</strong>. Packaging must often include <strong>child-resistant (CR) mechanisms</strong>, <strong>tamper-evident seals</strong>, and <strong>light-blocking materials</strong> to preserve chemical stability. Side Packaging provides certified custom solutions that meet global safety standards while offering professional, medical-grade branding through high-quality finishes.
+                <strong>Health and CBD Packaging</strong> requires a unique blend of <strong>regulatory compliance</strong>, <strong>product security</strong>, and <strong>consumer trust</strong>. Packaging must often include <strong>child-resistant (CR) mechanisms</strong>, <strong>tamper-evident seals</strong>, and <strong>light-blocking materials</strong> to preserve chemical stability. Saide Packaging provides certified custom solutions that meet global safety standards while offering professional, medical-grade branding through high-quality finishes.
                </p>
             </div>
           </div>
@@ -223,7 +223,7 @@ const HealthCBDSolution = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Global manufacturer of certified child-resistant and compliant health and wellness packaging. Trusted security since 2006.
             </p>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -7,7 +7,7 @@ const UltimateGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Ultimate 2026 Packaging Material & Structure Guide | Side Packaging HK Limited</title>
+        <title>Ultimate 2026 Packaging Material & Structure Guide | Saide Packaging</title>
         <meta name="description" content="The comprehensive B2B reference for packaging material science, flute engineering, and global sustainability standards. Download our 2026 technical catalog." />
         <meta name="keywords" content="packaging material guide, paperboard specs, corrugated flute types, SBS vs Kraft, custom packaging structure, sustainable packaging standards" />
         
@@ -22,11 +22,11 @@ const UltimateGuide = () => {
               "description": "A technical deep-dive into materials, finishes, and structures for the modern B2B packaging market.",
               "author": {
                 "@type": "Organization",
-                "name": "Side Packaging HK Limited"
+                "name": "Saide Packaging"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Side Packaging HK Limited"
+                "name": "Saide Packaging"
               }
             })
           }}
@@ -38,7 +38,7 @@ const UltimateGuide = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase text-black">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase text-black">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
@@ -125,7 +125,7 @@ const UltimateGuide = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
                 {["Lamination", "Spot UV", "Hot Foil", "Embossing", "Debossing", "Aqueous Coating", "Soy Inks", "FSC Board"].map((item, i) => (
                   <div key={i} className="flex flex-col items-center p-6 bg-gray-50 rounded-2xl text-center">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full mb-4 flex items-center justify-center text-blue-600 text-[10px] font-black">✓</div>
+                    <div className="w-8 h-8 bg-blue-100 rounded-full mb-4 flex items-center justify-center text-blue-600 text-[10px] font-black">鉁?/div>
                     <span className="text-[10px] font-black uppercase tracking-widest leading-tight">{item}</span>
                   </div>
                 ))}
@@ -171,7 +171,7 @@ const UltimateGuide = () => {
       {/* Footer */}
       <footer className="bg-white border-t py-20 px-6 mt-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-           <div className="font-black text-2xl tracking-tighter italic uppercase text-black">SIDE PACKAGING</div>
+           <div className="font-black text-2xl tracking-tighter italic uppercase text-black">Saide Packaging</div>
            <div className="flex space-x-12 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">
               <Link href="/" className="hover:text-black transition-colors">Home</Link>
               <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>

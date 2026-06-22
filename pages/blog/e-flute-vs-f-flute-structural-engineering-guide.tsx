@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const FluteSizeGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -50,7 +50,7 @@ const FluteSizeGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Battle of the Millimeters</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                For e-commerce brands shipping high-value small goods like cosmetics or electronics, the **4x3x1.25" (10.2x7.6x3.2 cm)** mailer box is a tactical asset. However, many procurement managers overlook the "Flute Profile"—the internal wavy layer that provides strength.
+                For e-commerce brands shipping high-value small goods like cosmetics or electronics, the **4x3x1.25" (10.2x7.6x3.2 cm)** mailer box is a tactical asset. However, many procurement managers overlook the "Flute Profile"鈥攖he internal wavy layer that provides strength.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 Choosing between **E-Flute** and **F-Flute** is the difference between a box that looks like industrial shipping material and one that feels like a premium retail envelope.
@@ -72,22 +72,22 @@ const FluteSizeGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Board Thickness</td>
                       <td className="p-4 border-r border-white/5">1.5 mm - 1.8 mm</td>
-                      <td className="p-4">🟢 0.8 mm - 1.0 mm</td>
+                      <td className="p-4">馃煝 0.8 mm - 1.0 mm</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Flutes per Meter</td>
                       <td className="p-4 border-r border-white/5">~ 290</td>
-                      <td className="p-4">🟢 ~ 420 (High Density)</td>
+                      <td className="p-4">馃煝 ~ 420 (High Density)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Printing Surface</td>
                       <td className="p-4 border-r border-white/5">Good (Slight ribbing)</td>
-                      <td className="p-4">🟢 Excellent (Retail-grade smooth)</td>
+                      <td className="p-4">馃煝 Excellent (Retail-grade smooth)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Best Use Case</td>
                       <td className="p-4 border-r border-white/5">Standard Parcel Delivery</td>
-                      <td className="p-4">🟢 "Letterbox" / Luxury Envelopes</td>
+                      <td className="p-4">馃煝 "Letterbox" / Luxury Envelopes</td>
                     </tr>
                   </tbody>
                 </table>
@@ -102,11 +102,11 @@ const FluteSizeGuide = () => {
               <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed">
                 Logistics Optimization Formula:
                 <br/><br/>
-                Total Box Height = Internal Height (32mm) + (2 × Board Thickness)
+                Total Box Height = Internal Height (32mm) + (2 脳 Board Thickness)
                 <br/>
-                - E-Flute Height: 32mm + 3.2mm = 35.2mm (🔴 Parcel Category)
+                - E-Flute Height: 32mm + 3.2mm = 35.2mm (馃敶 Parcel Category)
                 <br/>
-                - F-Flute Height: 32mm + 1.8mm = 33.8mm (🟢 Large Letter Category)
+                - F-Flute Height: 32mm + 1.8mm = 33.8mm (馃煝 Large Letter Category)
               </div>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 By switching to **F-Flute** for this specific size, brands can often downgrade their shipping category, saving an average of **\$2.45 per unit** in postage costs. For a brand shipping 5,000 units monthly, this is a **\$147,000 annual profit recovery**.
@@ -123,7 +123,7 @@ const FluteSizeGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

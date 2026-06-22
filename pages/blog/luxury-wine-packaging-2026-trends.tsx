@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const WinePackagingTrends2026 = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -38,7 +38,7 @@ const WinePackagingTrends2026 = () => {
                 <span className="text-white/40">The 2026 Roadmap for Premium Spirit Brands</span>
               </h1>
               <p className="text-xl text-gray-400 font-medium leading-relaxed uppercase tracking-tight">
-                From biodegradable structural inserts to multi-sensory foil finishes—how to scale your wine brand with high-end unboxing.
+                From biodegradable structural inserts to multi-sensory foil finishes鈥攈ow to scale your wine brand with high-end unboxing.
               </p>
               <div className="border-t border-white/10 pt-6 flex gap-12 text-[10px] font-bold uppercase tracking-widest text-gray-500">
                 <span>By: Jocelyn (Founder)</span>
@@ -53,7 +53,7 @@ const WinePackagingTrends2026 = () => {
                 In the global spirit market, the packaging is the first point of tactile contact. For premium 750ml bottles, the transition from standard cylinders to **Custom Rigid Magnetic Boxes** has shown a **22% increase in perceived retail value**. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                However, 2026 is not just about looking expensive—it's about "Responsible Luxury."
+                However, 2026 is not just about looking expensive鈥攊t's about "Responsible Luxury."
               </p>
             </section>
 
@@ -72,9 +72,9 @@ const WinePackagingTrends2026 = () => {
               <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
                 <h3 className="text-[#C9A84C] font-black text-sm uppercase tracking-widest mb-4">Technical Specs for 2026 Unboxing</h3>
                 <ul className="text-gray-400 text-xs md:text-sm space-y-4 uppercase tracking-wider">
-                  <li className="flex gap-4"><span className="text-[#C9A84C]">✔</span> <strong>Soft-Touch Coating:</strong> Fingerprint-resistant 32-micron finish.</li>
-                  <li className="flex gap-4"><span className="text-[#C9A84C]">✔</span> <strong>Scodix Foil:</strong> 3D raised foil stamping for texture without expensive brass dies.</li>
-                  <li className="flex gap-4"><span className="text-[#C9A84C]">✔</span> <strong>Hidden Magnets:</strong> Ultra-strong N42 magnets for a satisfying "click" closure.</li>
+                  <li className="flex gap-4"><span className="text-[#C9A84C]">鉁?/span> <strong>Soft-Touch Coating:</strong> Fingerprint-resistant 32-micron finish.</li>
+                  <li className="flex gap-4"><span className="text-[#C9A84C]">鉁?/span> <strong>Scodix Foil:</strong> 3D raised foil stamping for texture without expensive brass dies.</li>
+                  <li className="flex gap-4"><span className="text-[#C9A84C]">鉁?/span> <strong>Hidden Magnets:</strong> Ultra-strong N42 magnets for a satisfying "click" closure.</li>
                 </ul>
               </div>
             </section>
@@ -103,7 +103,7 @@ const WinePackagingTrends2026 = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

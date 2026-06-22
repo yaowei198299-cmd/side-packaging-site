@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const AssemblySpeedGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -60,14 +60,14 @@ const AssemblySpeedGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Time-Motion Study: Assembly Speed Benchmarks</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                We conducted a controlled test using our latest **Easy-Pop™** corner design versus standard flat-pack boxes. 
+                We conducted a controlled test using our latest **Easy-Pop鈩?* corner design versus standard flat-pack boxes. 
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse border border-white/5 text-xs md:text-sm uppercase tracking-wider">
                   <thead>
                     <tr className="bg-white/5 border-b border-white/10 text-[#C9A84C] font-black">
                       <th className="p-4 border-r border-white/5">Assembly Step</th>
-                      <th className="p-4 border-r border-white/5">Saide Easy-Pop™ Design</th>
+                      <th className="p-4 border-r border-white/5">Saide Easy-Pop鈩?Design</th>
                       <th className="p-4">Competitor Standard Flat-Pack</th>
                     </tr>
                   </thead>
@@ -84,12 +84,12 @@ const AssemblySpeedGuide = () => {
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Total Assembly Time</td>
-                      <td className="p-4 border-r border-white/5">🟢 4.2 Seconds per unit</td>
+                      <td className="p-4 border-r border-white/5">馃煝 4.2 Seconds per unit</td>
                       <td className="p-4">12.5 Seconds per unit</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Throughput per Hour</td>
-                      <td className="p-4 border-r border-white/5">🟢 ~850 Units</td>
+                      <td className="p-4 border-r border-white/5">馃煝 ~850 Units</td>
                       <td className="p-4">~280 Units</td>
                     </tr>
                   </tbody>
@@ -104,7 +104,7 @@ const AssemblySpeedGuide = () => {
               </p>
               <ul className="space-y-4 text-gray-400 font-medium text-sm md:text-base uppercase tracking-wider list-disc list-inside">
                 <li><strong className="text-white">Competitor Box Cost</strong>: $0.09 in labor per box assembled.</li>
-                <li><strong className="text-white">Saide Easy-Pop™ Cost</strong>: $0.03 in labor per box assembled.</li>
+                <li><strong className="text-white">Saide Easy-Pop鈩?Cost</strong>: $0.03 in labor per box assembled.</li>
               </ul>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 On an order of 10,000 units, our structural optimization saves you **$600.00 in direct labor costs** while significantly reducing warehouse congestion during peak holiday seasons.
@@ -113,7 +113,7 @@ const AssemblySpeedGuide = () => {
 
             <section className="py-16 border-t border-white/5 text-center">
               <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Optimize Your 3PL Efficiency</h2>
-              <p className="text-gray-400 text-sm font-medium mb-12 uppercase tracking-widest">Ready to lower your operational overhead? Send us your current box style. We will provide a free assembly-speed audit and ship a sample of our Easy-Pop™ collapsible magnetic box for your warehouse team to test. Professional CAD support in 12 hours.</p>
+              <p className="text-gray-400 text-sm font-medium mb-12 uppercase tracking-widest">Ready to lower your operational overhead? Send us your current box style. We will provide a free assembly-speed audit and ship a sample of our Easy-Pop鈩?collapsible magnetic box for your warehouse team to test. Professional CAD support in 12 hours.</p>
               <InquiryForm productTitle="3PL Assembly Speed Audit" />
             </section>
           </article>
@@ -121,7 +121,7 @@ const AssemblySpeedGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

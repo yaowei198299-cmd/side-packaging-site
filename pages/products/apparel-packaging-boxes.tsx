@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -22,7 +22,7 @@ const ApparelPackagingBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>{productData.title} | Custom Apparel Box China Manufacturer | Side Packaging HK</title>
+        <title>{productData.title} | Custom Apparel Box China Manufacturer | Saide Packaging</title>
         <meta name="description" content="Premium apparel and textile packaging boxes manufacturer in China. Factory direct pricing, FSC certified, and low MOQ for fashion and lifestyle brands." />
         <meta name="keywords" content="custom apparel packaging boxes China, apparel box manufacturer, fashion packaging factory, FSC certified apparel boxes, low MOQ textile boxes" />
       
@@ -32,7 +32,7 @@ const ApparelPackagingBoxesPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -65,7 +65,7 @@ const ApparelPackagingBoxesPage = () => {
               Custom Apparel & Textile Packaging China Manufacturer
             </h1>
             <p className="text-xl text-gray-500 mb-8 leading-relaxed">
-              Step up your fashion brand's presentation with bespoke apparel packaging. Side Packaging HK combines factory-direct efficiency with high-end craftsmanship to create the perfect box for your clothing and textile collections.
+              Step up your fashion brand's presentation with bespoke apparel packaging. Saide Packaging combines factory-direct efficiency with high-end craftsmanship to create the perfect box for your clothing and textile collections.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-gray-600">Retail Ready</span>
@@ -96,7 +96,7 @@ const ApparelPackagingBoxesPage = () => {
           <section className="mb-16">
             <h2 className="text-3xl font-black mb-6 uppercase tracking-tight">Executive Summary: High-End Fashion Deserves High-End Packaging</h2>
             <p className="text-gray-600 leading-relaxed">
-              In the fast-paced world of fashion and apparel, the unboxing experience is an extension of the brand's aesthetic. As a premier <strong>custom apparel & textile packaging boxes China manufacturer</strong>, Side Packaging HK understands the unique requirements of clothing and home textile brands. Our <strong>factory direct</strong> model in China allows us to provide luxury-grade, bespoke packaging solutions that reflect the quality of the garments within, all while maintaining competitive pricing for our global clients.
+              In the fast-paced world of fashion and apparel, the unboxing experience is an extension of the brand's aesthetic. As a premier <strong>custom apparel & textile packaging boxes China manufacturer</strong>, Saide Packaging understands the unique requirements of clothing and home textile brands. Our <strong>factory direct</strong> model in China allows us to provide luxury-grade, bespoke packaging solutions that reflect the quality of the garments within, all while maintaining competitive pricing for our global clients.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Our packaging solutions range from simple tuck-end boxes to complex rigid boxes for high-end accessories. We are committed to sustainability, offering <strong>FSC certified</strong> paper options and ensuring all materials are 100% recyclable to meet the environmental expectations of modern consumers. With <strong>low MOQ</strong> capability, we empower independent designers and established fashion houses to create seasonal and limited-edition packaging that stands out in a crowded market.
@@ -173,7 +173,7 @@ const ApparelPackagingBoxesPage = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="text-xl font-bold mb-4">Ethical Cotton Brand Rebrand</h3>
-                <p className="text-gray-600 mb-6 italic">"Side Packaging HK provided us with FSC-certified kraft boxes that matched our brand's ethical mission perfectly. The unboxing experience became as sustainable as the product itself."</p>
+                <p className="text-gray-600 mb-6 italic">"Saide Packaging provided us with FSC-certified kraft boxes that matched our brand's ethical mission perfectly. The unboxing experience became as sustainable as the product itself."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-600">E</div>
                   <div>
@@ -184,7 +184,7 @@ const ApparelPackagingBoxesPage = () => {
               </div>
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="text-xl font-bold mb-4">Luxury Scarf Collection Launch</h3>
-                <p className="text-gray-600 mb-6 italic">"We needed a rigid box for our silk scarves that exuded luxury. The soft-touch lamination and gold foil stamping from Side Packaging were simply exquisite."</p>
+                <p className="text-gray-600 mb-6 italic">"We needed a rigid box for our silk scarves that exuded luxury. The soft-touch lamination and gold foil stamping from Saide Packaging were simply exquisite."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600">S</div>
                   <div>
@@ -266,7 +266,7 @@ const ApparelPackagingBoxesPage = () => {
           
           <div className="bg-blue-50 text-gray-900 p-12 rounded-[40px] flex flex-col justify-center relative overflow-hidden">
             <blockquote className="text-2xl font-medium italic mb-6 relative z-10">
-              "The finish on the boxes was incredible. Side Packaging helped us create a cohesive look across our entire apparel line while staying within our budget."
+              "The finish on the boxes was incredible. Saide Packaging helped us create a cohesive look across our entire apparel line while staying within our budget."
             </blockquote>
             <div className="flex items-center space-x-4 relative z-10">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold">M</div>
@@ -307,7 +307,7 @@ const ApparelPackagingBoxesPage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t py-12 px-6 mt-20 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <p>&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         <div className="mt-4 flex justify-center space-x-8">
           <span>BSCI Audited</span>
           <span>FSC Sustainability</span>

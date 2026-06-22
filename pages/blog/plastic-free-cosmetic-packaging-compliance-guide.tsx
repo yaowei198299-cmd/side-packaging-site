@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const PlasticFreeComplianceGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -50,10 +50,10 @@ const PlasticFreeComplianceGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Rise of the Environmental Barrier</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                For e-commerce and retail cosmetics brands distributing in the United Kingdom or European Union, environmental sustainability is no longer a optional marketing badge—it is a strict statutory import threshold. 
+                For e-commerce and retail cosmetics brands distributing in the United Kingdom or European Union, environmental sustainability is no longer a optional marketing badge鈥攊t is a strict statutory import threshold. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                With the active enforcement of the **UK Plastic Packaging Tax (PPT)** (charging £210.82 per metric tonne on packaging with less than 30% recycled plastic) and incoming EU circular economy directives, packaging that relies on single-use petrochemical plastics, fossil-based gloss lamination, or chemical oil inks is facing heavy financial penalties at customs.
+                With the active enforcement of the **UK Plastic Packaging Tax (PPT)** (charging 拢210.82 per metric tonne on packaging with less than 30% recycled plastic) and incoming EU circular economy directives, packaging that relies on single-use petrochemical plastics, fossil-based gloss lamination, or chemical oil inks is facing heavy financial penalties at customs.
               </p>
             </section>
 
@@ -91,14 +91,14 @@ const PlasticFreeComplianceGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Laminated PET-Coated Box</td>
                       <td className="p-4 border-r border-white/5">&gt; 35% (PET Film Wrap)</td>
-                      <td className="p-4 border-r border-white/5">🔴 Fully Taxable (£210.82/Tonne)</td>
+                      <td className="p-4 border-r border-white/5">馃敶 Fully Taxable (拢210.82/Tonne)</td>
                       <td className="p-4">Subject to Manual Audits</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide Stone-Paper Rigid Box</td>
                       <td className="p-4 border-r border-white/5">0% (100% Mineral & FSC Board)</td>
-                      <td className="p-4 border-r border-white/5">🟢 100% Exempted</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 Fast-Track Circular Pass</td>
+                      <td className="p-4 border-r border-white/5">馃煝 100% Exempted</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 Fast-Track Circular Pass</td>
                     </tr>
                   </tbody>
                 </table>
@@ -122,7 +122,7 @@ const PlasticFreeComplianceGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

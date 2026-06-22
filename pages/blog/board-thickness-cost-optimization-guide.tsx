@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const BoardThicknessGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -75,8 +75,8 @@ const BoardThicknessGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Thickness</td>
-                      <td className="p-4 border-r border-white/5">1.8 mm ± 0.05</td>
-                      <td className="p-4">2.3 mm ± 0.05</td>
+                      <td className="p-4 border-r border-white/5">1.8 mm 卤 0.05</td>
+                      <td className="p-4">2.3 mm 卤 0.05</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Compressive Strength</td>
@@ -90,8 +90,8 @@ const BoardThicknessGuide = () => {
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Optimal Box Volume Range</td>
-                      <td className="p-4 border-r border-white/5">Up to 1,500 cm³</td>
-                      <td className="p-4">1,500 to 5,000 cm³</td>
+                      <td className="p-4 border-r border-white/5">Up to 1,500 cm鲁</td>
+                      <td className="p-4">1,500 to 5,000 cm鲁</td>
                     </tr>
                   </tbody>
                 </table>
@@ -104,15 +104,15 @@ const BoardThicknessGuide = () => {
                 To calculate the precise gross weight contribution of greyboard thickness in a production run of 10,000 units, we apply our standard mass-to-volume formula:
               </p>
               <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed">
-                Total Board Mass = Total Surface Area × Greyboard GSM
+                Total Board Mass = Total Surface Area 脳 Greyboard GSM
                 <br/><br/>
                 For a 4x3x1.25" Magnetic Box:
                 <br/>
-                - Surface Area (approx): 280 cm² = 0.028 m²
+                - Surface Area (approx): 280 cm虏 = 0.028 m虏
                 <br/>
-                - 1200gsm Box Weight: 0.028 m² × 1200g = 33.6g of board (Total empty weight ~ 42g)
+                - 1200gsm Box Weight: 0.028 m虏 脳 1200g = 33.6g of board (Total empty weight ~ 42g)
                 <br/>
-                - 1500gsm Box Weight: 0.028 m² × 1500g = 42.0g of board (Total empty weight ~ 51g)
+                - 1500gsm Box Weight: 0.028 m虏 脳 1500g = 42.0g of board (Total empty weight ~ 51g)
               </div>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 By choosing a **1200gsm (1.8mm)** board thickness instead of 1500gsm for a 10,000 unit jewelry box order, you save **180,000 grams (180 kg)** in air freight weight. At a standard air cargo rate of $5.50/kg, this structural optimization instantly puts **$990.00** back in your brand's pocket with zero visual or tactile sacrifice.
@@ -136,7 +136,7 @@ const BoardThicknessGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

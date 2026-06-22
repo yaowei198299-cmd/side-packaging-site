@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const LCLFCLAudit = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -77,13 +77,13 @@ const LCLFCLAudit = () => {
                       <td className="p-4 border-r border-white/5 font-black text-white">LCL (Shared)</td>
                       <td className="p-4 border-r border-white/5">1 - 14 CBM</td>
                       <td className="p-4 border-r border-white/5">$80 - $120</td>
-                      <td className="p-4">🔴 High (Forklift, Sorting, Admin)</td>
+                      <td className="p-4">馃敶 High (Forklift, Sorting, Admin)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">20ft FCL (Full)</td>
-                      <td className="p-4 border-r border-white/5">🟢 15+ CBM</td>
-                      <td className="p-4 border-r border-white/5">🟢 $45 - $60 (Eff. rate)</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 Minimum (Direct drayage)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 15+ CBM</td>
+                      <td className="p-4 border-r border-white/5">馃煝 $45 - $60 (Eff. rate)</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 Minimum (Direct drayage)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -102,7 +102,7 @@ const LCLFCLAudit = () => {
                 <br/>
                 - FCL 28 CBM Total Landed Cost: $1,800 (Freight) + $300 (Fees) = $2,100
                 <br/><br/>
-                🟢 Result: You receive **130% MORE boxes** for a **LOWER total shipping price**. This is the power of container ganging.
+                馃煝 Result: You receive **130% MORE boxes** for a **LOWER total shipping price**. This is the power of container ganging.
               </div>
             </section>
 
@@ -116,7 +116,7 @@ const LCLFCLAudit = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

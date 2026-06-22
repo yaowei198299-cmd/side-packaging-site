@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const BlackCoreCardGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -71,23 +71,23 @@ const BlackCoreCardGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Through-dyed Color</td>
-                      <td className="p-4 border-r border-white/5">🔴 No (White core)</td>
-                      <td className="p-4">🟢 Yes (Carbon black pulp)</td>
+                      <td className="p-4 border-r border-white/5">馃敶 No (White core)</td>
+                      <td className="p-4">馃煝 Yes (Carbon black pulp)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Edge Durability</td>
                       <td className="p-4 border-r border-white/5">Low (Ink flakes at corner)</td>
-                      <td className="p-4">🟢 High (Homogeneous material)</td>
+                      <td className="p-4">馃煝 High (Homogeneous material)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Haptic Texture</td>
                       <td className="p-4 border-r border-white/5">Smooth Laminated</td>
-                      <td className="p-4">🟢 Natural Fiber / Linen Option</td>
+                      <td className="p-4">馃煝 Natural Fiber / Linen Option</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Recommended MOQ</td>
                       <td className="p-4 border-r border-white/5">500 units</td>
-                      <td className="p-4">🟢 300 units (Small batch ready)</td>
+                      <td className="p-4">馃煝 300 units (Small batch ready)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -114,7 +114,7 @@ const BlackCoreCardGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

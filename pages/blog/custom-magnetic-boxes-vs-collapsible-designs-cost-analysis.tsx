@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const MagneticVsCollapsibleGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Custom Magnetic Boxes vs. Collapsible Designs: Cost-Saving Analysis | Side Packaging</title>
+        <title>Custom Magnetic Boxes vs. Collapsible Designs: Cost-Saving Analysis | Saide Packaging</title>
         <meta name="description" content="A comprehensive cost-saving analysis between standard rigid magnetic boxes and collapsible (flat-pack) designs. Learn how to save up to 70% on international shipping costs." />
         <meta name="keywords" content="Custom magnetic boxes vs collapsible, flat-pack rigid boxes, shipping cost saving packaging, luxury collapsible gift boxes, foldable rigid box manufacturer" />
       
@@ -17,7 +17,7 @@ const MagneticVsCollapsibleGuide = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -27,7 +27,7 @@ const MagneticVsCollapsibleGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -37,7 +37,7 @@ const MagneticVsCollapsibleGuide = () => {
 
             <div className="prose prose-xl prose-gray max-w-none font-medium leading-relaxed text-gray-600 space-y-12">
               <p className="text-2xl text-gray-900 font-bold italic">
-                In international trade, you're not just paying for the material of your box—you're paying for the air inside it. Choosing between standard rigid boxes and collapsible designs is a decision that can save your brand thousands in trans-Pacific freight.
+                In international trade, you're not just paying for the material of your box鈥攜ou're paying for the air inside it. Choosing between standard rigid boxes and collapsible designs is a decision that can save your brand thousands in trans-Pacific freight.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">The Hidden Cost of Rigid Boxes</h2>
@@ -87,7 +87,7 @@ const MagneticVsCollapsibleGuide = () => {
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Does Collapsible Mean "Less Premium"?</h2>
               <p>
-                A common concern is that a foldable box feels "cheaper." At Side Packaging, we use **2.0mm high-density greyboard** and precision v-grooving. Once assembled, our collapsible boxes are virtually indistinguishable from permanent rigid boxes. The structural integrity is maintained by the same high-end magnets that create that signature luxury "click."
+                A common concern is that a foldable box feels "cheaper." At Saide Packaging, we use **2.0mm high-density greyboard** and precision v-grooving. Once assembled, our collapsible boxes are virtually indistinguishable from permanent rigid boxes. The structural integrity is maintained by the same high-end magnets that create that signature luxury "click."
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Verdict: Which Should You Choose?</h2>
@@ -113,8 +113,8 @@ const MagneticVsCollapsibleGuide = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Logistics Engineered.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Logistics Engineered.</p>
         </div>
       </footer>
     </div>

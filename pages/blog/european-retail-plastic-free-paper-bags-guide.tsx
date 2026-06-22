@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const EuropeanPaperBagsGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -50,7 +50,7 @@ const EuropeanPaperBagsGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The "Fully Recyclable" Threshold</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                In many European jurisdictions, a shopping bag is only considered "100% recyclable" if every component—including the handle and the bottom reinforcement—is made of paper. Bags using cotton ribbons or polyester strings require the consumer to separate the materials, which often leads to the entire bag being diverted to landfill.
+                In many European jurisdictions, a shopping bag is only considered "100% recyclable" if every component鈥攊ncluding the handle and the bottom reinforcement鈥攊s made of paper. Bags using cotton ribbons or polyester strings require the consumer to separate the materials, which often leads to the entire bag being diverted to landfill.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 Our **All-Paper Luxury Range** solves this by utilizing high-tensile **Twisted Paper Handles** that provide a structural strength comparable to synthetic fibers while maintaining single-stream recyclability.
@@ -71,23 +71,23 @@ const EuropeanPaperBagsGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Handle Material</td>
-                      <td className="p-4 border-r border-white/5">🟢 100% Virgin Pulp (Twisted)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 100% Virgin Pulp (Twisted)</td>
                       <td className="p-4">Polyester / Nylon Ribbon</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Base Reinforcement</td>
-                      <td className="p-4 border-r border-white/5">🟢 450gsm FSC Kraft Board</td>
+                      <td className="p-4 border-r border-white/5">馃煝 450gsm FSC Kraft Board</td>
                       <td className="p-4">Plastic Insert (PET)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Weight Capacity</td>
-                      <td className="p-4 border-r border-white/5">🟢 up to 10.0 kg</td>
+                      <td className="p-4 border-r border-white/5">馃煝 up to 10.0 kg</td>
                       <td className="p-4">~ 6.0 kg</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">EU Green Tax Status</td>
-                      <td className="p-4 border-r border-white/5">🟢 100% Exempted</td>
-                      <td className="p-4">🔴 Partially Taxable</td>
+                      <td className="p-4 border-r border-white/5">馃煝 100% Exempted</td>
+                      <td className="p-4">馃敶 Partially Taxable</td>
                     </tr>
                   </tbody>
                 </table>
@@ -114,7 +114,7 @@ const EuropeanPaperBagsGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

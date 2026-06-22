@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -22,7 +22,7 @@ const ApparelGiftBoxesPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>{productData.title} | Luxury Magnetic Closure Boxes | Side Packaging HK</title>
+        <title>{productData.title} | Luxury Magnetic Closure Boxes | Saide Packaging</title>
         <meta name="description" content="Premium custom apparel gift boxes manufacturer. Luxury magnetic closure, retail-ready branding, and FSC-certified materials for USA, UK, and EU markets." />
         <meta name="keywords" content="custom apparel gift boxes, luxury magnetic closure boxes, wholesale clothing packaging, branded retail gift boxes, premium fashion packaging" />
       
@@ -32,7 +32,7 @@ const ApparelGiftBoxesPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -65,7 +65,7 @@ const ApparelGiftBoxesPage = () => {
               Custom Apparel Gift Boxes & Luxury Magnetic Solutions
             </h1>
             <p className="text-xl text-gray-500 mb-8 leading-relaxed">
-              Step up your fashion brand's presentation with bespoke apparel packaging. Side Packaging HK combines factory-direct efficiency with high-end craftsmanship to create the perfect box for your clothing collections.
+              Step up your fashion brand's presentation with bespoke apparel packaging. Saide Packaging combines factory-direct efficiency with high-end craftsmanship to create the perfect box for your clothing collections.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-gray-600">Luxury Finish</span>
@@ -101,7 +101,7 @@ const ApparelGiftBoxesPage = () => {
             
             <h3 className="text-2xl font-bold mb-6">The Rise of the Unboxing Experience in Luxury Retail</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              The "unboxing" phenomenon has transformed retail marketing. Today, a customer doesn’t just buy a garment; they buy an experience. When a consumer receives a package from a luxury brand, they expect a tactile sensation that mirrors the quality of the item inside. Our <strong>luxury magnetic closure boxes</strong> are engineered to provide that exact feeling of exclusivity and care.
+              The "unboxing" phenomenon has transformed retail marketing. Today, a customer doesn鈥檛 just buy a garment; they buy an experience. When a consumer receives a package from a luxury brand, they expect a tactile sensation that mirrors the quality of the item inside. Our <strong>luxury magnetic closure boxes</strong> are engineered to provide that exact feeling of exclusivity and care.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 my-12">
@@ -270,7 +270,7 @@ const ApparelGiftBoxesPage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t py-12 px-6 mt-20 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <p>&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         <div className="mt-4 flex justify-center space-x-8">
           <span>BSCI Audited</span>
           <span>FSC Sustainability</span>

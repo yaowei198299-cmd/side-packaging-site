@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -22,7 +22,7 @@ const CustomPaperBagsPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <Head>
-        <title>{productData.title} | Factory-Direct Premium Packaging 2026 | Side Packaging HK</title>
+        <title>{productData.title} | Factory-Direct Premium Packaging 2026 | Saide Packaging</title>
         <meta name="description" content="Research-backed custom luxury paper bags for USA, UK, and EU markets. Factory-direct, FSC certified, low MOQ, and bespoke finishing including gold foil and spot UV." />
         <meta name="keywords" content="custom luxury paper bags, premium shopping bags wholesale, luxury paper bags factory direct, FSC certified paper bags USA, bespoke retail packaging UK, high-end gift bags EU" />
       
@@ -32,7 +32,7 @@ const CustomPaperBagsPage = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Side Packaging</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -96,12 +96,12 @@ const CustomPaperBagsPage = () => {
           <section className="mb-20">
             <h2 className="text-4xl font-black mb-8 uppercase tracking-tighter">The Strategic Advantage of Factory-Direct Sourcing</h2>
             <p className="text-gray-600 leading-relaxed text-xl">
-              In the competitive landscape of luxury retail, your packaging is more than just a carrier—it is a tangible extension of your brand’s identity. As we move into 2026, the demand for <strong>Custom Luxury Paper Bags</strong> has reached new heights, driven by a global shift toward sustainable elegance and high-touch consumer experiences.
+              In the competitive landscape of luxury retail, your packaging is more than just a carrier鈥攊t is a tangible extension of your brand鈥檚 identity. As we move into 2026, the demand for <strong>Custom Luxury Paper Bags</strong> has reached new heights, driven by a global shift toward sustainable elegance and high-touch consumer experiences.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="font-bold text-lg mb-4">Quality Control</h3>
-                <p className="text-sm text-gray-500">Every stage—from pulp selection to foil stamping—is monitored under one roof for batch-to-batch consistency.</p>
+                <p className="text-sm text-gray-500">Every stage鈥攆rom pulp selection to foil stamping鈥攊s monitored under one roof for batch-to-batch consistency.</p>
               </div>
               <div className="bg-gray-50 p-8 rounded-3xl">
                 <h3 className="font-bold text-lg mb-4">Cost Efficiency</h3>
@@ -152,7 +152,7 @@ const CustomPaperBagsPage = () => {
                 <p className="text-gray-500 text-sm">Because of their durability and aesthetic appeal, luxury consumers often reuse these bags for months, extending your brand's lifecycle.</p>
               </div>
               <div className="bg-green-50 p-10 rounded-[40px] border border-green-100 text-center">
-                <span className="text-5xl mb-4 block">🌿</span>
+                <span className="text-5xl mb-4 block">馃尶</span>
                 <p className="text-green-800 font-bold italic">"Luxury is only truly luxurious when it respects the planet. Our 100% recyclable construction leads the industry."</p>
               </div>
             </div>
@@ -276,7 +276,7 @@ const CustomPaperBagsPage = () => {
 
       {/* Footer */}
       <footer className="bg-white border-t py-12 px-6 mt-20 text-center text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+        <p>&copy; 2026 Saide Packaging. All Rights Reserved.</p>
         <div className="mt-4 flex justify-center space-x-8">
           <span>BSCI Certified</span>
           <span>FSC Sustainability</span>

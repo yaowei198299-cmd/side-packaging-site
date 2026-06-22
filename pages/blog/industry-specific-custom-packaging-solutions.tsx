@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const IndustrySpecificPackagingPost = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Industry-Specific Custom Packaging Solutions: Jewelry, Watches & Electronics | Side Packaging</title>
+        <title>Industry-Specific Custom Packaging Solutions: Jewelry, Watches & Electronics | Saide Packaging</title>
         <meta name="description" content="Expert guide on industry-specific custom packaging. Learn how to design luxury jewelry packaging boxes, watch gift boxes with velvet cushions, and custom electronic product gift boxes." />
         <meta name="keywords" content="Luxury jewelry packaging box, Watch gift box with velvet cushion, Custom cosmetic paper gift box, Rigid apparel box, Custom electronic product gift boxes, Luxury perfume packaging box, Custom skincare set packaging box" />
       
@@ -18,7 +18,7 @@ const IndustrySpecificPackagingPost = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -45,11 +45,11 @@ const IndustrySpecificPackagingPost = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">Industry-Specific Custom Packaging Solutions: Tailoring Luxury Boxes for Jewelry, Watches, and Electronics</h1>
-            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 17, 2026 | By Side Packaging Design Team</p>
+            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 17, 2026 | By Saide Packaging Design Team</p>
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
@@ -93,7 +93,7 @@ const IndustrySpecificPackagingPost = () => {
                 <p>
                   In the tech world, packaging is often the first "hardware" interaction. <strong>Custom electronic product gift boxes</strong> need to communicate innovation and sleekness.
                 </p>
-                <p><strong>Design Language:</strong> Minimalist aesthetics—clean lines, high-contrast colors (like deep blacks or clinical whites), and matte lamination—are dominant. Structural design must account for weight distribution, especially for items like tablets or high-end headphones.</p>
+                <p><strong>Design Language:</strong> Minimalist aesthetics鈥攃lean lines, high-contrast colors (like deep blacks or clinical whites), and matte lamination鈥攁re dominant. Structural design must account for weight distribution, especially for items like tablets or high-end headphones.</p>
                 <p><strong>Protection & Organization:</strong> High-end electronics demand millimetric precision in their inserts. Molded pulp (for eco-conscious tech brands) or laser-cut EVA foam are used to create compartments for cables, manuals, and accessories, ensuring a clutter-free unboxing. Anti-static coatings are also a necessary technical consideration for delicate circuitries.</p>
               </section>
 
@@ -127,7 +127,7 @@ const IndustrySpecificPackagingPost = () => {
               <section>
                 <h2 className="text-3xl font-black text-black tracking-tight uppercase">Conclusion: Choosing the Right Manufacturing Partner</h2>
                 <p>
-                  Creating industry-specific packaging requires a deep understanding of materials, structural engineering, and brand psychology. At Side Packaging HK Limited, we specialize in helping brands across these sectors transition from generic boxes to bespoke solutions that drive customer loyalty.
+                  Creating industry-specific packaging requires a deep understanding of materials, structural engineering, and brand psychology. At Saide Packaging, we specialize in helping brands across these sectors transition from generic boxes to bespoke solutions that drive customer loyalty.
                 </p>
                 <p>
                   From a <strong>luxury jewelry packaging box</strong> with intricate velvet inserts to <strong>custom skincare set packaging boxes</strong> that survive global shipping, our factory-direct model ensures you get the highest quality at the most competitive price.
@@ -162,7 +162,7 @@ const IndustrySpecificPackagingPost = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Leading manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. FSC and BSCI certified excellence.
             </p>
@@ -183,7 +183,7 @@ const IndustrySpecificPackagingPost = () => {
               <li><a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-green-500 transition-colors group">
                 WhatsApp Chat
               </a></li>
-              <li>Side Packaging HK Limited</li>
+              <li>Saide Packaging</li>
             </ul>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
@@ -123,7 +123,7 @@ const ProductsPage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Packaging Catalog | Luxo-Bespoke Solutions | Saide Packaging HK Limited</title>
+        <title>Packaging Catalog | Luxo-Bespoke Solutions | Saide Packaging</title>
         <meta name="description" content="Explore our technical packaging catalog. Industrial specs, MOQ, and lead times for luxury rigid boxes and retail solutions." />
       </Head>
 
@@ -166,7 +166,7 @@ const ProductsPage = () => {
                     {/* Content Area */}
                     <div className="p-10 flex-grow flex flex-col">
                       <div className="flex items-center gap-2 mb-6">
-                        <span className="text-[#C9A84C] text-[12px]">★</span>
+                        <span className="text-[#C9A84C] text-[12px]">鈽?/span>
                         <span className="text-[#C9A84C] font-black text-[10px] uppercase tracking-[0.2em] font-montserrat">{item.badge}</span>
                       </div>
                       
@@ -195,7 +195,7 @@ const ProductsPage = () => {
                       {/* Action Button - Luxo Style Outlined */}
                       <Link href={item.link} className="w-full border border-white/10 hover:border-[#C9A84C] py-4 text-center rounded-xl transition-all group/btn flex items-center justify-center gap-3 mt-auto">
                         <span className="text-[11px] font-black uppercase tracking-[0.25em] text-white group-hover/btn:text-[#C9A84C] transition-colors font-montserrat">
-                          → Quote This Product
+                          鈫?Quote This Product
                         </span>
                       </Link>
                     </div>

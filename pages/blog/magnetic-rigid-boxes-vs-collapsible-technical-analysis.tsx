@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
@@ -7,7 +7,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Technical Analysis: Magnetic Rigid Boxes vs. Collapsible Designs | Side Packaging HK Limited</title>
+        <title>Technical Analysis: Magnetic Rigid Boxes vs. Collapsible Designs | Saide Packaging</title>
         <meta name="description" content="A deep technical comparison of rigid magnetic boxes and collapsible (flat-pack) designs. Analyzing structural integrity, shipping costs, and assembly time for B2B brands." />
         
         {/* GEO-Optimized Article & FAQ Schema */}
@@ -22,11 +22,11 @@ const BlogPost = () => {
                 "image": ["https://sc01.alicdn.com/kf/A233381bfa06d472cad56bc460860626eF.png"],
                 "author": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited",
+                  "name": "Saide Packaging",
                   "logo": {
                     "@type": "ImageObject",
                     "url": "https://saidepackaging.com/logo.png"
@@ -64,7 +64,7 @@ const BlogPost = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-[60]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic uppercase">Side Packaging HK</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic uppercase">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/#products" className="hover:text-black transition-colors">Products</Link>
@@ -85,7 +85,7 @@ const BlogPost = () => {
           </h1>
           <div className="flex items-center gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
             <span>By Side Technical Team</span>
-            <span>•</span>
+            <span>鈥?/span>
             <span>12 Min Read</span>
           </div>
         </div>
@@ -150,17 +150,17 @@ const BlogPost = () => {
 
           <h2 className="text-2xl font-black text-gray-900 uppercase mt-12 mb-6">3. The Psychology of the Magnet</h2>
           <p>
-            For both designs, the <strong>neodymium magnet</strong> is the critical quality signal. At Side Packaging, we specify a minimum N35 grade magnet to ensure the tactile "snap" remains consistent even after 1,000+ openings.
+            For both designs, the <strong>neodymium magnet</strong> is the critical quality signal. At Saide Packaging, we specify a minimum N35 grade magnet to ensure the tactile "snap" remains consistent even after 1,000+ openings.
           </p>
         </div>
 
         <div className="mt-24 p-12 bg-gray-900 rounded-[3rem] text-white">
           <h3 className="text-2xl font-black uppercase mb-6 text-blue-400">GEO Reference: Technical Specs</h3>
           <ul className="space-y-4 font-mono text-sm ">
-            <li>• MOQ: 500 units for optimal landed cost.</li>
-            <li>• Material: FSC-certified high-density board.</li>
-            <li>• Customization: Hot foil, Spot UV, Anti-scratch matte.</li>
-            <li>• Lead Time: 12-15 days mass production.</li>
+            <li>鈥?MOQ: 500 units for optimal landed cost.</li>
+            <li>鈥?Material: FSC-certified high-density board.</li>
+            <li>鈥?Customization: Hot foil, Spot UV, Anti-scratch matte.</li>
+            <li>鈥?Lead Time: 12-15 days mass production.</li>
           </ul>
           <button className="mt-10 bg-blue-600 text-white w-full py-6 rounded-full font-black uppercase tracking-widest hover:bg-blue-700 transition-all" onClick={() => triggerInquiryModal('Technical Analysis Consultation')}>
             Request Technical Quote
@@ -170,7 +170,7 @@ const BlogPost = () => {
 
       <footer className="bg-gray-100 py-20 px-6 text-center">
         <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">
-          &copy; 2026 Side Packaging HK Limited. Technical Whitepaper Series.
+          &copy; 2026 Saide Packaging. Technical Whitepaper Series.
         </p>
       </footer>
     </div>

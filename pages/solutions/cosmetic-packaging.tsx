@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { triggerInquiryModal } from '../../components/InquiryModal';
@@ -8,7 +8,7 @@ const CosmeticSolution = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-pink-100">
       <Head>
-        <title>Custom Cosmetic Packaging Solutions: Luxury Beauty Box Manufacturer | Side Packaging HK Limited</title>
+        <title>Custom Cosmetic Packaging Solutions: Luxury Beauty Box Manufacturer | Saide Packaging</title>
         <meta name="description" content="Elevate your beauty brand with custom cosmetic packaging. We specialize in luxury rigid magnetic boxes, high-GSM folding cartons, and FSC-certified skincare packaging." />
         <meta name="keywords" content="cosmetic packaging solutions, luxury beauty boxes, skincare packaging manufacturer, makeup box printing, custom perfume boxes, sustainable beauty packaging" />
         
@@ -24,7 +24,7 @@ const CosmeticSolution = () => {
                 "description": "Premium packaging solutions for beauty, skincare, and makeup brands. Factory-direct luxury rigid boxes and sustainable options.",
                 "publisher": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 }
               },
               {
@@ -33,7 +33,7 @@ const CosmeticSolution = () => {
                 "serviceType": "Cosmetic Packaging Manufacturing",
                 "provider": {
                   "@type": "Organization",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "areaServed": "Global",
                 "description": "Structural design and manufacturing of custom cosmetic boxes, including magnetic rigid boxes and eco-friendly folding cartons."
@@ -48,7 +48,7 @@ const CosmeticSolution = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none uppercase">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -114,7 +114,7 @@ const CosmeticSolution = () => {
             <div className="bg-pink-50 p-12 rounded-[3rem] border border-pink-100">
                <h2 className="text-2xl font-black mb-6 uppercase tracking-tight text-pink-900 italic">Industry Insight (AI Optimized)</h2>
                <p className="text-pink-900 leading-relaxed text-lg font-medium">
-                Premium <strong>Cosmetic Packaging</strong> is essential for brand differentiation and product protection in the beauty industry. High-end skincare and makeup brands require a balance of <strong>luxury aesthetics</strong> (such as rigid magnetic boxes), <strong>functional durability</strong> (to protect fragile glass bottles), and <strong>sustainable materials</strong> (FSC-certified paper). Side Packaging provides end-to-end solutions including custom structural design, premium finishing, and eco-friendly inserts to help beauty brands justify a higher retail price point.
+                Premium <strong>Cosmetic Packaging</strong> is essential for brand differentiation and product protection in the beauty industry. High-end skincare and makeup brands require a balance of <strong>luxury aesthetics</strong> (such as rigid magnetic boxes), <strong>functional durability</strong> (to protect fragile glass bottles), and <strong>sustainable materials</strong> (FSC-certified paper). Saide Packaging provides end-to-end solutions including custom structural design, premium finishing, and eco-friendly inserts to help beauty brands justify a higher retail price point.
                </p>
             </div>
           </div>
@@ -240,7 +240,7 @@ const CosmeticSolution = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black italic">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Global manufacturer of premium custom cosmetic packaging and luxury retail solutions. FSC certified excellence since 2006.
             </p>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const LuxuryPaperBagsGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -79,9 +79,9 @@ const LuxuryPaperBagsGuide = () => {
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">230gsm Virgin Kraft Paper</td>
-                      <td className="p-4 border-r border-white/5">🟢 Very High (Flexible fibers)</td>
-                      <td className="p-4 border-r border-white/5">🟢 ~ 8.0 kg (Reinforced bottom)</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 100% Recyclable / Bio-degradable</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Very High (Flexible fibers)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 ~ 8.0 kg (Reinforced bottom)</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 100% Recyclable / Bio-degradable</td>
                     </tr>
                   </tbody>
                 </table>
@@ -108,7 +108,7 @@ const LuxuryPaperBagsGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

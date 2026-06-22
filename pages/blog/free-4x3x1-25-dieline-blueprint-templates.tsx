@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const DielineTemplatesGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -63,12 +63,12 @@ const DielineTemplatesGuide = () => {
                 <div className="bg-white/5 border border-white/10 p-10 rounded-[2.5rem] group hover:border-[#C9A84C]/50 transition-all">
                   <h3 className="text-xl font-black uppercase italic mb-6">Rigid Magnetic Dieline</h3>
                   <p className="text-gray-500 text-xs uppercase tracking-widest mb-8">Optimized for 1200gsm board. Includes score lines and glue-tab margins.</p>
-                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint →</a>
+                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint 鈫?/a>
                 </div>
                 <div className="bg-white/5 border border-white/10 p-10 rounded-[2.5rem] group hover:border-[#C9A84C]/50 transition-all">
                   <h3 className="text-xl font-black uppercase italic mb-6">Tuck-Front Mailer Dieline</h3>
                   <p className="text-gray-500 text-xs uppercase tracking-widest mb-8">E-Flute corrugated engineering with ear-lock security tabs.</p>
-                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint →</a>
+                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint 鈫?/a>
                 </div>
               </div>
             </section>
@@ -83,9 +83,9 @@ const DielineTemplatesGuide = () => {
                 <br/><br/>
                 - Standard Setup: 15% Paper waste
                 <br/>
-                - Saide Optimized Layout: 🟢 4% Paper waste
+                - Saide Optimized Layout: 馃煝 4% Paper waste
                 <br/>
-                - Result: 🟢 11% reduction in raw material unit cost.
+                - Result: 馃煝 11% reduction in raw material unit cost.
               </div>
             </section>
 
@@ -99,7 +99,7 @@ const DielineTemplatesGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

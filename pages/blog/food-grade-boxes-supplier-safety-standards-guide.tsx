@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -26,7 +26,7 @@ const FoodGradeSupplierGuide = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Saide Packaging HK Limited",
+              "name": "Saide Packaging",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.saidepackaging.com/logo.png"
@@ -51,7 +51,7 @@ const FoodGradeSupplierGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -73,7 +73,7 @@ const FoodGradeSupplierGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Why Your Supplier Choice Matters</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                In the food industry, a box is not just a container—it's a critical safety barrier. Choosing the wrong **food grade boxes supplier** can lead to product contamination, legal fines, and irreversible brand damage. 
+                In the food industry, a box is not just a container鈥攊t's a critical safety barrier. Choosing the wrong **food grade boxes supplier** can lead to product contamination, legal fines, and irreversible brand damage. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 At **Saide Packaging**, we've spent 20 years engineering food-safe solutions that exceed FDA and EU standards. We don't just "buy" food-grade paper; we audit the entire supply chain.
@@ -95,17 +95,17 @@ const FoodGradeSupplierGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">FDA Direct Contact</td>
                       <td className="p-4 border-r border-white/5">Zero toxic migration</td>
-                      <td className="p-4">🟢 100% Virgin Fiber Paperboard</td>
+                      <td className="p-4">馃煝 100% Virgin Fiber Paperboard</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">PFAS-Free Greaseproof</td>
                       <td className="p-4 border-r border-white/5">Eco-friendly barrier</td>
-                      <td className="p-4">🟢 Aqueous Mechanical Barrier</td>
+                      <td className="p-4">馃煝 Aqueous Mechanical Barrier</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Heavy Metal Audit</td>
                       <td className="p-4 border-r border-white/5">Pb, Cd, Hg &lt; 100ppm</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 Third-Party Batch Testing</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 Third-Party Batch Testing</td>
                     </tr>
                   </tbody>
                 </table>
@@ -118,14 +118,14 @@ const FoodGradeSupplierGuide = () => {
                 Old-school food boxes used plastic films or "forever chemicals" (PFAS) for grease resistance. Modern B2B brands require sustainable alternatives. Our **Food Grade Boxes** utilize an **Aqueous (water-based) coating** that provides superior oil resistance while remaining 100% repulpable and recyclable.
               </p>
               <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed italic">
-                 "I personally visit our paper mills twice a year to ensure no recycled 'grey' pulp is mixed into our food-grade batches. Safety is non-negotiable." — Jocelyn, Founder
+                 "I personally visit our paper mills twice a year to ensure no recycled 'grey' pulp is mixed into our food-grade batches. Safety is non-negotiable." 鈥?Jocelyn, Founder
               </div>
             </section>
 
             <section className="py-24 border-t border-white/5 text-center bg-white/5 rounded-[3rem] px-12 my-20">
               <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-8 font-montserrat text-[#C9A84C]">Audit Your Food Safety Standards</h2>
               <p className="text-gray-300 text-lg font-medium mb-12 uppercase tracking-tight leading-relaxed max-w-2xl mx-auto">
-                "Are you unsure if your current supplier is truly FDA-compliant? Don't risk your brand's future. Send me your current specs, and I'll perform a technical compliance audit for you—for free."
+                "Are you unsure if your current supplier is truly FDA-compliant? Don't risk your brand's future. Send me your current specs, and I'll perform a technical compliance audit for you鈥攆or free."
               </p>
               <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
                 <a href="https://wa.me/8613699786538" className="bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl text-[10px]">Chat with Jocelyn</a>
@@ -139,7 +139,7 @@ const FoodGradeSupplierGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

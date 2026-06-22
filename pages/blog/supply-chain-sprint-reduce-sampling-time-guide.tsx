@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const LeadTimeSprintGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -72,22 +72,22 @@ const LeadTimeSprintGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Technical Dieline Delivery</td>
                       <td className="p-4 border-r border-white/5">72 - 120 Hours</td>
-                      <td className="p-4">🟢 12 Hours (Next-Day)</td>
+                      <td className="p-4">馃煝 12 Hours (Next-Day)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">3D Digital Mockup</td>
                       <td className="p-4 border-r border-white/5">48 Hours</td>
-                      <td className="p-4">🟢 Instant (Upon artwork receipt)</td>
+                      <td className="p-4">馃煝 Instant (Upon artwork receipt)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Physical White Sample</td>
                       <td className="p-4 border-r border-white/5">5 - 7 Days</td>
-                      <td className="p-4">🟢 48 Hours</td>
+                      <td className="p-4">馃煝 48 Hours</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Production Start</td>
                       <td className="p-4 border-r border-white/5">Week 3</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 Day 5 (Verified Blueprint)</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 Day 5 (Verified Blueprint)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -97,7 +97,7 @@ const LeadTimeSprintGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Why Our Engineers Speak B2B Sales</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                We achieve this speed by integrating our engineering lab directly into our communication channel. When you send us your internal dimensions for a **4x3x1.25"** jewelry box, your inquiry is not "passed around"—it is directly processed by a technical consultant who can immediately identify board ganging efficiencies and structural risks. 
+                We achieve this speed by integrating our engineering lab directly into our communication channel. When you send us your internal dimensions for a **4x3x1.25"** jewelry box, your inquiry is not "passed around"鈥攊t is directly processed by a technical consultant who can immediately identify board ganging efficiencies and structural risks. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 This **Technical-Direct** model reduces the feedback-correction loop from 7 days to **12 hours**, allowing your brand to move from concept to mass production **15 days faster** than the industry average.
@@ -114,7 +114,7 @@ const LeadTimeSprintGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

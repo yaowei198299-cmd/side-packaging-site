@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PriceCalculator from '../../components/PriceCalculator';
@@ -8,8 +8,8 @@ const ProductPage = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500">
       <Head>
-        <title>Custom Magnetic Gift Boxes | Luxury Rigid Box Manufacturer | Side Packaging HK Limited</title>
-        <meta name="description" content="Premium custom magnetic gift boxes from Side Packaging HK Limited. 20+ years of manufacturing luxury rigid packaging. FSC & BSCI certified factory direct." />
+        <title>Custom Magnetic Gift Boxes | Luxury Rigid Box Manufacturer | Saide Packaging</title>
+        <meta name="description" content="Premium custom magnetic gift boxes from Saide Packaging. 20+ years of manufacturing luxury rigid packaging. FSC & BSCI certified factory direct." />
         <link rel="canonical" href="https://saidepackaging.com/products/custom-magnetic-gift-boxes" />
         <script
           type="application/ld+json"
@@ -27,7 +27,7 @@ const ProductPage = () => {
                 "mpn": "SIDE-MAG-SPEC-2026",
                 "brand": {
                   "@type": "Brand",
-                  "name": "Side Packaging HK Limited"
+                  "name": "Saide Packaging"
                 },
                 "material": "1200gsm-1800gsm high-density greyboard, 157gsm art paper",
                 "additionalProperty": [
@@ -59,7 +59,7 @@ const ProductPage = () => {
       {/* Navbar */}
       <nav className="border-b border-white/10 bg-black/95 backdrop-blur-md sticky top-0 z-[80]">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white hover:text-gray-300 transition-colors">Side Packaging</Link>
+          <Link href="/" className="text-2xl font-black tracking-tighter uppercase italic text-white hover:text-gray-300 transition-colors">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-400">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/products" className="text-white border-b-2 border-white pb-1">Bespoke Products</Link>
@@ -185,7 +185,7 @@ const ProductPage = () => {
 
       <footer className="bg-black text-white py-16 border-t border-white/5 text-center">
         <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          &copy; 2026 Side Packaging HK Limited. FSC Certified Manufacturer.
+          &copy; 2026 Saide Packaging. FSC Certified Manufacturer.
         </p>
       </footer>
     </div>

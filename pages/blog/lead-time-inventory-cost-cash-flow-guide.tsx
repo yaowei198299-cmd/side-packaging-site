@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const InventoryCycleGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -53,7 +53,7 @@ const InventoryCycleGuide = () => {
                 For high-growth e-commerce brands, packaging is often their largest non-inventory capital expenditure. A traditional factory lead time of **35-45 days** (plus 30 days ocean freight) forces brands to hold a "Safety Stock" of 3-4 months. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                This safety stock is "Frozen Capital"—money that could be spent on Facebook Ads or new product R&D.
+                This safety stock is "Frozen Capital"鈥攎oney that could be spent on Facebook Ads or new product R&D.
               </p>
             </section>
 
@@ -68,9 +68,9 @@ const InventoryCycleGuide = () => {
                 <br/><br/>
                 - Factory A (Standard): 40 Day Lead Time
                 <br/>
-                - Saide Packaging: 15 Day Lead Time (🟢 62.5% Faster)
+                - Saide Packaging: 15 Day Lead Time (馃煝 62.5% Faster)
                 <br/><br/>
-                🟢 Impact on Safety Stock: By switching to Saide, a brand shipping 10,000 jewelry boxes monthly can reduce their warehouse "Dead Stock" from 25,000 units to **15,000 units**. 
+                馃煝 Impact on Safety Stock: By switching to Saide, a brand shipping 10,000 jewelry boxes monthly can reduce their warehouse "Dead Stock" from 25,000 units to **15,000 units**. 
               </div>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 At a unit price of $1.50, this structural supply chain shift recovers **$15,000 in immediate liquidity** for the brand, while reducing warehouse storage fees by **40%**.
@@ -91,17 +91,17 @@ const InventoryCycleGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Engineering & Dielines</td>
-                      <td className="p-4 border-r border-white/5">🟢 12 Hours (Overnight)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 12 Hours (Overnight)</td>
                       <td className="p-4">3 to 5 Days</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Material Sourcing (FSC)</td>
-                      <td className="p-4 border-r border-white/5">🟢 48 Hours (On-site Stock)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 48 Hours (On-site Stock)</td>
                       <td className="p-4">7 to 10 Days</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Full Production (10k units)</td>
-                      <td className="p-4 border-r border-white/5">🟢 12 Business Days</td>
+                      <td className="p-4 border-r border-white/5">馃煝 12 Business Days</td>
                       <td className="p-4">25 to 30 Days</td>
                     </tr>
                   </tbody>
@@ -126,7 +126,7 @@ const InventoryCycleGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

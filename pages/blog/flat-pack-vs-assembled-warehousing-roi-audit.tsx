@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const WarehousingROI = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -82,9 +82,9 @@ const WarehousingROI = () => {
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide Collapsible (Flat-Pack)</td>
-                      <td className="p-4 border-r border-white/5">🟢 ~ 6,500 units</td>
-                      <td className="p-4 border-r border-white/5">🟢 1.5 Pallets</td>
-                      <td className="p-4 text-green-500 font-bold">🟢 82% Storage Cost Reduction</td>
+                      <td className="p-4 border-r border-white/5">馃煝 ~ 6,500 units</td>
+                      <td className="p-4 border-r border-white/5">馃煝 1.5 Pallets</td>
+                      <td className="p-4 text-green-500 font-bold">馃煝 82% Storage Cost Reduction</td>
                     </tr>
                   </tbody>
                 </table>
@@ -103,9 +103,9 @@ const WarehousingROI = () => {
                 <br/>
                 - Assembled Storage (10k units): ~$175.00 / month
                 <br/>
-                - Flat-Pack Storage (10k units): 🟢 ~$32.00 / month
+                - Flat-Pack Storage (10k units): 馃煝 ~$32.00 / month
                 <br/><br/>
-                - 12-Month Total Recovery: 🟢 $1,716.00 in pure margin.
+                - 12-Month Total Recovery: 馃煝 $1,716.00 in pure margin.
               </div>
             </section>
 
@@ -119,7 +119,7 @@ const WarehousingROI = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

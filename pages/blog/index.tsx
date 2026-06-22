@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import LeadMagnet from '../../components/LeadMagnet';
@@ -377,7 +377,7 @@ const BlogIndex = () => {
                       {post.excerpt}
                     </p>
                     <span className="text-white font-black text-[10px] uppercase tracking-widest border-b-2 border-white pb-2 self-start group-hover:border-[#C9A84C] group-hover:text-[#C9A84C] transition-all font-montserrat">
-                      Read Technical Analysis →
+                      Read Technical Analysis 鈫?
                     </span>
                   </div>
                 </Link>
@@ -397,7 +397,7 @@ const BlogIndex = () => {
 
       <footer className="bg-black text-white py-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
         </div>
       </footer>
 

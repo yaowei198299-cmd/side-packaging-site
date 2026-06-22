@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const CornerDurabilityGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -50,7 +50,7 @@ const CornerDurabilityGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The Quality Trap: Why Luxury Boxes Crack</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                Nothing damages a high-end jewelry brand's reputation faster than a "premium" box that arrives with split corners or a lid that has "bowed" into a convex shape. These defects are not accidental—they are the result of poor structural engineering during the material sourcing phase. 
+                Nothing damages a high-end jewelry brand's reputation faster than a "premium" box that arrives with split corners or a lid that has "bowed" into a convex shape. These defects are not accidental鈥攖hey are the result of poor structural engineering during the material sourcing phase. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 For a standard **4x3x1.25" (10.2x7.6x3.2 cm)** rigid box, the physics of corner tension are extreme. To eliminate these issues, we apply a specific engineering framework to every production run.
@@ -88,9 +88,9 @@ const CornerDurabilityGuide = () => {
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">V-Grooving (90-degree CNC)</td>
-                      <td className="p-4 border-r border-white/5">🟢 Razor Sharp</td>
-                      <td className="p-4 border-r border-white/5">🟢 High Integrity</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 High-End Jewelry & Watch Boxes</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Razor Sharp</td>
+                      <td className="p-4 border-r border-white/5">馃煝 High Integrity</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 High-End Jewelry & Watch Boxes</td>
                     </tr>
                   </tbody>
                 </table>
@@ -124,7 +124,7 @@ const CornerDurabilityGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const CanadianSourcingGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Sourcing Custom Rigid Boxes for Canadian Brands: Logistics & Duty Guide | Side Packaging</title>
+        <title>Sourcing Custom Rigid Boxes for Canadian Brands: Logistics & Duty Guide | Saide Packaging</title>
         <meta name="description" content="A strategic guide for Canadian businesses sourcing custom rigid gift boxes from China. Expert insights on DDP shipping, GST/HST compliance, and factory selection." />
         <meta name="keywords" content="Custom rigid boxes Canada, Sourcing packaging from China, DDP shipping to Toronto, Canada customs duties packaging, Luxury gift boxes Vancouver" />
       
@@ -18,7 +18,7 @@ const CanadianSourcingGuide = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -29,12 +29,12 @@ const CanadianSourcingGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
               <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">Sourcing Custom Rigid Boxes for Canadian Brands: The 2026 Strategy</h1>
-              <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-sm">Published April 21, 2026 | By Andy Pan, Side Packaging HK</p>
+              <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-sm">Published April 21, 2026 | By Andy Pan, Saide Packaging</p>
             </header>
 
             <div className="prose prose-xl prose-gray max-w-none font-medium leading-relaxed text-gray-600 space-y-12">
@@ -49,7 +49,7 @@ const CanadianSourcingGuide = () => {
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Logistics: DDP vs. CIF for Canadian Importers</h2>
               <p>
-                For most B2B clients in Canada, we recommend **DDP (Delivered Duty Paid)** shipping. This means Side Packaging handles everything: ocean or air freight, Canadian customs clearance, GST/HST payments, and final delivery to your warehouse. Whether you are located in the GTA (Greater Toronto Area) or Western Canada, DDP provides a "domestic" buying experience.
+                For most B2B clients in Canada, we recommend **DDP (Delivered Duty Paid)** shipping. This means Saide Packaging handles everything: ocean or air freight, Canadian customs clearance, GST/HST payments, and final delivery to your warehouse. Whether you are located in the GTA (Greater Toronto Area) or Western Canada, DDP provides a "domestic" buying experience.
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Understanding CBSA Duties and Taxes</h2>
@@ -60,16 +60,16 @@ const CanadianSourcingGuide = () => {
               <div className="bg-gray-50 p-12 rounded-[3rem] my-16 border border-gray-100">
                 <h3 className="text-2xl font-black mb-6 uppercase">Canada-Specific Sourcing Checklist</h3>
                 <ul className="space-y-4 text-sm font-bold text-gray-500 uppercase tracking-wide">
-                  <li>✅ FSC-Certified Sustainable Materials</li>
-                  <li>✅ Cold-Weather Adhesive Testing (Essential for Canadian Winters)</li>
-                  <li>✅ Flat-Pack Collapsible Designs to Reduce Trans-Pacific Freight</li>
-                  <li>✅ GST-Compliant Invoicing for Tax Credit Recovery</li>
+                  <li>鉁?FSC-Certified Sustainable Materials</li>
+                  <li>鉁?Cold-Weather Adhesive Testing (Essential for Canadian Winters)</li>
+                  <li>鉁?Flat-Pack Collapsible Designs to Reduce Trans-Pacific Freight</li>
+                  <li>鉁?GST-Compliant Invoicing for Tax Credit Recovery</li>
                 </ul>
               </div>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Conclusion</h2>
               <p>
-                Side Packaging HK Limited has been serving the Canadian market for over two decades. We understand the specific quality expectations of Canadian consumers—clean lines, sustainable materials, and structural durability.
+                Saide Packaging has been serving the Canadian market for over two decades. We understand the specific quality expectations of Canadian consumers鈥攃lean lines, sustainable materials, and structural durability.
               </p>
 
               <div className="bg-black text-white p-16 rounded-[3.5rem] mt-24 shadow-2xl">
@@ -89,8 +89,8 @@ const CanadianSourcingGuide = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. All Rights Reserved.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

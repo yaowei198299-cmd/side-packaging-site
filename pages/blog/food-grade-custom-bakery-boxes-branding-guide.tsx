@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const BakeryPackagingBrandingGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>Custom Food-Grade Bakery & Bread Boxes: 2026 Branding Guide | Side Packaging</title>
+        <title>Custom Food-Grade Bakery & Bread Boxes: 2026 Branding Guide | Saide Packaging</title>
         <meta name="description" content="Master the art of bakery branding in 2026. Learn about food-safe materials, windowed bakery box designs, and sustainable bread packaging for high-end bakeries." />
         <meta name="keywords" content="custom bakery boxes 2026, food grade bread packaging, windowed cake boxes, sustainable bakery branding, grease-proof food boxes" />
         <script type="application/ld+json">
@@ -24,7 +24,7 @@ const BakeryPackagingBrandingGuide = () => {
             "datePublished": "2026-05-04",
             "publisher": {
               "@type": "Organization",
-              "name": "Side Packaging HK Limited",
+              "name": "Saide Packaging",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.saidepackaging.com/logo.png"
@@ -38,7 +38,7 @@ const BakeryPackagingBrandingGuide = () => {
 
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
             <Link href="/blog" className="text-black border-b-2 border-black py-1">Blog</Link>
@@ -49,7 +49,7 @@ const BakeryPackagingBrandingGuide = () => {
 
       <main className="py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <header className="mb-16">
@@ -82,7 +82,7 @@ const BakeryPackagingBrandingGuide = () => {
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Scaling Your Bakery Brand</h2>
               <p>
-                Many artisan bakeries start with generic boxes and stickers. Transitioning to custom-printed boxes is the single most effective way to justify a premium price point. With Side Packaging's **low MOQ programs**, you can secure custom bakery boxes starting at just 500 units—perfect for seasonal launches or boutique expansions.
+                Many artisan bakeries start with generic boxes and stickers. Transitioning to custom-printed boxes is the single most effective way to justify a premium price point. With Saide Packaging's **low MOQ programs**, you can secure custom bakery boxes starting at just 500 units鈥攑erfect for seasonal launches or boutique expansions.
               </p>
 
               <div className="bg-gray-50 p-12 rounded-[3rem] my-16 border border-gray-100">
@@ -111,8 +111,8 @@ const BakeryPackagingBrandingGuide = () => {
 
       <footer className="bg-white border-t py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">SIDE PACKAGING</div>
-          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">© 2026 Side Packaging HK Limited. Where Safety Meets Style.</p>
+          <div className="font-black text-3xl tracking-tighter mb-8 uppercase italic">Saide Packaging</div>
+          <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">漏 2026 Saide Packaging. Where Safety Meets Style.</p>
         </div>
       </footer>
     </div>

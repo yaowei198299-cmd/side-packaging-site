@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import { triggerInquiryModal } from '../../components/InquiryModal';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const ChoosingSupplierGuide = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-blue-100">
       <Head>
-        <title>How to Choose the Right Custom Packaging Boxes for Your Business | Side Packaging</title>
+        <title>How to Choose the Right Custom Packaging Boxes for Your Business | Saide Packaging</title>
         <meta name="description" content="Choosing the right custom packaging box is essential for brand identity and product safety. Learn about magnetic boxes, mailers, and rigid boxes in our guide." />
       
         <link rel="canonical" href="https://saidepackaging.com/blog/how-to-choose-the-right-packaging-supplier" />
@@ -17,7 +17,7 @@ const ChoosingSupplierGuide = () => {
       {/* Navigation */}
       <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">SIDE PACKAGING</Link>
+          <Link href="/" className="font-black text-2xl tracking-tighter italic shrink-0 select-none">Saide Packaging</Link>
           
           <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
             <Link href="/" className="hover:text-black transition-colors">Home</Link>
@@ -44,11 +44,11 @@ const ChoosingSupplierGuide = () => {
 
       <main className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-blue-600 font-black text-xs uppercase tracking-widest mb-8 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
           
           <article>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 leading-[1.1] uppercase italic">How to Choose the Right Custom Packaging Boxes for Your Business</h1>
-            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 4, 2026 | By Side Packaging Expert Team</p>
+            <p className="text-gray-400 font-bold mb-12 uppercase tracking-widest text-xs">Published April 4, 2026 | By Saide Packaging Expert Team</p>
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
@@ -60,7 +60,7 @@ const ChoosingSupplierGuide = () => {
 
             <div className="prose prose-xl prose-gray max-w-none font-medium leading-relaxed text-gray-600 space-y-12">
               <p>
-                In today's competitive market, packaging is no longer just a container for your product—it's a critical part of your brand identity and the first physical interaction your customer has with your brand. Choosing the right custom packaging box is a decision that impacts both your brand's perception and your operational costs.
+                In today's competitive market, packaging is no longer just a container for your product鈥攊t's a critical part of your brand identity and the first physical interaction your customer has with your brand. Choosing the right custom packaging box is a decision that impacts both your brand's perception and your operational costs.
               </p>
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">1. Identify Your Product's Needs</h2>
@@ -76,7 +76,7 @@ const ChoosingSupplierGuide = () => {
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">3. Sustainability Matters</h2>
               <p>
-                Google and modern consumers prioritize eco-friendly solutions. At Side Packaging, we offer **FSC-certified materials** and 100% recyclable options. Using sustainable packaging not only reduces your environmental footprint but also appeals to the growing demographic of eco-conscious shoppers.
+                Google and modern consumers prioritize eco-friendly solutions. At Saide Packaging, we offer **FSC-certified materials** and 100% recyclable options. Using sustainable packaging not only reduces your environmental footprint but also appeals to the growing demographic of eco-conscious shoppers.
               </p>
 
               <h2 className="text-3xl font-black text-black tracking-tight uppercase">4. Design and Branding</h2>
@@ -86,7 +86,7 @@ const ChoosingSupplierGuide = () => {
 
               <div className="bg-gray-50 p-10 rounded-[2rem] border border-gray-100 mt-20">
                 <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Need expert advice?</h3>
-                <p className="text-gray-500 mb-8">Our team at Side Packaging HK Limited has over 20 years of experience in manufacturing premium custom boxes. We can help you find the perfect balance between luxury and logistics.</p>
+                <p className="text-gray-500 mb-8">Our team at Saide Packaging has over 20 years of experience in manufacturing premium custom boxes. We can help you find the perfect balance between luxury and logistics.</p>
                 <Link href="#inquiry-form" className="inline-block bg-black text-white px-10 py-4 rounded-full font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Contact Andy for a Quote</Link>
               </div>
 
@@ -110,7 +110,7 @@ const ChoosingSupplierGuide = () => {
       <footer className="bg-white border-t py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-gray-400">
           <div className="col-span-2">
-            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">SIDE PACKAGING</div>
+            <div className="font-black text-3xl tracking-tighter mb-6 uppercase text-black">Saide Packaging</div>
             <p className="max-w-sm font-medium leading-relaxed">
               Premium manufacturer of custom magnetic closure gift boxes and luxury rigid packaging solutions. China-based factory direct excellence.
             </p>
@@ -131,7 +131,7 @@ const ChoosingSupplierGuide = () => {
               <li><a href="https://wa.me/8613699786538" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-green-500 transition-colors group">
                 WhatsApp Chat
               </a></li>
-              <li>Side Packaging HK Limited</li>
+              <li>Saide Packaging</li>
             </ul>
           </div>
         </div>

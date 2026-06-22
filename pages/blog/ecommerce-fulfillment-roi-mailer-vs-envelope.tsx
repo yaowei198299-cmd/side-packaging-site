@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const EcommerceFulfillmentROI = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -67,7 +67,7 @@ const EcommerceFulfillmentROI = () => {
                   <thead>
                     <tr className="bg-white/5 border-b border-white/10 text-[#C9A84C] font-black">
                       <th className="p-4 border-r border-white/5">Packaging Type</th>
-                      <th className="p-4 border-r border-white/5">External Volume (cm³)</th>
+                      <th className="p-4 border-r border-white/5">External Volume (cm鲁)</th>
                       <th className="p-4 border-r border-white/5">B2C Postage Category</th>
                       <th className="p-4">Customer Trust Rating</th>
                     </tr>
@@ -77,13 +77,13 @@ const EcommerceFulfillmentROI = () => {
                       <td className="p-4 border-r border-white/5 font-black text-white">Large Bubble Mailer</td>
                       <td className="p-4 border-r border-white/5">Variable (Bulky)</td>
                       <td className="p-4 border-r border-white/5">Small Parcel</td>
-                      <td className="p-4">🔴 Low (Fragile feel)</td>
+                      <td className="p-4">馃敶 Low (Fragile feel)</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide 4x3x1.25" Mailer</td>
-                      <td className="p-4 border-r border-white/5">🟢 248 cm³ (Ultra-Compact)</td>
-                      <td className="p-4 border-r border-white/5">🟢 Letterbox / Large Letter</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 High (Luxury protection)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 248 cm鲁 (Ultra-Compact)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 Letterbox / Large Letter</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 High (Luxury protection)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -102,7 +102,7 @@ const EcommerceFulfillmentROI = () => {
                 <br/>
                 - Savings from Letterbox Postage: $1.85 per order
                 <br/>
-                - 🟢 Total Profit Recovery: $4.25 per customer shipment.
+                - 馃煝 Total Profit Recovery: $4.25 per customer shipment.
               </div>
             </section>
 
@@ -116,7 +116,7 @@ const EcommerceFulfillmentROI = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging HK Limited. © 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
       </footer>
 
       <WhatsAppButton />
