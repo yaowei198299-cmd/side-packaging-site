@@ -95,3 +95,4 @@ const MagneticGiftBoxesPage = () => {
 };
 
 export default MagneticGiftBoxesPage;
+

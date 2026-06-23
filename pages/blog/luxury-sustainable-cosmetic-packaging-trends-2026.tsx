@@ -123,3 +123,4 @@ const CosmeticPackagingTrends2026 = () => {
 };
 
 export default CosmeticPackagingTrends2026;
+

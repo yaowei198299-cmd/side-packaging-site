@@ -96,3 +96,4 @@ const LuxuryApparelPackagingGuide = () => {
 };
 
 export default LuxuryApparelPackagingGuide;
+

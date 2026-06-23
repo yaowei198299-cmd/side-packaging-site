@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+﻿import React, { useState, useEffect, useCallback } from 'react';
 import InquiryForm from './InquiryForm';
 
 const InquiryModal = () => {
@@ -51,3 +51,4 @@ export const triggerInquiryModal = (productTitle?: string) => {
 };
 
 export default InquiryModal;
+

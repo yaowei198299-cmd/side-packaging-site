@@ -57,10 +57,10 @@ const FSCCertificationImportanceGuide = () => {
                 <h3 className="text-2xl font-black mb-6 uppercase">Why Saide Packaging Prioritizes FSC</h3>
                 <p>As a leading China-based manufacturer, we've invested heavily in our FSC chain-of-custody certification. This allows our clients to:</p>
                 <ul className="space-y-4 text-sm font-bold text-gray-500 uppercase tracking-wide mt-6">
-                  <li>鉁?Print the official FSC Logo on their boxes</li>
-                  <li>鉁?Pass rigorous sustainability audits in the UK & EU</li>
-                  <li>鉁?Align with Global Luxury Conglomerate standards (LVMH, Kering)</li>
-                  <li>鉁?Ensure 100% Transparency in Material Sourcing</li>
+                  <li>✅Print the official FSC Logo on their boxes</li>
+                  <li>✅Pass rigorous sustainability audits in the UK & EU</li>
+                  <li>✅Align with Global Luxury Conglomerate standards (LVMH, Kering)</li>
+                  <li>✅Ensure 100% Transparency in Material Sourcing</li>
                 </ul>
               </div>
 
@@ -95,3 +95,4 @@ const FSCCertificationImportanceGuide = () => {
 };
 
 export default FSCCertificationImportanceGuide;
+

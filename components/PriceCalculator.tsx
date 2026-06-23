@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { createCartWithCustomAttributes } from '../lib/shopify_client';
 
 const PriceCalculator = ({ variantId }: { variantId: string }) => {
@@ -164,3 +164,4 @@ const PriceCalculator = ({ variantId }: { variantId: string }) => {
 };
 
 export default PriceCalculator;
+

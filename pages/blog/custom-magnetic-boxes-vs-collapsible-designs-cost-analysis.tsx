@@ -122,3 +122,4 @@ const MagneticVsCollapsibleGuide = () => {
 };
 
 export default MagneticVsCollapsibleGuide;
+

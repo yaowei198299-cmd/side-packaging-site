@@ -131,3 +131,4 @@ const PalletOptimizationGuide = () => {
 };
 
 export default PalletOptimizationGuide;
+

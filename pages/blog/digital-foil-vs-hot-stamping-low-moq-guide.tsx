@@ -123,3 +123,4 @@ const DigitalFoilGuide = () => {
 };
 
 export default DigitalFoilGuide;
+

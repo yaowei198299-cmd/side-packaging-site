@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import WhatsAppButton from '../components/WhatsAppButton';
@@ -22,7 +22,7 @@ const InquiryPage = () => {
             <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
           </div>
-          <Link href="/" className="text-[9px] font-black uppercase tracking-widest text-white/40 hover:text-white transition-all">← Back to Site</Link>
+          <Link href="/" className="text-[9px] font-black uppercase tracking-widest text-white/40 hover:text-white transition-all">鈫?Back to Site</Link>
         </div>
       </nav>
 
@@ -54,7 +54,7 @@ const InquiryPage = () => {
                 <div>
                   <p className="text-[10px] font-black text-[#C9A84C] uppercase tracking-widest mb-1">Packaging Consultant</p>
                   <h3 className="text-2xl font-black italic mb-2 font-montserrat">Jocelyn</h3>
-                  <p className="text-[10px] font-black text-green-500 uppercase tracking-widest">Online · Avg. 2h reply</p>
+                  <p className="text-[10px] font-black text-green-500 uppercase tracking-widest">Online 路 Avg. 2h reply</p>
                 </div>
               </div>
 
@@ -91,3 +91,4 @@ const InquiryPage = () => {
 };
 
 export default InquiryPage;
+

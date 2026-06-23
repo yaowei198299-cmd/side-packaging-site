@@ -125,7 +125,7 @@ const UltimateGuide = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
                 {["Lamination", "Spot UV", "Hot Foil", "Embossing", "Debossing", "Aqueous Coating", "Soy Inks", "FSC Board"].map((item, i) => (
                   <div key={i} className="flex flex-col items-center p-6 bg-gray-50 rounded-2xl text-center">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full mb-4 flex items-center justify-center text-blue-600 text-[10px] font-black">鉁?/div>
+                    <div className="w-8 h-8 bg-blue-100 rounded-full mb-4 flex items-center justify-center text-blue-600 text-[10px] font-black">✅/div>
                     <span className="text-[10px] font-black uppercase tracking-widest leading-tight">{item}</span>
                   </div>
                 ))}
@@ -184,3 +184,4 @@ const UltimateGuide = () => {
 };
 
 export default UltimateGuide;
+

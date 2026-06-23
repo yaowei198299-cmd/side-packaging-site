@@ -331,3 +331,4 @@ const CosmeticPackagingBoxesPage = () => {
 };
 
 export default CosmeticPackagingBoxesPage;
+

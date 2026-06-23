@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -23,27 +23,27 @@ const HomePageDe = () => {
   const faqs = [
     {
       q: "Was ist Ihre Mindestbestellmenge (MOQ)?",
-      a: "Unsere Standard-MOQ beginnt bei 500 Einheiten für Luxus-Magnetboxen und starre Geschenkboxen. Für E-Commerce-Versandkartons können wir Bestellungen ab 100 Einheiten entgegennehmen, um wachsende Marken zu unterstützen."
+      a: "Unsere Standard-MOQ beginnt bei 500 Einheiten f眉r Luxus-Magnetboxen und starre Geschenkboxen. F眉r E-Commerce-Versandkartons k枚nnen wir Bestellungen ab 100 Einheiten entgegennehmen, um wachsende Marken zu unterst眉tzen."
     },
     {
       q: "Wie kann ich meine Verpackungskosten senken?",
-      a: "Wir bieten eine kostenlose technische Kosten-Nutzen-Analyse an. Durch die Optimierung von Boxstrukturen, Materialstärken und flach verpackten Designs helfen wir Kunden in der Regel, 10-30 % bei Produktion und Versand zu sparen."
+      a: "Wir bieten eine kostenlose technische Kosten-Nutzen-Analyse an. Durch die Optimierung von Boxstrukturen, Materialst盲rken und flach verpackten Designs helfen wir Kunden in der Regel, 10-30 % bei Produktion und Versand zu sparen."
     },
     {
-      q: "Bieten Sie kostenlose Dieline- und Strukturunterstützung an?",
-      a: "Ja, jede Anfrage beinhaltet professionelle Dieline-Unterstützung. Unsere Ingenieure erstellen technische Zeichnungen, um sicherzustellen, dass Ihr Artwork vor der Massenproduktion perfekt passt."
+      q: "Bieten Sie kostenlose Dieline- und Strukturunterst眉tzung an?",
+      a: "Ja, jede Anfrage beinhaltet professionelle Dieline-Unterst眉tzung. Unsere Ingenieure erstellen technische Zeichnungen, um sicherzustellen, dass Ihr Artwork vor der Massenproduktion perfekt passt."
     },
     {
       q: "Ist Ihre Verpackung FSC-zertifiziert?",
-      a: "Absolut. Wir sind eine FSC-zertifizierte Fabrik, die sicherstellt, dass alle Materialien aus verantwortungsvoll bewirtschafteten Wäldern stammen. Dies ist entscheidend für Marken, die in den US- und EU-Markt eintreten."
+      a: "Absolut. Wir sind eine FSC-zertifizierte Fabrik, die sicherstellt, dass alle Materialien aus verantwortungsvoll bewirtschafteten W盲ldern stammen. Dies ist entscheidend f眉r Marken, die in den US- und EU-Markt eintreten."
     }
   ];
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
-        <title>Saide Packaging | Chinas Premium-Hersteller für Luxus-Geschenkboxen</title>
-        <meta name="description" content="Direkt ab Werk: Luxus-Magnetboxen, starre Boxen, Schubladen- & Versandkartons mit Logo. MOQ ab 100 Stück. Kostenloses 3D-Mockup. Weltweiter Versand." />
+        <title>Saide Packaging | Chinas Premium-Hersteller f眉r Luxus-Geschenkboxen</title>
+        <meta name="description" content="Direkt ab Werk: Luxus-Magnetboxen, starre Boxen, Schubladen- & Versandkartons mit Logo. MOQ ab 100 St眉ck. Kostenloses 3D-Mockup. Weltweiter Versand." />
       </Head>
 
       {/* Navbar */}
@@ -53,7 +53,7 @@ const HomePageDe = () => {
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
             <Link href="/products" className="hover:text-white transition-colors">Katalog</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Fallstudien</Link>
-            <Link href="/about-founder" className="hover:text-white transition-colors">Gründer</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">Gr眉nder</Link>
           </div>
           <a href="#contact" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Kostenloses Angebot</a>
         </div>
@@ -74,12 +74,12 @@ const HomePageDe = () => {
             <div className="inline-block border border-[#C9A84C]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
               <span className="text-[10px] font-bold text-[#C9A84C] uppercase tracking-[0.2em] flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full animate-pulse" />
-                Chinas Premium-Hersteller für Geschenkboxen · Seit 2006
+                Chinas Premium-Hersteller f眉r Geschenkboxen 路 Seit 2006
               </span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic font-montserrat">
-              Maßgeschneiderte <br/>
+              Ma脽geschneiderte <br/>
               <span className="text-white">Verpackungsboxen</span> <br/>
               Hersteller <br/>
               in China
@@ -90,14 +90,14 @@ const HomePageDe = () => {
             </p>
 
             <p className="text-sm font-black text-[#C9A84C] uppercase tracking-[0.2em] mb-10">
-              MOQ ab 100 Stück • Kostenloses 3D-Mockup • Weltweiter Versand
+              MOQ ab 100 St眉ck 鈥?Kostenloses 3D-Mockup 鈥?Weltweiter Versand
             </p>
 
             <div className="flex flex-wrap gap-3 mb-12">
               {[
-                "MOQ: 100 Stück",
+                "MOQ: 100 St眉ck",
                 "Lieferzeit: 15 Tage",
-                "Versand in 50+ Länder",
+                "Versand in 50+ L盲nder",
                 "Kostenloser Designservice"
               ].map((pill, i) => (
                 <span key={i} className="px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-white/80">
@@ -120,7 +120,7 @@ const HomePageDe = () => {
         <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20 text-center">
              <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Produktkategorien</span>
-             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Entwickelt für Luxus.</h2>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Entwickelt f眉r Luxus.</h2>
           </header>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-20">
@@ -183,3 +183,4 @@ const HomePageDe = () => {
 };
 
 export default HomePageDe;
+

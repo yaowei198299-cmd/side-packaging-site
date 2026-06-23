@@ -123,3 +123,4 @@ const EuropeanPaperBagsGuide = () => {
 };
 
 export default EuropeanPaperBagsGuide;
+

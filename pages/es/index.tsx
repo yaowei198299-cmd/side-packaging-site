@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -15,27 +15,27 @@ const HomePageEs = () => {
     { title: "ETIKETTEN AUFKLEBER", label: "Etiquetas adhesivas", image: group1, x: "66.66%", link: "/products" },
     { title: "PAPEL DE SEDA", label: "Papel de seda", image: group1, x: "100%", link: "/products" },
     { title: "CAJAS DE LUJO", label: "Cajas de lujo", image: group2, x: "0%", link: "/products/magnetic-gift-boxes" },
-    { title: "CAJAS DE EXHIBICIÓN", label: "Cajas de exhibición", image: group2, x: "33.33%", link: "/products" },
-    { title: "CAJAS DE ENVÍO", label: "Cajas de envío", image: group2, x: "66.66%", link: "/products/custom-mailer-boxes" },
+    { title: "CAJAS DE EXHIBICI脫N", label: "Cajas de exhibici贸n", image: group2, x: "33.33%", link: "/products" },
+    { title: "CAJAS DE ENV脥O", label: "Cajas de env铆o", image: group2, x: "66.66%", link: "/products/custom-mailer-boxes" },
     { title: "TARJETAS DE AGRADECIMIENTO", label: "Tarjetas de agradecimiento", image: group2, x: "100%", link: "/products" },
   ];
 
   const faqs = [
     {
-      q: "¿Cuál es su cantidad mínima de pedido (MOQ)?",
-      a: "Nuestro MOQ estándar comienza en 500 unidades para cajas rígidas de lujo y cajas de regalo magnéticas. Para cajas de envío de comercio electrónico, podemos aceptar pedidos a partir de 100 unidades para apoyar a las marcas en crecimiento."
+      q: "驴Cu谩l es su cantidad m铆nima de pedido (MOQ)?",
+      a: "Nuestro MOQ est谩ndar comienza en 500 unidades para cajas r铆gidas de lujo y cajas de regalo magn茅ticas. Para cajas de env铆o de comercio electr贸nico, podemos aceptar pedidos a partir de 100 unidades para apoyar a las marcas en crecimiento."
     },
     {
-      q: "¿Cómo puedo reducir mis costos de embalaje?",
-      a: "Ofrecemos un análisis técnico gratuito de reducción de costos. Al optimizar las estructuras de las cajas, el grosor del material y los diseños de embalaje plano, normalmente ayudamos a los clientes a ahorrar entre un 10 y un 30 % en producción y envío."
+      q: "驴C贸mo puedo reducir mis costos de embalaje?",
+      a: "Ofrecemos un an谩lisis t茅cnico gratuito de reducci贸n de costos. Al optimizar las estructuras de las cajas, el grosor del material y los dise帽os de embalaje plano, normalmente ayudamos a los clientes a ahorrar entre un 10 y un 30 % en producci贸n y env铆o."
     },
     {
-      q: "¿Ofrecen soporte técnico y de troquelado gratuito?",
-      a: "Sí, cada consulta incluye soporte técnico profesional gratuito. Nuestros ingenieros proporcionarán dibujos técnicos para asegurar que su diseño encaje perfectamente antes de la producción en masa."
+      q: "驴Ofrecen soporte t茅cnico y de troquelado gratuito?",
+      a: "S铆, cada consulta incluye soporte t茅cnico profesional gratuito. Nuestros ingenieros proporcionar谩n dibujos t茅cnicos para asegurar que su dise帽o encaje perfectamente antes de la producci贸n en masa."
     },
     {
-      q: "¿Su embalaje cuenta con certificación FSC?",
-      a: "Absolutamente. Somos una fábrica certificada por FSC, lo que garantiza que todos los materiales provienen de bosques gestionados de forma responsable. Esto es crucial para las marcas que ingresan a los mercados de EE. UU. y la UE."
+      q: "驴Su embalaje cuenta con certificaci贸n FSC?",
+      a: "Absolutamente. Somos una f谩brica certificada por FSC, lo que garantiza que todos los materiales provienen de bosques gestionados de forma responsable. Esto es crucial para las marcas que ingresan a los mercados de EE. UU. y la UE."
     }
   ];
 
@@ -43,7 +43,7 @@ const HomePageEs = () => {
     <div className="min-h-screen bg-black text-white font-sans selection:bg-gold-500 overflow-x-hidden">
       <Head>
         <title>Saide Packaging | Fabricante Premium de Cajas de Embalaje Personalizadas en China</title>
-        <meta name="description" content="Directo de fábrica: Cajas magnéticas, rígidas y de envío de lujo con logotipo. MOQ desde 100 unidades. Maqueta 3D gratuita. Envío global." />
+        <meta name="description" content="Directo de f谩brica: Cajas magn茅ticas, r铆gidas y de env铆o de lujo con logotipo. MOQ desde 100 unidades. Maqueta 3D gratuita. Env铆o global." />
       </Head>
 
       {/* Navbar */}
@@ -51,8 +51,8 @@ const HomePageEs = () => {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <Link href="/es" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
           <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
-            <Link href="/products" className="hover:text-white transition-colors">Catálogo</Link>
-            <Link href="/gallery" className="hover:text-white transition-colors">Casos de Éxito</Link>
+            <Link href="/products" className="hover:text-white transition-colors">Cat谩logo</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Casos de 脡xito</Link>
             <Link href="/about-founder" className="hover:text-white transition-colors">Fundadores</Link>
           </div>
           <a href="#contact" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Presupuesto Gratis</a>
@@ -74,7 +74,7 @@ const HomePageEs = () => {
             <div className="inline-block border border-[#C9A84C]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
               <span className="text-[10px] font-bold text-[#C9A84C] uppercase tracking-[0.2em] flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full animate-pulse" />
-                Fabricante Premium de Cajas de Regalo en China · Est. 2006
+                Fabricante Premium de Cajas de Regalo en China 路 Est. 2006
               </span>
             </div>
 
@@ -85,19 +85,19 @@ const HomePageEs = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl font-medium tracking-tight">
-              Directo de Fábrica: Cajas Magnéticas, Rígidas y de Envío con Logotipo Personalizado
+              Directo de F谩brica: Cajas Magn茅ticas, R铆gidas y de Env铆o con Logotipo Personalizado
             </p>
 
             <p className="text-sm font-black text-[#C9A84C] uppercase tracking-[0.2em] mb-10">
-              MOQ desde 100 unidades • Maqueta 3D gratuita • Envío global
+              MOQ desde 100 unidades 鈥?Maqueta 3D gratuita 鈥?Env铆o global
             </p>
 
             <div className="flex flex-wrap gap-3 mb-12">
               {[
                 "MOQ: 100 uds",
-                "Entrega: 15 días",
-                "Envío a 50+ países",
-                "Diseño gratuito"
+                "Entrega: 15 d铆as",
+                "Env铆o a 50+ pa铆ses",
+                "Dise帽o gratuito"
               ].map((pill, i) => (
                 <span key={i} className="px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-white/80">
                   {pill}
@@ -107,7 +107,7 @@ const HomePageEs = () => {
 
             <div className="flex flex-col sm:flex-row gap-6">
                <a href="/inquiry" className="inline-block bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(201,168,76,0.3)] font-montserrat">
-                 Precios de Fábrica (Ahorre 30-50%)
+                 Precios de F谩brica (Ahorre 30-50%)
                </a>
             </div>
           </div>
@@ -118,10 +118,10 @@ const HomePageEs = () => {
       <div className="bg-white/5 border-y border-white/5 py-12 relative z-20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
           {[
-            { label: "20+ Años", sub: "Experto en Producción" },
-            { label: "20.000 m²", sub: "Planta de Fabricación" },
-            { label: "FSC & BSCI", sub: "Estándares Globales" },
-            { label: "50+ Países", sub: "Logística Global" }
+            { label: "20+ A帽os", sub: "Experto en Producci贸n" },
+            { label: "20.000 m虏", sub: "Planta de Fabricaci贸n" },
+            { label: "FSC & BSCI", sub: "Est谩ndares Globales" },
+            { label: "50+ Pa铆ses", sub: "Log铆stica Global" }
           ].map((item, i) => (
             <div key={i} className="space-y-2">
               <p className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-[#C9A84C]">{item.label}</p>
@@ -135,8 +135,8 @@ const HomePageEs = () => {
       <section className="py-32 bg-black border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6">
           <header className="mb-20 text-center">
-             <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Categorías de Productos</span>
-             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Diseñado para el Lujo.</h2>
+             <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Categor铆as de Productos</span>
+             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic font-montserrat">Dise帽ado para el Lujo.</h2>
           </header>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-20">
@@ -199,3 +199,4 @@ const HomePageEs = () => {
 };
 
 export default HomePageEs;
+

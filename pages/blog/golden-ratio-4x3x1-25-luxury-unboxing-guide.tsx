@@ -123,3 +123,4 @@ const GoldenRatioGuide = () => {
 };
 
 export default GoldenRatioGuide;
+

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const PrecisionPrintingGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -72,21 +72,21 @@ const PrecisionPrintingGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Manual Guide-Marking</td>
-                      <td className="p-4 border-r border-white/5">± 0.50 mm</td>
+                      <td className="p-4 border-r border-white/5">卤 0.50 mm</td>
                       <td className="p-4 border-r border-white/5">High (~ 8%)</td>
-                      <td className="p-4">🔴 Poor (Fuzzy edges)</td>
+                      <td className="p-4">馃敶 Poor (Fuzzy edges)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Photo-Eye Sensor</td>
-                      <td className="p-4 border-r border-white/5">± 0.25 mm</td>
+                      <td className="p-4 border-r border-white/5">卤 0.25 mm</td>
                       <td className="p-4 border-r border-white/5">Moderate (~ 4%)</td>
                       <td className="p-4">Average Retail</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Saide CCD-Camera System</td>
-                      <td className="p-4 border-r border-white/5">🟢 ± 0.05 mm</td>
-                      <td className="p-4 border-r border-white/5">🟢 &lt; 0.5%</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 High (Razor-sharp)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 卤 0.05 mm</td>
+                      <td className="p-4 border-r border-white/5">馃煝 &lt; 0.5%</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 High (Razor-sharp)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -105,7 +105,7 @@ const PrecisionPrintingGuide = () => {
                 <br/>
                 - Saving from Zero-Rejection: ~ 400 boxes salvaged
                 <br/>
-                - Brand Value Recovery: 🟢 Priceless (Zero customer complaints on blurriness)
+                - Brand Value Recovery: 馃煝 Priceless (Zero customer complaints on blurriness)
               </div>
             </section>
 
@@ -119,7 +119,7 @@ const PrecisionPrintingGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">© 2026 Saide Packaging. All rights reserved.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">漏 2026 Saide Packaging. All rights reserved.</p>
       </footer>
 
       <WhatsAppButton />
@@ -128,3 +128,4 @@ const PrecisionPrintingGuide = () => {
 };
 
 export default PrecisionPrintingGuide;
+

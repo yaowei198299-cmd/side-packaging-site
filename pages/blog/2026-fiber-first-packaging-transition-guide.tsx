@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import InquiryForm from '../../components/InquiryForm';
 
@@ -99,3 +99,4 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+

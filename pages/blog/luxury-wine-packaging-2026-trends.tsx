@@ -72,9 +72,9 @@ const WinePackagingTrends2026 = () => {
               <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
                 <h3 className="text-[#C9A84C] font-black text-sm uppercase tracking-widest mb-4">Technical Specs for 2026 Unboxing</h3>
                 <ul className="text-gray-400 text-xs md:text-sm space-y-4 uppercase tracking-wider">
-                  <li className="flex gap-4"><span className="text-[#C9A84C]">鉁?/span> <strong>Soft-Touch Coating:</strong> Fingerprint-resistant 32-micron finish.</li>
-                  <li className="flex gap-4"><span className="text-[#C9A84C]">鉁?/span> <strong>Scodix Foil:</strong> 3D raised foil stamping for texture without expensive brass dies.</li>
-                  <li className="flex gap-4"><span className="text-[#C9A84C]">鉁?/span> <strong>Hidden Magnets:</strong> Ultra-strong N42 magnets for a satisfying "click" closure.</li>
+                  <li className="flex gap-4"><span className="text-[#C9A84C]">✅/span> <strong>Soft-Touch Coating:</strong> Fingerprint-resistant 32-micron finish.</li>
+                  <li className="flex gap-4"><span className="text-[#C9A84C]">✅/span> <strong>Scodix Foil:</strong> 3D raised foil stamping for texture without expensive brass dies.</li>
+                  <li className="flex gap-4"><span className="text-[#C9A84C]">✅/span> <strong>Hidden Magnets:</strong> Ultra-strong N42 magnets for a satisfying "click" closure.</li>
                 </ul>
               </div>
             </section>
@@ -112,3 +112,4 @@ const WinePackagingTrends2026 = () => {
 };
 
 export default WinePackagingTrends2026;
+

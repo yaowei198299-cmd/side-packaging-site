@@ -135,3 +135,4 @@ const RigidBoxManufacturingGuide = () => {
 };
 
 export default RigidBoxManufacturingGuide;
+

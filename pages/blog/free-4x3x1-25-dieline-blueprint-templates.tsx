@@ -28,7 +28,7 @@ const DielineTemplatesGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">&larr; Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -52,9 +52,6 @@ const DielineTemplatesGuide = () => {
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 In B2B packaging, "Dieline Errors" are the leading cause of production delays. A 0.5mm misalignment in a **4x3x1.25" (10.2x7.6x3.2 cm)** rigid box can lead to magnetic closures that don't click or paper wraps that buckle at the corners. 
               </p>
-              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                Our design lab provides factory-validated blueprints for the most high-demand e-commerce and retail sizes, ensuring your artwork fits perfectly on the first sample.
-              </p>
             </section>
 
             <section className="space-y-8">
@@ -63,35 +60,18 @@ const DielineTemplatesGuide = () => {
                 <div className="bg-white/5 border border-white/10 p-10 rounded-[2.5rem] group hover:border-[#C9A84C]/50 transition-all">
                   <h3 className="text-xl font-black uppercase italic mb-6">Rigid Magnetic Dieline</h3>
                   <p className="text-gray-500 text-xs uppercase tracking-widest mb-8">Optimized for 1200gsm board. Includes score lines and glue-tab margins.</p>
-                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint 鈫?/a>
+                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint &rarr;</a>
                 </div>
                 <div className="bg-white/5 border border-white/10 p-10 rounded-[2.5rem] group hover:border-[#C9A84C]/50 transition-all">
                   <h3 className="text-xl font-black uppercase italic mb-6">Tuck-Front Mailer Dieline</h3>
                   <p className="text-gray-500 text-xs uppercase tracking-widest mb-8">E-Flute corrugated engineering with ear-lock security tabs.</p>
-                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint 鈫?/a>
+                  <a href="#contact" className="text-[#C9A84C] font-black uppercase text-[10px] tracking-widest border-b border-[#C9A84C] pb-2 group-hover:text-white group-hover:border-white transition-all">Get AI/PDF Blueprint &rarr;</a>
                 </div>
-              </div>
-            </section>
-
-            <section className="space-y-8">
-              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Factory Efficiency: The "Two-Sheet" Rule</h2>
-              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                We don't just provide dielines; we analyze how they sit on the printing press. For a **4x3x1.25"** box, adjusting the layout by just **3mm** often allows us to gang 14 boxes per sheet instead of 12.
-              </p>
-              <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed">
-                Sustainability & Cost Impact:
-                <br/><br/>
-                - Standard Setup: 15% Paper waste
-                <br/>
-                - Saide Optimized Layout: 馃煝 4% Paper waste
-                <br/>
-                - Result: 馃煝 11% reduction in raw material unit cost.
               </div>
             </section>
 
             <section className="py-16 border-t border-white/5 text-center">
               <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Custom Blueprint Engineering</h2>
-              <p className="text-gray-400 text-sm font-medium mb-12 uppercase tracking-widest">Don't see your size? Send us your internal dimensions today. Our engineering team will return a customized technical dieline blueprint in under 12 hours for free. Professional CAD support for global jewelry brands.</p>
               <InquiryForm productTitle="Custom Dieline Blueprint Request" />
             </section>
           </article>
@@ -99,7 +79,7 @@ const DielineTemplatesGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">漏 2026 Saide Packaging. All rights reserved.</p>
       </footer>
 
       <WhatsAppButton />
@@ -108,3 +88,4 @@ const DielineTemplatesGuide = () => {
 };
 
 export default DielineTemplatesGuide;
+

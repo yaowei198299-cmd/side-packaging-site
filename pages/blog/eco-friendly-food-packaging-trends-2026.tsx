@@ -128,3 +128,4 @@ const EcoFoodPackagingTrends = () => {
 };
 
 export default EcoFoodPackagingTrends;
+

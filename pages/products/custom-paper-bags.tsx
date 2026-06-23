@@ -288,3 +288,4 @@ const CustomPaperBagsPage = () => {
 };
 
 export default CustomPaperBagsPage;
+

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import InquiryForm from '../../components/InquiryForm';
 
@@ -47,7 +47,7 @@ const BlogPage = () => {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">The "Unboxing Experience" as a Marketing Tool</h2>
         <p className="mb-4">
-          For electronics, the unboxing is the "first use" of the product. 2026 designs focus on <strong>Sequential Reveal</strong>—guiding the customer through a curated journey:
+          For electronics, the unboxing is the "first use" of the product. 2026 designs focus on <strong>Sequential Reveal</strong>鈥攇uiding the customer through a curated journey:
         </p>
         <div className="bg-gray-100 p-4 rounded-md my-6">
           <p className="font-mono text-sm">
@@ -102,3 +102,4 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+

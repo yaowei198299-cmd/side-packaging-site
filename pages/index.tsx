@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../components/InquiryForm';
@@ -6,7 +6,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
-  // 分组定义图片素材
+  // 鍒嗙粍瀹氫箟鍥剧墖绱犳潗
   const group1 = "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png";
   const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
 
@@ -94,7 +94,7 @@ const HomePage = () => {
             <div className="inline-block border border-[#C9A84C]/30 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full mb-8">
               <span className="text-[10px] font-bold text-[#C9A84C] uppercase tracking-[0.2em] flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full animate-pulse" />
-                China's Premium Gift Box Manufacturer · Est. 2006
+                China's Premium Gift Box Manufacturer 路 Est. 2006
               </span>
             </div>
 
@@ -109,7 +109,7 @@ const HomePage = () => {
             </p>
 
             <p className="text-sm font-black text-[#C9A84C] uppercase tracking-[0.2em] mb-10">
-              Mailer Boxes from 100 pcs · Rigid & Magnetic Boxes from 500 pcs · Free 3D Mockup · Global Shipping
+              Mailer Boxes from 100 pcs 路 Rigid & Magnetic Boxes from 500 pcs 路 Free 3D Mockup 路 Global Shipping
             </p>
 
             <div className="flex flex-wrap gap-3 mb-12">
@@ -219,3 +219,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

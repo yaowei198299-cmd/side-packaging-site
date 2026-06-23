@@ -60,10 +60,10 @@ const CanadianSourcingGuide = () => {
               <div className="bg-gray-50 p-12 rounded-[3rem] my-16 border border-gray-100">
                 <h3 className="text-2xl font-black mb-6 uppercase">Canada-Specific Sourcing Checklist</h3>
                 <ul className="space-y-4 text-sm font-bold text-gray-500 uppercase tracking-wide">
-                  <li>鉁?FSC-Certified Sustainable Materials</li>
-                  <li>鉁?Cold-Weather Adhesive Testing (Essential for Canadian Winters)</li>
-                  <li>鉁?Flat-Pack Collapsible Designs to Reduce Trans-Pacific Freight</li>
-                  <li>鉁?GST-Compliant Invoicing for Tax Credit Recovery</li>
+                  <li>✅FSC-Certified Sustainable Materials</li>
+                  <li>✅Cold-Weather Adhesive Testing (Essential for Canadian Winters)</li>
+                  <li>✅Flat-Pack Collapsible Designs to Reduce Trans-Pacific Freight</li>
+                  <li>✅GST-Compliant Invoicing for Tax Credit Recovery</li>
                 </ul>
               </div>
 
@@ -98,3 +98,4 @@ const CanadianSourcingGuide = () => {
 };
 
 export default CanadianSourcingGuide;
+

@@ -132,3 +132,4 @@ const FSCCertificationPost = () => {
 };
 
 export default FSCCertificationPost;
+

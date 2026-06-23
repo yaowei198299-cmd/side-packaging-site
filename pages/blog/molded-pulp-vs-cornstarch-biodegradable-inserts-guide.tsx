@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const BiodegradableInsertsGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -71,23 +71,23 @@ const BiodegradableInsertsGuide = () => {
                   <tbody className="text-gray-400 font-medium">
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Biodegradation Rate</td>
-                      <td className="p-4 border-r border-white/5">🟢 &lt; 90 Days (Water Soluble)</td>
+                      <td className="p-4 border-r border-white/5">馃煝 &lt; 90 Days (Water Soluble)</td>
                       <td className="p-4">120 - 180 Days (Soil)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Impact Absorption</td>
                       <td className="p-4 border-r border-white/5">Good (Soft feel)</td>
-                      <td className="p-4">🟢 Excellent (3D Structural Damping)</td>
+                      <td className="p-4">馃煝 Excellent (3D Structural Damping)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Visual Aesthetics</td>
                       <td className="p-4 border-r border-white/5">Translucent / Industrial</td>
-                      <td className="p-4">🟢 "Egg-shell" Matte / Dyeable</td>
+                      <td className="p-4">馃煝 "Egg-shell" Matte / Dyeable</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Sourcing Difficulty</td>
                       <td className="p-4 border-r border-white/5">High (Specialized plants)</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 Low (Global accessibility)</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 Low (Global accessibility)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -97,7 +97,7 @@ const BiodegradableInsertsGuide = () => {
             <section className="space-y-8">
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The "Home-Compostable" Advantage</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                Unlike industrial composting, which requires 60°C heat, **Saide Packaging's Cornstarch Inserts** are "Home-Compostable." They literally dissolve in warm water or break down in a backyard compost bin in under 3 months. 
+                Unlike industrial composting, which requires 60掳C heat, **Saide Packaging's Cornstarch Inserts** are "Home-Compostable." They literally dissolve in warm water or break down in a backyard compost bin in under 3 months. 
               </p>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 For a **4x3x1.25"** jewelry box, switching to starch-foam reduces the plastic-tax liability in the EU by **\$250 per tonne** of material, while providing a haptic "Natural" feel that resonates with Gen-Z and Millennial consumers.
@@ -114,7 +114,7 @@ const BiodegradableInsertsGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">© 2026 Saide Packaging. All rights reserved.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">漏 2026 Saide Packaging. All rights reserved.</p>
       </footer>
 
       <WhatsAppButton />
@@ -123,3 +123,4 @@ const BiodegradableInsertsGuide = () => {
 };
 
 export default BiodegradableInsertsGuide;
+

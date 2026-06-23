@@ -193,3 +193,4 @@ const IndustrySpecificPackagingPost = () => {
 };
 
 export default IndustrySpecificPackagingPost;
+

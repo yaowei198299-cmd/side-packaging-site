@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import InquiryForm from '../../components/InquiryForm';
@@ -28,7 +28,7 @@ const ECTGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">← Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -72,22 +72,22 @@ const ECTGuide = () => {
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Edge Pressure Limit</td>
                       <td className="p-4 border-r border-white/5">32 lbs per inch</td>
-                      <td className="p-4">🟢 44 lbs per inch (+37.5% Strength)</td>
+                      <td className="p-4">馃煝 44 lbs per inch (+37.5% Strength)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Max Stack Weight</td>
                       <td className="p-4 border-r border-white/5">~ 65 lbs (Total Column)</td>
-                      <td className="p-4">🟢 ~ 90 lbs (Total Column)</td>
+                      <td className="p-4">馃煝 ~ 90 lbs (Total Column)</td>
                     </tr>
                     <tr className="border-b border-white/5">
                       <td className="p-4 border-r border-white/5 font-black text-white">Board Composition</td>
                       <td className="p-4 border-r border-white/5">Single-Wall E-Flute</td>
-                      <td className="p-4">🟢 Reinforced E-Flute / Hybrid Lining</td>
+                      <td className="p-4">馃煝 Reinforced E-Flute / Hybrid Lining</td>
                     </tr>
                     <tr>
                       <td className="p-4 border-r border-white/5 font-black text-white">Best Use Case</td>
                       <td className="p-4 border-r border-white/5">Apparel, Light Retail</td>
-                      <td className="p-4 text-[#C9A84C] font-bold">🟢 Fragile Electronics, Glass Bottles</td>
+                      <td className="p-4 text-[#C9A84C] font-bold">馃煝 Fragile Electronics, Glass Bottles</td>
                     </tr>
                   </tbody>
                 </table>
@@ -100,7 +100,7 @@ const ECTGuide = () => {
                 At **Saide Packaging**, we calculate the theoretical stacking strength (P) of our 4x3x1.25" boxes using the simplified McKee Formula:
               </p>
               <div className="bg-[#1C1C28] p-8 rounded-3xl border border-white/5 font-mono text-xs md:text-sm text-gray-300 leading-relaxed text-center">
-                P = 5.87 × ECT × √(h × Z)
+                P = 5.87 脳 ECT 脳 鈭?h 脳 Z)
                 <br/><br/>
                 <span className="text-gray-500 text-[10px]">Where h = board thickness, Z = box perimeter (2L + 2W)</span>
               </div>
@@ -119,7 +119,7 @@ const ECTGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">© 2026 Saide Packaging. All rights reserved.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">漏 2026 Saide Packaging. All rights reserved.</p>
       </footer>
 
       <WhatsAppButton />
@@ -128,3 +128,4 @@ const ECTGuide = () => {
 };
 
 export default ECTGuide;
+

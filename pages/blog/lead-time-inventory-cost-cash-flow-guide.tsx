@@ -135,3 +135,4 @@ const InventoryCycleGuide = () => {
 };
 
 export default InventoryCycleGuide;
+

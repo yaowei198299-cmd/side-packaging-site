@@ -28,7 +28,7 @@ const LeadTimeSprintGuide = () => {
 
       <main className="pt-48 pb-32">
         <div className="max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">鈫?Back to Blog</Link>
+          <Link href="/blog" className="text-[#C9A84C] font-black text-xs uppercase tracking-widest mb-12 block hover:translate-x-[-4px] transition-transform">&larr; Back to Blog</Link>
 
           <article className="space-y-16">
             <header className="space-y-8">
@@ -51,9 +51,6 @@ const LeadTimeSprintGuide = () => {
               <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">The "Dead Week" of Middlemen</h2>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
                 In most B2B packaging sourcing, a brand's designer requests a dieline for a **4x3x1.25"** box. The sales rep emails the request to the factory office, who puts it in a queue for the structural engineer. 
-              </p>
-              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                This game of "Corporate Telephone" typically takes **3 to 5 business days** just for a single `.AI` file. If there is a 1mm adjustment needed, the clock restarts. This "Dead Week" is where product launches die.
               </p>
             </section>
 
@@ -94,19 +91,8 @@ const LeadTimeSprintGuide = () => {
               </div>
             </section>
 
-            <section className="space-y-8">
-              <h2 className="text-2xl font-black uppercase tracking-tighter italic border-b border-white/5 pb-4 font-montserrat text-[#C9A84C]">Why Our Engineers Speak B2B Sales</h2>
-              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                We achieve this speed by integrating our engineering lab directly into our communication channel. When you send us your internal dimensions for a **4x3x1.25"** jewelry box, your inquiry is not "passed around"鈥攊t is directly processed by a technical consultant who can immediately identify board ganging efficiencies and structural risks. 
-              </p>
-              <p className="text-gray-400 leading-relaxed text-sm md:text-base uppercase tracking-wider">
-                This **Technical-Direct** model reduces the feedback-correction loop from 7 days to **12 hours**, allowing your brand to move from concept to mass production **15 days faster** than the industry average.
-              </p>
-            </section>
-
             <section className="py-16 border-t border-white/5 text-center">
               <h2 className="text-3xl font-black uppercase tracking-tighter italic mb-12 font-montserrat">Accelerate Your Market Arrival</h2>
-              <p className="text-gray-400 text-sm font-medium mb-12 uppercase tracking-widest">Are your current suppliers delaying your product launch? Send us your physical bottle or item dimensions. We will return a factory-validated CAD dieline and a digital 3D brand mockup in under 12 hours. Zero commitment required.</p>
               <InquiryForm productTitle="12H Lead Time Audit" />
             </section>
           </article>
@@ -114,7 +100,7 @@ const LeadTimeSprintGuide = () => {
       </main>
 
       <footer className="bg-black text-white py-20 border-t border-white/5 text-center">
-        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">漏 2026 Saide Packaging. All rights reserved.</p>
       </footer>
 
       <WhatsAppButton />
@@ -123,3 +109,4 @@ const LeadTimeSprintGuide = () => {
 };
 
 export default LeadTimeSprintGuide;
+

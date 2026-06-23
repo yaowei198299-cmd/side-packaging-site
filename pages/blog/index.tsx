@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Engineering the 4x3x1.25\" Rigid Box for Zero-Waste Logistics",
+      excerpt: "An analysis of board tension, CBM optimization, and plastic-free aqueous coatings for 4x3x1.25 custom magnetic jewelry boxes. Achieve 8.5% higher pallet density.",
+      date: "June 23, 2026",
+      slug: "engineering-4x3x1-25-rigid-box-zero-waste-logistics",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "ECT-32 vs. ECT-44: Selecting the Right Corrugation for North American DTC Mailers",
+      excerpt: "Technical comparison of ECT-32 and ECT-44 board grades for custom mailer boxes. Optimize for structural durability and logistics cost for NA/EU markets.",
+      date: "June 23, 2026",
+      slug: "ect-32-vs-ect-44-durability-logistics-optimization",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The Plastic-Free Pivot: Sourcing Mycelium & Pulp Inserts for High-End Gift Sets",
+      excerpt: "Transitioning from EVA foam to sustainable mycelium and molded pulp inserts. Meet EU/NA plastic-free compliance while maintaining luxury haptic quality.",
+      date: "June 23, 2026",
+      slug: "mycelium-pulp-inserts-plastic-free-gift-sets-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
       title: "V-Groove vs. Half-Cut: Engineering the Sharpest 90-Degree Corners for Minimalist Luxury",
       excerpt: "An analysis of board tension, corner geometry, and CNC precision for premium B2B jewelry packaging. Achieve razor-sharp edges with V-grooving.",
       date: "June 21, 2026",
@@ -407,3 +428,4 @@ const BlogIndex = () => {
 };
 
 export default BlogIndex;
+

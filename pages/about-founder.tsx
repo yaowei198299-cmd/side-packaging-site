@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
@@ -37,7 +37,7 @@ const AboutFounder = () => {
               <span className="text-white/40 italic">Packaging.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-medium leading-relaxed italic border-l-4 border-blue-600 pl-8 mb-12">
-              "I’ve seen too many businesses overpay for packaging, choose the wrong materials, or experience delays that hurt product launches. I'm here to change that."
+              "I鈥檝e seen too many businesses overpay for packaging, choose the wrong materials, or experience delays that hurt product launches. I'm here to change that."
             </p>
           </div>
           <div className="relative group">
@@ -57,13 +57,13 @@ const AboutFounder = () => {
           <div className="prose prose-invert prose-2xl">
             <h2 className="text-4xl font-black uppercase tracking-tight mb-12 text-white">Why I Started Packaging</h2>
             <p className="text-gray-400 mb-10 leading-relaxed">
-              I came to Shenzhen more than 20 years ago and started in packaging manufacturing. Back then, the industry was all about "cheaper and faster." But as I worked with thousands of projects — from simple folding cartons to complex luxury rigid gift boxes — I realized that **the most expensive box is not always the best box.**
+              I came to Shenzhen more than 20 years ago and started in packaging manufacturing. Back then, the industry was all about "cheaper and faster." But as I worked with thousands of projects 鈥?from simple folding cartons to complex luxury rigid gift boxes 鈥?I realized that **the most expensive box is not always the best box.**
             </p>
             <p className="text-gray-400 mb-10 leading-relaxed">
               Over the years, I saw too many brands making expensive mistakes. They were overpaying for features they didn't need, or worse, choosing a structural design that looked great on a screen but failed in transit.
             </p>
             
-            <h3 className="text-3xl font-black uppercase tracking-tight mt-20 mb-12 text-blue-500 italic">Packaging Should Help Your Brand — Not Become a Problem</h3>
+            <h3 className="text-3xl font-black uppercase tracking-tight mt-20 mb-12 text-blue-500 italic">Packaging Should Help Your Brand 鈥?Not Become a Problem</h3>
             <p className="text-gray-400 mb-10 leading-relaxed">
               Many brands struggle with unclear pricing, poor printing quality, and suppliers that disappear after the deposit is paid. I built Saide Packaging on a simple principle: **Packaging should be reliable and cost-effective.**
             </p>
@@ -103,3 +103,4 @@ const AboutFounder = () => {
 };
 
 export default AboutFounder;
+

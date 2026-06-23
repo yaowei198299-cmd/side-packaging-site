@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -54,16 +54,16 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
         <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          © 2026 Saide Packaging. All rights reserved.
+          漏 2026 Saide Packaging. All rights reserved.
         </p>
         
         {/* Multi-language links */}
         <div className="flex flex-wrap justify-center gap-8 text-[9px] font-black uppercase tracking-[0.2em] text-gray-500">
           <Link href="/" className="hover:text-[#C9A84C] transition-colors">English</Link>
-          <Link href="/ar" className="hover:text-[#C9A84C] transition-colors">Arabic / العربية</Link>
+          <Link href="/ar" className="hover:text-[#C9A84C] transition-colors">Arabic / 丕賱毓乇亘賷丞</Link>
           <Link href="/de" className="hover:text-[#C9A84C] transition-colors">German / Deutsch</Link>
-          <Link href="/fr" className="hover:text-[#C9A84C] transition-colors">French / Français</Link>
-          <Link href="/es" className="hover:text-[#C9A84C] transition-colors">Spanish / Español</Link>
+          <Link href="/fr" className="hover:text-[#C9A84C] transition-colors">French / Fran莽ais</Link>
+          <Link href="/es" className="hover:text-[#C9A84C] transition-colors">Spanish / Espa帽ol</Link>
         </div>
       </div>
     </footer>
@@ -71,3 +71,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

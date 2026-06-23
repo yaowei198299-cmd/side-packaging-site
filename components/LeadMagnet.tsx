@@ -27,31 +27,31 @@ const LeadMagnet = ({ lang = 'en' }: { lang?: string }) => {
     fr: {
       badge: "Ressource B2B Gratuite",
       title_1: "Le Guide Ultime 2026",
-      title_2: "Matériaux d'Emballage",
+      title_2: "Mat\u00E9riaux d'Emballage",
       title_3: "& Structure.",
-      desc: "Une référence technique complète pour la science des matériaux, l'ingénierie des cannelures et les normes mondiales de durabilité. Rejoignez plus de 500 marques pour optimiser votre stratégie d'emballage.",
+      desc: "Une r\u00E9f\u00E9rence technique compl\u00E8te pour la science des mat\u00E9riaux, l'ing\u00E9nierie des cannelures et les normes mondiales de durabilit\u00E9. Rejoignez plus de 500 marques pour optimiser votre strat\u00E9gie d'emballage.",
       items: [
-        "Spécificités du Carton : SBS, Kraft, & CCNB",
-        "Ingénierie des Cannelures : E, B, F, & BC",
-        "Finitions Premium & Revêtements Tactiles",
-        "Liste de contrôle de durabilité mondiale 2026"
+        "Sp\u00E9cificit\u00E9s du Carton : SBS, Kraft, & CCNB",
+        "Ing\u00E9nierie des Cannelures : E, B, F, & BC",
+        "Finitions Premium & Rev\u00EAtements Tactiles",
+        "Liste de contr\u00F4le de durabilit\u00E9 mondiale 2026"
       ],
-      formTitle: "Télécharger le PDF Technique",
+      formTitle: "T\u00E9l\u00E9charger le PDF Technique",
       formDesc: "Entrez votre e-mail professionnel pour recevoir le catalogue technique complet de 45 pages.",
       placeholder: "Adresse E-mail Professionnelle",
-      submit: "Accès Gratuit Immédiat",
-      footer: "Livraison instantanée dans votre boîte de réception",
-      successTitle: "Guide Prêt !",
-      successDesc: "Le Guide Ultime de l'Emballage 2026 est maintenant disponible. Nous avons également envoyé une copie à {email}.",
+      submit: "Acc\u00E8s Gratuit Imm\u00E9diat",
+      footer: "Livraison instantan\u00E9e dans votre bo\u00EEte de r\u00E9ception",
+      successTitle: "Guide Pr\u00EAt !",
+      successDesc: "Le Guide Ultime de l'Emballage 2026 est maintenant disponible. Nous avons \u00E9galement envoy\u00E9 une copie \u00E0 {email}.",
       view: "Voir le Guide Complet",
-      another: "Télécharger une autre copie"
+      another: "T\u00E9l\u00E9charger une autre copie"
     },
     de: {
       badge: "Kostenlose B2B-Ressource",
       title_1: "Der ultimative 2026",
       title_2: "Verpackungsmaterial",
       title_3: "& Struktur-Leitfaden.",
-      desc: "Ein umfassendes technisches Referenzwerk für Materialwissenschaften, Wellen-Engineering und globale Nachhaltigkeitsstandards. Optimieren Sie Ihre Verpackungsstrategie.",
+      desc: "Ein umfassendes technisches Referenzwerk f\u00FCr Materialwissenschaften, Wellen-Engineering und globale Nachhaltigkeitsstandards. Optimieren Sie Ihre Verpackungsstrategie.",
       items: [
         "Karton-Spezifikationen: SBS, Kraft, & CCNB",
         "Wellen-Engineering: E-, B-, F- & BC-Wellen",
@@ -59,58 +59,58 @@ const LeadMagnet = ({ lang = 'en' }: { lang?: string }) => {
         "Globale Nachhaltigkeits-Checkliste 2026"
       ],
       formTitle: "Technisches PDF herunterladen",
-      formDesc: "Geben Sie Ihre geschäftliche E-Mail-Adresse ein, um den vollständigen 45-seitigen technischen Katalog zu erhalten.",
-      placeholder: "Geschäftliche E-Mail-Adresse",
+      formDesc: "Geben Sie Ihre gesch\u00E4ftliche E-Mail-Adresse ein, um den vollst\u00E4ndigen 45-seitigen technischen Katalog zu erhalten.",
+      placeholder: "Gesch\u00E4ftliche E-Mail-Adresse",
       submit: "Jetzt kostenloser Zugriff",
       footer: "Sofortige Zustellung in Ihren Posteingang",
       successTitle: "Leitfaden bereit!",
-      successDesc: "Der ultimative Verpackungsleitfaden 2026 ist jetzt für Sie verfügbar. Wir haben auch eine Kopie an {email} gesendet.",
-      view: "Vollständigen Leitfaden ansehen",
+      successDesc: "Der ultimative Verpackungsleitfaden 2026 ist jetzt f\u00FCr Sie verf\u00FCgbar. Wir haben auch eine Kopie an {email} gesendet.",
+      view: "Vollst\u00E4ndigen Leitfaden ansehen",
       another: "Weitere Kopie herunterladen"
     },
     es: {
       badge: "Recurso B2B Gratuito",
-      title_1: "La Guía Definitiva 2026",
+      title_1: "La Gu\u00EDa Definitiva 2026",
       title_2: "Materiales de Embalaje",
       title_3: "& Estructura.",
-      desc: "Una referencia técnica completa sobre ciencia de materiales, ingeniería de flautas y estándares globales de sostenibilidad. Optimice su estrategia de embalaje.",
+      desc: "Una referencia t\u00E9cnica completa sobre ciencia de materiales, ingenier\u00EDa de flautas y est\u00E1ndares globales de sostenibilidad. Optimice su estrategia de embalaje.",
       items: [
-        "Especificaciones de Cartón: SBS, Kraft, & CCNB",
-        "Ingeniería de Flautas: E, B, F, & BC",
-        "Acabados Premium y Recubrimientos Táctiles",
-        "Lista de Verificación de Sostenibilidad Global 2026"
+        "Especificaciones de Cart\u00F3n: SBS, Kraft, & CCNB",
+        "Ingenier\u00EDa de Flautas: E, B, F, & BC",
+        "Acabados Premium y Recubrimientos T\u00E1ctiles",
+        "Lista de Verificaci\u00F3n de Sostenibilidad Global 2026"
       ],
-      formTitle: "Descargar PDF Técnico",
-      formDesc: "Ingrese su correo electrónico profesional para recibir el catálogo técnico completo de 45 páginas.",
-      placeholder: "Correo Electrónico de Empresa",
+      formTitle: "Descargar PDF T\u00E9cnico",
+      formDesc: "Ingrese su correo electr\u00F3nico profesional para recibir el cat\u00E1logo t\u00E9cnico completo de 45 p\u00E1ginas.",
+      placeholder: "Correo Electr\u00F3nico de Empresa",
       submit: "Obtener Acceso Gratuito Ahora",
-      footer: "Entrega instantánea en su bandeja de entrada",
-      successTitle: "¡Guía Lista!",
-      successDesc: "La Guía Definitiva de Embalaje 2026 ya está disponible. También hemos enviado una copia a {email}.",
-      view: "Ver Guía Completa Ahora",
+      footer: "Entrega instant\u00E1nea en su bandeja de entrada",
+      successTitle: "\u00A1Gu\u00EDa Lista!",
+      successDesc: "La Gu\u00EDa Definitiva de Embalaje 2026 ya est\u00E1 disponible. Tambi\u00E9n hemos enviado una copia a {email}.",
+      view: "Ver Gu\u00EDa CompletNow",
       another: "Descargar Otra Copia"
     },
     ar: {
-      badge: "مورد B2B مجاني",
-      title_1: "الدليل النهائي لعام 2026",
-      title_2: "مواد التغليف",
-      title_3: "وهيكلها.",
-      desc: "مرجع فني شامل لعلوم المواد، وهندسة الفلوت، ومعايير الاستدامة العالمية. انضم إلى أكثر من 500 علامة تجارية في تحسين استراتيجية التغليف الخاصة بها.",
+      badge: "\u0645\u0648\u0631\u062F B2B \u0645\u062C\u0627\u0646\u064A",
+      title_1: "\u0627\u0644\u062F\u0644\u064A\u0644 \u0627\u0644\u0646\u0647\u0627\u0626\u064A \u0644\u0639\u0627\u0645 2026",
+      title_2: "\u0645\u0648\u0627\u062F \u0627\u0644\u062A\u063A\u0644\u064A\u0641",
+      title_3: "\u0648\u0647\u064A\u0643\u0644\u0647\u0627.",
+      desc: "\u0645\u0631\u062C\u0639 \u0641\u0646\u064A \u0634\u0627\u0645\u0644 \u0644\u0639\u0644\u0648\u0645 \u0627\u0644\u0645\u0648\u0627\u062F\u060C \u0648\u0647\u0646\u062F\u0633\u0629 \u0627\u0644\u0641\u0644\u0648\u062A\u060C \u0648\u0645\u0639\u0627\u064A\u064A\u0631 \u0627\u0644\u0627\u0633\u062A\u062F\u0627\u0645\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064A\u0629. \u0627\u0646\u0636\u0645 \u0625\u0644\u0649 \u0623\u0643\u062B\u0631 \u0645\u0646 500 \u0639\u0644\u0627\u0645\u0629 \u062A\u062C\u0627\u0631\u064A\u0629 \u0641\u064A \u062A\u062D\u0633\u064A\u0646 \u0627\u0633\u062A\u0631\u0627\u062A\u064A\u062C\u064A\u0629 \u0627\u0644\u062A\u063A\u0644\u064A\u0641 \u0627\u0644\u062E\u0627\u0635\u0629 \u0628\u0647\u0627.",
       items: [
-        "مواصفات الورق المقوى: SBS، Kraft، و CCNB",
-        "هندسة الفلوت: E، B، F، و BC",
-        "التشطيبات الفاخرة والطلاءات الملموسة",
-        "قائمة مراجعة الاستدامة العالمية لعام 2026"
+        "\u0645\u0648\u0627\u0635\u0641\u0627\u062A \u0627\u0644\u0648\u0631\u0642 \u0627\u0644\u0645\u0642\u0648\u0649: SBS\u060C Kraft\u060C \u0648 CCNB",
+        "\u0647\u0646\u062F\u0633\u0629 \u0627\u0644\u0641\u0644\u0648\u062A: E\u060C B\u060C F\u060C \u0648 BC",
+        "\u0627\u0644\u062A\u0634\u0637\u064A\u0628\u0627\u062A \u0627\u0644\u0641\u0627\u062E\u0631\u0629 \u0648\u0627\u0644\u0637\u0644\u0627\u0621\u0627\u062A \u0627\u0644\u0645\u0644\u0645\u0648\u0633\u0629",
+        "\u0642\u0627\u0626\u0645\u0629 \u0645\u0631\u0627\u062C\u0639\u0629 \u0627\u0644\u0627\u0633\u062A\u062F\u0627\u0645\u0629 \u0627\u0644\u0639\u0627\u0644\u0645\u064A\u0629 \u0644\u0639\u0627\u0645 2026"
       ],
-      formTitle: "تحميل ملف PDF الفني",
-      formDesc: "أدخل بريدك الإلكتروني المخصص للعمل لتلقي الكتالوج الفني الكامل المكون من 45 صفحة.",
-      placeholder: "البريد الإلكتروني للعمل",
-      submit: "احصل على وصول مجاني الآن",
-      footer: "تسليم فوري إلى صندوق الوارد الخاص بك",
-      successTitle: "الدليل جاهز!",
-      successDesc: "الدليل النهائي للتغليف لعام 2026 متاح لك الآن. لقد أرسلنا أيضًا نسخة احتياطية إلى {email}.",
-      view: "عرض الدليل الكامل الآن",
-      another: "تحميل نسخة أخرى"
+      formTitle: "\u062A\u062D\u0645\u064A\u0644 \u0645\u0644\u0641 PDF \u0627\u0644\u0641\u0646\u064A",
+      formDesc: "\u0623\u062F\u062E\u0644 \u0628\u0631\u064A\u062F\u0643 \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A \u0627\u0644\u0645\u062E\u0635\u0635 \u0644\u0644\u0639\u0645\u0644 \u0644\u062A\u0644\u0642\u064A \u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C \u0627\u0644\u0641\u0646\u064A \u0627\u0644\u0643\u0627\u0645\u0644 \u0627\u0644\u0645\u0643\u0648\u0646 \u0645\u0646 45 \u0635\u0641\u062D\u0629.",
+      placeholder: "\u0627\u0644\u0628\u0631\u064A\u062F \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A \u0644\u0644\u0639\u0645\u0644",
+      submit: "\u0627\u062D\u0635\u0644 \u0639\u0644\u0649 \u0648\u0635\u0648\u0644 \u0645\u062C\u0627\u0646\u064A \u0627\u0644\u0622\u0646",
+      footer: "\u062A\u0633\u0644\u064A\u0645 \u0641\u0648\u0631\u064A \u0625\u0644\u0649 \u0635\u0646\u062F\u0648\u0642 \u0627\u0644\u0648\u0627\u0631\u062F \u0627\u0644\u062E\u0627\u0635 \u0628\u0643",
+      successTitle: "\u0627\u0644\u062F\u0644\u064A\u0644 \u062C\u0627\u0647\u0632!",
+      successDesc: "\u0627\u0644\u062F\u0644\u064A\u0644 \u0627\u0644\u0646\u0647\u0627\u0626\u064A \u0644\u0644\u062A\u063A\u0644\u064A\u0641 \u0644\u0639\u0627\u0645 2026 \u0645\u062A\u0627\u062D \u0644\u0643 \u0627\u0644\u0622\u0646. \u0644\u0642\u062F \u0623\u0631\u0633\u0644\u0646\u0627 \u0623\u064A\u0636\u064B\u0627 \u0646\u0633\u062E\u0629 \u0627\u062D\u062A\u064A\u0627\u0637\u064A\u0629 \u0625\u0644\u0649 {email}.",
+      view: "\u0639\u0631\u0636 \u0627\u0644\u062F\u0644\u064A\u0644 \u0627\u0644\u0643\u0627\u0645\u0644 \u0627\u0644\u0622\u0646",
+      another: "\u062A\u062D\u0645\u064A\u0644 \u0646\u0633\u062E\u0629 \u0623\u062E\u0631\u0649"
     }
   };
 
@@ -123,7 +123,6 @@ const LeadMagnet = ({ lang = 'en' }: { lang?: string }) => {
     e.preventDefault();
     if (email) {
       setSubmitted(true);
-      // In a real app, this would send the email to a backend/CRM
     }
   };
 
@@ -144,7 +143,7 @@ const LeadMagnet = ({ lang = 'en' }: { lang?: string }) => {
             <ul className="space-y-4 mb-12">
               {t.items.map((item: string, i: number) => (
                 <li key={i} className="flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-gray-300">
-                  <div className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center text-[10px] text-white">✓</div>
+                  <div className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center text-[10px] text-white">&#10003;</div>
                   {item}
                 </li>
               ))}
@@ -200,7 +199,6 @@ const LeadMagnet = ({ lang = 'en' }: { lang?: string }) => {
           </div>
         </div>
       </div>
-      {/* Abstract Background Shapes */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 blur-[120px] rounded-full -translate-x-1/2 translate-y-1/2"></div>
     </section>

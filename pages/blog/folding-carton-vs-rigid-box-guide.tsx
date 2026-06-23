@@ -260,3 +260,4 @@ const FoldingVsRigidGuide = () => {
 };
 
 export default FoldingVsRigidGuide;
+

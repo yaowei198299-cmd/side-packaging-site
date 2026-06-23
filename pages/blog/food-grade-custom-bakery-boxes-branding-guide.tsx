@@ -120,3 +120,4 @@ const BakeryPackagingBrandingGuide = () => {
 };
 
 export default BakeryPackagingBrandingGuide;
+

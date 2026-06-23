@@ -95,3 +95,4 @@ const CustomMailerBoxesPage = () => {
 };
 
 export default CustomMailerBoxesPage;
+

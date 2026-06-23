@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+﻿import React, { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Environment, ContactShadows } from '@react-three/drei';
 import * as THREE from 'three';
@@ -68,3 +68,4 @@ const ThreeBoxViewer = ({ width, height, depth, color, isIridescent }: BoxProps)
 };
 
 export default ThreeBoxViewer;
+

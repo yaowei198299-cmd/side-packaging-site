@@ -1,6 +1,6 @@
-# Side Packaging HK - Custom Packaging Headless Site
+﻿# Saide Packaging - Custom Packaging Headless Site
 
-This is a premium, high-performance headless e-commerce site for **Side Packaging HK Limited**, specializing in custom magnetic closure boxes.
+This is a premium, high-performance headless e-commerce site for **Saide Packaging**, specializing in custom magnetic closure boxes.
 
 ## Tech Stack
 
@@ -54,4 +54,4 @@ This is a premium, high-performance headless e-commerce site for **Side Packagin
 
 ---
 
-Developed by **Accio AI Team** (Coder, Vibe Selling Agent, 遥遥领先).
+Developed by **Accio AI Team** (Coder, Vibe Selling Agent, 閬ラ仴棰嗗厛).

@@ -1,33 +1,33 @@
-# Vercel 环境变量配置指南 (询盘邮件通知)
+﻿# Vercel 鐜鍙橀噺閰嶇疆鎸囧崡 (璇㈢洏閭欢閫氱煡)
 
-为了激活独立站的询盘邮件通知功能，您需要在 Vercel 控制台中配置以下两个环境变量。
+涓轰簡婵€娲荤嫭绔嬬珯鐨勮鐩橀偖浠堕€氱煡鍔熻兘锛屾偍闇€瑕佸湪 Vercel 鎺у埗鍙颁腑閰嶇疆浠ヤ笅涓や釜鐜鍙橀噺銆?
 
-### 配置步骤：
+### 閰嶇疆姝ラ锛?
 
-1.  登录 [Vercel Dashboard](https://vercel.com/dashboard)。
-2.  进入项目：**`side-packaging-headless`** (或您的项目名称)。
-3.  点击顶部的 **Settings** 选项卡。
-4.  在左侧菜单中选择 **Environment Variables**。
-5.  添加以下两个变量：
+1.  鐧诲綍 [Vercel Dashboard](https://vercel.com/dashboard)銆?
+2.  杩涘叆椤圭洰锛?*`side-packaging-headless`** (鎴栨偍鐨勯」鐩悕绉?銆?
+3.  鐐瑰嚮椤堕儴鐨?**Settings** 閫夐」鍗°€?
+4.  鍦ㄥ乏渚ц彍鍗曚腑閫夋嫨 **Environment Variables**銆?
+5.  娣诲姞浠ヤ笅涓や釜鍙橀噺锛?
 
-| Key | Value (示例) | 说明 |
+| Key | Value (绀轰緥) | 璇存槑 |
 | :--- | :--- | :--- |
-| **`EMAIL_USER`** | `yaowei198299@gmail.com` | 用于发送邮件的 Gmail 地址。 |
-| **`EMAIL_PASS`** | `xxxx xxxx xxxx xxxx` | **Gmail 应用专用密码** (不是普通登录密码)。 |
+| **`EMAIL_USER`** | `yaowei198299@gmail.com` | 鐢ㄤ簬鍙戦€侀偖浠剁殑 Gmail 鍦板潃銆?|
+| **`EMAIL_PASS`** | `xxxx xxxx xxxx xxxx` | **Gmail 搴旂敤涓撶敤瀵嗙爜** (涓嶆槸鏅€氱櫥褰曞瘑鐮?銆?|
 
 ---
 
-### 如何获取 Gmail 应用专用密码 (EMAIL_PASS)？
+### 濡備綍鑾峰彇 Gmail 搴旂敤涓撶敤瀵嗙爜 (EMAIL_PASS)锛?
 
-1.  访问您的 [Google 帐号设置](https://myaccount.google.com/)。
-2.  在左侧选择 **安全性 (Security)**。
-3.  确保已开启 **两步验证 (2-Step Verification)**。
-4.  搜索 **应用专用密码 (App Passwords)**。
-5.  在“选择应用”中选 `其他 (自定义名称)`，输入 `Side Packaging Site`。
-6.  点击“生成”，复制显示的 16 位密码。
+1.  璁块棶鎮ㄧ殑 [Google 甯愬彿璁剧疆](https://myaccount.google.com/)銆?
+2.  鍦ㄥ乏渚ч€夋嫨 **瀹夊叏鎬?(Security)**銆?
+3.  纭繚宸插紑鍚?**涓ゆ楠岃瘉 (2-Step Verification)**銆?
+4.  鎼滅储 **搴旂敤涓撶敤瀵嗙爜 (App Passwords)**銆?
+5.  鍦ㄢ€滈€夋嫨搴旂敤鈥濅腑閫?`鍏朵粬 (鑷畾涔夊悕绉?`锛岃緭鍏?`Saide Packaging Site`銆?
+6.  鐐瑰嚮鈥滅敓鎴愨€濓紝澶嶅埗鏄剧ず鐨?16 浣嶅瘑鐮併€?
 
-### 验证：
-配置完成后，重新部署 (Redeploy) 或在下一次提交代码后生效。您可以尝试在网站 `/inquiry` 页面提交一封测试询盘。
+### 楠岃瘉锛?
+閰嶇疆瀹屾垚鍚庯紝閲嶆柊閮ㄧ讲 (Redeploy) 鎴栧湪涓嬩竴娆℃彁浜や唬鐮佸悗鐢熸晥銆傛偍鍙互灏濊瘯鍦ㄧ綉绔?`/inquiry` 椤甸潰鎻愪氦涓€灏佹祴璇曡鐩樸€?
 
 ---
-*注：Jocelyn 的接收邮箱已配置为 `jocelyn@saidepackaging.com` 和 `yaowei198299@gmail.com`。*
+*娉細Jocelyn 鐨勬帴鏀堕偖绠卞凡閰嶇疆涓?`jocelyn@saidepackaging.com` 鍜?`yaowei198299@gmail.com`銆?

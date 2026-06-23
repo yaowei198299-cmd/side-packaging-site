@@ -134,3 +134,4 @@ const SmallMOQRigidBoxesGuide = () => {
 };
 
 export default SmallMOQRigidBoxesGuide;
+

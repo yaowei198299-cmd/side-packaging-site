@@ -356,3 +356,4 @@ const FoodPaperBoxesPage = () => {
 };
 
 export default FoodPaperBoxesPage;
+

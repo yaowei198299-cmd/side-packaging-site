@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import InquiryForm from '../../components/InquiryForm';
 
@@ -31,7 +31,7 @@ const BlogPage = () => {
         <h1 className="text-4xl font-bold mb-6">Haptic Luxury Trends: Why Tactile Textures are the Next Growth Point for 2026 Rigid Gift Boxes</h1>
         
         <p className="mb-4">
-          In the digital age, physical touch has become the ultimate luxury. For 2026, the packaging industry is moving away from "visual-only" designs to <strong>Haptic Luxury</strong>—where the feel of the box is as important as its look.
+          In the digital age, physical touch has become the ultimate luxury. For 2026, the packaging industry is moving away from "visual-only" designs to <strong>Haptic Luxury</strong>鈥攚here the feel of the box is as important as its look.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">The Psychology of Touch in Premium Branding</h2>
@@ -81,3 +81,4 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
