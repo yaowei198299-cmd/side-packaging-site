@@ -8,6 +8,48 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Structural Integrity: Why 1200GSM Greyboard is the Gold Standard for 4x3x1.25\" Magnetic Boxes",
+      excerpt: "An engineering analysis of greyboard density, material strength, and box longevity for high-end jewelry brands. Learn why 1200GSM is the B2B gold standard.",
+      date: "June 25, 2026",
+      slug: "structural-integrity-1200gsm-greyboard-magnetic-boxes",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "The 'E-Flute' Advantage: Optimizing Crush Resistance for Luxury DTC Cosmetics Mailers",
+      excerpt: "Technical guide to E-flute corrugation. Learn how to optimize edge crush test (ECT) ratings and printing quality for premium cosmetics and subscription box shipping.",
+      date: "June 25, 2026",
+      slug: "e-flute-advantage-crush-resistance-cosmetics-mailers",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Global Sourcing Transparency: Navigating FSC Chain of Custody (CoC) for US/EU Retail Compliance",
+      excerpt: "Mastering the complexities of FSC certification. Learn how Chain of Custody (CoC) ensures retail compliance and carbon footprint transparency for global paper-based packaging.",
+      date: "June 25, 2026",
+      slug: "fsc-chain-of-custody-us-eu-retail-compliance",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "The 0.1mm Precision: Calibrating Rigid Box Tolerances for High-End Jewelry Inserts",
+      excerpt: "Technical analysis of rigid box manufacturing tolerances. Learn how calibrating to 0.1mm precision prevents loose product movement for custom rigid boxes and luxury jewelry inserts.",
+      date: "June 24, 2026",
+      slug: "precision-rigid-box-tolerances-jewelry-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Volume Weight vs. Dead Weight: How Structural Engineering Slashes Air Freight Costs for Mailers",
+      excerpt: "Technical guide on optimizing dimensional weight for DTC cosmetic mailers. Learn how structural engineering and flute calibration cut air freight fees for NA/EU shipping.",
+      date: "June 24, 2026",
+      slug: "volume-weight-vs-dead-weight-mailer-freight-optimization",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Aqueous Coating vs. PET Lamination: Navigating EU Plastic-Free Regulations for Luxury Brands",
+      excerpt: "Technical comparison of aqueous coating and PET lamination for luxury packaging. Ensure 100% EU plastic-free compliance while maintaining premium brand aesthetics.",
+      date: "June 24, 2026",
+      slug: "aqueous-coating-vs-pet-lamination-eu-compliance-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
       title: "Engineering the 4x3x1.25\" Rigid Box for Zero-Waste Logistics",
       excerpt: "An analysis of board tension, CBM optimization, and plastic-free aqueous coatings for 4x3x1.25 custom magnetic jewelry boxes. Achieve 8.5% higher pallet density.",
       date: "June 23, 2026",
