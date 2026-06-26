@@ -127,8 +127,8 @@ const HomePage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6">
                 <a href="/inquiry" className="inline-block bg-[#C9A84C] text-black px-12 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-[0_0_30px_rgba(201,168,76,0.3)]">
-                 Get Factory Pricing (Save 30-50%)
-               </a>
+                  Get Factory Pricing (from $0.35)
+                </a>
             </div>
           </div>
         </div>
@@ -138,9 +138,9 @@ const HomePage = () => {
       <div className="bg-white/5 border-y border-white/5 py-12 relative z-20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
           {[
-            { label: "20+ Years", sub: "Production Expert" },
+            { label: "FSC & ISO", sub: "Global Certification" },
             { label: "20,000 sqm", sub: "Factory Facility" },
-            { label: "FSC & BSCI", sub: "Global Standards" },
+            { label: "12H Dieline", sub: "Rapid Engineering" },
             { label: "50+ Countries", sub: "Global Logistics" }
           ].map((item, i) => (
             <div key={i} className="space-y-2">
@@ -185,6 +185,30 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-32 bg-[#0A0A0F] border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <header className="mb-20 text-center">
+            <span className="text-[#C9A84C] text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Process</span>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter italic">How We Work.</h2>
+          </header>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            {[
+              { step: "01", title: "Inquiry", desc: "Share your dimensions and quantity for a technical quote in 12h." },
+              { step: "02", title: "Dieline", desc: "Receive a free custom CAD dieline and 3D mockup for your artwork." },
+              { step: "03", title: "Sample", desc: "Physical prototyping to verify material, structure, and printing." },
+              { step: "04", title: "Production", desc: "Mass manufacturing with ISO-standard QC and global delivery." }
+            ].map((item, i) => (
+              <div key={i} className="space-y-6">
+                <span className="text-4xl font-black italic text-white/10 font-montserrat">{item.step}</span>
+                <h3 className="text-xl font-black uppercase tracking-tighter text-[#C9A84C]">{item.title}</h3>
+                <p className="text-gray-400 text-sm font-medium leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Expert Q&A (AEO) Section */}
       <section className="py-40 bg-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6">
@@ -197,7 +221,7 @@ const HomePage = () => {
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-white/5 pb-12 group text-left">
                 <h3 className="text-xl font-black text-white uppercase tracking-tighter italic mb-4 group-hover:text-[#C9A84C] transition-colors">Q: {faq.q}</h3>
-                <p className="text-gray-400 font-medium leading-relaxed uppercase tracking-wide text-sm">{faq.a}</p>
+                <p className="text-gray-400 font-medium leading-relaxed tracking-wide text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -212,8 +236,6 @@ const HomePage = () => {
       </section>
 
       <Footer />
-
-      <WhatsAppButton />
     </div>
   );
 };
