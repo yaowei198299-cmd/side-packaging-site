@@ -47,7 +47,8 @@ const SmallMOQRigidBoxesGuide = () => {
                 Traditionally, luxury rigid boxes required orders of 1,000 or 2,000 units to justify machine setup costs. For a startup, this means tying up thousands of dollars in inventory that might sit in a warehouse for months.
               </p>
               <p>
-                At Saide Packaging, we've revolutionized our production lines to support **Small MOQ Luxury Rigid Boxes**, starting as low as **100 units**. This allows startups to test product-market fit without the heavy financial burden.
+                At Saide Packaging, we've revolutionized our production lines to support **Small MOQ Luxury Rigid Boxes**, starting as low as **100 units**. This allows startups to test product-market fit without the heavy financial burden. 
+                *(Note: For brands in the health and wellness sector, we also specialize as a certified <Link href="/blog/food-grade-boxes-supplier-safety-standards-guide" className="text-blue-600 underline">food grade boxes supplier</Link>, ensuring safety even at small scales).*
               </p>
 
               <h2 className="text-4xl font-black text-black tracking-tight uppercase">Why Startups Choose Small MOQ Solutions</h2>
