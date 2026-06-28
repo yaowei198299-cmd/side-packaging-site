@@ -4,6 +4,42 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The 'Invisible Magnet' Technique: Counter-Sinking Neodymium Closures for 4x3x1.25\" Premium Rigid Boxes",
+    slug: "invisible-magnet-technique-4x3x1-25-premium-rigid-boxes",
+    date: "June 28, 2026",
+    excerpt: "Learn the technical engineering behind invisible magnetic closures for luxury rigid boxes. Optimizing 4x3x1.25 inch packaging with counter-sunk neodymium magnets."
+  },
+  {
+    title: "Transit Impact Analysis: Comparing Flute Compressive Strength for Global DTC Jewelry Logistics",
+    slug: "transit-impact-analysis-flute-compressive-strength-jewelry-logistics",
+    date: "June 28, 2026",
+    excerpt: "Technical comparison of flute types for jewelry mailer boxes. Analyzing compressive strength and transit impact for global DTC logistics optimization."
+  },
+  {
+    title: "Post-Consumer Waste (PCW) Ratios: Calibrating Luxury Textures with 100% Recycled Content for 2026 ESG Compliance",
+    slug: "pcw-ratios-luxury-textures-100-recycled-content-esg-compliance",
+    date: "June 28, 2026",
+    excerpt: "Technical guide on PCW ratios for luxury packaging. Learn how to achieve high-end textures with 100% recycled content for 2026 ESG compliance."
+  },
+  {
+    title: "The Science of 'Snug-Fit' Prototyping: Why 0.1mm Tolerances Prevent Damage for 4x3x1.25\" Jewelry Sets",
+    slug: "snug-fit-prototyping-0-1mm-tolerance-jewelry-boxes",
+    date: "June 27, 2026",
+    excerpt: "Discover why sub-millimeter precision is critical for luxury jewelry packaging. Learn the math behind 4x3x1.25 inch snug-fit designs."
+  },
+  {
+    title: "Collapsible Rigid Box Engineering: Sourcing 90-Degree Sharp Corners for Minimalist Luxury Brands",
+    slug: "collapsible-rigid-box-90-degree-sharp-corner-engineering",
+    date: "June 27, 2026",
+    excerpt: "Achieving sharp 90-degree corners in collapsible rigid boxes requires V-grooving precision. Explore the engineering of minimalist luxury."
+  },
+  {
+    title: "2026 Sustainable Pivot: Sourcing Recycled Fiber-Based Inserts to Replace PE/PU Foams in High-End Packaging",
+    slug: "recycled-fiber-inserts-pe-pu-foam-replacement-guide",
+    date: "June 27, 2026",
+    excerpt: "Transition your high-end packaging to 100% plastic-free solutions. Sourcing recycled fiber inserts for EU compliance."
+  },
+  {
     title: "Beyond FSC: Navigating 2026 Global Plastic-Free Legislation for Multi-Material Packaging Sets",
     slug: "2026-global-plastic-free-legislation-packaging-sets",
     date: "June 26, 2026",
