@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The 2026 Packaging Engineering Manifesto: Transitioning from 'Box Supplier' to 'Structural ROI Partner'",
+    slug: "2026-packaging-engineering-manifesto-structural-roi-partner",
+    date: "June 29, 2026",
+    excerpt: "A milestone manifesto on the future of packaging. Why brands must shift from buying boxes to partnering with structural ROI engineers."
+  },
+  {
+    title: "Pallet Density Math: Reducing Ocean Freight Surcharges for Bulk Magnetic Box Imports from China",
+    slug: "pallet-density-math-ocean-freight-bulk-magnetic-boxes",
+    date: "June 29, 2026",
+    excerpt: "Master the math of pallet density to reduce ocean freight costs. Technical guide on optimizing bulk magnetic gift box shipping from China."
+  },
+  {
+    title: "The 'Golden Ratio' in Jewelry Packaging: Why 4x3x1.25\" Engineering Maximizes Retail Visual Impact",
+    slug: "golden-ratio-jewelry-packaging-4x3x1-25-engineering",
+    date: "June 29, 2026",
+    excerpt: "Discover why the 4x3x1.25 inch dimension is the engineering 'sweet spot' for jewelry packaging. Learn how precision tolerances maximize retail visual impact."
+  },
+  {
     title: "The 'Invisible Magnet' Technique: Counter-Sinking Neodymium Closures for 4x3x1.25\" Premium Rigid Boxes",
     slug: "invisible-magnet-technique-4x3x1-25-premium-rigid-boxes",
     date: "June 28, 2026",
