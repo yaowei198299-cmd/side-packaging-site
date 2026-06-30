@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Carbon Footprint Calculation: A Step-by-Step Guide for B2B Packaging Procurement Teams",
+    slug: "carbon-footprint-calculation-b2b-packaging-guide",
+    date: "June 30, 2026",
+    excerpt: "Empowering procurement teams with the math needed to meet 2026 ESG compliance. Master the calculation of material and transport emissions."
+  },
+  {
+    title: "The Engineering of 'Tactile Trust': Calibrating Soft-Touch vs. Anti-Scratch Lamination for Luxury Unboxing",
+    slug: "engineering-tactile-trust-soft-touch-anti-scratch-lamination",
+    date: "June 30, 2026",
+    excerpt: "Learn how to choose the right finish for your premium boxes. Balancing the velvet feel of soft-touch with the durability of anti-scratch lamination."
+  },
+  {
+    title: "Supply Chain Resilience: How 12H Dieline Turnaround Recovers 30% of Product Launch Delays",
+    slug: "supply-chain-resilience-12h-dieline-turnaround",
+    date: "June 30, 2026",
+    excerpt: "Discover the impact of rapid prototyping and dieline precision on global supply chain efficiency and product launch timelines."
+  },
+  {
     title: "The 2026 Packaging Engineering Manifesto: Transitioning from 'Box Supplier' to 'Structural ROI Partner'",
     slug: "2026-packaging-engineering-manifesto-structural-roi-partner",
     date: "June 29, 2026",
