@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "V-Groove Engineering: Achieving Sharp 90-Degree Corners for Minimalist 4x3x1.25\" Rigid Boxes",
+    slug: "v-groove-engineering-4x3x1-25-rigid-boxes",
+    date: "July 1, 2026",
+    excerpt: "Engineering precision meets minimalist design. Discover how V-groove techniques ensure structural integrity and visual perfection for small-form luxury boxes."
+  },
+  {
+    title: "Edge Crush Test (ECT) vs. Mullen Test: Calculating Material Yield for Global DTC Jewelry Shipping",
+    slug: "ect-vs-mullen-test-jewelry-shipping-yield",
+    date: "July 1, 2026",
+    excerpt: "Technical comparison of ECT and Mullen tests for jewelry mailer boxes. Learn how to calculate material yield for optimized DTC logistics."
+  },
+  {
+    title: "Green Chemistry in Packaging: Sourcing Water-Based Recyclable Adhesives for 2026 ESG Audit Compliance",
+    slug: "water-based-recyclable-adhesives-esg-compliance-2026",
+    date: "July 1, 2026",
+    excerpt: "Transitioning from solvent-based to water-based adhesives. How the choice of glue affects the end-of-life recyclability of luxury rigid boxes."
+  },
+  {
     title: "Carbon Footprint Calculation: A Step-by-Step Guide for B2B Packaging Procurement Teams",
     slug: "carbon-footprint-calculation-b2b-packaging-guide",
     date: "June 30, 2026",
