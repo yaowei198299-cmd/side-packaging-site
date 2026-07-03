@@ -4,6 +4,42 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Structural Shelf-Life: Engineering 4x3x1.25\" Rigid Boxes for Long-Term Retail Integrity",
+    slug: "structural-shelf-life-4x3x1-25-rigid-boxes",
+    date: "July 3, 2026",
+    excerpt: "Why precision engineering matters for retail longevity. Mastering the 4x3x1.25\" rigid box through material science and density calibration."
+  },
+  {
+    title: "Shipping Compression Math: Calculating Stacking Strengths for Luxury DTC Jewelry Mailers",
+    slug: "shipping-compression-math-stacking-strengths-jewelry-mailers",
+    date: "July 3, 2026",
+    excerpt: "Optimizing for the last mile. How to calculate material strength for global DTC shipping without over-engineering your jewelry mailers."
+  },
+  {
+    title: "Beyond FSC: Navigating Plastic-Free Compliance for High-End Cosmetics Gift Sets in 2026",
+    slug: "plastic-free-cosmetics-packaging-compliance-2026",
+    date: "July 3, 2026",
+    excerpt: "Moving beyond simple certification. How to achieve 100% plastic-free status for complex cosmetics gift sets without sacrificing luxury."
+  },
+  {
+    title: "Beyond GSM: Calibrating Board Density for Structural Longevity in 4x3x1.25\" Premium Rigid Boxes",
+    slug: "beyond-gsm-calibrating-board-density-4x3x1-25-rigid-boxes",
+    date: "July 2, 2026",
+    excerpt: "Why Grams per Square Meter (GSM) is only half the story. Engineering structural longevity through high-density greyboard calibration for 4x3x1.25\" boxes."
+  },
+  {
+    title: "The Logistics of 'Luxury Mailers': Engineering E-Flute Strength for Global DTC Jewelry Delivery",
+    slug: "logistics-luxury-mailers-engineering-e-flute-strength-jewelry-delivery",
+    date: "July 2, 2026",
+    excerpt: "Balancing unboxing aesthetics with global logistics. Learn why E-flute is the engineering standard for high-end DTC jewelry mailers."
+  },
+  {
+    title: "Material Transparency: Navigating GRS (Global Recycled Standard) for High-End B2B Packaging Sourcing",
+    slug: "material-transparency-navigating-grs-b2b-packaging-sourcing",
+    date: "July 2, 2026",
+    excerpt: "Moving beyond 'recyclable' to 'recycled.' How GRS certification provides the material transparency required by 2026 B2B ESG audits."
+  },
+  {
     title: "V-Groove Engineering: Achieving Sharp 90-Degree Corners for Minimalist 4x3x1.25\" Rigid Boxes",
     slug: "v-groove-engineering-4x3x1-25-rigid-boxes",
     date: "July 1, 2026",
