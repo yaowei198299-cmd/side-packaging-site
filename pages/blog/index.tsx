@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The Traceability Trend: Navigating PCR (Post-Consumer Recycled) Content for 4x3x1.25\" Luxury Packaging",
+    slug: "pcr-content-traceability-4x3x1-25-luxury-packaging",
+    date: "July 4, 2026",
+    excerpt: "Beyond the label: How B2B procurement teams verify PCR traceability in high-precision luxury gift boxes and maintain structural elegance."
+  },
+  {
+    title: "CBM Optimization 101: Reducing Ocean Freight Surcharges for Bulk Mailer Box Imports from China",
+    slug: "cbm-optimization-ocean-freight-bulk-mailer-box-imports",
+    date: "July 4, 2026",
+    excerpt: "Mastering ocean freight CBM optimization for large-scale mailer box procurement. How to maximize container utilization and lower landed costs."
+  },
+  {
+    title: "Engineering 'Invisible Durability': Calibrating Structural Ribs in Corrugated Inserts for Heavy Jewelry Sets",
+    slug: "engineering-invisible-durability-corrugated-inserts-jewelry",
+    date: "July 4, 2026",
+    excerpt: "How sub-surface engineering ensures zero-movement transit for premium jewelry collections through calibrated structural ribs in corrugated inserts."
+  },
+  {
     title: "Structural Shelf-Life: Engineering 4x3x1.25\" Rigid Boxes for Long-Term Retail Integrity",
     slug: "structural-shelf-life-4x3x1-25-rigid-boxes",
     date: "July 3, 2026",
