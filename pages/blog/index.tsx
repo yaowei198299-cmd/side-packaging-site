@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Structural Stress Analysis: Engineering 4x3x1.25\" Rigid Boxes for ISTA-Standard Global Logistics",
+    slug: "structural-stress-analysis-ista-rigid-boxes",
+    date: "July 7, 2026",
+    excerpt: "Maximizing drop-test reliability through precision engineering and material density calibration for global logistics."
+  },
+  {
+    title: "The Economics of 'Shipping Air': A Math-Based Guide to Volumetric Efficiency for B2B Mailers",
+    slug: "economics-of-shipping-air-volumetric-efficiency",
+    date: "July 7, 2026",
+    excerpt: "How sub-millimeter mailer engineering recovers up to 20% of ocean freight costs for bulk B2B imports."
+  },
+  {
+    title: "Material Integrity Audit: Sourcing 100% Recyclable Board with GRS & FSC Certifications for 2026",
+    slug: "material-integrity-audit-grs-fsc-packaging",
+    date: "July 7, 2026",
+    excerpt: "Navigating the complex landscape of sustainable B2B procurement and ESG compliance standards."
+  },
+  {
     title: "Engineering 4x3x1.25\" Rigid Boxes for Global DTC Logistics: Solving the 'Air Shipping' Profit Drain",
     slug: "engineering-4x3x1-25-rigid-boxes-dtc-logistics",
     date: "July 6, 2026",
