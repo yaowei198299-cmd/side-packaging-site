@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Engineering 4x3x1.25\" Rigid Boxes for Global DTC Logistics: Solving the 'Air Shipping' Profit Drain",
+    slug: "engineering-4x3x1-25-rigid-boxes-dtc-logistics",
+    date: "July 6, 2026",
+    excerpt: "How precision-engineered dimensions eliminate volumetric weight surcharges and maximize last-mile profitability for global DTC brands."
+  },
+  {
+    title: "FSC vs. Recycled Board: A Technical Life-Cycle Analysis (LCA) for B2B Procurement Teams",
+    slug: "fsc-vs-recycled-board-technical-lca-b2b",
+    date: "July 6, 2026",
+    excerpt: "Decoding the carbon footprint of sustainable materials to meet 2026 B2B ESG compliance standards through Life-Cycle Analysis."
+  },
+  {
+    title: "The Dieline Advantage: How 12H Technical Support Reduces Packaging Lead Times by 25%",
+    slug: "dieline-advantage-12h-technical-support-lead-times",
+    date: "July 6, 2026",
+    excerpt: "Accelerating product launches through rapid structural prototyping and CAD precision. How 12H support recovers 30% of launch delays."
+  },
+  {
     title: "The Traceability Trend: Navigating PCR (Post-Consumer Recycled) Content for 4x3x1.25\" Luxury Packaging",
     slug: "pcr-content-traceability-4x3x1-25-luxury-packaging",
     date: "July 4, 2026",
