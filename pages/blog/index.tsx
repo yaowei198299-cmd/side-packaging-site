@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Precision Engineering: Achieving Zero-Gaps in 4x3x1.25\" Magnetic Box Hinge Construction",
+    slug: "precision-engineering-zero-gap-magnetic-box-hinges",
+    date: "July 8, 2026",
+    excerpt: "Engineering the perfect reveal through V-Groove precision and mechanical alignment for luxury magnetic boxes."
+  },
+  {
+    title: "The Math of Logistics: Reducing Ocean Freight Surcharges for Bulk DTC Mailer Imports",
+    slug: "logistics-math-ocean-freight-bulk-mailer-imports",
+    date: "July 8, 2026",
+    excerpt: "How sub-millimeter volumetric engineering and CBM optimization recover profitability for global DTC brands."
+  },
+  {
+    title: "Global Compliance Roadmap: Sourcing Recycled Board with GRS & FSC Certifications for 2026",
+    slug: "global-compliance-roadmap-grs-fsc-recycled-board",
+    date: "July 8, 2026",
+    excerpt: "Navigating mandatory traceability and ESG certification standards for sustainable B2B packaging sourcing."
+  },
+  {
     title: "Structural Stress Analysis: Engineering 4x3x1.25\" Rigid Boxes for ISTA-Standard Global Logistics",
     slug: "structural-stress-analysis-ista-rigid-boxes",
     date: "July 7, 2026",
