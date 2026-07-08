@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Moisture-Resistance Engineering: Protecting 4x3x1.25\" Rigid Boxes During Long-Term Maritime Transit",
+    slug: "moisture-resistance-engineering-maritime-transit-rigid-boxes",
+    date: "July 9, 2026",
+    excerpt: "Preventing structural collapse in high-humidity logistics through material science and barrier coatings for luxury rigid boxes."
+  },
+  {
+    title: "Palletization ROI: Math-Based Stacking Patterns to Reduce Volumetric Weight for Jewelry Mailers",
+    slug: "palletization-roi-stacking-patterns-jewelry-mailers",
+    date: "July 9, 2026",
+    excerpt: "Recovering profitability through sub-millimeter dimension calibration and optimal container utilization for global jewelry shipping."
+  },
+  {
+    title: "Beyond Recyclable: Sourcing Biodegradable Inks and Coatings for 2026 ESG Supply Chain Compliance",
+    slug: "biodegradable-inks-coatings-2026-esg-compliance",
+    date: "July 9, 2026",
+    excerpt: "Transitioning to green chemistry and biodegradable inks to meet the rigorous demands of upcoming global ESG legislation."
+  },
+  {
     title: "Precision Engineering: Achieving Zero-Gaps in 4x3x1.25\" Magnetic Box Hinge Construction",
     slug: "precision-engineering-zero-gap-magnetic-box-hinges",
     date: "July 8, 2026",
