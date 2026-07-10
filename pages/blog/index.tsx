@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The Procurement ROI Formula: Calculating the 'Total Cost of Ownership' (TCO) for Factory-Direct Packaging Imports",
+    slug: "procurement-roi-tco-formula-factory-direct-packaging",
+    date: "July 10, 2026",
+    excerpt: "Beyond the unit price: A mathematical framework for B2B procurement teams to calculate the true cost of factory-direct packaging imports."
+  },
+  {
+    title: "Compostability Compliance: Navigating EN 13432 Standards for Sustainable Luxury Paper Inserts",
+    slug: "en-13432-compostability-compliance-luxury-paper-inserts",
+    date: "July 10, 2026",
+    excerpt: "Understanding the rigorous requirements of EN 13432 for biodegradable packaging. Learn how to verify compostability in high-end paper inserts for luxury brands."
+  },
+  {
+    title: "The 0.05mm Delta: Calibrating CNC Precision for 4x3x1.25\" High-End Jewelry Drawer Boxes",
+    slug: "cnc-precision-calibrating-4x3x1-25-jewelry-drawer-boxes",
+    date: "July 10, 2026",
+    excerpt: "Master the technical nuances of sub-millimeter precision in jewelry box manufacturing. How CNC calibration ensures a perfect friction-fit for high-end drawer designs."
+  },
+  {
     title: "Moisture-Resistance Engineering: Protecting 4x3x1.25\" Rigid Boxes During Long-Term Maritime Transit",
     slug: "moisture-resistance-engineering-maritime-transit-rigid-boxes",
     date: "July 9, 2026",
