@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Board Yield Optimization: How Ganging 4x3x1.25\" Rigid Boxes Reduces Material Scrap by 12.5%",
+    slug: "board-yield-optimization-4x3x1-25-rigid-boxes",
+    date: "July 11, 2026",
+    excerpt: "Maximizing material efficiency through precision dieline ganging and sheet-fed optimization for small-form luxury packaging."
+  },
+  {
+    title: "Maritime Humidity Resilience: Engineering High-Density Greyboard for 30-Day Ocean Transit",
+    slug: "maritime-humidity-resilience-high-density-greyboard",
+    date: "July 11, 2026",
+    excerpt: "Preventing structural failure in high-humidity logistics through material density calibration and moisture-barrier engineering."
+  },
+  {
+    title: "EPR Compliance Roadmap: A Procurement Guide for Jewelry Brands Entering French and German Markets in 2026",
+    slug: "epr-compliance-roadmap-jewelry-packaging-2026",
+    date: "July 11, 2026",
+    excerpt: "Strategic procurement steps to ensure Extended Producer Responsibility (EPR) compliance for luxury packaging in the EU's strictest markets."
+  },
+  {
     title: "The Procurement ROI Formula: Calculating the 'Total Cost of Ownership' (TCO) for Factory-Direct Packaging Imports",
     slug: "procurement-roi-tco-formula-factory-direct-packaging",
     date: "July 10, 2026",
