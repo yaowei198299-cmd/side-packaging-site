@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Structural Optimization: Engineering 4x3x1.25\" Magnetic Boxes to Reduce Pallet Dead-Space by 18%",
+    slug: "structural-optimization-4x3x1-25-magnetic-boxes-pallet-efficiency",
+    date: "July 15, 2026",
+    excerpt: "Recovering ocean freight profitability through precision structural calibration and Magic-8 stacking configurations for 4x3x1.25 inch magnetic boxes."
+  },
+  {
+    title: "The Math of Resilience: Calculating Bursting Strength (Mullen) for Global DTC Jewelry Shipping",
+    slug: "math-of-resilience-calculating-bursting-strength-mullen-jewelry",
+    date: "July 15, 2026",
+    excerpt: "Why the Mullen test remains the gold standard for luxury jewelry mailers. A mathematical framework for calculating material yields in global DTC logistics."
+  },
+  {
+    title: "2026 ESG Audit Guide: Sourcing GRS-Certified Recycled Greyboard for High-End Retail Brands",
+    slug: "2026-esg-audit-guide-grs-certified-recycled-greyboard",
+    date: "July 15, 2026",
+    excerpt: "Navigating mandatory traceability and Global Recycled Standard (GRS) compliance for premium retail packaging sourcing in 2026."
+  },
+  {
     title: "Board Yield Optimization: How Ganging 4x3x1.25\" Rigid Boxes Reduces Material Scrap by 12.5%",
     slug: "board-yield-optimization-4x3x1-25-rigid-boxes",
     date: "July 11, 2026",
