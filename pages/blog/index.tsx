@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The Torque of Luxury: Calibrating Magnetic Closure Strength for 4x3x1.25\" High-End Gift Sets",
+    slug: "calibrating-magnetic-closure-strength-high-end-gift-sets",
+    date: "July 15, 2026",
+    excerpt: "Mastering the tactile snap through precision magnetic torque calibration and sub-millimeter counter-sinking for luxury gift sets."
+  },
+  {
+    title: "Supply Chain Mapping: A B2B Guide to FSC Chain-of-Custody (CoC) Certification for Global Retailers",
+    slug: "b2b-guide-fsc-coc-certification-global-retailers",
+    date: "July 15, 2026",
+    excerpt: "Navigating mandatory traceability and Forest Stewardship Council (FSC) compliance in the 2026 global retail landscape."
+  },
+  {
+    title: "The Engineering of 'Snug-Fit' Inserts: Calculating Friction-Lock Geometry for Premium Jewelry Shipments",
+    slug: "engineering-snug-fit-inserts-jewelry-shipments",
+    date: "July 15, 2026",
+    excerpt: "Achieving zero-movement transit through sub-millimeter friction coefficient math and geometric insert engineering for jewelry."
+  },
+  {
     title: "Structural Optimization: Engineering 4x3x1.25\" Magnetic Boxes to Reduce Pallet Dead-Space by 18%",
     slug: "structural-optimization-4x3x1-25-magnetic-boxes-pallet-efficiency",
     date: "July 15, 2026",
