@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The Math of Impact Absorption: Engineering 4x3x1.25\" Inserts for High-G Fragrance Shipments",
+    slug: "math-impact-absorption-4x3x1-25-fragrance-inserts",
+    date: "July 16, 2026",
+    excerpt: "Calculating G-force dampening and structural resilience for premium glass fragrance bottles in global logistics."
+  },
+  {
+    title: "FSC vs. GRS: A Technical Comparison of Material Traceability for US/UK Luxury Retailers",
+    slug: "fsc-vs-grs-material-traceability-luxury-retailers",
+    date: "July 16, 2026",
+    excerpt: "Navigating the 2026 cross-certification landscape to ensure global supply chain transparency and ESG compliance."
+  },
+  {
+    title: "Structural ROI: How Reducing 'Box Air' by 15% Recovers $2,000 in Monthly Ocean Freight",
+    slug: "structural-roi-ocean-freight-packaging-efficiency",
+    date: "July 16, 2026",
+    excerpt: "Mastering the math of volumetric efficiency to reclaim profitability in global B2B logistics through precision structural engineering."
+  },
+  {
     title: "The Torque of Luxury: Calibrating Magnetic Closure Strength for 4x3x1.25\" High-End Gift Sets",
     slug: "calibrating-magnetic-closure-strength-high-end-gift-sets",
     date: "July 15, 2026",
