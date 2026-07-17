@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Structural Integrity Math: Engineering 4x3x1.25\" Rigid Boxes for ISTA-1A Drop-Test Resilience",
+    slug: "structural-integrity-math-4x3x1-25-rigid-boxes-ista-1a",
+    date: "July 17, 2026",
+    excerpt: "Mastering the physics of impact absorption and structural resilience for 4x3x1.25 inch rigid boxes to meet rigorous ISTA-1A drop-test standards."
+  },
+  {
+    title: "Beyond FSC: Navigating 2026 Plastic-Free Compliance for High-End Jewelry Mailer Inserts",
+    slug: "2026-plastic-free-compliance-jewelry-mailer-inserts",
+    date: "July 17, 2026",
+    excerpt: "A strategic roadmap for transitioning to 100% plastic-free jewelry packaging. Navigating the 2026 EU regulatory landscape while maintaining luxury aesthetics."
+  },
+  {
+    title: "Logistics ROI: Calculating Volume-to-Value Density for Global DTC Packaging Procurement",
+    slug: "logistics-roi-volume-to-value-density-dtc-packaging",
+    date: "July 17, 2026",
+    excerpt: "Optimizing global supply chain profitability through precision volumetric engineering. How calculating volume-to-value density recovers hidden margins in DTC logistics."
+  },
+  {
     title: "The Math of Impact Absorption: Engineering 4x3x1.25\" Inserts for High-G Fragrance Shipments",
     slug: "math-impact-absorption-4x3x1-25-fragrance-inserts",
     date: "July 16, 2026",
