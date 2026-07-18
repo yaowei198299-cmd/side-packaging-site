@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "Logistics ROI: How Structural 'Slim-Fitting' Mailers Recover 12% in Annual Shipping Margins",
+    slug: "logistics-roi-slim-fitting-mailer-boxes-shipping-margins",
+    date: "July 18, 2026",
+    excerpt: "Reclaiming profitability through dimension-first engineering. How 'slim-fitting' custom mailers eliminate volumetric waste in global B2B logistics."
+  },
+  {
+    title: "Packaging Engineering 2026: The Definitive Roadmap to 100% Circular B2B Supply Chains",
+    slug: "2026-circular-b2b-packaging-supply-chain-roadmap",
+    date: "July 18, 2026",
+    excerpt: "Milestone Article 150: Transitioning from linear waste to circular value. The engineering protocols defining the next decade of sustainable B2B packaging."
+  },
+  {
+    title: "The Physics of the 1200GSM Greyboard: Engineering 4x3x1.25\" Rigid Boxes for Zero-Warp Longevity",
+    slug: "engineering-1200gsm-greyboard-zero-warp-rigid-boxes",
+    date: "July 18, 2026",
+    excerpt: "Mastering structural integrity through precision material science. Why 1200GSM density and fiber alignment are the keys to warp-free luxury packaging."
+  },
+  {
     title: "Structural Integrity Math: Engineering 4x3x1.25\" Rigid Boxes for ISTA-1A Drop-Test Resilience",
     slug: "structural-integrity-math-4x3x1-25-rigid-boxes-ista-1a",
     date: "July 17, 2026",
