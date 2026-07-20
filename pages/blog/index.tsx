@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "The Physics of the 'Snap': Engineering Magnetic Closure Torque for 4x3x1.25\" High-End Gift Sets",
+    slug: "physics-of-the-snap-magnetic-closure-torque-4x3x1-25",
+    date: "July 20, 2026",
+    excerpt: "Mastering the tactile snap through precision magnetic torque calibration and sub-millimeter counter-sinking for luxury gift sets."
+  },
+  {
+    title: "Material Yield Math: Calculating Scrap Reduction for FSC-Certified Custom Jewelry Mailer Production",
+    slug: "material-yield-math-fsc-jewelry-mailer-scrap-reduction",
+    date: "July 20, 2026",
+    excerpt: "Maximizing material efficiency through precision dieline ganging and sheet-fed optimization for FSC-certified jewelry mailers."
+  },
+  {
+    title: "Global Freight Arbitrage: Strategic Pallet Loading to Recover 15% in Ocean Shipping Surcharges",
+    slug: "global-freight-arbitrage-pallet-loading-ocean-shipping-surcharges",
+    date: "July 20, 2026",
+    excerpt: "Recovering ocean freight profitability through precision structural calibration and Magic-8 stacking configurations for global DTC brands."
+  },
+  {
     title: "The Engineering of Sharpness: Mastering V-Groove Depths for 4x3x1.25\" Minimalist Luxury Boxes",
     slug: "v-groove-depth-precision-4x3x1-25-boxes",
     date: "July 19, 2026",
