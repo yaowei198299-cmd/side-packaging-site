@@ -1,462 +1,473 @@
-import React from 'react';
+﻿import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import LeadMagnet from '../../components/LeadMagnet';
+import InquiryForm from '../../components/InquiryForm';
+import WhatsAppButton from '../../components/WhatsAppButton';
 
-const posts = [
-  {
-    title: "GRS Chain of Custody: A Technical Audit Guide for B2B Packaging Procurement Teams in 2026",
-    slug: "grs-chain-of-custody-audit-guide-2026",
-    date: "July 21, 2026",
-    excerpt: "Milestone 160: Navigating mandatory traceability and Global Recycled Standard (GRS) compliance for sustainable B2B packaging sourcing."
-  },
-  {
-    title: "The Physics of the Flute: Calibrating ECT-44 Resilience for Global DTC Mailer Logistics",
-    slug: "physics-of-flute-ect-44-resilience-global-dtc-logistics",
-    date: "July 21, 2026",
-    excerpt: "Optimizing structural durability and volumetric efficiency for international shipping through precision flute engineering."
-  },
-  {
-    title: "Value Engineering: How 4x3x1.25\" Structural Precision Eliminates 'Box Creep' in High-End Jewelry Retail",
-    slug: "value-engineering-4x3x1-25-precision-box-creep-elimination",
-    date: "July 21, 2026",
-    excerpt: "Mastering the physics of structural integrity through sub-millimeter precision and V-Groove sharp corner engineering."
-  },
-  {
-    title: "The Physics of the 'Snap': Engineering Magnetic Closure Torque for 4x3x1.25\" High-End Gift Sets",
-    slug: "physics-of-the-snap-magnetic-closure-torque-4x3x1-25",
-    date: "July 20, 2026",
-    excerpt: "Mastering the tactile snap through precision magnetic torque calibration and sub-millimeter counter-sinking for luxury gift sets."
-  },
-  {
-    title: "Material Yield Math: Calculating Scrap Reduction for FSC-Certified Custom Jewelry Mailer Production",
-    slug: "material-yield-math-fsc-jewelry-mailer-scrap-reduction",
-    date: "July 20, 2026",
-    excerpt: "Maximizing material efficiency through precision dieline ganging and sheet-fed optimization for FSC-certified jewelry mailers."
-  },
-  {
-    title: "Global Freight Arbitrage: Strategic Pallet Loading to Recover 15% in Ocean Shipping Surcharges",
-    slug: "global-freight-arbitrage-pallet-loading-ocean-shipping-surcharges",
-    date: "July 20, 2026",
-    excerpt: "Recovering ocean freight profitability through precision structural calibration and Magic-8 stacking configurations for global DTC brands."
-  },
-  {
-    title: "The Engineering of Sharpness: Mastering V-Groove Depths for 4x3x1.25\" Minimalist Luxury Boxes",
-    slug: "v-groove-depth-precision-4x3x1-25-boxes",
-    date: "July 19, 2026",
-    excerpt: "Precision V-grooving is the secret behind the world's most crisp luxury packaging. We break down the calibration required for small-form 4x3x1.25\" rigid boxes."
-  },
-  {
-    title: "ISTA-6 Testing: Calculating Structural G-Force Thresholds for Premium Glassware Packaging",
-    slug: "ista-6-structural-g-force-thresholds-glassware-packaging",
-    date: "July 19, 2026",
-    excerpt: "Shipping glassware requires more than just bubble wrap. It requires engineering that understands the physics of impact. Learn how we calculate G-force thresholds for ISTA-6 compliance."
-  },
-  {
-    title: "GRS Material Traceability in B2B Packaging Sourcing: Navigating 2026 Requirements",
-    slug: "grs-material-traceability-b2b-packaging-sourcing-2026",
-    date: "July 19, 2026",
-    excerpt: "Navigating the 2026 material transparency requirements requires a deep understanding of the Global Recycled Standard (GRS). Learn how to ensure your B2B supply chain is fully traceable."
-  },
-  {
-    title: "Logistics ROI: How Structural 'Slim-Fitting' Mailers Recover 12% in Annual Shipping Margins",
-    slug: "logistics-roi-slim-fitting-mailer-boxes-shipping-margins",
-    date: "July 18, 2026",
-    excerpt: "Reclaiming profitability through dimension-first engineering. How 'slim-fitting' custom mailers eliminate volumetric waste in global B2B logistics."
-  },
-  {
-    title: "Packaging Engineering 2026: The Definitive Roadmap to 100% Circular B2B Supply Chains",
-    slug: "2026-circular-b2b-packaging-supply-chain-roadmap",
-    date: "July 18, 2026",
-    excerpt: "Milestone Article 150: Transitioning from linear waste to circular value. The engineering protocols defining the next decade of sustainable B2B packaging."
-  },
-  {
-    title: "The Physics of the 1200GSM Greyboard: Engineering 4x3x1.25\" Rigid Boxes for Zero-Warp Longevity",
-    slug: "engineering-1200gsm-greyboard-zero-warp-rigid-boxes",
-    date: "July 18, 2026",
-    excerpt: "Mastering structural integrity through precision material science. Why 1200GSM density and fiber alignment are the keys to warp-free luxury packaging."
-  },
-  {
-    title: "Structural Integrity Math: Engineering 4x3x1.25\" Rigid Boxes for ISTA-1A Drop-Test Resilience",
-    slug: "structural-integrity-math-4x3x1-25-rigid-boxes-ista-1a",
-    date: "July 17, 2026",
-    excerpt: "Mastering the physics of impact absorption and structural resilience for 4x3x1.25 inch rigid boxes to meet rigorous ISTA-1A drop-test standards."
-  },
-  {
-    title: "Beyond FSC: Navigating 2026 Plastic-Free Compliance for High-End Jewelry Mailer Inserts",
-    slug: "2026-plastic-free-compliance-jewelry-mailer-inserts",
-    date: "July 17, 2026",
-    excerpt: "A strategic roadmap for transitioning to 100% plastic-free jewelry packaging. Navigating the 2026 EU regulatory landscape while maintaining luxury aesthetics."
-  },
-  {
-    title: "Logistics ROI: Calculating Volume-to-Value Density for Global DTC Packaging Procurement",
-    slug: "logistics-roi-volume-to-value-density-dtc-packaging",
-    date: "July 17, 2026",
-    excerpt: "Optimizing global supply chain profitability through precision volumetric engineering. How calculating volume-to-value density recovers hidden margins in DTC logistics."
-  },
-  {
-    title: "The Math of Impact Absorption: Engineering 4x3x1.25\" Inserts for High-G Fragrance Shipments",
-    slug: "math-impact-absorption-4x3x1-25-fragrance-inserts",
-    date: "July 16, 2026",
-    excerpt: "Calculating G-force dampening and structural resilience for premium glass fragrance bottles in global logistics."
-  },
-  {
-    title: "FSC vs. GRS: A Technical Comparison of Material Traceability for US/UK Luxury Retailers",
-    slug: "fsc-vs-grs-material-traceability-luxury-retailers",
-    date: "July 16, 2026",
-    excerpt: "Navigating the 2026 cross-certification landscape to ensure global supply chain transparency and ESG compliance."
-  },
-  {
-    title: "Structural ROI: How Reducing 'Box Air' by 15% Recovers $2,000 in Monthly Ocean Freight",
-    slug: "structural-roi-ocean-freight-packaging-efficiency",
-    date: "July 16, 2026",
-    excerpt: "Mastering the math of volumetric efficiency to reclaim profitability in global B2B logistics through precision structural engineering."
-  },
-  {
-    title: "The Torque of Luxury: Calibrating Magnetic Closure Strength for 4x3x1.25\" High-End Gift Sets",
-    slug: "calibrating-magnetic-closure-strength-high-end-gift-sets",
-    date: "July 15, 2026",
-    excerpt: "Mastering the tactile snap through precision magnetic torque calibration and sub-millimeter counter-sinking for luxury gift sets."
-  },
-  {
-    title: "Supply Chain Mapping: A B2B Guide to FSC Chain-of-Custody (CoC) Certification for Global Retailers",
-    slug: "b2b-guide-fsc-coc-certification-global-retailers",
-    date: "July 15, 2026",
-    excerpt: "Navigating mandatory traceability and Forest Stewardship Council (FSC) compliance in the 2026 global retail landscape."
-  },
-  {
-    title: "The Engineering of 'Snug-Fit' Inserts: Calculating Friction-Lock Geometry for Premium Jewelry Shipments",
-    slug: "engineering-snug-fit-inserts-jewelry-shipments",
-    date: "July 15, 2026",
-    excerpt: "Achieving zero-movement transit through sub-millimeter friction coefficient math and geometric insert engineering for jewelry."
-  },
-  {
-    title: "Structural Optimization: Engineering 4x3x1.25\" Magnetic Boxes to Reduce Pallet Dead-Space by 18%",
-    slug: "structural-optimization-4x3x1-25-magnetic-boxes-pallet-efficiency",
-    date: "July 15, 2026",
-    excerpt: "Recovering ocean freight profitability through precision structural calibration and Magic-8 stacking configurations for 4x3x1.25 inch magnetic boxes."
-  },
-  {
-    title: "The Math of Resilience: Calculating Bursting Strength (Mullen) for Global DTC Jewelry Shipping",
-    slug: "math-of-resilience-calculating-bursting-strength-mullen-jewelry",
-    date: "July 15, 2026",
-    excerpt: "Why the Mullen test remains the gold standard for luxury jewelry mailers. A mathematical framework for calculating material yields in global DTC logistics."
-  },
-  {
-    title: "2026 ESG Audit Guide: Sourcing GRS-Certified Recycled Greyboard for High-End Retail Brands",
-    slug: "2026-esg-audit-guide-grs-certified-recycled-greyboard",
-    date: "July 15, 2026",
-    excerpt: "Navigating mandatory traceability and Global Recycled Standard (GRS) compliance for premium retail packaging sourcing in 2026."
-  },
-  {
-    title: "Board Yield Optimization: How Ganging 4x3x1.25\" Rigid Boxes Reduces Material Scrap by 12.5%",
-    slug: "board-yield-optimization-4x3x1-25-rigid-boxes",
-    date: "July 11, 2026",
-    excerpt: "Maximizing material efficiency through precision dieline ganging and sheet-fed optimization for small-form luxury packaging."
-  },
-  {
-    title: "Maritime Humidity Resilience: Engineering High-Density Greyboard for 30-Day Ocean Transit",
-    slug: "maritime-humidity-resilience-high-density-greyboard",
-    date: "July 11, 2026",
-    excerpt: "Preventing structural failure in high-humidity logistics through material density calibration and moisture-barrier engineering."
-  },
-  {
-    title: "EPR Compliance Roadmap: A Procurement Guide for Jewelry Brands Entering French and German Markets in 2026",
-    slug: "epr-compliance-roadmap-jewelry-packaging-2026",
-    date: "July 11, 2026",
-    excerpt: "Strategic procurement steps to ensure Extended Producer Responsibility (EPR) compliance for luxury packaging in the EU's strictest markets."
-  },
-  {
-    title: "The Procurement ROI Formula: Calculating the 'Total Cost of Ownership' (TCO) for Factory-Direct Packaging Imports",
-    slug: "procurement-roi-tco-formula-factory-direct-packaging",
-    date: "July 10, 2026",
-    excerpt: "Beyond the unit price: A mathematical framework for B2B procurement teams to calculate the true cost of factory-direct packaging imports."
-  },
-  {
-    title: "Compostability Compliance: Navigating EN 13432 Standards for Sustainable Luxury Paper Inserts",
-    slug: "en-13432-compostability-compliance-luxury-paper-inserts",
-    date: "July 10, 2026",
-    excerpt: "Understanding the rigorous requirements of EN 13432 for biodegradable packaging. Learn how to verify compostability in high-end paper inserts for luxury brands."
-  },
-  {
-    title: "The 0.05mm Delta: Calibrating CNC Precision for 4x3x1.25\" High-End Jewelry Drawer Boxes",
-    slug: "cnc-precision-calibrating-4x3x1-25-jewelry-drawer-boxes",
-    date: "July 10, 2026",
-    excerpt: "Master the technical nuances of sub-millimeter precision in jewelry box manufacturing. How CNC calibration ensures a perfect friction-fit for high-end drawer designs."
-  },
-  {
-    title: "Moisture-Resistance Engineering: Protecting 4x3x1.25\" Rigid Boxes During Long-Term Maritime Transit",
-    slug: "moisture-resistance-engineering-maritime-transit-rigid-boxes",
-    date: "July 9, 2026",
-    excerpt: "Preventing structural collapse in high-humidity logistics through material science and barrier coatings for luxury rigid boxes."
-  },
-  {
-    title: "Palletization ROI: Math-Based Stacking Patterns to Reduce Volumetric Weight for Jewelry Mailers",
-    slug: "palletization-roi-stacking-patterns-jewelry-mailers",
-    date: "July 9, 2026",
-    excerpt: "Recovering profitability through sub-millimeter dimension calibration and optimal container utilization for global jewelry shipping."
-  },
-  {
-    title: "Beyond Recyclable: Sourcing Biodegradable Inks and Coatings for 2026 ESG Supply Chain Compliance",
-    slug: "biodegradable-inks-coatings-2026-esg-compliance",
-    date: "July 9, 2026",
-    excerpt: "Transitioning to green chemistry and biodegradable inks to meet the rigorous demands of upcoming global ESG legislation."
-  },
-  {
-    title: "Precision Engineering: Achieving Zero-Gaps in 4x3x1.25\" Magnetic Box Hinge Construction",
-    slug: "precision-engineering-zero-gap-magnetic-box-hinges",
-    date: "July 8, 2026",
-    excerpt: "Engineering the perfect reveal through V-Groove precision and mechanical alignment for luxury magnetic boxes."
-  },
-  {
-    title: "The Math of Logistics: Reducing Ocean Freight Surcharges for Bulk DTC Mailer Imports",
-    slug: "logistics-math-ocean-freight-bulk-mailer-imports",
-    date: "July 8, 2026",
-    excerpt: "How sub-millimeter volumetric engineering and CBM optimization recover profitability for global DTC brands."
-  },
-  {
-    title: "Global Compliance Roadmap: Sourcing Recycled Board with GRS & FSC Certifications for 2026",
-    slug: "global-compliance-roadmap-grs-fsc-recycled-board",
-    date: "July 8, 2026",
-    excerpt: "Navigating mandatory traceability and ESG certification standards for sustainable B2B packaging sourcing."
-  },
-  {
-    title: "Structural Stress Analysis: Engineering 4x3x1.25\" Rigid Boxes for ISTA-Standard Global Logistics",
-    slug: "structural-stress-analysis-ista-rigid-boxes",
-    date: "July 7, 2026",
-    excerpt: "Maximizing drop-test reliability through precision engineering and material density calibration for global logistics."
-  },
-  {
-    title: "The Economics of 'Shipping Air': A Math-Based Guide to Volumetric Efficiency for B2B Mailers",
-    slug: "economics-of-shipping-air-volumetric-efficiency",
-    date: "July 7, 2026",
-    excerpt: "How sub-millimeter mailer engineering recovers up to 20% of ocean freight costs for bulk B2B imports."
-  },
-  {
-    title: "Material Integrity Audit: Sourcing 100% Recyclable Board with GRS & FSC Certifications for 2026",
-    slug: "material-integrity-audit-grs-fsc-packaging",
-    date: "July 7, 2026",
-    excerpt: "Navigating the complex landscape of sustainable B2B procurement and ESG compliance standards."
-  },
-  {
-    title: "Engineering 4x3x1.25\" Rigid Boxes for Global DTC Logistics: Solving the 'Air Shipping' Profit Drain",
-    slug: "engineering-4x3x1-25-rigid-boxes-dtc-logistics",
-    date: "July 6, 2026",
-    excerpt: "How precision-engineered dimensions eliminate volumetric weight surcharges and maximize last-mile profitability for global DTC brands."
-  },
-  {
-    title: "FSC vs. Recycled Board: A Technical Life-Cycle Analysis (LCA) for B2B Procurement Teams",
-    slug: "fsc-vs-recycled-board-technical-lca-b2b",
-    date: "July 6, 2026",
-    excerpt: "Decoding the carbon footprint of sustainable materials to meet 2026 B2B ESG compliance standards through Life-Cycle Analysis."
-  },
-  {
-    title: "The Dieline Advantage: How 12H Technical Support Reduces Packaging Lead Times by 25%",
-    slug: "dieline-advantage-12h-technical-support-lead-times",
-    date: "July 6, 2026",
-    excerpt: "Accelerating product launches through rapid structural prototyping and CAD precision. How 12H support recovers 30% of launch delays."
-  },
-  {
-    title: "The Traceability Trend: Navigating PCR (Post-Consumer Recycled) Content for 4x3x1.25\" Luxury Packaging",
-    slug: "pcr-content-traceability-4x3x1-25-luxury-packaging",
-    date: "July 4, 2026",
-    excerpt: "Beyond the label: How B2B procurement teams verify PCR traceability in high-precision luxury gift boxes and maintain structural elegance."
-  },
-  {
-    title: "CBM Optimization 101: Reducing Ocean Freight Surcharges for Bulk Mailer Box Imports from China",
-    slug: "cbm-optimization-ocean-freight-bulk-mailer-box-imports",
-    date: "July 4, 2026",
-    excerpt: "Mastering ocean freight CBM optimization for large-scale mailer box procurement. How to maximize container utilization and lower landed costs."
-  },
-  {
-    title: "Engineering 'Invisible Durability': Calibrating Structural Ribs in Corrugated Inserts for Heavy Jewelry Sets",
-    slug: "engineering-invisible-durability-corrugated-inserts-jewelry",
-    date: "July 4, 2026",
-    excerpt: "How sub-surface engineering ensures zero-movement transit for premium jewelry collections through calibrated structural ribs in corrugated inserts."
-  },
-  {
-    title: "Structural Shelf-Life: Engineering 4x3x1.25\" Rigid Boxes for Long-Term Retail Integrity",
-    slug: "structural-shelf-life-4x3x1-25-rigid-boxes",
-    date: "July 3, 2026",
-    excerpt: "Why precision engineering matters for retail longevity. Mastering the 4x3x1.25\" rigid box through material science and density calibration."
-  },
-  {
-    title: "Shipping Compression Math: Calculating Stacking Strengths for Luxury DTC Jewelry Mailers",
-    slug: "shipping-compression-math-stacking-strengths-jewelry-mailers",
-    date: "July 3, 2026",
-    excerpt: "Optimizing for the last mile. How to calculate material strength for global DTC shipping without over-engineering your jewelry mailers."
-  },
-  {
-    title: "Beyond FSC: Navigating Plastic-Free Compliance for High-End Cosmetics Gift Sets in 2026",
-    slug: "plastic-free-cosmetics-packaging-compliance-2026",
-    date: "July 3, 2026",
-    excerpt: "Moving beyond simple certification. How to achieve 100% plastic-free status for complex cosmetics gift sets without sacrificing luxury."
-  },
-  {
-    title: "Beyond GSM: Calibrating Board Density for Structural Longevity in 4x3x1.25\" Premium Rigid Boxes",
-    slug: "beyond-gsm-calibrating-board-density-4x3x1-25-rigid-boxes",
-    date: "July 2, 2026",
-    excerpt: "Why Grams per Square Meter (GSM) is only half the story. Engineering structural longevity through high-density greyboard calibration for 4x3x1.25\" boxes."
-  },
-  {
-    title: "The Logistics of 'Luxury Mailers': Engineering E-Flute Strength for Global DTC Jewelry Delivery",
-    slug: "logistics-luxury-mailers-engineering-e-flute-strength-jewelry-delivery",
-    date: "July 2, 2026",
-    excerpt: "Balancing unboxing aesthetics with global logistics. Learn why E-flute is the engineering standard for high-end DTC jewelry mailers."
-  },
-  {
-    title: "Material Transparency: Navigating GRS (Global Recycled Standard) for High-End B2B Packaging Sourcing",
-    slug: "material-transparency-navigating-grs-b2b-packaging-sourcing",
-    date: "July 2, 2026",
-    excerpt: "Moving beyond 'recyclable' to 'recycled.' How GRS certification provides the material transparency required by 2026 B2B ESG audits."
-  },
-  {
-    title: "V-Groove Engineering: Achieving Sharp 90-Degree Corners for Minimalist 4x3x1.25\" Rigid Boxes",
-    slug: "v-groove-engineering-4x3x1-25-rigid-boxes",
-    date: "July 1, 2026",
-    excerpt: "Engineering precision meets minimalist design. Discover how V-groove techniques ensure structural integrity and visual perfection for small-form luxury boxes."
-  },
-  {
-    title: "Edge Crush Test (ECT) vs. Mullen Test: Calculating Material Yield for Global DTC Jewelry Shipping",
-    slug: "ect-vs-mullen-test-jewelry-shipping-yield",
-    date: "July 1, 2026",
-    excerpt: "Technical comparison of ECT and Mullen tests for jewelry mailer boxes. Learn how to calculate material yield for optimized DTC logistics."
-  },
-  {
-    title: "Green Chemistry in Packaging: Sourcing Water-Based Recyclable Adhesives for 2026 ESG Audit Compliance",
-    slug: "water-based-recyclable-adhesives-esg-compliance-2026",
-    date: "July 1, 2026",
-    excerpt: "Transitioning from solvent-based to water-based adhesives. How the choice of glue affects the end-of-life recyclability of luxury rigid boxes."
-  },
-  {
-    title: "Carbon Footprint Calculation: A Step-by-Step Guide for B2B Packaging Procurement Teams",
-    slug: "carbon-footprint-calculation-b2b-packaging-guide",
-    date: "June 30, 2026",
-    excerpt: "Empowering procurement teams with the math needed to meet 2026 ESG compliance. Master the calculation of material and transport emissions."
-  },
-  {
-    title: "The Engineering of 'Tactile Trust': Calibrating Soft-Touch vs. Anti-Scratch Lamination for Luxury Unboxing",
-    slug: "engineering-tactile-trust-soft-touch-anti-scratch-lamination",
-    date: "June 30, 2026",
-    excerpt: "Learn how to choose the right finish for your premium boxes. Balancing the velvet feel of soft-touch with the durability of anti-scratch lamination."
-  },
-  {
-    title: "Supply Chain Resilience: How 12H Dieline Turnaround Recovers 30% of Product Launch Delays",
-    slug: "supply-chain-resilience-12h-dieline-turnaround",
-    date: "June 30, 2026",
-    excerpt: "Discover the impact of rapid prototyping and dieline precision on global supply chain efficiency and product launch timelines."
-  },
-  {
-    title: "The 2026 Packaging Engineering Manifesto: Transitioning from 'Box Supplier' to 'Structural ROI Partner'",
-    slug: "2026-packaging-engineering-manifesto-structural-roi-partner",
-    date: "June 29, 2026",
-    excerpt: "A milestone manifesto on the future of packaging. Why brands must shift from buying boxes to partnering with structural ROI engineers."
-  },
-  {
-    title: "Pallet Density Math: Reducing Ocean Freight Surcharges for Bulk Magnetic Box Imports from China",
-    slug: "pallet-density-math-ocean-freight-bulk-magnetic-boxes",
-    date: "June 29, 2026",
-    excerpt: "Master the math of pallet density to reduce ocean freight costs. Technical guide on optimizing bulk magnetic gift box shipping from China."
-  },
-  {
-    title: "The 'Golden Ratio' in Jewelry Packaging: Why 4x3x1.25\" Engineering Maximizes Retail Visual Impact",
-    slug: "golden-ratio-jewelry-packaging-4x3x1-25-engineering",
-    date: "June 29, 2026",
-    excerpt: "Discover why the 4x3x1.25 inch dimension is the engineering 'sweet spot' for jewelry packaging. Learn how precision tolerances maximize retail visual impact."
-  },
-  {
-    title: "The 'Invisible Magnet' Technique: Counter-Sinking Neodymium Closures for 4x3x1.25\" Premium Rigid Boxes",
-    slug: "invisible-magnet-technique-4x3x1-25-premium-rigid-boxes",
-    date: "June 28, 2026",
-    excerpt: "Learn the technical engineering behind invisible magnetic closures for luxury rigid boxes. Optimizing 4x3x1.25 inch packaging with counter-sunk neodymium magnets."
-  },
-  {
-    title: "Transit Impact Analysis: Comparing Flute Compressive Strength for Global DTC Jewelry Logistics",
-    slug: "transit-impact-analysis-flute-compressive-strength-jewelry-logistics",
-    date: "June 28, 2026",
-    excerpt: "Technical comparison of flute types for jewelry mailer boxes. Analyzing compressive strength and transit impact for global DTC logistics optimization."
-  },
-  {
-    title: "Post-Consumer Waste (PCW) Ratios: Calibrating Luxury Textures with 100% Recycled Content for 2026 ESG Compliance",
-    slug: "pcw-ratios-luxury-textures-100-recycled-content-esg-compliance",
-    date: "June 28, 2026",
-    excerpt: "Technical guide on PCW ratios for luxury packaging. Learn how to achieve high-end textures with 100% recycled content for 2026 ESG compliance."
-  },
-  {
-    title: "The Science of 'Snug-Fit' Prototyping: Why 0.1mm Tolerances Prevent Damage for 4x3x1.25\" Jewelry Sets",
-    slug: "snug-fit-prototyping-0-1mm-tolerance-jewelry-boxes",
-    date: "June 27, 2026",
-    excerpt: "Discover why sub-millimeter precision is critical for luxury jewelry packaging. Learn the math behind 4x3x1.25 inch snug-fit designs."
-  },
-  {
-    title: "Collapsible Rigid Box Engineering: Sourcing 90-Degree Sharp Corners for Minimalist Luxury Brands",
-    slug: "collapsible-rigid-box-90-degree-sharp-corner-engineering",
-    date: "June 27, 2026",
-    excerpt: "Achieving sharp 90-degree corners in collapsible rigid boxes requires V-grooving precision. Explore the engineering of minimalist luxury."
-  },
-  {
-    title: "2026 Sustainable Pivot: Sourcing Recycled Fiber-Based Inserts to Replace PE/PU Foams in High-End Packaging",
-    slug: "recycled-fiber-inserts-pe-pu-foam-replacement-guide",
-    date: "June 27, 2026",
-    excerpt: "Transition your high-end packaging to 100% plastic-free solutions. Sourcing recycled fiber inserts for EU compliance."
-  },
-  {
-    title: "Beyond FSC: Navigating 2026 Global Plastic-Free Legislation for Multi-Material Packaging Sets",
-    slug: "2026-global-plastic-free-legislation-packaging-sets",
-    date: "June 26, 2026",
-    excerpt: "Stay ahead of 2026 plastic-free laws in EU and NA. Learn how to transition multi-material packaging sets to full compliance."
-  },
-  {
-    title: "Corrugation Flute Comparison: Why F-Flute is the Future of Sustainable Luxury Jewelry Mailers",
-    slug: "f-flute-sustainable-luxury-jewelry-mailers",
-    date: "June 26, 2026",
-    excerpt: "Discover why F-Flute is becoming the standard for luxury jewelry mailers. Compare E-Flute vs F-Flute for dimensional weight."
-  },
-  {
-    title: "The Physics of Hinge Tension: Ensuring a Perfect 180-Degree Reveal for 4x3x1.25\" Magnetic Boxes",
-    slug: "the-physics-of-hinge-tension-4x3x1-25-magnetic-boxes",
-    date: "June 26, 2026",
-    excerpt: "Explore the engineering behind hinge tension in custom magnetic boxes. Learn how to optimize 4x3x1.25 dimensions."
-  }
-];
+const BlogIndex = () => {
+  const posts = [
+    {
+      title: "Structural Integrity: Why 1200GSM Greyboard is the Gold Standard for 4x3x1.25\" Magnetic Boxes",
+      excerpt: "An engineering analysis of greyboard density, material strength, and box longevity for high-end jewelry brands. Learn why 1200GSM is the B2B gold standard.",
+      date: "June 25, 2026",
+      slug: "structural-integrity-1200gsm-greyboard-magnetic-boxes",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "The 'E-Flute' Advantage: Optimizing Crush Resistance for Luxury DTC Cosmetics Mailers",
+      excerpt: "Technical guide to E-flute corrugation. Learn how to optimize edge crush test (ECT) ratings and printing quality for premium cosmetics and subscription box shipping.",
+      date: "June 25, 2026",
+      slug: "e-flute-advantage-crush-resistance-cosmetics-mailers",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Global Sourcing Transparency: Navigating FSC Chain of Custody (CoC) for US/EU Retail Compliance",
+      excerpt: "Mastering the complexities of FSC certification. Learn how Chain of Custody (CoC) ensures retail compliance and carbon footprint transparency for global paper-based packaging.",
+      date: "June 25, 2026",
+      slug: "fsc-chain-of-custody-us-eu-retail-compliance",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "The 0.1mm Precision: Calibrating Rigid Box Tolerances for High-End Jewelry Inserts",
+      excerpt: "Technical analysis of rigid box manufacturing tolerances. Learn how calibrating to 0.1mm precision prevents loose product movement for custom rigid boxes and luxury jewelry inserts.",
+      date: "June 24, 2026",
+      slug: "precision-rigid-box-tolerances-jewelry-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Volume Weight vs. Dead Weight: How Structural Engineering Slashes Air Freight Costs for Mailers",
+      excerpt: "Technical guide on optimizing dimensional weight for DTC cosmetic mailers. Learn how structural engineering and flute calibration cut air freight fees for NA/EU shipping.",
+      date: "June 24, 2026",
+      slug: "volume-weight-vs-dead-weight-mailer-freight-optimization",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Aqueous Coating vs. PET Lamination: Navigating EU Plastic-Free Regulations for Luxury Brands",
+      excerpt: "Technical comparison of aqueous coating and PET lamination for luxury packaging. Ensure 100% EU plastic-free compliance while maintaining premium brand aesthetics.",
+      date: "June 24, 2026",
+      slug: "aqueous-coating-vs-pet-lamination-eu-compliance-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Engineering the 4x3x1.25\" Rigid Box for Zero-Waste Logistics",
+      excerpt: "An analysis of board tension, CBM optimization, and plastic-free aqueous coatings for 4x3x1.25 custom magnetic jewelry boxes. Achieve 8.5% higher pallet density.",
+      date: "June 23, 2026",
+      slug: "engineering-4x3x1-25-rigid-box-zero-waste-logistics",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "ECT-32 vs. ECT-44: Selecting the Right Corrugation for North American DTC Mailers",
+      excerpt: "Technical comparison of ECT-32 and ECT-44 board grades for custom mailer boxes. Optimize for structural durability and logistics cost for NA/EU markets.",
+      date: "June 23, 2026",
+      slug: "ect-32-vs-ect-44-durability-logistics-optimization",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The Plastic-Free Pivot: Sourcing Mycelium & Pulp Inserts for High-End Gift Sets",
+      excerpt: "Transitioning from EVA foam to sustainable mycelium and molded pulp inserts. Meet EU/NA plastic-free compliance while maintaining luxury haptic quality.",
+      date: "June 23, 2026",
+      slug: "mycelium-pulp-inserts-plastic-free-gift-sets-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "V-Groove vs. Half-Cut: Engineering the Sharpest 90-Degree Corners for Minimalist Luxury",
+      excerpt: "An analysis of board tension, corner geometry, and CNC precision for premium B2B jewelry packaging. Achieve razor-sharp edges with V-grooving.",
+      date: "June 21, 2026",
+      slug: "v-groove-vs-half-cut-rigid-box-engineering",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Achieving \"Rich Black\": Calibrating Soy-Based Inks for 100% Depth on Textured Cardstock",
+      excerpt: "An engineering analysis of CMYK saturation, 'Ink-Sink' prevention, and UV curing on high-fiber specialty papers for 4x3x1.25 boxes.",
+      date: "June 21, 2026",
+      slug: "achieving-rich-black-textured-card-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "The Supply Chain \"Sprint\": How 12H Dieline Support Reduces Prototyping Cycles by 70%",
+      excerpt: "Eliminating the 'Silent Week' of traditional sourcing through direct engineer-to-client technical feedback loops. Speed up your product launch.",
+      date: "June 21, 2026",
+      slug: "supply-chain-sprint-reduce-sampling-time-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Eliminating \"Magnet Bulge\": Engineering Invisible Closures for 4x3x1.25\" Luxury Boxes",
+      excerpt: "Technical guide to magnetic box manufacturing. Learn how to hide neodymium magnets without surface bulging. Master CNC counter-sinking for a 100% flat unboxing reveal.",
+      date: "June 21, 2026",
+      slug: "preventing-magnet-bulge-rigid-box-engineering",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Black-Core vs. Printed Black: Achieving 100% Pantone Precision for Luxury B2B Boxes",
+      excerpt: "Eliminating the 'White-Edge' defect in high-end cosmetics packaging through through-dyed fiber technology. Learn why black-core is the choice for 2026 luxury brands.",
+      date: "June 21, 2026",
+      slug: "black-core-card-vs-printed-black-comparison-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The \"Magic 8\" Master Carton: Palletizing 4x3x1.25\" Boxes for Zero CBM Waste",
+      excerpt: "An analysis of interlocking column-stacking, 'CBM-Void' elimination, and the math of global container density. Reduce your ocean freight fees by 15.2%.",
+      date: "June 21, 2026",
+      slug: "palletization-engineering-magic-8-configuration-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "The Physics of the \"Snug Fit\": Calibrating 0.1mm Tolerances for 4x3x1.25\" Premium Inserts",
+      excerpt: "An analysis of expansion coefficients, friction-lock geometry, and CAD-driven prototyping for high-end B2B jewelry brands. Achieve a perfect 0.1mm fit.",
+      date: "June 20, 2026",
+      slug: "physics-of-snug-fit-packaging-tolerances-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Ink-Trapping on Textured Paper: Achieving World-Class 0.1mm Detail for Embossed Boxes",
+      excerpt: "An engineering analysis of fiber-depth ink absorption, dot-gain compensation, and UV curing on uneven surfaces. Master the art of printing on linen paper.",
+      date: "June 20, 2026",
+      slug: "ink-trapping-textured-paper-luxury-printing-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Lead Time vs. Inventory Cost: How a 15-Day Production Cycle Recovers 12% in Annual Cash Flow",
+      excerpt: "An objective analysis of the 'Lead Time Multiplier' on safety stock, warehousing capital, and DTC brand scalability. Reduce warehouse fees by 40%.",
+      date: "June 20, 2026",
+      slug: "lead-time-inventory-cost-cash-flow-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Fragrance Engineering: Designing Anti-Vibration Rigid Boxes for Glass Bottles",
+      excerpt: "An objective analysis of harmonic resonance, shock-absorption coefficients, and structural g-force limits for B2B fragrance logistics. Prevent leakage with custom EVA-locks.",
+      date: "June 19, 2026",
+      slug: "anti-vibration-fragrance-packaging-engineering-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "Eco-Adhesives: Sourcing Water-Based & Biodegradable Glues for 2026 Compliance",
+      excerpt: "Beyond the paper: How the choice of bonding chemistry dictates the 'Recyclability Rating' of your B2B packaging. Eliminate oxidative yellow-staining with water-based polymers.",
+      date: "June 19, 2026",
+      slug: "eco-friendly-adhesives-packaging-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Digital Foil vs. Hot Stamping: Optimizing Low MOQ Customization for Luxury Boutique Brands",
+      excerpt: "An analysis of plate-less economics, haptic depth, and the speed of rapid prototyping for B2B procurement. Achieve premium foil finishes from just 100 units.",
+      date: "June 19, 2026",
+      slug: "digital-foil-vs-hot-stamping-low-moq-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Engineering Sensory Anchors: Calibrating Spot UV Micron-Depth for 4x3x1.25\" Luxury Boxes",
+      excerpt: "A technical analysis of Spot UV finishing. Learn how to calibrate micron-level gloss depth and registration for small 4x3x1.25 jewelry boxes to maximize tactile brand impact.",
+      date: "June 18, 2026",
+      slug: "engineering-spot-uv-sensory-anchors-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "E-commerce Fulfillment ROI: Why 4x3x1.25\" Mailers Outperform Envelopes for B2C Jewelry",
+      excerpt: "Technical ROI analysis for B2C fulfillment. Learn why custom 4x3x1.25 mailer boxes reduce product damage by 98% compared to bubble mailers.",
+      date: "June 18, 2026",
+      slug: "ecommerce-fulfillment-roi-mailer-vs-envelope",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "The European Retail Shift: Sourcing 100% Plastic-Free Luxury Paper Bags with High-Tensile Handles",
+      excerpt: "Technical guide to plastic-free paper shopping bags for EU retail. Learn about high-tensile twisted paper handles and FSC-certified materials to avoid environmental taxes.",
+      date: "June 18, 2026",
+      slug: "european-retail-plastic-free-paper-bags-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "E-Flute vs. F-Flute: Structural Engineering for Slim 4x3x1.25\" Mailer Boxes",
+      excerpt: "Optimizing for the 'Letterbox' threshold: How flute selection impacts shipping categories and crush resistance for small 4x3x1.25 e-commerce parcel boxes.",
+      date: "June 17, 2026",
+      slug: "e-flute-vs-f-flute-structural-engineering-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "LCL vs. FCL Shipping: The Mathematical Threshold for Custom Rigid Box ROI",
+      excerpt: "A B2B logistics guide for custom box importers. Calculate the ROI of Less-than-Container Load (LCL) vs. Full Container Load (FCL) for high-volume 4x3x1.25 box orders.",
+      date: "June 17, 2026",
+      slug: "lcl-vs-fcl-ocean-freight-packaging-roi-audit",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "The \"Golden Ratio\" of Unboxing: Why 4x3x1.25\" is the Global Standard for Luxury Accessories",
+      excerpt: "Explore the branding psychology behind the 4x3x1.25 inch jewelry box. Learn why this size profile maximizes tactile luxury and palm-feel unboxing impact.",
+      date: "June 17, 2026",
+      slug: "golden-ratio-4x3x1-25-luxury-unboxing-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "Soy-Based Ink & VOC Compliance: Sourcing Carbon-Neutral Luxury Printing",
+      excerpt: "Technical guide to soy-based ink printing for luxury packaging. Learn about VOC-free compliance, color fidelity on kraft, and how bio-degradable inks improve brand ethics.",
+      date: "June 16, 2026",
+      slug: "soy-based-ink-voc-compliance-luxury-printing-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Magnetic Closure Engineering: N35 vs. N52 Grade Neodymium for Luxury Boxes",
+      excerpt: "A technical analysis of magnetic closure strength for rigid gift boxes. Compare N35 and N52 grade neodymium magnets. Learn how to engineer the perfect 'Satisfying Click'.",
+      date: "June 16, 2026",
+      slug: "magnetic-closure-strength-engineering-n35-vs-n52",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "The Ganging Formula: How a 3mm Change in Box Size Saves 15% on Material Costs",
+      excerpt: "An objective analysis of press-sheet utilization, 'The 3mm Rule,' and the math behind industrial waste reduction for custom 4x3x1.25 jewelry boxes.",
+      date: "June 16, 2026",
+      slug: "paper-sheet-ganging-yield-optimization-formula",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "FSC Certification & B2B Compliance: Sourcing Ethical Rigid Boxes for Global Retail Markets",
+      excerpt: "A B2B guide to FSC-certified packaging. Learn about chain-of-custody, UK/EU environmental compliance, and how sustainable sourcing for 4x3x1.25 boxes reduces import risk.",
+      date: "June 15, 2026",
+      slug: "fsc-certification-b2b-packaging-compliance-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "Precision Foam Engineering: Laser Cut vs. Die-Cut Inserts for Premium 4x3x1.25\" Boxes",
+      excerpt: "Master custom foam insert engineering. Compare high-density EVA foam, laser-cut precision, and traditional die-cutting for jewelry and watch boxes. Learn how to eliminate loose product movement.",
+      date: "June 15, 2026",
+      slug: "precision-foam-engineering-laser-vs-die-cut-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Engineering Zero-Defect Rigid Boxes: How to Prevent Corner Cracking and Box Bowing",
+      excerpt: "Technical analysis of rigid box corner integrity. Learn the structural formulas to prevent paper cracking and box bowing for 4x3x1.25 sizes. Master V-grooving vs. half-cutting for custom boxes.",
+      date: "June 15, 2026",
+      slug: "rigid-box-corner-durability-engineering-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Molded Pulp vs. Cardboard Inserts: Sourcing Sustainable 4x3x1.25\" Jewelry Box Interiors",
+      excerpt: "Technical comparison of molded pulp and custom cardboard inserts for 4x3x1.25 jewelry boxes. Learn about impact damping, plastic-free compliance, and B2B volume pricing.",
+      date: "June 14, 2026",
+      slug: "molded-pulp-vs-cardboard-jewelry-inserts-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Luxury Finish Durability: Velvet Soft-Touch vs. Anti-Scratch Matte Film",
+      excerpt: "Technical analysis of luxury box finish durability. Compare velvet soft-touch lamination with premium anti-scratch matte films for 4x3x1.25 jewelry and cosmetics boxes.",
+      date: "June 14, 2026",
+      slug: "soft-touch-vs-anti-scratch-finish-durability-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Logistics Audit: How Flat-Packing Magnetic Boxes Saves 80% on Warehousing Fees",
+      excerpt: "Technical ROI analysis of flat-pack vs. assembled rigid boxes. Learn how collapsible magnetic structures reduce 3PL warehousing fees by 80% for high-volume 4x3x1.25 jewelry box runs.",
+      date: "June 14, 2026",
+      slug: "flat-pack-vs-assembled-warehousing-roi-audit",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Luxury Perfume Packaging: The Art of Engineering a High-End Fragrance Reveal",
+      excerpt: "Combining chemical safety, structural rigidity, and haptic luxury for the world's most demanding scents. Learn why 1500gsm is the standard for niche perfume boxes.",
+      date: "June 13, 2026",
+      slug: "luxury-perfume-packaging-design-material-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "ROI Analysis: Custom Cosmetic Packaging for Retail Visibility vs. E-commerce Durability",
+      excerpt: "Technical ROI analysis for cosmetic brands. Compare retail display efficiency vs. e-commerce shipping durability. Learn how to reduce transit damage to near 0%.",
+      date: "June 13, 2026",
+      slug: "cosmetic-packaging-retail-ecommerce-roi-analysis",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Dieline & Blueprint Library: Free 4x3x1.25\" CAD Templates & Cost-Optimized Engineering",
+      excerpt: "Access our factory dieline library. Download free custom packaging blueprints for 4x3x1.25 mailer boxes and rigid gift boxes in .AI and .PDF formats with direct factory cost analysis.",
+      date: "June 13, 2026",
+      slug: "free-4x3x1-25-dieline-blueprint-templates",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Spot UV vs. Scodix: Engineering High-End Sensory Contrast on Luxury Boxes",
+      excerpt: "Technical analysis of luxury box finishing. Compare traditional Spot UV and digital Scodix tactile effects. Learn how sensory contrast drives premium brand perception for 4x3x1.25 boxes.",
+      date: "June 13, 2026",
+      slug: "spot-uv-vs-scodix-sensory-contrast-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "The B2B Packaging Lead Time Audit: Why 12H Dieline Support Reduces GTM by 15 Days",
+      excerpt: "Discover how to optimize your supply chain lead times. Learn why immediate 12-hour technical dieline turnaround eliminates the communication bottlenecks that delay global product launches.",
+      date: "June 13, 2026",
+      slug: "b2b-packaging-lead-time-audit-gtm-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Plastic-Free Inserts: The Engineering of Custom Cardboard Trays for 4x3x1.25\" Luxury Boxes",
+      excerpt: "Discover how to replace plastic and foam with sustainable custom cardboard trays. Technical analysis of structural folding, shock protection, and 100% recyclability for 4x3x1.25 jewelry boxes.",
+      date: "June 12, 2026",
+      slug: "plastic-free-cardboard-tray-inserts-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Aqueous Coating vs. PET Lamination: Sourcing Plastic-Free Luxury Finishes for 2026 Compliance",
+      excerpt: "Technical comparison of Aqueous (Water-based) coating and traditional PET plastic lamination. Learn how to achieve high-end matte/gloss finishes while ensuring 100% recyclability.",
+      date: "June 12, 2026",
+      slug: "aqueous-coating-vs-pet-lamination-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Reducing Labor Costs: Assembly Speed Analysis of Saide Collapsible Magnetic Boxes",
+      excerpt: "Discover how collapsible magnetic boxes reduce 3PL labor costs. A technical analysis of assembly time, adhesive performance, and warehouse efficiency for custom rigid boxes.",
+      date: "June 12, 2026",
+      slug: "collapsible-box-assembly-speed-labor-savings-analysis",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "White Cardboard vs. Kraft Corrugated Mailer Boxes: Premium E-commerce Subscriptions",
+      excerpt: "Compare premium white cardboard mailer boxes and natural kraft corrugated shipping boxes. Learn about ink coverage, custom double-sided printing, and shipping durability for 4x3x1.25 sizes.",
+      date: "June 11, 2026",
+      slug: "white-cardboard-vs-kraft-corrugated-mailer-guide",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "Double-Sided Printed Mailer Boxes: Engineering the Ultimate Unboxing Experience",
+      excerpt: "Discover how double-sided printed mailer boxes drive customer retention. Learn about E-flute corrugated strength, flexographic vs digital printing, and low MOQ custom mailer solutions.",
+      date: "June 10, 2026",
+      slug: "double-sided-printed-mailer-boxes-unboxing-guide",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "The Science of Custom Jewelry Box Inserts: Foam, Velvet, EVA, & Cardboard Compared",
+      excerpt: "A technical guide to custom jewelry box inserts. Compare velvet, high-density EVA foam, PU leather, and eco-friendly cardboard to protect and present high-end jewelry.",
+      date: "June 10, 2026",
+      slug: "custom-jewelry-box-inserts-materials-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Sourcing Luxury Kraft Paper Shopping Bags: Premium Ribbon Handles & Zero Plastic Compliance",
+      excerpt: "Discover how to source luxury FSC-certified kraft paper shopping bags with premium ribbon handles. Learn about paper weight (gsm) resistance, eco-compliance, and low MOQ wholesale solutions.",
+      date: "June 10, 2026",
+      slug: "luxury-kraft-paper-bags-ribbon-handles-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Rigidity vs. Weight: 1200gsm vs 1500gsm Board Optimization for 4x3x1.25\" Luxury Boxes",
+      excerpt: "Discover how to optimize custom rigid box thickness. Compare 1200gsm and 1500gsm board weight & strength formulas to save 18% on B2B air shipping for 4x3x1.25 jewelry boxes.",
+      date: "June 10, 2026",
+      slug: "board-thickness-cost-optimization-guide",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Save 87% Shipping Volume: The Complete Collapsible Magnetic Box Sourcing Guide",
+      excerpt: "Learn how collapsible rigid magnetic boxes save up to 87.5% in ocean and air freight shipping volume. Get a standard 4x3x1.25 foldable rigid box dieline blueprint in PDF/AI.",
+      date: "June 10, 2026",
+      slug: "collapsible-box-shipping-cost-reduction-guide",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "UK PPT & EU Eco-Compliance: Sourcing Sustainable Cosmetics Packaging in 2026",
+      excerpt: "Master UK Plastic Packaging Tax (PPT) & EU eco-compliance. Learn about soy-based inks, bio-degradable stone paper, and plastic-free cosmetic boxes from FSC certified factories.",
+      date: "June 10, 2026",
+      slug: "plastic-free-cosmetic-packaging-compliance-guide",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "Jewelry Box Trends 2026: Luxury Customization & Small MOQ for Boutique Brands",
+      excerpt: "Discover the top jewelry box trends for 2026. Learn how custom magnetic boxes and sustainable materials can elevate your jewelry brand identity and unboxing experience.",
+      date: "May 6, 2026",
+      slug: "jewelry-box-trends-2026-customization",
+      image: "https://sc02.alicdn.com/kf/H292333b800b841ab8b8229cd7ee66f5ec.png"
+    },
+    {
+      title: "Luxury Sustainable Cosmetic Packaging Trends 2026: Beauty Without Compromise",
+      excerpt: "Explore the intersection of luxury and sustainability in 2026 cosmetic packaging. Learn about recyclable rigid boxes, refillable glass, and plastic-free solutions.",
+      date: "May 4, 2026",
+      slug: "luxury-sustainable-cosmetic-packaging-trends-2026",
+      image: "https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png"
+    },
+    {
+      title: "How to Calculate Total Landed Cost for Packaging Imported from China: A 2026 Guide",
+      excerpt: "Don't be surprised by hidden costs. Learn the step-by-step formula for calculating the total cost of your packaging from factory to warehouse, including tariffs and freight.",
+      date: "May 4, 2026",
+      slug: "how-to-calculate-packaging-landed-cost-china-import",
+      image: "https://sc02.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg"
+    }
+  ];
 
-export default function BlogIndex() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="min-h-screen bg-[#0A0A0F] text-white font-sans selection:bg-[#C9A84C]/30 overflow-x-hidden">
       <Head>
-        <title>Packaging Insights Blog | Saide Packaging</title>
-        <meta name="description" content="Technical guides and industry trends for luxury packaging, sustainability, and logistics optimization." />
+        <title>Packaging Insights & Tech Whitepapers 2026 | Saide Packaging</title>
+        <meta name="description" content="Expert technical analysis on luxury packaging trends, sustainable eco-compliance (FSC, PPT), and global structural cost engineering." />
       </Head>
 
-      <main className="max-w-7xl mx-auto px-4 py-24">
-        <header className="mb-20">
-          <h1 className="text-6xl font-black tracking-tighter mb-6">Packaging Insights</h1>
-          <p className="text-2xl text-gray-600 max-w-3xl">
-            Engineering-led perspectives on luxury manufacturing, sustainable materials, and global supply chain optimization.
-          </p>
-        </header>
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#0A0A0F]/40 backdrop-blur-2xl border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link href="/" className="text-xl font-black tracking-tighter uppercase italic text-white font-montserrat">Saide Packaging</Link>
+          <div className="hidden lg:flex items-center space-x-10 text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">
+            <Link href="/products" className="hover:text-white transition-colors">Catalog</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Case Studies</Link>
+            <Link href="/about-founder" className="hover:text-white transition-colors">Founders</Link>
+          </div>
+          <Link href="/inquiry" className="bg-[#C9A84C] text-black px-8 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl font-montserrat">Get a Quote</Link>
+        </div>
+      </nav>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {posts.map((post) => (
-            <article key={post.slug} className="group border-b border-gray-100 pb-12">
-              <p className="text-sm font-bold text-blue-600 mb-4 uppercase tracking-widest">{post.date}</p>
-              <h2 className="text-3xl font-black mb-4 leading-tight group-hover:text-blue-600 transition">
-                <Link href={`/blog/${post.slug}`}>
-                  {post.title}
+      <main className="pt-48 pb-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-24">
+            <span className="text-[#C9A84C] text-xs font-black uppercase tracking-[0.5em] mb-6 block">The Knowledge Hub</span>
+            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-8 font-montserrat">
+              Packaging <br/>
+              <span className="text-white/40 italic">Insights.</span>
+            </h1>
+            <p className="text-xl text-gray-400 max-w-2xl font-medium leading-relaxed uppercase tracking-tight">
+              Technical analysis, cost formulas, eco-compliance guides, and CAD blueprints for global luxury brands.
+            </p>
+          </div>
+
+          <div className="grid gap-16">
+            {posts.map((post, i) => (
+              <article key={i} className="group relative bg-white/5 border border-white/5 rounded-[3rem] overflow-hidden hover:border-[#C9A84C]/30 transition-all shadow-2xl">
+                <Link href={`/blog/${post.slug}`} className="grid md:grid-cols-2">
+                  <div className="aspect-video md:aspect-auto overflow-hidden bg-[#1C1C28]">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
+                    />
+                  </div>
+                  <div className="p-12 md:p-16 flex flex-col justify-center">
+                    <p className="text-[#C9A84C] font-black text-[10px] uppercase tracking-[0.3em] mb-6">{post.date}</p>
+                    <h2 className="text-2xl md:text-3xl font-black tracking-tighter mb-8 group-hover:text-[#C9A84C] transition-colors leading-[1.0] uppercase italic font-montserrat">
+                      {post.title}
+                    </h2>
+                    <p className="text-gray-400 font-medium leading-relaxed mb-10 line-clamp-3 text-sm uppercase tracking-wider">
+                      {post.excerpt}
+                    </p>
+                    <span className="text-white font-black text-[10px] uppercase tracking-widest border-b-2 border-white pb-2 self-start group-hover:border-[#C9A84C] group-hover:text-[#C9A84C] transition-all font-montserrat">
+                      Read Technical Analysis 鈫?
+                    </span>
+                  </div>
                 </Link>
-              </h2>
-              <p className="text-gray-600 mb-6 line-clamp-3">
-                {post.excerpt}
-              </p>
-              <Link href={`/blog/${post.slug}`} className="inline-flex items-center font-black text-sm uppercase tracking-tighter">
-                Read Full Article
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
         </div>
       </main>
+
+      <LeadMagnet lang="en" />
+
+      <section id="contact" className="py-32 bg-black border-t border-white/5">
+        <div className="max-w-5xl mx-auto px-6">
+          <InquiryForm lang="en" />
+        </div>
+      </section>
+
+      <footer className="bg-black text-white py-16 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12 text-center">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-30 italic">Saide Packaging. 漏 2026. Industrial Luxury standards.</p>
+        </div>
+      </footer>
+
+      <WhatsAppButton />
     </div>
   );
-}
+};
+
+export default BlogIndex;
+
