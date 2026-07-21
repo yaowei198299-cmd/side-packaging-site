@@ -4,6 +4,24 @@ import Link from 'next/link';
 
 const posts = [
   {
+    title: "GRS Chain of Custody: A Technical Audit Guide for B2B Packaging Procurement Teams in 2026",
+    slug: "grs-chain-of-custody-audit-guide-2026",
+    date: "July 21, 2026",
+    excerpt: "Milestone 160: Navigating mandatory traceability and Global Recycled Standard (GRS) compliance for sustainable B2B packaging sourcing."
+  },
+  {
+    title: "The Physics of the Flute: Calibrating ECT-44 Resilience for Global DTC Mailer Logistics",
+    slug: "physics-of-flute-ect-44-resilience-global-dtc-logistics",
+    date: "July 21, 2026",
+    excerpt: "Optimizing structural durability and volumetric efficiency for international shipping through precision flute engineering."
+  },
+  {
+    title: "Value Engineering: How 4x3x1.25\" Structural Precision Eliminates 'Box Creep' in High-End Jewelry Retail",
+    slug: "value-engineering-4x3x1-25-precision-box-creep-elimination",
+    date: "July 21, 2026",
+    excerpt: "Mastering the physics of structural integrity through sub-millimeter precision and V-Groove sharp corner engineering."
+  },
+  {
     title: "The Physics of the 'Snap': Engineering Magnetic Closure Torque for 4x3x1.25\" High-End Gift Sets",
     slug: "physics-of-the-snap-magnetic-closure-torque-4x3x1-25",
     date: "July 20, 2026",
