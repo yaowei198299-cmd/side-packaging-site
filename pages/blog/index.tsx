@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Board Tension Dynamics: Engineering 4x3x1.25\" Rigid Boxes for Zero-Warp Humidity Resilience",
+      excerpt: "Technical analysis of board tension and humidity resilience. Learn how to eliminate warping in luxury jewelry boxes through cross-grain lamination and fiber orientation.",
+      date: "July 22, 2026",
+      slug: "board-tension-dynamics-warp-resistance-rigid-boxes",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Dieline Engineering 101: How 0.05mm Precision in CAD Templates Saves $1.50 Per Unit in Sample Fees",
+      excerpt: "Mastering CAD precision for luxury jewelry boxes. Learn how 0.05mm structural accuracy eliminates iterative sample rounds and slashes B2B procurement costs.",
+      date: "July 22, 2026",
+      slug: "dieline-engineering-precision-sample-fees-savings",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Circular Economics: Calculating the Carbon-Offset ROI for 100% Recycled B2B Packaging Sets in 2026",
+      excerpt: "Turning ESG compliance into financial ROI. Technical analysis of carbon-offset math, plastic tax avoidance, and green procurement subsidies for 2026 packaging sets.",
+      date: "July 22, 2026",
+      slug: "circular-economics-carbon-offset-roi-2026",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "Structural Integrity: Why 1200GSM Greyboard is the Gold Standard for 4x3x1.25\" Magnetic Boxes",
       excerpt: "An engineering analysis of greyboard density, material strength, and box longevity for high-end jewelry brands. Learn why 1200GSM is the B2B gold standard.",
       date: "June 25, 2026",
