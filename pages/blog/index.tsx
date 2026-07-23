@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "The McKee Formula: Engineering 4x3x1.25\" Rigid Boxes for Maximum Stacking Strength",
+      excerpt: "Technical analysis of structural crushing resistance using the McKee formula. Learn how to optimize stacking strength for precision 4x3x1.25 rigid boxes.",
+      date: "July 23, 2026",
+      slug: "the-mckee-formula-engineering-4x3x1-25-rigid-boxes-stacking-strength",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Acoustic Engineering: Designing the Perfect 'Snap' Sound for Luxury Magnetic Closures",
+      excerpt: "The sensory dimension of unboxing. Learn how decibel math and magnet placement create the ultimate premium click for jewelry boxes.",
+      date: "July 23, 2026",
+      slug: "acoustic-engineering-perfect-snap-sound-luxury-magnetic-closures",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
+      title: "FSC-PCR Hybridization: Calculating Material ROI for Sustainable Luxury Brands in 2026",
+      excerpt: "Beyond greenwashing: The math of sustainable material ratios. Calculate ROI for FSC-PCR hybrid packaging and achieve 2026 ESG compliance.",
+      date: "July 23, 2026",
+      slug: "fsc-pcr-hybridization-material-roi-sustainable-luxury-2026",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "Board Tension Dynamics: Engineering 4x3x1.25\" Rigid Boxes for Zero-Warp Humidity Resilience",
       excerpt: "Technical analysis of board tension and humidity resilience. Learn how to eliminate warping in luxury jewelry boxes through cross-grain lamination and fiber orientation.",
       date: "July 22, 2026",
