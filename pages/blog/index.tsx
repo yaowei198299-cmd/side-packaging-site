@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Board Aging Dynamics: Engineering 4x3x1.25\" Rigid Boxes for 24-Month Retail Shelf Integrity",
+      excerpt: "Understanding the impact of humidity and fiber degradation on the structural stability of premium rigid packaging over extended retail cycles.",
+      date: "July 24, 2026",
+      slug: "board-aging-dynamics-4x3x1-25-rigid-boxes-shelf-integrity",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Payload Math: Calculating Pallet Utilization Ratios for Bulk Magnetic Box Exports from China",
+      excerpt: "Maximizing container density and reducing landed costs through precision palletization engineering for high-volume rigid box shipments.",
+      date: "July 24, 2026",
+      slug: "payload-math-pallet-utilization-bulk-magnetic-box-exports",
+      image: "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png"
+    },
+    {
+      title: "ESG Transparency: A Technical Guide to Sourcing Bio-Based Resins for 2026 Sustainable Inserts",
+      excerpt: "Bridging the gap between luxury protection and circularity through verifiable bio-polymer sourcing and material traceability.",
+      date: "July 24, 2026",
+      slug: "esg-transparency-bio-based-resins-2026-sustainable-inserts",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "The McKee Formula: Engineering 4x3x1.25\" Rigid Boxes for Maximum Stacking Strength",
       excerpt: "Technical analysis of structural crushing resistance using the McKee formula. Learn how to optimize stacking strength for precision 4x3x1.25 rigid boxes.",
       date: "July 23, 2026",
