@@ -29,6 +29,27 @@ const BlogIndex = () => {
       image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
     },
     {
+      title: "Beyond FSC: Navigating GRS Traceability Standards for 2026 Sustainable Luxury Retail Brands",
+      excerpt: "Mastering the Global Recycled Standard (GRS) to secure material integrity and avoid 2026 plastic packaging taxes. A technical audit of circular material sourcing.",
+      date: "July 24, 2026",
+      slug: "grs-traceability-standards-sustainable-luxury-retail-2026",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
+      title: "Freight-Saving Geometry: How Foldable Rigid Designs Recover 15% in B2B Ocean Shipping Margin",
+      excerpt: "Analyzing the ROI of collapsible structural engineering. Learn how foldable rigid box designs optimize pallet density and reduce ocean freight fees by 15% in 2026.",
+      date: "July 24, 2026",
+      slug: "freight-saving-geometry-foldable-rigid-designs-ocean-shipping",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Spot UV Sensory Mechanics: Engineering Tactile Contrast for 4x3x1.25\" High-End Jewelry Boxes",
+      excerpt: "A technical analysis of micron-level Spot UV registration. Learn how tactile contrast engineering enhances premium brand perception for small 4x3x1.25 jewelry packaging.",
+      date: "July 24, 2026",
+      slug: "spot-uv-sensory-mechanics-tactile-contrast-jewelry-boxes",
+      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg"
+    },
+    {
       title: "Board Aging Dynamics: Engineering 4x3x1.25\" Rigid Boxes for 24-Month Retail Shelf Integrity",
       excerpt: "Understanding the impact of humidity and fiber degradation on the structural stability of premium rigid packaging over extended retail cycles.",
       date: "July 24, 2026",
