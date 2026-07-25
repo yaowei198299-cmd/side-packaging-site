@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "The Physics of Fatigue: Engineering 4x3x1.25\" Rigid Boxes for 1,000+ Opening Cycles",
+      excerpt: "Exploring structural fatigue thresholds in luxury magnetic boxes. How material choice and hinge engineering ensure 1,000+ opening cycles for premium jewelry brands.",
+      date: "July 25, 2026",
+      slug: "engineering-4x3x1-25-rigid-boxes-fatigue-testing",
+      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg"
+    },
+    {
+      title: "Logistics ROI Math: Calculating the Freight-Saving Potential of Foldable vs. Non-Foldable Rigid Designs",
+      excerpt: "Comparing the landed cost impact of collapsible structures. Learn how to calculate freight ROI and reduce warehousing volume by 80% for high-volume rigid box runs.",
+      date: "July 25, 2026",
+      slug: "logistics-roi-foldable-vs-non-foldable-rigid-boxes",
+      image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg"
+    },
+    {
+      title: "Supply Chain Audit: A Technical Guide to 2026 Cross-Certification (FSC + GRS) for High-End Retailers",
+      excerpt: "Navigating the 2026 cross-certification mandate. A technical audit of FSC and GRS material traceability for luxury brands and high-end retailers.",
+      date: "July 25, 2026",
+      slug: "2026-fsc-grs-cross-certification-supply-chain-guide",
+      image: "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png"
+    },
+    {
       title: "Board Aging Dynamics: Engineering 4x3x1.25\" Rigid Boxes for 24-Month Retail Shelf Integrity",
       excerpt: "Understanding the impact of humidity and fiber degradation on the structural stability of premium rigid packaging over extended retail cycles.",
       date: "July 24, 2026",
