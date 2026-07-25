@@ -33,7 +33,7 @@ This is a premium, high-performance headless e-commerce site for **Saide Packagi
    Create a `.env.local` file with your Shopify credentials:
    ```env
    SHOPIFY_STORE_DOMAIN=saidepackaging.myshopify.com
-   SHOPIFY_STOREFRONT_ACCESS_TOKEN=e4d8d488295dd34280141b5277c79cde
+   SHOPIFY_STOREFRONT_ACCESS_TOKEN=your_storefront_access_token
    ```
 
 4. **Run development server**:
