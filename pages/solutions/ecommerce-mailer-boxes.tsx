@@ -90,7 +90,7 @@ const EcommerceSolution = () => {
               <div className="relative">
                 <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
                   <img 
-                    src="https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png" 
+                    src="/assets/products/product_093232c1.png" 
                     alt="Custom E-commerce Mailer Boxes" 
                     className="w-full h-full object-cover"
                   />

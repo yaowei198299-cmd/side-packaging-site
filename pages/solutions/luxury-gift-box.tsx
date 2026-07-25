@@ -90,7 +90,7 @@ const LuxuryGiftBoxSolution = () => {
               <div className="relative">
                 <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-4 border-purple-500/20 bg-purple-900/10 backdrop-blur-xl">
                   <img 
-                    src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
+                    src="/assets/products/product_2be4fdaf.png" 
                     alt="Luxury Rigid Gift Box" 
                     className="w-full h-full object-cover  mix-blend-lighten"
                   />
@@ -203,7 +203,7 @@ const LuxuryGiftBoxSolution = () => {
                     <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=800" alt="Gold Foil Detail" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl translate-y-12">
-                    <img src="https://sc02.alicdn.com/kf/Aeaf1dca78d3f4469a1ea380f452ac2de5.png" alt="Luxury Jewelry Box" className="w-full h-full object-cover" />
+                    <img src="/assets/products/product_49f7451d.png" alt="Luxury Jewelry Box" className="w-full h-full object-cover" />
                   </div>
                </div>
             </div>

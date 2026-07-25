@@ -38,7 +38,7 @@ const JewelryBoxBlog = () => {
 
             <div className="aspect-[21/9] bg-gray-900 rounded-[3rem] overflow-hidden mb-20 shadow-2xl border border-white/5">
               <img 
-                src="https://s.alicdn.com/@sc04/kf/H6a331bc412a64a00b7c4af3df365dac1i/Custom-Jewelry-Pink-Sponge-Pouch-Bags-Earring.jpg" 
+                src="/assets/products/product_fb1414ac.jpg" 
                 alt="Luxury Jewelry Boxes" 
                 className="w-full h-full object-cover  hover:-0 transition-all duration-1000  "
               />

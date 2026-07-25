@@ -47,7 +47,7 @@ const InquiryPage = () => {
               <div className="bg-[#0f0f15] p-8 rounded-2xl border border-white/5 mb-16 flex items-center gap-8 group">
                 <div className="relative">
                    <div className="w-24 h-24 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all border-2 border-white/10">
-                      <img src="https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg" alt="Jocelyn" className="w-full h-full object-cover" />
+                      <img src="/assets/products/product_24f6b5b2.jpg" alt="Jocelyn" className="w-full h-full object-cover" />
                    </div>
                    <div className="absolute bottom-1 right-1 w-5 h-5 bg-green-500 rounded-full border-4 border-[#0f0f15]" />
                 </div>

@@ -36,7 +36,7 @@ const FoodPaperBoxesPage = () => {
                 "@type": "Product",
                 "name": productData.title,
                 "image": [
-                  "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+                  "/assets/products/product_2be4fdaf.png"
                 ],
                 "description": "Oil-resistant, food-grade paper packaging for restaurants and bakeries. FDA and EU compliant materials, PFAS-free aqueous coating, and FSC-certified sustainable paper.",
                 "sku": "SIDE-FOOD-001",

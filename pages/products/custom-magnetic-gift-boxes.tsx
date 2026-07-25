@@ -20,7 +20,7 @@ const ProductPage = () => {
                 "@type": "Product",
                 "name": "Custom Magnetic Gift Boxes",
                 "image": [
-                  "https://s.alicdn.com/@sc04/kf/Had1198f76e8244f7b6e067519bad703co/Custom-Luxury-Eco-Friendly-Biodegradable-Magnetic-Closure.jpg"
+                  "/assets/products/product_f0152354.jpg"
                 ],
                 "description": "Premium luxury rigid boxes with hidden magnetic closures. Features 1200gsm-1800gsm greyboard, premium art paper wrapping, and industrial-strength neodymium magnets. FSC-certified sustainable packaging.",
                 "sku": "SIDE-MAG-001",
@@ -100,7 +100,7 @@ const ProductPage = () => {
             <div className="relative group">
                <div className="aspect-square bg-white/5 rounded-[4rem] border border-white/10 overflow-hidden shadow-2xl">
                   <img 
-                    src="https://s.alicdn.com/@sc04/kf/Had1198f76e8244f7b6e067519bad703co/Custom-Luxury-Eco-Friendly-Biodegradable-Magnetic-Closure.jpg" 
+                    src="/assets/products/product_f0152354.jpg" 
                     alt="Magnetic Gift Box" 
                     className="w-full h-full object-cover  hover:-0 transition-all duration-1000  " 
                   />

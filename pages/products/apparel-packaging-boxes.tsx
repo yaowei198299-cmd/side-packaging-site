@@ -10,7 +10,7 @@ const ApparelPackagingBoxesPage = () => {
     title: "Apparel & Textile Packaging Boxes",
     subtitle: "Premium Cardboard Solutions for Fashion, Accessories, and Home Textiles",
     variantId: "gid://shopify/ProductVariant/apparel-boxes-placeholder",
-    imageUrl: "https://sc02.alicdn.com/kf/A7b2cac8d4efe401f9df1793bf9071d0bu.png",
+    imageUrl: "/assets/products/product_4e1a1776.png",
     features: [
       { title: "Retail Ready", desc: "Specialising in apparel presentation boxes that enhance the shelf appeal of your fashion line." },
       { title: "Eco-Friendly", desc: "Committed to sustainability with 100% recyclable materials and FSC-certified paper stock." },

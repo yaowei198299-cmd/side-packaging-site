@@ -52,7 +52,7 @@ const BlogPost = () => {
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
-                src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" 
+                src="/assets/products/product_2be4fdaf.png" 
                 alt="High-End Custom Gift Boxes Manufacturer China" 
                 className="w-full h-full object-cover"
               />

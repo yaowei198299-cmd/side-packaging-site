@@ -8,22 +8,22 @@ const FinishingOptionsPage = () => {
   const options = [
     {
       title: "Gold & Silver Foil",
-      image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg",
+      image: "/assets/products/product_4f33629d.jpg",
       desc: "Add a metallic, reflective layer to your logo or text for an instant luxury feel."
     },
     {
       title: "Spot UV Coating",
-      image: "https://sc04.alicdn.com/kf/Hdf03eb602caa4dd4bce2e15c8f77cb1aA.jpg",
+      image: "/assets/products/product_24f6b5b2.jpg",
       desc: "Create a glossy, raised effect on specific areas to contrast with matte surfaces."
     },
     {
       title: "Embossing & Debossing",
-      image: "https://sc04.alicdn.com/kf/H897da67689e44678976fd2a650c13954R.jpg",
+      image: "/assets/products/product_11d0ea86.jpg",
       desc: "Create a 3D tactile experience that customers can feel when they touch your packaging."
     },
     {
       title: "Soft-Touch Lamination",
-      image: "https://sc04.alicdn.com/kf/Hfc6f9a416d73448b8d7a8a62c7f6b9edF.jpg",
+      image: "/assets/products/product_3a5c13f5.jpg",
       desc: "A premium matte finish that feels like velvet to the touch. Anti-scratch and finger-print proof."
     }
   ];

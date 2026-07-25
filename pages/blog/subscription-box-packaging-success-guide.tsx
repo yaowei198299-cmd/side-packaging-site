@@ -52,7 +52,7 @@ const BlogPost = () => {
               
               <div className="aspect-video bg-gray-100 rounded-[3rem] overflow-hidden shadow-2xl border border-gray-100">
                 <img 
-                  src="https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png" 
+                  src="/assets/products/product_093232c1.png" 
                   alt="Custom Printed Subscription Box Packaging" 
                   className="w-full h-full object-cover"
                 />
@@ -181,13 +181,13 @@ const BlogPost = () => {
             <div className="grid md:grid-cols-2 gap-12">
               <Link href="/blog/how-to-choose-the-right-custom-packaging-boxes" className="group">
                 <div className="aspect-video bg-gray-100 rounded-3xl overflow-hidden mb-6 border border-gray-100">
-                  <img src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" alt="Guide" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src="/assets/products/product_2be4fdaf.png" alt="Guide" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <h5 className="text-xl font-black uppercase tracking-tight group-hover:text-blue-600 transition-colors">How to Choose the Right Custom Packaging Boxes</h5>
               </Link>
               <Link href="/blog/sourcing-custom-gift-boxes-china-guide" className="group">
                 <div className="aspect-video bg-gray-100 rounded-3xl overflow-hidden mb-6 border border-gray-100">
-                  <img src="https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png" alt="Sourcing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src="/assets/products/product_2be4fdaf.png" alt="Sourcing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <h5 className="text-xl font-black uppercase tracking-tight group-hover:text-blue-600 transition-colors">Sourcing Custom Gift Boxes from China: A Full Guide</h5>
               </Link>

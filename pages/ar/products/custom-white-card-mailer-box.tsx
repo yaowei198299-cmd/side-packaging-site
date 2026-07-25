@@ -29,7 +29,7 @@ const WhiteCardMailerPage = () => {
       <section className="relative h-screen flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://sc02.alicdn.com/kf/A6944a60384cf46a89e823d17403dc1e4Z.png" 
+            src="/assets/products/product_3cf228c6.png" 
             alt="氐賳丿賵賯 亘乇賷丿 賲禺氐氐 賲賳 丕賱賵乇賯 丕賱兀亘賷囟" 
             className="w-full h-full object-cover grayscale brightness-75 scale-105"
           />

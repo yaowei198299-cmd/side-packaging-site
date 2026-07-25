@@ -28,7 +28,7 @@ const EcoLuxurySetPage = () => {
       <section className="relative h-screen flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://sc02.alicdn.com/kf/Ae50efd75cc6d448a8e45325d12c0ddcab.png" 
+            src="/assets/products/product_cdf63c4e.png" 
             alt="The Perpetual Eco-Luxury Set" 
             className="w-full h-full object-cover  brightness-75 scale-105"
           />

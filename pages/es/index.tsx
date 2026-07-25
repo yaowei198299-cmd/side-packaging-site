@@ -6,8 +6,8 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 import Footer from '../../components/Footer';
 
 const HomePageEs = () => {
-  const group1 = "https://sc01.alicdn.com/kf/A3a4c9b4df52c4178b9387cd98246b8426.png";
-  const group2 = "https://sc01.alicdn.com/kf/Ab4aec4b7e81744da97c367f74b3ed6b1K.png";
+  const group1 = "/assets/products/product_9e858c62.png";
+  const group2 = "/assets/products/product_3d59e0c2.png";
 
   const categories = [
     { title: "BOLSAS DE MANO", label: "Bolsas de mano", image: group1, x: "0%", link: "/products" },
@@ -63,7 +63,7 @@ const HomePageEs = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-[#0A0A0F]">
         <div className="absolute top-0 bottom-0 right-0 z-0 flex justify-end items-center w-full lg:w-[55%] h-full">
           <img 
-            src="https://sc01.alicdn.com/kf/A50266d485601490f977db118833d7fb4a.png" 
+            src="/assets/products/product_c5af99a9.png" 
             alt="Colaje de Embalaje de Lujo" 
             className="h-auto w-full max-h-[85%] object-contain object-right pr-6 lg:pr-20 animate-in fade-in zoom-in-95 duration-1000"
           />

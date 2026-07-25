@@ -13,9 +13,9 @@ const MagneticGiftBoxesPage = () => {
   ];
 
   const types = [
-    { title: "Luxury Magnetic Box", image: "https://sc04.alicdn.com/kf/H227b0954e2ad4bf0ba3f0fddc502a3faY.jpg", desc: "Our signature high-end magnetic gift box." },
-    { title: "Foldable Magnetic", image: "https://sc04.alicdn.com/kf/Hbebfc26f6fe74be2a241b3b45b5a69d3g.jpg", desc: "Smart design that ships flat and pops up in seconds." },
-    { title: "Ribbon Tie Magnetic", image: "https://sc04.alicdn.com/kf/H610079537f9f40988ccbb03e6eebec3cE.jpg", desc: "Additional ribbon closure for an extra touch of elegance." }
+    { title: "Luxury Magnetic Box", image: "/assets/products/product_4f33629d.jpg", desc: "Our signature high-end magnetic gift box." },
+    { title: "Foldable Magnetic", image: "/assets/products/product_004c0690.jpg", desc: "Smart design that ships flat and pops up in seconds." },
+    { title: "Ribbon Tie Magnetic", image: "/assets/products/product_65fbeb58.jpg", desc: "Additional ribbon closure for an extra touch of elegance." }
   ];
 
   return (

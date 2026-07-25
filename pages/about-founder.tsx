@@ -43,7 +43,7 @@ const AboutFounder = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-[#C9A84C]/20 blur-3xl group-hover:bg-[#C9A84C]/30 transition-all"></div>
             <img 
-              src="https://sc02.alicdn.com/kf/Aad63ce49acc2417dbeb76f0074aba393i.png" 
+              src="/assets/products/product_8f475047.png" 
               alt="Saide Packaging Founder Way Yao" 
               className="relative rounded-[3rem] shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-1000"
             />

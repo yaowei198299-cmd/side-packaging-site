@@ -29,7 +29,7 @@ const WhiteCardMailerPage = () => {
       <section className="relative h-screen flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://sc02.alicdn.com/kf/A6944a60384cf46a89e823d17403dc1e4Z.png" 
+            src="/assets/products/product_3cf228c6.png" 
             alt="Ma脽geschneiderte Versandbox aus wei脽em Karton" 
             className="w-full h-full object-cover grayscale brightness-75 scale-105"
           />

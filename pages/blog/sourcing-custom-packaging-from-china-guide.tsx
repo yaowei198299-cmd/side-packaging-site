@@ -53,7 +53,7 @@ const SourcingGuidePost = () => {
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
-                src="https://sc02.alicdn.com/kf/A3645295ca51c411e8b875eb53436ec490.png" 
+                src="/assets/products/product_093232c1.png" 
                 alt="Sourcing Packaging China" 
                 className="w-full h-full object-cover"
               />

@@ -90,7 +90,7 @@ const HealthCBDSolution = () => {
               <div className="relative">
                 <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
                   <img 
-                    src="https://sc02.alicdn.com/kf/Aeaf1dca78d3f4469a1ea380f452ac2de5.png" 
+                    src="/assets/products/product_49f7451d.png" 
                     alt="Health and CBD Compliant Packaging" 
                     className="w-full h-full object-cover"
                   />

@@ -36,7 +36,7 @@ const PizzaBoxesPage = () => {
                 "@type": "Product",
                 "name": productData.title,
                 "image": [
-                  "https://sc02.alicdn.com/kf/A092333b800b841ab8b8229cd7ee66f5ec.png"
+                  "/assets/products/product_2be4fdaf.png"
                 ],
                 "description": "Premium E-flute corrugated pizza boxes with custom printing. Steam-vent design, high crush resistance, and food-grade greaseproof liners.",
                 "sku": "SIDE-PIZZA-001",

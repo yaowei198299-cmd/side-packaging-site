@@ -90,7 +90,7 @@ const CosmeticSolution = () => {
               <div className="relative">
                 <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
                   <img 
-                    src="https://sc02.alicdn.com/kf/Ad479d4d9f3944161bf481e0ad9adc1feM.png" 
+                    src="/assets/products/product_e5a7e3b8.png" 
                     alt="Luxury Cosmetic Packaging Solutions" 
                     className="w-full h-full object-cover"
                   />

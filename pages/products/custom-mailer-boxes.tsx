@@ -13,9 +13,9 @@ const CustomMailerBoxesPage = () => {
   ];
 
   const types = [
-    { title: "Standard Mailer", image: "https://sc04.alicdn.com/kf/H4cebdb0cd26b429f897a7b927f587eb64.jpg", desc: "Classic ear-lock design for secure shipping." },
-    { title: "Premium White Card", image: "https://sc02.alicdn.com/kf/A6944a60384cf46a89e823d17403dc1e4Z.png", desc: "High-end aesthetic for subscription boxes." },
-    { title: "Kraft Corrugated", image: "https://sc04.alicdn.com/kf/Hd2a4d4ee7b674771a4921b9d43bff2b73.jpg", desc: "Natural look, extra strength for heavy items." }
+    { title: "Standard Mailer", image: "/assets/products/product_87781449.jpg", desc: "Classic ear-lock design for secure shipping." },
+    { title: "Premium White Card", image: "/assets/products/product_3cf228c6.png", desc: "High-end aesthetic for subscription boxes." },
+    { title: "Kraft Corrugated", image: "/assets/products/product_236b6c48.jpg", desc: "Natural look, extra strength for heavy items." }
   ];
 
   return (

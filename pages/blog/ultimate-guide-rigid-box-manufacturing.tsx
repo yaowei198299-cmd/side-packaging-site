@@ -52,7 +52,7 @@ const RigidBoxManufacturingGuide = () => {
 
             <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden mb-16 shadow-xl border border-gray-100">
               <img 
-                src="https://sc01.alicdn.com/kf/Ac788cba78979424ab2c2ba15b024de295.jpg" 
+                src="/assets/products/product_ddfc5b0f.jpg" 
                 alt="Rigid Box Manufacturing Process" 
                 className="w-full h-full object-cover"
               />
