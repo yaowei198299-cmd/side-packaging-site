@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Dimensional Stability: Engineering 4x3x1.25\" Rigid Boxes for Zero-Warp Humidity Resilience",
+      excerpt: "Eliminating the structural variance of premium jewelry boxes through cross-grain lamination and fiber-stabilization math. Maintain 4x3x1.25 precision.",
+      date: "July 26, 2026",
+      slug: "dimensional-stability-engineering-4x3x1-25-rigid-boxes",
+      image: "/assets/products/product_4f33629d.jpg"
+    },
+    {
+      title: "The Math of the 'Snap': Calibrating Magnetic Closure Torque for Luxury B2B Unboxing",
+      excerpt: "Beyond the click—quantifying sensory luxury through neodymium magnet grade selection and placement math. Achieve the perfect 4x3x1.25 unboxing.",
+      date: "July 26, 2026",
+      slug: "math-of-the-snap-calibrating-magnetic-closure-torque",
+      image: "/assets/products/product_24f6b5b2.jpg"
+    },
+    {
+      title: "Sustainability ROI: Calculating the Carbon-Offset Value of 100% Recycled Post-Consumer Waste (PCR) Inserts",
+      excerpt: "Quantifying the transition from virgin plastics to circular material systems through LCA-driven carbon math. Meet 2026 circularity metrics.",
+      date: "July 26, 2026",
+      slug: "sustainability-roi-carbon-offset-value-pcr-inserts",
+      image: "/assets/products/product_3d59e0c2.png"
+    },
+    {
       title: "The Physics of Fatigue: Engineering 4x3x1.25\" Rigid Boxes for 1,000+ Opening Cycles",
       excerpt: "Exploring structural fatigue thresholds in luxury magnetic boxes. How material choice and hinge engineering ensure 1,000+ opening cycles for premium jewelry brands.",
       date: "July 25, 2026",
