@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "The Science of 'Snug-Fit': Calibrating 0.05mm Tolerances for 4x3x1.25\" High-End Jewelry Drawer Boxes",
+      excerpt: "Engineering the perfect unboxing experience through micrometer-level precision and V-Groove mechanical integrity. Achieving 0.05mm tolerances in 2026.",
+      date: "July 27, 2026",
+      slug: "calibrating-0-05mm-tolerances-4x3x1-25-jewelry-drawer-boxes",
+      image: "/assets/products/product_4f33629d.jpg"
+    },
+    {
+      title: "Volumetric Efficiency Math: How Strategic Flute Selection Recovers 15% in Ocean Freight Costs",
+      excerpt: "Optimizing CBM utilization through E-Flute and F-Flute calibration for high-volume custom mailer box imports. Recover your logistics margins with strategic engineering.",
+      date: "July 27, 2026",
+      slug: "strategic-flute-selection-ocean-freight-cost-optimization",
+      image: "/assets/products/product_004c0690.jpg"
+    },
+    {
+      title: "Supply Chain Traceability: A Technical Guide to Navigating 2026 GRS Audit Requirements for Luxury Retailers",
+      excerpt: "How to ensure 100% material transparency through FSC-PCR and GRS certification in the 2026 sustainable packaging landscape. Master the GRS audit process.",
+      date: "July 27, 2026",
+      slug: "2026-grs-audit-requirements-luxury-retail-traceability",
+      image: "/assets/products/product_3d59e0c2.png"
+    },
+    {
       title: "Dimensional Stability: Engineering 4x3x1.25\" Rigid Boxes for Zero-Warp Humidity Resilience",
       excerpt: "Eliminating the structural variance of premium jewelry boxes through cross-grain lamination and fiber-stabilization math. Maintain 4x3x1.25 precision.",
       date: "July 26, 2026",
