@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Engineering the 'Snap': Calibrating Magnetic Pull Force for 4x3x1.25\" High-End Jewelry Boxes",
+      excerpt: "Technical guide on calibrating magnetic pull force for 4x3x1.25 jewelry boxes. Learn the engineering math behind the perfect magnetic snap.",
+      date: "July 28, 2026",
+      slug: "engineering-the-snap-calibrating-magnetic-pull-force-4x3x1-25-jewelry-boxes",
+      image: "/assets/products/product_24f6b5b2.jpg"
+    },
+    {
+      title: "Stacking Integrity Math: Calculating Stacking Strengths for Bulk Mailer Imports from China",
+      excerpt: "Master the McKee formula for mailer boxes. Learn how to calculate stacking strength for bulk packaging imports from China to reduce damage.",
+      date: "July 28, 2026",
+      slug: "stacking-integrity-math-calculating-stacking-strengths-bulk-mailer-imports",
+      image: "/assets/products/product_004c0690.jpg"
+    },
+    {
+      title: "The PCR Dividend: Calculating the Carbon-Offset ROI for 100% Recycled Sustainable Packaging in 2026",
+      excerpt: "Learn how to calculate the ROI of PCR recycled content in 2026. A technical guide to carbon-offset math for sustainable luxury packaging.",
+      date: "July 28, 2026",
+      slug: "pcr-dividend-calculating-carbon-offset-roi-sustainable-packaging-2026",
+      image: "/assets/products/product_3d59e0c2.png"
+    },
+    {
       title: "The Science of 'Snug-Fit': Calibrating 0.05mm Tolerances for 4x3x1.25\" High-End Jewelry Drawer Boxes",
       excerpt: "Engineering the perfect unboxing experience through micrometer-level precision and V-Groove mechanical integrity. Achieving 0.05mm tolerances in 2026.",
       date: "July 27, 2026",
