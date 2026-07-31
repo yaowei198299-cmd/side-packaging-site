@@ -8,6 +8,30 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+<<<<<<< HEAD
+=======
+      title: "ISTA-1A Calibration: Engineering 4x3x1.25\" Rigid Boxes for Zero-Fracture International Logistics",
+      excerpt: "Technical guide on ISTA-1A drop-test calibration for 4x3x1.25 rigid boxes. Learn the engineering math to ensure zero-fracture global logistics.",
+      date: "July 29, 2026",
+      slug: "ista-1a-calibration-4x3x1-25-rigid-boxes-zero-fracture-logistics",
+      image: "/assets/products/product_4f33629d.jpg"
+    },
+    {
+      title: "The Carbon ROI of PCR: Quantifying the Financial Advantage of 100% Recycled Post-Consumer Waste Inserts",
+      excerpt: "Learn how to calculate the financial ROI of carbon offsets using 100% PCR recycled inserts. A 2026 guide to sustainable luxury packaging economics.",
+      date: "July 29, 2026",
+      slug: "carbon-roi-pcr-recycled-inserts-financial-advantage",
+      image: "/assets/products/product_3d59e0c2.png"
+    },
+    {
+      title: "Load-Bearing Math: Calculating Dynamic Stacking Limits for Bulk Magnetic Box Ocean Freight",
+      excerpt: "Master the dynamic load-bearing formulas for bulk magnetic box imports. Optimize pallet density and reduce crushing risks in ocean freight logistics.",
+      date: "July 29, 2026",
+      slug: "load-bearing-math-magnetic-box-ocean-freight-stacking",
+      image: "/assets/products/product_004c0690.jpg"
+    },
+    {
+>>>>>>> 46ebeed (seo: auto publish daily blog posts for July 29th)
       title: "Engineering the 'Snap': Calibrating Magnetic Pull Force for 4x3x1.25\" High-End Jewelry Boxes",
       excerpt: "Technical guide on calibrating magnetic pull force for 4x3x1.25 jewelry boxes. Learn the engineering math behind the perfect magnetic snap.",
       date: "July 28, 2026",
