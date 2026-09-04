@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Custom Magnetic Gift Boxes: The Manufacturing Process Behind 0.5mm Precision",
+      excerpt: "How are custom magnetic gift boxes made? Explore greyboard mounting, V-groove creasing, magnet embedding, and wrap lamination - the factory-direct manufacturing process from Saide Packaging.",
+      date: "September 4, 2026",
+      slug: "custom-magnetic-gift-boxes-manufacturing-process-guide",
+      image: "/assets/products/product_24f6b5b2.jpg"
+    },
+    {
+      title: "Cosmetic Packaging Box: The 2026 Material & Finish Buyer's Guide",
+      excerpt: "Choosing a cosmetic packaging box for your beauty brand? Compare rigid, folding carton and mailer structures, plus soft-touch, spot UV and foil finishes in this 2026 buyer's guide.",
+      date: "September 4, 2026",
+      slug: "cosmetic-packaging-box-materials-finishes-buyer-guide",
+      image: "/assets/products/product_093232c1.png"
+    },
+    {
+      title: "EU Customs Duties & VAT on Packaging Imports from China: The 2026 Landed-Cost Guide",
+      excerpt: "Calculate EU import duties and VAT on packaging boxes from China. HS code classification for rigid and magnetic boxes, DDP vs DAP terms, and 2026 compliance tips for EU brands.",
+      date: "September 4, 2026",
+      slug: "eu-customs-duties-vat-import-packaging-china-guide",
+      image: "/assets/products/product_d18ef012.jpg"
+    },
+    {
       title: "ESG Audit Checklist: A Technical Guide to Bio-Based Adhesives for 2026 Sustainable Luxury Packaging",
       excerpt: "A comprehensive ESG audit checklist for 2026. Learn about bio-based adhesives and supply chain transparency for sustainable luxury packaging.",
       date: "July 31, 2026",
