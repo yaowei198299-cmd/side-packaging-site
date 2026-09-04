@@ -29,27 +29,6 @@ const BlogIndex = () => {
       image: "/assets/products/product_d18ef012.jpg"
     },
     {
-      title: "ESG Audit Checklist: A Technical Guide to Bio-Based Adhesives for 2026 Sustainable Luxury Packaging",
-      excerpt: "A comprehensive ESG audit checklist for 2026. Learn about bio-based adhesives and supply chain transparency for sustainable luxury packaging.",
-      date: "July 31, 2026",
-      slug: "esg-audit-checklist-bio-based-adhesives-luxury-packaging",
-      image: "/assets/products/product_3d59e0c2.png"
-    },
-    {
-      title: "Payload Math: Calculating Pallet Utilization Ratios for Bulk Magnetic Box Ocean Freight",
-      excerpt: "Optimize your ocean freight costs. Learn the math behind pallet utilization ratios for bulk shipments of custom magnetic gift boxes.",
-      date: "July 31, 2026",
-      slug: "payload-math-pallet-utilization-magnetic-box-freight",
-      image: "/assets/products/product_9e858c62.png"
-    },
-    {
-      title: "The Physics of Warp: Engineering 4x3x1.25\" Rigid Boxes for Long-Term Humidity Resilience",
-      excerpt: "Technical guide on engineering 4x3x1.25 rigid boxes to resist warping. Learn about board aging dynamics and the Moisture Gain Coefficient for humidity resilience.",
-      date: "July 31, 2026",
-      slug: "physics-of-warp-4x3x1-25-rigid-boxes-humidity-resilience",
-      image: "/assets/products/product_4f33629d.jpg"
-    },
-    {
       title: "ISTA-1A Calibration: Engineering 4x3x1.25\" Rigid Boxes for Zero-Fracture International Logistics",
       excerpt: "Technical guide on ISTA-1A drop-test calibration for 4x3x1.25 rigid boxes. Learn the engineering math to ensure zero-fracture global logistics.",
       date: "July 29, 2026",
