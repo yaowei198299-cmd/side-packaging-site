@@ -8,6 +8,27 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 const BlogIndex = () => {
   const posts = [
     {
+      title: "Engineering a 4x3x1.25 in Rigid Magnetic Jewelry Box: Insert Fit, Board Choice and Landed-Cost Checklist",
+      excerpt: "A technical procurement guide for small rigid magnetic jewelry boxes. Confirm dimensions, compare board constructions, review insert fit and magnetic closure, and request a 12-hour dieline review.",
+      date: "September 17, 2026",
+      slug: "4x3-1-25-rigid-magnetic-jewelry-box-engineering",
+      image: "/assets/products/product_4f33629d.jpg"
+    },
+    {
+      title: "Double-Sided Printed Mailer Boxes for Subscription Brands: E-Flute, Print Method and Freight-Cost Guide",
+      excerpt: "Compare white-faced and kraft corrugated mailer boxes for subscription packaging, including inside printing, E-flute protection, dimensional weight, and a 12-hour dieline request.",
+      date: "September 17, 2026",
+      slug: "double-sided-printed-mailer-box-subscription-packaging",
+      image: "/assets/products/product_093232c1.png"
+    },
+    {
+      title: "FSC Plastic-Free Luxury Cosmetic Boxes: Material, Coating and Compliance Questions to Ask a Supplier",
+      excerpt: "A supplier-evaluation framework for FSC, plastic-free and recyclable cosmetic packaging claims, with a bill-of-materials checklist, weight formulas, and 12-hour dieline support.",
+      date: "September 17, 2026",
+      slug: "fsc-plastic-free-luxury-cosmetic-box-supplier-guide",
+      image: "/assets/products/product_3d59e0c2.png"
+    },
+    {
       title: "Custom Magnetic Gift Boxes: The Manufacturing Process Behind 0.5mm Precision",
       excerpt: "How are custom magnetic gift boxes made? Explore greyboard mounting, V-groove creasing, magnet embedding, and wrap lamination - the factory-direct manufacturing process from Saide Packaging.",
       date: "September 4, 2026",
