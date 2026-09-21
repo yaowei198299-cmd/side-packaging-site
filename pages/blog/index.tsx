@@ -9,22 +9,22 @@ const BlogIndex = () => {
   const posts = [
     {
       title: "Engineering a 4x3x1.25 in Rigid Magnetic Jewelry Box: Insert Fit, Board Choice and Landed-Cost Checklist",
-      excerpt: "A technical procurement guide for 4 x 3 x 1.25 inch rigid magnetic jewelry boxes. Review board construction, insert fit, closure validation, finished mass, and freight assumptions before production.",
-      date: "September 20, 2026",
+      excerpt: "A technical guide for 4 x 3 x 1.25 inch rigid magnetic jewelry boxes, covering insert fit, closure validation, board construction, sample weighing, and landed-cost inputs.",
+      date: "September 21, 2026",
       slug: "4x3-1-25-rigid-magnetic-jewelry-box-engineering",
       image: "/assets/products/product_4f33629d.jpg"
     },
     {
       title: "Double-Sided Printed Mailer Boxes for Subscription Brands: E-Flute, Print Method and Freight-Cost Guide",
-      excerpt: "Compare white-faced and kraft corrugated mailers for subscription packaging, including inside printing, structure validation, dimensional weight, and carrier assumptions.",
-      date: "September 20, 2026",
+      excerpt: "Compare white-faced and kraft corrugated mailers for subscription packaging, including inside printing, proof validation, dimensional weight, and carrier inputs.",
+      date: "September 21, 2026",
       slug: "double-sided-printed-mailer-box-subscription-packaging",
       image: "/assets/products/product_093232c1.png"
     },
     {
       title: "FSC Plastic-Free Luxury Cosmetic Boxes: Material, Coating and Compliance Questions to Ask a Supplier",
-      excerpt: "An evidence-led framework for evaluating FSC, plastic-free, and recyclable cosmetic packaging claims, including BOM evidence, coatings, inserts, weight formulas, and market-specific compliance boundaries.",
-      date: "September 20, 2026",
+      excerpt: "An evidence-led supplier review for FSC, plastic-free, and recyclable cosmetic packaging, covering BOM evidence, coatings, inserts, weight formulas, and claim boundaries.",
+      date: "September 21, 2026",
       slug: "fsc-plastic-free-luxury-cosmetic-box-supplier-guide",
       image: "/assets/products/product_3d59e0c2.png"
     },
