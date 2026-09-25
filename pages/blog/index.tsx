@@ -10,21 +10,21 @@ const BlogIndex = () => {
     {
       title: "Engineering a 4x3x1.25 in Rigid Magnetic Jewelry Box: Insert Fit, Board Choice and Landed-Cost Checklist",
       excerpt: "A procurement guide for 4 x 3 x 1.25 inch rigid magnetic jewelry boxes, covering insert fit, magnetic closure, board selection, sample validation, and landed-cost inputs.",
-      date: "September 24, 2026",
+      date: "September 25, 2026",
       slug: "4x3-1-25-rigid-magnetic-jewelry-box-engineering",
       image: "/assets/products/product_4f33629d.jpg"
     },
     {
       title: "Double-Sided Printed Mailer Boxes for Subscription Brands: E-Flute, Print Method and Freight-Cost Guide",
       excerpt: "Compare white-faced and kraft corrugated mailers for subscription packaging, including inside-and-out printing, structural proofing, dimensional weight, and freight inputs.",
-      date: "September 24, 2026",
+      date: "September 25, 2026",
       slug: "double-sided-printed-mailer-box-subscription-packaging",
       image: "/assets/products/product_093232c1.png"
     },
     {
       title: "FSC Plastic-Free Luxury Cosmetic Boxes: Material, Coating and Compliance Questions to Ask a Supplier",
       excerpt: "An evidence-led supplier guide for FSC, plastic-free, and recyclable cosmetic packaging, covering BOM evidence, coatings, inks, inserts, weight formulas, and claim boundaries.",
-      date: "September 24, 2026",
+      date: "September 25, 2026",
       slug: "fsc-plastic-free-luxury-cosmetic-box-supplier-guide",
       image: "/assets/products/product_3d59e0c2.png"
     },
