@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
 const WhatsAppButton = () => {
-  const url = `https://wa.me/message/WRDEFMR2ETUJH1`;
+  const url = `https://wa.me/message/WRDEFMR2ETUJH1?text=Hi%20Jocelyn%2C%20I%20am%20interested%20in%20custom%20packaging%20boxes%20(Low%20MOQ%20%2F%20DDP%20Shipping%20to%20USA%2FEU).%20Can%20I%20get%20a%20quick%20quote%20and%20sample%20info%3F`;
 
   return (
     <>
@@ -10,11 +10,11 @@ const WhatsAppButton = () => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-12 left-12 z-[1000] bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform group animate-bounce-slow"
-        aria-label="Chat on WhatsApp"
+        className="fixed bottom-8 left-8 z-[1000] bg-[#25D366] text-white p-4.5 md:p-5 rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all group"
+        aria-label="Chat with Jocelyn on WhatsApp"
       >
         <svg 
-          className="w-8 h-8" 
+          className="w-7 h-7 md:w-8 md:h-8" 
           fill="currentColor" 
           viewBox="0 0 24 24"
         >
@@ -24,10 +24,8 @@ const WhatsAppButton = () => {
 
       {/* Gold "Get a Free Quote" Button - FIXED BOTTOM RIGHT */}
       <a 
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-12 right-12 z-[1000] bg-[#C9A84C] text-black px-10 py-5 rounded-full shadow-2xl hover:scale-105 hover:bg-white transition-all flex items-center gap-3 group whitespace-nowrap"
+        href="/inquiry"
+        className="fixed bottom-8 right-8 z-[1000] bg-[#C9A84C] text-black px-8 py-4.5 rounded-full shadow-[0_10px_30px_rgba(201,168,76,0.4)] hover:scale-105 hover:bg-white active:scale-95 transition-all flex items-center gap-3 group whitespace-nowrap"
       >
         <span className="text-[11px] font-black uppercase tracking-[0.2em] italic font-montserrat">Get a Free Quote</span>
         <svg className="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">

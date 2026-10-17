@@ -228,6 +228,49 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Lead Magnet / Sample Box Kit Hook */}
+      <section className="py-20 bg-gradient-to-b from-black to-[#0A0A0F] border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-gradient-to-r from-[#181822] via-[#121218] to-[#181822] p-8 md:p-14 rounded-[2.5rem] border border-[#C9A84C]/30 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className="space-y-4 max-w-2xl text-left">
+              <div className="inline-flex items-center gap-2 border border-[#C9A84C]/40 bg-[#C9A84C]/10 px-3.5 py-1 rounded-full">
+                <span className="text-[10px] font-bold text-[#C9A84C] uppercase tracking-widest">Low Risk Testing</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black text-white uppercase italic tracking-tight font-montserrat">
+                Order a <span className="text-[#C9A84C]">$19.9 Custom Sample Kit</span> Before Bulk Production.
+              </h2>
+              <p className="text-white/60 text-sm md:text-base leading-relaxed">
+                Test our paperboard rigidity, magnet closures, and foil stamping with your own hands. 
+                Includes 5+ box structures and material swatches. <strong>$50 credit fully refunded on your 1st bulk order!</strong>
+              </p>
+              <div className="flex flex-wrap gap-4 text-xs text-white/70 pt-2">
+                <span className="flex items-center gap-1.5"><strong className="text-green-400">&#10003;</strong> 5+ Box Styles</span>
+                <span className="flex items-center gap-1.5"><strong className="text-green-400">&#10003;</strong> Luxury Foil Swatches</span>
+                <span className="flex items-center gap-1.5"><strong className="text-green-400">&#10003;</strong> Free CAD Dieline</span>
+                <span className="flex items-center gap-1.5"><strong className="text-green-400">&#10003;</strong> 100% Refundable Credit</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto">
+              <a 
+                href="/inquiry" 
+                className="bg-[#C9A84C] text-black px-8 py-4.5 rounded-full font-black uppercase tracking-wider text-xs text-center hover:bg-white hover:scale-105 transition-all shadow-xl font-montserrat"
+              >
+                Claim $19.9 Sample Kit
+              </a>
+              <a 
+                href="https://wa.me/message/WRDEFMR2ETUJH1?text=Hi%20Jocelyn%2C%20I%20want%20to%20order%20the%2019.9%20USD%20Custom%20Sample%20Kit%20for%20my%20brand." 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#25D366]/20 text-[#25D366] hover:bg-[#25D366] hover:text-white border border-[#25D366]/40 px-8 py-4.5 rounded-full font-black uppercase tracking-wider text-xs text-center transition-all flex items-center justify-center gap-2"
+              >
+                WhatsApp Jocelyn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Inquiry Form Section */}
       <section id="contact" className="py-24 bg-[#0A0A0F] border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6">
